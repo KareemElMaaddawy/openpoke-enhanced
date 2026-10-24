@@ -8,5 +8,6 @@ Project documentation beyond the top-level [README](../README.md), which covers 
 - Add a link to every new file in the index below.
 
 ## Index
+- [Execution agent overload](agent-overload.md): the core problem this repo addresses, with current behaviour, hypotheses, experiments, and decisions.
 - [Makefile commands](makefile.md): setup, running the app, and housekeeping with `make`.
 - [Gmail connection via Composio](gmail-composio-connection.md): configuration, how connecting works, and the `link()` migration.
