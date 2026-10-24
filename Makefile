@@ -20,7 +20,10 @@ PID_FILE := .server.pid
 LOG_FILE := .server.log
 REQUIRED_ENV := OPENROUTER_API_KEY COMPOSIO_API_KEY COMPOSIO_GMAIL_AUTH_CONFIG_ID
 
-.PHONY: help setup env install dev start stop logs check-env health clean
+# Next.js dev server pointed at the API port (an existing PY_SERVER_URL wins).
+WEB_DEV = env -u PORT PY_SERVER_URL="$${PY_SERVER_URL:-http://localhost:$(API_PORT)}" npm run dev --prefix web
+
+.PHONY: help setup env install dev web start stop logs check-env health clean
 
 help: ## Show this help
 	@grep -E '^[a-zA-Z_-]+:.*?## ' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "  \033[36m%-10s\033[0m %s\n", $$1, $$2}'
@@ -50,8 +53,11 @@ web/node_modules/.installed: web/package-lock.json
 dev: install ## Run the API server (with reload) and web app together; Ctrl-C stops both
 	@trap 'kill 0' INT TERM EXIT; \
 	$(PY) -m server.server --reload --port $(API_PORT) & \
-	env -u PORT PY_SERVER_URL="$${PY_SERVER_URL:-http://localhost:$(API_PORT)}" npm run dev --prefix web & \
+	$(WEB_DEV) & \
 	wait
+
+web: web/node_modules/.installed ## Run only the web UI (expects the API server from 'make start')
+	@$(WEB_DEV)
 
 start: install ## Start the API server in the background (logs to .server.log)
 	@if [ -f $(PID_FILE) ] && kill -0 $$(cat $(PID_FILE)) 2>/dev/null; then \
