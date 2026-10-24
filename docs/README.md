@@ -9,3 +9,4 @@ Project documentation beyond the top-level [README](../README.md), which covers 
 
 ## Index
 - [Makefile commands](makefile.md): setup, running the app, and housekeeping with `make`.
+- [Gmail connection via Composio](gmail-composio-connection.md): configuration, how connecting works, and the `link()` migration.
