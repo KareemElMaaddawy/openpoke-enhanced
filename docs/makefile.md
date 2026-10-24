@@ -38,12 +38,20 @@ Installs backend dependencies with `pip install -r server/requirements.txt` and 
 | Command | What it does |
 |---|---|
 | `make dev` | Runs the API server with auto-reload and the Next.js app together in one terminal. Ctrl-C stops both. |
+| `make web` | Runs only the Next.js web UI in the foreground, pointed at the API server on `API_PORT`. Pair it with `make start`. Ctrl-C stops it. |
 | `make start` | Starts the API server in the background, logging to `.server.log` and recording its process ID in `.server.pid`. Does nothing if it's already running. |
 | `make stop` | Stops the background API server. |
 | `make logs` | Follows `.server.log`. |
 | `make health` | Calls `GET /api/v1/health` on the API server and fails if it doesn't respond. |
 
-The web app runs at <http://localhost:3000>.
+The web app runs at <http://localhost:3000>. If that port is taken, Next.js moves to the next free one (3001, 3002, …) and prints the address it chose.
+
+A common workflow is to keep the API in the background and the UI in a terminal:
+
+```bash
+make start
+make web
+```
 
 ### Choosing the API port
 
@@ -54,7 +62,7 @@ make dev API_PORT=9000
 make health API_PORT=9000
 ```
 
-`make dev` also points the web app at that port by setting `PY_SERVER_URL`, unless you've already set `PY_SERVER_URL` yourself.
+`make dev` and `make web` also point the web app at that port by setting `PY_SERVER_URL`, unless you've already set `PY_SERVER_URL` yourself.
 
 The variable is named `API_PORT` rather than `PORT` because Next.js binds to `PORT` when it's set, which would put the web app on the API's port.
 
