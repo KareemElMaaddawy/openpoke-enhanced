@@ -89,8 +89,11 @@ Proposed comparison: the interaction agent over the top K (control), a separate 
 
 ## Experiments
 
-None yet. Record each one here: setup, metric, result, conclusion.
+None run yet. Record each one here: setup, metric, result, conclusion.
+
+The agreed inputs for the baseline experiment (system under test, roster sizes, metrics, labels, multi-turn design) are in [agent-overload-baseline-experiment.md](agent-overload-baseline-experiment.md).
 
 ## Decisions
 
 - **2026-10-25: Metrics agreed.** The primary, secondary and guardrail metrics in [agent-overload-causes-and-metrics.md](agent-overload-causes-and-metrics.md#metrics) are what solutions will be judged against. Targets are set after a baseline is measured.
+- **2026-10-25: Baseline experiment scope.** Roster sizes 10, 25, 50, 100, 125 and 200, names only as in today's code. Metrics measured first: routing accuracy, roster tokens per turn, duplicate rate, execution task success against history length, and batch latency (execution task success moved up to primary). Single-delegation cases first, then parallel-split cases. No new integrations before the baseline. Details in [agent-overload-baseline-experiment.md](agent-overload-baseline-experiment.md).

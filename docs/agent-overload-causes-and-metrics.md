@@ -96,7 +96,7 @@ Reusing agents keeps the roster small (fewer D4, I1 and I3 effects) but makes ea
 
 ## Metrics
 
-Agreed on 2026-10-25. Targets are open until there is a baseline. Each metric should be reported at several roster sizes (for example 10, 50, 200, 500) so the result shows how it scales, not only a single number.
+Agreed on 2026-10-25. Targets are open until there is a baseline. The set measured first, and how, is in [agent-overload-baseline-experiment.md](agent-overload-baseline-experiment.md). Each metric should be reported at several roster sizes (for example 10, 50, 200, 500) so the result shows how it scales, not only a single number.
 
 ### Primary
 
@@ -107,12 +107,12 @@ Agreed on 2026-10-25. Targets are open until there is a baseline. Each metric sh
 | Roster tokens per interaction agent turn | Tokens spent on `<active_agents>`, and total input tokens per turn, against roster size | I1, D5 | Token counts from the prompt the code builds |
 | Execution agent prompt size | Prompt tokens per execution run against the number of past tasks for that agent. Report median and p95 across agents. | I5 | Token counts over a scripted session |
 | Batch latency | Time from delegation to the interaction agent receiving results. Also **head-of-line wait**: dispatch time minus the agent's own finish time. | I6 | Timestamps in `batch_manager.py` with K agents running at once |
+| Execution task success against history length | Whether a long history hurts how well an execution agent does its task (for example, acting on stale information) | I5 | Execution harness with mocked Gmail tools, histories padded to different lengths, gradeable tasks |
 
 ### Secondary
 
 | Metric | What it measures | Causes |
 | --- | --- | --- |
-| Execution task success against history length | Whether a long history hurts how well an execution agent does its task (for example, acting on stale information) | I5 |
 | Interaction agent latency per turn | Time per interaction agent turn against roster size | I1, D1 |
 | Interaction agent turns per user request | How many extra turns agent messages and email notifications cause per request | D5 |
 | Conflicting side effects | Duplicate actions on the same object, for example two agents replying to one email or two identical triggers | D2 |

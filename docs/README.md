@@ -10,5 +10,6 @@ Project documentation beyond the top-level [README](../README.md), which covers 
 ## Index
 - [Execution agent overload](agent-overload.md): the core problem this repo addresses, with current behaviour, hypotheses, experiments, and decisions.
 - [Agent overload: causes and metrics](agent-overload-causes-and-metrics.md): design and implementation causes of overload, and the metrics a solution is judged against.
+- [Agent overload: baseline experiment inputs](agent-overload-baseline-experiment.md): what's agreed for measuring the current system, as input for designing the experiment.
 - [Makefile commands](makefile.md): setup, running the app, and housekeeping with `make`.
 - [Gmail connection via Composio](gmail-composio-connection.md): configuration, how connecting works, and the `link()` migration.
