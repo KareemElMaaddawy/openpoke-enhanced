@@ -52,6 +52,35 @@ Instead of rendering the whole roster into `<active_agents>`, retrieve a bounded
 - Failure modes: if the right agent isn't among the k candidates, the interaction agent can't pick it and will likely create a duplicate, so retrieval misses turn into false spawns. The retrieval query is a design question: the prompt is built before the interaction agent has worked out what to delegate, so the query has to come from the incoming message (and maybe recent history), which may not name the work clearly. Agent messages and email notifications need a query too. An alternative is giving the interaction agent a search tool, which lets it form its own query but costs an extra model turn.
 - Experiment: recall@k of the correct agent at roster sizes 10 to 500 on the labelled query set, then routing accuracy and false spawn rate end to end against the full-roster baseline.
 
+#### Retrieval only above a roster size N
+
+Retrieval may not be needed while the roster is small. Below some size N, the scorer could see every record and skip retrieval, which keeps the pipeline simpler and removes retrieval misses as a failure mode. N comes from measurement, not a guess: it's the roster size where routing accuracy without retrieval starts to drop. The baseline sweep across roster sizes gives that number directly.
+
+#### Scorer options
+
+The pipeline is: richer records, then retrieval (only above N), then a scorer that returns reuse, create or ask. The scorer should be a swappable step so options can be compared on the same records and queries, and so there's a fallback if a hosted scorer is down. Every option has to make the "create a new agent" call, which is where duplicates come from.
+
+| Scorer | How it works | Create-new decision | Main risk |
+| --- | --- | --- | --- |
+| Interaction agent over the top K | Current behaviour with a bounded list | Natural, the LLM decides | Routing stays tied to the interaction agent's other jobs (D1); possible recency lock |
+| Separate small router LLM | One cheap structured-output call returning `{agent_id \| NEW \| ASK}` before the interaction agent runs | Natural, the LLM decides | An extra model call each turn |
+| LLM judging one candidate at a time | Ask a small model "does this request continue agent X's work?" per candidate and read the probability of "yes" | Threshold on that probability | Needs the provider to expose token probabilities, which varies by model on OpenRouter (not checked) |
+| TypeSafe Jev | Non-generative model returning typed answers with probabilities ([docs](https://docs.typesafe.ai/introduction), available through OpenRouter). Either one Choice question over the candidates plus `none_of_the_above`, or one yes/no (Noul) question per candidate in a single call | Explicit `none_of_the_above` probability (Choice), or a threshold (Noul) | Accuracy and speed figures are vendor-reported; an external dependency on every turn; requests over about 32,000 bytes of text run in a slower, less accurate long-context mode |
+| Cross-encoder reranker | Scores each (request, record) pair, for example bge-reranker (self-hostable), Cohere Rerank or Voyage rerank | Threshold tuned on labelled data | Trained for document relevance, not "same ongoing work"; scores aren't calibrated |
+| Embedding similarity alone | Uses the retrieval score directly: top match if it clears a threshold | Threshold | Weakest at telling similar agents apart (Uber rides against Uber Eats) |
+| Fine-tuned classifier or reranker | A small model trained on labelled (request, record, correct or not) pairs | Learned | Overfitting to synthetic data; needs labels first |
+
+Any scorer can also be combined with record signals such as last-active time, usage frequency and status. This is a main reason richer records are worth having. Weighting by recency is a deliberate bias toward recently used agents, though, which is the recency-lock failure, so its weight has to be tested, not guessed.
+
+Jev is available through OpenRouter, so it can use the project's existing OpenRouter key and billing (checked 2026-10-25, [guide](https://openrouter.ai/docs/guides/community/jev)):
+
+- Models `typesafe/jev-1.13` and `typesafe/jev-1.14` (pin a version for reproducibility), $0.042 per million input tokens, output free.
+- Called through OpenRouter's Decisions API, `POST https://openrouter.ai/api/alpha/decisions`, with a state plus typed questions. The TypeSafe SDKs can also point at `https://openrouter.ai/api/v1/systemone`. The path is marked alpha, so the request format may change.
+- Text requests over about 32,000 bytes run in TypeSafe's long-context mode, which TypeSafe says is slower and less accurate. That puts a practical cap on a single Choice question over every record, which is another reason for retrieval above N.
+- `typesafe/jev-router` is a different product: it uses Jev to pick which LLM answers a chat request, and doesn't score caller-supplied options.
+
+Proposed comparison: the interaction agent over the top K (control), a separate small router LLM, a cross-encoder reranker, and Jev as a single Choice question. Embedding similarity alone is the floor every option has to beat. Fine-tuning waits until a general-purpose scorer has shown the approach works.
+
 ### From the write-up
 
 - Archiving dormant agents
