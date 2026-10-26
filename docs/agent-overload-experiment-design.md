@@ -110,6 +110,8 @@ class AgentView:
     agent_id: str               # stable harness id; methods that route by id use it
     name: str
     work_log: tuple[WorkItem, ...]   # what this agent has done; names_only ignores it
+    created_at: str             # "YYYY-MM-DD HH:MM:SS"; names_only ignores it
+    last_active: str            # last delegation to this agent; names_only ignores it
     # deliberately no thread_id
 
 @dataclass(frozen=True)
@@ -140,7 +142,7 @@ class RoutingOutput:
     history_effects: list[Entry]     # poke_reply / wait entries the turn produced, in order
     invalid_calls: list[dict]        # {"tool", "raw_arguments", "error"}
     llm_calls: list["CallRecord"]    # every model call the method made
-    diagnostics: dict                # e.g. {"candidates": [agent_id, ...]} for recall@k
+    diagnostics: dict                # e.g. {"candidates": [...]} for recall@k, {"excluded": [...]} for hidden agents
     loop_limit_hit: bool = False
 
 class RoutingMethod(Protocol):
@@ -158,6 +160,8 @@ Rules for every method:
 - A method that asks the user instead of routing returns no delegations and a `poke_reply`. It's scored as `missed_delegation` with the tag `reply_is_question` (see [Tags](#tags)).
 - A method that derives records from `work_log` (for example an LLM-written purpose) caches them under `evals/agent_overload/cache/<method>/<version>/`. The cache file's hash is recorded in the run config. Its output is part of the method under test, not part of the case set.
 - A retrieval method puts its candidate ids in `diagnostics["candidates"]`, in rank order, so the harness can compute recall@k.
+- A method that hides agents from the routing decision (archiving, retrieval) lists them in `diagnostics["excluded"]`. That lets the scorer tag errors caused by hiding the right agent (`target_excluded`) and report how many agents were shown per turn.
+- A method's own state, such as archive status, is derived from the `AgentView` fields on each call (for example, archived means `last_active` older than D days before the message). The harness keeps `last_active` current; methods don't store state between turns.
 
 ### The baseline method: `names_only` version 1
 
@@ -267,7 +271,14 @@ Each split has 210 filler threads, so 200 remain after the similarity cleaning b
 
 Threads that a sequence creates during the run also get a name in this file (the gold name for corrected-each-turn runs), with `"seeded": false`.
 
-**`rosters.<split>.json`:** `{"filler_order": ["a-test-0201", ...]}`, a fixed order of the filler agents, shuffled once at generation with seed `20261025`.
+**`rosters.<split>.json`:** `{"filler_order": ["a-test-0201", ...], "filler_age_days": {"a-test-0201": 23.4, ...}}`. `filler_order` is a fixed order of the filler agents, shuffled once at generation with seed `20261025`.
+
+**Agent ages.** Archiving needs to know how long ago each agent was used. Ages are stored relative to the case's "now", the timestamp of the case's message (single-turn) or of the first turn (sequences). The harness turns them into `last_active` and `created_at`:
+
+- **Filler agents:** `filler_age_days`, drawn once with seed `20261025`. 30% are 0 to 3 days old, 30% are 4 to 14 days, and 40% are 15 to 60 days, so most of a large roster is dormant, as it would be after weeks of use.
+- **Required agents named in the case's history** (including the summarized part): `last_active` is the timestamp of the latest result line with their name. `freeze.py` computes this.
+- **Other required agents:** the case's `agent_ages` field.
+- **`created_at`:** `last_active` minus a seeded 0 to 30 days, and never after the agent's first result line.
 
 ### Generating agent names (open question 1)
 
@@ -317,8 +328,10 @@ Constraint for case authors: `len(required) ≤ 6` for single-turn cases and `�
     "query_style": "implicit_follow_up",
     "prev_thread": "t-test-0042",
     "name_descriptiveness": "specific",
-    "target_name_visible": true
+    "target_name_visible": true,
+    "target_age_bucket": "recent"
   },
+  "agent_ages": {"a-test-0050": 9.0},
   "provenance": {"drafted_by": "anthropic/claude-sonnet-5.5", "cross_label": {"model": "google/gemini-3.8-flash", "label": {"kind": "REUSE", "threads": ["t-test-0042"]}, "agreed": true}, "review": null}
 }
 ```
@@ -333,6 +346,8 @@ Constraint for case authors: `len(required) ≤ 6` for single-turn cases and `�
 - **`message.type`:** `user` or `agent`. `message.subtype` is `user`, `execution_result` (text in batch-payload format) or `email_alert` (text starting `Important email watcher notification:\n`, as `importance_watcher.py` sends it).
 - **`meta.prev_thread`:** the thread of the most recent result line in the visible history, or `null`. Used for recency lock.
 - **`meta.target_name_visible`:** whether any target agent's exact name appears in the rendered transcript. Computed by `freeze.py`, not written by the drafter.
+- **`meta.target_age_bucket`:** `recent` (target agent last active 0 to 3 days before the message), `mid` (4 to 14 days) or `old` (15 to 60 days). Computed by `freeze.py` from the agent ages. `null` for CREATE and NO_DELEGATION.
+- **`agent_ages`:** age in days for each required agent not named in the history. Required for old-thread cases.
 
 **Quotas for single-turn templates:**
 
@@ -353,6 +368,7 @@ Cross-quotas within each split:
 - **History:** 70% `short`, 30% `summarized`.
 - **Message type:** about 80% user, 10% `execution_result`, 10% `email_alert`. Agent messages fall mostly in NO_DELEGATION, and partly in REUSE where the result asks for follow-up work.
 - **Target position:** balanced across the three buckets within each query style.
+- **Old-thread cases:** 11 test cases (6 of the REUSE `explicit` and 5 of the REUSE `near_distractor`) and 6 dev cases (3 and 3). In each, the user returns to a thread whose agent was last active 15 to 60 days earlier. The thread doesn't appear in the visible history, so the agent's name is the only clue under names-only routing. That's why these cases use only `explicit` and `near_distractor` styles, so the labeling rule that T must be identifiable still holds. These are the cases where archiving can fail by hiding the right agent.
 
 **Query styles:**
 
@@ -390,6 +406,7 @@ Cross-quotas within each split:
 ```
 
 - **Initial history:** 96 raw entries of earlier conversation about the seeded threads, with proper result lines, built by `assemble_histories.py`. Each turn adds about 4 entries, so the 110-entry threshold is crossed around turn 4 and the real summarizer runs once per sequence-run.
+- **`agent_ages`:** as in single-turn cases, for required agents not named in the initial history, relative to the first turn's timestamp.
 - **Turn mix in each 12-turn sequence:** 2 CREATE (new threads that later turns reuse), 6 REUSE (at least one `implicit_follow_up` right after a topic switch, and at least one `near_distractor`), 1 REUSE_ANY, 2 NO_DELEGATION, and 1 more of any label. At least one turn is an `email_alert`.
 - **Topic switches:** at least half of the delegating turns switch thread from the previous delegating turn, so recency lock can be measured.
 - **`meta.primary_thread`:** the thread a delegation on this turn is attributed to. For CREATE it's the new thread. For REUSE_ANY it's the first listed thread. For NO_DELEGATION it's the thread under discussion, or `null`.
@@ -462,7 +479,7 @@ After turn t, before scoring is used for anything:
 
 1. Append `user_message` (or `agent_message` for agent turns) at the turn's timestamp.
 2. Append `history_effects` (the method's replies and waits) at timestamp +5 s, +6 s, and so on.
-3. For each distinct `agent_key`: if it's new, add an agent to the roster at the end, with a fresh id `a-run-<n>` and the method's name, and map it to the turn's `primary_thread` (or to `orphan` if that's `null`). Add `WorkItem(instructions, result)` to its work log.
+3. For each distinct `agent_key`: if it's new, add an agent to the roster at the end, with a fresh id `a-run-<n>` and the method's name, and map it to the turn's `primary_thread` (or to `orphan` if that's `null`). Add `WorkItem(instructions, result)` to its work log. Set its `last_active` to the turn's timestamp, and `created_at` too if it's new.
 4. If there were delegations, append one `agent_message` at +60 s from `_format_batch_payload`. There's one `[SUCCESS] <agent_name used>: <text>` line per distinct agent. The text is `gold.result_text` for the primary delegation and `Done.` for any other.
 5. If there were delegations, append `gold.result_reply` as a `poke_reply` at +65 s. This stands in for the interaction agent's turn on the result, which the harness doesn't run, to save cost and keep runs comparable.
 6. Apply the summarization rule.
@@ -521,6 +538,7 @@ Tags are added to outcomes. They never change them.
 | `recency` | `misroute`, `false_reuse` | the chosen agent's thread equals `prev_thread` and differs from the expected thread |
 | `context_reuse` | `misroute` | the chosen agent's `agent_context` contains the expected thread (sequences only; shows when strict scoring might be harsh) |
 | `reply_is_question` | `missed_delegation` | the last `poke_reply` of the turn ends with `?`. A heuristic, reported as such |
+| `target_excluded` | `false_spawn`, `misroute`, `missed_delegation` | the canonical agent of every expected thread is in the method's `diagnostics["excluded"]`. The error happened because the method hid the right agent (archived it, or retrieval missed it) |
 
 ### End of sequence (carried forward only)
 
@@ -553,7 +571,15 @@ Let S be the threads the sequence touches (its labels' threads, plus `orphan` if
 | Consistency | share of templates where all reps produced the same primary outcome |
 | Confusion matrix | rows = label kind, columns = primary outcome, counts |
 
-**Breakdowns** (accuracy plus outcome shares): query style, message subtype, label kind, target position bucket, name descriptiveness, history type, `target_name_visible`, and for sequences the turn index and mode.
+**Breakdowns** (accuracy plus outcome shares): query style, message subtype, label kind, target position bucket, target age bucket, name descriptiveness, history type, `target_name_visible`, and for sequences the turn index and mode.
+
+**Archiving and roster shown:**
+
+| Metric | Definition |
+| --- | --- |
+| Agents shown per turn | roster size minus `len(diagnostics["excluded"])`. Median per N. Equals N for the baseline |
+| Dormant agent fraction | share of roster agents whose `last_active` is more than 14 days before the turn. A property of the fixtures in single-turn cases, reported per N for reference |
+| Excluded-target error rate | turns tagged `target_excluded` / delegating-label turns. Reported overall and for the `old` age bucket |
 
 **Compounding:** accuracy per turn index, carried forward minus corrected each turn, at each N.
 
@@ -709,6 +735,7 @@ It also covers:
 - **Stub parity:** each stub returns the same `ToolResult` payload as the real tool, the real one pointed at temp paths.
 - **Payload parity:** see [Model calls](#model-calls).
 - **Rosters:** deterministic, nested filler, anchor in its bucket at every N, required agents always present.
+- **Ages:** `last_active` matches the latest result line for agents named in the history, `created_at` ≤ `last_active`, every `old` case's target is 15 to 60 days old and absent from the visible history, and sequences update `last_active` on delegation.
 - **Scorer:** one test per outcome label and per tag, including a duplicate name in the same turn, an empty name, a `TypeError` in the arguments, and the loop limit.
 - **No side effects:** a fake-model smoke run leaves every file under `server/data/` unchanged (compare mtimes and hashes before and after).
 - **Manifest:** changing one byte of a fixture makes loading fail.
@@ -775,8 +802,8 @@ Costs include output, at about 330 tokens per turn.
 | Phase 1 baseline (`full`) | $8 |
 | Phase 2 fixtures + baseline | $4 |
 | Reduced phase 3 fixtures + baseline | $2 |
-| Iterating on solutions (about 10 × `dev-quick`) | $5 |
-| Final test runs, 2 solution versions × (phase 1 $6 + phase 2 $2.50 + phase 3 $1) | $19 |
+| Iterating on solutions (about 10 × `dev-quick`, plus tuning archiving's D and the history cap's k on dev) | $5 |
+| Final test runs: version 1 (records, ID routing, retrieval) and version 2 (+ archiving, history cap), each phase 1 $6 + phase 2 $2.50 + phase 3 $1 | $19 |
 | **Total** | **about $46.50, leaving about $3.50 spare** |
 
 **Spend guard:**
@@ -837,13 +864,20 @@ For execution task success against history length, execution agent prompt size, 
 **Execution task success against history length (open question 6):**
 
 - **Reduced version (the planned one, to fit the budget):** 15 test and 8 dev gradeable tasks, with histories at L in {0, 50} past tasks, 3 reps, so 90 runs on test. The full version (30 tasks, L in {0, 5, 20, 50}) is an extension if budget remains.
-- **Tasks:** reply to the right thread, draft to the right person, find a figure, create a trigger with the right schedule. Some contain stale-fact traps: the history says one amount, the inbox now says another.
+- **Tasks:** reply to the right thread, draft to the right person, find a figure, create a trigger with the right schedule. Some contain stale-fact traps: the history says one amount, the inbox now says another. Of the 15 test tasks, 4 (and 2 of the 8 dev tasks) are **old-detail tasks**: they need something only an older task in the history holds, such as an email id or a detail agreed 30 tasks ago. These make the cost of a history cap visible.
 - **Histories:** synthetic agent logs in `log_store` format, built in code like the long conversation histories, from the same agent's thread and nearby threads.
 - **Runs:** each run takes about 3 to 6 calls, including the search sub-agent.
 - **Grading, step 1 (deterministic):** checks on recorded side effects (right action, thread or message id, recipient, trigger fields, nothing sent without confirmation).
 - **Grading, step 2 (judge):** `google/gemini-3.8-flash` checks the response text against a per-task rubric (required facts present, no stale facts). Checked against 20 hand-graded runs before use.
 - **Success:** a run succeeds only if every deterministic check passes and the judge passes.
 - **Execution agent prompt size:** `prompt_tokens` per execution call against L. Median and p95.
+
+**History cap (a candidate for solution version 2):**
+
+- **Configuration.** The execution side gets the same swap point as routing: an `ExecutionConfig` in the run config with `conversation_limit` (`null` for the baseline). The phase 3 harness builds execution agents through a subclass of `ExecutionAgentRuntime` that passes `ExecutionAgent(agent_name, conversation_limit=...)`. Once version 2 changes `server/` to read the limit from settings, the harness uses that code path instead and records the setting.
+- **What the limit counts.** It counts `<agent_request>` entries. The current request is already in the log when the agent runs, so a limit of k keeps the current task plus k − 1 past ones.
+- **Tuning k (dev only):** 8 dev tasks at L = 50 with k in {5, 10, 20}, 1 rep. That's 24 runs, about $0.30. Pick the smallest k whose success rate is within 5 points of no cap, and record it.
+- **Test:** version 2's phase 3 run repeats only L = 50, since a cap doesn't change L = 0. That's 45 runs. Report success with and without the cap, old-detail tasks separately, and execution prompt size.
 
 **Batch latency:**
 
@@ -880,5 +914,6 @@ From [agent-overload-baseline-experiment.md](agent-overload-baseline-experiment.
 - Summarization runs synchronously between turns. In production it races with the next message.
 - Single-turn rosters are clean (one agent per thread). Real rosters already contain duplicates, which the carried-forward sequences produce, but only from the sequence's own turns.
 - Cases are synthetic and LLM-drafted. Topics and styles may not match real use.
+- Agent ages are synthetic. Real dormancy patterns, such as agents kept busy by recurring triggers, aren't modeled. Archiving rules that depend on trigger activity can't be tested in phase 1.
 - Long histories are assembled from templates, so they read more uniformly than real conversations. They also mention only the case's own agents. In production, a user with 200 agents would have a history naming many more of them. This keeps roster size the only variable between sizes, but it may make large-N routing look easier than it is.
 - Latency depends on concurrency and on OpenRouter load, so latency comparisons are only meaningful between runs with the same concurrency, ideally on the same day.
