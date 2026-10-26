@@ -26,6 +26,7 @@ from .harness.config import (
 )
 from .harness.fixtures import FixtureError, load_fixtures
 from .harness.llm import (
+    DEFAULT_RPM,
     FakeClient,
     OpenRouterClient,
     SpendTracker,
@@ -162,6 +163,10 @@ def parse_args(argv: Optional[list[str]] = None) -> argparse.Namespace:
     parser.add_argument("--accept-model-change", action="store_true", help="run even if the model alias moved")
     parser.add_argument("--results-dir", type=Path, default=None, help="where run directories go")
     parser.add_argument("--manifest", type=Path, default=None, help="override the config's fixture manifest")
+    parser.add_argument(
+        "--rpm", type=float, default=DEFAULT_RPM,
+        help=f"max requests per minute per model (default {DEFAULT_RPM:g}, under OpenRouter's new-account limit; 0 = no pacing)",
+    )
     add_paid_args(parser)
     return parser.parse_args(argv)
 
@@ -207,6 +212,11 @@ def main(argv: Optional[list[str]] = None) -> int:
         + ", ".join(f"{k}={v}" for k, v in profile.items()),
         f"  config hash {cfg_hash[:16]}, git {git.get('sha')}{' DIRTY: ' + ', '.join(git['dirty_paths'][:5]) if git.get('dirty') else ''}",
     ]
+    calls = (units["single_turns"] + units["sequence_turns"]) * profile["routing_calls_per_turn"] + units["sequence_runs"] + units["token_probes"]
+    if args.rpm:
+        extra.append(
+            f"  pacing: at most {args.rpm:g} requests/minute per model, so this run takes at least {calls / args.rpm / 60:.1f} hours"
+        )
     if fixture_note:
         extra.append("  " + fixture_note)
     if estimate * budget.estimate_margin > max_cost:
@@ -264,6 +274,7 @@ async def execute(args, config, plan, fixtures, mode, cfg_hash, max_cost) -> int
             concurrency=int(runtime_cfg["concurrency"]),
             timeout_s=float(runtime_cfg["timeout_s"]),
             max_retries=int(runtime_cfg["max_retries"]),
+            rpm=args.rpm,
         )
 
     method = make_method(config, client)
@@ -272,6 +283,7 @@ async def execute(args, config, plan, fixtures, mode, cfg_hash, max_cost) -> int
         fixtures_manifest=fixtures.manifest, fake=fake, max_cost_usd=max_cost, observed_slugs=observed,
         accept_model_change=args.accept_model_change, started_at=started.strftime("%Y-%m-%dT%H:%M:%SZ"),
     )
+    recorded["runtime_pacing"] = {"rpm_per_model": args.rpm, "note": "operational; not part of the config hash"}
     (run_dir / "config.json").write_text(json.dumps(recorded, indent=2, sort_keys=True), encoding="utf-8")
     if not fake and "test" in plan.splits:
         append_jsonl(

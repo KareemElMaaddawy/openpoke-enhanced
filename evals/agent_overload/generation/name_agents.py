@@ -19,6 +19,7 @@ from __future__ import annotations
 
 import asyncio
 import random
+from collections import Counter
 from pathlib import Path
 from typing import Optional
 
@@ -41,27 +42,77 @@ from .common import (
     write_rows,
 )
 
-MAX_ATTEMPTS = 3
+MAX_ATTEMPTS = 3  # model failures (no delegation, or a colliding name) before a thread is dropped
+MAX_TRIES_PER_RUN = 10  # API errors included; past this a thread stays pending until the next run
+CHUNK = 40  # threads per save, in thread-id order
 FILLER_PER_SPLIT = 200
 NOMINAL_THREADS = 585
+MODEL_FAILURES = ("no delegation", "collision")
 
 
 def state_path(fixtures_dir: Path, split: str) -> Path:
     return fixtures_dir / "review" / "naming" / f"{split}.json"
 
 
+def model_failures(entry: dict) -> int:
+    """Attempts that count toward the 3-attempt budget. API errors don't: they say nothing about the model."""
+    return sum(1 for h in entry.get("history", []) if h.get("reason") in MODEL_FAILURES)
+
+
+def requeue(state: dict) -> int:
+    """Put back threads that were dropped although fewer than 3 attempts were model failures."""
+    count = 0
+    for entry in state.values():
+        if entry.get("status") == "dropped" and model_failures(entry) < MAX_ATTEMPTS:
+            entry["status"] = "pending"
+            count += 1
+    return count
+
+
 def pending_threads(fixtures_dir: Path, split: str) -> list[dict]:
     threads = read_rows(fixtures_dir / f"threads.{split}.jsonl")
     state = read_json(state_path(fixtures_dir, split), {})
+    requeue(state)
     return [t for t in threads if state.get(t["thread_id"], {}).get("status") not in ("named", "dropped")]
+
+
+def record_result(entry: dict, number: int, result, taken: set, taken_slugs: set, provenance) -> None:
+    """Apply one attempt's result to a thread's naming state."""
+    entry["attempts"] = number
+    if isinstance(result, BaseException):
+        entry["history"].append({"attempt": number, "name": None, "reason": f"error: {result}"})
+    else:
+        first, record = result
+        if first is None:
+            entry["history"].append({"attempt": number, "name": None, "reason": "no delegation"})
+        elif first.agent_name in taken or slug(first.agent_name) in taken_slugs:
+            entry["history"].append({"attempt": number, "name": first.agent_name, "reason": "collision"})
+        else:
+            entry.update(
+                {
+                    "status": "named",
+                    "name": first.agent_name,
+                    "instructions": first.instructions,
+                    "provenance": provenance(record, number),
+                }
+            )
+            entry["history"].append({"attempt": number, "name": first.agent_name, "reason": "accepted"})
+            taken.add(first.agent_name)
+            taken_slugs.add(slug(first.agent_name))
+    if entry["status"] == "pending" and model_failures(entry) >= MAX_ATTEMPTS:
+        entry["status"] = "dropped"
 
 
 async def name_split(ctx: StepContext, method: NamesOnlyMethod, fixtures_dir: Path, split: str) -> None:
     threads = {t["thread_id"]: t for t in read_rows(fixtures_dir / f"threads.{split}.jsonl")}
     path = state_path(fixtures_dir, split)
     state: dict = read_json(path, {})
+    requeued = requeue(state)
+    if requeued:
+        print(f"{split}: re-queued {requeued} threads dropped only because of API errors")
     taken = {v["name"] for v in state.values() if v.get("status") == "named"}
     taken_slugs = {slug(n) for n in taken}
+    model = ctx.config["models"]["interaction"]
 
     async def attempt(thread: dict, number: int):
         CALL_CONTEXT.set({"case_id": thread["thread_id"], "N": 0, "mode": None, "rep": number, "turn": None})
@@ -71,45 +122,42 @@ async def name_split(ctx: StepContext, method: NamesOnlyMethod, fixtures_dir: Pa
         record = out.llm_calls[0] if out.llm_calls else None
         return first, record
 
+    tries: Counter = Counter()  # this run only, so a later rerun gets a fresh allowance
+
+    def open_threads() -> list[str]:
+        return sorted(
+            t for t in threads if state.get(t, {}).get("status", "pending") == "pending" and tries[t] < MAX_TRIES_PER_RUN
+        )
+
     while True:
-        pending = sorted(t for t in threads if state.get(t, {}).get("status") not in ("named", "dropped"))
+        pending = open_threads()
         if not pending:
             break
-        numbers = {t: state.get(t, {}).get("attempts", 0) + 1 for t in pending}
-        results = await asyncio.gather(*(attempt(threads[t], numbers[t]) for t in pending), return_exceptions=True)
-        cap_error = None
-        for thread_id, result in zip(pending, results):
-            entry = state.setdefault(thread_id, {"status": "pending", "attempts": 0, "history": []})
-            if isinstance(result, BaseException):
-                if result.__class__.__name__ == "SpendCapReached":
+        round_errors = 0
+        for start in range(0, len(pending), CHUNK):
+            chunk = pending[start : start + CHUNK]
+            numbers = {t: state.get(t, {}).get("attempts", 0) + 1 for t in chunk}
+            tries.update(chunk)
+            results = await asyncio.gather(*(attempt(threads[t], numbers[t]) for t in chunk), return_exceptions=True)
+            cap_error = None
+            for thread_id, result in zip(chunk, results):  # id order, so earlier ids win collisions
+                if isinstance(result, BaseException) and result.__class__.__name__ == "SpendCapReached":
                     cap_error = result
                     continue
-                entry["attempts"] = numbers[thread_id]
-                entry["history"].append({"attempt": numbers[thread_id], "name": None, "reason": f"error: {result}"})
-            else:
-                first, record = result
-                entry["attempts"] = numbers[thread_id]
-                if first is None:
-                    entry["history"].append({"attempt": numbers[thread_id], "name": None, "reason": "no delegation"})
-                elif first.agent_name in taken or slug(first.agent_name) in taken_slugs:
-                    entry["history"].append({"attempt": numbers[thread_id], "name": first.agent_name, "reason": "collision"})
-                else:
-                    entry.update(
-                        {
-                            "status": "named",
-                            "name": first.agent_name,
-                            "instructions": first.instructions,
-                            "provenance": ctx.provenance(ctx.config["models"]["interaction"], record, numbers[thread_id]),
-                        }
-                    )
-                    entry["history"].append({"attempt": numbers[thread_id], "name": first.agent_name, "reason": "accepted"})
-                    taken.add(first.agent_name)
-                    taken_slugs.add(slug(first.agent_name))
-            if entry["status"] == "pending" and entry["attempts"] >= MAX_ATTEMPTS:
-                entry["status"] = "dropped"
-        write_json(path, state)
-        if cap_error is not None:
-            raise cap_error
+                entry = state.setdefault(thread_id, {"status": "pending", "attempts": 0, "history": []})
+                round_errors += isinstance(result, BaseException)
+                record_result(entry, numbers[thread_id], result, taken, taken_slugs, lambda r, n: ctx.provenance(model, r, n))
+            write_json(path, state)
+            statuses = Counter(state.get(t, {}).get("status", "pending") for t in threads)
+            print(f"{split}: {statuses['named']} named, {statuses['dropped']} dropped, {statuses['pending']} pending")
+            if cap_error is not None:
+                raise cap_error
+        if round_errors == len(pending):
+            print(f"{split}: every attempt in this round failed with an API error; stopping. Rerun later to continue.")
+            break
+    stuck = [t for t in threads if state.get(t, {}).get("status", "pending") == "pending"]
+    if stuck:
+        print(f"{split}: {len(stuck)} threads still pending after repeated API errors; rerun this step to continue.")
 
 
 def write_agents_and_rosters(fixtures_dir: Path) -> list[str]:
@@ -118,8 +166,9 @@ def write_agents_and_rosters(fixtures_dir: Path) -> list[str]:
     for split in SPLITS:
         threads = {t["thread_id"]: t for t in read_rows(fixtures_dir / f"threads.{split}.jsonl")}
         state = read_json(state_path(fixtures_dir, split), {})
+        requeue(state)
         if any(state.get(t, {}).get("status") not in ("named", "dropped") for t in threads):
-            problems.append(f"{split}: some threads are not named yet")
+            problems.append(f"{split}: some threads are not named yet (rerun this step)")
             continue
         previous = {a["agent_id"]: a for a in read_rows(fixtures_dir / f"agents.{split}.jsonl")}
         agents = []
@@ -185,7 +234,7 @@ def main(argv: Optional[list[str]] = None) -> int:
     model = config["models"]["interaction"]
     have_threads = all((fixtures_dir / f"threads.{s}.jsonl").exists() for s in SPLITS)
     pending = sum(len(pending_threads(fixtures_dir, s)) for s in SPLITS) if have_threads else NOMINAL_THREADS
-    planned = [PlannedCalls("naming", model, pending * 2.2 * 1.1, 3900, 150, "about 2.2 calls per loop, 10% resamples")]
+    planned = [PlannedCalls("naming", model, pending * 3.2 * 1.1, 2000, 70, "measured: about 3.2 calls per loop, 2,000 prompt tokens")]
     extra = [
         "",
         f"threads to name: {pending}" + ("" if have_threads else " (nominal: threads files not found yet)"),

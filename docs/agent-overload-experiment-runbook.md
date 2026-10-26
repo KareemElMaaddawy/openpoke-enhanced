@@ -10,7 +10,7 @@ Every command runs from the repository root. Commands that call a paid API are m
 | --- | --- | --- | --- | --- | --- |
 | 0 | Setup and free checks | `make setup`, unit tests | no | $0 | 5 min |
 | 1 | Thread specs and chit-chat | `generation/gen_threads.py` | Sonnet 5.5 | **$2.35 actual** (est. $1.54) | about 4 min |
-| 2 | Agent names, filler cleaning, rosters | `generation/name_agents.py` | gpt-6-luna | $0.66 | 5 to 10 min |
+| 2 | Agent names, filler cleaning, rosters | `generation/name_agents.py` | gpt-6-luna | $0.46 | about 2 h at 18 requests/min |
 | 3 | Name ratings | `generation/rate_names.py` | Sonnet 5.5 | $0.31 | 1 min |
 | 4 | Single-turn cases | `generation/draft_cases.py` | Sonnet 5.5 | $5.00 | 8 to 15 min |
 | 5 | Sequences | `generation/draft_sequences.py` | Sonnet 5.5 | $0.83 | 1 to 3 min |
@@ -20,7 +20,7 @@ Every command runs from the repository root. Commands that call a paid API are m
 | 9 | Label review (agent, then user) | `generation/build_review.py` | no | $0 | ≤ 30 min of your time |
 | 10 | Freeze | `generation/freeze.py` | no | $0 | seconds |
 | 11 | Smoke run | `run.py --profile smoke` | gpt-6-luna | $0.13 | a few minutes |
-| 12 | Baseline | `run.py --profile full` | gpt-6-luna | $7.86 | about 30 min |
+| 12 | Baseline | `run.py --profile full` | gpt-6-luna | $7.86 | about 30 min unthrottled; at least 9.4 h at 18 requests/min |
 
 Fixtures total about $11.90 (step 1 actual plus the other steps' estimates), plus about $8 for the baseline. Step 1 used about 1.75 times the output tokens estimated, so steps 4 and 5 were re-estimated on 2026-10-26 with that factor. Costs are the `--dry-run` estimates before any margin. Times are guesses until the first steps have run. Each paid step stops on its own at twice its estimate, and no step starts if the ledger total plus its estimate × 1.25 would pass $50.
 
@@ -36,6 +36,10 @@ Every paid command (each generation script that calls a model, and `run.py`) beh
 - **A second guard outside the harness:** the dedicated OpenRouter key with a $50 credit limit (see Setup).
 
 Generation steps are **resumable**: each saves what it finished, even when capped or interrupted. Rerunning the same command does only the missing work.
+
+## Rate limits
+
+OpenRouter limits new accounts to **20 requests per minute per model** (an HTTP 429 says `new-account-rpm`; seen on 2026-10-26). Every paid command therefore paces itself: at most `--rpm` requests start in any minute for each model (default 18), and a 429 pauses that model's calls until the reset time OpenRouter reports. Each dry run prints the minimum time this implies. Once the limit is lifted, `--rpm 0` turns pacing off. The pacing wait isn't counted in measured latency.
 
 ## 0. Setup
 
@@ -105,9 +109,9 @@ Writes the world the cases are built from: per split, about 110 (test) or 55 (de
 
 ### Step 2. Agent names, filler cleaning and rosters (Paid: gpt-6-luna)
 
-For each of about 585 threads, runs the **real** interaction prompt (production system prompt, tool schemas and loop, the pinned model, OpenAI as the only provider) with an empty roster and history and the thread's opening request as the new message. It keeps the name of the first agent the model creates. Turns with no delegation, and names that match or slug-collide with one already taken, are resampled with a new seed, up to 3 attempts; then the thread is dropped. Then it removes filler agents whose names resemble a case agent's, trims filler to 200 per split, and writes each split's fixed filler order and filler ages (30% 0 to 3 days, 30% 4 to 14, 40% 15 to 60).
+For each of about 585 threads, runs the **real** interaction prompt (production system prompt, tool schemas and loop, the pinned model, OpenAI as the only provider) with an empty roster and history and the thread's opening request as the new message. It keeps the name of the first agent the model creates. Turns with no delegation, and names that match or slug-collide with one already taken, are resampled with a new seed, up to 3 attempts; then the thread is dropped. Attempts that fail with an API error (a 429 after its retries, say) don't count toward the 3; the thread is tried again, and if API errors persist it stays pending for the next rerun. Then it removes filler agents whose names resemble a case agent's, trims filler to 200 per split, and writes each split's fixed filler order and filler ages (30% 0 to 3 days, 30% 4 to 14, 40% 15 to 60).
 
-- **Estimated cost and time:** $0.66 (cap $1.32); 5 to 10 minutes.
+- **Estimated cost and time:** $0.46 (cap $0.93); at least 110 minutes at 18 requests per minute. It prints progress every 40 threads. The first attempt on 2026-10-26 hit the rate limit and was stopped after naming 24 dev threads ($0.06); the rerun continues from there.
 - **Writes:** `agents.dev.jsonl`, `agents.test.jsonl`, `rosters.dev.json`, `rosters.test.json`, `review/naming/<split>.json` (every attempt), `review/filler_cleaning.<split>.json`.
 
 ```bash
@@ -369,7 +373,7 @@ Then tell the agent the run id. At checkpoint D the agent compares these numbers
 
 The full phase 1 baseline: both splits, every roster size (10, 25, 50, 100, 125, 200 for single-turn cases; sequences at 10, 50, 100, 125, 200 on test and 10, 200 on dev), 2 reps, both sequence modes, and token probes.
 
-- **Estimated cost and time:** $7.86 from the design's estimates. After the smoke run, the dry run uses the smoke run's measured costs instead. About 30 minutes at concurrency 16.
+- **Estimated cost and time:** $7.86 from the design's estimates. After the smoke run, the dry run uses the smoke run's measured costs instead. About 30 minutes at concurrency 16 without a rate limit; at least 9.4 hours at the new-account limit of 20 requests per minute (see [Rate limits](#rate-limits)).
 - **Writes:** `results/<run_id>/`, a line in `spend_ledger.jsonl`, and a line in `test_ledger.jsonl`, since it includes the test split.
 
 ```bash

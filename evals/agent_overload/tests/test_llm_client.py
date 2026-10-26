@@ -29,7 +29,22 @@ OK_BODY = {
 }
 
 
-def client_with(responses, raw_dir=None, cap=None):
+class FakeTime:
+    """A clock whose sleep advances it, so pacing waits cost no real time."""
+
+    def __init__(self):
+        self.now = 1000.0
+        self.slept = 0.0
+
+    def clock(self):
+        return self.now
+
+    async def sleep(self, seconds):
+        self.now += seconds
+        self.slept += seconds
+
+
+def client_with(responses, raw_dir=None, cap=None, rpm=None, fake_time=None):
     calls = []
 
     def handler(request: httpx.Request) -> httpx.Response:
@@ -40,8 +55,11 @@ def client_with(responses, raw_dir=None, cap=None):
         status, body = item
         return httpx.Response(status, json=body) if isinstance(body, dict) else httpx.Response(status, text=body)
 
-    client = llm.OpenRouterClient(confirm_spend=True, api_key="test-key", raw_dir=raw_dir, spend=llm.SpendTracker(cap))
+    client = llm.OpenRouterClient(confirm_spend=True, api_key="test-key", raw_dir=raw_dir, spend=llm.SpendTracker(cap), rpm=rpm)
     client._http = httpx.AsyncClient(transport=httpx.MockTransport(handler))
+    fake_time = fake_time or FakeTime()
+    client._limiters["openai/gpt-6-luna"] = llm.RateLimiter(rpm, clock=fake_time.clock, sleep=fake_time.sleep)
+    client.fake_time = fake_time
     return client, calls
 
 
@@ -124,6 +142,29 @@ class OpenRouterClientTest(unittest.TestCase):
             asyncio.run(go())
         self.assertEqual(len(calls), 1)
 
+    def test_429_waits_for_the_reported_reset(self):
+        fake_time = FakeTime()
+        reset_ms = int((llm.time.time() + 30) * 1000)
+        body = {"error": {"message": "Rate limit exceeded: new-account-rpm", "code": 429,
+                          "metadata": {"headers": {"X-RateLimit-Limit": "20", "X-RateLimit-Remaining": "0", "X-RateLimit-Reset": str(reset_ms)}}}}
+        client, calls = client_with([(429, body), (200, OK_BODY)], fake_time=fake_time)
+        _data, record = chat(client)
+        self.assertEqual(record.attempts, 2)
+        self.assertTrue(28 <= fake_time.slept <= 31, fake_time.slept)
+
+    def test_pacing_spreads_calls_over_minutes(self):
+        fake_time = FakeTime()
+        client, calls = client_with([(200, OK_BODY)], rpm=3, fake_time=fake_time)
+
+        async def go():
+            for _ in range(7):
+                await client.chat(purpose="routing", model="openai/gpt-6-luna", messages=[{"role": "user", "content": "x"}])
+            await client.aclose()
+
+        asyncio.run(go())
+        self.assertEqual(len(calls), 7)
+        self.assertTrue(120 <= fake_time.slept < 121, fake_time.slept)  # 7 calls at 3/min: two full waits
+
     def test_requires_key(self):
         with self.assertRaises(llm.SpendNotConfirmed):
             llm.OpenRouterClient(confirm_spend=True, api_key="  ")
@@ -131,3 +172,15 @@ class OpenRouterClientTest(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class RateLimitHelpersTest(unittest.TestCase):
+    def test_rate_limit_wait_sources(self):
+        now = 1_800_000_000.0
+        r = httpx.Response(429, headers={"Retry-After": "12"}, json={})
+        self.assertEqual(llm.rate_limit_wait(r, now), 12.0)
+        r = httpx.Response(429, json={"error": {"metadata": {"headers": {"X-RateLimit-Reset": str(int((now + 20) * 1000))}}}})
+        self.assertAlmostEqual(llm.rate_limit_wait(r, now), 20.0, places=2)
+        r = httpx.Response(429, json={"error": {"metadata": {"headers": {"X-RateLimit-Reset": str(int((now + 600) * 1000))}}}})
+        self.assertEqual(llm.rate_limit_wait(r, now), llm.MAX_RATE_LIMIT_WAIT_S)
+        self.assertIsNone(llm.rate_limit_wait(httpx.Response(429, text="slow down"), now))

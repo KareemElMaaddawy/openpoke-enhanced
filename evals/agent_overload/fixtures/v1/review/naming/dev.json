@@ -1,0 +1,3157 @@
+{
+  "t-dev-0001": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0002": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0003": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0004": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0005": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0006": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0007": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0008": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0009": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0010": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0011": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0012": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0013": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0014": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0015": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0016": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0017": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0018": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0019": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0020": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0021": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0022": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0023": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0024": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0025": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0026": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0027": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0028": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0029": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0030": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0031": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0032": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0033": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0034": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0035": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0036": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0037": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0038": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0039": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0040": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0041": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0042": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0043": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0044": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0045": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0046": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0047": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0048": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0049": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0050": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": "Audiocare Appointment Email Search",
+        "reason": "accepted"
+      }
+    ],
+    "instructions": "Find the user's hearing test appointment confirmation from Audiocare in their email. Report the message date, appointment date/time, location, and any useful details. Do not send or reply to any email.",
+    "name": "Audiocare Appointment Email Search",
+    "provenance": {
+      "attempts": 1,
+      "canonical_slug": "openai/gpt-6-luna-20260922",
+      "fake": false,
+      "model": "openai/gpt-6-luna",
+      "request_sha256": "09706c45d57104d086f7aec9151c0e97f9fdcd1de1393f8e2c551873ecaf125d",
+      "returned_model": "openai/gpt-6-luna"
+    },
+    "status": "named"
+  },
+  "t-dev-0051": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0052": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0053": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0054": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0055": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0201": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0202": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0203": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0204": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0205": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0206": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0207": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0208": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0209": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0210": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0211": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0212": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0213": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0214": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0215": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0216": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0217": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0218": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0219": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0220": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0221": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0222": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0223": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0224": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0225": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": "Money20/20 Vegas Email Search",
+        "reason": "accepted"
+      }
+    ],
+    "instructions": "Find the user's Money20/20 emails relevant to Las Vegas. Summarize key information, especially hotel booking/location, rates, deadlines, and badge/registration details, including dates and links. Report the email subjects/senders and distinguish confirmed facts from anything unclear.",
+    "name": "Money20/20 Vegas Email Search",
+    "provenance": {
+      "attempts": 1,
+      "canonical_slug": "openai/gpt-6-luna-20260922",
+      "fake": false,
+      "model": "openai/gpt-6-luna",
+      "request_sha256": "f85dca8765ccf87c26ad0b141e842a7ec5ee5539a75d8f924789eb7dbc34a5b9",
+      "returned_model": "openai/gpt-6-luna"
+    },
+    "status": "named"
+  },
+  "t-dev-0226": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "no delegation"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0227": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0228": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0229": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0230": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": "Via Rail ticket reminder",
+        "reason": "accepted"
+      }
+    ],
+    "instructions": "The user wants a reminder to print a Via Rail ticket for Toronto to Montreal on Nov 6. The reminder date/time is unspecified. Check whether any relevant context provides a preferred reminder time; otherwise report that we need to ask the user for date/time before setting it. Assume upcoming Nov 6, 2026 unless context suggests otherwise.",
+    "name": "Via Rail ticket reminder",
+    "provenance": {
+      "attempts": 1,
+      "canonical_slug": "openai/gpt-6-luna-20260922",
+      "fake": false,
+      "model": "openai/gpt-6-luna",
+      "request_sha256": "64285519c3ec5c8aee9377c175d6ed7e7d1f739be820f9d0e45945ed35e1e3d1",
+      "returned_model": "openai/gpt-6-luna"
+    },
+    "status": "named"
+  },
+  "t-dev-0231": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0232": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0233": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0234": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0235": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0236": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": "Carmel Car Service Quote",
+        "reason": "accepted"
+      }
+    ],
+    "instructions": "Search the user's email/messages for Carmel Car Service quote related to JFK pickup on Oct 30. Report whether a quote was sent, when, and the quoted price/details if found.",
+    "name": "Carmel Car Service Quote",
+    "provenance": {
+      "attempts": 1,
+      "canonical_slug": "openai/gpt-6-luna-20260922",
+      "fake": false,
+      "model": "openai/gpt-6-luna",
+      "request_sha256": "e5c9eafe73838e252af409eaf45884065384f9737ea5b79c8b18167e313b4124",
+      "returned_model": "openai/gpt-6-luna"
+    },
+    "status": "named"
+  },
+  "t-dev-0237": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": "Harborline Rate Sheet Search",
+        "reason": "accepted"
+      }
+    ],
+    "instructions": "Find Yuki Tanaka's email containing or attaching the Harborline rate sheet for Q4. Return relevant email details (date, sender, subject, snippet/attachment info), do not send or forward anything.",
+    "name": "Harborline Rate Sheet Search",
+    "provenance": {
+      "attempts": 1,
+      "canonical_slug": "openai/gpt-6-luna-20260922",
+      "fake": false,
+      "model": "openai/gpt-6-luna",
+      "request_sha256": "ee25c5b8b8785c674fdf56581effba79bd88afc6bb04485d23667867971dda74",
+      "returned_model": "openai/gpt-6-luna"
+    },
+    "status": "named"
+  },
+  "t-dev-0238": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0239": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0240": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": "Find Solvik CRM email",
+        "reason": "accepted"
+      }
+    ],
+    "instructions": "Find Lars Eriksen's email about the Solvik CRM migration and summarize its key points, including any timeline, risks, decisions, and requested actions.",
+    "name": "Find Solvik CRM email",
+    "provenance": {
+      "attempts": 1,
+      "canonical_slug": "openai/gpt-6-luna-20260922",
+      "fake": false,
+      "model": "openai/gpt-6-luna",
+      "request_sha256": "ffe7a4399f5fad0f0b4035eaca1052a590068a7a17fef88fac4fce28d09c8e10",
+      "returned_model": "openai/gpt-6-luna"
+    },
+    "status": "named"
+  },
+  "t-dev-0241": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0242": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0243": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": "Reminder",
+        "reason": "accepted"
+      }
+    ],
+    "instructions": "Create a reminder for September 29, 2026: call Pilar Gutierrez about the Crestline proof. Use a reasonable default time if one is required; report what time/time zone you set.",
+    "name": "Reminder",
+    "provenance": {
+      "attempts": 1,
+      "canonical_slug": "openai/gpt-6-luna-20260922",
+      "fake": false,
+      "model": "openai/gpt-6-luna",
+      "request_sha256": "0fecc588e75b51f86ae7c3f970abbd43875291340ada878c6e6050c6c66f3e38",
+      "returned_model": "openai/gpt-6-luna"
+    },
+    "status": "named"
+  },
+  "t-dev-0244": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0245": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0246": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0247": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0248": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0249": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0250": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0251": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0252": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0253": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0254": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0255": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": "Lumen Packaging Design Review",
+        "reason": "accepted"
+      }
+    ],
+    "instructions": "Find the relevant Tomasz at Lumen Packaging (contact/email) and check the user's calendar availability next week for a design review about label mockups. Propose a suitable slot and report details. Do not send any invitations yet.",
+    "name": "Lumen Packaging Design Review",
+    "provenance": {
+      "attempts": 1,
+      "canonical_slug": "openai/gpt-6-luna-20260922",
+      "fake": false,
+      "model": "openai/gpt-6-luna",
+      "request_sha256": "9572ad92ea2d98d0d17d998adb927dc41d2cce9b60bf38ecaa204a640a61a94b",
+      "returned_model": "openai/gpt-6-luna"
+    },
+    "status": "named"
+  },
+  "t-dev-0256": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0257": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0258": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0259": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0260": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0261": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0262": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0263": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0264": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0265": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0266": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0267": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0268": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0269": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0270": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0271": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0272": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0273": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0274": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0275": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0276": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0277": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0278": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0279": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": "Crate & Barrel Order Support",
+        "reason": "accepted"
+      }
+    ],
+    "instructions": "Find the appropriate email/contact for Crate & Barrel customer service to request a delivery address change on an existing order. Do not send anything. Report the best contact route and any relevant constraints.",
+    "name": "Crate & Barrel Order Support",
+    "provenance": {
+      "attempts": 1,
+      "canonical_slug": "openai/gpt-6-luna-20260922",
+      "fake": false,
+      "model": "openai/gpt-6-luna",
+      "request_sha256": "f21f192b0d0f8184f12b15a654f8791a99a598d3e10c31456278ce5b32a85222",
+      "returned_model": "openai/gpt-6-luna"
+    },
+    "status": "named"
+  },
+  "t-dev-0280": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0281": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0282": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0283": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0284": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0285": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0286": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0287": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": "Samsung Watch order email",
+        "reason": "accepted"
+      }
+    ],
+    "instructions": "Find the user's Samsung Watch order email and summarize it, focusing especially on the trade-in credit: amount, how/when applied, conditions or deadlines, and any caveats. Include order basics briefly.",
+    "name": "Samsung Watch order email",
+    "provenance": {
+      "attempts": 1,
+      "canonical_slug": "openai/gpt-6-luna-20260922",
+      "fake": false,
+      "model": "openai/gpt-6-luna",
+      "request_sha256": "72d6bf045680a48983dcb5ae57fa63671e26b7907ae6092baff37906887aefd2",
+      "returned_model": "openai/gpt-6-luna"
+    },
+    "status": "named"
+  },
+  "t-dev-0288": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0289": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0290": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": "Bed Bath Coupon Reminder",
+        "reason": "accepted"
+      }
+    ],
+    "instructions": "Set a reminder for the user to use their Bed Bath coupon on October 30, before it expires October 31. Use the next upcoming October 30 if year is not specified; report confirmation and any reminder details.",
+    "name": "Bed Bath Coupon Reminder",
+    "provenance": {
+      "attempts": 1,
+      "canonical_slug": "openai/gpt-6-luna-20260922",
+      "fake": false,
+      "model": "openai/gpt-6-luna",
+      "request_sha256": "7311764994196be65bf60a38b353465781f6e536a6c9676f4369b88e76a340ed",
+      "returned_model": "openai/gpt-6-luna"
+    },
+    "status": "named"
+  },
+  "t-dev-0291": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0292": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0293": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0294": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0295": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0296": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0297": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0298": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0299": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0300": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0301": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0302": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0303": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0304": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0305": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0306": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0307": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0308": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0309": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0310": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0311": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0312": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0313": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0314": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0315": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": "Search Strava Receipt",
+        "reason": "accepted"
+      }
+    ],
+    "instructions": "Find the user's Strava receipt email for the annual charge in September. Report sender, subject, date, amount if available, and location/mailbox context with a concise summary.",
+    "name": "Search Strava Receipt",
+    "provenance": {
+      "attempts": 1,
+      "canonical_slug": "openai/gpt-6-luna-20260922",
+      "fake": false,
+      "model": "openai/gpt-6-luna",
+      "request_sha256": "f23fe9c75e4fa1890c3e2a60874210e37f20b17379b298940d0578786d19d602",
+      "returned_model": "openai/gpt-6-luna"
+    },
+    "status": "named"
+  },
+  "t-dev-0316": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0317": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": "The Hustle Nov 3 issue",
+        "reason": "accepted"
+      }
+    ],
+    "instructions": "Find The Hustle newsletter issue from November 3 (most recent likely year if not specified; determine available year/context). Summarize the key stories and takeaways concisely, and cite links or issue date/year.",
+    "name": "The Hustle Nov 3 issue",
+    "provenance": {
+      "attempts": 1,
+      "canonical_slug": "openai/gpt-6-luna-20260922",
+      "fake": false,
+      "model": "openai/gpt-6-luna",
+      "request_sha256": "514e3d519b304b69005e418a94aebd0b0fb632c440d4d1ae33ccd2f37ea2b8b9",
+      "returned_model": "openai/gpt-6-luna"
+    },
+    "status": "named"
+  },
+  "t-dev-0318": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0319": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0320": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0321": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0322": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0323": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0324": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0325": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0326": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0327": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0328": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0329": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0330": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0331": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0332": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0333": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0334": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0335": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0336": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0337": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": "Reminder setup",
+        "reason": "accepted"
+      }
+    ],
+    "instructions": "Set a reminder for September 30, 2026: remind me to get Sophie to write Aunt Rosa a thank-you note before the end of September. Report when done.",
+    "name": "Reminder setup",
+    "provenance": {
+      "attempts": 1,
+      "canonical_slug": "openai/gpt-6-luna-20260922",
+      "fake": false,
+      "model": "openai/gpt-6-luna",
+      "request_sha256": "adb8788748b000478eb3245b8301fc996bd2bd41916624d96383de1579cdb3df",
+      "returned_model": "openai/gpt-6-luna"
+    },
+    "status": "named"
+  },
+  "t-dev-0338": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0339": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0340": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0341": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": "Meera baby shower RSVP",
+        "reason": "accepted"
+      }
+    ],
+    "instructions": "Find the right Meera/contact and prepare (do not send) a concise message confirming the user will attend her baby shower on Nov 1, and asking what to bring. Return recipient/contact and exact message; if contact ambiguity, report options.",
+    "name": "Meera baby shower RSVP",
+    "provenance": {
+      "attempts": 1,
+      "canonical_slug": "openai/gpt-6-luna-20260922",
+      "fake": false,
+      "model": "openai/gpt-6-luna",
+      "request_sha256": "337e275ec5823c5267bb235007483a9e583cafb1f62b29908d521ea7b787a367",
+      "returned_model": "openai/gpt-6-luna"
+    },
+    "status": "named"
+  },
+  "t-dev-0342": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0343": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0344": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0345": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0346": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": "Elena Voss Greenline Forum",
+        "reason": "accepted"
+      }
+    ],
+    "instructions": "Find Elena Voss's email/contact and relevant Greenline Forum speaking-slot conversation. Prepare a concise reply accepting the Nov 10 speaking slot. Do not send it; return exact recipient, subject, and body for user review.",
+    "name": "Elena Voss Greenline Forum",
+    "provenance": {
+      "attempts": 1,
+      "canonical_slug": "openai/gpt-6-luna-20260922",
+      "fake": false,
+      "model": "openai/gpt-6-luna",
+      "request_sha256": "b0645bca24d387038d67089c929a1e9514d06d5476e75dcab72698169d973102",
+      "returned_model": "openai/gpt-6-luna"
+    },
+    "status": "named"
+  },
+  "t-dev-0347": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": "Southwest SaaS Connect Vegas confirmation",
+        "reason": "accepted"
+      }
+    ],
+    "instructions": "Find the Southwest confirmation email for the user's Las Vegas trip to SaaS Connect. Return confirmation/record locator, itinerary dates/times, airports, passenger name if visible, and email subject/date. Do not modify or send anything.",
+    "name": "Southwest SaaS Connect Vegas confirmation",
+    "provenance": {
+      "attempts": 1,
+      "canonical_slug": "openai/gpt-6-luna-20260922",
+      "fake": false,
+      "model": "openai/gpt-6-luna",
+      "request_sha256": "e38d939c8e8a090459958e69691ee2fa4b3ed268939783d648b5de6e2e517896",
+      "returned_model": "openai/gpt-6-luna"
+    },
+    "status": "named"
+  },
+  "t-dev-0348": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0349": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0350": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0351": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0352": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0353": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": "Vivid Seats Order Search",
+        "reason": "accepted"
+      }
+    ],
+    "instructions": "Find the user's Vivid Seats order for the Noelle Park show. Search available email/order sources and report matching order details, including date, venue, tickets, order number, and any relevant email location. Do not send or modify anything.",
+    "name": "Vivid Seats Order Search",
+    "provenance": {
+      "attempts": 1,
+      "canonical_slug": "openai/gpt-6-luna-20260922",
+      "fake": false,
+      "model": "openai/gpt-6-luna",
+      "request_sha256": "2a34314d613f41c93ecec42212ccadc1977584fad458172e84dc4c8895ee6a92",
+      "returned_model": "openai/gpt-6-luna"
+    },
+    "status": "named"
+  },
+  "t-dev-0354": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0355": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0356": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0357": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "no delegation"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0358": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0359": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0360": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": "Verizon Fios Return Label",
+        "reason": "accepted"
+      }
+    ],
+    "instructions": "Find the Verizon Fios email containing the router return label. Report the email date/sender/subject, whether the label is attached or linked, and any key return/shipping instructions. Do not send anything.",
+    "name": "Verizon Fios Return Label",
+    "provenance": {
+      "attempts": 1,
+      "canonical_slug": "openai/gpt-6-luna-20260922",
+      "fake": false,
+      "model": "openai/gpt-6-luna",
+      "request_sha256": "d681ef17e59472f7e7b0728df42b24ca23638d1a58c6bb535b84cbeb709ef32f",
+      "returned_model": "openai/gpt-6-luna"
+    },
+    "status": "named"
+  },
+  "t-dev-0361": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0362": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0363": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0364": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0365": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0366": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0367": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0368": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0369": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0370": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0371": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0372": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0373": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0374": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0375": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0376": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0377": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0378": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0379": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0380": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0381": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0382": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0383": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0384": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0385": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0386": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0387": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": "Cigna Chiropractor Claim Email",
+        "reason": "accepted"
+      }
+    ],
+    "instructions": "Search the user's email for the Cigna message about a denied chiropractor claim. Report the denial reason and any relevant claim/date details, quoting the pertinent wording if available. Do not reply to or forward the email.",
+    "name": "Cigna Chiropractor Claim Email",
+    "provenance": {
+      "attempts": 1,
+      "canonical_slug": "openai/gpt-6-luna-20260922",
+      "fake": false,
+      "model": "openai/gpt-6-luna",
+      "request_sha256": "56502c7700a4238357038dc0ea2ccc99fe3936199d9a0ffc3898edb36e06ed2d",
+      "returned_model": "openai/gpt-6-luna"
+    },
+    "status": "named"
+  },
+  "t-dev-0388": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0389": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0390": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0391": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0392": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0393": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0394": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0395": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0396": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0397": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0398": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0399": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0400": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0401": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": "Zendesk API Token Alert Search",
+        "reason": "accepted"
+      }
+    ],
+    "instructions": "Search the user's messages/email for the Zendesk alert about an API token someone created. Find the alert and report key details (who created it, when, token name or context, and source/message).",
+    "name": "Zendesk API Token Alert Search",
+    "provenance": {
+      "attempts": 1,
+      "canonical_slug": "openai/gpt-6-luna-20260922",
+      "fake": false,
+      "model": "openai/gpt-6-luna",
+      "request_sha256": "d257405f682509a1eb5b6de48153f019cc955880869b6d9b45656eb5d51efed0",
+      "returned_model": "openai/gpt-6-luna"
+    },
+    "status": "named"
+  },
+  "t-dev-0402": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": "Namecheap email search",
+        "reason": "accepted"
+      }
+    ],
+    "instructions": "Find the Namecheap email saying 2FA/two-factor authentication was turned off. Pull up the matching email and report sender, subject, date, and the relevant content.",
+    "name": "Namecheap email search",
+    "provenance": {
+      "attempts": 1,
+      "canonical_slug": "openai/gpt-6-luna-20260922",
+      "fake": false,
+      "model": "openai/gpt-6-luna",
+      "request_sha256": "40789e8a1492e1959fb0f116cb507d4b50125f5f8fb8100b488f7e833db87824",
+      "returned_model": "openai/gpt-6-luna"
+    },
+    "status": "named"
+  },
+  "t-dev-0403": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": "HubSpot Email Search",
+        "reason": "accepted"
+      }
+    ],
+    "instructions": "Find the HubSpot email about blocked login attempts in the user's inbox and summarize its key details in a concise note addressed for Sam. Report the email date, notable counts/timestamps, and any recommended actions if present. Do not send or forward anything.",
+    "name": "HubSpot Email Search",
+    "provenance": {
+      "attempts": 1,
+      "canonical_slug": "openai/gpt-6-luna-20260922",
+      "fake": false,
+      "model": "openai/gpt-6-luna",
+      "request_sha256": "f0d21837fd55722e9fb6113e932301be54e7288fccc290b8890752aa65e8a1c2",
+      "returned_model": "openai/gpt-6-luna"
+    },
+    "status": "named"
+  },
+  "t-dev-0404": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0405": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0406": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": "Amex Replacement Card Email",
+        "reason": "accepted"
+      }
+    ],
+    "instructions": "Find the Amex email about the user's replacement card shipping. Return the relevant email details (sender, subject, date, and shipping/tracking information) without replying or forwarding.",
+    "name": "Amex Replacement Card Email",
+    "provenance": {
+      "attempts": 1,
+      "canonical_slug": "openai/gpt-6-luna-20260922",
+      "fake": false,
+      "model": "openai/gpt-6-luna",
+      "request_sha256": "509ae03536b86b914e874ddd685cdc3047b27e03667447f8f470081a94c8e112",
+      "returned_model": "openai/gpt-6-luna"
+    },
+    "status": "named"
+  },
+  "t-dev-0407": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0408": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0409": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  },
+  "t-dev-0410": {
+    "attempts": 1,
+    "history": [
+      {
+        "attempt": 1,
+        "name": null,
+        "reason": "error: HTTP 429: {\"error\":{\"message\":\"Rate limit exceeded: new-account-rpm/openai/gpt-6-luna-20260922. Rate limit reached: new accounts are limited to 20 requests per minute for this model. Please retry shortly.\",\"code\":429,\"metadata\":{\"headers\":{\"X-RateLimit-Limit\":\"20\",\"X-RateLimit-Remaining\":\"0\",\"X-RateLimit-Rese (after 6 attempts)"
+      }
+    ],
+    "status": "pending"
+  }
+}

@@ -21,6 +21,7 @@ from string import Template
 from typing import Any, Awaitable, Callable, Optional
 
 from ..harness.llm import (
+    DEFAULT_RPM,
     FakeClient,
     ModelClient,
     OpenRouterClient,
@@ -78,6 +79,10 @@ def base_parser(description: str, paid: bool = True) -> argparse.ArgumentParser:
     parser.add_argument("--config", type=Path, default=DEFAULT_CONFIG, help="run config (models, provider, budget)")
     if paid:
         parser.add_argument("--concurrency", type=int, default=8)
+        parser.add_argument(
+            "--rpm", type=float, default=DEFAULT_RPM,
+            help=f"max requests per minute per model (default {DEFAULT_RPM:g}, under OpenRouter's new-account limit of 20; 0 = no pacing)",
+        )
         parser.add_argument("--accept-model-change", action="store_true", help="continue if a pinned model moved")
         add_paid_args(parser)
     else:
@@ -211,11 +216,22 @@ def run_paid_step(
     pricing = load_pricing()
     estimate = sum(p.cost(pricing) for p in planned)
     cap = args.max_cost if args.max_cost is not None else round(max(0.05, 2 * estimate), 2)
+    extra_lines = list(extra_lines or []) + [pacing_line(planned, args.rpm)]
     mode = gate(args, title, planned, budget=budget, cap_usd=cap, extra_lines=extra_lines)
     if mode == "dry_run":
         return 0
     ensure_not_frozen(args.fixtures_dir)
     return asyncio.run(_execute(args, step, body, models, fake_responders, config, cap, mode))
+
+
+def pacing_line(planned: list[PlannedCalls], rpm: Optional[float]) -> str:
+    if not rpm:
+        return "pacing: off (--rpm 0)"
+    by_model: dict[str, float] = {}
+    for p in planned:
+        by_model[p.model] = by_model.get(p.model, 0.0) + p.calls
+    slowest = max(by_model.values(), default=0.0) / rpm
+    return f"pacing: at most {rpm:g} requests/minute per model, so this step takes at least {slowest:.0f} minutes"
 
 
 async def _execute(args, step, body, models, fake_responders, config, cap, mode) -> int:
@@ -236,6 +252,7 @@ async def _execute(args, step, body, models, fake_responders, config, cap, mode)
             spend=spend,
             raw_dir=RAW_DIR / step / stamp,
             concurrency=args.concurrency,
+            rpm=args.rpm,
         )
     ctx = StepContext(client, observed, args, config)
     status = 0

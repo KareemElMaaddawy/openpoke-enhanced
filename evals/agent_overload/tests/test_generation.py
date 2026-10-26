@@ -226,6 +226,40 @@ class AssembleTest(unittest.TestCase):
             self.assertTrue(100 <= n <= 126 and n % 2 == 0)
 
 
+class NamingStateTest(unittest.TestCase):
+    def test_api_errors_do_not_use_up_attempts(self):
+        entry = {"status": "pending", "attempts": 0, "history": []}
+        taken, slugs = set(), set()
+        for n in range(1, 6):
+            name_agents.record_result(entry, n, RuntimeError("HTTP 429"), taken, slugs, lambda r, k: {})
+        self.assertEqual(entry["status"], "pending")
+        self.assertEqual(entry["attempts"], 5)
+
+    def test_three_model_failures_drop(self):
+        entry = {"status": "pending", "attempts": 0, "history": []}
+        taken, slugs = {"Taken Name"}, {"taken-name"}
+
+        class D:
+            agent_name = "taken name"
+            instructions = "x"
+
+        name_agents.record_result(entry, 1, (None, None), taken, slugs, lambda r, k: {})
+        name_agents.record_result(entry, 2, RuntimeError("HTTP 429"), taken, slugs, lambda r, k: {})
+        name_agents.record_result(entry, 3, (D(), None), taken, slugs, lambda r, k: {})  # slug collision
+        self.assertEqual(entry["status"], "pending")
+        name_agents.record_result(entry, 4, (None, None), taken, slugs, lambda r, k: {})
+        self.assertEqual(entry["status"], "dropped")
+
+    def test_requeue_restores_error_only_drops(self):
+        state = {
+            "a": {"status": "dropped", "history": [{"reason": "error: 429"}] * 3},
+            "b": {"status": "dropped", "history": [{"reason": "no delegation"}, {"reason": "collision"}, {"reason": "no delegation"}]},
+            "c": {"status": "named", "history": [{"reason": "accepted"}]},
+        }
+        self.assertEqual(name_agents.requeue(state), 1)
+        self.assertEqual([state[k]["status"] for k in "abc"], ["pending", "dropped", "named"])
+
+
 class CompareRulesTest(unittest.TestCase):
     def cfg(self, splits, **kw):
         base = {"run_id": "r", "fake_model": False, "end": {}, "case_set_hash": "h", "plan": {"splits": splits},

@@ -22,6 +22,7 @@ import math
 import re
 import threading
 import time
+from collections import deque
 from dataclasses import asdict, dataclass, field
 from html import unescape
 from pathlib import Path
@@ -36,6 +37,10 @@ from .util import EVAL_ROOT, canonical_json, sha256_hex, slug_tokens
 PRICING_PATH = EVAL_ROOT / "configs" / "pricing.json"
 TIMEOUT_S = 60.0
 BACKOFF_S = (1, 2, 4, 8, 16)
+# OpenRouter limits new accounts to 20 requests per minute per model (seen 2026-10-26),
+# so paid clients pace themselves under that by default. --rpm overrides it; 0 disables pacing.
+DEFAULT_RPM = 18.0
+MAX_RATE_LIMIT_WAIT_S = 65.0
 ADDED_KEYS = ("provider", "usage", "seed", "max_tokens")
 
 # The call position (case_id, N, mode, rep, turn) of the unit being run; read for seeds and records.
@@ -176,6 +181,71 @@ class SpendTracker:
 
 
 # ---------------------------------------------------------------------------
+# Request pacing
+
+
+class RateLimiter:
+    """At most ``rpm`` request starts in any rolling 60 seconds, plus a pause after a 429.
+
+    One limiter per model, since OpenRouter's limit is per model. Every HTTP attempt,
+    retries included, counts against the limit.
+    """
+
+    def __init__(self, rpm: Optional[float], clock: Callable[[], float] = time.monotonic, sleep=None):
+        self.rpm = rpm if rpm and rpm > 0 else None
+        self._clock = clock
+        self._sleep = sleep or asyncio.sleep
+        self._starts: deque = deque()
+        self._paused_until = 0.0
+        self._lock = asyncio.Lock()
+
+    def pause(self, seconds: float) -> None:
+        self._paused_until = max(self._paused_until, self._clock() + seconds)
+
+    async def acquire(self) -> None:
+        async with self._lock:
+            while True:
+                now = self._clock()
+                if now < self._paused_until:
+                    await self._sleep(self._paused_until - now)
+                    continue
+                if self.rpm is None:
+                    return
+                while self._starts and now - self._starts[0] >= 60.0:
+                    self._starts.popleft()
+                if len(self._starts) < self.rpm:
+                    self._starts.append(now)
+                    return
+                await self._sleep(60.0 - (now - self._starts[0]) + 0.05)
+
+
+def rate_limit_wait(response: "httpx.Response", now_epoch: Optional[float] = None) -> Optional[float]:
+    """Seconds until a 429's limit resets, from Retry-After or X-RateLimit-Reset (header or error metadata)."""
+    now_epoch = time.time() if now_epoch is None else now_epoch
+    retry_after = response.headers.get("retry-after")
+    if retry_after:
+        try:
+            return min(MAX_RATE_LIMIT_WAIT_S, max(1.0, float(retry_after)))
+        except ValueError:
+            pass
+    reset = response.headers.get("x-ratelimit-reset")
+    if not reset:
+        try:
+            body = response.json()
+            reset = ((body.get("error") or {}).get("metadata") or {}).get("headers", {}).get("X-RateLimit-Reset")
+        except (ValueError, AttributeError):
+            reset = None
+    if reset:
+        try:
+            value = float(reset)
+        except ValueError:
+            return None
+        seconds = value / 1000.0 - now_epoch if value > 1e11 else value - now_epoch
+        return min(MAX_RATE_LIMIT_WAIT_S, max(1.0, seconds))
+    return None
+
+
+# ---------------------------------------------------------------------------
 # Clients
 
 
@@ -276,6 +346,7 @@ class OpenRouterClient(ModelClient):
         timeout_s: float = TIMEOUT_S,
         max_retries: int = 5,
         base_url: str = OpenRouterBaseURL,
+        rpm: Optional[float] = DEFAULT_RPM,
         **kwargs: Any,
     ):
         if confirm_spend is not True:
@@ -296,14 +367,24 @@ class OpenRouterClient(ModelClient):
         self.max_retries = max_retries
         self.base_url = base_url.rstrip("/")
         self._http = httpx.AsyncClient(timeout=timeout_s)
+        self.rpm = rpm
+        self._limiters: dict[str, RateLimiter] = {}
+
+    def limiter(self, model: str) -> RateLimiter:
+        if model not in self._limiters:
+            self._limiters[model] = RateLimiter(self.rpm)
+        return self._limiters[model]
 
     async def _send(self, payload: dict, record: CallRecord, fake_hint: Any) -> dict:
         url = f"{self.base_url}/chat/completions"
         last_error = "unknown error"
+        limiter = self.limiter(payload["model"])
         for attempt in range(self.max_retries + 1):
             record.attempts = attempt + 1
+            await limiter.acquire()
             started = time.monotonic()
             retryable = False
+            wait_s: Optional[float] = None
             try:
                 response = await self._http.post(url, headers=self._headers, json=payload)
             except httpx.HTTPError as exc:
@@ -314,6 +395,10 @@ class OpenRouterClient(ModelClient):
                 if response.status_code == 429 or response.status_code >= 500:
                     last_error = f"HTTP {response.status_code}: {response.text[:300]}"
                     retryable = True
+                    if response.status_code == 429:
+                        # Wait for the limit to reset (shared by every call to this model), not a short backoff.
+                        wait_s = rate_limit_wait(response) or float(BACKOFF_S[min(attempt, len(BACKOFF_S) - 1)])
+                        limiter.pause(wait_s)
                 elif response.status_code >= 400:
                     record.error = f"HTTP {response.status_code}: {response.text[:500]}"
                     self._save_raw(record.call_id, payload, {"status": response.status_code, "body": response.text})
@@ -337,7 +422,8 @@ class OpenRouterClient(ModelClient):
                         else:
                             return data
             if retryable and attempt < self.max_retries:
-                await asyncio.sleep(BACKOFF_S[min(attempt, len(BACKOFF_S) - 1)])
+                if wait_s is None:  # a 429 already paused the limiter, which acquire() waits out
+                    await asyncio.sleep(BACKOFF_S[min(attempt, len(BACKOFF_S) - 1)])
                 continue
             break
         record.error = last_error
@@ -500,6 +586,8 @@ __all__ = [
     "FakeClient",
     "ModelClient",
     "OpenRouterClient",
+    "RateLimiter",
+    "DEFAULT_RPM",
     "SpendCapReached",
     "SpendNotConfirmed",
     "SpendTracker",
