@@ -1,13 +1,13 @@
 # Agent overload: baseline experiment inputs
 
-What has been agreed for measuring the current system's baseline, as input for designing the experiment. The experiment itself (harness, fixtures, query set) is not designed yet. Causes and metric definitions are in [agent-overload-causes-and-metrics.md](agent-overload-causes-and-metrics.md); the problem statement and decision log are in [agent-overload.md](agent-overload.md).
+What has been agreed for measuring the current system's baseline, as input for designing the experiment. The experiment itself (harness, fixtures, query set) is designed in [agent-overload-experiment-design.md](agent-overload-experiment-design.md), which also answers the open questions below. Causes and metric definitions are in [agent-overload-causes-and-metrics.md](agent-overload-causes-and-metrics.md); the problem statement and decision log are in [agent-overload.md](agent-overload.md).
 
 ## System under test
 
 The baseline measures the code as it is today:
 
 - Roster entries are **names only**, matching `server/services/execution/roster.py`. Richer agent records are a later comparison against this baseline.
-- Interaction agent and execution agent models as set in `server/config.py` (`anthropic/claude-haiku-5.5` for both at the time of writing).
+- Interaction agent and execution agent models as set in `server/config.py`: `openai/gpt-6-luna` for every role since 2026-10-25. It replaced `anthropic/claude-haiku-5.5`, which was a placeholder after Sonnet 4.4 was retired. The reason was that an improvement shown on a stronger model is more convincing.
 - Execution agent tools as they are: Gmail, the `search_email` task and triggers.
 
 **No new integrations before the baseline.** Every execution agent gets the same tools, and routing only sees agent names and the conversation, never tools. Adding integrations wouldn't change what routing sees, but it would change the system being measured. Test topics (for example AWS invoices or Uber Eats receipts) are things found **through email**, so Gmail covers them. Adding integrations later is its own experiment: more tools per execution agent is single-agent overload inside the execution agent, and new integrations may lead to more agents being created.
