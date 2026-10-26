@@ -51,11 +51,11 @@ class Settings(BaseModel):
     server_port: int = Field(default=_env_int("OPENPOKE_PORT", 8001))
 
     # LLM model selection
-    interaction_agent_model: str = Field(default="anthropic/claude-haiku-5.5")
-    execution_agent_model: str = Field(default="anthropic/claude-haiku-5.5")
-    execution_agent_search_model: str = Field(default="anthropic/claude-haiku-5.5")
-    summarizer_model: str = Field(default="anthropic/claude-haiku-5.5")
-    email_classifier_model: str = Field(default="anthropic/claude-haiku-5.5")
+    interaction_agent_model: str = Field(default="openai/gpt-6-luna")
+    execution_agent_model: str = Field(default="openai/gpt-6-luna")
+    execution_agent_search_model: str = Field(default="openai/gpt-6-luna")
+    summarizer_model: str = Field(default="openai/gpt-6-luna")
+    email_classifier_model: str = Field(default="openai/gpt-6-luna")
 
     # Credentials / integrations
     openrouter_api_key: Optional[str] = Field(default=os.getenv("OPENROUTER_API_KEY"))
