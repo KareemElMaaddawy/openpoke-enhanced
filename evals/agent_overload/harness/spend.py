@@ -107,7 +107,8 @@ def format_plan(
         )
     if estimate_override is not None:
         total = estimate_override
-    lines.append("")
+    if planned:
+        lines.append("")
     lines.append(f"estimated cost:            ${total:.2f}")
     lines.append(f"with margin x{budget.estimate_margin:g}:          ${total * budget.estimate_margin:.2f}")
     lines.append(f"spend ledger total so far: ${ledger_usd:.2f} of the ${budget.total_cap_usd:.2f} cap")

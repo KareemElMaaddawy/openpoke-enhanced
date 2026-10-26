@@ -171,7 +171,7 @@ def main(argv: Optional[list[str]] = None) -> int:
     config = load_config(args.config)
     plan = resolve_plan(config, args.profile)
     max_cost = args.max_cost if args.max_cost is not None else float(config["budget"]["max_cost_usd"])
-    cfg_hash = config_hash(config, args.profile, max_cost)
+    cfg_hash = config_hash(config, args.profile)
     budget = Budget(float(config["budget"]["total_cap_usd"]), float(config["budget"]["estimate_margin"]))
     manifest_path = args.manifest or (REPO_ROOT / config["case_set"]["manifest"])
     expected_hash = config["case_set"].get("expected_hash")
@@ -209,6 +209,12 @@ def main(argv: Optional[list[str]] = None) -> int:
     ]
     if fixture_note:
         extra.append("  " + fixture_note)
+    if estimate * budget.estimate_margin > max_cost:
+        extra.append(
+            f"  WARNING: estimate x margin (${estimate * budget.estimate_margin:.2f}) is above the per-run cap "
+            f"(${max_cost:.2f}); the run would probably be capped and unusable. Pass --max-cost "
+            f"{round(estimate * budget.estimate_margin * 1.2 + 0.5)} after checking the smoke run's costs."
+        )
     mode = gate(
         args, f"run.py --profile {args.profile} ({config['method']['name']} v{config['method']['version']})", [],
         budget=budget, cap_usd=max_cost, extra_lines=extra, estimate_override=estimate,

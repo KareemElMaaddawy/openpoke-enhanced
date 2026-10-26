@@ -72,9 +72,12 @@ def check_comparable(a: dict, b: dict) -> list[str]:
             raise CompareError(f"{name} run {cfg['run_id']} failed its api_error limit")
     if a["case_set_hash"] != b["case_set_hash"]:
         raise CompareError("case_set_hash differs: the runs used different fixtures")
-    if sorted(a["plan"]["splits"]) != sorted(b["plan"]["splits"]):
-        raise CompareError(f"splits differ: {a['plan']['splits']} vs {b['plan']['splits']}")
+    shared = sorted(set(a["plan"]["splits"]) & set(b["plan"]["splits"]))
+    if not shared:
+        raise CompareError(f"the runs share no split: {a['plan']['splits']} vs {b['plan']['splits']}")
     warnings = []
+    if sorted(a["plan"]["splits"]) != sorted(b["plan"]["splits"]):
+        warnings.append(f"comparing the shared split(s) only: {shared}")
     if a["models"].get("observed_canonical_slugs") != b["models"].get("observed_canonical_slugs"):
         warnings.append(f"model canonical slugs differ: {a['models']['observed_canonical_slugs']} vs {b['models']['observed_canonical_slugs']}")
     if a["models"].get("provider") != b["models"].get("provider"):

@@ -2,7 +2,7 @@
 
 The design of the baseline experiment, detailed enough that the harness can be built without making design decisions. It turns the agreed inputs in [agent-overload-baseline-experiment.md](agent-overload-baseline-experiment.md) into a case format, a harness, scoring rules, metrics and a report. Causes and metric definitions are in [agent-overload-causes-and-metrics.md](agent-overload-causes-and-metrics.md). The problem statement and decision log are in [agent-overload.md](agent-overload.md).
 
-Status: designed 2026-10-25, not implemented. Phase 1 is specified in full. Phases 2 and 3 are outlines.
+Status: designed 2026-10-25. Phase 1 is implemented in `evals/agent_overload/` (harness, generation scripts, tests) and not yet run; the steps are in [agent-overload-experiment-runbook.md](agent-overload-experiment-runbook.md). Phases 2 and 3 are outlines.
 
 ## Goals and constraints
 
@@ -56,6 +56,18 @@ Smaller readings of the spec the implementation makes. They're listed so they ca
 - **Recall@k** is computed over REUSE and REUSE_ANY turns only, since a CREATE label has no expected agent to retrieve.
 - **Consistency** is `null` when a run has one repetition per template.
 - **Summarization between turns** applies the rule once per turn. A turn adds far fewer than 100 entries, so one pass always brings the unsummarized count back under the threshold.
+- **Nameless tool calls.** Production skips a tool call without a name with a warning; the harness records it as an `invalid_call`.
+- **Gold instructions.** The gold state has no instructions for the gold agent, so corrected-each-turn work items use the turn's message text.
+- **Config hash** covers the config file and the profile, not `--max-cost`. A cap decides when a run stops, not what it measures, so a rerun with a higher cap counts as the same configuration in the test ledger.
+- **Dirty-tree check** ignores `evals/agent_overload/results/` and `cache/`, which are run outputs.
+- **`compare.py` and splits.** It compares the splits both runs share and refuses only when they share none. The baseline runs `full` (dev and test) and later methods run `test`, so a strict "same splits" rule would block the planned comparison.
+- **Naming attempts.** `name_agents.py` gives each thread 3 attempts in total; a turn without a delegation and a colliding name use the same budget. Earlier thread ids win collisions.
+- **Smoke selection.** The `smoke` profile's 10 single-turn cases are picked round-robin across the (label kind, query style) cells; its sequence is the first by id.
+- **Case planning.** `generation/planning.py` fixes everything a quota depends on before drafting (label, style, message type, history type, position, old-thread cases, which threads appear where, timestamps and agent ages); the drafter writes only text. Sequences follow two alternating 12-turn templates that meet the turn-mix rules.
+- **Execution-result cases** end the drafted tail with a pending request (the user's message and the acknowledgement, 2 entries) whose result is the new message.
+- **What the hashes cover.** `MANIFEST.json` hashes every file in the version directory except itself, `review/` included.
+- **Generation calls.** The provider pin applies to the gpt-6-luna calls only; Sonnet and Gemini use OpenRouter's default routing and get no seed. The chit-chat pool is written by `gen_threads.py`. Raw generation payloads go to `generation/raw/`, which git ignores.
+- **Token probe** sends `max_tokens: 1`. If the API rejects that for a reasoning model, the probe is an `api_error` and roster tokens show `n/a`; the smoke run checks this.
 - **Production quirk, reproduced on purpose:** `build_summarization_prompt` runs `dedent` over an f-string with multi-line content inside, so the real summarizer prompt keeps 8 spaces of indentation on its header lines. The harness calls the real builder and sends the same text.
 
 ## Repository layout

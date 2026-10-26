@@ -222,6 +222,28 @@ class AssembleTest(unittest.TestCase):
             self.assertTrue(100 <= n <= 126 and n % 2 == 0)
 
 
+class CompareRulesTest(unittest.TestCase):
+    def cfg(self, splits, **kw):
+        base = {"run_id": "r", "fake_model": False, "end": {}, "case_set_hash": "h", "plan": {"splits": splits},
+                "models": {"observed_canonical_slugs": {}, "provider": {}}, "harness_version": "1.0.0", "runtime": {"concurrency": 16}}
+        base.update(kw)
+        return base
+
+    def test_shared_splits_and_refusals(self):
+        from evals.agent_overload import compare
+
+        warnings = compare.check_comparable(self.cfg(["dev", "test"]), self.cfg(["test"]))
+        self.assertIn("comparing the shared split(s) only: ['test']", warnings)
+        with self.assertRaises(compare.CompareError):
+            compare.check_comparable(self.cfg(["dev"]), self.cfg(["test"]))
+        with self.assertRaises(compare.CompareError):
+            compare.check_comparable(self.cfg(["test"]), self.cfg(["test"], case_set_hash="other"))
+        with self.assertRaises(compare.CompareError):
+            compare.check_comparable(self.cfg(["test"]), self.cfg(["test"], end={"capped": True}))
+        self.assertEqual(compare.mcnemar(0, 0), 1.0)
+        self.assertAlmostEqual(compare.mcnemar(0, 6), 2 / 64)
+
+
 class PaidGateTest(unittest.TestCase):
     def run_main(self, module, argv):
         with contextlib.redirect_stdout(io.StringIO()) as out:

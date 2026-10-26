@@ -81,9 +81,13 @@ def resolve_plan(config: dict, profile: str) -> RunPlan:
     )
 
 
-def config_hash(config: dict, profile: str, max_cost_usd: float) -> str:
-    """Hash of everything that defines the run: the config file, the profile and the cost cap."""
-    return sha256_hex(canonical_json({"config": config, "profile": profile, "max_cost_usd": max_cost_usd}))
+def config_hash(config: dict, profile: str) -> str:
+    """Hash of what defines the run's conditions: the config file and the profile.
+
+    The cost cap (``--max-cost``) is left out: it decides when a run stops, not what it
+    measures, so rerunning with a higher cap is the same configuration.
+    """
+    return sha256_hex(canonical_json({"config": config, "profile": profile}))
 
 
 # ---------------------------------------------------------------------------

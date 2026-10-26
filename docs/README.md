@@ -12,5 +12,6 @@ Project documentation beyond the top-level [README](../README.md), which covers 
 - [Agent overload: causes and metrics](agent-overload-causes-and-metrics.md): design and implementation causes of overload, and the metrics a solution is judged against.
 - [Agent overload: baseline experiment inputs](agent-overload-baseline-experiment.md): what's agreed for measuring the current system, as input for designing the experiment.
 - [Agent overload: experiment design](agent-overload-experiment-design.md): the harness, case format, scoring, metrics, report and cost of the baseline experiment, with swappable routing methods for later comparisons.
+- [Agent overload: experiment runbook](agent-overload-experiment-runbook.md): step-by-step commands to build the case set, run the smoke check and the baseline, read the report, and compare later methods, with the spend safeguards.
 - [Makefile commands](makefile.md): setup, running the app, and housekeeping with `make`.
 - [Gmail connection via Composio](gmail-composio-connection.md): configuration, how connecting works, and the `link()` migration.
