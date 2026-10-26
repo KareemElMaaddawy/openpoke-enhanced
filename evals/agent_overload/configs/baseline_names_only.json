@@ -1,0 +1,23 @@
+{
+  "experiment": "agent_overload",
+  "harness_version": "1.0.0",
+  "scorer_version": "1",
+  "case_set": {"version": "v1", "manifest": "evals/agent_overload/fixtures/v1/MANIFEST.json", "expected_hash": "<filled at freeze>"},
+  "method": {"name": "names_only", "version": "1", "params": {}},
+  "models": {
+    "interaction": "openai/gpt-6-luna",
+    "summarizer": "openai/gpt-6-luna",
+    "expected_canonical_slugs": {"openai/gpt-6-luna": "openai/gpt-6-luna-20260922"},
+    "provider": {"order": ["openai"], "allow_fallbacks": false},
+    "seed_policy": "per_call_position",
+    "extra_params": {}
+  },
+  "suites": {
+    "single": {"reps": 2, "roster_sizes": {"test": [10, 25, 50, 100, 125, 200], "dev": [10, 25, 50, 100, 125, 200]}},
+    "sequence": {"reps": 2, "modes": ["carried", "corrected"], "roster_sizes": {"test": [10, 50, 100, 125, 200], "dev": [10, 200]}},
+    "token_probe": {"enabled": true}
+  },
+  "runtime": {"concurrency": 16, "max_retries": 5, "timeout_s": 60, "max_api_error_rate": 0.02},
+  "budget": {"max_cost_usd": 10.0, "total_cap_usd": 50.0, "estimate_margin": 1.25},
+  "stats": {"bootstrap_resamples": 2000, "ci": 0.95, "seed": 20261025}
+}

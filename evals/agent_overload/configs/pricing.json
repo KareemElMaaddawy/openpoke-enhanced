@@ -1,0 +1,16 @@
+{
+  "note": "Prices per million tokens, used only for --dry-run estimates and the pre-run budget check. Actual spend always comes from OpenRouter's usage.cost.",
+  "prices_per_million": {
+    "openai/gpt-6-luna": {"input": 0.10, "output": 0.50, "source": "OpenRouter standard OpenAI endpoint, checked 2026-10-25 (design doc)"},
+    "google/gemini-3.8-flash": {"input": 0.825, "output": 4.125, "source": "OpenRouter, checked 2026-10-25 (design doc)"},
+    "anthropic/claude-sonnet-5.5": {"input": 2.0, "output": 10.0, "source": "third-party price trackers, 2026-10-25; OpenRouter EU route lists 2.20 / 11"}
+  },
+  "design_estimates": {
+    "note": "Per-unit costs from the design's Cost section, used by run.py until a smoke run for the same method and model exists.",
+    "single_turn_usd": 0.00139,
+    "sequence_turn_usd": 0.00198,
+    "summarizer_per_sequence_run_usd": 0.00104,
+    "token_probe_usd": 0.00056,
+    "routing_calls_per_turn": 2.2
+  }
+}

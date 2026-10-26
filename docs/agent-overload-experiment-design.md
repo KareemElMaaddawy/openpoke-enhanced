@@ -44,6 +44,9 @@ Gaps found while building phase 1, answered by the user on 2026-10-25:
 | What the second labeler sees | System prompt: the labeling rules plus the output format. User message: the production-rendered `<conversation_history>`, `<active_agents>` (N=200) and new message, without the interaction system prompt. Sequence gold states past the threshold are summarized with one real summarizer call per sequence |
 | Per-step cost cap for generation scripts | Twice the step's dry-run estimate, overridable with `--max-cost`. The total-cap pre-check still applies |
 | Price of `anthropic/claude-sonnet-5.5` for estimates | $2 / $10 per million tokens (third-party price trackers, 2026-10-25; OpenRouter's EU route lists $2.20 / $11). Actual spend always comes from `usage.cost` |
+| Agent-message quota (the 10% / 10% split and "mostly NO_DELEGATION" can't both hold with 12 NO_DELEGATION cases) | Test: 8 `execution_result` + 8 `email_alert`. 9 of the 16 are NO_DELEGATION (5 results, 4 alerts) and 7 are REUSE (3 results, 4 alerts); NO_DELEGATION keeps 3 user cases. Dev: 4 + 4, with 5 NO_DELEGATION (3 results, 2 alerts) and 3 REUSE (1 result, 2 alerts); NO_DELEGATION keeps 1 user case |
+| A carried-forward sequence turn that ends as `api_error` | The rest of that sequence-run is recorded as `api_error` and the run is left out of the duplicate stats. Corrected-each-turn runs continue, since their next state is gold |
+| McNemar ties in `compare.py` (2 reps, 1 correct) | A template counts as correct only when more than half its reps are correct, so a tie counts as not correct |
 
 Smaller readings of the spec the implementation makes. They're listed so they can be overruled:
 
