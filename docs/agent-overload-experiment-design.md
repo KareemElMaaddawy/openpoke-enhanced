@@ -30,6 +30,31 @@ Agreed with the user on 2026-10-25, plus facts checked in the code and on OpenRo
 | Model pin | `openai/gpt-6-luna`, which resolves to `openai/gpt-6-luna-20260922` (checked 2026-10-25). The run aborts if the canonical slug changes | OpenRouter takes only the alias, so the harness checks what the alias points to |
 | Agent loop | The harness runs the real `_run_interaction_loop` with tool execution stubbed | Routing turns usually take about 2 model calls (reply and delegate, then finish). Calling the model once would measure a different system |
 
+### Decided during implementation
+
+Gaps found while building phase 1, answered by the user on 2026-10-25:
+
+| Question | Answer |
+| --- | --- |
+| Which delegation gets `gold.result_text` in a carried-forward state update | The scorer's primary (the first delegation classified `correct_*`, else the first). Its result line is written first in the batch payload. Every other distinct delegation gets `Done.` |
+| `prev_thread` on sequence turns | The `agent_thread` of the agent named in the most recent `[SUCCESS]` line in the current state, the same rule as single-turn `meta.prev_thread`. In carried mode that's the agent the model actually used last |
+| Source of the report's headline columns | The `single` suite only, except duplicate rate, which comes from carried-forward sequences. Sequences get their own section |
+| Summarizer calls in per-turn metrics | Excluded. Per-turn tokens, cost, latency and calls count only the routing method's calls. Summarizer calls appear in the Costs section and the run total, and count toward the spend cap |
+| Missing timestamps for agent ages | Single-turn `message` gets a `timestamp` field, set when the case is planned; it's the case's "now". `freeze.py` writes `agent_times: {agent_id: {"last_active", "created_at"}}` for every required agent. The `created_at` offset (0 to 30 days) is seeded by `sha256(f"{case_id}\|{agent_id}\|created")` and is never later than the agent's first result line. The harness computes filler times from `filler_age_days`, with the `created_at` offset seeded by `sha256(f"{agent_id}\|created")` |
+| What the second labeler sees | System prompt: the labeling rules plus the output format. User message: the production-rendered `<conversation_history>`, `<active_agents>` (N=200) and new message, without the interaction system prompt. Sequence gold states past the threshold are summarized with one real summarizer call per sequence |
+| Per-step cost cap for generation scripts | Twice the step's dry-run estimate, overridable with `--max-cost`. The total-cap pre-check still applies |
+| Price of `anthropic/claude-sonnet-5.5` for estimates | $2 / $10 per million tokens (third-party price trackers, 2026-10-25; OpenRouter's EU route lists $2.20 / $11). Actual spend always comes from `usage.cost` |
+
+Smaller readings of the spec the implementation makes. They're listed so they can be overruled:
+
+- **Position anchor.** NO_DELEGATION cases, CREATE cases whose new thread has no near-distractor in the roster, and sequences have no anchor. Their roster is a plain seeded shuffle, `target_position` is `null`, and they sit in the `none` row of the position breakdown.
+- **`slug_collision`** compares a created name against the roster snapshot and against other names created in the same turn, since two new names in one turn would also share a log file.
+- **`agent_context`** gets the turn's `primary_thread` for every agent that received work on the turn, not only the primary.
+- **Recall@k** is computed over REUSE and REUSE_ANY turns only, since a CREATE label has no expected agent to retrieve.
+- **Consistency** is `null` when a run has one repetition per template.
+- **Summarization between turns** applies the rule once per turn. A turn adds far fewer than 100 entries, so one pass always brings the unsummarized count back under the threshold.
+- **Production quirk, reproduced on purpose:** `build_summarization_prompt` runs `dedent` over an f-string with multi-line content inside, so the real summarizer prompt keeps 8 spaces of indentation on its header lines. The harness calls the real builder and sends the same text.
+
 ## Repository layout
 
 Everything lives under `evals/agent_overload/`, a package run from the repo root with `python -m evals.agent_overload.<module>`. It imports `server` but never changes it.
@@ -348,6 +373,8 @@ Constraint for case authors: `len(required) â‰¤ 6` for single-turn cases and `â‰
 - **`meta.target_name_visible`:** whether any target agent's exact name appears in the rendered transcript. Computed by `freeze.py`, not written by the drafter.
 - **`meta.target_age_bucket`:** `recent` (target agent last active 0 to 3 days before the message), `mid` (4 to 14 days) or `old` (15 to 60 days). Computed by `freeze.py` from the agent ages. `null` for CREATE and NO_DELEGATION.
 - **`agent_ages`:** age in days for each required agent not named in the history. Required for old-thread cases.
+- **`message.timestamp`:** the case's "now", set when the case is planned. It isn't rendered into the prompt (production doesn't timestamp the new message); it anchors agent ages.
+- **`agent_times`:** `{agent_id: {"last_active", "created_at"}}` for every required agent, written by `freeze.py` (see [Decided during implementation](#decided-during-implementation)).
 
 **Quotas for single-turn templates:**
 
