@@ -95,7 +95,8 @@ def format_plan(
 ) -> tuple[str, float]:
     pricing = load_pricing()
     lines = [f"== {title} ==", ""]
-    lines.append(f"{'purpose':<22} {'model':<28} {'calls':>7} {'in/call':>8} {'out/call':>8} {'est. $':>8}")
+    if planned:
+        lines.append(f"{'purpose':<22} {'model':<28} {'calls':>7} {'in/call':>8} {'out/call':>8} {'est. $':>8}")
     total = 0.0
     for p in planned:
         cost = p.cost(pricing)

@@ -48,3 +48,4 @@ server/plans/
 # Agent overload experiment: raw API payloads and fake-model runs
 evals/agent_overload/results/*/raw/
 evals/agent_overload/results/_fake/
+evals/agent_overload/generation/raw/

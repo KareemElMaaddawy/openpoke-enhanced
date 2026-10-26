@@ -271,25 +271,31 @@ def _carried_work(state: RoutingState, score: TurnScore, gold: dict) -> list[Wor
     return work
 
 
-def _gold_work(ctx: RunContext, split: str, state: RoutingState, turn: dict) -> list[WorkAssignment]:
+def gold_work(state: RoutingState, turn: dict, agent_of_thread: dict[str, str]) -> list[WorkAssignment]:
+    """The gold agent for a sequence turn (design: Corrected each turn).
+
+    REUSE: the thread's canonical agent. REUSE_ANY: the first listed thread's canonical
+    agent. CREATE: a new agent with the frozen gold id and ``gold.create_name``. The gold
+    has no instructions, so the turn's message text stands in for them.
+    """
     label, gold = turn["label"], turn["gold"]
     instructions = turn["message"]["text"]
     kind = label["kind"]
     if kind in ("REUSE", "REUSE_ANY"):
         agent_id = state.canonical_agent(label["threads"][0])
         if agent_id is None:
-            raise RuntimeError(f"{turn}: gold state has no agent for {label['threads'][0]}")
+            raise RuntimeError(f"turn {turn['turn']}: gold state has no agent for {label['threads'][0]}")
         name = state.by_id(agent_id).name
         return [WorkAssignment(agent_id, name, instructions, gold["result_text"])]
     if kind == "CREATE":
-        gold_id = ctx.fixtures.agent_of_thread[split][label["new_thread"]]
+        gold_id = agent_of_thread[label["new_thread"]]
         name = gold["create_name"]
         return [WorkAssignment(f"new:{name}", name, instructions, gold["result_text"], gold_id)]
     return []
 
 
-def apply_gold_turn(ctx: RunContext, split: str, state: RoutingState, turn: dict) -> None:
-    work = _gold_work(ctx, split, state, turn)
+def apply_gold(state: RoutingState, turn: dict, agent_of_thread: dict[str, str]) -> None:
+    work = gold_work(state, turn, agent_of_thread)
     apply_turn(
         state,
         message_tag=_message_tag(turn["message"]),
@@ -300,6 +306,10 @@ def apply_gold_turn(ctx: RunContext, split: str, state: RoutingState, turn: dict
         primary_thread=turn["meta"].get("primary_thread"),
         result_reply=turn["gold"].get("result_reply") if work else None,
     )
+
+
+def apply_gold_turn(ctx: RunContext, split: str, state: RoutingState, turn: dict) -> None:
+    apply_gold(state, turn, ctx.fixtures.agent_of_thread[split])
 
 
 def summarizer_call(ctx: RunContext, purpose: str = "summarizer"):

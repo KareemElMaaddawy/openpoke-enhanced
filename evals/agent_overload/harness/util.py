@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import logging
 import random
 from datetime import datetime, timedelta
 from difflib import SequenceMatcher
@@ -11,6 +12,9 @@ from pathlib import Path
 from typing import Any, Iterable
 
 from server.services.execution.log_store import _slugify
+
+# The production logger warns on every malformed tool call; the harness records those itself.
+logging.getLogger("openpoke.server").setLevel(logging.ERROR)
 
 TS_FORMAT = "%Y-%m-%d %H:%M:%S"
 
