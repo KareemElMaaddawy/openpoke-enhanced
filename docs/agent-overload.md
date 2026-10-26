@@ -81,11 +81,38 @@ Jev is available through OpenRouter, so it can use the project's existing OpenRo
 
 Proposed comparison: the interaction agent over the top K (control), a separate small router LLM, a cross-encoder reranker, and Jev as a single Choice question. Embedding similarity alone is the floor every option has to beat. Fine-tuning waits until a general-purpose scorer has shown the approach works.
 
+### Archiving dormant agents
+
+Give each agent a status. An agent unused for D days becomes `archived`. Archived agents are left out of what the interaction agent (or retrieval) sees, but they stay recoverable: they can be searched for and reactivated, and their logs are kept. This idea comes from the write-up.
+
+- Addresses: D4 (the roster gets a real limit instead of growing without bound), I1 (fewer entries per turn even without retrieval). It also reduces how much retrieval has to do.
+- Depends on: richer agent records, for status and last-active time.
+- Cost: a status field and a last-active time updated on every delegation, an archiving rule (run on each turn or on a timer), and a way back to an archived agent. That could be a search over archived records when nothing active matches, or reactivation when the user names the agent's work.
+- Failure modes: the user returns to an old thread and its agent is archived, so the system spawns a duplicate. That's a false spawn caused by archiving. The choice of D trades roster size against those misses. Recurring triggers keep an agent busy without the user mentioning it, so "unused" has to count trigger runs, or an agent whose trigger still runs must never be archived.
+- Experiment: routing accuracy and false spawn rate on cases where the user returns to a thread whose agent was last active 15 to 60 days earlier, against the baseline. Also the dormant agent fraction and the roster size actually shown per turn. D is tuned on dev only.
+
+### Capping execution agent history
+
+Set `conversation_limit` on execution agents, so each run's system prompt includes only the last k tasks of the agent's log instead of all of it. The setting already exists in `ExecutionAgent` and is never set: `ExecutionAgentRuntime` builds `ExecutionAgent(agent_name)` without it.
+
+- Addresses: I5 (execution prompt size stops growing with the number of past tasks). It also counters the reuse-against-spawn tension: better routing means more reuse and longer histories, and a cap keeps those histories bounded.
+- Cost: one setting, plus choosing k. The existing cut counts `<agent_request>` entries. The current request is already in the log when the agent runs (`send_message_to_agent` records it first), so a limit of k keeps the current task plus k − 1 past ones.
+- Failure modes: a task that needs something from an older task (an email id, an agreed detail) loses it, and the agent fails or asks again. A hard cut by task count may also split a task's entries in the wrong place if the log format changes. Summarizing older history instead of dropping it is an alternative, at the cost of an extra model call.
+- Experiment: phase 3 execution task success and execution prompt size at 50 past tasks, with and without the cap, on the same tasks. Include tasks that need a detail from an older task, so the cost of the cap is visible. k is tuned on dev only.
+
+### Planned solution versions
+
+To fit the time and the $50 budget, candidates are bundled into two versions, each run once on the test split (details in [agent-overload-experiment-design.md](agent-overload-experiment-design.md#budget-and-spend-guard)):
+
+1. **Version 1:** richer records and ID routing, plus bounded retrieval above N with a scorer.
+2. **Version 2:** version 1 plus archiving dormant agents and capping execution history.
+
+Which piece contributed what is checked with ablations on the dev split.
+
 ### From the write-up
 
-- Archiving dormant agents
 - Clustering related agents
-- A hot cache of recently active agents
+- A hot cache of recently active agents. This could also cover retrieval's weak spot: implicit follow-ups such as "reply to that" give retrieval nothing to search on.
 
 ## Experiments
 
