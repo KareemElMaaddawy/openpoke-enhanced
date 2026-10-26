@@ -11,6 +11,7 @@ import asyncio
 import copy
 import gzip
 import json
+import traceback
 from dataclasses import dataclass, field
 from pathlib import Path
 from typing import Any, Optional
@@ -54,6 +55,7 @@ class RunContext:
     sequences: list[dict] = field(default_factory=list)
     capped: bool = False
     summarizer_errors: int = 0
+    unit_errors: list[str] = field(default_factory=list)
 
 
 # ---------------------------------------------------------------------------
@@ -523,7 +525,11 @@ async def run_all(ctx: RunContext) -> None:
                     tasks.append(run_single_unit(ctx, split, case, n, rep))
             if plan.token_probe:
                 tasks.append(run_probe_unit(ctx, split, case))
-    await asyncio.gather(*tasks)
+    results = await asyncio.gather(*tasks, return_exceptions=True)
+    # A harness bug in one unit must not lose the results (and spend) of the others.
+    for result in results:
+        if isinstance(result, BaseException):
+            ctx.unit_errors.append("".join(traceback.format_exception(result))[-2000:])
 
 
 # ---------------------------------------------------------------------------

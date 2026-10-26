@@ -24,7 +24,7 @@ from .harness.config import (
     load_config,
     resolve_plan,
 )
-from .harness.fixtures import FixtureError, load_fixtures, read_fixture_dir
+from .harness.fixtures import FixtureError, load_fixtures
 from .harness.llm import (
     FakeClient,
     OpenRouterClient,
@@ -298,7 +298,7 @@ async def execute(args, config, plan, fixtures, mode, cfg_hash, max_cost) -> int
     routing_turns = [t for t in turns if t["suite"] in ("single", "sequence")]
     api_errors = sum(1 for t in routing_turns if t["status"] == STATUS_API_ERROR)
     api_rate = api_errors / len(routing_turns) if routing_turns else 0.0
-    failed = api_rate > float(runtime_cfg["max_api_error_rate"])
+    failed = api_rate > float(runtime_cfg["max_api_error_rate"]) or bool(ctx.unit_errors)
     capped = ctx.capped or spend.capped
     providers = Counter(c.get("provider") or "unknown" for c in calls)
 
@@ -313,6 +313,8 @@ async def execute(args, config, plan, fixtures, mode, cfg_hash, max_cost) -> int
         warnings.append(f"FAILED: api_error rate {100 * api_rate:.2f}% exceeds {100 * float(runtime_cfg['max_api_error_rate']):.0f}%.")
     if args.accept_model_change:
         warnings.append("Model change accepted (--accept-model-change).")
+    if ctx.unit_errors:
+        warnings.append(f"{len(ctx.unit_errors)} units crashed with a harness error; see unit_errors in config.json.")
     if ctx.summarizer_errors:
         warnings.append(f"{ctx.summarizer_errors} summarizer calls failed (state left unsummarized, as production does).")
     if not fake and any(p not in ("OpenAI", "openai") for p in providers):
@@ -335,6 +337,7 @@ async def execute(args, config, plan, fixtures, mode, cfg_hash, max_cost) -> int
         "providers": dict(providers),
         "price_check": price_check(calls, config["models"]["interaction"]),
         "warnings": warnings,
+        "unit_errors": ctx.unit_errors,
     }
     recorded["end"] = summary
     (run_dir / "config.json").write_text(json.dumps(recorded, indent=2, sort_keys=True), encoding="utf-8")
@@ -351,7 +354,7 @@ async def execute(args, config, plan, fixtures, mode, cfg_hash, max_cost) -> int
         print("warning: " + w)
     if capped:
         return EXIT_CAPPED
-    if failed:
+    if failed or ctx.unit_errors:
         return EXIT_API_ERRORS
     return 0
 
