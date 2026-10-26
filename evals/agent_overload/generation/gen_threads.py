@@ -130,7 +130,7 @@ def validate_chitchat(data: Any) -> dict:
 # Model calls
 
 
-async def ask_json(ctx: StepContext, purpose: str, prompt: str, validate, hint: dict, max_tokens: int = 8000) -> tuple[Any, dict]:
+async def ask_json(ctx: StepContext, purpose: str, prompt: str, validate, hint: dict, max_tokens: int = 12000) -> tuple[Any, dict]:
     last_error = None
     for attempt in range(1, MAX_ATTEMPTS + 1):
         response, record = await ctx.client.chat(
@@ -331,7 +331,7 @@ def main(argv: Optional[list[str]] = None) -> int:
     if args.top_up_filler:
         if not args.split:
             parser.error("--top-up-filler needs --split")
-        planned = [PlannedCalls("gen_threads (top-up)", GEN_MODEL, 1, 6000, args.top_up_filler * 95)]
+        planned = [PlannedCalls("gen_threads (top-up)", GEN_MODEL, 1.2, 6000, args.top_up_filler * 180)]
 
         async def topup_body(ctx: StepContext) -> None:
             await run_topup(ctx, fixtures_dir, args.split, args.top_up_filler)
@@ -353,9 +353,9 @@ def main(argv: Optional[list[str]] = None) -> int:
     n_filler = len(missing) - n_case
     chitchat_missing = read_json(fixtures_dir / "review" / "gen_threads" / "chitchat.json") is None
     planned = [
-        PlannedCalls("gen_threads (case)", GEN_MODEL, n_case * 1.2, 1700, 2700, "about 9 or 4 case threads per batch, 20% retries"),
-        PlannedCalls("gen_threads (filler)", GEN_MODEL, n_filler * 1.2, 1900, 1800, "about 18 filler threads per batch"),
-        PlannedCalls("gen_chitchat", GEN_MODEL, 1.2 if chitchat_missing else 0, 400, 3200),
+        PlannedCalls("gen_threads (case)", GEN_MODEL, n_case * 1.25, 1050, 4800, "about 9 or 4 case threads per batch; tokens measured 2026-10-26"),
+        PlannedCalls("gen_threads (filler)", GEN_MODEL, n_filler * 1.1, 950, 3250, "about 18 filler threads per batch; measured"),
+        PlannedCalls("gen_chitchat", GEN_MODEL, 1.2 if chitchat_missing else 0, 300, 4500),
     ]
     extra = [
         "",

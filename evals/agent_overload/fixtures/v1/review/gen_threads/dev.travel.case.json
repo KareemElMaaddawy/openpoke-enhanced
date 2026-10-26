@@ -1,0 +1,138 @@
+{
+  "provenance": {
+    "attempts": 1,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "1b5d7484c2c9281541f1895fc8f859b94bc6e6f302a9b6ba7220c6434c9ecc31",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found Eurostar booking confirmation from bookings@eurostar.com: train 9024 departs St Pancras 8:31am Oct 15, arrives Paris Gare du Nord 11:47am, Standard Premier seat, 14A, £212, booking ref QXT7MP.",
+      "follow_ups": [
+        {
+          "reply": "Check-in closes 8:01am, but Eurostar recommends arriving around 7:00am for passport control.",
+          "request": "what time do i need to be at the station",
+          "result": "Eurostar's email says check-in closes 30 minutes before departure, so arrive at St Pancras by 8:01am. It recommends arriving 90 minutes early for passport control."
+        },
+        {
+          "reply": "Forwarded the ticket to Ben Ortiz at ben.ortiz@harlowtech.com.",
+          "request": "forward the ticket to my colleague Ben Ortiz",
+          "result": "Forwarded the Eurostar confirmation with the PDF ticket to ben.ortiz@harlowtech.com, with a note that it is for the Oct 15 train."
+        },
+        {
+          "reply": "Done, reminder set for Oct 14 at 8:00pm to download the ticket.",
+          "request": "remind me the night before to download the ticket to my phone",
+          "result": "Reminder set for Oct 14 at 8:00pm: download Eurostar ticket (ref QXT7MP) to phone wallet."
+        }
+      ],
+      "key": "c1",
+      "opening_request": "can you find my eurostar ticket for london to paris on oct 15",
+      "pair_key": "c2",
+      "result_reply": "Found it: Eurostar 9024, Oct 15, departs 8:31am from St Pancras, seat 14A, ref QXT7MP.",
+      "topic": "Eurostar ticket from London St Pancras to Paris Gare du Nord on October 15, 2026"
+    },
+    {
+      "canned_result": "Found a reply from customercare@eurostar.com dated Oct 1 approving compensation for the 74-minute delay on train 9031: a 25% fare refund, €38.50, as an e-voucher, valid until Oct 2027, claim number EC-558210.",
+      "follow_ups": [
+        {
+          "reply": "Drafted a request for a card refund instead of the voucher. Want me to send it?",
+          "request": "can i get cash instead of the voucher",
+          "result": "Drafted a reply to customercare@eurostar.com asking to switch the €38.50 compensation to refund on the original card, citing claim EC-558210. Not sent yet."
+        },
+        {
+          "reply": "Sent. Eurostar gave ticket 7731940 and promises a reply within 10 working days.",
+          "request": "yes send it",
+          "result": "Sent the email to customercare@eurostar.com at 2:14pm. An auto-reply gave ticket number 7731940 and said to expect an answer within 10 working days."
+        },
+        {
+          "reply": "Reminder set for Oct 20 at 9am to chase Eurostar.",
+          "request": "remind me to chase them if nothing by oct 20",
+          "result": "Reminder set for Oct 20 at 9:00am: chase Eurostar about card refund, claim EC-558210, ticket 7731940."
+        }
+      ],
+      "key": "c2",
+      "opening_request": "did eurostar ever answer my delay compensation claim from the sept 24 train",
+      "pair_key": "c1",
+      "reply_hint": "",
+      "result_reply": "Yes, they approved a €38.50 e-voucher for the 74-minute delay, claim EC-558210.",
+      "topic": "Eurostar delay compensation claim for the September 24, 2026 Paris to London train"
+    },
+    {
+      "canned_result": "Found a Booking.com confirmation from customer.service@booking.com for The Scotsman Quarter, Edinburgh, Oct 26-29, 3 nights, one king room, £486 total, pay at property, free cancellation until Oct 23, confirmation 4471.902.388.",
+      "follow_ups": [
+        {
+          "reply": "Check-in is from 3pm, check-out by 11am.",
+          "request": "what's the check in time",
+          "result": "The confirmation says check-in is from 3:00pm and check-out until 11:00am. Late arrival after 11pm needs to be arranged with the property."
+        },
+        {
+          "reply": "Reminder set for Oct 22 at 10am, a day before free cancellation ends.",
+          "request": "remind me to decide on cancelling by oct 22",
+          "result": "Reminder set for Oct 22 at 10:00am: decide whether to cancel The Scotsman Quarter booking, free cancellation ends Oct 23."
+        },
+        {
+          "reply": "Sent a note to the hotel about your 10:30pm arrival on Oct 26.",
+          "request": "email the hotel that i'll arrive around 10:30pm",
+          "result": "Sent an email to the hotel's reservations address, stay@scotsmanquarter.example, saying the guest will arrive around 10:30pm on Oct 26, ref 4471.902.388."
+        }
+      ],
+      "key": "c3",
+      "opening_request": "find my booking.com reservation for the edinburgh hotel in late october",
+      "pair_key": "c4",
+      "result_reply": "Booked: The Scotsman Quarter, Oct 26-29, £486 pay at property, free cancellation until Oct 23.",
+      "topic": "Booking.com reservation for Edinburgh hotel October 26-29, 2026"
+    },
+    {
+      "canned_result": "Found an email from the Hotel Pulitzer Canal via Booking.com's invoice link, but the PDF invoice was sent separately by reservations@pulitzercanal.example on Sept 18: invoice 20931, €642.00 including 9% VAT of €53.01, for Sept 14-17.",
+      "follow_ups": [
+        {
+          "reply": "Sent the invoice to Maya at ledgerline.example.",
+          "request": "send it to our bookkeeper maya at ledgerline",
+          "result": "Forwarded the invoice PDF to maya@ledgerline.example with the subject 'Amsterdam hotel invoice Sept 14-17' and the amount in the body."
+        },
+        {
+          "reply": "Yes, it lists Harlow Tech BV, VAT NL859204711B01, matching what Maya has on file.",
+          "request": "is the vat number on it the company's",
+          "result": "The invoice is addressed to Harlow Tech BV with VAT number NL859204711B01, and that matches the company details in your earlier emails from Maya."
+        },
+        {
+          "reply": "Yes, €642.00 was charged on your Visa ending 4417 on Sept 17.",
+          "request": "was the amount charged to my card yet",
+          "result": "Found a card receipt email from Pulitzer Canal dated Sept 17 showing €642.00 charged on a Visa ending 4417 at checkout."
+        }
+      ],
+      "key": "c4",
+      "opening_request": "i need the booking.com vat invoice for the amsterdam stay in september for accounting",
+      "pair_key": "c3",
+      "result_reply": "Found it: Pulitzer Canal invoice 20931, €642.00 including €53.01 VAT, for Sept 14-17.",
+      "topic": "Booking.com VAT invoice for Amsterdam hotel stay September 14-17, 2026"
+    },
+    {
+      "canned_result": "Found a receipt from receipts@clearme.com dated Oct 12: CLEAR Plus annual renewal, $209.00 charged to Amex ending 2008, next renewal Oct 12, 2027.",
+      "follow_ups": [
+        {
+          "reply": "Drafted a request to turn off auto-renew. Want me to send it?",
+          "request": "draft an email to cancel auto renew",
+          "result": "Drafted an email to support@clearme.com asking to turn off auto-renewal and confirm in writing, with the account email included. Not sent yet."
+        },
+        {
+          "reply": "Sent. CLEAR gave case number CL-90417.",
+          "request": "send it",
+          "result": "Sent the email to support@clearme.com at 11:06am. An automatic acknowledgment gave case number CL-90417."
+        },
+        {
+          "reply": "Reminder set for Sept 15, 2027 at 9am.",
+          "request": "set a reminder for sept 2027 to reconsider membership",
+          "result": "Reminder set for Sept 15, 2027 at 9:00am: reconsider CLEAR Plus membership before the Oct 12 renewal."
+        }
+      ],
+      "key": "c5",
+      "opening_request": "check if clear plus renewed this month and how much they charged",
+      "pair_key": null,
+      "result_reply": "Yes, CLEAR Plus renewed Oct 12 for $209.00 on your Amex ending 2008.",
+      "topic": "CLEAR Plus membership renewal charge in October 2026"
+    }
+  ]
+}

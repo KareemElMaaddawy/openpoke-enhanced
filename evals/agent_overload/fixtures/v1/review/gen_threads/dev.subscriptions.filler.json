@@ -1,0 +1,131 @@
+{
+  "provenance": {
+    "attempts": 1,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "63d0f54e2c66e92e3895ef450e05688e8a99f4e68681a070f15e26f5f8fb645e",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found the Masterclass renewal notice for $180 on Nov 18, 2026 and sent the cancellation request through their support email; a confirmation ticket #MC-48213 was received.",
+      "key": "f1",
+      "opening_request": "hey can you cancel my Masterclass membership before it auto-renews on Nov 18?",
+      "result_reply": "Cancellation sent to Masterclass, ticket #MC-48213. Your Nov 18 $180 renewal shouldn't go through.",
+      "topic": "Cancel Masterclass annual membership before the November 18, 2026 auto-renewal"
+    },
+    {
+      "canned_result": "The Sept 29 Money Stuff covered a hedge fund's dispute over a delayed SPAC merger, insider trading rules around prediction markets, and a quirky note on a bank's new office dress code.",
+      "key": "f2",
+      "opening_request": "can you sum up Matt Levine's Money Stuff from Sept 29 for me",
+      "result_reply": "Money Stuff Sept 29: SPAC merger dispute, insider trading and prediction markets, plus a bank dress code aside.",
+      "topic": "Summarize Money Stuff newsletter by Matt Levine from September 29, 2026"
+    },
+    {
+      "canned_result": "Located the Bloomberg Businessweek invoice dated September 14, 2026 for $39.99, invoice number BW-7720314, in the billing folder.",
+      "key": "f3",
+      "opening_request": "need the Bloomberg Businessweek invoice from September for my expense report, can you dig it up",
+      "result_reply": "Found it: Bloomberg Businessweek invoice BW-7720314, $39.99, dated Sept 14.",
+      "topic": "Find Bloomberg Businessweek subscription invoice for expense report, September 2026"
+    },
+    {
+      "canned_result": "Found 14 Patagonia promotional emails since August and used the unsubscribe link in the latest one; Patagonia confirmed the removal and said it may take up to 10 days.",
+      "key": "f4",
+      "opening_request": "unsubscribe me from all the Patagonia marketing emails please, they're everywhere",
+      "result_reply": "Unsubscribed you from Patagonia marketing. Confirmation received; may take up to 10 days to stop.",
+      "topic": "Unsubscribe from Patagonia marketing emails"
+    },
+    {
+      "canned_result": "Created a reminder for October 23, 2026 at 9:00 AM titled 'Cancel Apple TV+ trial', one day ahead of the Oct 24 billing date found in the welcome email.",
+      "key": "f5",
+      "opening_request": "remind me to cancel the Apple TV+ trial on Oct 24 before they charge me",
+      "result_reply": "Reminder set for Oct 23 at 9 AM to cancel Apple TV+, a day before billing.",
+      "topic": "Set reminder to cancel Apple TV+ trial on October 24, 2026"
+    },
+    {
+      "canned_result": "Drafted a reply to Sara Kim thanking her for the rate card sent October 5 and asking about availability and pricing for a two-issue sponsorship in November 2026; left in drafts for review.",
+      "key": "f6",
+      "opening_request": "draft a reply to Sara Kim at Axios Media Trends about their sponsorship rates",
+      "result_reply": "Draft to Sara Kim is ready, asking about November two-issue sponsorship pricing. Want me to send it?",
+      "topic": "Draft reply to Axios Media Trends newsletter editor Sara Kim about sponsorship rates"
+    },
+    {
+      "canned_result": "Found the Strava annual subscription receipt dated September 9, 2026 for $79.99 charged to a Visa ending in 4417.",
+      "key": "f7",
+      "opening_request": "where's my Strava receipt from the annual charge in September?",
+      "result_reply": "Strava receipt found: $79.99 on Sept 9, charged to Visa ending 4417.",
+      "topic": "Find Strava subscription receipt after annual charge in September 2026"
+    },
+    {
+      "canned_result": "Forwarded the Harvard Business Review team subscription confirmation from October 2, 2026 to Daniel Ortega, including the activation link and account number.",
+      "key": "f8",
+      "opening_request": "forward the HBR subscription confirmation to Daniel Ortega so he can set up his login",
+      "result_reply": "Forwarded the HBR confirmation with the activation link to Daniel Ortega.",
+      "topic": "Forward Harvard Business Review subscription confirmation to colleague Daniel Ortega"
+    },
+    {
+      "canned_result": "The Nov 3 Hustle covered a startup selling reusable shipping boxes, a profile of a vintage sneaker resale market, and a rundown of holiday retail hiring numbers.",
+      "key": "f9",
+      "opening_request": "quick summary of The Hustle newsletter from Nov 3 pls",
+      "result_reply": "Hustle Nov 3: reusable shipping box startup, vintage sneaker resale, and holiday retail hiring numbers.",
+      "topic": "Summarize Morning Brew rival The Hustle newsletter from November 3, 2026"
+    },
+    {
+      "canned_result": "Found the Calm annual renewal notice ($69.99 on Dec 1, 2026) and submitted the cancellation via their help center; they confirmed the plan will end after Nov 30.",
+      "key": "f10",
+      "opening_request": "I want to cancel Calm before it renews Dec 1, can you handle it",
+      "result_reply": "Calm cancelled. Access ends Nov 30 and the $69.99 Dec 1 charge is stopped.",
+      "topic": "Cancel Calm annual subscription renewing December 1, 2026"
+    },
+    {
+      "canned_result": "The Microsoft 365 Family renewal notice from October 6, 2026 says the plan renews November 14 at $129.99 per year, up from $99.99.",
+      "key": "f11",
+      "opening_request": "find the Microsoft 365 Family renewal email from October, what's the price now?",
+      "result_reply": "Microsoft 365 Family renews Nov 14 at $129.99/year, up from $99.99.",
+      "topic": "Find Microsoft 365 Family renewal email from October 2026"
+    },
+    {
+      "canned_result": "Sent a reply on ticket #GH-30918 asking for the status of the $412 Creator Brief payout that failed on October 15, 2026, and requested an estimated resolution date.",
+      "key": "f12",
+      "opening_request": "reply to Ghost support about the missing payout for Creator Brief, ask for status",
+      "result_reply": "Replied on Ghost ticket #GH-30918 asking about the failed $412 payout and an ETA.",
+      "topic": "Reply to Ghost newsletter platform support about failed payout for Creator Brief"
+    },
+    {
+      "canned_result": "Set a reminder for November 2, 2026 at 10:00 AM: 'Scribd annual plan renews Nov 9 — decide whether to keep'.",
+      "key": "f13",
+      "opening_request": "set a reminder a week before my Scribd plan renews on Nov 9",
+      "result_reply": "Reminder set for Nov 2 at 10 AM about your Scribd renewal on Nov 9.",
+      "topic": "Reminder to renew Scribd annual plan on November 9, 2026"
+    },
+    {
+      "canned_result": "Found the Financial Times Weekend email from October 17, 2026 featuring the Lex column 'Banks: earnings beat masks credit worries', with a link to read it.",
+      "key": "f14",
+      "opening_request": "find the FT newsletter with the Lex column about bank earnings from October",
+      "result_reply": "Found it: FT Weekend, Oct 17, Lex column 'Banks: earnings beat masks credit worries'.",
+      "topic": "Search for Financial Times Weekend newsletter with the Lex column on bank earnings, October 2026"
+    },
+    {
+      "canned_result": "Backblaze's September 22, 2026 email says the Mastercard ending 0918 expires at month end and asks you to update payment in account settings before October 5 to avoid backup suspension.",
+      "key": "f15",
+      "opening_request": "Backblaze emailed that my card is expiring, what do I need to do?",
+      "result_reply": "Backblaze says update your card ending 0918 in settings before Oct 5 to avoid suspension.",
+      "topic": "Update payment card on Backblaze subscription after card expiry in September 2026"
+    },
+    {
+      "canned_result": "Used the unsubscribe link in the latest Product Hunt daily digest from November 4, 2026 and switched off the daily emails; the confirmation page showed the weekly digest still active.",
+      "key": "f16",
+      "opening_request": "get me off the Product Hunt daily digest, I never read it",
+      "result_reply": "Daily Product Hunt digest turned off. The weekly digest is still active, though.",
+      "topic": "Unsubscribe from Product Hunt daily digest emails"
+    },
+    {
+      "canned_result": "Found the Bon Appétit gift subscription receipt from October 11, 2026 for $24 addressed to Claire Whitman, order number BA-559201.",
+      "key": "f17",
+      "opening_request": "can you find the receipt for the Bon Appétit gift sub I bought for Claire?",
+      "result_reply": "Found it: Bon Appétit gift for Claire Whitman, $24, Oct 11, order BA-559201.",
+      "topic": "Find Bon Appétit subscription gift receipt for sister Claire, October 2026"
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "provenance": {
+    "attempts": 1,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "261d8809d0f94c5a8b3c572758f216354c612ad0804e0b3b94e68086522b5a7f",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found a United email from Sept 10 confirming the upgrade to Economy Plus on UA 1428, seat 14C, departing SFO at 7:05 AM.",
+      "key": "f1",
+      "opening_request": "can you check if my United upgrade for the Denver flight on Sept 15 cleared?",
+      "result_reply": "Yes, it cleared. You're in Economy Plus, seat 14C, on UA 1428 departing 7:05 AM.",
+      "topic": "United Airlines seat upgrade confirmation for Denver flight UA 1428 on September 15, 2026"
+    },
+    {
+      "canned_result": "Found Airbnb confirmation from host Marcus Bell for the Nashville house, Oct 13-16. Check-in is after 4 PM with a self-service lockbox code sent the day before.",
+      "key": "f2",
+      "opening_request": "find the Airbnb confirmation for the Nashville offsite and tell me the check-in time",
+      "result_reply": "Check-in is after 4 PM on Oct 13. Marcus Bell sends the lockbox code the day before.",
+      "topic": "Airbnb booking for Nashville team offsite, October 13-16, 2026, host Marcus Bell"
+    },
+    {
+      "canned_result": "Located three Lyft Business receipts dated Sept 29: $28.40 airport to hotel, $17.15 hotel to Kline & Co, and $31.90 return to airport, totaling $77.45.",
+      "key": "f3",
+      "opening_request": "pull together my Lyft receipts from the Seattle client visit last week of Sept",
+      "result_reply": "Found three Lyft receipts from Sept 29 totaling $77.45. Want them forwarded to expenses?",
+      "topic": "Lyft Business ride receipts from the Seattle client visit on September 29, 2026"
+    },
+    {
+      "canned_result": "Found a Southwest email showing a $214.60 flight credit tied to confirmation code QX7R2L, expiring December 4, 2026.",
+      "key": "f4",
+      "opening_request": "do I still have a Southwest credit from that cancelled Dallas trip? when does it expire",
+      "result_reply": "Yes, $214.60 credit under code QX7R2L. It expires December 4, 2026.",
+      "topic": "Southwest Airlines flight credit expiring December 2026 from cancelled Dallas trip"
+    },
+    {
+      "canned_result": "Drafted and sent an email to Kenji Ito at Nakamura Logistics requesting a signed invitation letter for the Oct 19-24 Tokyo visit, asking for it by Oct 2.",
+      "key": "f5",
+      "opening_request": "email Kenji at Nakamura Logistics asking for the invitation letter for my Tokyo visa",
+      "result_reply": "Sent Kenji a request for the invitation letter, asking for it by October 2.",
+      "topic": "Visa invitation letter request for Tokyo trip with Nakamura Logistics in October 2026"
+    },
+    {
+      "canned_result": "Set a reminder for October 7 at 8:00 AM to check in for Alaska Airlines flight 332 to Los Angeles departing October 8 at 10:15 AM.",
+      "key": "f6",
+      "opening_request": "remind me to check in for my Alaska flight to LA the day before",
+      "result_reply": "Reminder set for Oct 7 at 8 AM to check in for Alaska 332.",
+      "topic": "Reminder to check in for Alaska Airlines flight to Los Angeles on October 8, 2026"
+    },
+    {
+      "canned_result": "Found a folio email from Hilton Garden Inn Phoenix Airport for Nov 3-5 showing a total of $389.22 including taxes and parking.",
+      "key": "f7",
+      "opening_request": "can you find the invoice from the Hilton Garden Inn in Phoenix for my Nov stay",
+      "result_reply": "Found it: $389.22 total for Nov 3-5, including taxes and parking.",
+      "topic": "Hilton Garden Inn Phoenix invoice for November 3-5, 2026 stay"
+    },
+    {
+      "canned_result": "Found a SuperShuttle confirmation for pickup at Logan Terminal B on Sept 18 at 6:40 PM, reservation #SS-55812, fare $34.",
+      "key": "f8",
+      "opening_request": "did my SuperShuttle pickup at Logan on the 18th get confirmed?",
+      "result_reply": "Confirmed. Logan Terminal B pickup Sept 18 at 6:40 PM, reservation SS-55812, $34.",
+      "topic": "Airport shuttle booking with SuperShuttle for Boston Logan pickup on September 18, 2026"
+    },
+    {
+      "canned_result": "Found an Allianz email from Sept 9 saying claim #AZ-introduced 88413 is approved for $180 in essential purchases, with payment in 5-7 business days.",
+      "key": "f9",
+      "opening_request": "look up where my Allianz baggage delay claim stands",
+      "result_reply": "Allianz approved your claim for $180. Payment is expected within 5-7 business days.",
+      "topic": "Travel insurance claim with Allianz for delayed baggage on August 30, 2026 Chicago flight"
+    },
+    {
+      "canned_result": "Sent Priya Raman at Brightwave an email proposing dinner on October 21 at 7 PM in Manhattan and asking about dietary restrictions and cuisine preferences.",
+      "key": "f10",
+      "opening_request": "tell Priya we can do dinner Oct 21 in New York, ask about her food preferences",
+      "result_reply": "Sent Priya a dinner invite for Oct 21 at 7 PM, asking about food preferences.",
+      "topic": "Email to Priya Raman at Brightwave about dinner plans during her New York visit on October 21, 2026"
+    },
+    {
+      "canned_result": "Found a JetBlue notice that flight 1623 on Nov 17 moved from 9:20 AM to 11:05 AM, with arrival now at 2:30 PM.",
+      "key": "f11",
+      "opening_request": "JetBlue said something about a schedule change for Fort Lauderdale, what's the new time?",
+      "result_reply": "Your Nov 17 JetBlue flight now departs 11:05 AM instead of 9:20, arriving 2:30 PM.",
+      "topic": "JetBlue flight change notification for Fort Lauderdale trip on November 17, 2026"
+    },
+    {
+      "canned_result": "Compiled itinerary: Alaska flight Sept 22 arriving SFO 11:40 AM, Hyatt Regency San Mateo Sept 22-24, SaaStr badge pickup Sept 23 at 8 AM, return flight Sept 24 at 6:15 PM.",
+      "key": "f12",
+      "opening_request": "summarize all my travel emails for the SaaStr trip into one itinerary",
+      "result_reply": "Itinerary ready: fly in Sept 22, Hyatt San Mateo through Sept 24, return 6:15 PM that day.",
+      "topic": "Conference travel itinerary summary for SaaStr Annual in San Mateo, September 2026"
+    },
+    {
+      "canned_result": "Set a reminder for Monday, September 14 at 9:00 AM titled 'Start passport renewal for Madrid trip Nov 16' with a note about expedited processing.",
+      "key": "f13",
+      "opening_request": "remind me next Monday to start my passport renewal, Madrid trip is in November",
+      "result_reply": "Reminder set for Monday Sept 14 at 9 AM to start your passport renewal.",
+      "topic": "Reminder to renew passport before the Madrid trip in November 2026"
+    },
+    {
+      "canned_result": "Found an Enterprise receipt dated Sept 8 for a midsize rental at Raleigh-Durham airport, 3 days, total $162.77, agreement number 4420981.",
+      "key": "f14",
+      "opening_request": "find my Enterprise receipt from the Raleigh trip early September",
+      "result_reply": "Found it: $162.77 for three days at RDU, agreement 4420981.",
+      "topic": "Enterprise car rental receipt from Raleigh trip on September 8, 2026"
+    },
+    {
+      "canned_result": "Replied to Tom Whitaker at Orion Freight confirming a 2:00 PM meeting at the Houston office on October 14 and asking for visitor parking details.",
+      "key": "f15",
+      "opening_request": "reply to Tom Whitaker that I can meet at the Houston office on Oct 14 at 2",
+      "result_reply": "Replied to Tom confirming Oct 14 at 2 PM in Houston, and asked about parking.",
+      "topic": "Reply to Tom Whitaker at Orion Freight about meeting at Houston office on October 14, 2026"
+    },
+    {
+      "canned_result": "Found Lufthansa booking for LH 457 on Nov 5 in Economy Light with hand baggage only; a first checked bag costs an extra €60 if added online.",
+      "key": "f16",
+      "opening_request": "what's the checked bag allowance on my Lufthansa Frankfurt flight in November?",
+      "result_reply": "Your fare is hand baggage only. Adding a checked bag online costs €60.",
+      "topic": "Lufthansa meal preference and baggage allowance for Frankfurt flight LH 457 on November 5, 2026"
+    },
+    {
+      "canned_result": "Sent a support request to Uber citing two identical $42.18 charges on Oct 2 for a Miami Beach to MIA airport ride, attaching both receipts and requesting a refund.",
+      "key": "f17",
+      "opening_request": "email Uber about the double charge from my Miami ride on Oct 2",
+      "result_reply": "Sent Uber a dispute for the duplicate $42.18 charge on Oct 2 with receipts attached.",
+      "topic": "Uber receipt dispute for duplicate charge in Miami on October 2, 2026"
+    },
+    {
+      "canned_result": "Set a reminder for November 6 at 10:00 AM to add the World of Hyatt number to the Salt Lake City reservation for the Nov 10 check-in.",
+      "key": "f18",
+      "opening_request": "remind me Nov 6 to add my World of Hyatt number for the Salt Lake stay",
+      "result_reply": "Reminder set for Nov 6 at 10 AM to add your World of Hyatt number.",
+      "topic": "Reminder to submit hotel loyalty number to Hyatt for Salt Lake City stay on November 10, 2026"
+    }
+  ]
+}

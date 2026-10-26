@@ -1,0 +1,237 @@
+{
+  "provenance": {
+    "attempts": 1,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "f90d976b1e754da2e321213010152428cc0e184978308f204b33995968e3f714",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found 'Lisbon trip itinerary' from marcus.webb@northwindlogistics.com, sent Sept 14. It lists TAP flight TP204 leaving JFK Nov 9 at 9:40pm, returning Nov 14, and a Memmo Alfama hotel booking, confirmation MA55821.",
+      "follow_ups": [
+        {
+          "reply": "Hotel confirmation is MA55821 at Memmo Alfama, Nov 10 to 14.",
+          "request": "what's the hotel confirmation number",
+          "result": "The hotel confirmation number in Marcus's email is MA55821, for Memmo Alfama, Nov 10 to 14."
+        },
+        {
+          "reply": "Forwarded the itinerary to Dana Liu in finance.",
+          "request": "forward it to dana in finance",
+          "result": "Forwarded Marcus's itinerary email to dana.liu@northwindlogistics.com with no added message."
+        },
+        {
+          "reply": "Reminder set for Nov 8 at 9am to check in for TP204.",
+          "request": "remind me nov 8 to check in online for the flight",
+          "result": "Created a reminder for Nov 8 at 9:00am: 'Check in online for TAP TP204 to Lisbon'."
+        }
+      ],
+      "key": "c1",
+      "opening_request": "find the lisbon trip itinerary marcus sent for november",
+      "pair_key": "c2",
+      "result_reply": "Found Marcus's Sept 14 itinerary: TAP TP204 out of JFK Nov 9, back Nov 14, Memmo Alfama hotel.",
+      "topic": "Marcus Webb's Lisbon trip itinerary for the November 2026 Web Summit"
+    },
+    {
+      "canned_result": "No approval yet. Expensify sent a Sept 29 email saying report 'Sept Client Dinners' ($412.60) was submitted to marcus.webb@northwindlogistics.com and is still pending.",
+      "follow_ups": [
+        {
+          "reply": "Drafted a short nudge to Marcus about the $412.60 report. Want me to send it?",
+          "request": "draft a quick nudge to marcus about it",
+          "result": "Drafted an email to Marcus Webb: 'Hi Marcus, could you approve my Sept Client Dinners report ($412.60) in Expensify when you get a chance? Thanks.' Not sent."
+        },
+        {
+          "reply": "It's been pending 9 days, submitted Sept 29.",
+          "request": "how many days has it been pending",
+          "result": "The report was submitted Sept 29, so it has been pending for 9 days as of Oct 8."
+        },
+        {
+          "reply": "Reminder set for Friday at 10am to check the approval.",
+          "request": "remind me friday to check if it got approved",
+          "result": "Created a reminder for Friday Oct 9 at 10:00am: 'Check whether Marcus approved Sept expense report'."
+        }
+      ],
+      "key": "c2",
+      "opening_request": "did marcus approve my september expense report yet",
+      "pair_key": "c1",
+      "result_reply": "Not yet. Your $412.60 September client dinners report is still pending with Marcus.",
+      "topic": "Marcus Webb's approval of the September expense report for client dinners"
+    },
+    {
+      "canned_result": "Found a Stripe email from notifications@stripe.com dated Nov 3: payout of $8,214.37 sent to Chase account ending 4471, expected to arrive Nov 5.",
+      "follow_ups": [
+        {
+          "reply": "It's going to your Chase account ending in 4471.",
+          "request": "what bank account is it going to",
+          "result": "The payout is going to the Chase checking account ending in 4471."
+        },
+        {
+          "reply": "Forwarded the payout email to Bea at Santoro Accounting.",
+          "request": "forward it to my accountant bea",
+          "result": "Forwarded the Stripe payout email to bea.santoro@santoroaccounting.com."
+        },
+        {
+          "reply": "Yes, September's payout was $7,590.12, emailed Oct 2.",
+          "request": "is there a september payout email too",
+          "result": "Yes, Stripe sent a Oct 2 email for a September payout of $7,590.12 to the same Chase account."
+        }
+      ],
+      "key": "c3",
+      "opening_request": "find the stripe payout email for october",
+      "pair_key": "c4",
+      "result_reply": "Stripe's Nov 3 email shows an $8,214.37 payout to Chase ending 4471, arriving Nov 5.",
+      "topic": "Stripe October payout of $8,214.37 deposited November 3"
+    },
+    {
+      "canned_result": "Found an Oct 8 email from disputes@stripe.com: customer dispute for a $149.00 charge (reason: product not received), evidence due Oct 22, 2026.",
+      "follow_ups": [
+        {
+          "reply": "They claimed the product wasn't received.",
+          "request": "what reason did the customer give",
+          "result": "The dispute reason listed is 'product not received', filed by the cardholder via their bank."
+        },
+        {
+          "reply": "Reminder set for Oct 20 at 9am to submit the evidence.",
+          "request": "remind me oct 20 to submit evidence",
+          "result": "Created a reminder for Oct 20 at 9:00am: 'Submit Stripe dispute evidence ($149), due Oct 22'."
+        },
+        {
+          "reply": "Found the Sept 18 order confirmation and a Sept 19 delivery email, useful as evidence.",
+          "request": "find the original order confirmation for that customer",
+          "result": "Found an order confirmation sent Sept 18 to the customer's address, for $149.00, with a delivery email attached on Sept 19."
+        }
+      ],
+      "key": "c4",
+      "opening_request": "there's a stripe dispute email somewhere, what's the deadline",
+      "pair_key": "c3",
+      "result_reply": "The Stripe dispute on a $149 charge needs evidence by Oct 22.",
+      "topic": "Stripe chargeback dispute for $149 with evidence due October 22"
+    },
+    {
+      "canned_result": "Yes. A DocuSign email from dse@docusign.net on Sept 30 says the mutual NDA with Hartwell & Boyd LLP was completed, signed last by Claire Hartwell.",
+      "follow_ups": [
+        {
+          "reply": "Claire Hartwell signed last, at 3:12pm on Sept 30.",
+          "request": "who signed last",
+          "result": "Claire Hartwell signed last, at 3:12pm on Sept 30, per the DocuSign completion notice."
+        },
+        {
+          "reply": "Sent the signed NDA PDF to Raj.",
+          "request": "send the signed copy to my cofounder raj",
+          "result": "Sent the completed NDA PDF attached to an email to raj@brightloomhq.com."
+        },
+        {
+          "reply": "It runs two years, expiring Sept 30, 2028.",
+          "request": "does the nda have an expiry date",
+          "result": "The DocuSign summary mentions a two-year term, ending Sept 30, 2028."
+        }
+      ],
+      "key": "c5",
+      "opening_request": "did the hartwell nda get signed",
+      "pair_key": "c6",
+      "result_reply": "Yes, DocuSign shows the Hartwell & Boyd NDA fully signed Sept 30, with Claire Hartwell last.",
+      "topic": "NDA with Hartwell & Boyd LLP signed through DocuSign"
+    },
+    {
+      "canned_result": "Found invoice #1087 from billing@hartwellboyd.com, dated Oct 1, for $3,500.00 monthly retainer, due Oct 31, 2026.",
+      "follow_ups": [
+        {
+          "reply": "Reminder set for Oct 28 at 9am to pay invoice #1087.",
+          "request": "set a reminder to pay it on the 28th",
+          "result": "Created a reminder for Oct 28 at 9:00am: 'Pay Hartwell & Boyd invoice #1087 ($3,500)'."
+        },
+        {
+          "reply": "Both. ACH is free, card adds a 3% fee.",
+          "request": "do they take ach or just card",
+          "result": "The invoice lists ACH to account ending 2290 or card with a 3% fee."
+        },
+        {
+          "reply": "Forwarded the invoice to Raj for approval.",
+          "request": "forward it to raj so he can approve",
+          "result": "Forwarded invoice #1087 to raj@brightloomhq.com with the note 'Please approve for payment'."
+        }
+      ],
+      "key": "c6",
+      "opening_request": "find the invoice from hartwell and boyd, need to pay it",
+      "pair_key": "c5",
+      "result_reply": "Invoice #1087 from Hartwell & Boyd is $3,500, due Oct 31.",
+      "topic": "Hartwell & Boyd LLP retainer invoice #1087 for $3,500"
+    },
+    {
+      "canned_result": "Found a Namecheap email from support@namecheap.com saying brightloomhq.com expires Oct 30, 2026, renewal $14.98. Set a reminder for Oct 26 at 9:00am.",
+      "follow_ups": [
+        {
+          "reply": "Renewal is $14.98 for one year.",
+          "request": "how much is the renewal",
+          "result": "The Namecheap email lists the one-year renewal at $14.98."
+        },
+        {
+          "reply": "Moved the reminder to Oct 23 at 9am.",
+          "request": "move the reminder to oct 23",
+          "result": "Updated the reminder to Oct 23 at 9:00am."
+        },
+        {
+          "reply": "No, auto-renew is off, so you'll need to renew manually.",
+          "request": "is auto-renew on",
+          "result": "The email says auto-renew is off for brightloomhq.com."
+        }
+      ],
+      "key": "c7",
+      "opening_request": "remind me to renew the brightloomhq domain before it expires",
+      "pair_key": null,
+      "result_reply": "Domain expires Oct 30 ($14.98 to renew). Reminder set for Oct 26 at 9am.",
+      "topic": "Reminder to renew the domain brightloomhq.com at Namecheap before October 28"
+    },
+    {
+      "canned_result": "Elena Vasquez (elena@brightloomhq.com) sent 'Q3 Board Update' on Oct 12: revenue $1.84M, up 11% over Q2, churn down to 2.1%, and a hiring freeze until January.",
+      "follow_ups": [
+        {
+          "reply": "Churn dropped from 2.9% to 2.1% thanks to the new onboarding emails.",
+          "request": "what did she say about churn",
+          "result": "She said churn fell from 2.9% to 2.1%, credited to the new onboarding emails."
+        },
+        {
+          "reply": "Drafted a thank-you asking for the deck. Should I send it?",
+          "request": "reply thanking her and asking for the slide deck",
+          "result": "Drafted a reply to Elena thanking her for the update and asking her to share the slide deck. Not sent yet."
+        },
+        {
+          "reply": "Board meeting is Nov 18 at 2pm Eastern.",
+          "request": "is there a board meeting date in there",
+          "result": "Yes, the email mentions the board meeting on Nov 18 at 2:00pm Eastern."
+        }
+      ],
+      "key": "c8",
+      "opening_request": "summarize elena's q3 board update email",
+      "pair_key": null,
+      "result_reply": "Elena's Q3 update: revenue $1.84M (+11%), churn 2.1%, hiring freeze until January.",
+      "topic": "Summary of Elena Vasquez's Q3 board update email"
+    },
+    {
+      "canned_result": "Found Tom Okafor's Oct 15 email from Stackline Software inviting you to a demo on Nov 5 at 11am. Drafted a polite decline saying the team is not evaluating new tools until January.",
+      "follow_ups": [
+        {
+          "reply": "Warmed it up with thanks and an offer to reconnect in the new year.",
+          "request": "make it a bit warmer",
+          "result": "Revised the draft to open with thanks for his time and end with 'happy to reconnect in the new year'."
+        },
+        {
+          "reply": "Sent to Tom Okafor.",
+          "request": "ok send it",
+          "result": "Sent the reply to tom.okafor@stacklinesoftware.com at 2:41pm."
+        },
+        {
+          "reply": "Reminder set for Jan 11 to follow up with Tom.",
+          "request": "remind me jan 11 to follow up with him",
+          "result": "Created a reminder for Jan 11, 2027 at 9:00am: 'Follow up with Tom Okafor at Stackline'."
+        }
+      ],
+      "key": "c9",
+      "opening_request": "draft a reply to tom okafor saying no to the nov 5 demo",
+      "pair_key": null,
+      "result_reply": "Drafted a polite decline to Tom Okafor for the Nov 5 demo, mentioning January.",
+      "topic": "Reply declining Tom Okafor's vendor demo invitation for November 5"
+    }
+  ]
+}

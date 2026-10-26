@@ -1,0 +1,112 @@
+{
+  "provenance": {
+    "attempts": 1,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "6950c8bee6a3bfed25c6aa3f75beb10df30d145679e3082c79bd821ebd60aa30",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found 3 Venmo receipt emails from venmo@venmo.com for payments to Maya Chen in September: $60 on Sept 5, $75 on Sept 12, and $60 on Sept 26, totaling $195.",
+      "follow_ups": [
+        {
+          "reply": "The $75 was Sept 12, noted 'Friday late night + extra hour, thank you!'",
+          "request": "which one was the $75, and what was the note on it?",
+          "result": "The $75 payment was sent Sept 12 at 9:42 PM with the note 'Friday late night + extra hour, thank you!'."
+        },
+        {
+          "reply": "Done, all three receipts are forwarded to Daniel.",
+          "request": "forward all three to my husband so he can log them in our budget",
+          "result": "Forwarded the three Venmo receipt emails to daniel.okafor@gmail.com with the subject 'Babysitter payments – September'."
+        },
+        {
+          "reply": "Reminder set for Oct 3 at 9am to pay Maya for the Oct 2 date night.",
+          "request": "remind me on oct 3 to pay maya for the date night on the 2nd",
+          "result": "Reminder set for October 3 at 9:00 AM: 'Pay Maya Chen for Oct 2 date night via Venmo'."
+        }
+      ],
+      "key": "c1",
+      "opening_request": "find the venmo receipts for what i paid maya the babysitter in september",
+      "pair_key": "c2",
+      "result_reply": "Found three Venmo payments to Maya in September: $60, $75 and $60, totaling $195.",
+      "topic": "Venmo receipts for babysitter Maya Chen's September date-night payments"
+    },
+    {
+      "canned_result": "Venmo email from venmo@venmo.com dated Sept 18: Tom Reyes requested $240 with the note 'half of fence repair – Alder Fence Co. invoice $480'. It is still pending.",
+      "follow_ups": [
+        {
+          "reply": "Tom says Alder Fence Co. replaced three shared-fence panels on Sept 14.",
+          "request": "does he say when the fence work was done?",
+          "result": "A separate email from Tom Reyes on Sept 16 says Alder Fence Co. replaced three panels on the shared fence on Sept 14."
+        },
+        {
+          "reply": "Sent. Told Tom you'll pay the $240 this weekend and thanked him.",
+          "request": "reply to tom that i'll pay him this weekend, thanks for handling it",
+          "result": "Sent a reply to tom.reyes@gmail.com: 'Thanks for handling the fence, Tom. I'll pay the $240 this weekend.'"
+        },
+        {
+          "reply": "Reminder set for Saturday Sept 26 at 9am to pay Tom $240.",
+          "request": "set a reminder saturday morning to pay the $240",
+          "result": "Reminder set for Saturday, September 26 at 9:00 AM: 'Pay Tom Reyes $240 on Venmo for fence repair'."
+        }
+      ],
+      "key": "c2",
+      "opening_request": "tom next door sent a venmo request for the fence, what's it for exactly?",
+      "pair_key": "c1",
+      "result_reply": "Tom requested $240 on Sept 18 for half of the $480 Alder Fence Co. repair. Still pending.",
+      "topic": "Venmo request from neighbor Tom Reyes for half of the backyard fence repair"
+    },
+    {
+      "canned_result": "Found AAA renewal notice from renewals@aaa-norcal.com: Plus membership #4417 expires November 5, renewal is $119. Set a reminder for October 26 at 8:00 AM.",
+      "follow_ups": [
+        {
+          "reply": "Yes, renewing by Oct 15 saves $10, making it $109.",
+          "request": "is there a discount if i renew early?",
+          "result": "The notice says renewing by October 15 gets a $10 early-renewal credit, bringing the price to $109."
+        },
+        {
+          "reply": "Moved to Oct 12 at 8am so you catch the early discount.",
+          "request": "move the reminder to oct 12 then",
+          "result": "Moved the reminder to October 12 at 8:00 AM with the note 'Renew AAA Plus early for $109'."
+        },
+        {
+          "reply": "Roadside assistance number is 1-800-555-0142, per the AAA email.",
+          "request": "do we have the roadside assistance number from that email?",
+          "result": "The email lists the roadside assistance number as 1-800-555-0142 and says members can also request help in the AAA app."
+        }
+      ],
+      "key": "c3",
+      "opening_request": "remind me to renew our AAA membership before it lapses in november",
+      "pair_key": null,
+      "result_reply": "AAA Plus expires Nov 5, renewal $119. Reminder set for Oct 26 at 8am.",
+      "topic": "Reminder to renew AAA Plus membership before November 5"
+    },
+    {
+      "canned_result": "Found Hilton Garden Inn Sacramento confirmation from reservations@hilton.com: confirmation #HG58213, check-in Oct 23, check-out Oct 25, king room, $214 per night, free cancellation until Oct 21.",
+      "follow_ups": [
+        {
+          "reply": "Check-in is from 3pm, checkout by 11am.",
+          "request": "what time is check-in?",
+          "result": "The confirmation lists check-in from 3:00 PM and check-out by 11:00 AM."
+        },
+        {
+          "reply": "Parking is $25/night and breakfast isn't included.",
+          "request": "does it include parking or breakfast?",
+          "result": "The email says parking is $25 per night and breakfast is not included, though the hotel restaurant is open from 6:30 AM."
+        },
+        {
+          "reply": "Reminder set for Oct 20 at 6pm, a day before free cancellation ends.",
+          "request": "remind me oct 20 to decide if we're keeping it before cancellation closes",
+          "result": "Reminder set for October 20 at 6:00 PM: 'Confirm Hilton Garden Inn Sacramento stay, free cancellation ends Oct 21'."
+        }
+      ],
+      "key": "c4",
+      "opening_request": "find our hotel confirmation for the anniversary weekend in sacramento",
+      "pair_key": null,
+      "result_reply": "Hilton Garden Inn Sacramento, Oct 23-25, confirmation #HG58213, $214/night, free cancellation until Oct 21.",
+      "topic": "Hilton Garden Inn Sacramento reservation for anniversary weekend October 23-25"
+    }
+  ]
+}

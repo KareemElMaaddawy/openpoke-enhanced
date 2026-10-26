@@ -1,0 +1,138 @@
+{
+  "provenance": {
+    "attempts": 1,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "344ba2200c8bfd358af8e87f2553c8bac4cffb271e79f5375c4781965929b99a",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found Newegg shipping confirmation from Sept 18 2026 for a Corsair Vengeance 32GB DDR5 kit, shipped via UPS Ground with tracking 1Z55K7810392 and estimated delivery Sept 23.",
+      "key": "f1",
+      "opening_request": "can you find the Newegg shipping email for my RAM order and tell me the tracking number",
+      "result_reply": "Shipped Sept 18 via UPS Ground, tracking 1Z55K7810392, expected Sept 23.",
+      "topic": "Newegg order for Corsair 32GB DDR5 RAM kit, shipping confirmation from Sept 18 2026"
+    },
+    {
+      "canned_result": "Set a reminder for Oct 7 2026 at 9:00 AM titled 'Cancel HelloFresh before Oct 9 renewal' with a link to the account settings email.",
+      "key": "f2",
+      "opening_request": "remind me to cancel hellofresh before it renews on oct 9, thx",
+      "result_reply": "Reminder set for Oct 7 at 9 AM to cancel HelloFresh.",
+      "topic": "Reminder to cancel Hello Fresh subscription before the Oct 9 2026 renewal"
+    },
+    {
+      "canned_result": "Located the Williams Sonoma confirmation for a 5.5-qt Le Creuset Dutch oven in Marseille blue, order WS-6620418, $419.95. The email includes a link to print a gift receipt without prices.",
+      "key": "f3",
+      "opening_request": "find the williams sonoma receipt for the dutch oven, need a gift receipt version",
+      "result_reply": "Found order WS-6620418, $419.95. The email has a link for a price-free gift receipt.",
+      "topic": "Williams Sonoma order of Le Creuset Dutch oven, gift receipt request, order WS-6620418"
+    },
+    {
+      "canned_result": "Drafted a reply to Glossier support for order #GL-90233 saying the Cloud Paint in Beam was missing from the package, asking for a replacement or refund, and attaching the packing slip photo reference. Saved as draft.",
+      "key": "f4",
+      "opening_request": "draft a reply to glossier, my order showed up missing the cloud paint blush",
+      "result_reply": "Draft to Glossier support is ready, requesting a replacement or refund for the missing Cloud Paint.",
+      "topic": "Draft reply to Glossier support about missing item in Oct 2026 order #GL-90233"
+    },
+    {
+      "canned_result": "Uniqlo's Oct 8 2026 email for order UQ-3318870 (3 Heattech crew neck tops) says it shipped via USPS Priority and should arrive Oct 14.",
+      "key": "f5",
+      "opening_request": "when is my uniqlo order supposed to get here? the heattech stuff",
+      "result_reply": "Your Uniqlo Heattech order should arrive Oct 14 via USPS Priority.",
+      "topic": "Uniqlo order of heattech base layers, delivery status for order UQ-3318870 due Oct 14 2026"
+    },
+    {
+      "canned_result": "Found a Thrive Market receipt dated Sept 12 2026 for the annual membership renewal, $59.95, charged to Visa ending 4417.",
+      "key": "f6",
+      "opening_request": "did thrive market charge me for the membership? need the receipt",
+      "result_reply": "Yes, Thrive Market charged $59.95 on Sept 12 to Visa ending 4417.",
+      "topic": "Trader Joe's no—Thrive Market membership renewal receipt of $59.95 dated Sept 12 2026"
+    },
+    {
+      "canned_result": "Sent an email to Crate & Barrel customer service asking to change the shipping address for order CB-882104 to 450 Market Street, Suite 1200, before it ships. Awaiting confirmation.",
+      "key": "f7",
+      "opening_request": "email crate and barrel to switch the delivery address on my order to my office",
+      "result_reply": "Sent the address change request to Crate & Barrel for order CB-882104. Awaiting confirmation.",
+      "topic": "Send Crate & Barrel a message to change delivery address on order CB-882104 to the office"
+    },
+    {
+      "canned_result": "Burrow's email confirms white-glove delivery of the Nomad sofa on Nov 9 2026 with a 1:00–5:00 PM window; the carrier will call 30 minutes before arrival.",
+      "key": "f8",
+      "opening_request": "what time is the burrow couch delivery on nov 9",
+      "result_reply": "Burrow delivers Nov 9 between 1 and 5 PM; the carrier calls 30 minutes ahead.",
+      "topic": "Overstock-style order from Burrow: couch delivery appointment on Nov 9 2026 with white-glove service"
+    },
+    {
+      "canned_result": "Created a reminder for Oct 18 2026 at 8:00 AM: 'Check Adidas Ultraboost sale' referencing the Adidas email announcing up to 30% off running shoes.",
+      "key": "f9",
+      "opening_request": "remind me on oct 18 to look at the adidas ultraboost sale",
+      "result_reply": "Reminder set for Oct 18 at 8 AM to check the Adidas Ultraboost sale.",
+      "topic": "Reminder to check for Adidas Ultraboost price drop after Oct 18 2026 sale email"
+    },
+    {
+      "canned_result": "Ulta emailed on Sept 29 2026 confirming a refund of $38.40 to the original Mastercard for the returned CeraVe moisturizer set, posting in 3-5 business days.",
+      "key": "f10",
+      "opening_request": "did ulta ever refund me for the moisturizer i sent back?",
+      "result_reply": "Yes, Ulta refunded $38.40 on Sept 29; it should post within 3-5 business days.",
+      "topic": "Search for Ulta Beauty order refund of $38.40 after returned moisturizer, return dated Sept 21 2026"
+    },
+    {
+      "canned_result": "Replied to Tom at Brooklyn Bicycle Co. confirming pickup of the Fuji Absolute commuter bike on Saturday Oct 3 2026, and asked if the shop closes at 5 PM.",
+      "key": "f11",
+      "opening_request": "tell tom at brooklyn bicycle I'll pick up the fuji bike saturday",
+      "result_reply": "Replied to Tom confirming Saturday Oct 3 pickup and asked about closing time.",
+      "topic": "Reply to Tom at Brooklyn Bicycle Co. confirming pickup of the Fuji commuter bike on Saturday Oct 3 2026"
+    },
+    {
+      "canned_result": "Sweetwater emailed Oct 5 2026 that the Focusrite Scarlett 2i2 (order SW-5519027) is delayed and should ship by Oct 12; no action needed.",
+      "key": "f12",
+      "opening_request": "check if sweetwater said anything about my focusrite interface being late",
+      "result_reply": "Sweetwater says the Scarlett 2i2 is delayed and should ship by Oct 12.",
+      "topic": "Apple Store—no, Sweetwater order of Focusrite Scarlett 2i2 audio interface, shipping delay email Oct 2026"
+    },
+    {
+      "canned_result": "Found an Ace Hardware e-receipt from Sept 5 2026 for a 20 lb propane tank exchange, $23.99 total, Rewards account member.",
+      "key": "f13",
+      "opening_request": "find my ace hardware receipt for the propane tank swap early sept",
+      "result_reply": "Found it: Ace Hardware, Sept 5, propane exchange, $23.99.",
+      "topic": "Find Ace Hardware receipt for Weber grill propane tank exchange on Sept 5 2026"
+    },
+    {
+      "canned_result": "Set a reminder for Oct 31 2026 at 6:00 PM to drop off the Rent the Runway prepaid return bag, due Nov 2.",
+      "key": "f14",
+      "opening_request": "remind me to ship back the rent the runway dress by nov 2",
+      "result_reply": "Reminder set for Oct 31 at 6 PM to return the Rent the Runway dress.",
+      "topic": "Reminder to return Rent the Runway dress by Nov 2 2026 using prepaid bag"
+    },
+    {
+      "canned_result": "Samsung order 20260917-4418 is a Galaxy Watch 7 44mm for $279.99 after a $50 trade-in credit; the trade-in kit must be mailed within 30 days or the credit is reversed.",
+      "key": "f15",
+      "opening_request": "summarize my samsung watch order email, mainly the trade in credit",
+      "result_reply": "Watch 7 is $279.99 after a $50 trade-in credit; mail your old device within 30 days.",
+      "topic": "Summarize Samsung Galaxy Watch 7 order confirmation, order 20260917-4418, with trade-in credit"
+    },
+    {
+      "canned_result": "Drafted an email to Petco support asking to delay the Fluval 207 canister filter order by one week to ship after Oct 20 2026, citing travel. Saved to drafts.",
+      "key": "f16",
+      "opening_request": "draft a note to petco, need my fish tank filter order delayed a week",
+      "result_reply": "Draft to Petco is ready, asking to hold the Fluval filter shipment until after Oct 20.",
+      "topic": "Draft email to Petco asking to update the delivery date on Oct 2026 aquarium filter order"
+    },
+    {
+      "canned_result": "Barnes & Noble confirmation from Sept 24 2026 shows a pre-order of the hardcover, $29.99, releasing Nov 10 2026 with free shipping to arrive on release day.",
+      "key": "f17",
+      "opening_request": "did my barnes and noble preorder for the new sanderson go through?",
+      "result_reply": "Yes, pre-ordered Sept 24 for $29.99; it's scheduled to arrive Nov 10.",
+      "topic": "Search for Barnes & Noble pre-order of Brandon Sanderson novel releasing Nov 10 2026"
+    },
+    {
+      "canned_result": "Created a reminder for Oct 28 2026 at 10:00 AM to use the 20% off Bed Bath & Beyond coupon (code BBB20FALL) which expires Oct 31.",
+      "key": "f18",
+      "opening_request": "set a reminder to use my bed bath coupon before it expires oct 31",
+      "result_reply": "Reminder set for Oct 28 at 10 AM to use the 20% coupon.",
+      "topic": "Reminder about Bed Bath & Beyond coupon 20% off expiring Oct 31 2026"
+    }
+  ]
+}

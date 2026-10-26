@@ -1,0 +1,137 @@
+{
+  "provenance": {
+    "attempts": 2,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "f2ecb3164b3d771c698937d585f06f6d71ca4ed39d16e4b467b3cfb2ccf315bc",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found an email from expenses@plaid.com (Oct 22) saying to submit receipts for the Oct 20 SF onsite through Expensify by Nov 6; the cap is $900 for flight plus hotel.",
+      "follow_ups": [
+        {
+          "reply": "Found it: United receipt for $412.30, Denver to SFO, dated Oct 8.",
+          "request": "find my united receipt for that flight, it was around $412",
+          "result": "Found a United Airlines receipt from receipts@united.com dated Oct 8 for $412.30, Denver to SFO round trip, confirmation code K7QW2L."
+        },
+        {
+          "reply": "Sent the United receipt to expenses@plaid.com with your note, cc'ing Alisha Grant.",
+          "request": "forward that receipt to expenses@plaid.com with a note saying it's for the onsite",
+          "result": "Forwarded the United receipt to expenses@plaid.com with a note saying it covers the Oct 20 onsite travel, and cc'd the recruiter Alisha Grant."
+        },
+        {
+          "reply": "Reminder set for Nov 4 at 9am to upload the hotel receipt.",
+          "request": "remind me nov 4 to upload the hotel receipt too",
+          "result": "Set a reminder for Nov 4 at 9:00am: 'Upload Hotel Nikko receipt to Expensify for Plaid, due Nov 6.'"
+        }
+      ],
+      "key": "c1",
+      "opening_request": "find the email about plaid reimbursing my flight and hotel for the onsite",
+      "pair_key": "c2",
+      "result_reply": "Plaid wants flight and hotel receipts submitted in Expensify by Nov 6, with a $900 cap.",
+      "topic": "Plaid onsite travel expense reimbursement for Oct 20 San Francisco trip"
+    },
+    {
+      "canned_result": "Found an email from marcus.chen@gmail.com (Sept 29) saying he submitted your referral for the Data Engineer, Platform role through Plaid's internal portal and gave the referral ID PLD-55820.",
+      "follow_ups": [
+        {
+          "reply": "Sent Marcus a thank-you and asked if he knows the hiring manager.",
+          "request": "write marcus a quick thanks and ask if he knows the hiring manager",
+          "result": "Drafted and sent a reply to marcus.chen@gmail.com thanking him for the referral and asking whether he knows the Data Engineer hiring manager."
+        },
+        {
+          "reply": "Marcus said the manager is Priyanka Desai, a former Block colleague, and offered to message her.",
+          "request": "what did marcus say back about the hiring manager?",
+          "result": "Marcus replied Oct 2 that the hiring manager is Priyanka Desai, whom he worked with at Block, and offered to message her directly."
+        },
+        {
+          "reply": "Reminder set for Oct 16 at 10am to check in with Marcus.",
+          "request": "set a reminder for oct 16 to check in with marcus if i haven't heard from plaid",
+          "result": "Created a reminder for Oct 16 at 10:00am: 'Check in with Marcus Chen if no response from Plaid on referral PLD-55820.'"
+        }
+      ],
+      "key": "c2",
+      "opening_request": "did marcus chen ever confirm he referred me at plaid for the data engineer job?",
+      "pair_key": "c1",
+      "result_reply": "Yes, Marcus emailed Sept 29 confirming he submitted your Data Engineer referral at Plaid, ID PLD-55820.",
+      "topic": "Plaid referral from former coworker Marcus Chen for Data Engineer role"
+    },
+    {
+      "canned_result": "Found a confirmation from events@lyft.com (Oct 18) for the 'Lyft Product Design Virtual Info Session' on Nov 5 at 12:00pm MT, with a Zoom link and a note that attendees get early access to open roles.",
+      "follow_ups": [
+        {
+          "reply": "Reminder set for Nov 5 at 11am MT, an hour before the session.",
+          "request": "add a reminder an hour before it starts",
+          "result": "Set a reminder for Nov 5 at 11:00am MT: 'Lyft Product Design info session starts at noon, Zoom link in confirmation email.'"
+        },
+        {
+          "reply": "Here's the link: lyft.zoom.us/j/84920175533, passcode DESIGN26.",
+          "request": "can you send me the zoom link again, i lost it",
+          "result": "Pulled the Zoom link from the Oct 18 confirmation: https://lyft.zoom.us/j/84920175533, passcode DESIGN26."
+        },
+        {
+          "reply": "Sent your question to events@lyft.com about a recording of the Nov 5 session.",
+          "request": "email events@lyft.com asking if the session will be recorded",
+          "result": "Sent an email to events@lyft.com asking whether the Nov 5 info session will be recorded and shared with attendees afterward."
+        }
+      ],
+      "key": "c3",
+      "opening_request": "pull up the lyft info session invite i signed up for in november",
+      "pair_key": null,
+      "result_reply": "Lyft's design info session is Nov 5 at 12pm MT on Zoom; confirmation came Oct 18.",
+      "topic": "Lyft virtual info session for design roles on Nov 5"
+    },
+    {
+      "canned_result": "Found an email from rachel@kimcareercoaching.com (Oct 11) with 'Cover Letter Framework v2.docx' attached, plus three bullet tips on opening with a specific result and keeping it under 300 words.",
+      "follow_ups": [
+        {
+          "reply": "Her tips: open with a measurable result, tie a project to their product, stay under 300 words.",
+          "request": "send me just her three tips as a short summary",
+          "result": "Summary of Rachel's tips: 1) open with a specific measurable result, 2) tie one project to the company's product, 3) keep it under 300 words."
+        },
+        {
+          "reply": "Asked Rachel to review your draft by Friday and mentioned it's for Vercel.",
+          "request": "reply to rachel asking if she can review my draft by friday",
+          "result": "Sent a reply to rachel@kimcareercoaching.com asking if she can review the cover letter draft by this Friday, and noted it's for a Vercel application."
+        },
+        {
+          "reply": "Yes, she can do Friday. A written review is $65, by Venmo or invoice.",
+          "request": "did she answer? what's her rate for a review",
+          "result": "Rachel replied Oct 13 that she can do it by Friday and charges $65 for a written review, payable by Venmo or invoice."
+        }
+      ],
+      "key": "c4",
+      "opening_request": "find the cover letter template rachel kim emailed me",
+      "pair_key": null,
+      "result_reply": "Rachel emailed Oct 11 with Cover Letter Framework v2.docx attached and three tips, including staying under 300 words.",
+      "topic": "Cover letter template and feedback from career coach Rachel Kim"
+    },
+    {
+      "canned_result": "Found an email from tmorales@roberthalf.com (Oct 7) quoting $58/hour W-2 for a 6-month contract-to-hire UX Designer role at a healthcare client, starting Nov 2, with benefits available after 30 days.",
+      "follow_ups": [
+        {
+          "reply": "Sent Tina your questions about rate flexibility and remote work.",
+          "request": "reply and ask if the rate is negotiable and if it's remote",
+          "result": "Sent a reply to tmorales@roberthalf.com asking whether the $58/hour rate is negotiable and whether the role can be fully remote."
+        },
+        {
+          "reply": "She said up to $62/hour is possible, and it's hybrid, two days onsite in Denver.",
+          "request": "what did she say?",
+          "result": "Tina replied Oct 9 that the rate can go up to $62/hour for the right candidate, and the role is hybrid with two days per week onsite in Denver."
+        },
+        {
+          "reply": "Reminder set for Thursday at 9am to answer Tina.",
+          "request": "remind me thursday at 9am to give tina my answer",
+          "result": "Created a reminder for Thursday at 9:00am: 'Give Tina Morales at Robert Half an answer on the contract-to-hire UX role.'"
+        }
+      ],
+      "key": "c5",
+      "opening_request": "what hourly rate did tina morales at robert half quote me for the contract role?",
+      "pair_key": null,
+      "result_reply": "Tina quoted $58/hour W-2 for a 6-month contract-to-hire UX role starting Nov 2.",
+      "topic": "Robert Half contract-to-hire role with recruiter Tina Morales, W-2 rate details"
+    }
+  ]
+}

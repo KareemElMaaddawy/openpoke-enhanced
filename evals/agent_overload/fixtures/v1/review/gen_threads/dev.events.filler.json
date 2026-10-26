@@ -1,0 +1,131 @@
+{
+  "provenance": {
+    "attempts": 1,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "20dcadaf5ed2ec403868cab8a9d828772cbad8015d75e058216caa22e1fac6a9",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found a Live Nation email from Sep 8 offering a $35 parking add-on for Ember Falls at Cascade Amphitheatre, Lot C, with a purchase link that expires Sep 24.",
+      "key": "f1",
+      "opening_request": "can you dig up the Live Nation email about parking for the Ember Falls show on the 27th",
+      "result_reply": "Found it: Live Nation offers Lot C parking for $35, link expires Sep 24.",
+      "topic": "Find Live Nation email about parking add-on for Ember Falls concert at Cascade Amphitheatre on Sep 27"
+    },
+    {
+      "canned_result": "Set a reminder for Oct 1 at 9:00 AM titled 'File Lindqvist Industrial Trade Show expense report', noting the Oct 5 submission deadline from Finance's email.",
+      "key": "f2",
+      "opening_request": "remind me oct 1 to file my expense report from the Lindqvist trade show",
+      "result_reply": "Reminder set for Oct 1 at 9 AM. Finance's deadline is Oct 5.",
+      "topic": "Reminder to submit expense report for Lindqvist Industrial Trade Show travel by Oct 5"
+    },
+    {
+      "canned_result": "Blue Heron Aquarium confirmed a corporate outing for 12 guests on Sep 25 at 10:30 AM, check-in at the group entrance, with a behind-the-scenes tour at 11:15.",
+      "key": "f3",
+      "opening_request": "summarize the Blue Heron Aquarium outing email, what time do we need to be there",
+      "result_reply": "Outing for 12 is Sep 25, check-in 10:30 AM at group entrance, tour at 11:15.",
+      "topic": "Summary of Blue Heron Aquarium corporate outing confirmation for 12 on Sep 25"
+    },
+    {
+      "canned_result": "Drafted and sent a reply to Elena Voss accepting the 20-minute slot at the Greenline Sustainability Forum on Nov 10 and asking for AV requirements and the run-of-show.",
+      "key": "f4",
+      "opening_request": "tell Elena Voss yes I'll take the Greenline Forum speaking slot on Nov 10",
+      "result_reply": "Sent. Accepted the Nov 10 Greenline slot and asked Elena for AV details.",
+      "topic": "Reply to Elena Voss accepting speaker slot at Greenline Sustainability Forum on Nov 10"
+    },
+    {
+      "canned_result": "Found a Southwest confirmation, code Q7LM2P, for Oct 13 departing 7:05 AM to Las Vegas, returning Oct 15 at 4:40 PM.",
+      "key": "f5",
+      "opening_request": "find my southwest confirmation for the vegas trip to SaaS Connect",
+      "result_reply": "Found it: Southwest code Q7LM2P, Oct 13 at 7:05 AM, returning Oct 15.",
+      "topic": "Find Southwest Airlines boarding confirmation for Las Vegas trip to SaaS Connect on Oct 13"
+    },
+    {
+      "canned_result": "Drafted an email to Ravi Menon at Foundry Collective requesting two additional guest passes for Startup Demo Day on Oct 21, with names left for him to confirm. Awaiting approval to send.",
+      "key": "f6",
+      "opening_request": "email ravi menon asking if I can get two more passes for Demo Day oct 21",
+      "result_reply": "Draft ready for Ravi asking for two extra Demo Day passes. Want me to send?",
+      "topic": "Draft email to Ravi Menon asking for two extra passes to Foundry Startup Demo Day on Oct 21"
+    },
+    {
+      "canned_result": "Hartwell Concert Hall's renewal email offers the 2026-27 six-concert subscription at $412, down from $450 if renewed by Sep 30, keeping seats in Row F.",
+      "key": "f7",
+      "opening_request": "what's the deal with the Hartwell Concert Hall subscription renewal email",
+      "result_reply": "Renewal is $412 if paid by Sep 30, and you keep Row F seats.",
+      "topic": "Summary of Hartwell Concert Hall season subscription renewal email due Sep 30"
+    },
+    {
+      "canned_result": "Created a reminder for Oct 9 at 10:00 AM to RSVP for the Kestrel Bank client appreciation dinner, ahead of the Oct 12 RSVP deadline.",
+      "key": "f8",
+      "opening_request": "remind me to rsvp for the Kestrel Bank client dinner before oct 12",
+      "result_reply": "Reminder set for Oct 9, 10 AM, ahead of the Oct 12 deadline.",
+      "topic": "Reminder to RSVP to Kestrel Bank client appreciation dinner by Oct 12"
+    },
+    {
+      "canned_result": "Found a Marriott Downtown Chicago confirmation, number 84410295, for Nov 16-18 at $229 per night with free cancellation until Nov 13.",
+      "key": "f9",
+      "opening_request": "pull up my marriott booking for the Midwest Retail Summit in Chicago",
+      "result_reply": "Marriott Downtown Chicago, confirmation 84410295, Nov 16-18, free cancellation until Nov 13.",
+      "topic": "Find Marriott confirmation for Chicago hotel during Midwest Retail Summit Nov 16-18"
+    },
+    {
+      "canned_result": "Sent a reply to Dev Patel agreeing to split the four Ironwood Brewfest tickets for Oct 4 and promising to Venmo his half, $68, today.",
+      "key": "f10",
+      "opening_request": "text back dev about splitting the Ironwood Brewfest tickets, I'll venmo him half",
+      "result_reply": "Sent. Told Dev you'll Venmo $68 for the Brewfest tickets today.",
+      "topic": "Reply to Dev Patel about splitting costs for Ironwood Brewfest tickets on Oct 4"
+    },
+    {
+      "canned_result": "Found a Vivid Seats order confirmation for two Noelle Park tickets at Starlight Pavilion on Nov 8, Section 112 Row K, total $246, delivery by Nov 6.",
+      "key": "f11",
+      "opening_request": "look for my Vivid Seats order for the Noelle Park show",
+      "result_reply": "Found it: two tickets, Section 112 Row K, Nov 8, $246.",
+      "topic": "Search for Vivid Seats order email for Noelle Park concert at Starlight Pavilion on Nov 8"
+    },
+    {
+      "canned_result": "Carlton Events' agenda for the Oct 6 Q4 sales kickoff: registration at 8:30, keynote at 9:15, breakout sessions 10:30 to noon, lunch, and a team dinner at 6 PM at Alder Hall.",
+      "key": "f12",
+      "opening_request": "summarize the Carlton Events agenda for the sales kickoff on oct 6",
+      "result_reply": "Kickoff Oct 6: registration 8:30, keynote 9:15, breakouts 10:30, dinner 6 PM at Alder Hall.",
+      "topic": "Summary of Carlton Events email with agenda for the Q4 sales kickoff on Oct 6"
+    },
+    {
+      "canned_result": "Drafted a reply to Janelle Ortiz at Hawthorne Foundation asking whether the Oct 15 luncheon offers vegetarian and gluten-free meals, and saved it for review.",
+      "key": "f13",
+      "opening_request": "ask janelle ortiz if the Hawthorne luncheon has vegetarian options",
+      "result_reply": "Draft saved asking Janelle about vegetarian options for the Oct 15 luncheon.",
+      "topic": "Draft reply to Janelle Ortiz asking about dietary options for Hawthorne Foundation luncheon on Oct 15"
+    },
+    {
+      "canned_result": "Found a receipt emailed Sep 19 from Summit Ridge Retreat Shuttle Services for $48.50, covering the round trip from Boulder Airport to the lodge.",
+      "key": "f14",
+      "opening_request": "find the shuttle receipt from the Summit Ridge retreat on sep 19",
+      "result_reply": "Found it: $48.50 receipt from Summit Ridge Retreat Shuttle, dated Sep 19.",
+      "topic": "Find Uber receipt emailed after the Summit Ridge Leadership Retreat shuttle on Sep 19"
+    },
+    {
+      "canned_result": "Set a reminder for Nov 14 at 4:00 PM to collect The Tempest tickets at the Fable & Fern box office, which closes pickup at 6 PM.",
+      "key": "f15",
+      "opening_request": "remind me nov 14 to grab the Tempest tickets at Fable & Fern box office",
+      "result_reply": "Reminder set for Nov 14 at 4 PM; pickup closes at 6.",
+      "topic": "Reminder to pick up Fable & Fern Theater tickets for The Tempest on Nov 14 before 6 PM"
+    },
+    {
+      "canned_result": "Quartz Valley Wine Club invites members to the harvest dinner on Oct 11 at 6:30 PM, $95 per person with a five-course pairing menu, RSVP required by Oct 4.",
+      "key": "f16",
+      "opening_request": "what did Quartz Valley Wine Club say about the harvest dinner",
+      "result_reply": "Harvest dinner Oct 11 at 6:30, $95 per person, RSVP by Oct 4.",
+      "topic": "Summary of Quartz Valley Wine Club email about harvest dinner on Oct 11"
+    },
+    {
+      "canned_result": "Replied to Omar Haddad confirming availability to staff the booth at the Lakeview Home & Garden Expo on Sep 21 from 10 AM to 2 PM, per his email.",
+      "key": "f17",
+      "opening_request": "tell omar I can staff the booth at the Lakeview Home & Garden Expo on the 21st",
+      "result_reply": "Sent. Confirmed to Omar you'll staff the Sep 21 booth, 10 AM to 2 PM.",
+      "topic": "Reply to Omar Haddad confirming booth staffing at Lakeview Home & Garden Expo on Sep 21"
+    }
+  ]
+}

@@ -328,7 +328,7 @@ async def draft_one(ctx: StepContext, plan: CasePlan, threads: dict, ids: dict, 
             purpose="draft_case",
             model=GEN_MODEL,
             messages=[{"role": "user", "content": prompt}],
-            extra={"max_tokens": 3000},
+            extra={"max_tokens": 6000},
             fake_hint={"plan": plan.to_dict(), "names": names, "threads": {t: threads[t] for t in plan.required_threads() + ([plan.new_thread] if plan.new_thread else [])}, "attempt": attempt},
         )
         try:
@@ -395,7 +395,7 @@ def main(argv: Optional[list[str]] = None) -> int:
             done = {c["case_id"] for c in read_rows(fixtures_dir / f"cases.single.{split}.jsonl")}
             todo[split] = [p for p in case_plans(split, threads, ids) if p.case_id not in done or p.case_id in redraft]
     count = sum(len(v) for v in todo.values()) if have else NOMINAL_CASES
-    planned = [PlannedCalls("draft_case", GEN_MODEL, count * 1.25, 2600, 950, "one case per call, 25% redrafts")]
+    planned = [PlannedCalls("draft_case", GEN_MODEL, count * 1.25, 2600, 1700, "one case per call, 25% redrafts; output x1.75 per step 1")]
     extra = [
         "",
         f"cases to draft: {count}" + ("" if have else " (nominal: agents files not found yet)") + (f", redrafting {sorted(redraft)}" if redraft else ""),

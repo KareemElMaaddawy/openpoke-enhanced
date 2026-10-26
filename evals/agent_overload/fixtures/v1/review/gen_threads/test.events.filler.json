@@ -1,0 +1,131 @@
+{
+  "provenance": {
+    "attempts": 1,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "ec69b6717c61e3629f054aa8c74dbe5bce781ea1539806d26760eb1e7261f934",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found Eventbrite email confirming 2 spots at Brightside Pottery Studio workshop on Sep 26 at 1:00 PM, order #EB-448210, total $90.",
+      "key": "f1",
+      "opening_request": "can you find my Eventbrite confirmation for the pottery workshop on the 26th",
+      "result_reply": "Found it: 2 spots at Brightside Pottery, Sep 26 at 1 PM, order #EB-448210, $90.",
+      "topic": "Eventbrite confirmation for Brightside Pottery Workshop on Sep 26"
+    },
+    {
+      "canned_result": "Reminder set for Sep 15 at 9:00 AM titled 'Buy Mariners vs Astros tickets (Sep 29)' with a link to the StubHub listing.",
+      "key": "f2",
+      "opening_request": "remind me tmrw morning to grab Mariners vs Astros tickets for the 29th",
+      "result_reply": "Done. Reminder set for Sep 15 at 9 AM to buy Mariners vs Astros tickets.",
+      "topic": "Reminder to buy StubHub tickets for Mariners vs Astros game on Sep 29"
+    },
+    {
+      "canned_result": "Yes, Delmar Theater emailed Sep 10 saying seats for The Glass Menagerie on Oct 9 moved from Row F to Row D due to a stage reconfiguration, same price.",
+      "key": "f3",
+      "opening_request": "did the Delmar Theater email me about moving our seats for Oct 9?",
+      "result_reply": "Yes. They moved you from Row F to Row D for Oct 9, same price.",
+      "topic": "Email from Delmar Theater about seat change for The Glass Menagerie on Oct 9"
+    },
+    {
+      "canned_result": "Drafted and sent reply to Marcus Feldt offering to drive to Lakeshore Music Fest on Oct 10, leaving at 11:00 AM and asking for his address.",
+      "key": "f4",
+      "opening_request": "tell Marcus I can drive to Lakeshore Fest on the 10th, leaving at 11",
+      "result_reply": "Sent. Told Marcus you'll drive Oct 10, leaving at 11, and asked for his address.",
+      "topic": "Reply to Marcus Feldt about carpooling to Lakeshore Music Fest on Oct 10"
+    },
+    {
+      "canned_result": "Cedar & Pine Hotel holds 12 rooms for the Halvorsen retreat Oct 22-25 at $159/night; the block releases Sep 30 and a 50% deposit is due by then.",
+      "key": "f5",
+      "opening_request": "summarize the Cedar & Pine email about our Asheville retreat block",
+      "result_reply": "12 rooms held Oct 22-25 at $159/night. Block releases Sep 30; 50% deposit due.",
+      "topic": "Summary of Cedar & Pine Hotel group booking for the Halvorsen retreat in Asheville Oct 22-25"
+    },
+    {
+      "canned_result": "Found a ParkWhiz email with a QR parking pass for Lot C near Climate Pledge Arena, valid Oct 15 from 4:00 PM to midnight, $32.",
+      "key": "f6",
+      "opening_request": "find the parking pass for the Kraken game on the 15th",
+      "result_reply": "Found it: ParkWhiz pass for Lot C, Oct 15, 4 PM to midnight, $32.",
+      "topic": "Find parking pass email for Seattle Kraken game on Oct 15"
+    },
+    {
+      "canned_result": "Sent email to Greta Sandoval asking for an itemized invoice for 8 Bayfront Wine Tasting tickets on Nov 7, needed for expense reimbursement by Oct 30.",
+      "key": "f7",
+      "opening_request": "ask Greta for an invoice for the Bayfront wine tasting tickets",
+      "result_reply": "Sent. Asked Greta for an itemized invoice for the 8 Nov 7 tickets by Oct 30.",
+      "topic": "Email to Greta Sandoval requesting an invoice for Bayfront Wine Tasting group tickets on Nov 7"
+    },
+    {
+      "canned_result": "Reminder set for Oct 19 at 8:00 AM: 'Check in for Delta DL 1482 to Denver (Mile High Expo)'. Flight departs Oct 20 at 7:15 AM.",
+      "key": "f8",
+      "opening_request": "remind me to check in for my Denver flight the day before",
+      "result_reply": "Reminder set for Oct 19 at 8 AM to check in for Delta DL 1482.",
+      "topic": "Reminder to check in for Delta flight DL 1482 to Denver for the Mile High Expo on Oct 20"
+    },
+    {
+      "canned_result": "Found Sofia Ibarra's Evite for the Moonlight Cinema outdoor screening of Casablanca on Sep 20 at 7:30 PM at Fenwick Park, bring blankets.",
+      "key": "f9",
+      "opening_request": "look for Sofia's invite to the outdoor movie night in Sept",
+      "result_reply": "Found it: Sofia's invite to Casablanca at Fenwick Park, Sep 20, 7:30 PM.",
+      "topic": "Search for Sofia Ibarra's emailed invite to Moonlight Cinema screening on Sep 20"
+    },
+    {
+      "canned_result": "Drafted and sent polite decline to Orbis Labs events team for the Nov 20 holiday party, citing travel and thanking them for the invite.",
+      "key": "f10",
+      "opening_request": "decline the Orbis Labs holiday party invite politely, I'm traveling",
+      "result_reply": "Sent a polite decline to Orbis Labs for the Nov 20 party.",
+      "topic": "Draft reply declining Orbis Labs holiday party invite on Nov 20"
+    },
+    {
+      "canned_result": "SeatGeek says the 2 tickets for Taylor Brandt on Nov 1 were transferred to jon.ames@mailbox.com and must be accepted by Oct 30 or they return to the seller.",
+      "key": "f11",
+      "opening_request": "what did SeatGeek say about transferring the Taylor Brandt tickets?",
+      "result_reply": "Tickets were transferred to jon.ames@mailbox.com; accept by Oct 30 or they revert.",
+      "topic": "Summary of Seatgeek email about resale transfer for Taylor Brandt tickets on Nov 1"
+    },
+    {
+      "canned_result": "Reminder set for Sep 28 at 10:00 AM: 'Keller Auto Show early-bird tickets end Sep 30 ($18 vs $25)'.",
+      "key": "f12",
+      "opening_request": "remind me before the Keller Auto Show early-bird deal ends",
+      "result_reply": "Reminder set for Sep 28 at 10 AM; early-bird ends Sep 30.",
+      "topic": "Reminder for Keller Auto Show early-bird ticket deadline on Sep 30"
+    },
+    {
+      "canned_result": "Found the Tidewater Marketing Summit agenda email: keynote by Alicia Moreno is Nov 3 at 9:30 AM in Hall B, followed by breakouts at 11:00.",
+      "key": "f13",
+      "opening_request": "find the Tidewater Marketing Summit agenda email, need the keynote time",
+      "result_reply": "Keynote by Alicia Moreno is Nov 3 at 9:30 AM, Hall B.",
+      "topic": "Find conference schedule email from Tidewater Marketing Summit on Nov 3"
+    },
+    {
+      "canned_result": "Forwarded the Lyft Arena Hockey Night email with 2 PDF tickets for Oct 25 to Caleb with a note to meet at Gate 3 by 6:30 PM.",
+      "key": "f14",
+      "opening_request": "forward the hockey tickets to my brother Caleb for the 25th",
+      "result_reply": "Forwarded the Oct 25 hockey tickets to Caleb with a note to meet at Gate 3.",
+      "topic": "Forward Lyft Arena Hockey Night ticket PDF to brother Caleb for Oct 25"
+    },
+    {
+      "canned_result": "Sent cancellation request to Rosewood Supper Club for the party of 6 on Oct 2 at 7:30 PM and received an OpenTable confirmation of cancellation.",
+      "key": "f15",
+      "opening_request": "cancel our Rosewood Supper Club dinner on Oct 2, plans changed",
+      "result_reply": "Cancelled the Oct 2 Rosewood Supper Club reservation for 6; confirmation received.",
+      "topic": "Cancel Rosewood Supper Club reservation for 6 on Oct 2 via OpenTable email"
+    },
+    {
+      "canned_result": "Exhibitor email says booth setup is Nov 13 from 2-7 PM at Hall 4; booth #212 assigned, with show floor opening Nov 14 at 10 AM.",
+      "key": "f16",
+      "opening_request": "summarize the Pacific Rim Gaming Expo exhibitor email, when's booth setup?",
+      "result_reply": "Setup is Nov 13, 2-7 PM, booth #212 in Hall 4. Show opens Nov 14.",
+      "topic": "Summary of Pacific Rim Gaming Expo exhibitor email with booth setup times on Nov 14"
+    },
+    {
+      "canned_result": "Sent reply to Hannah Cho confirming attendance at the Bluebird Bookstore author reading on Oct 8 and asking if she wants to grab dinner beforehand.",
+      "key": "f17",
+      "opening_request": "tell Hannah yes, I'm coming to the Bluebird author reading on the 8th",
+      "result_reply": "Sent. Confirmed to Hannah for Oct 8 and suggested dinner beforehand.",
+      "topic": "Reply to Hannah Cho confirming attendance at Bluebird Bookstore author reading on Oct 8"
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "provenance": {
+    "attempts": 1,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "5f21fe4b320e4f41c65ce700679463df2adc47d619de180791a8dd3dd845d97e",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found REI order confirmation from orders@rei.com for an Osprey Farpoint 40 backpack, order #R48820317, $159.95. It shipped Oct 1 and is estimated to arrive Oct 6 via OnTrac.",
+      "follow_ups": [
+        {
+          "reply": "OnTrac tracking number is D10029384756.",
+          "request": "what's the tracking number?",
+          "result": "The shipping email lists OnTrac tracking number D10029384756 for order #R48820317."
+        },
+        {
+          "reply": "Done, reminder set for Thursday Oct 8 at 9am.",
+          "request": "can you remind me thursday morning to check if it arrived",
+          "result": "Reminder set for Thursday Oct 8 at 9:00 AM: 'Check whether REI Osprey backpack arrived'."
+        },
+        {
+          "reply": "You paid with the Visa ending 4417, $159.95 total.",
+          "request": "did i pay with the visa or the amex?",
+          "result": "The REI receipt shows payment by Visa ending 4417, with $159.95 charged on Sept 30 and free standard shipping."
+        }
+      ],
+      "key": "c1",
+      "opening_request": "when is my rei backpack supposed to show up?",
+      "pair_key": "c2",
+      "result_reply": "Your Osprey Farpoint 40 shipped Oct 1 and should arrive Tuesday, Oct 6, via OnTrac.",
+      "topic": "REI Co-op order of Osprey Farpoint 40 backpack, delivery in early October 2026"
+    },
+    {
+      "canned_result": "Found an email from rei@email.rei.com dated Sept 18 2026 saying your 2025 member dividend is $41.30 on $413.00 of eligible purchases. It can be used from Nov 1 2026 until Dec 31 2027.",
+      "follow_ups": [
+        {
+          "reply": "Not automatic. You need to sign in at checkout or give your member number in store.",
+          "request": "is it a coupon or does it apply automatically",
+          "result": "The email says the dividend is issued as a reward in your REI account and is applied by signing in at checkout or giving your member number in store. It is not applied automatically."
+        },
+        {
+          "reply": "Reminder set for Nov 2 at 10am to use your $41.30 dividend.",
+          "request": "remind me nov 2 to use it",
+          "result": "Reminder set for Nov 2 2026 at 10:00 AM: 'Use $41.30 REI member dividend'."
+        },
+        {
+          "reply": "Forwarded the dividend email to Dana.",
+          "request": "forward that email to my wife",
+          "result": "Forwarded the Sept 18 REI dividend email to dana.whitlock@gmail.com with no added message."
+        }
+      ],
+      "key": "c2",
+      "opening_request": "find my rei member dividend email, how much did i get",
+      "pair_key": "c1",
+      "result_reply": "Your REI member dividend is $41.30, usable from Nov 1 2026 through Dec 31 2027.",
+      "topic": "REI Co-op annual member dividend for 2025 purchases, available in November 2026"
+    },
+    {
+      "canned_result": "Found Staples order receipt from orders@staples.com dated Sept 9 2026, order #STP-30918275. It covers 5 cases of copy paper and 2 HP 58A toner cartridges, $212.64 with tax.",
+      "follow_ups": [
+        {
+          "reply": "Sent the receipt to Priya in finance.",
+          "request": "send it to priya in finance",
+          "result": "Forwarded the Staples receipt to priya.nair@halvorsenco.com with the subject 'Staples receipt for expense report, Sept 9'."
+        },
+        {
+          "reply": "Tax was $16.24, on a $196.40 subtotal.",
+          "request": "what was the tax on it",
+          "result": "The receipt shows a subtotal of $196.40, sales tax of $16.24, and a total of $212.64."
+        },
+        {
+          "reply": "It was delivered Sept 11 by Staples courier, no signature needed.",
+          "request": "was the toner delivered or did i pick it up",
+          "result": "The receipt and delivery email show it was delivered Sept 11 by Staples courier. A signature was not required."
+        }
+      ],
+      "key": "c3",
+      "opening_request": "need the staples receipt from september for my expense report",
+      "pair_key": null,
+      "result_reply": "Found it: Staples order #STP-30918275 from Sept 9, $212.64 for paper and two HP 58A toners.",
+      "topic": "Staples order of copy paper and HP 58A toner for home office, receipt for expense report, Sept 2026"
+    },
+    {
+      "canned_result": "Found Madewell order MW-7741903 shipped Sept 21 with a 30-day return window, so returns close Oct 20 2026. Set a reminder for Oct 17 at 9:00 AM.",
+      "follow_ups": [
+        {
+          "reply": "Mail returns cost $7.50, deducted from the refund. Store returns are free.",
+          "request": "does madewell charge for return shipping",
+          "result": "Madewell's return policy email says mail returns have a $7.50 fee deducted from the refund. Returns to a store are free."
+        },
+        {
+          "reply": "Moved to Oct 15 at 6pm.",
+          "request": "move the reminder to the 15th at 6pm",
+          "result": "Reminder moved to Oct 15 2026 at 6:00 PM."
+        },
+        {
+          "reply": "It's the Perfect Vintage Straight jeans in size 30, $138.",
+          "request": "which pair was it, the 30 or the 32 waist",
+          "result": "The order shows one item: Curvy Perfect Vintage Straight Jeans, size 30, $138.00."
+        }
+      ],
+      "key": "c4",
+      "opening_request": "remind me to send back the madewell jeans before the window closes",
+      "pair_key": null,
+      "result_reply": "Return window closes Oct 20. I set a reminder for Oct 17 at 9am.",
+      "topic": "Madewell jeans return deadline of Oct 20 2026, order MW-7741903"
+    },
+    {
+      "canned_result": "Found LEGO order confirmation from legoshop@email.lego.com, order #LG-55120948 for the Technic Bugatti Bolide set, $54.99. It is processing, with estimated delivery Nov 9-11 2026.",
+      "follow_ups": [
+        {
+          "reply": "Yes, it should arrive 3 to 5 days before the party.",
+          "request": "leo's party is nov 14, will it make it",
+          "result": "The estimated delivery of Nov 9-11 is three to five days before the Nov 14 party, as long as there are no carrier delays."
+        },
+        {
+          "reply": "Drafted a request to LEGO to change the address. Want me to send it?",
+          "request": "can the shipping address be changed to my sister's",
+          "result": "Drafted a reply to LEGO customer service at help@lego.com asking to change the shipping address on #LG-55120948 to your sister's. It is ready for your review and not yet sent."
+        },
+        {
+          "reply": "Reminder set for Nov 8 at noon.",
+          "request": "remind me nov 8 to check it shipped",
+          "result": "Reminder set for Nov 8 2026 at 12:00 PM: 'Check LEGO Bugatti order shipped for Leo'."
+        }
+      ],
+      "key": "c5",
+      "opening_request": "check status of the lego order for leo's birthday",
+      "pair_key": null,
+      "result_reply": "Your LEGO Technic Bugatti order is still processing. Estimated delivery is Nov 9 to 11.",
+      "topic": "LEGO order of Technic Bugatti set for nephew Leo's birthday, delivery by Nov 12 2026"
+    }
+  ]
+}

@@ -9,11 +9,11 @@ Every command runs from the repository root. Commands that call a paid API are m
 | # | Step | Script | Paid | Estimated cost | Estimated time |
 | --- | --- | --- | --- | --- | --- |
 | 0 | Setup and free checks | `make setup`, unit tests | no | $0 | 5 min |
-| 1 | Thread specs and chit-chat | `generation/gen_threads.py` | Sonnet 5.5 | $1.54 | 3 to 6 min |
+| 1 | Thread specs and chit-chat | `generation/gen_threads.py` | Sonnet 5.5 | **$2.35 actual** (est. $1.54) | about 4 min |
 | 2 | Agent names, filler cleaning, rosters | `generation/name_agents.py` | gpt-6-luna | $0.66 | 5 to 10 min |
 | 3 | Name ratings | `generation/rate_names.py` | Sonnet 5.5 | $0.31 | 1 min |
-| 4 | Single-turn cases | `generation/draft_cases.py` | Sonnet 5.5 | $3.31 | 8 to 15 min |
-| 5 | Sequences | `generation/draft_sequences.py` | Sonnet 5.5 | $0.51 | 1 to 3 min |
+| 4 | Single-turn cases | `generation/draft_cases.py` | Sonnet 5.5 | $5.00 | 8 to 15 min |
+| 5 | Sequences | `generation/draft_sequences.py` | Sonnet 5.5 | $0.83 | 1 to 3 min |
 | 6 | Long histories | `generation/assemble_histories.py` | no | $0 | seconds |
 | 7 | Frozen summaries | `generation/summarize_histories.py` | gpt-6-luna | $0.07 | 1 to 2 min |
 | 8 | Second labels | `generation/cross_label.py` | Gemini 3.8 Flash | $2.68 | 5 to 10 min |
@@ -22,7 +22,7 @@ Every command runs from the repository root. Commands that call a paid API are m
 | 11 | Smoke run | `run.py --profile smoke` | gpt-6-luna | $0.13 | a few minutes |
 | 12 | Baseline | `run.py --profile full` | gpt-6-luna | $7.86 | about 30 min |
 
-Fixtures total about $9.08, plus about $8 for the baseline. Costs are the `--dry-run` estimates before any margin. Times are guesses until the first steps have run. Each paid step stops on its own at twice its estimate, and no step starts if the ledger total plus its estimate × 1.25 would pass $50.
+Fixtures total about $11.90 (step 1 actual plus the other steps' estimates), plus about $8 for the baseline. Step 1 used about 1.75 times the output tokens estimated, so steps 4 and 5 were re-estimated on 2026-10-26 with that factor. Costs are the `--dry-run` estimates before any margin. Times are guesses until the first steps have run. Each paid step stops on its own at twice its estimate, and no step starts if the ledger total plus its estimate × 1.25 would pass $50.
 
 ## How spending is guarded
 
@@ -81,7 +81,7 @@ Until step 10 the directory is a work in progress. Once `MANIFEST.json` exists t
 
 Writes the world the cases are built from: per split, about 110 (test) or 55 (dev) case threads, including 30 or 15 near-distractor pairs, plus 210 filler threads, across 12 categories. It also writes the pool of about 60 small-talk exchanges and 15 acknowledgements used to pad long histories. The 12 categories run in parallel. Within a category, test then dev, case then filler, each batch is told the topics already written, so the splits share nothing.
 
-- **Estimated cost and time:** $1.54 (cap $3.09); 3 to 6 minutes.
+- **Estimated cost and time:** $1.54 at first; the first run cost $2.35 (about 1.75 times the output tokens estimated, plus 6 retries) and took about 4 minutes. The script's estimates now use the measured token counts.
 - **Writes:** `fixtures/v1/threads.dev.jsonl`, `threads.test.jsonl`, `chitchat.jsonl`, and every batch's parsed output in `review/gen_threads/`.
 
 ```bash
@@ -123,6 +123,7 @@ For each of about 585 threads, runs the **real** interaction prompt (production 
 - It prints one line per split, for example `test: 110 case agents, 200 filler, N filler removed, M threads dropped`. Dropped threads should be a handful at most.
 - `inspect_fixtures agents`: names look like names the interaction agent writes ("AWS Invoice Lookup", "Email to Keith"). Most threads are named on the first attempt.
 - No `warning:` lines. The pin check passed, or the command would have stopped before calling anything.
+- Filler threads whose topic duplicates a case thread (step 1 produced one: `t-dev-0331` repeats `t-dev-0019`, a Costco tire appointment) should have been removed by name cleaning; the agent checks this.
 
 **If it fails or is capped**
 
@@ -160,7 +161,7 @@ Rates every agent name as `specific` (names the entity and the task), `partial` 
 
 Code plans all 180 cases first, so the quotas are exact: the label, query style, message type, short or summarized history, the target's roster position, old-thread cases, which threads appear and in what order, the case's timestamp and agent ages. Sonnet then writes only the text: the end of the conversation and the new message, following the labeling rules. Code checks each draft against its plan (threads used, order, forbidden names, 4 to 16 entries), renders the result lines with the exact frozen agent names, and assigns timestamps. A rejected draft is redrafted, up to 3 attempts.
 
-- **Estimated cost and time:** $3.31 (cap $6.62); 8 to 15 minutes.
+- **Estimated cost and time:** $5.00 (cap $9.99); 8 to 15 minutes.
 - **Writes:** `cases.single.dev.jsonl`, `cases.single.test.jsonl`, and `review/draft_failures.jsonl` for cases that failed all attempts.
 
 ```bash
@@ -182,7 +183,7 @@ Code plans all 180 cases first, so the quotas are exact: the label, query style,
 
 Code plans 8 test and 4 dev sequences of 12 turns each: three seeded threads, a near-distractor pair, and two threads created during the run. The turn mix is 2 CREATE, at least 6 REUSE (including an implicit follow-up right after a topic switch, and a near-distractor), 1 REUSE_ANY and at least 2 NO_DELEGATION, with at least one email alert and frequent topic switches. Sonnet writes each turn's message and the gold replies and results.
 
-- **Estimated cost and time:** $0.51 (cap $1.03); 1 to 3 minutes.
+- **Estimated cost and time:** $0.83 (cap $1.65); 1 to 3 minutes.
 - **Writes:** `cases.sequence.dev.jsonl`, `cases.sequence.test.jsonl`. The two created threads' agents are marked `"seeded": false` in `agents.<split>.jsonl`; their frozen names are the gold names for corrected-each-turn runs.
 
 ```bash

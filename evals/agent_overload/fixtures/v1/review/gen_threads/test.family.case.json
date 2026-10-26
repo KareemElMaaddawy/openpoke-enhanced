@@ -1,0 +1,237 @@
+{
+  "provenance": {
+    "attempts": 2,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "ff714dc0847ecc0056b9b4f1ec799c32e564271ab4ab436bf02aded1f4ab97d1",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found 14 replies to the 'Dad's 70th – Oct 24 at Lakeview Banquet Hall' invite. 11 are yes, 2 are no (Aunt Carol, cousin Mike), and 1 is a maybe (Uncle Ray, ray.donnelly@gmail.com). Dinner starts at 6:30pm.",
+      "follow_ups": [
+        {
+          "reply": "Five haven't replied: Dan Whitfield, Teresa Alvarez, cousin Jenna, and both Hendersons.",
+          "request": "who hasn't answered yet from the original invite list?",
+          "result": "The invite went to 19 people. Still no reply from Dan Whitfield, Teresa Alvarez, cousin Jenna, and the Hendersons (jhenderson@outlook.com), so 5 people."
+        },
+        {
+          "reply": "Nudge sent to Uncle Ray, asking him to confirm by October 10.",
+          "request": "send a friendly nudge to Uncle Ray asking if he can make it",
+          "result": "Sent a reply to ray.donnelly@gmail.com: 'Hi Uncle Ray, we'd love to have you at Dad's 70th on Oct 24. Can you let us know by Oct 10?'"
+        },
+        {
+          "reply": "Reminder set for October 12 at 9am to send Lakeview the final headcount.",
+          "request": "remind me oct 12 to give lakeview the final headcount",
+          "result": "Reminder set for Oct 12 at 9:00am: 'Give Lakeview Banquet Hall final headcount for Dad's party.' Their email says headcount is due Oct 14."
+        }
+      ],
+      "key": "c1",
+      "opening_request": "can you check who's replied about dad's 70th birthday party at lakeview banquet",
+      "pair_key": "c2",
+      "result_reply": "11 yes, 2 no, 1 maybe (Uncle Ray) out of 14 replies. Party's October 24 at 6:30pm.",
+      "topic": "Dad's 70th birthday party at Lakeview Banquet Hall on October 24, RSVP replies from relatives"
+    },
+    {
+      "canned_result": "Email from Riverside Heart Clinic (noreply@riversideheart.com) confirms Dad's follow-up with Dr. Anita Patel on Nov 3 at 10:15am, 220 Mercer Street, Suite 4B. Bring the medication list and arrive 15 minutes early.",
+      "follow_ups": [
+        {
+          "reply": "Done. I'll remind you November 2 at 5pm to call Dad.",
+          "request": "set a reminder the day before to call dad about it",
+          "result": "Reminder set for Nov 2 at 5:00pm: 'Call Dad about cardiology appointment tomorrow 10:15am.'"
+        },
+        {
+          "reply": "No fasting needed. He should take his usual meds and bring his medication list and insurance card.",
+          "request": "did the clinic say anything about fasting or prep?",
+          "result": "The confirmation says no fasting is needed, but Dad should take his morning medications as usual and bring his current medication list and insurance card."
+        },
+        {
+          "reply": "Forwarded the confirmation to Lena.",
+          "request": "forward the confirmation to my sister Lena",
+          "result": "Forwarded the Riverside Heart Clinic confirmation to Lena at lena.moretti@gmail.com with a note: 'Dad's appointment details, FYI.'"
+        }
+      ],
+      "key": "c2",
+      "opening_request": "find dad's cardiology appointment email, i need the time and address",
+      "pair_key": "c1",
+      "result_reply": "Dad sees Dr. Patel November 3 at 10:15am, 220 Mercer St, Suite 4B. Arrive 15 minutes early.",
+      "topic": "Dad's cardiology follow-up appointment with Dr. Patel on November 3"
+    },
+    {
+      "canned_result": "Email from Ms. Grant (mgrant@lincolnelem.org) asks for the signed Pumpkin Hollow Farm permission slip and $12 fee by Oct 5. The trip is Oct 9, with the bus leaving at 8:45am.",
+      "follow_ups": [
+        {
+          "reply": "Reminder set for October 4 at 7pm.",
+          "request": "remind me oct 4 evening to sign it and send the $12",
+          "result": "Reminder set for Oct 4 at 7:00pm: 'Sign Sophie's permission slip and send $12 to school.'"
+        },
+        {
+          "reply": "Yes, 3 chaperone spots left. Reply to Ms. Grant by October 2 with a background check form.",
+          "request": "is there a parent volunteer sign-up for the trip?",
+          "result": "Yes, a follow-up from Ms. Grant on Sep 28 says 3 chaperone spots remain, and volunteers must reply by Oct 2 and complete a background check form."
+        },
+        {
+          "reply": "Sent Ms. Grant a note volunteering to chaperone and asking for the form.",
+          "request": "reply to ms grant that i can chaperone",
+          "result": "Sent reply to mgrant@lincolnelem.org: 'I'd be happy to chaperone the Oct 9 Pumpkin Hollow trip. Please send the background check form.'"
+        }
+      ],
+      "key": "c3",
+      "opening_request": "find the permission slip email for sophie's field trip, think it's due soon",
+      "pair_key": "c4",
+      "result_reply": "Slip and $12 due October 5 for the Pumpkin Hollow Farm trip on October 9.",
+      "topic": "Sophie's Lincoln Elementary field trip permission slip for the pumpkin farm on October 9"
+    },
+    {
+      "canned_result": "Bright Smiles Pediatric Dentistry (appointments@brightsmilespd.com) confirmed Sophie's cleaning for Sep 30 at 3:45pm with Dr. Kim. The email asks for new insurance info before the visit.",
+      "follow_ups": [
+        {
+          "reply": "They need her new Aetna member ID and group number via their form by September 28.",
+          "request": "what did they need for the insurance?",
+          "result": "The email links a patient form asking for the new Aetna member ID and group number, to be submitted by Sep 28."
+        },
+        {
+          "reply": "Reminder set for September 30 at 8am.",
+          "request": "remind me the morning of to pick her up early from school",
+          "result": "Reminder set for Sep 30 at 8:00am: 'Pick Sophie up early for 3:45pm dentist at Bright Smiles.'"
+        },
+        {
+          "reply": "Asked Bright Smiles to move it to October 7 or later. Waiting to hear back.",
+          "request": "can we push it a week? reply to them",
+          "result": "Sent a reply to appointments@brightsmilespd.com asking to move Sophie's Sep 30 cleaning to Oct 7 or later in the afternoon. Awaiting their confirmation."
+        }
+      ],
+      "key": "c4",
+      "opening_request": "when is sophie's dentist appointment? bright smiles sent something",
+      "pair_key": "c3",
+      "result_reply": "Sophie's cleaning is September 30 at 3:45pm with Dr. Kim. They need updated insurance info.",
+      "topic": "Sophie's dental cleaning at Bright Smiles Pediatric Dentistry on September 30"
+    },
+    {
+      "canned_result": "United confirmation UA-K7P2MX: Nov 24 SFO to ORD departing 8:05am, arriving 2:20pm, seat 23C. Return Nov 29 departs ORD 4:30pm. Total paid $486.20.",
+      "follow_ups": [
+        {
+          "reply": "Basic Economy: personal item only. Carry-on costs $45 each way, first checked bag $40.",
+          "request": "what's the baggage allowance on that ticket?",
+          "result": "The fare is Basic Economy. A carry-on personal item is included, but a full-size carry-on is $45 each way and the first checked bag is $40."
+        },
+        {
+          "reply": "Reminder set for November 23 at 8am to check in.",
+          "request": "remind me nov 23 to check in",
+          "result": "Reminder set for Nov 23 at 8:00am: 'Check in for United UA flight to Chicago, confirmation K7P2MX.'"
+        },
+        {
+          "reply": "Itinerary forwarded to your mom.",
+          "request": "forward the itinerary to my mom",
+          "result": "Forwarded the United itinerary to Mom at carol.reyes52@yahoo.com."
+        }
+      ],
+      "key": "c5",
+      "opening_request": "find my united flight confirmation for thanksgiving",
+      "pair_key": null,
+      "result_reply": "UA K7P2MX: SFO to O'Hare November 24 at 8:05am, returning November 29 at 4:30pm. $486.20 paid.",
+      "topic": "United Airlines Thanksgiving flight to Chicago O'Hare on November 24"
+    },
+    {
+      "canned_result": "Found 'Priya & Arjun – Nov 14, Napa' from priyaandarjun@theknot-mail.com. RSVP is due Oct 15 on their wedding site, with a meal choice of chicken, salmon, or vegetarian. The ceremony is at 4pm at Silverado Vineyards.",
+      "follow_ups": [
+        {
+          "reply": "Yes, Napa Valley Lodge, $219/night under 'Sharma-Rao Wedding'. Book by October 14.",
+          "request": "is there a hotel block mentioned?",
+          "result": "Yes, a room block at the Napa Valley Lodge under 'Sharma-Rao Wedding' at $219/night, booking cutoff Oct 14."
+        },
+        {
+          "reply": "Reminder set for October 10 at noon: RSVP with salmon.",
+          "request": "remind me oct 10 to rsvp, i'll go with salmon",
+          "result": "Reminder set for Oct 10 at 12:00pm: 'RSVP to Priya and Arjun's wedding, choose salmon.'"
+        },
+        {
+          "reply": "Cocktail attire. Ceremony is outdoors on vineyard terrain, so block heels are recommended.",
+          "request": "what's the dress code?",
+          "result": "The invitation says 'cocktail attire, vineyard terrain, so block heels recommended,' and the ceremony is outdoors."
+        }
+      ],
+      "key": "c6",
+      "opening_request": "i need to rsvp to priya's wedding, find the invitation email",
+      "pair_key": null,
+      "result_reply": "RSVP due October 15 with a meal choice. Ceremony is November 14 at 4pm, Silverado Vineyards.",
+      "topic": "Cousin Priya's wedding RSVP for the November 14 ceremony in Napa"
+    },
+    {
+      "canned_result": "Found DMV notice (dmv-notices@dmv.ca.gov) for the 2019 Honda Civic, plate 8KLM442. Renewal fee is $168, due Oct 31. Reminder set for Oct 20 at 9:00am.",
+      "follow_ups": [
+        {
+          "reply": "A $20 late penalty applies after October 31, with more fees after 30 days.",
+          "request": "how much is the late fee if i miss it?",
+          "result": "The notice says a late penalty of $20 is added after Oct 31, plus further fees after 30 days."
+        },
+        {
+          "reply": "Moved to October 15 at 7am.",
+          "request": "move the reminder to oct 15 at 7am",
+          "result": "Reminder moved to Oct 15 at 7:00am: 'Renew Honda Civic registration, $168, due Oct 31.'"
+        },
+        {
+          "reply": "Smog is required, but a certificate from September 12 is already on file.",
+          "request": "did i get a smog check notice too?",
+          "result": "Yes, the notice says a smog certificate is required for this renewal and has already been received electronically from a station dated Sep 12."
+        }
+      ],
+      "key": "c7",
+      "opening_request": "set a reminder to renew my car registration, dmv sent a notice",
+      "pair_key": null,
+      "result_reply": "Reminder set for October 20 at 9am. Renewal for the Civic is $168, due October 31.",
+      "topic": "California DMV vehicle registration renewal for the Honda Civic due October 31"
+    },
+    {
+      "canned_result": "Oakwood Properties (leasing@oakwoodprops.com) offered a 12-month renewal for unit 4C starting Dec 1 at $2,350/month, up from $2,200. Signed renewal is due by Oct 25.",
+      "follow_ups": [
+        {
+          "reply": "Yes, 15 months at $2,300/month.",
+          "request": "is there a discount for a longer lease?",
+          "result": "Yes, a 15-month term is offered at $2,300/month, and no early-termination fee on either option after month 9."
+        },
+        {
+          "reply": "Draft ready asking for $2,250 for 12 months. Want me to send it?",
+          "request": "draft a reply asking if they'd do $2,250 for 12 months",
+          "result": "Drafted a reply to leasing@oakwoodprops.com asking about $2,250/month for 12 months, mentioning on-time payments for two years. Not sent yet."
+        },
+        {
+          "reply": "Sent. I'll remind you October 22 at 10am if there's no reply.",
+          "request": "yes send it, and remind me oct 22 if they haven't replied",
+          "result": "Sent the email to leasing@oakwoodprops.com and set a reminder for Oct 22 at 10:00am to follow up on the rent negotiation."
+        }
+      ],
+      "key": "c8",
+      "opening_request": "look up the lease renewal email from oakwood, what's the new rent?",
+      "pair_key": null,
+      "result_reply": "Renewal offer: $2,350/month, up from $2,200, starting December 1. Sign by October 25.",
+      "topic": "Apartment lease renewal offer from Oakwood Properties for unit 4C"
+    },
+    {
+      "canned_result": "Maple Street Veterinary (hello@maplestvet.com) says Biscuit's rabies booster and annual exam are due Nov 6. They have openings on Nov 5 at 11:30am or Nov 7 at 9:00am. Estimated cost is $135.",
+      "follow_ups": [
+        {
+          "reply": "Booked: Biscuit, November 7 at 9am. Maple Street Vet confirmed.",
+          "request": "book the nov 7 one",
+          "result": "Replied to hello@maplestvet.com requesting the Nov 7 9:00am slot for Biscuit. They confirmed the appointment a few minutes later."
+        },
+        {
+          "reply": "Reminder set for November 6 at 8pm. Note: the clinic says no fasting is needed.",
+          "request": "remind me the night before so i don't feed him that morning if needed",
+          "result": "Reminder set for Nov 6 at 8:00pm: 'Check if Biscuit should skip breakfast for vet 9am.' The clinic email says no fasting is required."
+        },
+        {
+          "reply": "Exam $65, rabies $28, DHPP $42. Total $135 before tax.",
+          "request": "what was the price estimate breakdown?",
+          "result": "The estimate lists exam $65, rabies booster $28, DHPP booster $42, total $135 before tax."
+        }
+      ],
+      "key": "c9",
+      "opening_request": "when is biscuit due for his shots? maple street vet emailed",
+      "pair_key": null,
+      "result_reply": "Biscuit's rabies booster is due November 6. Openings November 5 at 11:30am or November 7 at 9am, about $135.",
+      "topic": "Biscuit the dog's rabies vaccine and annual checkup at Maple Street Veterinary"
+    }
+  ]
+}

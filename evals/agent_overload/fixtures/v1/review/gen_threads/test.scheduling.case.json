@@ -1,0 +1,237 @@
+{
+  "provenance": {
+    "attempts": 1,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "fe8b58908e5cd195b534f733714feeef57feeae205460fad06dbd6b86892fb7f",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found the confirmation from Dr. Anita Patel (office@brightsmiledental.com) for a cleaning on Wed Oct 14, 2026 at 9:30am. Set a reminder for Oct 13 at 5pm.",
+      "follow_ups": [
+        {
+          "reply": "Bright Smile Dental, 214 Maple Ave, Suite 3, Portland. Parking details weren't in the email.",
+          "request": "what's the address of the dental office again?",
+          "result": "The confirmation lists Bright Smile Dental, 214 Maple Ave, Suite 3, Portland, OR 97205."
+        },
+        {
+          "reply": "Done. You'll also get a reminder Oct 14 at 8:30am.",
+          "request": "can you also remind me an hour before",
+          "result": "Added a second reminder for Oct 14 at 8:30am titled 'Dentist 9:30 - Dr. Patel'."
+        },
+        {
+          "reply": "Yes, they sent an intake form PDF on Sep 28 to return before your visit.",
+          "request": "they asked for a form, did they send one?",
+          "result": "Yes, an email from office@brightsmiledental.com on Sep 28 has a PDF 'New Patient Intake Form' attached, asking it be returned before the visit."
+        }
+      ],
+      "key": "c1",
+      "opening_request": "remind me about my dentist cleaning with dr patel in october",
+      "pair_key": "c2",
+      "result_reply": "Your cleaning with Dr. Patel is Oct 14 at 9:30am. I set a reminder for Oct 13 at 5pm.",
+      "topic": "Reminder for Dr. Anita Patel dental cleaning on October 14, 2026"
+    },
+    {
+      "canned_result": "Invoice #1187 for $3,400 sent to billing@patelconsulting.com is due Oct 20, 2026. Set a reminder for Oct 22 at 10am to follow up if unpaid.",
+      "follow_ups": [
+        {
+          "reply": "Sent Oct 5 to billing@patelconsulting.com, with Raj Patel cc'd.",
+          "request": "who did i send that invoice to?",
+          "result": "It was sent Oct 5 to billing@patelconsulting.com, cc'd to Raj Patel (raj@patelconsulting.com)."
+        },
+        {
+          "reply": "Draft saved: a friendly note asking Raj about invoice #1187. Want me to send it on the 22nd?",
+          "request": "draft a friendly nudge i can send on the 22nd",
+          "result": "Drafted a short email to Raj Patel saying invoice #1187 for $3,400 was due Oct 20 and asking for a payment status. Saved in drafts."
+        },
+        {
+          "reply": "Moved. You'll be reminded Oct 26 at 10am.",
+          "request": "push the reminder to the 26th instead",
+          "result": "Moved the follow-up reminder from Oct 22 to Oct 26 at 10am."
+        }
+      ],
+      "key": "c2",
+      "opening_request": "set a reminder to chase patel consulting about invoice 1187 if they haven't paid",
+      "pair_key": "c1",
+      "result_reply": "Invoice #1187 ($3,400) is due Oct 20. I set a follow-up reminder for Oct 22 at 10am.",
+      "topic": "Reminder to follow up on unpaid Patel Consulting invoice #1187 due October 20, 2026"
+    },
+    {
+      "canned_result": "Keith Morales (keith.morales@northwindlabs.com) is free Tue Oct 6 at 2pm or Thu Oct 8 at 11am. Sent him both options on your behalf.",
+      "follow_ups": [
+        {
+          "reply": "Keith picked Thu Oct 8 at 11am and asked to add Priya Shah.",
+          "request": "did keith reply yet",
+          "result": "Keith replied at 3:12pm: Thursday Oct 8 at 11am works, and he asked to add Priya Shah."
+        },
+        {
+          "reply": "Invite sent to Keith and Priya for Oct 8, 11:00-11:30am.",
+          "request": "add priya and send the invite",
+          "result": "Sent a calendar invite for Oct 8, 11:00-11:30am to Keith and priya.shah@northwindlabs.com, titled 'Q4 Roadmap 1:1'."
+        },
+        {
+          "reply": "Updated to 45 minutes, 11:00-11:45am. Keith and Priya were notified.",
+          "request": "actually make it 45 minutes",
+          "result": "Updated the invite to 11:00-11:45am and notified both attendees."
+        }
+      ],
+      "key": "c3",
+      "opening_request": "find a time for a 30 min 1:1 with keith about the q4 roadmap next week",
+      "pair_key": "c4",
+      "result_reply": "I offered Keith Tue Oct 6 at 2pm or Thu Oct 8 at 11am. Waiting on his reply.",
+      "topic": "Scheduling a 1:1 with Keith Morales about Q4 roadmap"
+    },
+    {
+      "canned_result": "HR (people@northwindlabs.com) set the peer feedback deadline for Keith Morales' review at Nov 6, 2026, 5pm. Set reminders for Nov 3 and Nov 5 at 9am.",
+      "follow_ups": [
+        {
+          "reply": "It's in HR's Sep 30 email 'Peer feedback: Keith Morales'. Want me to forward it to you?",
+          "request": "where's the link to the review form",
+          "result": "The Sep 30 email from people@northwindlabs.com, 'Peer feedback: Keith Morales', has a link to the Culture Amp form."
+        },
+        {
+          "reply": "HR says six short questions, roughly 15 minutes.",
+          "request": "how many questions is it",
+          "result": "The email says the form has 6 short questions and takes about 15 minutes."
+        },
+        {
+          "reply": "Nov 3 reminder removed. Nov 5 at 9am is still set.",
+          "request": "cancel the nov 3 reminder, keep the other",
+          "result": "Deleted the Nov 3 reminder. The Nov 5 at 9am reminder remains."
+        }
+      ],
+      "key": "c4",
+      "opening_request": "remind me to finish keith's performance review feedback before the deadline",
+      "pair_key": "c3",
+      "result_reply": "Keith's review feedback is due Nov 6 at 5pm. Reminders set for Nov 3 and Nov 5 at 9am.",
+      "topic": "Reminder to submit Keith Morales performance review feedback by November 6, 2026"
+    },
+    {
+      "canned_result": "Delta confirmation (noreply@delta.com) shows DL 1482 SEA to ORD departing Thu Oct 22, 2026 at 7:05am, confirmation code GH4K7P. Check-in opens Oct 21 at 7:05am, so I set a reminder for then.",
+      "follow_ups": [
+        {
+          "reply": "Your Delta confirmation code is GH4K7P.",
+          "request": "what's my confirmation code",
+          "result": "The confirmation code is GH4K7P, from the Delta email received Sep 18."
+        },
+        {
+          "reply": "You're in seat 24C, main cabin.",
+          "request": "what seat do i have",
+          "result": "The confirmation lists seat 24C, main cabin."
+        },
+        {
+          "reply": "Set for Oct 22 at 4:45am: leave for the airport.",
+          "request": "also remind me to leave for the airport at 4:45am",
+          "result": "Set a reminder for Oct 22 at 4:15am titled 'Leave for SEA by 4:45'. Wait, adjusted to exactly 4:45am as requested."
+        }
+      ],
+      "key": "c5",
+      "opening_request": "remind me to check in for my delta flight to chicago",
+      "pair_key": "c6",
+      "result_reply": "DL 1482 leaves Oct 22 at 7:05am. Check-in reminder set for Oct 21 at 7:05am.",
+      "topic": "Reminder to check in for Delta flight DL 1482 to Chicago on October 22, 2026"
+    },
+    {
+      "canned_result": "HR email from benefits@halcyonworks.com says Delta Dental open enrollment closes Nov 13, 2026 at 11:59pm. Set reminders for Nov 9 and Nov 12 at 9am.",
+      "follow_ups": [
+        {
+          "reply": "PPO at $38/month or DHMO at $21/month for 2027.",
+          "request": "what are the plan options again",
+          "result": "The email lists Delta Dental PPO ($38/month) and DHMO ($21/month) for 2027, with no change to coverage tiers."
+        },
+        {
+          "reply": "Forwarded to Elena at elena.ross@gmail.com.",
+          "request": "forward that email to my wife",
+          "result": "Forwarded the benefits email to the address saved as Elena (elena.ross@gmail.com)."
+        },
+        {
+          "reply": "Done. Nov 12 reminder is now at 6pm.",
+          "request": "move the nov 12 reminder to 6pm",
+          "result": "Changed the Nov 12 reminder time from 9am to 6pm."
+        }
+      ],
+      "key": "c6",
+      "opening_request": "remind me before delta dental open enrollment closes, i keep forgetting",
+      "pair_key": "c5",
+      "result_reply": "Open enrollment closes Nov 13. I set reminders for Nov 9 and Nov 12 at 9am.",
+      "topic": "Reminder for Delta Dental open enrollment deadline November 13, 2026"
+    },
+    {
+      "canned_result": "Created a recurring reminder every other Friday at 3pm starting Sep 18, 2026, titled 'Submit timesheet in Gusto'. Gusto's payroll email (no-reply@gusto.com) lists a Monday 9am cutoff.",
+      "follow_ups": [
+        {
+          "reply": "Updated. It now fires at 1pm every other Friday.",
+          "request": "change it to 1pm",
+          "result": "Updated the recurring reminder to 1pm, effective Sep 18."
+        },
+        {
+          "reply": "Skipped Oct 16. Next reminder is Oct 30 at 1pm.",
+          "request": "skip the one on oct 16, i'll be out",
+          "result": "Skipped the Oct 16 occurrence. The next will be Oct 30."
+        },
+        {
+          "reply": "Monday at 9am Pacific, per Gusto's last email.",
+          "request": "when's the cutoff for payroll again",
+          "result": "Gusto's latest email says timesheets must be in by Monday at 9am Pacific."
+        }
+      ],
+      "key": "c7",
+      "opening_request": "can you remind me every other friday to submit my timesheet",
+      "pair_key": null,
+      "result_reply": "Set a reminder every other Friday at 3pm, starting Sep 18, to submit your timesheet.",
+      "topic": "Recurring biweekly Friday reminder to submit timesheet in Gusto"
+    },
+    {
+      "canned_result": "Dana Whitfield (dana.whitfield@brightpathtalent.com) asked for 20 minutes. Replied offering Thu Oct 1 at 1pm or Fri Oct 2 at 10am PT, both open on your calendar.",
+      "follow_ups": [
+        {
+          "reply": "Yes, Dana confirmed Fri Oct 2 at 10am. She'll send a Zoom link.",
+          "request": "she answered?",
+          "result": "Dana confirmed Fri Oct 2 at 10am and will send a Zoom link."
+        },
+        {
+          "reply": "Added to your calendar with a 9:45am reminder.",
+          "request": "put it on my calendar and remind me 15 min before",
+          "result": "Added 'Call with Dana Whitfield (Brightpath)' on Oct 2, 10:00-10:20am, with a reminder at 9:45am."
+        },
+        {
+          "reply": "A Senior Product Manager role at Corvane Systems, remote-friendly.",
+          "request": "what role is she calling about",
+          "result": "Her first email mentions a Senior Product Manager opening at Corvane Systems in Austin, remote-friendly."
+        }
+      ],
+      "key": "c8",
+      "opening_request": "dana from brightpath wants a call, can you find a time thursday or friday",
+      "pair_key": null,
+      "result_reply": "I offered Dana Thu Oct 1 at 1pm or Fri Oct 2 at 10am. Waiting for her pick.",
+      "topic": "Scheduling intro call with recruiter Dana Whitfield at Brightpath Talent"
+    },
+    {
+      "canned_result": "Namecheap (support@namecheap.com) notice says bluefinstudio.com expires Oct 28, 2026, renewal $14.98. Set reminders for Oct 21 and Oct 27 at 10am.",
+      "follow_ups": [
+        {
+          "reply": "No, auto-renew is off for bluefinstudio.com.",
+          "request": "is auto-renew on?",
+          "result": "The notice says auto-renew is off for this domain."
+        },
+        {
+          "reply": "Only the one-year price ($14.98) is in the email. No two-year quote.",
+          "request": "how much is renewal for 2 years",
+          "result": "The notice only lists the one-year price of $14.98, with no two-year quote."
+        },
+        {
+          "reply": "Oct 21 reminder removed. Oct 27 at 10am remains.",
+          "request": "cancel the oct 21 reminder, i'll do it on the 27th",
+          "result": "Removed the Oct 21 reminder. The Oct 27 at 10am reminder stays."
+        }
+      ],
+      "key": "c9",
+      "opening_request": "remind me to renew bluefinstudio.com before it expires",
+      "pair_key": null,
+      "result_reply": "bluefinstudio.com expires Oct 28 ($14.98 to renew). Reminders set for Oct 21 and Oct 27.",
+      "topic": "Reminder to renew domain bluefinstudio.com with Namecheap before October 28, 2026"
+    }
+  ]
+}

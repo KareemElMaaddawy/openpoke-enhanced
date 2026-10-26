@@ -1,0 +1,131 @@
+{
+  "provenance": {
+    "attempts": 1,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "35fc3a2e09154d1e9535399f867a5195b45380b7575b89c560636e240dbd3e4d",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found OpenTable confirmation from Sept 8: Carmelo's Italian Kitchen, Saturday September 19 at 6:30 PM, party of 9, under the name Nguyen.",
+      "key": "f1",
+      "opening_request": "can you find the confirmation for mom's retirement dinner at Carmelo's? need the time and party size",
+      "result_reply": "Carmelo's, Sept 19 at 6:30 PM, party of 9, under Nguyen. Confirmation is from Sept 8.",
+      "topic": "Mom's retirement dinner reservation at Carmelo's Italian Kitchen on September 19"
+    },
+    {
+      "canned_result": "Drafted and sent a reply to Rosa Delgado saying the family can't host Christmas Eve this year but will bring two pies and a tray of cookies.",
+      "key": "f2",
+      "opening_request": "aunt rosa emailed asking who's hosting christmas eve, reply that we can't this year but can bring dessert",
+      "result_reply": "Sent Rosa a reply: we can't host, but we'll bring pies and cookies.",
+      "topic": "Reply to Aunt Rosa about hosting Christmas Eve 2026"
+    },
+    {
+      "canned_result": "Found an Aug 28 email from Camp Whispering Pines confirming a $325 partial refund to the Visa ending 4417, expected within 7-10 business days.",
+      "key": "f3",
+      "opening_request": "did camp whispering pines ever confirm the refund for sophie's july session?",
+      "result_reply": "Yes, they confirmed a $325 refund to your Visa ending 4417, arriving in 7-10 business days.",
+      "topic": "Summer camp refund from Camp Whispering Pines for Sophie's July session"
+    },
+    {
+      "canned_result": "Reminder set for October 8 at 9:00 AM: mail Grandma June's anniversary card so it arrives before her October 12 anniversary.",
+      "key": "f4",
+      "opening_request": "remind me october 8 to mail grandma june's anniversary card, her anniversary is the 12th",
+      "result_reply": "Reminder set for Oct 8 at 9 AM to mail Grandma June's anniversary card.",
+      "topic": "Reminder to mail anniversary card to Grandma June before October 12"
+    },
+    {
+      "canned_result": "The Lincoln Elementary PTA email says the book fair runs October 19-23 in the library, and they need volunteers for 2-hour shifts via a SignUpGenius link.",
+      "key": "f5",
+      "opening_request": "summarize the PTA email about the book fair, dates and if they need volunteers",
+      "result_reply": "Book fair is Oct 19-23 in the library. They need volunteers for 2-hour shifts via SignUpGenius.",
+      "topic": "Summarize school newsletter from Lincoln Elementary PTA about the fall book fair"
+    },
+    {
+      "canned_result": "Marcus emailed Sept 14: the Big Bear cabin for Oct 16-18 costs $780 total, so $195 per couple across four couples, payable by Venmo by October 1.",
+      "key": "f6",
+      "opening_request": "what did marcus say about splitting the big bear cabin cost? find his email",
+      "result_reply": "Marcus says $780 total, so $195 per couple, via Venmo by October 1.",
+      "topic": "Brother Marcus's email about splitting the cost of the family cabin rental at Big Bear on October 16-18"
+    },
+    {
+      "canned_result": "Sent an email to Ms. Alvarez requesting a parent-teacher conference on Thursday October 15 any time after 4:00 PM and asking her to confirm a slot.",
+      "key": "f7",
+      "opening_request": "email ms alvarez and ask if we can do the parent teacher conference thursday october 15 after 4pm",
+      "result_reply": "Sent Ms. Alvarez your request for Oct 15 after 4 PM. Waiting on her confirmation.",
+      "topic": "Reply to Ms. Alvarez, Sophie's teacher, requesting a parent-teacher conference on October 15"
+    },
+    {
+      "canned_result": "Reminder created for September 27 at 12:00 PM: call Grandpa Walt for his birthday.",
+      "key": "f8",
+      "opening_request": "remind me to call grandpa walt on his birthday, sept 27, around lunchtime",
+      "result_reply": "Done. Reminder set for Sept 27 at noon to call Grandpa Walt.",
+      "topic": "Reminder to call Grandpa Walt on his birthday, September 27"
+    },
+    {
+      "canned_result": "Found a receipt dated Sept 2 from Sunny Day Photography for a $150 deposit on the November 7 family portrait session at Crescent Park.",
+      "key": "f9",
+      "opening_request": "find the receipt for the deposit we paid sunny day photography for family photos",
+      "result_reply": "Found it: $150 deposit paid Sept 2 for the Nov 7 portrait session at Crescent Park.",
+      "topic": "Find the Zelle receipt for the deposit paid to Sunny Day Photography for family portraits"
+    },
+    {
+      "canned_result": "Sent a reply to Karen Whitfield declining the October 31 Halloween block party, mentioning the family will be out of town and offering to drop off candy beforehand.",
+      "key": "f10",
+      "opening_request": "politely tell karen whitfield we can't make the halloween block party, we'll be out of town",
+      "result_reply": "Sent Karen a polite decline and offered to drop off candy beforehand.",
+      "topic": "Decline invitation to neighbor Karen Whitfield's Halloween block party on October 31"
+    },
+    {
+      "canned_result": "CVS Pharmacy emailed a confirmation: flu shot on Tuesday October 6 at 5:15 PM at the Elm Avenue location, bring insurance card.",
+      "key": "f11",
+      "opening_request": "when's my flu shot at cvs? think they emailed a confirmation",
+      "result_reply": "Flu shot is Tuesday Oct 6 at 5:15 PM at CVS on Elm Avenue. Bring your insurance card.",
+      "topic": "Flu shot appointment confirmation at CVS Pharmacy on October 6"
+    },
+    {
+      "canned_result": "Westside Youth Soccer League's email lists Sophie's Blue Dolphins games on Saturdays at 9:00 AM starting September 12, with the final game November 14 at Hillcrest Field.",
+      "key": "f12",
+      "opening_request": "find the westside youth soccer email with sophie's fall game schedule and tell me game days",
+      "result_reply": "Games are Saturdays at 9 AM, Sept 12 through Nov 14, at Hillcrest Field.",
+      "topic": "Sophie's soccer schedule from Westside Youth Soccer League for the fall season"
+    },
+    {
+      "canned_result": "Sent Dan Kowalski a reply confirming dinner in Portland on November 7 and asking him to choose the restaurant and time.",
+      "key": "f13",
+      "opening_request": "tell dan kowalski yes i'm in for dinner in portland november 7, ask him to pick the place",
+      "result_reply": "Sent Dan a yes for Nov 7 dinner in Portland and asked him to pick the place.",
+      "topic": "Reply to college roommate Dan Kowalski about meeting up in Portland on November 7"
+    },
+    {
+      "canned_result": "Reminder set for September 22 at 6:00 PM to renew Sophie's Riverside Public Library card, which expires September 25.",
+      "key": "f14",
+      "opening_request": "remind me to renew sophie's library card before it expires sept 25",
+      "result_reply": "Reminder set for Sept 22 at 6 PM to renew Sophie's library card before the 25th.",
+      "topic": "Reminder to renew Sophie's library card at Riverside Public Library by September 25"
+    },
+    {
+      "canned_result": "Hartwell Movers quoted $640 for a two-person crew for 4 hours on Saturday October 10, moving furniture from Mom's house to her new condo.",
+      "key": "f15",
+      "opening_request": "look for the hartwell movers quote for moving mom's furniture, how much and what date",
+      "result_reply": "Hartwell quoted $640 for a 2-person crew on Saturday Oct 10, 4 hours.",
+      "topic": "Find email from Hartwell Movers about the quote for moving Mom's furniture on October 10"
+    },
+    {
+      "canned_result": "Grandma June's email recaps her August Holland America cruise to Alaska: she saw humpback whales in Juneau, loved Glacier Bay, and is sending photos plus a gift for Sophie.",
+      "key": "f16",
+      "opening_request": "grandma june sent a super long email about her alaska cruise, can you summarize it",
+      "result_reply": "She loved the Alaska cruise: whales in Juneau, Glacier Bay highlights. She's sending photos and a gift for Sophie.",
+      "topic": "Summarize Grandma June's long email about her cruise to Alaska in August"
+    },
+    {
+      "canned_result": "Sent Mr. Bennett an email asking to move Sophie's Wednesday October 21 piano lesson to Friday October 23 at the same 4:00 PM time, pending his availability.",
+      "key": "f17",
+      "opening_request": "email mr bennett to move sophie's october 21 piano lesson to the 23rd if he's free",
+      "result_reply": "Asked Mr. Bennett to move the Oct 21 lesson to Oct 23 at 4 PM. Awaiting his reply.",
+      "topic": "Reply to Sophie's piano teacher Mr. Bennett about rescheduling the October 21 lesson"
+    }
+  ]
+}

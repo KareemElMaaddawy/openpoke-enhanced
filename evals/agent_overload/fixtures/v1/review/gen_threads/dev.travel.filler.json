@@ -1,0 +1,138 @@
+{
+  "provenance": {
+    "attempts": 1,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "65557f7dad05cf42889a290f2da8964bc9eec142bfa3f90c3f0604cbebcd9b54",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found Air Canada confirmation 7QK2LM for flight AC 8, Newark to Toronto Pearson, departing 7:15 AM on October 1, 2026, seat 14C, fare $412.",
+      "key": "f1",
+      "opening_request": "can you dig up my Air Canada confirmation for the Toronto trip on Oct 1",
+      "result_reply": "Found it: Air Canada AC 8, Newark to Toronto, Oct 1 at 7:15 AM, seat 14C, confirmation 7QK2LM.",
+      "topic": "Air Canada booking confirmation for Toronto flight AC 8 on October 1, 2026"
+    },
+    {
+      "canned_result": "Avis reservation for a midsize SUV at San Diego airport, pickup November 2, 2026 at 11:30 AM, return November 5, estimated total $286.40, confirmation number AV88213.",
+      "key": "f2",
+      "opening_request": "check my email for the Avis rental details in San Diego, early November",
+      "result_reply": "Avis has a midsize SUV waiting at San Diego airport Nov 2, 11:30 AM. Estimated total $286.40.",
+      "topic": "Avis rental car pickup in San Diego on November 2, 2026"
+    },
+    {
+      "canned_result": "Navan email from November shows Elena Ruiz approved the Singapore Airlines SQ 25 trip request for November 18, 2026, with a fare cap of $1,850 noted.",
+      "key": "f3",
+      "opening_request": "did my manager approve the Singapore trip in Navan yet? check email",
+      "result_reply": "Yes, Elena Ruiz approved your Singapore trip for Nov 18 in Navan, with a $1,850 fare cap.",
+      "topic": "Navan trip approval request for Singapore Airlines flight on November 18, 2026"
+    },
+    {
+      "canned_result": "Sent an email to Dana Whitfield saying the user lands at LaGuardia at 4:40 PM on September 30 and offering to split a cab to Midtown. Asked her to reply with her landing time.",
+      "key": "f4",
+      "opening_request": "email Dana and ask if she wants to split a cab from LaGuardia Sept 30",
+      "result_reply": "Sent. I asked Dana to split a cab from LaGuardia on Sept 30 and share her landing time.",
+      "topic": "Email to Dana Whitfield about sharing a cab from LaGuardia on September 30, 2026"
+    },
+    {
+      "canned_result": "Trenitalia e-ticket for Frecciarossa 9611 from Milano Centrale to Roma Termini on October 7, 2026, departing 8:10 AM, arriving 11:20 AM, coach 4 seat 7A.",
+      "key": "f5",
+      "opening_request": "find my Trenitalia ticket Milan to Rome next month and tell me the departure time",
+      "result_reply": "Trenitalia Frecciarossa 9611 leaves Milano Centrale Oct 7 at 8:10 AM, arriving Rome 11:20 AM, coach 4 seat 7A.",
+      "topic": "Trenitalia train ticket from Milan to Rome on October 7, 2026"
+    },
+    {
+      "canned_result": "Created a reminder for November 3, 2026 at 9:00 AM to confirm the Blacklane chauffeur pickup at Munich Airport on November 4 at 6:45 PM, reservation BL-55012.",
+      "key": "f6",
+      "opening_request": "book a reminder to confirm my Blacklane ride in Munich the day before",
+      "result_reply": "Reminder set for Nov 3 at 9 AM to confirm your Blacklane Munich pickup on Nov 4.",
+      "topic": "Blacklane chauffeur pickup in Munich on November 4, 2026"
+    },
+    {
+      "canned_result": "Money20/20 USA badge confirmed for October 25-28, 2026 at the Venetian, with a pickup QR code attached. Hotel block room at the Venetian is booked for three nights at $339 per night.",
+      "key": "f7",
+      "opening_request": "summarize the Money20/20 emails, I need hotel and badge info for Vegas",
+      "result_reply": "Badge confirmed for Oct 25-28 at the Venetian, and your hotel is booked three nights at $339 each.",
+      "topic": "Money20/20 Las Vegas hotel and badge confirmation for October 2026"
+    },
+    {
+      "canned_result": "Drafted a message to AAdvantage customer service with ticket number 0012345678901, flight AA 1734 on September 21, 2026, and a request to credit the roughly 1,100 missing miles. The draft is ready for review.",
+      "key": "f8",
+      "opening_request": "draft a note to AAdvantage about missing miles from my Charlotte flight Sept 21",
+      "result_reply": "Draft ready for AAdvantage requesting about 1,100 missing miles for AA 1734 on Sept 21. Want me to send it?",
+      "topic": "American Airlines AAdvantage miles missing from September 21, 2026 Charlotte flight"
+    },
+    {
+      "canned_result": "Park 'N Fly reservation PNF-30417 for DFW, October 12-15, 2026, covered lot, total $72.00, prepaid, with entry before 6 AM on the 12th.",
+      "key": "f9",
+      "opening_request": "find my airport parking reservation for DFW on Oct 12",
+      "result_reply": "Park 'N Fly has you at DFW Oct 12-15, covered lot, $72 prepaid, confirmation PNF-30417.",
+      "topic": "Park 'N Fly parking reservation at DFW on October 12, 2026"
+    },
+    {
+      "canned_result": "Email from the Indian government e-visa portal says the application filed October 2 was approved. The e-visa is valid for 60 days from arrival, with the PDF attached and application ID 1A2B3C4D.",
+      "key": "f10",
+      "opening_request": "look for the India e-visa status email, I'm going to Bangalore in November",
+      "result_reply": "Your India e-visa was approved, valid 60 days from arrival. The PDF is attached to the portal's email.",
+      "topic": "India e-visa application for Bangalore trip in November 2026"
+    },
+    {
+      "canned_result": "Found the folio from Kimpton Hotel Monaco Philadelphia for October 5-7, 2026, total $548.20 including taxes and a $32 parking charge. PDF forwarded to the user's expense inbox.",
+      "key": "f11",
+      "opening_request": "get me the Kimpton Philadelphia receipt from my Oct 5 stay for expenses",
+      "result_reply": "Found the Kimpton Philadelphia receipt, $548.20 total, and forwarded the PDF to your expense inbox.",
+      "topic": "Kimpton Hotel Monaco Philadelphia receipt for October 5-7, 2026 stay"
+    },
+    {
+      "canned_result": "Set a reminder for November 5, 2026 at 5:00 PM to print or download the Via Rail Toronto to Montreal ticket for the 7:00 AM train on November 6, booking VR-77421.",
+      "key": "f12",
+      "opening_request": "remind me to print my Via Rail ticket Toronto to Montreal Nov 6",
+      "result_reply": "Reminder set for Nov 5 at 5 PM to download your Via Rail ticket for the Nov 6 train.",
+      "topic": "Via Rail ticket from Toronto to Montreal on November 6, 2026"
+    },
+    {
+      "canned_result": "Located the Sheraton Denver Downtown invoice for October 19-21, 2026, total $467.55 for two nights including resort fee, billed to the corporate Visa ending 4421.",
+      "key": "f13",
+      "opening_request": "can you find the Sheraton Denver invoice for my October 19 stay",
+      "result_reply": "Sheraton Denver invoice found: $467.55 for Oct 19-21, charged to corporate Visa ending 4421.",
+      "topic": "Sheraton Denver Downtown invoice for conference stay October 19-21, 2026"
+    },
+    {
+      "canned_result": "Emailed Grace Kim at Harlow Partners the itinerary: arrival at Kansas City International at 9:25 AM on October 22, 2026, meeting at their Crossroads office at 11:00 AM, and a departure at 6:10 PM.",
+      "key": "f14",
+      "opening_request": "send Grace at Harlow Partners my Kansas City itinerary for Oct 22",
+      "result_reply": "Sent Grace Kim your Kansas City itinerary: land 9:25 AM, meeting at 11, depart 6:10 PM on Oct 22.",
+      "topic": "Email to Harlow Partners assistant Grace Kim with Kansas City itinerary for October 22, 2026"
+    },
+    {
+      "canned_result": "BC Ferries reservation shows a sailing from Tsawwassen to Swartz Bay on October 9, 2026 at 10:00 AM, one vehicle plus two passengers, reservation BCF-940215, arrive 45 minutes early.",
+      "key": "f15",
+      "opening_request": "what time is my BC Ferries sailing to Victoria on Oct 9?",
+      "result_reply": "Your BC Ferries sailing to Victoria leaves Tsawwassen Oct 9 at 10:00 AM. Arrive 45 minutes early.",
+      "topic": "BC Ferries sailing reservation from Vancouver to Victoria on October 9, 2026"
+    },
+    {
+      "canned_result": "Qatar Airways email confirms delayed baggage report DOHQR48213 for flight QR 702 on September 27, 2026. The bag was delivered to the hotel on September 28, and reimbursement of essentials up to $100 is available with receipts.",
+      "key": "f16",
+      "opening_request": "find the Qatar Airways baggage claim email, my bag came late on Sept 27",
+      "result_reply": "Qatar filed delayed bag report DOHQR48213. Bag was delivered Sept 28, and essentials up to $100 can be reimbursed.",
+      "topic": "Qatar Airways baggage claim reference for Doha flight QR 702 on September 27, 2026"
+    },
+    {
+      "canned_result": "Created a reminder for Friday, October 2, 2026 at 10:00 AM to book a return flight from Vancouver after the Slack partner summit ends November 13, with a note to check Air Canada and WestJet fares.",
+      "key": "f17",
+      "opening_request": "remind me Friday to book my return flight from Vancouver after the Nov 13 summit",
+      "result_reply": "Reminder set for Friday, Oct 2 at 10 AM to book your Vancouver return after the Nov 13 summit.",
+      "topic": "Reminder to book return flight from Vancouver after Slack partner summit on November 13, 2026"
+    },
+    {
+      "canned_result": "Carmel Car Service replied with a quote of $118 including tolls and tip for a JFK to Manhattan sedan pickup on October 30, 2026, awaiting the user's confirmation by October 25.",
+      "key": "f18",
+      "opening_request": "did Carmel Car Service ever send a quote for my JFK pickup Oct 30?",
+      "result_reply": "Carmel quoted $118 all-in for your JFK pickup Oct 30. They need confirmation by Oct 25.",
+      "topic": "Uber Black alternative: Carmel Car Service pickup quote for JFK arrival on October 30, 2026"
+    }
+  ]
+}

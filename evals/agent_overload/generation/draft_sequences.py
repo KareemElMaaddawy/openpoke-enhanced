@@ -167,7 +167,7 @@ async def draft_one(ctx: StepContext, plan: SequencePlan, threads: dict, ids: di
             purpose="draft_sequence",
             model=GEN_MODEL,
             messages=[{"role": "user", "content": prompt}],
-            extra={"max_tokens": 6000},
+            extra={"max_tokens": 12000},
             fake_hint={"plan": plan.to_dict(), "names": names, "attempt": attempt},
         )
         try:
@@ -219,7 +219,7 @@ def main(argv: Optional[list[str]] = None) -> int:
             done = {c["case_id"] for c in read_rows(fixtures_dir / f"cases.sequence.{split}.jsonl")}
             todo[split] = [p for p in sequence_plans(split, threads, ids) if p.case_id not in done]
     count = sum(len(v) for v in todo.values()) if have else NOMINAL_SEQUENCES
-    planned = [PlannedCalls("draft_sequence", GEN_MODEL, count * 1.3, 3500, 2600, "one 12-turn sequence per call")]
+    planned = [PlannedCalls("draft_sequence", GEN_MODEL, count * 1.3, 3500, 4600, "one 12-turn sequence per call; output x1.75 per step 1")]
     extra = [
         "",
         f"sequences to draft: {count}" + ("" if have else " (nominal: agents files not found yet)"),

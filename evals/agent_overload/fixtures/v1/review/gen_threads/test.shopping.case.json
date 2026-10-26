@@ -1,0 +1,237 @@
+{
+  "provenance": {
+    "attempts": 1,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "915487c40e41995c00aca03f122ed96bc06e5ed6d63f0f134d2619b36e05716d",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Amazon email from shipment-tracking@amazon.com (Oct 2) says the FlexiSpot E7 standing desk, order 113-4820957-6612201, is out for delivery and due Tuesday Oct 6 by 8pm.",
+      "follow_ups": [
+        {
+          "reply": "Amazon Logistics is delivering it. Tracking number is TBA318842096000.",
+          "request": "who's it being delivered by?",
+          "result": "The tracking email says delivery is by Amazon Logistics, with no carrier tracking number beyond TBA318842096000."
+        },
+        {
+          "reply": "Done. I'll remind you Tuesday at 5pm to check for the desk.",
+          "request": "remind me tuesday at 5pm to check the porch for it",
+          "result": "Reminder set for Tuesday Oct 6 at 5:00pm: 'Check porch for FlexiSpot desk delivery'."
+        },
+        {
+          "reply": "Sent to Marcus Webb at Linden Park asking the front desk to hold the desk box.",
+          "request": "email my landlord that a big box is coming so the front desk can hold it",
+          "result": "Drafted and sent to Marcus Webb (mwebb@lindenparkapts.com) saying a large desk box arrives Oct 6 and asking the front desk to hold it for pickup."
+        }
+      ],
+      "key": "c1",
+      "opening_request": "when is my amazon standing desk supposed to arrive?",
+      "pair_key": "c2",
+      "result_reply": "Your FlexiSpot standing desk is due Tuesday, Oct 6 by 8pm, per Amazon's shipping email.",
+      "topic": "Amazon standing desk order delivery tracking, arriving Oct 6 2026"
+    },
+    {
+      "canned_result": "Amazon email from digital-no-reply@amazon.com (Sep 30) says the Prime membership renews Nov 14, 2026 at $139 to the Visa ending 4417.",
+      "follow_ups": [
+        {
+          "reply": "Reminder set for Nov 7 at 9am to decide on Prime.",
+          "request": "set a reminder a week before so i can decide whether to cancel",
+          "result": "Reminder created for Nov 7, 2026 at 9:00am: 'Decide on Amazon Prime renewal ($139 on Nov 14)'."
+        },
+        {
+          "reply": "No, last year's renewal was also $139.",
+          "request": "was the price higher last year?",
+          "result": "Last year's renewal email from Amazon (Nov 2025) showed $139 as well, so the price hasn't changed."
+        },
+        {
+          "reply": "Yes, via Manage Membership in your Amazon account. Cancel before Nov 14 to avoid the charge.",
+          "request": "does the email say how to cancel?",
+          "result": "The email links to Manage Membership under Account & Lists and says cancelling before Nov 14 avoids the charge. It also mentions a prorated refund if unused."
+        }
+      ],
+      "key": "c2",
+      "opening_request": "amazon prime renews soon right? find the email about it",
+      "pair_key": "c1",
+      "result_reply": "Prime renews Nov 14 for $139 on your Visa ending 4417.",
+      "topic": "Amazon Prime annual membership renewal charge on Nov 14 2026"
+    },
+    {
+      "canned_result": "FedEx email from trackingupdates@fedex.com (Oct 12) says a package from Brightwell Labs, tracking 7748 3921 0056, is held at FedEx Office, 210 Oak Street, because no one was available to sign; it will be returned Oct 19 if not picked up.",
+      "follow_ups": [
+        {
+          "reply": "Bring a photo ID and tracking number 7748 3921 0056.",
+          "request": "what id do i need to bring?",
+          "result": "The FedEx email says to bring a government photo ID and the tracking number 7748 3921 0056."
+        },
+        {
+          "reply": "Reminder set for Saturday Oct 17 at 9:30am.",
+          "request": "remind me saturday morning to go get it",
+          "result": "Reminder set for Saturday Oct 17 at 9:30am: 'Pick up FedEx package at 210 Oak St'."
+        },
+        {
+          "reply": "Sent Priya at Brightwell a note that you'll collect it Saturday.",
+          "request": "reply to brightwell and tell them it's been delayed",
+          "result": "Sent a reply to Priya Raman (priya@brightwelllabs.com) saying the sample kit is awaiting pickup at FedEx and will be collected Saturday."
+        }
+      ],
+      "key": "c3",
+      "opening_request": "fedex says something about a held package, what's going on with that",
+      "pair_key": "c4",
+      "result_reply": "A Brightwell Labs package is held at FedEx Office, 210 Oak St. Pick it up by Oct 19.",
+      "topic": "FedEx package held for pickup at Oak Street location, sample kit from Brightwell Labs"
+    },
+    {
+      "canned_result": "FedEx Billing email from billing@fedex.com (Oct 5) has invoice 8-204-117733 for $284.60 covering September shipments on account ending 2290, due Oct 26.",
+      "follow_ups": [
+        {
+          "reply": "Forwarded the invoice to Dave Okafor.",
+          "request": "forward it to my bookkeeper dave",
+          "result": "Forwarded the FedEx invoice email with PDF to Dave Okafor (dave@okaforbooks.com)."
+        },
+        {
+          "reply": "Doesn't look paid. FedEx's Oct 19 reminder still shows $284.60 open.",
+          "request": "has it been paid yet?",
+          "result": "No payment confirmation found; the only later FedEx email is a reminder dated Oct 19 showing the balance still open."
+        },
+        {
+          "reply": "Reminder set for Oct 24 at 10am to pay the FedEx invoice.",
+          "request": "remind me to pay it on the 24th",
+          "result": "Reminder set for Oct 24, 2026 at 10:00am: 'Pay FedEx invoice 8-204-117733 ($284.60)'."
+        }
+      ],
+      "key": "c4",
+      "opening_request": "find the fedex invoice for september, the business account one",
+      "pair_key": "c3",
+      "result_reply": "September FedEx invoice is $284.60, due Oct 26, invoice 8-204-117733.",
+      "topic": "FedEx shipping invoice for September business shipments, account ending 2290"
+    },
+    {
+      "canned_result": "Best Buy order confirmation from BestBuyInfo@emailinfo.bestbuy.com (Sep 21) shows a Dell 27\" monitor, $249.99, order BBY01-806512; return window is 15 days, ending Oct 6.",
+      "follow_ups": [
+        {
+          "reply": "Reminder set for Oct 3 at noon.",
+          "request": "remind me on oct 3 to take it back",
+          "result": "Reminder set for Oct 3, 2026 at 12:00pm: 'Return Dell monitor to Best Buy (deadline Oct 6)'."
+        },
+        {
+          "reply": "Yes, bring the original packaging, accessories and your order number.",
+          "request": "do i need the original box?",
+          "result": "Best Buy's return policy section in the email says items should be returned with original packaging and accessories where possible, plus the order number or receipt."
+        },
+        {
+          "reply": "Yes, $249.99 refund confirmed Oct 5. Expect it in 3 to 5 business days.",
+          "request": "did they email a refund confirmation yet?",
+          "result": "Yes, a Best Buy email on Oct 5 confirms $249.99 refunded to the original payment method, 3 to 5 business days."
+        }
+      ],
+      "key": "c5",
+      "opening_request": "i need to return the dell monitor to best buy, find the order email",
+      "pair_key": "c6",
+      "result_reply": "Found it: Dell 27\" monitor, $249.99, order BBY01-806512. Return window ends Oct 6.",
+      "topic": "Best Buy return of Dell 27-inch monitor, order BBY01-806512"
+    },
+    {
+      "canned_result": "Best Buy email (Oct 8) confirms a $100 e-gift card scheduled to email to linda.hart@gmail.com on Oct 22 at 8:00am with the message 'Happy birthday Mom'.",
+      "follow_ups": [
+        {
+          "reply": "It says 'Happy birthday Mom', signed from Jordan.",
+          "request": "what message did i put on it?",
+          "result": "The confirmation shows the message 'Happy birthday Mom' and is signed from Jordan."
+        },
+        {
+          "reply": "Reminder set for Oct 22 at 8:15am to call her.",
+          "request": "remind me to call her the morning it goes out",
+          "result": "Reminder set for Oct 22, 2026 at 8:15am: 'Call Mom, birthday gift card just sent'."
+        },
+        {
+          "reply": "Yes, use the Manage Delivery link in that email until Oct 21.",
+          "request": "can i change the delivery date?",
+          "result": "The confirmation email says scheduled e-gift cards can be edited by using the Manage Delivery link until the day before sending, so up to Oct 21."
+        }
+      ],
+      "key": "c6",
+      "opening_request": "did the best buy gift card for mom get scheduled to send?",
+      "pair_key": "c5",
+      "result_reply": "Yes, a $100 gift card goes to linda.hart@gmail.com on Oct 22 at 8am.",
+      "topic": "Best Buy e-gift card purchased for mom's birthday, delivery scheduled Oct 22 2026"
+    },
+    {
+      "canned_result": "Chewy email from autoship@chewy.com (Oct 14) says the next Autoship of Purina Pro Plan 30 lb dog food, $62.49, ships Oct 28 and arrives around Oct 31.",
+      "follow_ups": [
+        {
+          "reply": "You can skip via the Manage Autoship link until Oct 26. I can't do it from email.",
+          "request": "can i skip this one? we still have half a bag",
+          "result": "The Chewy email includes a Manage Autoship link allowing a skip until Oct 26; I haven't skipped it since that requires your account."
+        },
+        {
+          "reply": "Reminder set for Oct 25 at 6pm.",
+          "request": "remind me on the 25th to skip it",
+          "result": "Reminder set for Oct 25, 2026 at 6:00pm: 'Skip Chewy Autoship if dog food still not needed'."
+        },
+        {
+          "reply": "Last order was also $62.49 with free shipping.",
+          "request": "how much was the last order?",
+          "result": "The previous Chewy order email (Sep 30) shows the same Purina Pro Plan 30 lb bag at $62.49 with free shipping."
+        }
+      ],
+      "key": "c7",
+      "opening_request": "check when my next chewy autoship comes, dog food",
+      "pair_key": null,
+      "result_reply": "Next Chewy dog food Autoship ships Oct 28, arrives about Oct 31. $62.49.",
+      "topic": "Chewy Autoship dog food order for Biscuit, next shipment Oct 28 2026"
+    },
+    {
+      "canned_result": "Etsy seller OakAndAnvil messaged (Oct 15) that the engraved walnut cutting board shipped via USPS Priority, tracking 9400 1118 9922 3045 6718 11, estimated delivery Oct 21.",
+      "follow_ups": [
+        {
+          "reply": "The engraving reads 'Emma & Tyler, Est. 11.07.2026'.",
+          "request": "what name did i have them engrave?",
+          "result": "The Etsy order confirmation lists the engraving text as 'Emma & Tyler, Est. 11.07.2026'."
+        },
+        {
+          "reply": "Sent a thank-you to OakAndAnvil and asked for photo proofs next time.",
+          "request": "message the seller thanks and ask for a photo before shipping next time",
+          "result": "Sent a reply to OakAndAnvil via the Etsy message email thanking them and asking for a photo proof on future engraved orders."
+        },
+        {
+          "reply": "Reminder set for Oct 22 at 7pm.",
+          "request": "remind me oct 22 to wrap it",
+          "result": "Reminder set for Oct 22, 2026 at 7:00pm: 'Wrap Etsy cutting board for Emma and Tyler's wedding'."
+        }
+      ],
+      "key": "c8",
+      "opening_request": "will the etsy cutting board get here before the wedding on nov 7?",
+      "pair_key": null,
+      "result_reply": "Yes, USPS estimates delivery Oct 21, well ahead of the Nov 7 wedding.",
+      "topic": "Etsy custom engraved cutting board from OakAndAnvil shop, wedding gift for Nov 7"
+    },
+    {
+      "canned_result": "Warby Parker email from orders@warbyparker.com (Nov 3) says order WP-5529104, Haskell frames in Whiskey Tortoise, $145, shipped via UPS with an estimated delivery of Nov 9.",
+      "follow_ups": [
+        {
+          "reply": "UPS tracking number is 1Z84F2910356718832.",
+          "request": "what's the ups tracking number",
+          "result": "The shipping email lists UPS tracking number 1Z84F2910356718832."
+        },
+        {
+          "reply": "Yes, $60 insurance discount applied. You were charged $85.",
+          "request": "did my insurance get applied?",
+          "result": "The order email shows a $60 vision insurance discount applied, leaving $85 charged to the card."
+        },
+        {
+          "reply": "Reminder set for Nov 12 at 9am.",
+          "request": "remind me nov 12 to email them if it hasn't come",
+          "result": "Reminder set for Nov 12, 2026 at 9:00am: 'Contact Warby Parker if order WP-5529104 hasn't arrived'."
+        }
+      ],
+      "key": "c9",
+      "opening_request": "has my warby parker order shipped yet",
+      "pair_key": null,
+      "result_reply": "Shipped Nov 3. Your Haskell frames in Whiskey Tortoise are due Nov 9.",
+      "topic": "Warby Parker glasses order for new prescription, order WP-5529104"
+    }
+  ]
+}
