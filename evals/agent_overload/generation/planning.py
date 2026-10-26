@@ -402,7 +402,8 @@ def _compose(case_id, split, slot, pools: Pools, picker: Picker, seeded, pairs, 
             forbidden = [t]
             history = [d] + context({t, d}, rng.randint(0, 1))
         else:
-            variant = rng.randrange(3)
+            # An agent message must follow up visible work on the target, so it keeps the target in view.
+            variant = rng.randrange(3) if subtype == "user" else rng.randrange(2)
             if variant == 0:  # target in view, distractor only in the roster
                 history = [t] + context({t, d}, rng.randint(0, 1))
                 aged[d] = filler_like_age(rng)

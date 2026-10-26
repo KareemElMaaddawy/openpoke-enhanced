@@ -86,6 +86,10 @@ class PlanningTest(unittest.TestCase):
                 self.assertGreaterEqual(p.aged_threads[p.targets[0]], 15)
             if p.kind == "CREATE":
                 self.assertNotIn(p.new_thread, p.required_threads())
+            if p.kind == "REUSE" and p.subtype != "user":
+                # the follow-up instruction or the earlier work must be visible
+                self.assertIn(p.targets[0], p.history_threads, p.case_id)
+                self.assertNotIn(p.targets[0], p.forbidden_threads, p.case_id)
 
     def test_plans_are_deterministic_and_avoid_sequence_threads(self):
         threads, agent_of = world("dev")
