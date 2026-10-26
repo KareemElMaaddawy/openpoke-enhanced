@@ -41,6 +41,7 @@ Give each roster entry more than a name: a stable ID, a purpose or description, 
 - Cost: new state in `roster.py` and a migration of `roster.json`. `send_message_to_agent` would take an ID for reuse, with a separate path for creating an agent. Someone has to write the purpose: most likely the interaction agent at creation time, which adds output tokens to that call.
 - Failure modes: a purpose written at creation can be as vague as the name, and it goes stale as the agent's work drifts. Updating it means another LLM call per task. Longer entries also make the roster block bigger (I1), so on its own this may raise roster tokens per turn even if routing improves.
 - Experiment: routing accuracy at fixed roster sizes with names only against names plus purpose, using the same labelled query set.
+- Spec: [agent-overload-records-retrieval-spec.md](agent-overload-records-retrieval-spec.md), together with bounded retrieval.
 
 ### Bounded retrieval of candidate agents
 
@@ -51,6 +52,7 @@ Instead of rendering the whole roster into `<active_agents>`, retrieve a bounded
 - Cost: an embedding model and an index of agent records, kept in sync as agents are created or updated. An extra retrieval step adds latency to every turn.
 - Failure modes: if the right agent isn't among the k candidates, the interaction agent can't pick it and will likely create a duplicate, so retrieval misses turn into false spawns. The retrieval query is a design question: the prompt is built before the interaction agent has worked out what to delegate, so the query has to come from the incoming message (and maybe recent history), which may not name the work clearly. Agent messages and email notifications need a query too. An alternative is giving the interaction agent a search tool, which lets it form its own query but costs an extra model turn.
 - Experiment: recall@k of the correct agent at roster sizes 10 to 500 on the labelled query set, then routing accuracy and false spawn rate end to end against the full-roster baseline.
+- Spec: [agent-overload-records-retrieval-spec.md](agent-overload-records-retrieval-spec.md) (pinned agents + embeddings + BM25, top K, pass-through scorer slot).
 
 #### Retrieval only above a roster size N
 

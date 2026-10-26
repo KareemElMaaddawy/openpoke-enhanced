@@ -14,3 +14,4 @@ Project documentation beyond the top-level [README](../README.md), which covers 
 - [Agent overload: experiment design](agent-overload-experiment-design.md): the harness, case format, scoring, metrics, report and cost of the baseline experiment, with swappable routing methods for later comparisons.
 - [Makefile commands](makefile.md): setup, running the app, and housekeeping with `make`.
 - [Gmail connection via Composio](gmail-composio-connection.md): configuration, how connecting works, and the `link()` migration.
+- [Agent overload: richer records and bounded retrieval (spec)](agent-overload-records-retrieval-spec.md): implementation spec for solution version 1 (records, ID routing, retrieval, scorer slot) and the `legacy`/`records` startup switch.
