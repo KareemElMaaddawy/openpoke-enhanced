@@ -12,12 +12,14 @@
     "version": "1",
     "params": {
       "full_roster_max": 0,
-      "k": 8,
+      "k": 5,
       "max_pinned": 3,
       "w_sem": 1.0,
       "w_lex": 1.0,
       "w_rec": 0.0,
       "use_pins": true,
+      "use_lexical": true,
+      "query_with_previous_user_message": false,
       "seed_purposes": "backfill",
       "embedding": {
         "model": "openai/text-embedding-3-small",
