@@ -1,0 +1,131 @@
+{
+  "provenance": {
+    "attempts": 1,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "473ab2134bea59694e42790cc640efb423575c86cd6a6c3ca206bb8d040e4a80",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found Notion email stating the Plus plan (5 seats, $200/yr) renews December 3, 2026. Set a reminder for November 28 at 9am to cancel.",
+      "key": "f1",
+      "opening_request": "hey can you find the Notion renewal email and remind me to cancel before it charges",
+      "result_reply": "Found it, renews Dec 3 for $200. Reminder set for Nov 28, 9am.",
+      "topic": "Cancel Notion Plus team plan before December 3, 2026 renewal"
+    },
+    {
+      "canned_result": "The Sept 22 Stratechery post argues that Apple's services revenue is increasingly dependent on Google search payments, and outlines three regulatory scenarios. Key takeaway: diversification into ads is the likely response.",
+      "key": "f2",
+      "opening_request": "can u summarize the stratechery email from sept 22? short pls",
+      "result_reply": "Summarized: Ben argues Apple's services depend on Google payments; regulation could force a pivot to ads.",
+      "topic": "Summarize Stratechery article from Ben Thompson dated September 22, 2026"
+    },
+    {
+      "canned_result": "Clicked the unsubscribe link in the latest Wayfair promo email from October 8 and received confirmation that the address was removed from marketing lists within 10 days.",
+      "key": "f3",
+      "opening_request": "wayfair keeps spamming me, unsubscribe me from those emails",
+      "result_reply": "Done, you're unsubscribed from Wayfair promos. It may take up to 10 days.",
+      "topic": "Unsubscribe from Wayfair promotional emails"
+    },
+    {
+      "canned_result": "Spotify email dated October 14 says Premium Family rises from $19.99 to $22.99 per month starting with the November 15 billing date.",
+      "key": "f4",
+      "opening_request": "did spotify email me about a price change? what's the new amount",
+      "result_reply": "Yes, Family goes from $19.99 to $22.99/month starting your Nov 15 bill.",
+      "topic": "Spotify Premium Family price change email from October 2026"
+    },
+    {
+      "canned_result": "Drafted a polite email to Maya Lindqvist explaining the annual subscription ($80) was purchased by mistake on October 2 and requesting a refund. Saved in drafts for review.",
+      "key": "f5",
+      "opening_request": "draft a reply to Maya Lindqvist asking for a refund on my accidental annual substack sub",
+      "result_reply": "Draft ready in your drafts folder, asking for the $80 refund. Want me to send?",
+      "topic": "Draft reply to Substack author Maya Lindqvist about paid subscription refund"
+    },
+    {
+      "canned_result": "Audible email from October 20 says 3 unused credits will expire on November 30, 2026 unless the membership is kept active and credits are redeemed.",
+      "key": "f6",
+      "opening_request": "check if audible said when my unused credits expire",
+      "result_reply": "Your 3 Audible credits expire November 30. Want a reminder before then?",
+      "topic": "Find Audible credit expiration notice for November 2026"
+    },
+    {
+      "canned_result": "Costco renewal email confirms the Executive membership expires September 30, 2026. Reminder set for September 23 at 10am.",
+      "key": "f7",
+      "opening_request": "remind me a week before my costco membership expires, think its end of sept",
+      "result_reply": "Membership expires Sept 30. Reminder set for Sept 23 at 10am.",
+      "topic": "Set reminder to renew Costco Executive membership on September 30, 2026"
+    },
+    {
+      "canned_result": "The October 19 Morning Brew leads with the Fed rate outlook, a Boeing strike update, and Target's holiday hiring plans for 100,000 seasonal workers.",
+      "key": "f8",
+      "opening_request": "whats in today's morning brew? just the main stories",
+      "result_reply": "Top stories: Fed rate outlook, Boeing strike update, and Target hiring 100,000 seasonal workers.",
+      "topic": "Morning Brew newsletter digest of October 19 top stories"
+    },
+    {
+      "canned_result": "Located Grammarly Business receipt dated October 5 for $150 (10 seats) and forwarded it to Priya Nair with a brief note requesting reimbursement processing.",
+      "key": "f9",
+      "opening_request": "send the latest grammarly receipt to Priya Nair in finance",
+      "result_reply": "Forwarded the Oct 5 Grammarly receipt ($150) to Priya Nair.",
+      "topic": "Forward Grammarly Business receipt to finance contact Priya Nair"
+    },
+    {
+      "canned_result": "Headspace billing email shows the next charge of $69.99 on November 12. Pausing requires logging in under Settings > Subscription; sent the steps and set a reminder for November 10.",
+      "key": "f10",
+      "opening_request": "find how to pause headspace before it bills me again in november",
+      "result_reply": "Next charge is $69.99 on Nov 12. Pause steps are in Settings; reminder set for Nov 10.",
+      "topic": "Pause Headspace subscription before November 12, 2026 billing"
+    },
+    {
+      "canned_result": "WSJ email from October 15 offers 50% off the first year of digital access ($149 → $74.50), valid through October 31, 2026 with code FALL50.",
+      "key": "f11",
+      "opening_request": "wsj sent some discount offer, when does it end and how much",
+      "result_reply": "50% off first year, $74.50, code FALL50, ends October 31.",
+      "topic": "Find Wall Street Journal 50% off offer expiring October 31, 2026"
+    },
+    {
+      "canned_result": "Replied to LinkedIn's September 18 feedback email stating the cancellation reason was cost, and that the user may reconsider with a lower-priced plan.",
+      "key": "f12",
+      "opening_request": "linkedin premium wants feedback after I cancelled, reply saying too expensive",
+      "result_reply": "Sent your feedback to LinkedIn: cancelled due to cost.",
+      "topic": "Reply to LinkedIn Premium cancellation survey from September 2026"
+    },
+    {
+      "canned_result": "Found The Verge welcome email from September 9 with a magic sign-in link and the account registered to the user's work address; the link has expired, so a new one can be requested.",
+      "key": "f13",
+      "opening_request": "find my verge membership welcome email, need the login link",
+      "result_reply": "Found the Sept 9 welcome email. Its login link expired; request a fresh one on their site.",
+      "topic": "Search for The Verge membership welcome email with login details"
+    },
+    {
+      "canned_result": "Created a recurring weekly reminder for Thursdays at 8:00am titled 'Read Lenny's Newsletter', starting September 17, 2026.",
+      "key": "f14",
+      "opening_request": "remind me every thursday at 8am to read lenny's newsletter",
+      "result_reply": "Recurring Thursday 8am reminder is set, starting Sept 17.",
+      "topic": "Weekly reminder to read Lenny's Newsletter every Thursday"
+    },
+    {
+      "canned_result": "Zoom Workplace invoice (Oct 1) was $249.90 for 15 licenses; Slack Pro invoice (Oct 3) was $187.50 for 25 users. Zoom was $62.40 higher.",
+      "key": "f15",
+      "opening_request": "which was pricier in october, zoom or slack invoice?",
+      "result_reply": "Zoom was pricier: $249.90 versus Slack's $187.50, a $62.40 difference.",
+      "topic": "Compare Zoom Workplace and Slack Pro invoices from October 2026"
+    },
+    {
+      "canned_result": "Sent a request to Canva support asking to change the Canva Pro billing contact to billing@brightpath.co; received an auto-reply with ticket #CV-48213.",
+      "key": "f16",
+      "opening_request": "canva keeps emailing my old address, can you ask them to switch billing to billing@brightpath.co",
+      "result_reply": "Sent the request to Canva support. Ticket #CV-48213 opened.",
+      "topic": "Update billing email for Canva Pro subscription to billing@brightpath.co"
+    },
+    {
+      "canned_result": "Found The Atlantic confirmation dated November 3 showing a 1-year gift subscription for Raymond Cole, with the gift notice scheduled to be emailed to him on December 20.",
+      "key": "f17",
+      "opening_request": "did the atlantic gift sub for my uncle Raymond go through?",
+      "result_reply": "Yes, it went through. Raymond's gift notice will be emailed December 20.",
+      "topic": "Find The Atlantic gift subscription confirmation for Uncle Raymond, November 2026"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{"payload": "you there?", "tag": "user_message", "timestamp": "2026-10-05 12:10:14"}
+{"payload": "Always. What's up?", "tag": "poke_reply", "timestamp": "2026-10-05 12:10:19"}
+{"payload": "set a reminder to renew my car registration, dmv sent a notice", "tag": "user_message", "timestamp": "2026-10-05 12:25:01"}
+{"payload": "let me check", "tag": "poke_reply", "timestamp": "2026-10-05 12:25:06"}
+{"payload": "[SUCCESS] DMV Notice and Reminder: Found DMV notice (dmv-notices@dmv.ca.gov) for the 2019 Honda Civic, plate 8KLM442. Renewal fee is $168, due Oct 31. Reminder set for Oct 20 at 9:00am.", "tag": "agent_message", "timestamp": "2026-10-05 12:27:44"}
+{"payload": "Reminder set for October 20 at 9am. Renewal for the Civic is $168, due October 31.", "tag": "poke_reply", "timestamp": "2026-10-05 12:27:49"}
+{"payload": "do you like music", "tag": "user_message", "timestamp": "2026-10-05 16:10:20"}
+{"payload": "Love it. Can't hum, but I have strong opinions about a good bassline.", "tag": "poke_reply", "timestamp": "2026-10-05 16:10:25"}
+{"payload": "i'm back", "tag": "user_message", "timestamp": "2026-10-05 16:20:49"}
+{"payload": "Welcome back. I missed you for almost thirty whole seconds.", "tag": "poke_reply", "timestamp": "2026-10-05 16:20:54"}
+{"payload": "will the etsy cutting board get here before the wedding on nov 7?", "tag": "user_message", "timestamp": "2026-10-05 16:25:52"}
+{"payload": "pulling that up now", "tag": "poke_reply", "timestamp": "2026-10-05 16:25:57"}
+{"payload": "[SUCCESS] Etsy cutting board order: Etsy seller OakAndAnvil messaged (Oct 15) that the engraved walnut cutting board shipped via USPS Priority, tracking 9400 1118 9922 3045 6718 11, estimated delivery Oct 21.", "tag": "agent_message", "timestamp": "2026-10-05 16:27:13"}
+{"payload": "Yes, USPS estimates delivery Oct 21, well ahead of the Nov 7 wedding.", "tag": "poke_reply", "timestamp": "2026-10-05 16:27:18"}
+{"payload": "happy friday", "tag": "user_message", "timestamp": "2026-10-05 18:10:48"}
+{"payload": "Happy Friday! The weekend is practically knocking.", "tag": "poke_reply", "timestamp": "2026-10-05 18:10:53"}
+{"payload": "how much is the late fee if i miss it?", "tag": "user_message", "timestamp": "2026-10-05 18:20:56"}
+{"payload": "got it, on it", "tag": "poke_reply", "timestamp": "2026-10-05 18:21:01"}
+{"payload": "[SUCCESS] DMV Notice and Reminder: The notice says a late penalty of $20 is added after Oct 31, plus further fees after 30 days.", "tag": "agent_message", "timestamp": "2026-10-05 18:22:17"}
+{"payload": "A $20 late penalty applies after October 31, with more fees after 30 days.", "tag": "poke_reply", "timestamp": "2026-10-05 18:22:22"}
+{"payload": "got any fun facts", "tag": "user_message", "timestamp": "2026-10-05 18:25:21"}
+{"payload": "Octopuses have three hearts. Two for the gills, one for everything else. Overachievers.", "tag": "poke_reply", "timestamp": "2026-10-05 18:25:26"}
+{"payload": "ugh fine", "tag": "user_message", "timestamp": "2026-10-05 19:15:06"}
+{"payload": "Dramatic sigh accepted. It'll be over before you know it.", "tag": "poke_reply", "timestamp": "2026-10-05 19:15:11"}
+{"payload": "what name did i have them engrave?", "tag": "user_message", "timestamp": "2026-10-06 08:45:49"}
+{"payload": "on it now", "tag": "poke_reply", "timestamp": "2026-10-06 08:45:54"}
+{"payload": "[SUCCESS] Etsy cutting board order: The Etsy order confirmation lists the engraving text as 'Emma & Tyler, Est. 11.07.2026'.", "tag": "agent_message", "timestamp": "2026-10-06 08:48:22"}
+{"payload": "The engraving reads 'Emma & Tyler, Est. 11.07.2026'.", "tag": "poke_reply", "timestamp": "2026-10-06 08:48:27"}
+{"payload": "it's raining again", "tag": "user_message", "timestamp": "2026-10-06 11:20:23"}
+{"payload": "Classic. Perfect excuse to stay in and feel smug about it.", "tag": "poke_reply", "timestamp": "2026-10-06 11:20:28"}
+{"payload": "i think i'm hungry", "tag": "user_message", "timestamp": "2026-10-06 12:45:01"}
+{"payload": "That \"think\" is doing a lot of work. You're probably hungry. Snack time.", "tag": "poke_reply", "timestamp": "2026-10-06 12:45:06"}
+{"payload": "remind me when the harbor city film festival presale opens, it was in an email", "tag": "user_message", "timestamp": "2026-10-06 13:45:51"}
+{"payload": "looking into it", "tag": "poke_reply", "timestamp": "2026-10-06 13:45:56"}
+{"payload": "[SUCCESS] Harbor City Film Festival email: Email from tickets@harborcityfilm.org says member presale opens Sep 18 at 10am Pacific with code HCFF-MEMBER, and general sale starts Sep 21. Passes cost $85 for 5 screenings.", "tag": "agent_message", "timestamp": "2026-10-06 13:46:56"}
+{"payload": "Presale opens Sep 18 at 10am Pacific, code HCFF-MEMBER. Passes are $85 for 5 screenings.", "tag": "poke_reply", "timestamp": "2026-10-06 13:47:01"}
+{"payload": "did we buy tickets for the oakridge elementary gala", "tag": "user_message", "timestamp": "2026-10-06 14:15:24"}
+{"payload": "one moment", "tag": "poke_reply", "timestamp": "2026-10-06 14:15:29"}
+{"payload": "[SUCCESS] Oakridge Gala Ticket Check: Found an Oct 1 receipt from pta@oakridgeelementary.org confirming 2 gala tickets at $75 each, for Oct 3 at 6:30pm in the school gym, with a silent auction.", "tag": "agent_message", "timestamp": "2026-10-06 14:18:01"}
+{"payload": "Yes, 2 tickets at $75 each for the Oct 3 gala, 6:30pm in the school gym.", "tag": "poke_reply", "timestamp": "2026-10-06 14:18:06"}
+{"payload": "set a reminder 10 minutes before", "tag": "user_message", "timestamp": "2026-10-06 14:25:11"}
+{"payload": "right away", "tag": "poke_reply", "timestamp": "2026-10-06 14:25:16"}
+{"payload": "[SUCCESS] Harbor City Film Festival email: Reminder set for Sep 18 at 9:50am Pacific with the presale code HCFF-MEMBER.", "tag": "agent_message", "timestamp": "2026-10-06 14:26:38"}
+{"payload": "Reminder set for Sep 18 at 9:50am with the code.", "tag": "poke_reply", "timestamp": "2026-10-06 14:26:43"}
+{"payload": "uber eats messed up my lunch order on oct 6, find the refund email", "tag": "user_message", "timestamp": "2026-10-06 14:30:25"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-06 14:30:30"}
+{"payload": "[SUCCESS] Find Uber Eats refund email: Found an Oct 7 email from uber@uber.com confirming a $23.18 refund for missing items in the Sakura Bowl order, going back to the Visa ending 4417 in 3-5 business days.", "tag": "agent_message", "timestamp": "2026-10-06 14:32:30"}
+{"payload": "Uber Eats refunded $23.18 for the Sakura Bowl order, due on your Visa in 3-5 business days.", "tag": "poke_reply", "timestamp": "2026-10-06 14:32:35"}
+{"payload": "lol nice", "tag": "user_message", "timestamp": "2026-10-06 14:50:24"}
+{"payload": "Right? I'm choosing to take that as a compliment.", "tag": "poke_reply", "timestamp": "2026-10-06 14:50:29"}
+{"payload": "lol", "tag": "user_message", "timestamp": "2026-10-06 15:30:20"}
+{"payload": "Glad that landed.", "tag": "poke_reply", "timestamp": "2026-10-06 15:30:25"}
+{"payload": "move the reminder to oct 15 at 7am", "tag": "user_message", "timestamp": "2026-10-06 17:05:57"}
+{"payload": "on it now", "tag": "poke_reply", "timestamp": "2026-10-06 17:06:02"}
+{"payload": "[SUCCESS] DMV Notice and Reminder: Reminder moved to Oct 15 at 7:00am: 'Renew Honda Civic registration, $168, due Oct 31.'", "tag": "agent_message", "timestamp": "2026-10-06 17:08:15"}
+{"payload": "Moved to October 15 at 7am.", "tag": "poke_reply", "timestamp": "2026-10-06 17:08:20"}
+{"payload": "do they want us to bring anything", "tag": "user_message", "timestamp": "2026-10-06 17:25:06"}
+{"payload": "got it, on it", "tag": "poke_reply", "timestamp": "2026-10-06 17:25:11"}
+{"payload": "[SUCCESS] Oakridge Gala Ticket Check: The PTA email asks attendees to bring one auction donation item or a $20 raffle cash contribution.", "tag": "agent_message", "timestamp": "2026-10-06 17:26:58"}
+{"payload": "They ask for one auction item or $20 cash for the raffle.", "tag": "poke_reply", "timestamp": "2026-10-06 17:27:03"}
+{"payload": "reply to ms. alvarez that we'll be there", "tag": "user_message", "timestamp": "2026-10-06 18:45:33"}
+{"payload": "looking into it", "tag": "poke_reply", "timestamp": "2026-10-06 18:45:38"}
+{"payload": "[SUCCESS] Oakridge Gala Ticket Check: Sent a short reply to Ms. Alvarez at ealvarez@oakridgeelementary.org confirming your attendance on Oct 3.", "tag": "agent_message", "timestamp": "2026-10-06 18:47:52"}
+{"payload": "Sent Ms. Alvarez a note confirming you'll be there Oct 3.", "tag": "poke_reply", "timestamp": "2026-10-06 18:47:57"}
+{"payload": "has the refund actually gone through yet?", "tag": "user_message", "timestamp": "2026-10-06 18:50:05"}
+{"payload": "looking into it", "tag": "poke_reply", "timestamp": "2026-10-06 18:50:10"}
+{"payload": "[SUCCESS] Find Uber Eats refund email: A second Uber Eats email dated Oct 9 says the refund was issued. There's no bank confirmation in the inbox.", "tag": "agent_message", "timestamp": "2026-10-06 18:52:22"}
+{"payload": "Uber says it was issued Oct 9, but nothing from your bank yet.", "tag": "poke_reply", "timestamp": "2026-10-06 18:52:27"}
+{"payload": "draft a note asking support about the $4.99 tip that wasn't refunded", "tag": "user_message", "timestamp": "2026-10-06 18:55:55"}
+{"payload": "got it, on it", "tag": "poke_reply", "timestamp": "2026-10-06 18:56:00"}
+{"payload": "[SUCCESS] Find Uber Eats refund email: Drafted a reply to Uber Eats support asking why the $4.99 courier tip wasn't included in the $23.18 refund. Not sent.", "tag": "agent_message", "timestamp": "2026-10-06 18:58:44"}
+{"payload": "Draft ready asking support about the $4.99 tip. Want me to send it?", "tag": "poke_reply", "timestamp": "2026-10-06 18:58:49"}
+{"payload": "message the seller thanks and ask for a photo before shipping next time", "tag": "user_message", "timestamp": "2026-10-06 21:10:36"}
+{"payload": "let me check", "tag": "poke_reply", "timestamp": "2026-10-06 21:10:41"}
+{"payload": "[SUCCESS] Etsy cutting board order: Sent a reply to OakAndAnvil via the Etsy message email thanking them and asking for a photo proof on future engraved orders.", "tag": "agent_message", "timestamp": "2026-10-06 21:11:47"}
+{"payload": "Sent a thank-you to OakAndAnvil and asked for photo proofs next time.", "tag": "poke_reply", "timestamp": "2026-10-06 21:11:52"}
+{"payload": "when's the festival itself", "tag": "user_message", "timestamp": "2026-10-07 08:20:35"}
+{"payload": "pulling that up now", "tag": "poke_reply", "timestamp": "2026-10-07 08:20:40"}
+{"payload": "[SUCCESS] Harbor City Film Festival email: The festival runs Oct 15-19 at the Marlowe Cinema downtown.", "tag": "agent_message", "timestamp": "2026-10-07 08:22:43"}
+{"payload": "Oct 15-19 at the Marlowe Cinema downtown.", "tag": "poke_reply", "timestamp": "2026-10-07 08:22:48"}
+{"payload": "remind me oct 2 to pick up a gift basket", "tag": "user_message", "timestamp": "2026-10-07 09:05:04"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-07 09:05:09"}
+{"payload": "[SUCCESS] Oakridge Gala Ticket Check: Reminder set for Oct 2 at 5pm to pick up a gift basket for the Oakridge auction.", "tag": "agent_message", "timestamp": "2026-10-07 09:07:21"}
+{"payload": "Reminder set for Oct 2 at 5pm.", "tag": "poke_reply", "timestamp": "2026-10-07 09:07:26"}
+{"payload": "remind me oct 22 to wrap it", "tag": "user_message", "timestamp": "2026-10-07 09:10:11"}
+{"payload": "give me a sec", "tag": "poke_reply", "timestamp": "2026-10-07 09:10:16"}
+{"payload": "[SUCCESS] Etsy cutting board order: Reminder set for Oct 22, 2026 at 7:00pm: 'Wrap Etsy cutting board for Emma and Tyler's wedding'.", "tag": "agent_message", "timestamp": "2026-10-07 09:11:15"}
+{"payload": "Reminder set for Oct 22 at 7pm.", "tag": "poke_reply", "timestamp": "2026-10-07 09:11:20"}
+{"payload": "do you ever sleep", "tag": "user_message", "timestamp": "2026-10-07 12:55:15"}
+{"payload": "Nope. Sounds productive, but I'd honestly love a nap.", "tag": "poke_reply", "timestamp": "2026-10-07 12:55:20"}
+{"payload": "rough day", "tag": "user_message", "timestamp": "2026-10-07 17:55:44"}
+{"payload": "I'm sorry. Want to vent, or want a distraction? Either works for me.", "tag": "poke_reply", "timestamp": "2026-10-07 17:55:49"}
+{"payload": "remind me oct 14 to check my card for it", "tag": "user_message", "timestamp": "2026-10-07 18:30:27"}
+{"payload": "on it now", "tag": "poke_reply", "timestamp": "2026-10-07 18:30:32"}
+{"payload": "[SUCCESS] Find Uber Eats refund email: Set a reminder for Oct 14 at 9:00am: 'Check Visa 4417 for Uber Eats refund $23.18'.", "tag": "agent_message", "timestamp": "2026-10-07 18:32:05"}
+{"payload": "Reminder set for Oct 14 at 9am to check your card.", "tag": "poke_reply", "timestamp": "2026-10-07 18:32:10"}
+{"payload": "can you check if the membership expires before then", "tag": "user_message", "timestamp": "2026-10-07 19:00:26"}
+{"payload": "working on it", "tag": "poke_reply", "timestamp": "2026-10-07 19:00:31"}
+{"payload": "[SUCCESS] Harbor City Film Festival email: A Aug 12 receipt shows your membership is valid through Dec 31, 2026.", "tag": "agent_message", "timestamp": "2026-10-07 19:03:02"}
+{"payload": "Your membership is valid through Dec 31, so the presale code works.", "tag": "poke_reply", "timestamp": "2026-10-07 19:03:07"}
+{"payload": "i'm bored", "tag": "user_message", "timestamp": "2026-10-07 20:20:48"}
+{"payload": "Dangerous words. Fun fact to fix it: honey never spoils, and jars found in ancient tombs were still edible.", "tag": "poke_reply", "timestamp": "2026-10-07 20:20:53"}
+{"payload": "i'm so tired", "tag": "user_message", "timestamp": "2026-10-08 09:55:52"}
+{"payload": "Sounds like a blanket-and-do-nothing kind of day. Go easy on yourself.", "tag": "poke_reply", "timestamp": "2026-10-08 09:55:57"}
+{"payload": "did i get a smog check notice too?", "tag": "user_message", "timestamp": "2026-10-08 11:10:41"}
+{"payload": "on it", "tag": "poke_reply", "timestamp": "2026-10-08 11:10:46"}
+{"payload": "[SUCCESS] DMV Notice and Reminder: Yes, the notice says a smog certificate is required for this renewal and has already been received electronically from a station dated Sep 12.", "tag": "agent_message", "timestamp": "2026-10-08 11:13:30"}
+{"payload": "Smog is required, but a certificate from September 12 is already on file.", "tag": "poke_reply", "timestamp": "2026-10-08 11:13:35"}
+{"payload": "i should go to the gym", "tag": "user_message", "timestamp": "2026-10-08 14:55:40"}
+{"payload": "Should, or want to? Either way, future you will send a thank-you note.", "tag": "poke_reply", "timestamp": "2026-10-08 14:55:45"}
+{"payload": "how many screenings does the harbor city pass get me", "tag": "user_message", "timestamp": "2026-10-08 15:28:00"}
+{"payload": "Checking the festival email for the pass details.", "tag": "poke_reply", "timestamp": "2026-10-08 15:28:05"}
+{"payload": "[SUCCESS] Harbor City Film Festival email: The tickets@harborcityfilm.org email says the pass costs $85 and covers 5 screenings.", "tag": "agent_message", "timestamp": "2026-10-08 15:31:30"}
+{"payload": "The pass covers 5 screenings and costs $85.", "tag": "poke_reply", "timestamp": "2026-10-08 15:31:35"}
+{"payload": "ok cool thanks", "tag": "user_message", "timestamp": "2026-10-08 16:34:35"}
+{"payload": "Anytime.", "tag": "poke_reply", "timestamp": "2026-10-08 16:34:40"}
+{"payload": "what time does the oakridge gala start again", "tag": "user_message", "timestamp": "2026-10-08 19:03:40"}
+{"payload": "Looking at the gala receipt now.", "tag": "poke_reply", "timestamp": "2026-10-08 19:03:45"}
+{"payload": "[SUCCESS] Oakridge Gala Ticket Check: The Oct 1 receipt from pta@oakridgeelementary.org says the gala is Oct 3 at 6:30pm in the school gym.", "tag": "agent_message", "timestamp": "2026-10-08 19:06:36"}
+{"payload": "The gala starts at 6:30pm on Oct 3 in the school gym.", "tag": "poke_reply", "timestamp": "2026-10-08 19:06:41"}
+{"payload": "and when does general sale start for the film fest", "tag": "user_message", "timestamp": "2026-10-08 20:05:41"}
+{"payload": "Checking the festival email again.", "tag": "poke_reply", "timestamp": "2026-10-08 20:05:46"}
+{"payload": "[SUCCESS] Harbor City Film Festival email: The email from tickets@harborcityfilm.org says general sale starts Sep 21, after the member presale on Sep 18.", "tag": "agent_message", "timestamp": "2026-10-08 20:08:55"}
+{"payload": "General sale starts Sep 21, three days after the member presale.", "tag": "poke_reply", "timestamp": "2026-10-08 20:09:00"}

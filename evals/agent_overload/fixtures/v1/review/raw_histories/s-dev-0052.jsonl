@@ -1,0 +1,118 @@
+{"payload": "mondays am i right", "tag": "user_message", "timestamp": "2026-10-08 09:05:57"}
+{"payload": "Monday really should come with a gentle opening act.", "tag": "poke_reply", "timestamp": "2026-10-08 09:06:02"}
+{"payload": "find the mailchimp email confirming i downgraded my plan", "tag": "user_message", "timestamp": "2026-10-08 10:05:35"}
+{"payload": "working on it", "tag": "poke_reply", "timestamp": "2026-10-08 10:05:40"}
+{"payload": "[SUCCESS] Mail search: Found 'Your plan change is confirmed' from billing@mailchimp.com, dated Oct 6, 2026. The account moves from Standard to Essentials on Nov 1, and the new price is $27.50/month for up to 1,500 contacts.", "tag": "agent_message", "timestamp": "2026-10-08 10:07:02"}
+{"payload": "Found it: Mailchimp confirmed on Oct 6 you'll move to Essentials Nov 1 at $27.50/month.", "tag": "poke_reply", "timestamp": "2026-10-08 10:07:07"}
+{"payload": "is a hot dog a sandwich", "tag": "user_message", "timestamp": "2026-10-08 12:15:22"}
+{"payload": "I say no. It's its own thing. A hot dog stands alone.", "tag": "poke_reply", "timestamp": "2026-10-08 12:15:27"}
+{"payload": "remind me to send back the madewell jeans before the window closes", "tag": "user_message", "timestamp": "2026-10-08 12:25:26"}
+{"payload": "one moment", "tag": "poke_reply", "timestamp": "2026-10-08 12:25:31"}
+{"payload": "[SUCCESS] Madewell Return Deadline: Found Madewell order MW-7741903 shipped Sept 21 with a 30-day return window, so returns close Oct 20 2026. Set a reminder for Oct 17 at 9:00 AM.", "tag": "agent_message", "timestamp": "2026-10-08 12:27:27"}
+{"payload": "Return window closes Oct 20. I set a reminder for Oct 17 at 9am.", "tag": "poke_reply", "timestamp": "2026-10-08 12:27:32"}
+{"payload": "what was the old price on standard", "tag": "user_message", "timestamp": "2026-10-08 13:45:18"}
+{"payload": "right away", "tag": "poke_reply", "timestamp": "2026-10-08 13:45:23"}
+{"payload": "[SUCCESS] Mail search: The confirmation shows Standard at $75.00/month for up to 1,500 contacts, so the downgrade saves $47.50 a month.", "tag": "agent_message", "timestamp": "2026-10-08 13:47:03"}
+{"payload": "Standard was $75.00/month, so you'll save $47.50 a month.", "tag": "poke_reply", "timestamp": "2026-10-08 13:47:08"}
+{"payload": "how's your day going", "tag": "user_message", "timestamp": "2026-10-08 14:05:52"}
+{"payload": "Pretty smooth so far, no fires. Yours?", "tag": "poke_reply", "timestamp": "2026-10-08 14:05:57"}
+{"payload": "does madewell charge for return shipping", "tag": "user_message", "timestamp": "2026-10-08 14:10:43"}
+{"payload": "looking into it", "tag": "poke_reply", "timestamp": "2026-10-08 14:10:48"}
+{"payload": "[SUCCESS] Madewell Return Deadline: Madewell's return policy email says mail returns have a $7.50 fee deducted from the refund. Returns to a store are free.", "tag": "agent_message", "timestamp": "2026-10-08 14:13:09"}
+{"payload": "Mail returns cost $7.50, deducted from the refund. Store returns are free.", "tag": "poke_reply", "timestamp": "2026-10-08 14:13:14"}
+{"payload": "remind me to renew my costco membership before it expires", "tag": "user_message", "timestamp": "2026-10-08 15:40:39"}
+{"payload": "looking into it", "tag": "poke_reply", "timestamp": "2026-10-08 15:40:44"}
+{"payload": "[SUCCESS] Costco membership reminder: Found a Costco email from costco@email.costco.com saying the Executive membership expires November 3, 2026; renewal is $130 with auto-renew off. Reminder set for October 27 at 10am.", "tag": "agent_message", "timestamp": "2026-10-08 15:42:14"}
+{"payload": "Reminder set for Oct 27 at 10am. Membership expires Nov 3; renewal is $130.", "tag": "poke_reply", "timestamp": "2026-10-08 15:42:19"}
+{"payload": "reply to felix at bluepeak that i need to move the podcast recording to nov 18", "tag": "user_message", "timestamp": "2026-10-08 18:35:26"}
+{"payload": "pulling that up now", "tag": "poke_reply", "timestamp": "2026-10-08 18:35:31"}
+{"payload": "[SUCCESS] Felix Bluepeak email: Drafted a reply to felix@bluepeakmedia.com asking to move the podcast recording from Nov 12 to Nov 18, 2026 at 2pm. Saved in drafts for review.", "tag": "agent_message", "timestamp": "2026-10-08 18:38:17"}
+{"payload": "Drafted your reply to Felix moving the recording to Nov 18 at 2pm. Want me to send it?", "tag": "poke_reply", "timestamp": "2026-10-08 18:38:22"}
+{"payload": "move the reminder to the 15th at 6pm", "tag": "user_message", "timestamp": "2026-10-08 18:45:45"}
+{"payload": "checking now", "tag": "poke_reply", "timestamp": "2026-10-08 18:45:50"}
+{"payload": "[SUCCESS] Madewell Return Deadline: Reminder moved to Oct 15 2026 at 6:00 PM.", "tag": "agent_message", "timestamp": "2026-10-08 18:48:15"}
+{"payload": "Moved to Oct 15 at 6pm.", "tag": "poke_reply", "timestamp": "2026-10-08 18:48:20"}
+{"payload": "is auto renew on?", "tag": "user_message", "timestamp": "2026-10-08 19:40:10"}
+{"payload": "happy to, checking", "tag": "poke_reply", "timestamp": "2026-10-08 19:40:15"}
+{"payload": "[SUCCESS] Costco membership reminder: The email states auto-renew is currently off for member #1118 and must be renewed manually.", "tag": "agent_message", "timestamp": "2026-10-08 19:43:05"}
+{"payload": "No, auto-renew is off. You'll need to renew manually.", "tag": "poke_reply", "timestamp": "2026-10-08 19:43:10"}
+{"payload": "yes send it", "tag": "user_message", "timestamp": "2026-10-08 21:00:19"}
+{"payload": "one moment", "tag": "poke_reply", "timestamp": "2026-10-08 21:00:24"}
+{"payload": "[SUCCESS] Felix Bluepeak email: Sent the reply to felix@bluepeakmedia.com on Oct 5, 2026.", "tag": "agent_message", "timestamp": "2026-10-08 21:01:52"}
+{"payload": "Sent to Felix.", "tag": "poke_reply", "timestamp": "2026-10-08 21:01:57"}
+{"payload": "does it say what features i lose", "tag": "user_message", "timestamp": "2026-10-08 21:05:31"}
+{"payload": "looking now", "tag": "poke_reply", "timestamp": "2026-10-08 21:05:36"}
+{"payload": "[SUCCESS] Mail search: The email lists three losses on Essentials: send-time optimization, advanced segmentation, and multivariate testing. Email support stays the same.", "tag": "agent_message", "timestamp": "2026-10-08 21:07:03"}
+{"payload": "You lose send-time optimization, advanced segmentation, and multivariate testing. Email support stays.", "tag": "poke_reply", "timestamp": "2026-10-08 21:07:08"}
+{"payload": "did felix answer yet", "tag": "user_message", "timestamp": "2026-10-08 21:25:20"}
+{"payload": "on it", "tag": "poke_reply", "timestamp": "2026-10-08 21:25:25"}
+{"payload": "[SUCCESS] Felix Bluepeak email: Felix replied Oct 6 saying Nov 18 at 2pm works and attaching a guest briefing doc.", "tag": "agent_message", "timestamp": "2026-10-08 21:26:45"}
+{"payload": "Yes, Felix confirmed Nov 18 at 2pm and attached a guest briefing doc.", "tag": "poke_reply", "timestamp": "2026-10-08 21:26:50"}
+{"payload": "i can't decide what to eat", "tag": "user_message", "timestamp": "2026-10-08 21:45:23"}
+{"payload": "Tragic and universal. Go with the first thing that sounded good. Your gut knows.", "tag": "poke_reply", "timestamp": "2026-10-08 21:45:28"}
+{"payload": "long day", "tag": "user_message", "timestamp": "2026-10-09 10:10:21"}
+{"payload": "Then you've earned a comfy spot on the couch. Go be horizontal.", "tag": "poke_reply", "timestamp": "2026-10-09 10:10:26"}
+{"payload": "set a monthly reminder on the 1st to invoice calloway print", "tag": "user_message", "timestamp": "2026-10-09 11:20:36"}
+{"payload": "looking now", "tag": "poke_reply", "timestamp": "2026-10-09 11:20:41"}
+{"payload": "[SUCCESS] Reminders: Created a recurring reminder on the 1st of each month at 9:00am, starting October 1, 2026: 'Send invoice to Calloway Print Co. (ap@callowayprint.com)'. Last invoice found was #2043 for $2,400 sent Sept 1.", "tag": "agent_message", "timestamp": "2026-10-09 11:22:08"}
+{"payload": "Monthly reminder set for the 1st at 9am, starting Oct 1. Last invoice was $2,400.", "tag": "poke_reply", "timestamp": "2026-10-09 11:22:13"}
+{"payload": "change it to 8am", "tag": "user_message", "timestamp": "2026-10-09 13:05:53"}
+{"payload": "on it now", "tag": "poke_reply", "timestamp": "2026-10-09 13:05:58"}
+{"payload": "[SUCCESS] Reminders: Recurring reminder updated to 8:00am on the 1st of each month.", "tag": "agent_message", "timestamp": "2026-10-09 13:08:33"}
+{"payload": "Updated to 8am on the 1st.", "tag": "poke_reply", "timestamp": "2026-10-09 13:08:38"}
+{"payload": "i love weekends", "tag": "user_message", "timestamp": "2026-10-09 16:15:38"}
+{"payload": "Same. Best invention after the wheel and sliced bread.", "tag": "poke_reply", "timestamp": "2026-10-09 16:15:43"}
+{"payload": "set a reminder the day before to read the briefing", "tag": "user_message", "timestamp": "2026-10-09 17:10:14"}
+{"payload": "working on it", "tag": "poke_reply", "timestamp": "2026-10-09 17:10:19"}
+{"payload": "[SUCCESS] Felix Bluepeak email: Reminder created for Nov 17, 2026 at 4:00pm: 'Read Bluepeak podcast briefing doc'.", "tag": "agent_message", "timestamp": "2026-10-09 17:12:23"}
+{"payload": "Reminder set for Nov 17 at 4pm to read the briefing.", "tag": "poke_reply", "timestamp": "2026-10-09 17:12:28"}
+{"payload": "send a note to my teammate jess about the change", "tag": "user_message", "timestamp": "2026-10-09 17:20:01"}
+{"payload": "working on it", "tag": "poke_reply", "timestamp": "2026-10-09 17:20:06"}
+{"payload": "[SUCCESS] Mail search: Sent an email to jess.moreno@brightpath.co saying the Mailchimp plan moves to Essentials on Nov 1 and listing the three features that go away.", "tag": "agent_message", "timestamp": "2026-10-09 17:21:04"}
+{"payload": "Emailed Jess Moreno about the Nov 1 change and the lost features.", "tag": "poke_reply", "timestamp": "2026-10-09 17:21:09"}
+{"payload": "random thought: socks are weird", "tag": "user_message", "timestamp": "2026-10-09 17:50:45"}
+{"payload": "They really are. We wrap our feet in little tubes and call it comfort.", "tag": "poke_reply", "timestamp": "2026-10-09 17:50:50"}
+{"payload": "i'm so tired", "tag": "user_message", "timestamp": "2026-10-09 20:55:34"}
+{"payload": "Sounds like a blanket-and-do-nothing kind of day. Go easy on yourself.", "tag": "poke_reply", "timestamp": "2026-10-09 20:55:39"}
+{"payload": "which pair was it, the 30 or the 32 waist", "tag": "user_message", "timestamp": "2026-10-10 08:25:49"}
+{"payload": "got it, on it", "tag": "poke_reply", "timestamp": "2026-10-10 08:25:54"}
+{"payload": "[SUCCESS] Madewell Return Deadline: The order shows one item: Curvy Perfect Vintage Straight Jeans, size 30, $138.00.", "tag": "agent_message", "timestamp": "2026-10-10 08:27:42"}
+{"payload": "It's the Perfect Vintage Straight jeans in size 30, $138.", "tag": "poke_reply", "timestamp": "2026-10-10 08:27:47"}
+{"payload": "what was the last invoice number again?", "tag": "user_message", "timestamp": "2026-10-10 08:55:46"}
+{"payload": "on it now", "tag": "poke_reply", "timestamp": "2026-10-10 08:55:51"}
+{"payload": "[SUCCESS] Reminders: The September invoice was #2043, $2,400, sent Sept 1, 2026 to ap@callowayprint.com.", "tag": "agent_message", "timestamp": "2026-10-10 08:58:03"}
+{"payload": "Invoice #2043, $2,400, sent Sept 1.", "tag": "poke_reply", "timestamp": "2026-10-10 08:58:08"}
+{"payload": "got any fun facts", "tag": "user_message", "timestamp": "2026-10-10 14:10:11"}
+{"payload": "Octopuses have three hearts. Two for the gills, one for everything else. Overachievers.", "tag": "poke_reply", "timestamp": "2026-10-10 14:10:16"}
+{"payload": "skip the november one, they're closed", "tag": "user_message", "timestamp": "2026-10-10 18:20:20"}
+{"payload": "got it, on it", "tag": "poke_reply", "timestamp": "2026-10-10 18:20:25"}
+{"payload": "[SUCCESS] Reminders: Skipped the November 1, 2026 occurrence; the reminder resumes December 1.", "tag": "agent_message", "timestamp": "2026-10-10 18:23:00"}
+{"payload": "Skipped November. It resumes Dec 1.", "tag": "poke_reply", "timestamp": "2026-10-10 18:23:05"}
+{"payload": "find last year's renewal receipt", "tag": "user_message", "timestamp": "2026-10-10 19:05:33"}
+{"payload": "one moment", "tag": "poke_reply", "timestamp": "2026-10-10 19:05:38"}
+{"payload": "[SUCCESS] Costco membership reminder: Found the Nov 2025 receipt from costco@email.costco.com: Executive renewal, $120, charged Nov 1, 2025.", "tag": "agent_message", "timestamp": "2026-10-10 19:07:38"}
+{"payload": "Last year's renewal was $120, charged Nov 1, 2025.", "tag": "poke_reply", "timestamp": "2026-10-10 19:07:43"}
+{"payload": "make the reminder a week earlier", "tag": "user_message", "timestamp": "2026-10-10 20:05:23"}
+{"payload": "looking into it", "tag": "poke_reply", "timestamp": "2026-10-10 20:05:28"}
+{"payload": "[SUCCESS] Costco membership reminder: Reminder moved from October 27 to October 20 at 10:00am.", "tag": "agent_message", "timestamp": "2026-10-10 20:08:14"}
+{"payload": "Moved to Oct 20 at 10am.", "tag": "poke_reply", "timestamp": "2026-10-10 20:08:19"}
+{"payload": "wow that's wild", "tag": "user_message", "timestamp": "2026-10-10 20:50:39"}
+{"payload": "Right? Life's got range.", "tag": "poke_reply", "timestamp": "2026-10-10 20:50:44"}
+{"payload": "can't believe it's already Thursday", "tag": "user_message", "timestamp": "2026-10-10 21:05:43"}
+{"payload": "Time is being sneaky again. Just one more day to go.", "tag": "poke_reply", "timestamp": "2026-10-10 21:05:48"}
+{"payload": "nice weather today", "tag": "user_message", "timestamp": "2026-10-11 08:50:25"}
+{"payload": "Love that for you. Go stand in it for a minute.", "tag": "poke_reply", "timestamp": "2026-10-11 08:50:30"}
+{"payload": "remind me to renew my costco membership before it expires", "tag": "user_message", "timestamp": "2026-10-11 12:01:21"}
+{"payload": "on it, i'll check the email for the expiration date and set a reminder.", "tag": "poke_reply", "timestamp": "2026-10-11 12:01:26"}
+{"payload": "[SUCCESS] Costco membership reminder: Found a Costco email from costco@email.costco.com saying the Executive membership expires November 3, 2026; renewal is $130 with auto-renew off. Reminder set for October 27 at 10am.", "tag": "agent_message", "timestamp": "2026-10-11 12:04:19"}
+{"payload": "your executive membership expires nov 3 and renewal is $130. auto-renew is off, so i set a reminder for oct 27 at 10am.", "tag": "poke_reply", "timestamp": "2026-10-11 12:04:24"}
+{"payload": "find the mailchimp email confirming i downgraded my plan", "tag": "user_message", "timestamp": "2026-10-11 13:21:24"}
+{"payload": "looking for it now.", "tag": "poke_reply", "timestamp": "2026-10-11 13:21:29"}
+{"payload": "[SUCCESS] Mail search: Found 'Your plan change is confirmed' from billing@mailchimp.com, dated Oct 6, 2026. The account moves from Standard to Essentials on Nov 1, and the new price is $27.50/month for up to 1,500 contacts.", "tag": "agent_message", "timestamp": "2026-10-11 13:22:25"}
+{"payload": "found it. you move from standard to essentials on nov 1, and the new price is $27.50/month for up to 1,500 contacts.", "tag": "poke_reply", "timestamp": "2026-10-11 13:22:30"}
+{"payload": "ugh this week is dragging", "tag": "user_message", "timestamp": "2026-10-11 15:14:30"}
+{"payload": "sounds rough. hang in there, i'm here if you want to knock anything off your list.", "tag": "poke_reply", "timestamp": "2026-10-11 15:14:35"}
+{"payload": "make the reminder a week earlier", "tag": "user_message", "timestamp": "2026-10-11 16:58:35"}
+{"payload": "sure, moving it up a week.", "tag": "poke_reply", "timestamp": "2026-10-11 16:58:40"}
+{"payload": "[SUCCESS] Costco membership reminder: Reminder moved from October 27 to October 20 at 10:00am.", "tag": "agent_message", "timestamp": "2026-10-11 17:01:55"}
+{"payload": "done, the renewal reminder is now oct 20 at 10am.", "tag": "poke_reply", "timestamp": "2026-10-11 17:02:00"}

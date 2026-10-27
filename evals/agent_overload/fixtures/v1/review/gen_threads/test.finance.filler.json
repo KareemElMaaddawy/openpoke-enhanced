@@ -1,0 +1,138 @@
+{
+  "provenance": {
+    "attempts": 1,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "4d091ed5f6dfd1a313794c1bac62c950efa390f42e402d12c1de4807d120c1cd",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found Adobe email dated Sept 14, 2026, invoice IP-48213907, $659.88 for the annual Creative Cloud All Apps plan, charged to the Visa ending 4417.",
+      "key": "f1",
+      "opening_request": "can you find my Adobe Creative Cloud receipt from September? need it for bookkeeping",
+      "result_reply": "Found it: Adobe invoice from Sept 14, $659.88, Visa ending 4417. Want me to forward it?",
+      "topic": "Adobe Creative Cloud annual plan receipt for September 2026"
+    },
+    {
+      "canned_result": "Set a reminder for Sept 14, 2026 at 9:00 AM titled 'Pay Q3 estimated federal taxes (due Sept 15)' with a link to IRS Direct Pay.",
+      "key": "f2",
+      "opening_request": "remind me to pay Q3 estimated taxes on Sept 14 in the morning",
+      "result_reply": "Reminder set for Sept 14 at 9:00 AM to pay Q3 estimated taxes.",
+      "topic": "Reminder to pay Q3 estimated federal taxes by Sept 15"
+    },
+    {
+      "canned_result": "Stripe's Oct 2 email reports a payout of $4,862.15 to the Chase checking account ending 0932, covering 37 charges after $158.40 in fees, arriving Oct 4.",
+      "key": "f3",
+      "opening_request": "what was the Stripe payout that hit on Oct 2? summarize the email pls",
+      "result_reply": "Stripe paid out $4,862.15 on Oct 2 after $158.40 fees, arriving Oct 4.",
+      "topic": "Summary of the Stripe payout email for Oct 2 deposit"
+    },
+    {
+      "canned_result": "Drafted an email to billing@notion.example citing two $96 charges on Oct 8, 2026 (invoice N-77120 and N-77121) and requesting a refund of the duplicate.",
+      "key": "f4",
+      "opening_request": "Notion charged me twice in October, draft an email to their billing team",
+      "result_reply": "Drafted a refund request to Notion about the two $96 charges on Oct 8. Review it?",
+      "topic": "Dispute duplicate charge from Notion Labs in October"
+    },
+    {
+      "canned_result": "Sent a polite reminder to Karen Liu at Brightwater Dental about invoice #1042 for $2,400, due Oct 3, 2026, attaching the PDF and asking for payment by Oct 28.",
+      "key": "f5",
+      "opening_request": "nudge Brightwater Dental about invoice 1042, it's like 3 weeks late",
+      "result_reply": "Sent Karen Liu a reminder about invoice #1042 ($2,400), asking for payment by Oct 28.",
+      "topic": "Invoice reminder to client Brightwater Dental for overdue invoice #1042"
+    },
+    {
+      "canned_result": "Found Delta e-receipt for confirmation GH7K2P, ORD round trip departing Nov 3, 2026, total $412.30, issued Oct 12.",
+      "key": "f6",
+      "opening_request": "find the Delta receipt for my Chicago flight on Nov 3",
+      "result_reply": "Found the Delta receipt: Chicago round trip, $412.30, confirmation GH7K2P.",
+      "topic": "Delta Air Lines receipt for the Chicago flight on Nov 3"
+    },
+    {
+      "canned_result": "Located Staples order #SO-5530918 on Sept 22, 2026: Hyken mesh task chair, $229.99 plus $18.40 tax, total $248.39, with a PDF receipt attached.",
+      "key": "f7",
+      "opening_request": "i bought an office chair at Staples around Sept 22, track down the receipt",
+      "result_reply": "Found it: Staples order on Sept 22, Hyken chair, $248.39 total.",
+      "topic": "Staples receipt for office chair purchase, September 22"
+    },
+    {
+      "canned_result": "Sent a reply to Marcus Feld at Ledgerly accepting the Q3 bookkeeping package at $650 and saying bank statements will be uploaded by Oct 10.",
+      "key": "f8",
+      "opening_request": "tell Marcus at Ledgerly yes to the Q3 bookkeeping package, send by tomorrow",
+      "result_reply": "Replied to Marcus accepting the $650 Q3 package; statements promised by Oct 10.",
+      "topic": "Reply to Marcus at Ledgerly accountants confirming Q3 bookkeeping package"
+    },
+    {
+      "canned_result": "Created a reminder for Oct 18, 2026 at 5:00 PM: 'Cancel Dropbox Business trial; converts to $150/yr on Oct 19.'",
+      "key": "f9",
+      "opening_request": "remind me to cancel the Dropbox trial before it bills on the 19th",
+      "result_reply": "Reminder set for Oct 18 at 5 PM to cancel Dropbox before billing.",
+      "topic": "Cancel Dropbox Business trial before it converts on Oct 19"
+    },
+    {
+      "canned_result": "Chase statement dated Oct 21, 2026 shows a new balance of $3,184.76, minimum payment $95, due Nov 15.",
+      "key": "f10",
+      "opening_request": "whats my closing balance on the Chase Ink statement that came in October",
+      "result_reply": "Chase Ink balance is $3,184.76; minimum $95 due Nov 15.",
+      "topic": "Chase Ink card statement for October closing balance"
+    },
+    {
+      "canned_result": "Forwarded Slack's Nov 1, 2026 invoice (#INV-2093817, $87.50 for 7 Pro seats) to Dana Ortiz with a note that it's for November bookkeeping.",
+      "key": "f11",
+      "opening_request": "send the latest Slack invoice to Dana Ortiz for the books",
+      "result_reply": "Forwarded the Slack Nov 1 invoice ($87.50) to Dana Ortiz.",
+      "topic": "Forward Slack invoice for November to bookkeeper Dana Ortiz"
+    },
+    {
+      "canned_result": "Found Venmo email from Oct 9, 2026: Jordan Reyes requested $45 for three WeWork day passes on Oct 7, still unpaid.",
+      "key": "f12",
+      "opening_request": "did Jordan send a Venmo request for the coworking passes? how much",
+      "result_reply": "Yes, Jordan requested $45 on Oct 9 for three WeWork day passes. Still unpaid.",
+      "topic": "Venmo payment request from Jordan for shared coworking day passes"
+    },
+    {
+      "canned_result": "Set a reminder for Oct 19, 2026 at 10:00 AM: 'File Q3 Texas sales tax return on Comptroller portal (due Oct 20).'",
+      "key": "f13",
+      "opening_request": "set a reminder to file Texas sales tax by Oct 20",
+      "result_reply": "Reminder set for Oct 19 at 10 AM to file Texas sales tax.",
+      "topic": "Quarterly reminder for state sales tax filing with Texas Comptroller"
+    },
+    {
+      "canned_result": "Printwell quote Q-3381 dated Sept 18, 2026: 500 matte business cards at $64 plus $9 shipping, total $73, valid until Oct 18.",
+      "key": "f14",
+      "opening_request": "find Printwell's quote for the business cards and tell me the total",
+      "result_reply": "Printwell quoted $73 total for 500 cards, valid until Oct 18.",
+      "topic": "Quote approval from Printwell for 500 business cards"
+    },
+    {
+      "canned_result": "Sent a message to Gusto support asking for the tax filing confirmation for the Oct 15, 2026 payroll run, referencing company ID 88214.",
+      "key": "f15",
+      "opening_request": "email Gusto, I never got the payroll tax confirmation for Oct 15",
+      "result_reply": "Emailed Gusto support requesting the Oct 15 payroll tax confirmation.",
+      "topic": "Ask Gusto about missing October 15 payroll tax confirmation"
+    },
+    {
+      "canned_result": "PayPal email on Oct 24, 2026 confirms a $219 refund from Wacom for the returned Intuos Pro, issued to the original PayPal balance.",
+      "key": "f16",
+      "opening_request": "did Wacom refund my returned tablet yet? check PayPal emails",
+      "result_reply": "Yes, PayPal shows a $219 Wacom refund issued Oct 24.",
+      "topic": "PayPal refund from Wacom for returned drawing tablet"
+    },
+    {
+      "canned_result": "Google's Oct 27, 2026 notice says Business Standard goes from $12 to $14 per user monthly starting Dec 1; no action needed to continue.",
+      "key": "f17",
+      "opening_request": "summarize that Google Workspace price increase email",
+      "result_reply": "Workspace Business Standard rises from $12 to $14 per user on Dec 1.",
+      "topic": "Google Workspace price increase notice effective Dec 1"
+    },
+    {
+      "canned_result": "Replied to Sam Ortega at Corner Cafe confirming the Nov 20, 2026 team lunch for 14 and promising the $150 deposit by tomorrow.",
+      "key": "f18",
+      "opening_request": "tell Sam at Corner Cafe I'll pay the deposit for the Nov 20 lunch tomorrow",
+      "result_reply": "Told Sam you'll pay the $150 deposit tomorrow for the Nov 20 lunch.",
+      "topic": "Reply to Sam at Corner Cafe catering about deposit for Nov 20 team lunch"
+    }
+  ]
+}

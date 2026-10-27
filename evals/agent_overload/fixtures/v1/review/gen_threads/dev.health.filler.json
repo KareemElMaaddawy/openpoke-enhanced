@@ -1,0 +1,131 @@
+{
+  "provenance": {
+    "attempts": 1,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "818d7a217abde5e1749d57743ca541ab4125c2a172816043da7931d3278b7282",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found a confirmation from Cedar Ridge Orthopedics: consult with Dr. Lena Torres on Thursday, October 8 at 2:40 PM. Arrive 20 minutes early with insurance card and prior X-rays.",
+      "key": "f1",
+      "opening_request": "can you find the confirmation for my wrist doctor appt at Cedar Ridge? need the time",
+      "result_reply": "It's Thursday, Oct 8 at 2:40 PM with Dr. Torres. Arrive 20 minutes early with your insurance card.",
+      "topic": "Dr. Lena Torres orthopedic consult for wrist pain at Cedar Ridge Orthopedics on October 8"
+    },
+    {
+      "canned_result": "Kroger Pharmacy emailed on September 17 saying the sertraline 50mg transfer from Rite Aid is complete and ready for pickup. Prescription has 3 refills remaining.",
+      "key": "f2",
+      "opening_request": "did kroger pharmacy email me that my sertraline transfer from rite aid went through?",
+      "result_reply": "Yes, Kroger confirmed the sertraline transfer on Sept 17. It's ready for pickup with 3 refills left.",
+      "topic": "Rite Aid pharmacy transfer of sertraline prescription to Kroger Pharmacy"
+    },
+    {
+      "canned_result": "Sent a reply to Bayview Endocrinology confirming the patient will fast for 10 hours before the thyroid panel on October 6. Asked whether black coffee is allowed; reply sent from the user's address.",
+      "key": "f3",
+      "opening_request": "reply to Dr. Raman's office, yes I'll fast for the thyroid labs on Oct 6",
+      "result_reply": "Sent. I confirmed you'll fast before the Oct 6 thyroid labs and asked about black coffee.",
+      "topic": "Reply to Dr. Priya Raman's office at Bayview Endocrinology confirming thyroid lab fasting"
+    },
+    {
+      "canned_result": "Reminder set for October 12 at 6:00 PM: bring Dad's blood pressure log to his 10:15 AM appointment with Dr. Simmons at Oakmont Senior Care on October 13.",
+      "key": "f4",
+      "opening_request": "remind me the day before Dad's Oct 13 appt to bring his blood pressure log",
+      "result_reply": "Reminder set for Oct 12 at 6 PM to bring Dad's blood pressure log.",
+      "topic": "Reminder to take Dad's blood pressure log to Dr. Simmons at Oakmont Senior Care on October 13"
+    },
+    {
+      "canned_result": "Blue Cross Blue Shield denied prior authorization on September 11 because step therapy with metformin was not documented. Appeal deadline is December 10, and Dr. Tran's office can submit records.",
+      "key": "f5",
+      "opening_request": "search my email for that BCBS denial about the Ozempic authorization and tell me why",
+      "result_reply": "BCBS denied it because metformin step therapy wasn't documented. Appeal deadline is Dec 10; Dr. Tran's office can send records.",
+      "topic": "Blue Cross Blue Shield prior authorization denial for Ozempic from Dr. Tran"
+    },
+    {
+      "canned_result": "Found a MedExpress Urgent Care receipt dated September 5 for an ankle sprain visit. The copay charged was $150, paid by Visa ending 4421.",
+      "key": "f6",
+      "opening_request": "find my MedExpress receipt from the ankle thing in early september, need the copay amount",
+      "result_reply": "MedExpress receipt from Sept 5 shows a $150 copay, paid on Visa ending 4421.",
+      "topic": "Urgent care receipt from MedExpress for ankle sprain on September 5, $150 copay"
+    },
+    {
+      "canned_result": "Mount Hollis Hospital notified that chest X-ray results from October 1 are available in the patient portal. The email gives no findings and says the ordering physician will contact within 5 business days.",
+      "key": "f7",
+      "opening_request": "summarize that Mount Hollis portal email about my chest x-ray results",
+      "result_reply": "Results are in the Mount Hollis portal, but the email gives no findings. Your doctor should call within 5 business days.",
+      "topic": "Lab results portal notice from Mount Hollis Hospital for chest X-ray dated October 1"
+    },
+    {
+      "canned_result": "Sent an email to Hannah Cole RD at Fitwell Nutrition cancelling the September 29 session at 5:30 PM and saying the user will rebook next month. Mentioned the 24-hour notice policy.",
+      "key": "f8",
+      "opening_request": "email Hannah Cole at Fitwell to cancel my Sept 29 nutrition session, say I'll rebook",
+      "result_reply": "Cancellation sent to Hannah Cole for Sept 29. I said you'll rebook next month.",
+      "topic": "Cancel gym-affiliated nutritionist session with Hannah Cole RD at Fitwell Nutrition on September 29"
+    },
+    {
+      "canned_result": "UPS tracking email from September 20 shows the Kaiser Permanente mail-order albuterol inhaler is out for delivery and expected by 7 PM today. A signature is required.",
+      "key": "f9",
+      "opening_request": "where's my Kaiser mail-order inhaler? check for the UPS tracking email",
+      "result_reply": "Your inhaler is out for delivery, expected by 7 PM today. UPS needs a signature.",
+      "topic": "Kaiser Permanente pharmacy mail-order shipment tracking for inhaler from UPS"
+    },
+    {
+      "canned_result": "Reminder created for November 3 at 8:00 AM about the prenatal appointment with Dr. Vasquez at Harmony Women's Health at 10:30 AM. Confirmation email said to bring the glucose test form.",
+      "key": "f10",
+      "opening_request": "add my Nov 3 prenatal appt with Dr. Vasquez to a reminder, morning of",
+      "result_reply": "Reminder set for Nov 3 at 8 AM. Bring the glucose test form to your 10:30 appointment.",
+      "topic": "Dr. Elena Vasquez prenatal appointment at Harmony Women's Health on November 3"
+    },
+    {
+      "canned_result": "Cigna emailed on October 2 that three Align Wellness Center chiropractic claims were denied because the annual limit of 20 visits was reached. Total patient responsibility is $225.",
+      "key": "f11",
+      "opening_request": "look for the Cigna email about my chiropractor claim being denied, what's the reason",
+      "result_reply": "Cigna denied the chiropractor claims because you hit the 20-visit annual limit. You owe $225.",
+      "topic": "Cigna Healthcare claim denial for chiropractor visits at Align Wellness Center"
+    },
+    {
+      "canned_result": "Drafted a reply to Coach Dan Whitaker saying Leo's physician clearance note for fall soccer will be delivered by Friday, September 18. Draft saved and not sent.",
+      "key": "f12",
+      "opening_request": "draft a reply to Coach Whitaker saying Leo's doctor note for soccer will come by Friday",
+      "result_reply": "Draft ready for Coach Whitaker saying the note arrives by Friday, Sept 18. Want me to send it?",
+      "topic": "Draft reply to Coach Dan Whitaker about doctor's note for Leo's soccer clearance"
+    },
+    {
+      "canned_result": "Evergreen Reproductive Health's email lists a medical history questionnaire, photo ID copy, and insurance card upload as outstanding. Everything is due through the portal by October 5.",
+      "key": "f13",
+      "opening_request": "what paperwork does Evergreen Reproductive still need from me before the consult?",
+      "result_reply": "Evergreen needs your medical history form, photo ID, and insurance card by Oct 5 through the portal.",
+      "topic": "Fertility consultation intake paperwork from Evergreen Reproductive Health due October 5"
+    },
+    {
+      "canned_result": "Little Molars Pediatric Dentistry emailed a reminder that Maya has a sealant appointment with Dr. Kim Larsen on Monday, November 16 at 3:45 PM. It requests confirmation by reply by November 9.",
+      "key": "f14",
+      "opening_request": "find the Little Molars email on Maya's sealants appointment date",
+      "result_reply": "Maya's sealants are Monday, Nov 16 at 3:45 PM. They want confirmation by Nov 9.",
+      "topic": "Pediatric dentist Dr. Kim Larsen at Little Molars reminder for Maya's sealants on November 16"
+    },
+    {
+      "canned_result": "Reminder set for October 23 at 9:00 AM to request a medical hold letter from Dr. Owens for the Planet Fitness membership, which must be submitted by October 30.",
+      "key": "f15",
+      "opening_request": "remind me Oct 23 to ask Dr. Owens for the gym medical hold letter",
+      "result_reply": "Reminder set for Oct 23 at 9 AM. The gym letter is due Oct 30.",
+      "topic": "Set reminder to renew Planet Fitness medical hold letter with Dr. Owens by October 30"
+    },
+    {
+      "canned_result": "Dr. Samir Patel's message on September 24 says vitamin D was low at 18 ng/mL. He recommends 2,000 IU daily and a recheck in 12 weeks.",
+      "key": "f16",
+      "opening_request": "pull up Dr. Samir Patel's MyChart message about my vitamin D, what dose did he say",
+      "result_reply": "Your vitamin D was low at 18 ng/mL. He recommends 2,000 IU daily and a recheck in 12 weeks.",
+      "topic": "MyChart message from Dr. Samir Patel about elevated vitamin D lab and supplement dose"
+    },
+    {
+      "canned_result": "Pawsitive Vet Clinic's invoice for Mochi's dental cleaning totals $340 and is due October 12. The email includes a payment link and notes the extraction fee was waived.",
+      "key": "f17",
+      "opening_request": "how much is the Pawsitive Vet invoice for Mochi's teeth cleaning and when's it due",
+      "result_reply": "Mochi's dental invoice is $340, due Oct 12. The extraction fee was waived.",
+      "topic": "Invoice from Pawsitive Vet Clinic for cat Mochi's dental cleaning, $340, due October 12"
+    }
+  ]
+}

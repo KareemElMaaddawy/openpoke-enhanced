@@ -1,0 +1,131 @@
+{
+  "provenance": {
+    "attempts": 1,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "f8bf0791851ffab98bf1ce5c478a309e0416e2be369d8d94193002677c370985",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found a Slack email from September 14, 2026 at 9:42 AM confirming a password reset for the Northwind workspace. It matches a reset request from the user's usual Chicago IP address.",
+      "key": "f1",
+      "opening_request": "did I ask for a slack password reset last week? found a weird email",
+      "result_reply": "Yes, Slack sent a reset confirmation September 14 from your usual Chicago location. Looks like your own request.",
+      "topic": "Slack password reset request for the Northwind workspace on September 14, 2026"
+    },
+    {
+      "canned_result": "Located a Dropbox Business email from October 19, 2026 warning the team account is at 95% of its 5 TB limit. It suggests upgrading or removing files before November 1.",
+      "key": "f2",
+      "opening_request": "can you find that dropbox email saying we're almost out of space",
+      "result_reply": "Dropbox warned on October 19 that your team is at 95% of 5 TB. Suggested action before November 1.",
+      "topic": "Dropbox Business storage limit warning at 95% on October 19, 2026"
+    },
+    {
+      "canned_result": "Zoom's September 22, 2026 email says the account email was changed to the user's new work address. It includes a link to revert within 72 hours if the change was unauthorized.",
+      "key": "f3",
+      "opening_request": "summarize the zoom email about changing my account email",
+      "result_reply": "Zoom confirmed your account email change on September 22. You can revert it within 72 hours if unauthorized.",
+      "topic": "Zoom account email change confirmation sent September 22, 2026"
+    },
+    {
+      "canned_result": "Found a Microsoft 365 admin center message from October 5, 2026 stating legacy authentication for Exchange Online will be disabled on December 1, 2026. Older mail clients using basic auth will stop connecting.",
+      "key": "f4",
+      "opening_request": "what did microsoft say about legacy auth being turned off",
+      "result_reply": "Microsoft will disable legacy authentication December 1, 2026. Older mail clients using basic auth will stop working.",
+      "topic": "Microsoft 365 admin notice about legacy authentication ending December 1, 2026"
+    },
+    {
+      "canned_result": "Set a reminder for November 15, 2026 at 9:00 AM titled 'Print 1Password Emergency Kit and store it in the safe'.",
+      "key": "f5",
+      "opening_request": "remind me to print my 1password emergency kit on nov 15",
+      "result_reply": "Reminder set for November 15 at 9 AM to print your 1Password emergency kit.",
+      "topic": "1Password emergency kit reminder before November 15, 2026"
+    },
+    {
+      "canned_result": "PayPal Business emailed on October 21, 2026 about a login from an unrecognized Windows laptop in Denver, Colorado. The message asks the user to confirm whether it was them or secure the account.",
+      "key": "f6",
+      "opening_request": "paypal sent me something about a new device login, what was it",
+      "result_reply": "PayPal flagged a new Windows laptop login in Denver on October 21. It asks you to confirm or secure the account.",
+      "topic": "PayPal Business login from new device in Denver on October 21, 2026"
+    },
+    {
+      "canned_result": "Found a Google Workspace admin alert from September 29, 2026 about a blocked suspicious sign-in attempt on maria.chen@harborlane.io from an IP address in Bucharest. Google blocked it and required a password change.",
+      "key": "f7",
+      "opening_request": "look up the google alert about Maria's account sign-in",
+      "result_reply": "Google blocked a suspicious Bucharest sign-in on Maria's account September 29 and required a password change.",
+      "topic": "Google Workspace suspicious sign-in alert for maria.chen@harborlane.io on September 29, 2026"
+    },
+    {
+      "canned_result": "DocuSign's October 12, 2026 notice says passwords must be at least 14 characters by October 30, 2026. Users with shorter passwords will be prompted to reset at next login.",
+      "key": "f8",
+      "opening_request": "what's the deal with docusign changing password requirements",
+      "result_reply": "DocuSign requires 14-character passwords by October 30. Shorter ones will prompt a reset at next login.",
+      "topic": "DocuSign account security update requiring new password rules by October 30, 2026"
+    },
+    {
+      "canned_result": "Found a Salesforce email from October 27, 2026 warning that the SAML signing certificate for the SSO integration expires November 20, 2026. An admin must upload a renewed certificate to avoid login failures.",
+      "key": "f9",
+      "opening_request": "find the salesforce email about the sso certificate expiring",
+      "result_reply": "Salesforce's SSO certificate expires November 20. An admin needs to upload a renewed one to avoid login failures.",
+      "topic": "Salesforce certificate expiration notice for the SSO integration on November 20, 2026"
+    },
+    {
+      "canned_result": "Sent a reply to Priya Nair on October 14, 2026 confirming that BitLocker encryption finished on the user's laptop and offering to share the recovery key status screenshot.",
+      "key": "f10",
+      "opening_request": "tell Priya in IT my laptop disk encryption finished",
+      "result_reply": "Sent Priya a note confirming BitLocker encryption finished, and offered a screenshot of the status.",
+      "topic": "Reply to Priya Nair in IT confirming laptop encryption completed"
+    },
+    {
+      "canned_result": "Yes, LastPass sent an email on October 2, 2026 at 4:15 PM confirming the master password was changed. It noted all other sessions were signed out.",
+      "key": "f11",
+      "opening_request": "did lastpass email me about changing my master password?",
+      "result_reply": "Yes, LastPass confirmed a master password change October 2 and signed out all other sessions.",
+      "topic": "LastPass master password change notification from October 2, 2026"
+    },
+    {
+      "canned_result": "Created a reminder for November 9, 2026 at 10:00 AM: 'Regenerate Stripe two-step verification backup codes'.",
+      "key": "f12",
+      "opening_request": "remind me nov 9 to regenerate my stripe backup codes",
+      "result_reply": "Reminder set for November 9 at 10 AM to regenerate your Stripe backup codes.",
+      "topic": "Stripe two-step verification backup codes reminder on November 9, 2026"
+    },
+    {
+      "canned_result": "Found a Cloudflare email from October 17, 2026 saying the API token named 'deploy-ci' expires October 31, 2026. It links to the dashboard to roll or replace the token.",
+      "key": "f13",
+      "opening_request": "check cloudflare email about my api token expiring",
+      "result_reply": "Cloudflare's 'deploy-ci' API token expires October 31. The email links to the dashboard to roll it.",
+      "topic": "Cloudflare API token expiring notice for token 'deploy-ci' on October 31, 2026"
+    },
+    {
+      "canned_result": "Drafted and sent a reply to Marcus Webb at Fidelity on September 18, 2026 confirming the user requested the wire transfer limit increase and asking for the next steps.",
+      "key": "f14",
+      "opening_request": "reply to Marcus at Fidelity, yes I requested the wire limit increase",
+      "result_reply": "Sent Marcus a confirmation that you requested the wire limit increase, and asked about next steps.",
+      "topic": "Reply to Marcus Webb at Fidelity about verifying a wire transfer limit increase"
+    },
+    {
+      "canned_result": "Atlassian sent an October 26, 2026 email asking admins to complete the quarterly user access review for Jira Cloud by November 13, 2026. About 12 inactive accounts are flagged for removal.",
+      "key": "f15",
+      "opening_request": "what's the atlassian access review thing and when is it due",
+      "result_reply": "Atlassian's Jira access review is due November 13, with about 12 inactive accounts flagged for removal.",
+      "topic": "Atlassian Jira Cloud user access review request due November 13, 2026"
+    },
+    {
+      "canned_result": "Found an Apple email from September 25, 2026 at 7:03 PM with a six-digit verification code for an Apple ID sign-in near Austin, Texas. Nothing else in the inbox indicates a completed login.",
+      "key": "f16",
+      "opening_request": "got an apple id verification email I didn't expect, can you check it",
+      "result_reply": "Apple sent a sign-in code September 25 for an Austin attempt. No sign of a completed login.",
+      "topic": "Apple ID sign-in code request email from September 25, 2026"
+    },
+    {
+      "canned_result": "Box's October 22, 2026 admin notice says external sharing links will default to company-only starting November 3, 2026. Admins can override the setting per folder in the admin console.",
+      "key": "f17",
+      "opening_request": "summarize the box email about external sharing changes",
+      "result_reply": "Box will default external sharing links to company-only on November 3. Admins can override per folder.",
+      "topic": "Box admin notice about external sharing policy change effective November 3, 2026"
+    }
+  ]
+}

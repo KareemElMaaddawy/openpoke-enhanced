@@ -1,0 +1,138 @@
+{
+  "provenance": {
+    "attempts": 1,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "f97f21aa64c7921a6208844e3d9611fa6a8fd65f53130a56f8e3ccad8a5be437",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found Target email confirming order #7734-2918 (backpack, binders, 24 pencils) will be ready for Drive Up pickup Sept 14 after 2:30 PM.",
+      "key": "f1",
+      "opening_request": "can you find my Target pickup email for the school supplies, what time is it ready",
+      "result_reply": "Your Target order #7734-2918 is ready for Drive Up pickup Sept 14 after 2:30 PM.",
+      "topic": "Target Drive Up order #7734-2918 pickup for school supplies on Sept 14 2026"
+    },
+    {
+      "canned_result": "UPS email says delivery of the Casper topper (tracking 1Z84A9920374) failed on Sept 18 because no safe drop location was available; redelivery is set for Sept 19.",
+      "key": "f2",
+      "opening_request": "ups says something about a delivery problem w/ my mattress topper, whats going on",
+      "result_reply": "UPS missed delivery Sept 18 for lack of a drop spot. Redelivery is scheduled for Sept 19.",
+      "topic": "UPS delivery exception for Casper mattress topper, tracking 1Z84A9920374"
+    },
+    {
+      "canned_result": "Wayfair email dated Oct 2 confirms a $84.99 refund for the damaged Rowan floor lamp (case WF-441872), expected on the card within 5-7 business days.",
+      "key": "f3",
+      "opening_request": "did wayfair ever refund me for that broken lamp? check my email",
+      "result_reply": "Yes, Wayfair approved an $84.99 refund Oct 2. It should post within 5-7 business days.",
+      "topic": "Wayfair refund for damaged floor lamp, case WF-441872"
+    },
+    {
+      "canned_result": "Set a reminder for Sept 19 at 9:00 AM to pick up the iPhone 17 at Apple Westfield Mall; email reservation says bring photo ID and the pickup code.",
+      "key": "f4",
+      "opening_request": "remind me sat morning to pick up my iphone at the apple store",
+      "result_reply": "Reminder set for Sept 19, 9:00 AM for your iPhone pickup. Bring photo ID and code.",
+      "topic": "Apple Store iPhone 17 pickup reservation at Westfield Mall on Sept 20 2026"
+    },
+    {
+      "canned_result": "IKEA email states the BILLY bookcase delivery (order 2058317746) is scheduled Oct 10 between 1:00 PM and 5:00 PM and requires an adult signature.",
+      "key": "f5",
+      "opening_request": "when is ikea delivering the bookcases? need to know if i should be home",
+      "result_reply": "IKEA delivers Oct 10 between 1 and 5 PM. An adult must be home to sign.",
+      "topic": "IKEA delivery window for BILLY bookcases, order 2058317746, on Oct 10 2026"
+    },
+    {
+      "canned_result": "Home Depot email says the Moen Arbor faucet special order is ready and will be held at the Pro Desk until Oct 3, then returned to stock.",
+      "key": "f6",
+      "opening_request": "home depot emailed about my faucet, how long do they hold it",
+      "result_reply": "Home Depot will hold your Moen faucet at the Pro Desk until Oct 3.",
+      "topic": "Home Depot special order for Moen kitchen faucet, ready for pickup by Oct 3 2026"
+    },
+    {
+      "canned_result": "Drafted a reply to Patagonia Customer Care for order #PT-209481 explaining a Large Better Sweater arrived instead of Medium and requesting an exchange with a prepaid label.",
+      "key": "f7",
+      "opening_request": "draft a reply to patagonia, they sent me a large instead of medium",
+      "result_reply": "Draft ready for Patagonia requesting a Medium exchange on order #PT-209481. Want me to send it?",
+      "topic": "Reply to Patagonia about wrong size on Better Sweater order #PT-209481"
+    },
+    {
+      "canned_result": "Instacart email lists two substitutions on the Oct 12 Safeway order: Honeycrisp apples replaced Gala, and Oat Valley oat milk replaced Silk oat milk.",
+      "key": "f8",
+      "opening_request": "what did instacart swap out in my safeway order today",
+      "result_reply": "Instacart swapped Gala apples for Honeycrisp and Silk oat milk for Oat Valley.",
+      "topic": "Instacart grocery order from Safeway with substitutions, Oct 12 2026"
+    },
+    {
+      "canned_result": "Found Walmart+ trial confirmation ending Oct 25 with a $12.95 monthly charge afterward; set a reminder for Oct 23 at 10:00 AM to cancel.",
+      "key": "f9",
+      "opening_request": "set a reminder before my walmart plus trial ends so i dont get charged",
+      "result_reply": "Reminder set for Oct 23, 10 AM to cancel Walmart+ before the $12.95 charge.",
+      "topic": "Walmart+ membership free trial ending Oct 25 2026"
+    },
+    {
+      "canned_result": "USPS Informed Delivery digest for Sept 29 shows one scanned letter from Hartford Insurance, expected to arrive in the mailbox that day.",
+      "key": "f10",
+      "opening_request": "anything from usps informed delivery about a hartford insurance letter?",
+      "result_reply": "Yes, USPS shows a Hartford Insurance letter arriving Sept 29.",
+      "topic": "USPS Informed Delivery notice for letter from Hartford Insurance, Sept 29 2026"
+    },
+    {
+      "canned_result": "Nike email says order #C01874362 (Pegasus 42, size 10) is delayed due to inventory and now expected to ship Oct 15.",
+      "key": "f11",
+      "opening_request": "nike shoes still havent shipped, check whats up with the order",
+      "result_reply": "Your Nike Pegasus order is delayed and now ships Oct 15.",
+      "topic": "Nike order #C01874362 running shoes delayed, new ship date Oct 15 2026"
+    },
+    {
+      "canned_result": "Drafted an email to Costco Member Services requesting a $50 price adjustment on the Dyson V15 vacuum, order 1190442, citing the lower price posted Oct 6.",
+      "key": "f12",
+      "opening_request": "write costco asking for a price adjustment on the dyson, it dropped $50",
+      "result_reply": "Drafted your Costco price adjustment request for $50 on order 1190442. Send it?",
+      "topic": "Costco online order of Dyson vacuum, price adjustment request, order 1190442"
+    },
+    {
+      "canned_result": "Found DoorDash receipt from Sept 26 for Thai Basil Kitchen, total $38.42 including tip, order delivered at 7:12 PM.",
+      "key": "f13",
+      "opening_request": "find the doordash receipt from thai basil kitchen, need it for expenses",
+      "result_reply": "Found it: Thai Basil Kitchen, Sept 26, total $38.42 including tip.",
+      "topic": "DoorDash receipt for Thai Basil Kitchen dinner on Sept 26 2026"
+    },
+    {
+      "canned_result": "B&H email says the Sony 24-70mm f/2.8 GM II lens is backordered with an estimated ship date of Nov 5.",
+      "key": "f14",
+      "opening_request": "did b&h say when my sony lens is coming? thought it was backordered",
+      "result_reply": "B&H says your Sony 24-70mm lens should ship around Nov 5.",
+      "topic": "B&H Photo order of Sony A7 IV lens, backorder notice for 24-70mm, due Nov 5 2026"
+    },
+    {
+      "canned_result": "Sephora email announces Beauty Insider early access starting Nov 20 with up to 30% off; set a reminder for Nov 20 at 8:00 AM.",
+      "key": "f15",
+      "opening_request": "remind me when the sephora early access sale starts, saw an email",
+      "result_reply": "Reminder set for Nov 20, 8 AM for Sephora's early access sale.",
+      "topic": "Sephora Black Friday early access sale starting Nov 20 2026"
+    },
+    {
+      "canned_result": "Found Zappos email with prepaid UPS return label for Birkenstock Arizona sandals, order 3824-0917; return must be dropped off by Oct 9.",
+      "key": "f16",
+      "opening_request": "i need the zappos return label for the birkenstocks, can you dig it up",
+      "result_reply": "Found your Zappos return label. Drop off the sandals at UPS by Oct 9.",
+      "topic": "Zappos return label for Birkenstock sandals, order 3824-0917"
+    },
+    {
+      "canned_result": "Lowe's email confirms Whirlpool dryer delivery Nov 3 between 8 AM and 12 PM, and haul-away of the old unit is included for $29.",
+      "key": "f17",
+      "opening_request": "confirm lowes dryer delivery date and if they take the old one",
+      "result_reply": "Lowe's delivers Nov 3, 8 AM-noon, and hauls away your old dryer for $29.",
+      "topic": "Lowe's delivery of Whirlpool dryer scheduled Nov 3 2026 with haul-away"
+    },
+    {
+      "canned_result": "Sent a reply to Mark at Greenleaf Furniture confirming the sofa delivery on Friday, Oct 17, and thanking him for the quick scheduling.",
+      "key": "f18",
+      "opening_request": "reply to mark at greenleaf confirming the sofa delivery friday, say thanks",
+      "result_reply": "Sent. Mark at Greenleaf has your confirmation for Friday, Oct 17 delivery.",
+      "topic": "Thank-you reply to Mark at Greenleaf Furniture about sofa delivery on Oct 17 2026"
+    }
+  ]
+}

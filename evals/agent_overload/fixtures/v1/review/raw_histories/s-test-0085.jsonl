@@ -1,0 +1,134 @@
+{"payload": "cats or dogs", "tag": "user_message", "timestamp": "2026-10-18 08:00:33"}
+{"payload": "Dogs for enthusiasm, cats for attitude. I respect both, but I lean dog.", "tag": "poke_reply", "timestamp": "2026-10-18 08:00:38"}
+{"payload": "wow that's wild", "tag": "user_message", "timestamp": "2026-10-18 08:20:39"}
+{"payload": "Right? Life's got range.", "tag": "poke_reply", "timestamp": "2026-10-18 08:20:44"}
+{"payload": "did the county send the property tax bill yet", "tag": "user_message", "timestamp": "2026-10-18 09:00:40"}
+{"payload": "give me a sec", "tag": "poke_reply", "timestamp": "2026-10-18 09:00:45"}
+{"payload": "[SUCCESS] County Property Tax Bill: Yes, Larimer County Treasurer (treasurer@larimer-county.example) emailed the 2026 second-half property tax notice on Sept 22: $2,318.40 due by Nov 1.", "tag": "agent_message", "timestamp": "2026-10-18 09:02:33"}
+{"payload": "Yes, the county's second-half bill is $2,318.40, due Nov 1.", "tag": "poke_reply", "timestamp": "2026-10-18 09:02:38"}
+{"payload": "what's heavier, a pound of feathers or a pound of bricks", "tag": "user_message", "timestamp": "2026-10-18 09:45:03"}
+{"payload": "Same weight, a pound is a pound. The feathers just need a bigger bag.", "tag": "poke_reply", "timestamp": "2026-10-18 09:45:08"}
+{"payload": "remind me when the harbor city film festival presale opens, it was in an email", "tag": "user_message", "timestamp": "2026-10-18 09:55:37"}
+{"payload": "got it, on it", "tag": "poke_reply", "timestamp": "2026-10-18 09:55:42"}
+{"payload": "[SUCCESS] Harbor City Film Festival email: Email from tickets@harborcityfilm.org says member presale opens Sep 18 at 10am Pacific with code HCFF-MEMBER, and general sale starts Sep 21. Passes cost $85 for 5 screenings.", "tag": "agent_message", "timestamp": "2026-10-18 09:58:22"}
+{"payload": "Presale opens Sep 18 at 10am Pacific, code HCFF-MEMBER. Passes are $85 for 5 screenings.", "tag": "poke_reply", "timestamp": "2026-10-18 09:58:27"}
+{"payload": "long day", "tag": "user_message", "timestamp": "2026-10-18 10:35:36"}
+{"payload": "Then you've earned a comfy spot on the couch. Go be horizontal.", "tag": "poke_reply", "timestamp": "2026-10-18 10:35:41"}
+{"payload": "tell me a joke", "tag": "user_message", "timestamp": "2026-10-18 11:30:06"}
+{"payload": "Why did the scarecrow win an award? He was outstanding in his field. I'll see myself out.", "tag": "poke_reply", "timestamp": "2026-10-18 11:30:11"}
+{"payload": "can you remind me to refill my lisinopril every month, walgreens emails me", "tag": "user_message", "timestamp": "2026-10-18 13:55:35"}
+{"payload": "got it, on it", "tag": "poke_reply", "timestamp": "2026-10-18 13:55:40"}
+{"payload": "[SUCCESS] Walgreens Refill Reminder: Found Walgreens (noreply@walgreens.com) refill notices for lisinopril 10mg, 90-day supply, last filled September 3, 2026, 2 refills remaining. Set a recurring reminder on the 28th of each month at 9:00 AM.", "tag": "agent_message", "timestamp": "2026-10-18 13:56:46"}
+{"payload": "Set a monthly reminder on the 28th at 9 AM. Two refills remain, last filled Sept 3.", "tag": "poke_reply", "timestamp": "2026-10-18 13:56:51"}
+{"payload": "surprise me", "tag": "user_message", "timestamp": "2026-10-18 16:40:38"}
+{"payload": "Okay: a group of flamingos is called a flamboyance. You're welcome.", "tag": "poke_reply", "timestamp": "2026-10-18 16:40:43"}
+{"payload": "good job", "tag": "user_message", "timestamp": "2026-10-18 18:45:43"}
+{"payload": "Thank you. I'm going to imagine you said that in a deep, approving voice.", "tag": "poke_reply", "timestamp": "2026-10-18 18:45:48"}
+{"payload": "got any fun facts", "tag": "user_message", "timestamp": "2026-10-18 19:55:37"}
+{"payload": "Octopuses have three hearts. Two for the gills, one for everything else. Overachievers.", "tag": "poke_reply", "timestamp": "2026-10-18 19:55:42"}
+{"payload": "need the pinecrest mutual homeowners renewal email from this fall", "tag": "user_message", "timestamp": "2026-10-18 20:05:21"}
+{"payload": "let me dig in", "tag": "poke_reply", "timestamp": "2026-10-18 20:05:26"}
+{"payload": "[SUCCESS] Pinecrest renewal email search: Found the renewal notice from renewals@pinecrestmutual.example dated Oct 2, 2026: the annual premium rises from $1,486 to $1,672, effective Dec 1, with payment due Nov 20.", "tag": "agent_message", "timestamp": "2026-10-18 20:06:36"}
+{"payload": "Pinecrest renewal: premium goes from $1,486 to $1,672, starting Dec 1, due Nov 20.", "tag": "poke_reply", "timestamp": "2026-10-18 20:06:41"}
+{"payload": "that's so annoying", "tag": "user_message", "timestamp": "2026-10-19 08:20:56"}
+{"payload": "Ugh, yeah, that's irritating. You're allowed to be mad about it for a minute.", "tag": "poke_reply", "timestamp": "2026-10-19 08:21:01"}
+{"payload": "set a reminder 10 minutes before", "tag": "user_message", "timestamp": "2026-10-19 08:40:38"}
+{"payload": "right away", "tag": "poke_reply", "timestamp": "2026-10-19 08:40:43"}
+{"payload": "[SUCCESS] Harbor City Film Festival email: Reminder set for Sep 18 at 9:50am Pacific with the presale code HCFF-MEMBER.", "tag": "agent_message", "timestamp": "2026-10-19 08:42:39"}
+{"payload": "Reminder set for Sep 18 at 9:50am with the code.", "tag": "poke_reply", "timestamp": "2026-10-19 08:42:44"}
+{"payload": "remind me to pay it on oct 25", "tag": "user_message", "timestamp": "2026-10-19 09:00:52"}
+{"payload": "happy to, checking", "tag": "poke_reply", "timestamp": "2026-10-19 09:00:57"}
+{"payload": "[SUCCESS] County Property Tax Bill: Created a reminder for Oct 25, 2026 at 10:00am: 'Pay Larimer County property tax, $2,318.40, due Nov 1'.", "tag": "agent_message", "timestamp": "2026-10-19 09:01:58"}
+{"payload": "Reminder set for Oct 25 at 10am to pay the property tax.", "tag": "poke_reply", "timestamp": "2026-10-19 09:02:03"}
+{"payload": "why did it go up so much", "tag": "user_message", "timestamp": "2026-10-19 09:15:21"}
+{"payload": "on it now", "tag": "poke_reply", "timestamp": "2026-10-19 09:15:26"}
+{"payload": "[SUCCESS] Pinecrest renewal email search: The notice cites a 9% rate increase for the region and a higher rebuild cost estimate, from $412,000 to $438,000.", "tag": "agent_message", "timestamp": "2026-10-19 09:17:00"}
+{"payload": "They cite a regional rate increase of 9% and a higher rebuild estimate of $438,000.", "tag": "poke_reply", "timestamp": "2026-10-19 09:17:05"}
+{"payload": "forward it to my agent tom reyes, ask about cheaper options", "tag": "user_message", "timestamp": "2026-10-19 10:00:23"}
+{"payload": "on it now", "tag": "poke_reply", "timestamp": "2026-10-19 10:00:28"}
+{"payload": "[SUCCESS] Pinecrest renewal email search: Forwarded the Oct 2 renewal notice to tom.reyes@reyesinsurance.example, asking him to look for lower-cost coverage before Nov 20.", "tag": "agent_message", "timestamp": "2026-10-19 10:02:20"}
+{"payload": "Forwarded to Tom with a request for cheaper options before Nov 20.", "tag": "poke_reply", "timestamp": "2026-10-19 10:02:25"}
+{"payload": "ugh fine", "tag": "user_message", "timestamp": "2026-10-19 11:45:05"}
+{"payload": "Dramatic sigh accepted. It'll be over before you know it.", "tag": "poke_reply", "timestamp": "2026-10-19 11:45:10"}
+{"payload": "wait, it's a 90 day supply so make it every 3 months", "tag": "user_message", "timestamp": "2026-10-19 13:20:44"}
+{"payload": "looking now", "tag": "poke_reply", "timestamp": "2026-10-19 13:20:49"}
+{"payload": "[SUCCESS] Walgreens Refill Reminder: Replaced the monthly reminder with one every three months, next on November 28, 2026 at 9:00 AM, then February 28 and May 28.", "tag": "agent_message", "timestamp": "2026-10-19 13:23:00"}
+{"payload": "Changed to every 3 months, starting Nov 28 at 9 AM.", "tag": "poke_reply", "timestamp": "2026-10-19 13:23:05"}
+{"payload": "is there a late fee if i miss it", "tag": "user_message", "timestamp": "2026-10-19 14:25:06"}
+{"payload": "one moment", "tag": "poke_reply", "timestamp": "2026-10-19 14:25:11"}
+{"payload": "[SUCCESS] County Property Tax Bill: The notice says payments after Nov 1 get a 1.5% monthly interest charge, about $34.78 for the first month on this amount.", "tag": "agent_message", "timestamp": "2026-10-19 14:26:49"}
+{"payload": "Yes, 1.5% monthly interest, roughly $34.78 for the first month.", "tag": "poke_reply", "timestamp": "2026-10-19 14:26:54"}
+{"payload": "you there?", "tag": "user_message", "timestamp": "2026-10-19 17:35:48"}
+{"payload": "Always. What's up?", "tag": "poke_reply", "timestamp": "2026-10-19 17:35:53"}
+{"payload": "brb", "tag": "user_message", "timestamp": "2026-10-19 17:55:45"}
+{"payload": "Take your time.", "tag": "poke_reply", "timestamp": "2026-10-19 17:55:50"}
+{"payload": "remind me nov 13 to decide before the deadline", "tag": "user_message", "timestamp": "2026-10-19 18:20:11"}
+{"payload": "checking now", "tag": "poke_reply", "timestamp": "2026-10-19 18:20:16"}
+{"payload": "[SUCCESS] Pinecrest renewal email search: Set a reminder for Nov 13, 2026 at 9:00am: 'Decide on Pinecrest Mutual renewal, payment due Nov 20'.", "tag": "agent_message", "timestamp": "2026-10-19 18:21:55"}
+{"payload": "Reminder set for Nov 13 at 9am about the renewal decision.", "tag": "poke_reply", "timestamp": "2026-10-19 18:22:00"}
+{"payload": "how's your day going", "tag": "user_message", "timestamp": "2026-10-19 18:30:56"}
+{"payload": "Pretty smooth so far, no fires. Yours?", "tag": "poke_reply", "timestamp": "2026-10-19 18:31:01"}
+{"payload": "mondays am i right", "tag": "user_message", "timestamp": "2026-10-19 19:30:06"}
+{"payload": "Monday really should come with a gentle opening act.", "tag": "poke_reply", "timestamp": "2026-10-19 19:30:11"}
+{"payload": "aws sent something about an exposed access key, pull it up", "tag": "user_message", "timestamp": "2026-10-19 20:25:43"}
+{"payload": "let me dig in", "tag": "poke_reply", "timestamp": "2026-10-19 20:25:48"}
+{"payload": "[SUCCESS] AWS Security Alert: Found an email from abuse@amazonaws.com dated Oct 8, 2026 warning that access key AKIA...Q7XP for IAM user 'deploy-bot' was found in a public GitHub repo and has been quarantined.", "tag": "agent_message", "timestamp": "2026-10-19 20:28:32"}
+{"payload": "AWS warned Oct 8 that deploy-bot's access key ending Q7XP was found in a public repo and quarantined.", "tag": "poke_reply", "timestamp": "2026-10-19 20:28:37"}
+{"payload": "bye for now", "tag": "user_message", "timestamp": "2026-10-19 21:40:27"}
+{"payload": "Later! I'll be here.", "tag": "poke_reply", "timestamp": "2026-10-19 21:40:32"}
+{"payload": "how many refills do i have left", "tag": "user_message", "timestamp": "2026-10-20 08:05:52"}
+{"payload": "let me dig in", "tag": "poke_reply", "timestamp": "2026-10-20 08:05:57"}
+{"payload": "[SUCCESS] Walgreens Refill Reminder: The latest Walgreens notice, dated September 3, 2026, lists 2 refills remaining on the prescription, which expires July 2027.", "tag": "agent_message", "timestamp": "2026-10-20 08:07:33"}
+{"payload": "Two refills left, and the prescription expires July 2027.", "tag": "poke_reply", "timestamp": "2026-10-20 08:07:38"}
+{"payload": "what's the largest planet", "tag": "user_message", "timestamp": "2026-10-20 08:25:07"}
+{"payload": "Jupiter. Big enough to fit every other planet inside with room to spare.", "tag": "poke_reply", "timestamp": "2026-10-20 08:25:12"}
+{"payload": "hey", "tag": "user_message", "timestamp": "2026-10-20 10:10:01"}
+{"payload": "Hey you. Good to hear from you.", "tag": "poke_reply", "timestamp": "2026-10-20 10:10:06"}
+{"payload": "ok cool", "tag": "user_message", "timestamp": "2026-10-20 11:25:52"}
+{"payload": "Cool cool cool.", "tag": "poke_reply", "timestamp": "2026-10-20 11:25:57"}
+{"payload": "what do they want me to do", "tag": "user_message", "timestamp": "2026-10-20 12:00:41"}
+{"payload": "on it now", "tag": "poke_reply", "timestamp": "2026-10-20 12:00:46"}
+{"payload": "[SUCCESS] AWS Security Alert: The email asks you to rotate the key, delete it if unused, review CloudTrail for unauthorized activity, and reply to the support case within 5 days.", "tag": "agent_message", "timestamp": "2026-10-20 12:03:34"}
+{"payload": "Rotate or delete the key, review CloudTrail, and reply to the support case within 5 days.", "tag": "poke_reply", "timestamp": "2026-10-20 12:03:39"}
+{"payload": "what's the case number", "tag": "user_message", "timestamp": "2026-10-20 12:50:26"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-20 12:50:31"}
+{"payload": "[SUCCESS] AWS Security Alert: The support case ID is 9187342051, opened Oct 8, 2026.", "tag": "agent_message", "timestamp": "2026-10-20 12:52:04"}
+{"payload": "The case number is 9187342051.", "tag": "poke_reply", "timestamp": "2026-10-20 12:52:09"}
+{"payload": "when's the festival itself", "tag": "user_message", "timestamp": "2026-10-20 13:10:00"}
+{"payload": "let me check", "tag": "poke_reply", "timestamp": "2026-10-20 13:10:05"}
+{"payload": "[SUCCESS] Harbor City Film Festival email: The festival runs Oct 15-19 at the Marlowe Cinema downtown.", "tag": "agent_message", "timestamp": "2026-10-20 13:11:38"}
+{"payload": "Oct 15-19 at the Marlowe Cinema downtown.", "tag": "poke_reply", "timestamp": "2026-10-20 13:11:43"}
+{"payload": "can you check if the membership expires before then", "tag": "user_message", "timestamp": "2026-10-20 14:15:59"}
+{"payload": "give me a sec", "tag": "poke_reply", "timestamp": "2026-10-20 14:16:04"}
+{"payload": "[SUCCESS] Harbor City Film Festival email: A Aug 12 receipt shows your membership is valid through Dec 31, 2026.", "tag": "agent_message", "timestamp": "2026-10-20 14:17:56"}
+{"payload": "Your membership is valid through Dec 31, so the presale code works.", "tag": "poke_reply", "timestamp": "2026-10-20 14:18:01"}
+{"payload": "still up, can't sleep", "tag": "user_message", "timestamp": "2026-10-20 15:40:48"}
+{"payload": "Bold choice. Try boring thoughts, they work better than counting sheep.", "tag": "poke_reply", "timestamp": "2026-10-20 15:40:53"}
+{"payload": "was the last pickup ready or still waiting", "tag": "user_message", "timestamp": "2026-10-20 17:35:52"}
+{"payload": "give me a sec", "tag": "poke_reply", "timestamp": "2026-10-20 17:35:57"}
+{"payload": "[SUCCESS] Walgreens Refill Reminder: A Walgreens email on September 4, 2026 said the order was picked up and a receipt for $12.00 was charged to the card ending 4417.", "tag": "agent_message", "timestamp": "2026-10-20 17:37:03"}
+{"payload": "It was picked up Sept 4. You paid $12.00.", "tag": "poke_reply", "timestamp": "2026-10-20 17:37:08"}
+{"payload": "send the notice to my accountant priya", "tag": "user_message", "timestamp": "2026-10-20 17:40:34"}
+{"payload": "working on it", "tag": "poke_reply", "timestamp": "2026-10-20 17:40:39"}
+{"payload": "[SUCCESS] County Property Tax Bill: Forwarded the Sept 22 tax notice to priya.nair@nairtax.example with the PDF attached.", "tag": "agent_message", "timestamp": "2026-10-20 17:43:32"}
+{"payload": "Sent the tax notice PDF to Priya.", "tag": "poke_reply", "timestamp": "2026-10-20 17:43:37"}
+{"payload": "do you like music", "tag": "user_message", "timestamp": "2026-10-20 19:55:48"}
+{"payload": "Love it. Can't hum, but I have strong opinions about a good bassline.", "tag": "poke_reply", "timestamp": "2026-10-20 19:55:53"}
+{"payload": "email jordan that he needs to rotate the deploy-bot key today", "tag": "user_message", "timestamp": "2026-10-20 21:10:12"}
+{"payload": "on it now", "tag": "poke_reply", "timestamp": "2026-10-20 21:10:17"}
+{"payload": "[SUCCESS] AWS Security Alert: Sent an email to jordan.wells@northwindlabs.io asking him to rotate the deploy-bot access key today and referencing case 9187342051.", "tag": "agent_message", "timestamp": "2026-10-20 21:12:19"}
+{"payload": "Emailed Jordan to rotate the deploy-bot key today, citing case 9187342051.", "tag": "poke_reply", "timestamp": "2026-10-20 21:12:24"}
+{"payload": "can you remind me to refill my lisinopril every month, walgreens emails me", "tag": "user_message", "timestamp": "2026-10-21 03:31:17"}
+{"payload": "on it, checking your walgreens emails and setting that up.", "tag": "poke_reply", "timestamp": "2026-10-21 03:31:22"}
+{"payload": "[SUCCESS] Walgreens Refill Reminder: Found Walgreens (noreply@walgreens.com) refill notices for lisinopril 10mg, 90-day supply, last filled September 3, 2026, 2 refills remaining. Set a recurring reminder on the 28th of each month at 9:00 AM.", "tag": "agent_message", "timestamp": "2026-10-21 03:33:47"}
+{"payload": "done. i found the walgreens refill notices for your lisinopril and set a reminder on the 28th of every month at 9am.", "tag": "poke_reply", "timestamp": "2026-10-21 03:33:52"}
+{"payload": "wait, it's a 90 day supply so make it every 3 months", "tag": "user_message", "timestamp": "2026-10-21 04:39:52"}
+{"payload": "good catch, switching it to every 3 months.", "tag": "poke_reply", "timestamp": "2026-10-21 04:39:57"}
+{"payload": "[SUCCESS] Walgreens Refill Reminder: Replaced the monthly reminder with one every three months, next on November 28, 2026 at 9:00 AM, then February 28 and May 28.", "tag": "agent_message", "timestamp": "2026-10-21 04:41:59"}
+{"payload": "fixed. the reminder now goes off every 3 months, next one is november 28 at 9am, then february 28 and may 28.", "tag": "poke_reply", "timestamp": "2026-10-21 04:42:04"}
+{"payload": "thanks, that's perfect", "tag": "user_message", "timestamp": "2026-10-21 07:33:04"}
+{"payload": "anytime.", "tag": "poke_reply", "timestamp": "2026-10-21 07:33:09"}
+{"payload": "how many refills do i have left", "tag": "user_message", "timestamp": "2026-10-21 10:00:09"}
+{"payload": "checking the latest walgreens notice.", "tag": "poke_reply", "timestamp": "2026-10-21 10:00:14"}
+{"payload": "[SUCCESS] Walgreens Refill Reminder: The latest Walgreens notice, dated September 3, 2026, lists 2 refills remaining on the prescription, which expires July 2027.", "tag": "agent_message", "timestamp": "2026-10-21 10:03:55"}
+{"payload": "you have 2 refills left, and the prescription expires in july 2027.", "tag": "poke_reply", "timestamp": "2026-10-21 10:04:00"}

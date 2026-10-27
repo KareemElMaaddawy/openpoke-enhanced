@@ -1,0 +1,12 @@
+{
+  "dev": {
+    "generic": 2,
+    "partial": 6,
+    "specific": 44
+  },
+  "test": {
+    "generic": 6,
+    "partial": 14,
+    "specific": 88
+  }
+}

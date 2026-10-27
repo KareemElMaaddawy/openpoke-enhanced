@@ -1,0 +1,138 @@
+{
+  "provenance": {
+    "attempts": 1,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "ab2d5194f50cfd0eeacf79b18d3123d357b84bfe6af04c76fda2d3e7c548e7de",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found Tomasz Wieczorek's last email offering Tue Oct 13 at 2pm or Wed Oct 14 at 10am ET. Replied proposing Oct 13 at 2pm and drafted a calendar hold.",
+      "key": "f1",
+      "opening_request": "can you set up a design review with Tomasz at Lumen Packaging next week? label mockups",
+      "result_reply": "Proposed Tuesday Oct 13 at 2pm to Tomasz and put a tentative hold on your calendar.",
+      "topic": "Schedule a design review with Tomasz Wieczorek of Lumen Packaging for the new label mockups"
+    },
+    {
+      "canned_result": "Located the Adobe renewal notice saying 5 seats renew Oct 31, 2026 at $2,999.40. Set a reminder for Oct 26 at 9am with the billing link.",
+      "key": "f2",
+      "opening_request": "remind me to renew our Adobe Creative Cloud team license before the end of October",
+      "result_reply": "Reminder set for Oct 26 at 9am, with the Adobe billing link attached.",
+      "topic": "Reminder to renew Adobe Creative Cloud team license before Oct 31, 2026"
+    },
+    {
+      "canned_result": "Found Rosalind Hayes's email proposing Sept 30 at 3pm PT. Sent a confirmation reply and moved the calendar event from Sept 24.",
+      "key": "f3",
+      "opening_request": "Rosalind wants to move the Juniper call to the 30th, can you say yes and update it",
+      "result_reply": "Confirmed Sept 30 at 3pm PT with Rosalind and moved the calendar event.",
+      "topic": "Reply accepting Rosalind Hayes's offer to move the Juniper Health partnership call to Sept 30, 2026"
+    },
+    {
+      "canned_result": "Found Sunbeam Staffing's accounts payable email requesting a W-9 before the Oct 19, 2026 payment run. Set a reminder for Oct 15 at 10am.",
+      "key": "f4",
+      "opening_request": "remind me to send our W-9 to Sunbeam Staffing before they run payments",
+      "result_reply": "Reminder set for Oct 15 at 10am to send Sunbeam your W-9.",
+      "topic": "Reminder to send W-9 to Sunbeam Staffing before their Oct 19, 2026 payment run"
+    },
+    {
+      "canned_result": "Found an invite from Delia Brandt for the Orion Freight quarterly safety briefing on Nov 4, 2026, 9:30am CT, with a Teams link. It was still unanswered.",
+      "key": "f5",
+      "opening_request": "can't find the invite for the Orion Freight safety briefing in early November, can you dig it up",
+      "result_reply": "Found it: Nov 4 at 9:30am CT from Delia Brandt, with a Teams link. Not yet accepted.",
+      "topic": "Find the calendar invite for the Orion Freight quarterly safety briefing on Nov 4, 2026"
+    },
+    {
+      "canned_result": "Checked both calendars and found a shared opening Thursday Oct 8 from 1 to 2pm. Sent Haruto Mizuno an invite titled Senior Analyst Mock Interview.",
+      "key": "f6",
+      "opening_request": "get a mock interview on the calendar with Haruto for the senior analyst role",
+      "result_reply": "Sent Haruto an invite for Thursday Oct 8, 1-2pm.",
+      "topic": "Schedule a mock interview with Haruto Mizuno for the senior analyst opening"
+    },
+    {
+      "canned_result": "Found Blackthorn Legal's engagement letter from attorney Camille Roy requesting signed copies by Oct 23, 2026. Set a reminder for Oct 21 at 8am.",
+      "key": "f7",
+      "opening_request": "remind me to return the signed Blackthorn Legal engagement contract by the 23rd",
+      "result_reply": "Reminder set for Oct 21 at 8am to return the signed Blackthorn contract.",
+      "topic": "Reminder to ship signed contract back to Blackthorn Legal by Oct 23, 2026"
+    },
+    {
+      "canned_result": "Created a recurring reminder on the first Monday of each month at 9am titled Review Stripe payout report, starting Oct 5, 2026.",
+      "key": "f8",
+      "opening_request": "set a reminder every first Monday to look over the Stripe payout report",
+      "result_reply": "Done. Monthly reminder on first Mondays at 9am, starting Oct 5.",
+      "topic": "Recurring first-Monday reminder to review Stripe payout report"
+    },
+    {
+      "canned_result": "Found Vivian Achterberg's invite for Oct 12 at 11am. Sent a decline with a note proposing Oct 14 at 11am instead.",
+      "key": "f9",
+      "opening_request": "I can't do Vivian's sync on the 12th, decline and offer the 14th",
+      "result_reply": "Declined the Oct 12 sync and offered Vivian Oct 14 at 11am.",
+      "topic": "Decline Vivian Achterberg's Oct 12, 2026 sync with a note offering Oct 14"
+    },
+    {
+      "canned_result": "Found the Hilton Garden Inn Lisbon confirmation for Nov 9, 2026 check-in. Set a reminder for Nov 8 at 6pm with the confirmation number HGL-48213.",
+      "key": "f10",
+      "opening_request": "remind me the day before Lisbon trip to check my passport and hotel confirmation",
+      "result_reply": "Reminder set for Nov 8 at 6pm with your hotel confirmation number HGL-48213.",
+      "topic": "Reminder to bring passport for Hilton Garden Inn Lisbon booking confirmation travel on Nov 9, 2026"
+    },
+    {
+      "canned_result": "Sent Terrence Boyd three options: Oct 20 at 1pm, Oct 21 at 10am, or Oct 22 at 2pm ET. Waiting on his reply before booking.",
+      "key": "f11",
+      "opening_request": "find a time for our QBR with Terrence at Ashgrove Insurance",
+      "result_reply": "Sent Terrence three options for Oct 20-22. I'll book once he replies.",
+      "topic": "Schedule a quarterly business review with Ashgrove Insurance account manager Terrence Boyd"
+    },
+    {
+      "canned_result": "Found the renewal notice for policy GSM-70245 expiring Nov 15, 2026, premium $4,180. Set a reminder for Nov 2 at 9am.",
+      "key": "f12",
+      "opening_request": "remind me about the Granite State Mutual business policy renewal, it's due mid-November",
+      "result_reply": "Reminder set for Nov 2 at 9am about renewing policy GSM-70245.",
+      "topic": "Reminder to renew business insurance policy with Granite State Mutual before Nov 15, 2026"
+    },
+    {
+      "canned_result": "Emailed Lingua Bridge, the interpreter agency, and received confirmation that Spanish interpreter Marisol Vega is booked for Oct 27, 2026, 6 to 8pm.",
+      "key": "f13",
+      "opening_request": "can you confirm the interpreter for the Maple Grove parent meeting on the 27th",
+      "result_reply": "Confirmed: Marisol Vega is booked as Spanish interpreter on Oct 27, 6-8pm.",
+      "topic": "Confirm interpreter booking for Maple Grove school parent meeting on Oct 27, 2026"
+    },
+    {
+      "canned_result": "Found program officer Imani Clarke's email stating the progress report is due Nov 10, 2026. Set two reminders: Nov 3 and Nov 9, both at 9am.",
+      "key": "f14",
+      "opening_request": "remind me to turn in the Kestrel Foundation grant progress report before Nov 10",
+      "result_reply": "Set reminders for Nov 3 and Nov 9 at 9am for the Kestrel report.",
+      "topic": "Reminder to submit grant progress report to Kestrel Foundation by Nov 10, 2026"
+    },
+    {
+      "canned_result": "Emailed Elias Brandvold, who replied he is free Oct 6 at 10am. Updated the calendar event from Sept 29 and notified the team.",
+      "key": "f15",
+      "opening_request": "move the team headshots with Elias to Oct 6 if he's free",
+      "result_reply": "Elias confirmed Oct 6 at 10am. Calendar updated and the team notified.",
+      "topic": "Reschedule photographer Elias Brandvold's headshot session for the team from Sept 29 to Oct 6, 2026"
+    },
+    {
+      "canned_result": "Found an email from Pinecrest investor relations listing the Oct 15, 2026, 4pm ET call, dial-in +1 800-555-0147, passcode 552901.",
+      "key": "f16",
+      "opening_request": "what's the dial-in for the Pinecrest Credit Union investor call on the 15th",
+      "result_reply": "Call is Oct 15 at 4pm ET: dial +1 800-555-0147, passcode 552901.",
+      "topic": "Find the dial-in details for the Pinecrest Credit Union investor call on Oct 15, 2026"
+    },
+    {
+      "canned_result": "Found the Loomwise welcome email stating the free trial ends Oct 18, 2026, after which $49/month is charged. Set a reminder for Oct 16 at 10am.",
+      "key": "f17",
+      "opening_request": "remind me to cancel the Loomwise trial before it starts charging us",
+      "result_reply": "Reminder set for Oct 16 at 10am to cancel Loomwise before the $49 charge.",
+      "topic": "Reminder to cancel free trial of Loomwise project software before Oct 18, 2026"
+    },
+    {
+      "canned_result": "Found Folasade Adeyemi's email suggesting Nov 5 or Nov 6 mornings. Replied choosing Nov 5 at 9am at Corner Bean Cafe and added a tentative event.",
+      "key": "f18",
+      "opening_request": "set up coffee with Folasade from the Chamber of Commerce, mornings are best",
+      "result_reply": "Proposed Nov 5 at 9am at Corner Bean Cafe and added a tentative event.",
+      "topic": "Schedule a mentoring coffee with Folasade Adeyemi from the Chamber of Commerce"
+    }
+  ]
+}

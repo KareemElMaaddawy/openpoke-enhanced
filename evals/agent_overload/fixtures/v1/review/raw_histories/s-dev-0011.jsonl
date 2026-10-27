@@ -1,0 +1,128 @@
+{"payload": "random thought: socks are weird", "tag": "user_message", "timestamp": "2026-10-17 12:25:11"}
+{"payload": "They really are. We wrap our feet in little tubes and call it comfort.", "tag": "poke_reply", "timestamp": "2026-10-17 12:25:16"}
+{"payload": "remind me to pay the hartwell parking permit renewal before oct 12", "tag": "user_message", "timestamp": "2026-10-17 13:00:42"}
+{"payload": "on it", "tag": "poke_reply", "timestamp": "2026-10-17 13:00:47"}
+{"payload": "[SUCCESS] Hartwell Parking Permit Reminder: Found the renewal notice from billing@hartwellpm.com: permit #P-4471 renewal is $145, due October 12, 2026. Set a reminder for October 9 at 9:00am.", "tag": "agent_message", "timestamp": "2026-10-17 13:02:18"}
+{"payload": "Done. Reminder set for Oct 9 at 9am; renewal is $145, due Oct 12.", "tag": "poke_reply", "timestamp": "2026-10-17 13:02:23"}
+{"payload": "reply to felix at bluepeak that i need to move the podcast recording to nov 18", "tag": "user_message", "timestamp": "2026-10-17 13:40:54"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-17 13:40:59"}
+{"payload": "[SUCCESS] Felix Bluepeak email: Drafted a reply to felix@bluepeakmedia.com asking to move the podcast recording from Nov 12 to Nov 18, 2026 at 2pm. Saved in drafts for review.", "tag": "agent_message", "timestamp": "2026-10-17 13:42:59"}
+{"payload": "Drafted your reply to Felix moving the recording to Nov 18 at 2pm. Want me to send it?", "tag": "poke_reply", "timestamp": "2026-10-17 13:43:04"}
+{"payload": "did duolingo email me about a failed payment? need to check", "tag": "user_message", "timestamp": "2026-10-17 14:20:39"}
+{"payload": "working on it", "tag": "poke_reply", "timestamp": "2026-10-17 14:20:44"}
+{"payload": "[SUCCESS] Duolingo payment email lookup: Yes. no-reply@duolingo.com sent 'We couldn't renew your Super Family plan' on Oct 14, 2026. The $119.99 annual renewal was declined on the card ending 9082, and the plan stays active until Oct 21.", "tag": "agent_message", "timestamp": "2026-10-17 14:23:12"}
+{"payload": "Yes. Duolingo said your $119.99 Super Family renewal was declined Oct 14 on the card ending 9082.", "tag": "poke_reply", "timestamp": "2026-10-17 14:23:17"}
+{"payload": "when does it actually lapse if i don't fix it", "tag": "user_message", "timestamp": "2026-10-17 15:40:42"}
+{"payload": "let me check", "tag": "poke_reply", "timestamp": "2026-10-17 15:40:47"}
+{"payload": "[SUCCESS] Duolingo payment email lookup: The email says the Super Family plan stays active through Oct 21, 2026. After that, the family members revert to free accounts.", "tag": "agent_message", "timestamp": "2026-10-17 15:41:56"}
+{"payload": "It lapses after Oct 21, 2026. Then everyone drops to free accounts.", "tag": "poke_reply", "timestamp": "2026-10-17 15:42:01"}
+{"payload": "how much was the late fee if i miss it?", "tag": "user_message", "timestamp": "2026-10-17 16:15:25"}
+{"payload": "on it", "tag": "poke_reply", "timestamp": "2026-10-17 16:15:30"}
+{"payload": "[SUCCESS] Hartwell Parking Permit Reminder: The notice says payments after October 12 incur a $25 late fee, and permits lapse after October 19.", "tag": "agent_message", "timestamp": "2026-10-17 16:17:25"}
+{"payload": "$25 late fee after Oct 12, and the permit lapses Oct 19.", "tag": "poke_reply", "timestamp": "2026-10-17 16:17:30"}
+{"payload": "find the bib pickup info for the redwood trail half marathon", "tag": "user_message", "timestamp": "2026-10-17 18:00:39"}
+{"payload": "one moment", "tag": "poke_reply", "timestamp": "2026-10-17 18:00:44"}
+{"payload": "[SUCCESS] Redwood Trail Half Marathon Info: Found an email from no-reply@runsignup.com on Oct 1: bib #2217 can be picked up Oct 17 from 12-7pm at Fernhill Outfitters, 410 Mill St, or race morning Oct 18 until 6:30am. The race starts at 7:30am.", "tag": "agent_message", "timestamp": "2026-10-17 18:02:48"}
+{"payload": "Bib #2217. Pick up Oct 17, 12-7pm at Fernhill Outfitters, or race morning until 6:30am.", "tag": "poke_reply", "timestamp": "2026-10-17 18:02:53"}
+{"payload": "do you ever sleep", "tag": "user_message", "timestamp": "2026-10-17 21:40:05"}
+{"payload": "Nope. Sounds productive, but I'd honestly love a nap.", "tag": "poke_reply", "timestamp": "2026-10-17 21:40:10"}
+{"payload": "bye for now", "tag": "user_message", "timestamp": "2026-10-17 21:50:55"}
+{"payload": "Later! I'll be here.", "tag": "poke_reply", "timestamp": "2026-10-17 21:51:00"}
+{"payload": "what's the opposite of up", "tag": "user_message", "timestamp": "2026-10-18 10:05:11"}
+{"payload": "Down. I suspect this is a setup, though. Go on, hit me.", "tag": "poke_reply", "timestamp": "2026-10-18 10:05:16"}
+{"payload": "coffee or tea", "tag": "user_message", "timestamp": "2026-10-18 13:00:40"}
+{"payload": "Coffee for ambition, tea for peace. Which kind of day is it?", "tag": "poke_reply", "timestamp": "2026-10-18 13:00:45"}
+{"payload": "do you believe in luck", "tag": "user_message", "timestamp": "2026-10-18 13:45:27"}
+{"payload": "A little. I think it's mostly preparation bumping into a good coincidence.", "tag": "poke_reply", "timestamp": "2026-10-18 13:45:32"}
+{"payload": "yay", "tag": "user_message", "timestamp": "2026-10-18 13:50:07"}
+{"payload": "Yay indeed!", "tag": "poke_reply", "timestamp": "2026-10-18 13:50:12"}
+{"payload": "can someone else pick up my bib for me", "tag": "user_message", "timestamp": "2026-10-18 15:00:39"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-18 15:00:44"}
+{"payload": "[SUCCESS] Redwood Trail Half Marathon Info: The email says friends can pick up a bib with a signed waiver and a photo of your ID, but there are no proxy pickups on race morning.", "tag": "agent_message", "timestamp": "2026-10-18 15:02:36"}
+{"payload": "Yes, with your signed waiver and a photo of your ID, but only on Oct 17.", "tag": "poke_reply", "timestamp": "2026-10-18 15:02:41"}
+{"payload": "can't believe it's already Thursday", "tag": "user_message", "timestamp": "2026-10-18 15:10:07"}
+{"payload": "Time is being sneaky again. Just one more day to go.", "tag": "poke_reply", "timestamp": "2026-10-18 15:10:12"}
+{"payload": "nice weather today", "tag": "user_message", "timestamp": "2026-10-18 15:50:47"}
+{"payload": "Love that for you. Go stand in it for a minute.", "tag": "poke_reply", "timestamp": "2026-10-18 15:50:52"}
+{"payload": "wow that's wild", "tag": "user_message", "timestamp": "2026-10-18 17:40:59"}
+{"payload": "Right? Life's got range.", "tag": "poke_reply", "timestamp": "2026-10-18 17:41:04"}
+{"payload": "remind me on the 18th to update the card", "tag": "user_message", "timestamp": "2026-10-18 18:40:28"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-18 18:40:33"}
+{"payload": "[SUCCESS] Duolingo payment email lookup: Set a reminder for Oct 18, 2026 at 9:00 AM: 'Update card for Duolingo Super Family before Oct 21 lapse'.", "tag": "agent_message", "timestamp": "2026-10-18 18:43:27"}
+{"payload": "Reminder set for Oct 18 at 9am to update the Duolingo card.", "tag": "poke_reply", "timestamp": "2026-10-18 18:43:32"}
+{"payload": "happy friday", "tag": "user_message", "timestamp": "2026-10-18 20:40:00"}
+{"payload": "Happy Friday! The weekend is practically knocking.", "tag": "poke_reply", "timestamp": "2026-10-18 20:40:05"}
+{"payload": "move the reminder to oct 8 at 8am", "tag": "user_message", "timestamp": "2026-10-19 08:15:01"}
+{"payload": "right away", "tag": "poke_reply", "timestamp": "2026-10-19 08:15:06"}
+{"payload": "[SUCCESS] Hartwell Parking Permit Reminder: Reminder rescheduled from October 9 at 9:00am to October 8 at 8:00am.", "tag": "agent_message", "timestamp": "2026-10-19 08:16:02"}
+{"payload": "Moved to Oct 8 at 8am.", "tag": "poke_reply", "timestamp": "2026-10-19 08:16:07"}
+{"payload": "pull up the lyft info session invite i signed up for in november", "tag": "user_message", "timestamp": "2026-10-19 10:00:41"}
+{"payload": "looking into it", "tag": "poke_reply", "timestamp": "2026-10-19 10:00:46"}
+{"payload": "[SUCCESS] Lyft Info Session Invite: Found a confirmation from events@lyft.com (Oct 18) for the 'Lyft Product Design Virtual Info Session' on Nov 5 at 12:00pm MT, with a Zoom link and a note that attendees get early access to open roles.", "tag": "agent_message", "timestamp": "2026-10-19 10:01:59"}
+{"payload": "Lyft's design info session is Nov 5 at 12pm MT on Zoom; confirmation came Oct 18.", "tag": "poke_reply", "timestamp": "2026-10-19 10:02:04"}
+{"payload": "yes send it", "tag": "user_message", "timestamp": "2026-10-19 12:10:49"}
+{"payload": "checking now", "tag": "poke_reply", "timestamp": "2026-10-19 12:10:54"}
+{"payload": "[SUCCESS] Felix Bluepeak email: Sent the reply to felix@bluepeakmedia.com on Oct 5, 2026.", "tag": "agent_message", "timestamp": "2026-10-19 12:12:52"}
+{"payload": "Sent to Felix.", "tag": "poke_reply", "timestamp": "2026-10-19 12:12:57"}
+{"payload": "did they send a second notice after that", "tag": "user_message", "timestamp": "2026-10-19 12:15:51"}
+{"payload": "got it, on it", "tag": "poke_reply", "timestamp": "2026-10-19 12:15:56"}
+{"payload": "[SUCCESS] Duolingo payment email lookup: Yes. A follow-up from no-reply@duolingo.com arrived Oct 17 with the subject 'Last chance to keep Super Family' and the same $119.99 renewal amount.", "tag": "agent_message", "timestamp": "2026-10-19 12:18:16"}
+{"payload": "Yes, a second notice came Oct 17: 'Last chance to keep Super Family'.", "tag": "poke_reply", "timestamp": "2026-10-19 12:18:21"}
+{"payload": "did felix answer yet", "tag": "user_message", "timestamp": "2026-10-19 13:20:37"}
+{"payload": "let me check", "tag": "poke_reply", "timestamp": "2026-10-19 13:20:42"}
+{"payload": "[SUCCESS] Felix Bluepeak email: Felix replied Oct 6 saying Nov 18 at 2pm works and attaching a guest briefing doc.", "tag": "agent_message", "timestamp": "2026-10-19 13:22:39"}
+{"payload": "Yes, Felix confirmed Nov 18 at 2pm and attached a guest briefing doc.", "tag": "poke_reply", "timestamp": "2026-10-19 13:22:44"}
+{"payload": "set a reminder the day before to read the briefing", "tag": "user_message", "timestamp": "2026-10-19 14:05:15"}
+{"payload": "working on it", "tag": "poke_reply", "timestamp": "2026-10-19 14:05:20"}
+{"payload": "[SUCCESS] Felix Bluepeak email: Reminder created for Nov 17, 2026 at 4:00pm: 'Read Bluepeak podcast briefing doc'.", "tag": "agent_message", "timestamp": "2026-10-19 14:08:09"}
+{"payload": "Reminder set for Nov 17 at 4pm to read the briefing.", "tag": "poke_reply", "timestamp": "2026-10-19 14:08:14"}
+{"payload": "add a reminder an hour before it starts", "tag": "user_message", "timestamp": "2026-10-19 14:15:37"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-19 14:15:42"}
+{"payload": "[SUCCESS] Lyft Info Session Invite: Set a reminder for Nov 5 at 11:00am MT: 'Lyft Product Design info session starts at noon, Zoom link in confirmation email.'", "tag": "agent_message", "timestamp": "2026-10-19 14:18:07"}
+{"payload": "Reminder set for Nov 5 at 11am MT, an hour before the session.", "tag": "poke_reply", "timestamp": "2026-10-19 14:18:12"}
+{"payload": "surprise me", "tag": "user_message", "timestamp": "2026-10-19 15:00:01"}
+{"payload": "Okay: a group of flamingos is called a flamboyance. You're welcome.", "tag": "poke_reply", "timestamp": "2026-10-19 15:00:06"}
+{"payload": "how's your day going", "tag": "user_message", "timestamp": "2026-10-19 15:45:36"}
+{"payload": "Pretty smooth so far, no fires. Yours?", "tag": "poke_reply", "timestamp": "2026-10-19 15:45:41"}
+{"payload": "i love weekends", "tag": "user_message", "timestamp": "2026-10-19 17:00:30"}
+{"payload": "Same. Best invention after the wheel and sliced bread.", "tag": "poke_reply", "timestamp": "2026-10-19 17:00:35"}
+{"payload": "lol", "tag": "user_message", "timestamp": "2026-10-19 18:25:27"}
+{"payload": "Glad that landed.", "tag": "poke_reply", "timestamp": "2026-10-19 18:25:32"}
+{"payload": "meh", "tag": "user_message", "timestamp": "2026-10-19 19:15:04"}
+{"payload": "Meh is a valid mood. Sometimes it's the whole forecast.", "tag": "poke_reply", "timestamp": "2026-10-19 19:15:09"}
+{"payload": "set a reminder friday oct 16 to grab my waiver from the email and print it", "tag": "user_message", "timestamp": "2026-10-19 19:30:13"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-19 19:30:18"}
+{"payload": "[SUCCESS] Redwood Trail Half Marathon Info: Set a reminder for Oct 16 at 6:00pm: 'Print Redwood Trail Half waiver (RunSignup email Oct 1).'", "tag": "agent_message", "timestamp": "2026-10-19 19:32:05"}
+{"payload": "Reminder set for Oct 16 at 6pm to print the waiver.", "tag": "poke_reply", "timestamp": "2026-10-19 19:32:10"}
+{"payload": "brb", "tag": "user_message", "timestamp": "2026-10-19 19:40:57"}
+{"payload": "Take your time.", "tag": "poke_reply", "timestamp": "2026-10-19 19:41:02"}
+{"payload": "forward the notice to my roommate jess", "tag": "user_message", "timestamp": "2026-10-19 20:00:55"}
+{"payload": "pulling that up now", "tag": "poke_reply", "timestamp": "2026-10-19 20:01:00"}
+{"payload": "[SUCCESS] Hartwell Parking Permit Reminder: Forwarded the Hartwell renewal notice to jess.tamura@gmail.com with a note that it's due Oct 12.", "tag": "agent_message", "timestamp": "2026-10-19 20:03:15"}
+{"payload": "Forwarded the notice to Jess with the Oct 12 due date.", "tag": "poke_reply", "timestamp": "2026-10-19 20:03:20"}
+{"payload": "is there parking at the start line", "tag": "user_message", "timestamp": "2026-10-19 20:35:39"}
+{"payload": "let me dig in", "tag": "poke_reply", "timestamp": "2026-10-19 20:35:44"}
+{"payload": "[SUCCESS] Redwood Trail Half Marathon Info: No parking at the start. The email says to use the shuttle from Millbrook High School lot, with shuttles every 15 minutes from 5:30am to 7:00am.", "tag": "agent_message", "timestamp": "2026-10-19 20:38:28"}
+{"payload": "No start-line parking. Shuttles run from Millbrook High lot every 15 minutes, 5:30 to 7am.", "tag": "poke_reply", "timestamp": "2026-10-19 20:38:33"}
+{"payload": "can you send me the zoom link again, i lost it", "tag": "user_message", "timestamp": "2026-10-20 08:00:29"}
+{"payload": "on it now", "tag": "poke_reply", "timestamp": "2026-10-20 08:00:34"}
+{"payload": "[SUCCESS] Lyft Info Session Invite: Pulled the Zoom link from the Oct 18 confirmation: https://lyft.zoom.us/j/84920175533, passcode DESIGN26.", "tag": "agent_message", "timestamp": "2026-10-20 08:02:02"}
+{"payload": "Here's the link: lyft.zoom.us/j/84920175533, passcode DESIGN26.", "tag": "poke_reply", "timestamp": "2026-10-20 08:02:07"}
+{"payload": "email events@lyft.com asking if the session will be recorded", "tag": "user_message", "timestamp": "2026-10-20 08:15:01"}
+{"payload": "on it", "tag": "poke_reply", "timestamp": "2026-10-20 08:15:06"}
+{"payload": "[SUCCESS] Lyft Info Session Invite: Sent an email to events@lyft.com asking whether the Nov 5 info session will be recorded and shared with attendees afterward.", "tag": "agent_message", "timestamp": "2026-10-20 08:16:09"}
+{"payload": "Sent your question to events@lyft.com about a recording of the Nov 5 session.", "tag": "poke_reply", "timestamp": "2026-10-20 08:16:14"}
+{"payload": "goodnight", "tag": "user_message", "timestamp": "2026-10-20 10:05:22"}
+{"payload": "Night! Sleep well, tomorrow can wait its turn.", "tag": "poke_reply", "timestamp": "2026-10-20 10:05:27"}
+{"payload": "can you send me the zoom link again, i lost it", "tag": "user_message", "timestamp": "2026-10-20 10:47:22"}
+{"payload": "on it, digging up the zoom link from your confirmation email.", "tag": "poke_reply", "timestamp": "2026-10-20 10:47:27"}
+{"payload": "[SUCCESS] Lyft Info Session Invite: Pulled the Zoom link from the Oct 18 confirmation: https://lyft.zoom.us/j/84920175533, passcode DESIGN26.", "tag": "agent_message", "timestamp": "2026-10-20 10:50:39"}
+{"payload": "here you go: https://lyft.zoom.us/j/84920175533, passcode DESIGN26.", "tag": "poke_reply", "timestamp": "2026-10-20 10:50:44"}
+{"payload": "thanks, you're a lifesaver", "tag": "user_message", "timestamp": "2026-10-20 12:51:44"}
+{"payload": "anytime!", "tag": "poke_reply", "timestamp": "2026-10-20 12:51:49"}
+{"payload": "did they send a second notice after that", "tag": "user_message", "timestamp": "2026-10-20 15:06:49"}
+{"payload": "checking for a follow-up from duolingo now.", "tag": "poke_reply", "timestamp": "2026-10-20 15:06:54"}
+{"payload": "[SUCCESS] Duolingo payment email lookup: Yes. A follow-up from no-reply@duolingo.com arrived Oct 17 with the subject 'Last chance to keep Super Family' and the same $119.99 renewal amount.", "tag": "agent_message", "timestamp": "2026-10-20 15:08:50"}
+{"payload": "yep, duolingo sent a second one on oct 17 called 'Last chance to keep Super Family', same $119.99 renewal.", "tag": "poke_reply", "timestamp": "2026-10-20 15:08:55"}
+{"payload": "ugh ok i really need to deal with that card", "tag": "user_message", "timestamp": "2026-10-20 16:23:55"}
+{"payload": "yeah, you've got until oct 21 before the family plan lapses. want me to set anything else up?", "tag": "poke_reply", "timestamp": "2026-10-20 16:24:00"}

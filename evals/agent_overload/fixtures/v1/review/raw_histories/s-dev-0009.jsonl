@@ -1,0 +1,116 @@
+{"payload": "set up a call with lena okafor at ridgeway about the brand refresh", "tag": "user_message", "timestamp": "2026-10-15 08:55:49"}
+{"payload": "let me check", "tag": "poke_reply", "timestamp": "2026-10-15 08:55:54"}
+{"payload": "[SUCCESS] Lena Okafor Ridgeway scheduling: Found Lena's email from lena@ridgewaydesign.co offering Tuesday Sept 29 at 2pm or Thursday Oct 1 at 10am ET. Drafted a reply proposing Sept 29 at 2pm and am awaiting your approval.", "tag": "agent_message", "timestamp": "2026-10-15 08:57:41"}
+{"payload": "Drafted a reply proposing Sept 29 at 2pm, Lena's first option. Want me to send it?", "tag": "poke_reply", "timestamp": "2026-10-15 08:57:46"}
+{"payload": "is a hot dog a sandwich", "tag": "user_message", "timestamp": "2026-10-15 10:10:50"}
+{"payload": "I say no. It's its own thing. A hot dog stands alone.", "tag": "poke_reply", "timestamp": "2026-10-15 10:10:55"}
+{"payload": "yes send it", "tag": "user_message", "timestamp": "2026-10-15 10:45:13"}
+{"payload": "right away", "tag": "poke_reply", "timestamp": "2026-10-15 10:45:18"}
+{"payload": "[SUCCESS] Lena Okafor Ridgeway scheduling: Sent the reply to lena@ridgewaydesign.co confirming Tuesday, Sept 29 at 2:00pm ET.", "tag": "agent_message", "timestamp": "2026-10-15 10:48:02"}
+{"payload": "Sent. Confirmed Sept 29 at 2pm ET with Lena.", "tag": "poke_reply", "timestamp": "2026-10-15 10:48:07"}
+{"payload": "find my hearing test appointment confirmation with audiocare", "tag": "user_message", "timestamp": "2026-10-15 11:00:52"}
+{"payload": "pulling that up now", "tag": "poke_reply", "timestamp": "2026-10-15 11:00:57"}
+{"payload": "[SUCCESS] Audiocare Appointment Email Search: Found a confirmation from scheduling@audiocareassoc.com for a hearing evaluation with Dr. Marcus Feld on Monday, November 9, 2026 at 2:15pm at AudioCare Associates, 220 Elm Street, Suite 3B.", "tag": "agent_message", "timestamp": "2026-10-15 11:03:22"}
+{"payload": "Hearing test is Monday, November 9 at 2:15pm with Dr. Marcus Feld, 220 Elm Street, Suite 3B.", "tag": "poke_reply", "timestamp": "2026-10-15 11:03:27"}
+{"payload": "good job", "tag": "user_message", "timestamp": "2026-10-15 12:25:30"}
+{"payload": "Thank you. I'm going to imagine you said that in a deep, approving voice.", "tag": "poke_reply", "timestamp": "2026-10-15 12:25:35"}
+{"payload": "bye for now", "tag": "user_message", "timestamp": "2026-10-15 12:45:24"}
+{"payload": "Later! I'll be here.", "tag": "poke_reply", "timestamp": "2026-10-15 12:45:29"}
+{"payload": "what time is biscuit's vet appointment at willow creek", "tag": "user_message", "timestamp": "2026-10-15 13:35:32"}
+{"payload": "on it", "tag": "poke_reply", "timestamp": "2026-10-15 13:35:37"}
+{"payload": "[SUCCESS] Biscuit Willow Creek vet appointment: Found a reminder from frontdesk@willowcreekvet.com for Biscuit's rabies booster and heartworm test with Dr. Tran on Saturday, September 26, 2026 at 10:30am. The estimate is $148.", "tag": "agent_message", "timestamp": "2026-10-15 13:37:15"}
+{"payload": "Biscuit's appointment is Saturday, September 26 at 10:30am with Dr. Tran. Estimated cost is $148.", "tag": "poke_reply", "timestamp": "2026-10-15 13:37:20"}
+{"payload": "send his vaccine records to pawsome boarding", "tag": "user_message", "timestamp": "2026-10-15 17:25:00"}
+{"payload": "got it, on it", "tag": "poke_reply", "timestamp": "2026-10-15 17:25:05"}
+{"payload": "[SUCCESS] Biscuit Willow Creek vet appointment: Emailed Biscuit's most recent vaccination record PDF, from Willow Creek's March email, to info@pawsomeboarding.com with a note that the rabies booster will be updated after September 26.", "tag": "agent_message", "timestamp": "2026-10-15 17:27:47"}
+{"payload": "Sent his current vaccine records to Pawsome Boarding, noting an update is coming after the 26th.", "tag": "poke_reply", "timestamp": "2026-10-15 17:27:52"}
+{"payload": "random thought: socks are weird", "tag": "user_message", "timestamp": "2026-10-15 19:05:00"}
+{"payload": "They really are. We wrap our feet in little tubes and call it comfort.", "tag": "poke_reply", "timestamp": "2026-10-15 19:05:05"}
+{"payload": "set a monthly reminder on the 1st to invoice calloway print", "tag": "user_message", "timestamp": "2026-10-15 20:55:09"}
+{"payload": "pulling that up now", "tag": "poke_reply", "timestamp": "2026-10-15 20:55:14"}
+{"payload": "[SUCCESS] Reminders: Created a recurring reminder on the 1st of each month at 9:00am, starting October 1, 2026: 'Send invoice to Calloway Print Co. (ap@callowayprint.com)'. Last invoice found was #2043 for $2,400 sent Sept 1.", "tag": "agent_message", "timestamp": "2026-10-15 20:57:15"}
+{"payload": "Monthly reminder set for the 1st at 9am, starting Oct 1. Last invoice was $2,400.", "tag": "poke_reply", "timestamp": "2026-10-15 20:57:20"}
+{"payload": "coffee or tea", "tag": "user_message", "timestamp": "2026-10-15 21:45:15"}
+{"payload": "Coffee for ambition, tea for peace. Which kind of day is it?", "tag": "poke_reply", "timestamp": "2026-10-15 21:45:20"}
+{"payload": "what's the largest planet", "tag": "user_message", "timestamp": "2026-10-16 08:05:14"}
+{"payload": "Jupiter. Big enough to fit every other planet inside with room to spare.", "tag": "poke_reply", "timestamp": "2026-10-16 08:05:19"}
+{"payload": "nailed it", "tag": "user_message", "timestamp": "2026-10-16 08:25:06"}
+{"payload": "Obviously. Take a victory lap.", "tag": "poke_reply", "timestamp": "2026-10-16 08:25:11"}
+{"payload": "nice weather today", "tag": "user_message", "timestamp": "2026-10-16 09:00:35"}
+{"payload": "Love that for you. Go stand in it for a minute.", "tag": "poke_reply", "timestamp": "2026-10-16 09:00:40"}
+{"payload": "can't believe it's already Thursday", "tag": "user_message", "timestamp": "2026-10-16 09:45:02"}
+{"payload": "Time is being sneaky again. Just one more day to go.", "tag": "poke_reply", "timestamp": "2026-10-16 09:45:07"}
+{"payload": "did she reply yet?", "tag": "user_message", "timestamp": "2026-10-16 11:20:51"}
+{"payload": "on it now", "tag": "poke_reply", "timestamp": "2026-10-16 11:20:56"}
+{"payload": "[SUCCESS] Lena Okafor Ridgeway scheduling: Lena replied at 4:12pm: 'Perfect, sending a Google Meet invite shortly.' No invite has arrived yet.", "tag": "agent_message", "timestamp": "2026-10-16 11:23:46"}
+{"payload": "She confirmed and says a Meet invite is coming; nothing yet.", "tag": "poke_reply", "timestamp": "2026-10-16 11:23:51"}
+{"payload": "check status of the lego order for leo's birthday", "tag": "user_message", "timestamp": "2026-10-16 11:55:51"}
+{"payload": "let me dig in", "tag": "poke_reply", "timestamp": "2026-10-16 11:55:56"}
+{"payload": "[SUCCESS] LEGO Order Status: Found LEGO order confirmation from legoshop@email.lego.com, order #LG-55120948 for the Technic Bugatti Bolide set, $54.99. It is processing, with estimated delivery Nov 9-11 2026.", "tag": "agent_message", "timestamp": "2026-10-16 11:56:53"}
+{"payload": "Your LEGO Technic Bugatti order is still processing. Estimated delivery is Nov 9 to 11.", "tag": "poke_reply", "timestamp": "2026-10-16 11:56:58"}
+{"payload": "remind me friday to take his stool sample", "tag": "user_message", "timestamp": "2026-10-16 13:35:42"}
+{"payload": "right away", "tag": "poke_reply", "timestamp": "2026-10-16 13:35:47"}
+{"payload": "[SUCCESS] Biscuit Willow Creek vet appointment: Set a reminder for Friday, September 25, 2026 at 7:30pm: 'Collect Biscuit's stool sample for Willow Creek visit tomorrow'.", "tag": "agent_message", "timestamp": "2026-10-16 13:37:43"}
+{"payload": "Reminder set for Friday, September 25 at 7:30pm.", "tag": "poke_reply", "timestamp": "2026-10-16 13:37:48"}
+{"payload": "leo's party is nov 14, will it make it", "tag": "user_message", "timestamp": "2026-10-16 14:35:45"}
+{"payload": "right away", "tag": "poke_reply", "timestamp": "2026-10-16 14:35:50"}
+{"payload": "[SUCCESS] LEGO Order Status: The estimated delivery of Nov 9-11 is three to five days before the Nov 14 party, as long as there are no carrier delays.", "tag": "agent_message", "timestamp": "2026-10-16 14:37:17"}
+{"payload": "Yes, it should arrive 3 to 5 days before the party.", "tag": "poke_reply", "timestamp": "2026-10-16 14:37:22"}
+{"payload": "remind me an hour before the call", "tag": "user_message", "timestamp": "2026-10-16 16:00:05"}
+{"payload": "on it", "tag": "poke_reply", "timestamp": "2026-10-16 16:00:10"}
+{"payload": "[SUCCESS] Lena Okafor Ridgeway scheduling: Reminder set for September 29, 2026 at 1:00pm ET titled 'Call with Lena Okafor (Ridgeway) at 2pm'.", "tag": "agent_message", "timestamp": "2026-10-16 16:01:59"}
+{"payload": "Reminder set for Sept 29 at 1pm.", "tag": "poke_reply", "timestamp": "2026-10-16 16:02:04"}
+{"payload": "did they say he needs to fast", "tag": "user_message", "timestamp": "2026-10-16 20:20:55"}
+{"payload": "pulling that up now", "tag": "poke_reply", "timestamp": "2026-10-16 20:21:00"}
+{"payload": "[SUCCESS] Biscuit Willow Creek vet appointment: The reminder says no fasting is needed, but to bring Biscuit on a leash and to skip his morning treats if he gets car sick.", "tag": "agent_message", "timestamp": "2026-10-16 20:23:20"}
+{"payload": "No fasting needed. Just bring him on a leash.", "tag": "poke_reply", "timestamp": "2026-10-16 20:23:25"}
+{"payload": "change it to 8am", "tag": "user_message", "timestamp": "2026-10-16 20:35:39"}
+{"payload": "let me dig in", "tag": "poke_reply", "timestamp": "2026-10-16 20:35:44"}
+{"payload": "[SUCCESS] Reminders: Recurring reminder updated to 8:00am on the 1st of each month.", "tag": "agent_message", "timestamp": "2026-10-16 20:38:34"}
+{"payload": "Updated to 8am on the 1st.", "tag": "poke_reply", "timestamp": "2026-10-16 20:38:39"}
+{"payload": "ask them if i can move it to the 10th", "tag": "user_message", "timestamp": "2026-10-16 21:05:47"}
+{"payload": "let me dig in", "tag": "poke_reply", "timestamp": "2026-10-16 21:05:52"}
+{"payload": "[SUCCESS] Audiocare Appointment Email Search: Sent a reply to scheduling@audiocareassoc.com asking to move the evaluation from November 9 to November 10, any time after 1pm. Awaiting response.", "tag": "agent_message", "timestamp": "2026-10-16 21:06:51"}
+{"payload": "Asked AudioCare to move it to November 10 after 1pm. Waiting to hear back.", "tag": "poke_reply", "timestamp": "2026-10-16 21:06:56"}
+{"payload": "thanks a ton", "tag": "user_message", "timestamp": "2026-10-17 08:40:09"}
+{"payload": "Happy to. Any time.", "tag": "poke_reply", "timestamp": "2026-10-17 08:40:14"}
+{"payload": "how are you", "tag": "user_message", "timestamp": "2026-10-17 14:40:51"}
+{"payload": "Doing great, no complaints, mostly because I have no body to ache. You?", "tag": "poke_reply", "timestamp": "2026-10-17 14:40:56"}
+{"payload": "is there anything i need to do before the test", "tag": "user_message", "timestamp": "2026-10-17 17:45:10"}
+{"payload": "looking now", "tag": "poke_reply", "timestamp": "2026-10-17 17:45:15"}
+{"payload": "[SUCCESS] Audiocare Appointment Email Search: The confirmation says to avoid loud noise for 24 hours before the test and to arrive 10 minutes early to complete paperwork. No fasting or prep is needed.", "tag": "agent_message", "timestamp": "2026-10-17 17:46:25"}
+{"payload": "Avoid loud noise for 24 hours before, and arrive 10 minutes early for paperwork.", "tag": "poke_reply", "timestamp": "2026-10-17 17:46:30"}
+{"payload": "what was the last invoice number again?", "tag": "user_message", "timestamp": "2026-10-17 18:25:41"}
+{"payload": "on it", "tag": "poke_reply", "timestamp": "2026-10-17 18:25:46"}
+{"payload": "[SUCCESS] Reminders: The September invoice was #2043, $2,400, sent Sept 1, 2026 to ap@callowayprint.com.", "tag": "agent_message", "timestamp": "2026-10-17 18:26:41"}
+{"payload": "Invoice #2043, $2,400, sent Sept 1.", "tag": "poke_reply", "timestamp": "2026-10-17 18:26:46"}
+{"payload": "goodnight", "tag": "user_message", "timestamp": "2026-10-17 19:20:14"}
+{"payload": "Night! Sleep well, tomorrow can wait its turn.", "tag": "poke_reply", "timestamp": "2026-10-17 19:20:19"}
+{"payload": "long day", "tag": "user_message", "timestamp": "2026-10-17 20:40:37"}
+{"payload": "Then you've earned a comfy spot on the couch. Go be horizontal.", "tag": "poke_reply", "timestamp": "2026-10-17 20:40:42"}
+{"payload": "can the shipping address be changed to my sister's", "tag": "user_message", "timestamp": "2026-10-17 20:45:49"}
+{"payload": "one moment", "tag": "poke_reply", "timestamp": "2026-10-17 20:45:54"}
+{"payload": "[SUCCESS] LEGO Order Status: Drafted a reply to LEGO customer service at help@lego.com asking to change the shipping address on #LG-55120948 to your sister's. It is ready for your review and not yet sent.", "tag": "agent_message", "timestamp": "2026-10-17 20:46:56"}
+{"payload": "Drafted a request to LEGO to change the address. Want me to send it?", "tag": "poke_reply", "timestamp": "2026-10-17 20:47:01"}
+{"payload": "remind me the evening before", "tag": "user_message", "timestamp": "2026-10-17 21:20:21"}
+{"payload": "let me dig in", "tag": "poke_reply", "timestamp": "2026-10-17 21:20:26"}
+{"payload": "[SUCCESS] Audiocare Appointment Email Search: Set a reminder for November 8, 2026 at 6:00pm: 'Hearing test tomorrow 2:15pm at AudioCare, avoid loud noise'.", "tag": "agent_message", "timestamp": "2026-10-17 21:22:38"}
+{"payload": "Reminder set for November 8 at 6pm.", "tag": "poke_reply", "timestamp": "2026-10-17 21:22:43"}
+{"payload": "remind me nov 8 to check it shipped", "tag": "user_message", "timestamp": "2026-10-17 21:45:33"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-17 21:45:38"}
+{"payload": "[SUCCESS] LEGO Order Status: Reminder set for Nov 8 2026 at 12:00 PM: 'Check LEGO Bugatti order shipped for Leo'.", "tag": "agent_message", "timestamp": "2026-10-17 21:46:46"}
+{"payload": "Reminder set for Nov 8 at noon.", "tag": "poke_reply", "timestamp": "2026-10-17 21:46:51"}
+{"payload": "find my hearing test appointment confirmation with audiocare", "tag": "user_message", "timestamp": "2026-10-18 07:34:52"}
+{"payload": "on it, looking for the audiocare confirmation now.", "tag": "poke_reply", "timestamp": "2026-10-18 07:34:57"}
+{"payload": "[SUCCESS] Audiocare Appointment Email Search: Found a confirmation from scheduling@audiocareassoc.com for a hearing evaluation with Dr. Marcus Feld on Monday, November 9, 2026 at 2:15pm at AudioCare Associates, 220 Elm Street, Suite 3B.", "tag": "agent_message", "timestamp": "2026-10-18 07:37:35"}
+{"payload": "found it. your hearing evaluation with Dr. Marcus Feld is monday, nov 9 at 2:15pm at AudioCare Associates, 220 Elm Street, Suite 3B.", "tag": "poke_reply", "timestamp": "2026-10-18 07:37:40"}
+{"payload": "ask them if i can move it to the 10th", "tag": "user_message", "timestamp": "2026-10-18 09:59:40"}
+{"payload": "sure, emailing them to ask about the 10th.", "tag": "poke_reply", "timestamp": "2026-10-18 09:59:45"}
+{"payload": "[SUCCESS] Audiocare Appointment Email Search: Sent a reply to scheduling@audiocareassoc.com asking to move the evaluation from November 9 to November 10, any time after 1pm. Awaiting response.", "tag": "agent_message", "timestamp": "2026-10-18 10:03:04"}
+{"payload": "sent. i asked audiocare to move it to nov 10 any time after 1pm. no reply yet.", "tag": "poke_reply", "timestamp": "2026-10-18 10:03:09"}
+{"payload": "ugh i hate scheduling stuff", "tag": "user_message", "timestamp": "2026-10-18 11:28:09"}
+{"payload": "same, it's a lot. let me know if you want me to handle anything else.", "tag": "poke_reply", "timestamp": "2026-10-18 11:28:14"}
+{"payload": "skip the november one, they're closed", "tag": "user_message", "timestamp": "2026-10-18 12:21:14"}
+{"payload": "okay, skipping the november invoice reminder.", "tag": "poke_reply", "timestamp": "2026-10-18 12:21:19"}
+{"payload": "[SUCCESS] Reminders: Skipped the November 1, 2026 occurrence; the reminder resumes December 1.", "tag": "agent_message", "timestamp": "2026-10-18 12:24:55"}
+{"payload": "done. the november 1 invoice reminder is skipped and it picks back up december 1.", "tag": "poke_reply", "timestamp": "2026-10-18 12:25:00"}

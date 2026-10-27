@@ -1,0 +1,114 @@
+{"payload": "can you find my eurostar ticket for london to paris on oct 15", "tag": "user_message", "timestamp": "2026-10-15 09:15:50"}
+{"payload": "checking now", "tag": "poke_reply", "timestamp": "2026-10-15 09:15:55"}
+{"payload": "[SUCCESS] Eurostar ticket search: Found Eurostar booking confirmation from bookings@eurostar.com: train 9024 departs St Pancras 8:31am Oct 15, arrives Paris Gare du Nord 11:47am, Standard Premier seat, 14A, £212, booking ref QXT7MP.", "tag": "agent_message", "timestamp": "2026-10-15 09:17:09"}
+{"payload": "Found it: Eurostar 9024, Oct 15, departs 8:31am from St Pancras, seat 14A, ref QXT7MP.", "tag": "poke_reply", "timestamp": "2026-10-15 09:17:14"}
+{"payload": "find the gusto email about my two-factor settings changing in september", "tag": "user_message", "timestamp": "2026-10-15 11:10:45"}
+{"payload": "checking now", "tag": "poke_reply", "timestamp": "2026-10-15 11:10:50"}
+{"payload": "[SUCCESS] Find Gusto 2FA Email: Found an email from no-reply@gusto.com dated Sept 18, 2026, 'Your two-factor authentication method was updated.' It says the method switched from SMS to an authenticator app at 2:14 PM PT and to contact support if this wasn't you.", "tag": "agent_message", "timestamp": "2026-10-15 11:12:25"}
+{"payload": "Found it: Gusto says your 2FA switched from SMS to an authenticator app on Sept 18 at 2:14 PM.", "tag": "poke_reply", "timestamp": "2026-10-15 11:12:30"}
+{"payload": "reply to dana whitfield about splitting the driveway repaving quote", "tag": "user_message", "timestamp": "2026-10-15 11:15:58"}
+{"payload": "let me dig in", "tag": "poke_reply", "timestamp": "2026-10-15 11:16:03"}
+{"payload": "[SUCCESS] Dana driveway quote: Dana's Oct 3, 2026 email (dana.whitfield@outlook.com) forwards a $6,200 Blackrock Paving quote to repave the shared driveway and proposes a 50/50 split. I drafted a reply agreeing in principle and asking about the start date.", "tag": "agent_message", "timestamp": "2026-10-15 11:17:36"}
+{"payload": "Drafted a reply agreeing to the 50/50 split of the $6,200 quote and asking about timing.", "tag": "poke_reply", "timestamp": "2026-10-15 11:17:41"}
+{"payload": "what hourly rate did tina morales at robert half quote me for the contract role?", "tag": "user_message", "timestamp": "2026-10-15 12:20:43"}
+{"payload": "on it now", "tag": "poke_reply", "timestamp": "2026-10-15 12:20:48"}
+{"payload": "[SUCCESS] Robert Half Tina Morales: Found an email from tmorales@roberthalf.com (Oct 7) quoting $58/hour W-2 for a 6-month contract-to-hire UX Designer role at a healthcare client, starting Nov 2, with benefits available after 30 days.", "tag": "agent_message", "timestamp": "2026-10-15 12:23:41"}
+{"payload": "Tina quoted $58/hour W-2 for a 6-month contract-to-hire UX role starting Nov 2.", "tag": "poke_reply", "timestamp": "2026-10-15 12:23:46"}
+{"payload": "did i actually make that change or is it suspicious", "tag": "user_message", "timestamp": "2026-10-15 13:15:42"}
+{"payload": "one moment", "tag": "poke_reply", "timestamp": "2026-10-15 13:15:47"}
+{"payload": "[SUCCESS] Find Gusto 2FA Email: I checked your sent mail and inbox. There's a Gusto 'Authenticator app setup complete' confirmation at 2:12 PM PT on Sept 18, two minutes before the notice, so it matches a change you started.", "tag": "agent_message", "timestamp": "2026-10-15 13:17:12"}
+{"payload": "Looks like you did it. A setup confirmation arrived two minutes before the notice, at 2:12 PM.", "tag": "poke_reply", "timestamp": "2026-10-15 13:17:17"}
+{"payload": "i love weekends", "tag": "user_message", "timestamp": "2026-10-15 14:05:58"}
+{"payload": "Same. Best invention after the wheel and sliced bread.", "tag": "poke_reply", "timestamp": "2026-10-15 14:06:03"}
+{"payload": "what time do i need to be at the station", "tag": "user_message", "timestamp": "2026-10-15 16:30:41"}
+{"payload": "on it now", "tag": "poke_reply", "timestamp": "2026-10-15 16:30:46"}
+{"payload": "[SUCCESS] Eurostar ticket search: Eurostar's email says check-in closes 30 minutes before departure, so arrive at St Pancras by 8:01am. It recommends arriving 90 minutes early for passport control.", "tag": "agent_message", "timestamp": "2026-10-15 16:33:19"}
+{"payload": "Check-in closes 8:01am, but Eurostar recommends arriving around 7:00am for passport control.", "tag": "poke_reply", "timestamp": "2026-10-15 16:33:24"}
+{"payload": "send it but add that i want to see the written scope first", "tag": "user_message", "timestamp": "2026-10-15 18:45:05"}
+{"payload": "on it now", "tag": "poke_reply", "timestamp": "2026-10-15 18:45:10"}
+{"payload": "[SUCCESS] Dana driveway quote: Added a line asking for Blackrock's written scope of work before committing, then sent the reply to dana.whitfield@outlook.com.", "tag": "agent_message", "timestamp": "2026-10-15 18:46:14"}
+{"payload": "Sent, with a request to see Blackrock's written scope first.", "tag": "poke_reply", "timestamp": "2026-10-15 18:46:19"}
+{"payload": "forward the ticket to my colleague Ben Ortiz", "tag": "user_message", "timestamp": "2026-10-15 18:55:35"}
+{"payload": "one moment", "tag": "poke_reply", "timestamp": "2026-10-15 18:55:40"}
+{"payload": "[SUCCESS] Eurostar ticket search: Forwarded the Eurostar confirmation with the PDF ticket to ben.ortiz@harlowtech.com, with a note that it is for the Oct 15 train.", "tag": "agent_message", "timestamp": "2026-10-15 18:56:53"}
+{"payload": "Forwarded the ticket to Ben Ortiz at ben.ortiz@harlowtech.com.", "tag": "poke_reply", "timestamp": "2026-10-15 18:56:58"}
+{"payload": "does the email say how to undo it", "tag": "user_message", "timestamp": "2026-10-16 09:10:10"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-16 09:10:15"}
+{"payload": "[SUCCESS] Find Gusto 2FA Email: The email says to reply or contact Gusto support at support@gusto.com or 1-800-936-0383 if the change wasn't authorized. It also links to Settings > Security to switch methods back.", "tag": "agent_message", "timestamp": "2026-10-16 09:11:14"}
+{"payload": "Yes: use Settings > Security to switch back, or contact support@gusto.com if it wasn't you.", "tag": "poke_reply", "timestamp": "2026-10-16 09:11:19"}
+{"payload": "favorite season?", "tag": "user_message", "timestamp": "2026-10-16 09:45:46"}
+{"payload": "Autumn, I think. Cozy sweaters, good light, and nobody judges you for eating soup.", "tag": "poke_reply", "timestamp": "2026-10-16 09:45:51"}
+{"payload": "look for the verizon business email about the port out pin", "tag": "user_message", "timestamp": "2026-10-16 13:30:32"}
+{"payload": "on it", "tag": "poke_reply", "timestamp": "2026-10-16 13:30:37"}
+{"payload": "[SUCCESS] Verizon Business Email Search: Found a Nov 4, 2026 email from verizonwireless-business@vzw.com, 'Set your Number Lock and port-out PIN.' It says the account owner must create a 6-10 digit PIN for the 4 lines on account ending 8832 by Nov 30 to enable SIM swap protection.", "tag": "agent_message", "timestamp": "2026-10-16 13:32:06"}
+{"payload": "Verizon wants a port-out PIN set for the 4 lines on account 8832 by Nov 30 for SIM swap protection.", "tag": "poke_reply", "timestamp": "2026-10-16 13:32:11"}
+{"payload": "does it say who can set the pin", "tag": "user_message", "timestamp": "2026-10-16 14:40:25"}
+{"payload": "let me dig in", "tag": "poke_reply", "timestamp": "2026-10-16 14:40:30"}
+{"payload": "[SUCCESS] Verizon Business Email Search: The email says only the account owner or an authorized account manager can set it. Employees on individual lines can't, and the owner on file is listed as you.", "tag": "agent_message", "timestamp": "2026-10-16 14:43:20"}
+{"payload": "Only the account owner or an authorized manager can set it, and you're listed as owner.", "tag": "poke_reply", "timestamp": "2026-10-16 14:43:25"}
+{"payload": "what's the capital of Australia", "tag": "user_message", "timestamp": "2026-10-16 17:00:43"}
+{"payload": "Canberra. Everyone guesses Sydney, so you're in good company.", "tag": "poke_reply", "timestamp": "2026-10-16 17:00:48"}
+{"payload": "reply and ask if the rate is negotiable and if it's remote", "tag": "user_message", "timestamp": "2026-10-16 19:20:45"}
+{"payload": "let me check", "tag": "poke_reply", "timestamp": "2026-10-16 19:20:50"}
+{"payload": "[SUCCESS] Robert Half Tina Morales: Sent a reply to tmorales@roberthalf.com asking whether the $58/hour rate is negotiable and whether the role can be fully remote.", "tag": "agent_message", "timestamp": "2026-10-16 19:22:05"}
+{"payload": "Sent Tina your questions about rate flexibility and remote work.", "tag": "poke_reply", "timestamp": "2026-10-16 19:22:10"}
+{"payload": "remind me tomorrow at 9am to save the gusto backup codes", "tag": "user_message", "timestamp": "2026-10-16 21:40:29"}
+{"payload": "let me dig in", "tag": "poke_reply", "timestamp": "2026-10-16 21:40:34"}
+{"payload": "[SUCCESS] Find Gusto 2FA Email: Reminder set for tomorrow at 9:00 AM: 'Save Gusto authenticator backup codes.'", "tag": "agent_message", "timestamp": "2026-10-16 21:41:59"}
+{"payload": "Done. I'll remind you tomorrow at 9:00 AM to save your Gusto backup codes.", "tag": "poke_reply", "timestamp": "2026-10-16 21:42:04"}
+{"payload": "sorry for the late reply", "tag": "user_message", "timestamp": "2026-10-17 08:55:10"}
+{"payload": "No apology needed. I'm not going anywhere.", "tag": "poke_reply", "timestamp": "2026-10-17 08:55:15"}
+{"payload": "remind me on nov 16 to do it", "tag": "user_message", "timestamp": "2026-10-17 10:50:51"}
+{"payload": "checking now", "tag": "poke_reply", "timestamp": "2026-10-17 10:50:56"}
+{"payload": "[SUCCESS] Verizon Business Email Search: Reminder set for Monday, Nov 16 at 9:00 AM: 'Set Verizon Business port-out PIN (account 8832), due Nov 30.'", "tag": "agent_message", "timestamp": "2026-10-17 10:51:51"}
+{"payload": "Reminder set for Nov 16 at 9:00 AM to set the Verizon port-out PIN.", "tag": "poke_reply", "timestamp": "2026-10-17 10:51:56"}
+{"payload": "send a quick note to tom@lumenbooks.com that the pin is coming and he shouldn't worry", "tag": "user_message", "timestamp": "2026-10-17 11:20:42"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-17 11:20:47"}
+{"payload": "[SUCCESS] Verizon Business Email Search: Sent an email to tom@lumenbooks.com: 'Heads up, I'll be setting a port-out PIN on our Verizon lines before Nov 30 for SIM swap protection. No action is needed from you.'", "tag": "agent_message", "timestamp": "2026-10-17 11:22:09"}
+{"payload": "Sent Tom a short note that the PIN is coming and he needs to do nothing.", "tag": "poke_reply", "timestamp": "2026-10-17 11:22:14"}
+{"payload": "what's the largest planet", "tag": "user_message", "timestamp": "2026-10-17 11:55:46"}
+{"payload": "Jupiter. Big enough to fit every other planet inside with room to spare.", "tag": "poke_reply", "timestamp": "2026-10-17 11:55:51"}
+{"payload": "what did she say?", "tag": "user_message", "timestamp": "2026-10-17 12:00:58"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-17 12:01:03"}
+{"payload": "[SUCCESS] Robert Half Tina Morales: Tina replied Oct 9 that the rate can go up to $62/hour for the right candidate, and the role is hybrid with two days per week onsite in Denver.", "tag": "agent_message", "timestamp": "2026-10-17 12:03:02"}
+{"payload": "She said up to $62/hour is possible, and it's hybrid, two days onsite in Denver.", "tag": "poke_reply", "timestamp": "2026-10-17 12:03:07"}
+{"payload": "haha you're funny", "tag": "user_message", "timestamp": "2026-10-17 16:10:22"}
+{"payload": "I try. Mostly I just get lucky.", "tag": "poke_reply", "timestamp": "2026-10-17 16:10:27"}
+{"payload": "did dana send the scope?", "tag": "user_message", "timestamp": "2026-10-17 18:05:21"}
+{"payload": "on it now", "tag": "poke_reply", "timestamp": "2026-10-17 18:05:26"}
+{"payload": "[SUCCESS] Dana driveway quote: Yes. Dana replied Oct 5 with a PDF from Blackrock Paving: remove old asphalt, 3-inch overlay, sealcoat, a 5-day cure, and a tentative Nov 2 start.", "tag": "agent_message", "timestamp": "2026-10-17 18:07:44"}
+{"payload": "Yes: full removal, 3-inch overlay, sealcoat, 5-day cure. Tentative start is November 2.", "tag": "poke_reply", "timestamp": "2026-10-17 18:07:49"}
+{"payload": "nice weather today", "tag": "user_message", "timestamp": "2026-10-17 18:25:02"}
+{"payload": "Love that for you. Go stand in it for a minute.", "tag": "poke_reply", "timestamp": "2026-10-17 18:25:07"}
+{"payload": "rough day", "tag": "user_message", "timestamp": "2026-10-17 19:30:28"}
+{"payload": "I'm sorry. Want to vent, or want a distraction? Either works for me.", "tag": "poke_reply", "timestamp": "2026-10-17 19:30:33"}
+{"payload": "remind me the night before to download the ticket to my phone", "tag": "user_message", "timestamp": "2026-10-17 20:25:09"}
+{"payload": "let me check", "tag": "poke_reply", "timestamp": "2026-10-17 20:25:14"}
+{"payload": "[SUCCESS] Eurostar ticket search: Reminder set for Oct 14 at 8:00pm: download Eurostar ticket (ref QXT7MP) to phone wallet.", "tag": "agent_message", "timestamp": "2026-10-17 20:26:58"}
+{"payload": "Done, reminder set for Oct 14 at 8:00pm to download the ticket.", "tag": "poke_reply", "timestamp": "2026-10-17 20:27:03"}
+{"payload": "i should go to the gym", "tag": "user_message", "timestamp": "2026-10-17 21:00:23"}
+{"payload": "Should, or want to? Either way, future you will send a thank-you note.", "tag": "poke_reply", "timestamp": "2026-10-17 21:00:28"}
+{"payload": "coffee or tea", "tag": "user_message", "timestamp": "2026-10-17 21:15:06"}
+{"payload": "Coffee for ambition, tea for peace. Which kind of day is it?", "tag": "poke_reply", "timestamp": "2026-10-17 21:15:11"}
+{"payload": "you there?", "tag": "user_message", "timestamp": "2026-10-17 21:30:20"}
+{"payload": "Always. What's up?", "tag": "poke_reply", "timestamp": "2026-10-17 21:30:25"}
+{"payload": "brb", "tag": "user_message", "timestamp": "2026-10-17 21:40:12"}
+{"payload": "Take your time.", "tag": "poke_reply", "timestamp": "2026-10-17 21:40:17"}
+{"payload": "tell her ok and remind me nov 1 to move the cars off the driveway", "tag": "user_message", "timestamp": "2026-10-17 21:55:32"}
+{"payload": "pulling that up now", "tag": "poke_reply", "timestamp": "2026-10-17 21:55:37"}
+{"payload": "[SUCCESS] Dana driveway quote: Sent Dana a reply approving the scope and the Nov 2 start. Created a reminder for Nov 1, 2026 at 7:00 PM: 'Move cars off shared driveway for repaving.'", "tag": "agent_message", "timestamp": "2026-10-17 21:57:03"}
+{"payload": "Told Dana it's a go. Reminder set for November 1 at 7pm to move the cars.", "tag": "poke_reply", "timestamp": "2026-10-17 21:57:08"}
+{"payload": "find the gusto email about my two-factor settings changing in september", "tag": "user_message", "timestamp": "2026-10-18 08:17:29"}
+{"payload": "On it, looking for that Gusto email now.", "tag": "poke_reply", "timestamp": "2026-10-18 08:17:34"}
+{"payload": "[SUCCESS] Find Gusto 2FA Email: Found an email from no-reply@gusto.com dated Sept 18, 2026, 'Your two-factor authentication method was updated.' It says the method switched from SMS to an authenticator app at 2:14 PM PT and to contact support if this wasn't you.", "tag": "agent_message", "timestamp": "2026-10-18 08:19:08"}
+{"payload": "Found it. Gusto emailed on Sept 18 at 2:14 PM PT saying your 2FA switched from SMS to an authenticator app. It says to contact support if that wasn't you.", "tag": "poke_reply", "timestamp": "2026-10-18 08:19:13"}
+{"payload": "did i actually make that change or is it suspicious", "tag": "user_message", "timestamp": "2026-10-18 09:52:13"}
+{"payload": "Let me check your mail for related activity.", "tag": "poke_reply", "timestamp": "2026-10-18 09:52:18"}
+{"payload": "[SUCCESS] Find Gusto 2FA Email: I checked your sent mail and inbox. There's a Gusto 'Authenticator app setup complete' confirmation at 2:12 PM PT on Sept 18, two minutes before the notice, so it matches a change you started.", "tag": "agent_message", "timestamp": "2026-10-18 09:56:01"}
+{"payload": "Looks like it was you. There's a Gusto authenticator setup confirmation at 2:12 PM PT, two minutes before the change notice, so it matches a change you started.", "tag": "poke_reply", "timestamp": "2026-10-18 09:56:06"}
+{"payload": "ok good, thanks", "tag": "user_message", "timestamp": "2026-10-18 10:53:06"}
+{"payload": "No problem.", "tag": "poke_reply", "timestamp": "2026-10-18 10:53:11"}
+{"payload": "remind me tomorrow at 9am to save the gusto backup codes", "tag": "user_message", "timestamp": "2026-10-18 12:33:11"}
+{"payload": "Setting that reminder now.", "tag": "poke_reply", "timestamp": "2026-10-18 12:33:16"}
+{"payload": "[SUCCESS] Find Gusto 2FA Email: Reminder set for tomorrow at 9:00 AM: 'Save Gusto authenticator backup codes.'", "tag": "agent_message", "timestamp": "2026-10-18 12:35:55"}
+{"payload": "Done. I'll remind you tomorrow at 9:00 AM to save your Gusto authenticator backup codes.", "tag": "poke_reply", "timestamp": "2026-10-18 12:36:00"}

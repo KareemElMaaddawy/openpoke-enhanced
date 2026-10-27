@@ -1,0 +1,131 @@
+{
+  "provenance": {
+    "attempts": 1,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "a194670c6aaac05200dabe9fcb4a3208351918f10f01b0678d7f35cec3fd9e77",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found a confirmation from Lakeshore Dermatology: skin check with Dr. Nguyen on September 22 at 9:40 AM, arrive 15 minutes early to complete forms.",
+      "key": "f1",
+      "opening_request": "can you find my skin check appointment email from Lakeshore Dermatology? need the time",
+      "result_reply": "Your skin check with Dr. Nguyen is September 22 at 9:40 AM. Arrive 15 minutes early.",
+      "topic": "Dermatology skin check at Lakeshore Dermatology with Dr. Nguyen on September 22"
+    },
+    {
+      "canned_result": "Sent a reply to the Maple Family Medicine front desk asking to move the annual physical with Dr. Okafor from October 6 to the week of October 19, mornings preferred.",
+      "key": "f2",
+      "opening_request": "reply to Maple Family Medicine and ask to move my physical to a later week",
+      "result_reply": "Sent. I asked Maple Family Medicine to move your physical to the week of October 19.",
+      "topic": "Reschedule annual physical with Dr. Okafor at Maple Family Medicine"
+    },
+    {
+      "canned_result": "Set a reminder for October 2 at 6:00 PM: flu shot at CVS MinuteClinic the next day, October 3, with a note to bring insurance card.",
+      "key": "f3",
+      "opening_request": "remind me the day before to get my flu shot at CVS",
+      "result_reply": "Reminder set for October 2 at 6 PM about your October 3 flu shot.",
+      "topic": "Flu shot clinic reminder from CVS MinuteClinic on October 3"
+    },
+    {
+      "canned_result": "Northside Heart Center email says follow-up with Dr. Hassan is November 5 at 2:15 PM; fasting is not required and patient should bring a current medication list.",
+      "key": "f4",
+      "opening_request": "summarize the email from Northside Heart Center about my follow-up",
+      "result_reply": "Follow-up with Dr. Hassan is November 5 at 2:15 PM. No fasting; bring your medication list.",
+      "topic": "Cardiology follow-up with Dr. Hassan at Northside Heart Center on November 5"
+    },
+    {
+      "canned_result": "Found the Talkspace email with the video session link for Karen Liu, LCSW, Thursday October 8 at 5:30 PM, plus instructions to test audio ten minutes before.",
+      "key": "f5",
+      "opening_request": "find the link for my therapy session with Karen on Thursday",
+      "result_reply": "Found it. Session with Karen is October 8 at 5:30 PM; the link is in the Talkspace email.",
+      "topic": "Telehealth therapy session with Karen Liu LCSW via Talkspace on Thursday, October 8"
+    },
+    {
+      "canned_result": "Pinecrest Allergy & Asthma email lists allergy injection visits on Mondays and Thursdays through November 19, walk-in hours 8 AM to 11 AM, with a 30-minute wait afterward.",
+      "key": "f6",
+      "opening_request": "what days do I need to go for allergy shots at Pinecrest this fall?",
+      "result_reply": "Mondays and Thursdays through November 19, walk-in 8 to 11 AM, then wait 30 minutes.",
+      "topic": "Allergy shot schedule from Pinecrest Allergy & Asthma"
+    },
+    {
+      "canned_result": "Found a St. Anne's Women's Imaging confirmation for a screening mammogram on October 27 at 8:00 AM, with advice to skip deodorant and lotion that day.",
+      "key": "f7",
+      "opening_request": "did St. Anne's send anything about my mammogram? check please",
+      "result_reply": "Yes, mammogram is October 27 at 8 AM at St. Anne's. Skip deodorant and lotion.",
+      "topic": "Mammogram appointment at St. Anne's Women's Imaging on October 27"
+    },
+    {
+      "canned_result": "Located a Rite Aid receipt for $86.14 dated September 9 and forwarded it to claims@healthequity.example with the subject 'HSA reimbursement receipt'.",
+      "key": "f8",
+      "opening_request": "find the pharmacy receipt from last week and forward it to HealthEquity for my HSA",
+      "result_reply": "Forwarded your $86.14 Rite Aid receipt to HealthEquity for HSA reimbursement.",
+      "topic": "HSA receipt submission to HealthEquity for $86 pharmacy purchase"
+    },
+    {
+      "canned_result": "Valley Gastroenterology instructions: low-fiber diet starts November 10, clear liquids only on November 11, and the first prep dose is at 6 PM that evening.",
+      "key": "f9",
+      "opening_request": "pull up the prep instructions for my colonoscopy and tell me when to stop eating",
+      "result_reply": "Low-fiber from November 10, clear liquids only November 11, first prep dose 6 PM that evening.",
+      "topic": "Colonoscopy prep instructions from Dr. Reyes at Valley Gastroenterology for November 12"
+    },
+    {
+      "canned_result": "Sent an email to Harborview Sleep Center asking what to bring for the September 30 overnight sleep study; auto-reply says staff will respond within one business day.",
+      "key": "f10",
+      "opening_request": "email Harborview Sleep Center and ask what I should bring to the sleep study",
+      "result_reply": "Email sent to Harborview Sleep Center. They'll reply within one business day.",
+      "topic": "Sleep study at Harborview Sleep Center on September 30"
+    },
+    {
+      "canned_result": "Found a Humana letter approving referral #HR-55820 for Dr. Whitfield, valid October 1 through December 31, covering one consult and one follow-up visit.",
+      "key": "f11",
+      "opening_request": "look for the Humana referral approval for my dad's visit with Dr. Whitfield",
+      "result_reply": "Humana approved referral #HR-55820 for Dr. Whitfield, valid October 1 to December 31.",
+      "topic": "Dad's cardiology referral approval from Humana for Dr. Whitfield"
+    },
+    {
+      "canned_result": "Replied to Bright Smiles Orthodontics confirming Leo's braces adjustment on October 19 at 4:00 PM; received an automated confirmation.",
+      "key": "f12",
+      "opening_request": "confirm Leo's braces appointment with Bright Smiles for the 19th",
+      "result_reply": "Confirmed Leo's braces adjustment for October 19 at 4 PM.",
+      "topic": "Orthodontist adjustment for Leo at Bright Smiles Orthodontics on October 19"
+    },
+    {
+      "canned_result": "Yes, Costco Pharmacy emailed on September 17 that the amoxicillin prescription is ready for pickup, held until September 24, copay $8.",
+      "key": "f13",
+      "opening_request": "did Costco pharmacy email that my amoxicillin is ready?",
+      "result_reply": "Yes, it's ready at Costco, held until September 24. Copay is $8.",
+      "topic": "Pharmacy pickup for amoxicillin at Costco Pharmacy ready notice"
+    },
+    {
+      "canned_result": "Kaiser notification says Dr. Brooks reviewed your recent labs as normal and recommends scheduling an annual wellness visit before December 15.",
+      "key": "f14",
+      "opening_request": "summarize the message from Dr. Brooks on the Kaiser portal",
+      "result_reply": "Dr. Brooks says labs look normal and suggests booking your wellness visit before December 15.",
+      "topic": "Annual wellness visit portal message from Dr. Brooks at Kaiser Permanente"
+    },
+    {
+      "canned_result": "Created a reminder for October 14 at 9:00 AM: decide whether to cancel the October 16 podiatry appointment with Dr. Kim, noting the 24-hour cancellation policy.",
+      "key": "f15",
+      "opening_request": "remind me October 14 to cancel my podiatry appointment with Dr. Kim if needed",
+      "result_reply": "Reminder set for October 14 at 9 AM about canceling Dr. Kim's October 16 visit.",
+      "topic": "Reminder to cancel the October 16 podiatry appointment with Dr. Kim if the cast comes off"
+    },
+    {
+      "canned_result": "VSP emailed on September 25 that the contact lens claim was approved for $120 reimbursement, payable by check within 10 business days.",
+      "key": "f16",
+      "opening_request": "check whether VSP replied about my contact lens reimbursement claim",
+      "result_reply": "VSP approved $120 for your contact lenses. Check should arrive within 10 business days.",
+      "topic": "Vision insurance claim reimbursement from VSP for contact lenses"
+    },
+    {
+      "canned_result": "Found a Target Pharmacy confirmation for a COVID-19 booster on November 2 at 12:20 PM at the Elm Street store, with a reminder to bring photo ID.",
+      "key": "f17",
+      "opening_request": "book-confirm email for my covid booster at Target should be around somewhere, find it",
+      "result_reply": "Booster is November 2 at 12:20 PM at Target on Elm Street. Bring photo ID.",
+      "topic": "COVID booster appointment at Target Pharmacy on November 2"
+    }
+  ]
+}

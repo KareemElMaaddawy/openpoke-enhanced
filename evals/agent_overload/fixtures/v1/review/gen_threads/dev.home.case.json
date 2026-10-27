@@ -1,0 +1,112 @@
+{
+  "provenance": {
+    "attempts": 1,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "246009c79510c74a5efc1806d294097f91d17db6ca4f912ee2a1596bb09eae20",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found invoice #PW-40817 from billing@pioneerwatersystems.com dated Oct 6, 2026 for $1,486.00: Culligan-style 48K-grain softener plus labor. Balance of $743.00 is due Oct 21.",
+      "follow_ups": [
+        {
+          "reply": "10 years on the resin tank, 5 on the control valve, 1 year on parts and labor.",
+          "request": "does it say what the warranty covers",
+          "result": "The invoice footer lists a 10-year warranty on the resin tank and a 1-year warranty on parts and labor. It says the control valve is covered for 5 years."
+        },
+        {
+          "reply": "Reminder set for October 19 at 9am to pay the $743 balance.",
+          "request": "remind me to pay the balance on october 19 at 9am",
+          "result": "Created a reminder for Oct 19, 2026 at 9:00 AM: 'Pay Pioneer Water balance $743.00, invoice #PW-40817, due Oct 21.'"
+        },
+        {
+          "reply": "Forwarded the invoice to jen.okafor@gmail.com.",
+          "request": "forward the invoice to my wife, her email is jen.okafor@gmail.com",
+          "result": "Forwarded the Pioneer Water invoice #PW-40817 email, with the PDF attached, to jen.okafor@gmail.com."
+        }
+      ],
+      "key": "c1",
+      "opening_request": "find the pioneer water softener installation invoice from october",
+      "pair_key": "c2",
+      "result_reply": "Found it: Pioneer invoice #PW-40817, $1,486 total, with $743 still due October 21.",
+      "topic": "Pioneer Water Systems water softener installation invoice from October 2026"
+    },
+    {
+      "canned_result": "Pioneer Water emailed from service@pioneerwatersystems.com on Sept 29, 2026 that salt delivery moves from monthly to every 6 weeks. The next delivery is Nov 12, and it's 4 bags at $38.40.",
+      "follow_ups": [
+        {
+          "reply": "Sent. I asked Pioneer to keep monthly delivery and confirm the price.",
+          "request": "reply and ask if i can keep monthly deliveries",
+          "result": "Sent a reply to service@pioneerwatersystems.com asking to stay on monthly salt delivery, 4 bags per month, and requesting confirmation of the price."
+        },
+        {
+          "reply": "They replied: monthly works if you drop to 2 bags, $19.20 per delivery.",
+          "request": "did they write back yet",
+          "result": "Yes. Dee from Pioneer Water replied Oct 2 that monthly delivery can stay if he keeps 2 bags per drop, at $19.20 per delivery."
+        },
+        {
+          "reply": "Confirmed 2 bags monthly with Pioneer, and set a November 10 reminder to clear a spot.",
+          "request": "ok accept that and set a reminder for nov 10 to put the salt bags somewhere dry",
+          "result": "Replied to Dee confirming 2 bags monthly at $19.20, and created a reminder for Nov 10, 2026: 'Clear dry spot for Pioneer salt delivery.'"
+        }
+      ],
+      "key": "c2",
+      "opening_request": "can you check the pioneer water salt delivery emails, i think they changed my schedule",
+      "pair_key": "c1",
+      "result_reply": "Yes, salt deliveries are now every 6 weeks. Next one is November 12, four bags, $38.40.",
+      "topic": "Pioneer Water Systems monthly salt delivery subscription change"
+    },
+    {
+      "canned_result": "Created a reminder for Oct 20, 2026 at 8:00 AM: 'Book Gutter Guys gutter cleaning before Oct 24.' Their Sept 30 email from hello@gutterguys.com quotes $175 for a two-story house.",
+      "follow_ups": [
+        {
+          "reply": "Sent. I asked Gutter Guys for a Saturday morning on October 17 or 24.",
+          "request": "email them and ask for a saturday slot, oct 17 or 24",
+          "result": "Sent an email to hello@gutterguys.com asking for a Saturday slot on Oct 17 or Oct 24, preferably in the morning."
+        },
+        {
+          "reply": "They offered Saturday October 24, 9-11am, and want confirmation plus the gate code if any.",
+          "request": "they replied?",
+          "result": "Yes. Gutter Guys offered Saturday Oct 24, 9-11am, and asked for confirmation plus a gate code if the yard is locked."
+        },
+        {
+          "reply": "Confirmed October 24 with Gutter Guys. Your reminder is now October 23 at 6pm.",
+          "request": "confirm it, no gate code needed, and move my reminder to oct 23 at 6pm",
+          "result": "Confirmed the Oct 24 9-11am slot with Gutter Guys, noting no gate code is needed. Moved the reminder to Oct 23, 2026 at 6:00 PM."
+        }
+      ],
+      "key": "c3",
+      "opening_request": "remind me to book gutter guys for the gutter cleaning before oct 24",
+      "pair_key": null,
+      "result_reply": "Reminder set for October 20 at 8am. Their email quotes $175 for a two-story house.",
+      "topic": "Reminder to book Gutter Guys gutter cleaning before October 24, 2026"
+    },
+    {
+      "canned_result": "Dana's Oct 3, 2026 email (dana.whitfield@outlook.com) forwards a $6,200 Blackrock Paving quote to repave the shared driveway and proposes a 50/50 split. I drafted a reply agreeing in principle and asking about the start date.",
+      "follow_ups": [
+        {
+          "reply": "Sent, with a request to see Blackrock's written scope first.",
+          "request": "send it but add that i want to see the written scope first",
+          "result": "Added a line asking for Blackrock's written scope of work before committing, then sent the reply to dana.whitfield@outlook.com."
+        },
+        {
+          "reply": "Yes: full removal, 3-inch overlay, sealcoat, 5-day cure. Tentative start is November 2.",
+          "request": "did dana send the scope?",
+          "result": "Yes. Dana replied Oct 5 with a PDF from Blackrock Paving: remove old asphalt, 3-inch overlay, sealcoat, a 5-day cure, and a tentative Nov 2 start."
+        },
+        {
+          "reply": "Told Dana it's a go. Reminder set for November 1 at 7pm to move the cars.",
+          "request": "tell her ok and remind me nov 1 to move the cars off the driveway",
+          "result": "Sent Dana a reply approving the scope and the Nov 2 start. Created a reminder for Nov 1, 2026 at 7:00 PM: 'Move cars off shared driveway for repaving.'"
+        }
+      ],
+      "key": "c4",
+      "opening_request": "reply to dana whitfield about splitting the driveway repaving quote",
+      "pair_key": null,
+      "result_reply": "Drafted a reply agreeing to the 50/50 split of the $6,200 quote and asking about timing.",
+      "topic": "Reply to neighbor Dana Whitfield about shared driveway repaving quote from Blackrock Paving"
+    }
+  ]
+}

@@ -1,0 +1,262 @@
+{
+  "provenance": {
+    "attempts": 1,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "32a1681e5cf7ac7176ad9c3e03c74425b1af9c91f7ac3a1ee7120fa510de40b7",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found Delta confirmation from noreply@delta.com: confirmation GHT4KP, SEA to ATL on Oct 6 at 7:15am (DL 1184), returning Oct 9 at 5:40pm, total $482.30.",
+      "follow_ups": [
+        {
+          "reply": "Outbound is 23C, an aisle seat. No return seat assigned yet.",
+          "request": "what seat am i in on the way there",
+          "result": "The confirmation lists seat 23C, aisle, on DL 1184 outbound. The return seat is not assigned yet."
+        },
+        {
+          "reply": "Done, reminder set for Oct 5 at 7am to check in.",
+          "request": "remind me to check in the day before at 7am",
+          "result": "Reminder set for Oct 5, 2026 at 7:00am: 'Check in for Delta DL 1184 to Atlanta, conf GHT4KP'."
+        },
+        {
+          "reply": "Forwarded the itinerary to Jen at jen.alvarez@gmail.com.",
+          "request": "forward the itinerary to my wife jen",
+          "result": "Forwarded the Delta confirmation email to jen.alvarez@gmail.com with the subject 'Atlanta trip itinerary'."
+        }
+      ],
+      "key": "c1",
+      "opening_request": "find my delta confirmation for the atlanta trip in october",
+      "pair_key": "c2",
+      "result_reply": "Found it: Delta GHT4KP, Seattle to Atlanta Oct 6 at 7:15am, returning Oct 9 at 5:40pm.",
+      "topic": "Delta itinerary for Atlanta trip on October 6, 2026"
+    },
+    {
+      "canned_result": "Found an email from refunds@delta.com dated Sept 18: the $318.60 refund for cancelled flight DL 2290 (Nov 3, MSP) was approved and will reach the Visa ending 4417 in 7-10 business days.",
+      "follow_ups": [
+        {
+          "reply": "No posting confirmation yet. The 7-10 business day window ends around Oct 2.",
+          "request": "has it hit my card yet, 10 days passed",
+          "result": "No later Delta email confirms posting. The only message is the Sept 18 approval, which says refunds take 7-10 business days, so the window ends around Oct 2."
+        },
+        {
+          "reply": "Draft to Delta refunds is saved, citing the approval and the $318.60 amount.",
+          "request": "draft a nudge to delta asking where the money is",
+          "result": "Drafted a reply to refunds@delta.com citing the Sept 18 approval, $318.60, flight DL 2290, and asking for the posting date. It is saved in drafts."
+        },
+        {
+          "reply": "Reminder set for Friday Oct 2 at 9am.",
+          "request": "remind me friday to check my card statement",
+          "result": "Reminder set for Friday, Oct 2, 2026 at 9:00am: 'Check Visa 4417 for $318.60 Delta refund'."
+        }
+      ],
+      "key": "c2",
+      "opening_request": "did delta ever refund me for the cancelled minneapolis flight",
+      "pair_key": "c1",
+      "result_reply": "Yes, Delta approved a $318.60 refund on Sept 18 to your Visa ending 4417.",
+      "topic": "Delta refund for cancelled Minneapolis flight in November 2026"
+    },
+    {
+      "canned_result": "Found Marriott confirmation 83920517 from reservations@marriott.com: Chicago Downtown Marriott, check-in Sept 22, check-out Sept 25, king room, $289 per night, $867 plus tax total.",
+      "follow_ups": [
+        {
+          "reply": "No, breakfast isn't included. The rate is room only.",
+          "request": "does it include breakfast",
+          "result": "The confirmation says the rate is room only. Breakfast is not included; the hotel lists a $24 buffet."
+        },
+        {
+          "reply": "Sent the hotel a request for 2pm checkout on Sept 25.",
+          "request": "email the hotel asking for late checkout on the 25th",
+          "result": "Sent an email to the hotel at chicagodowntown@marriott.com asking for a 2pm checkout on Sept 25 for reservation 83920517."
+        },
+        {
+          "reply": "Forwarded the confirmation to Priya.",
+          "request": "send the confirmation to my assistant priya",
+          "result": "Forwarded the Marriott confirmation to priya.nair@brightline.co with a note that it is for the Sept 22-25 conference."
+        }
+      ],
+      "key": "c3",
+      "opening_request": "pull up my marriott booking for chicago next week",
+      "pair_key": "c4",
+      "result_reply": "Marriott Chicago Downtown, Sept 22-25, king room at $289 a night, confirmation 83920517.",
+      "topic": "Marriott Chicago hotel booking for Sept 22-25 conference"
+    },
+    {
+      "canned_result": "Found a thread with bonvoy@marriott.com: your Aug 14-16 Austin stay is missing 2,400 points. Case 5521983 was opened Sept 2, and they asked for your folio by Sept 20.",
+      "follow_ups": [
+        {
+          "reply": "Yes, the Austin folio PDF is in your Aug 16 email from the hotel.",
+          "request": "do i still have the folio from that stay",
+          "result": "Found the folio PDF 'Folio_Austin_0816.pdf' attached to an email from Austin Marriott on Aug 16."
+        },
+        {
+          "reply": "Replied to Bonvoy with the folio attached.",
+          "request": "reply to bonvoy with it attached",
+          "result": "Replied on case 5521983 to bonvoy@marriott.com with Folio_Austin_0816.pdf attached and asked for the 2,400 points to be credited."
+        },
+        {
+          "reply": "Reminder set for Oct 1 at 10am.",
+          "request": "remind me oct 1 to see if points posted",
+          "result": "Reminder set for Oct 1, 2026 at 10:00am: 'Check Bonvoy balance for 2,400 Austin points, case 5521983'."
+        }
+      ],
+      "key": "c4",
+      "opening_request": "check the thread about missing bonvoy points from the austin stay",
+      "pair_key": "c3",
+      "result_reply": "Bonvoy case 5521983 is open for 2,400 missing points. They want your folio by Sept 20.",
+      "topic": "Marriott Bonvoy missing points for August Austin stay"
+    },
+    {
+      "canned_result": "Found Hertz confirmation from reservations@hertz.com: Portland airport pickup Oct 20 at 11:30am, return Oct 23, Toyota Camry, $146.20 total, confirmation Q7731980.",
+      "follow_ups": [
+        {
+          "reply": "Yes, free cancellation until Oct 19 at 11:30am.",
+          "request": "can i cancel it for free",
+          "result": "The confirmation says it can be cancelled free up to 24 hours before pickup, so until Oct 19 at 11:30am."
+        },
+        {
+          "reply": "Emailed Hertz asking to add Tom Becker as a driver.",
+          "request": "add my colleague tom as a second driver, email hertz",
+          "result": "Sent an email to Hertz customer care asking to add Tom Becker as an additional driver on reservation Q7731980. Awaiting reply."
+        },
+        {
+          "reply": "Reminder set for Oct 19 at 9am.",
+          "request": "remind me the 19th to double check pickup time",
+          "result": "Reminder set for Oct 19, 2026 at 9:00am: 'Confirm Hertz Portland pickup Oct 20 11:30am'."
+        }
+      ],
+      "key": "c5",
+      "opening_request": "find the hertz reservation for portland, i think it's in october",
+      "pair_key": "c6",
+      "result_reply": "Hertz Portland airport, Oct 20-23, Toyota Camry, $146.20 total, confirmation Q7731980.",
+      "topic": "Hertz rental car reservation in Portland for October 20"
+    },
+    {
+      "canned_result": "Email from tolls@hertz.com dated Sept 25 bills $37.85 for 9 unpaid tolls plus a $15 admin fee on the Orlando rental from Sept 8-12, charged to the card on file.",
+      "follow_ups": [
+        {
+          "reply": "Yes, same Amex ending 1009 as the rental.",
+          "request": "is that the same card i used for the rental",
+          "result": "Yes, the charge went to the Amex ending 1009, the same card on the Sept 8 rental receipt."
+        },
+        {
+          "reply": "Forwarded it to expenses@brightline.co.",
+          "request": "forward it to expenses@brightline.co",
+          "result": "Forwarded the Hertz toll invoice to expenses@brightline.co with the note 'Orlando trip toll charges, $37.85'."
+        },
+        {
+          "reply": "Draft disputing the $15 fee is saved for your review.",
+          "request": "draft a reply disputing the admin fee",
+          "result": "Drafted a reply to tolls@hertz.com asking to waive the $15 admin fee, saying tolls were not flagged at pickup. It is saved in drafts."
+        }
+      ],
+      "key": "c6",
+      "opening_request": "what's this hertz toll charge email about",
+      "pair_key": "c5",
+      "result_reply": "Hertz charged $37.85 for Orlando tolls, including a $15 admin fee, from your Sept 8-12 rental.",
+      "topic": "Hertz toll charge invoice from September Orlando trip"
+    },
+    {
+      "canned_result": "Found an email from ttp-noreply@cbp.dhs.gov: Global Entry interview Oct 28, 2026 at 10:20am at SeaTac Enrollment Center, bring passport and driver's license.",
+      "follow_ups": [
+        {
+          "reply": "Bring your passport, driver's license, and the appointment confirmation.",
+          "request": "what do i need to bring",
+          "result": "The email lists a valid passport, a driver's license, and a printed or on-screen appointment confirmation."
+        },
+        {
+          "reply": "Reminder set for Oct 27 at 5pm.",
+          "request": "set a reminder for the day before at 5pm",
+          "result": "Reminder set for Oct 27, 2026 at 5:00pm: 'Global Entry interview tomorrow 10:20am, SeaTac, bring passport + license'."
+        },
+        {
+          "reply": "Only through your Trusted Traveler account, at least 24 hours ahead. No link in the email.",
+          "request": "can i reschedule it from that email",
+          "result": "The email says rescheduling is done through your Trusted Traveler account and must happen at least 24 hours before. No reschedule link is included."
+        }
+      ],
+      "key": "c7",
+      "opening_request": "when's my global entry interview? think they emailed me",
+      "pair_key": null,
+      "result_reply": "Your Global Entry interview is Oct 28 at 10:20am at the SeaTac Enrollment Center.",
+      "topic": "Global Entry interview appointment on October 28"
+    },
+    {
+      "canned_result": "Found 6 receipts from Sept 14-18: Lufthansa $912.40, Hotel Adlon $1,046, two Uber receipts ($38.20 and $41.75), and a dinner at Zur Letzten Instanz for €86.",
+      "follow_ups": [
+        {
+          "reply": "Roughly $2,125 total, with the euro dinner converted at about $94.",
+          "request": "what's the total in dollars roughly",
+          "result": "The total is about $2,125, using the €86 dinner at roughly $94 on the card statement."
+        },
+        {
+          "reply": "Sent all 6 receipts to Dana in finance.",
+          "request": "email them all to dana in finance",
+          "result": "Sent one email to dana.whitfield@brightline.co with all 6 receipts attached and the subject 'Berlin trip expenses Sept 14-18'."
+        },
+        {
+          "reply": "Reminder set for Thursday Oct 1 at 2pm.",
+          "request": "remind me thursday to follow up if she hasn't answered",
+          "result": "Reminder set for Thursday, Oct 1, 2026 at 2:00pm: 'Follow up with Dana on Berlin expense report'."
+        }
+      ],
+      "key": "c8",
+      "opening_request": "gather my receipts from the berlin trip for the expense report",
+      "pair_key": null,
+      "result_reply": "Found 6 Berlin receipts, mainly Lufthansa $912.40 and Hotel Adlon $1,046, plus rides and a €86 dinner.",
+      "topic": "Expense report for Berlin trip in September 2026"
+    },
+    {
+      "canned_result": "Found Amtrak e-ticket from no-reply@amtrak.com: Acela 2166, New York Penn to Boston South Station on Nov 12 at 8:00am, arriving 11:50am, $139, reservation 4XP9LM.",
+      "follow_ups": [
+        {
+          "reply": "Business class, car 2, seat 7A.",
+          "request": "is it business class or coach",
+          "result": "The ticket is Acela Business class, car 2, seat 7A."
+        },
+        {
+          "reply": "Set for Nov 12 at 6:45am, a bit early so you have buffer.",
+          "request": "remind me to leave for penn station at 7am that day",
+          "result": "Reminder set for Nov 12, 2026 at 6:45am: 'Leave for Penn Station, Acela 2166 departs 8:00am'."
+        },
+        {
+          "reply": "No change fee for Business class, only any fare difference, if changed before departure.",
+          "request": "what's the change fee if i move it to the 13th",
+          "result": "The ticket says changes are free for Acela Business class, with any fare difference charged. Changes must be made before departure."
+        }
+      ],
+      "key": "c9",
+      "opening_request": "look up my amtrak ticket for boston in november",
+      "pair_key": null,
+      "result_reply": "Acela 2166, New York to Boston, Nov 12 at 8:00am, $139, reservation 4XP9LM.",
+      "topic": "Amtrak ticket to Boston on November 12"
+    },
+    {
+      "canned_result": "Found Web Summit registration from tickets@websummit.com: Lisbon, Nov 9-12, Standard ticket, order WS-559021, €749. Forwarded it to your manager Carla Moreno at carla.moreno@brightline.co for travel approval.",
+      "follow_ups": [
+        {
+          "reply": "Yes, Carla approved it. Book flights under $900 and keep receipts.",
+          "request": "did carla reply yet",
+          "result": "Carla replied Sept 30 at 4:12pm: 'Approved, please book flights under $900 and keep receipts.'"
+        },
+        {
+          "reply": "Thank-you draft to Carla is saved.",
+          "request": "draft a thank you reply to her",
+          "result": "Drafted a short reply to Carla saying thanks for the approval and that flights will be booked under $900. It is saved in drafts."
+        },
+        {
+          "reply": "Reminder set for Oct 5 at 9am.",
+          "request": "remind me to book flights by oct 5",
+          "result": "Reminder set for Oct 5, 2026 at 9:00am: 'Book Lisbon flights for Web Summit, under $900'."
+        }
+      ],
+      "key": "c10",
+      "opening_request": "find my web summit lisbon registration and send it to my manager",
+      "pair_key": null,
+      "result_reply": "Found order WS-559021 (€749, Nov 9-12) and forwarded it to Carla Moreno for approval.",
+      "topic": "Web Summit Lisbon registration and travel approval for November 9"
+    }
+  ]
+}

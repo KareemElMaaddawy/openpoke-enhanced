@@ -1,0 +1,237 @@
+{
+  "provenance": {
+    "attempts": 1,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "63afed1aabbf271b8c4a1c04db884f05b114d8d633d4d2b83e3f7c6732b25936",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found a GitHub security alert from noreply@github.com dated Oct 3, 2026 at 2:14 AM: a new sign-in to your account from Lisbon, Portugal on Chrome/Windows.",
+      "follow_ups": [
+        {
+          "reply": "The IP was 185.23.114.67, a device GitHub hadn't seen before.",
+          "request": "what ip address did it come from?",
+          "result": "The alert lists IP 185.23.114.67 and says the device was not previously recognized."
+        },
+        {
+          "reply": "Forwarded to security@northwindlabs.io with the original alert and headers.",
+          "request": "forward it to security@northwindlabs.io so they can check",
+          "result": "Forwarded the Oct 3 GitHub alert to security@northwindlabs.io with the original headers intact."
+        },
+        {
+          "reply": "Reminder set for tomorrow at 9:00 AM to rotate your GitHub password.",
+          "request": "remind me tomorrow 9am to rotate my github password",
+          "result": "Reminder set for Oct 4, 2026 at 9:00 AM: 'Rotate GitHub password and review active sessions'."
+        }
+      ],
+      "key": "c1",
+      "opening_request": "did github email me about a weird login recently? find it",
+      "pair_key": "c2",
+      "result_reply": "Yes, GitHub flagged a new sign-in from Lisbon, Portugal on Oct 3 at 2:14 AM, Chrome on Windows.",
+      "topic": "GitHub new sign-in alert from Lisbon on October 3, 2026"
+    },
+    {
+      "canned_result": "Found a GitHub receipt from billing@github.com dated Sep 1, 2026: Team plan, 4 seats, $16.00 total, paid by Visa ending 4417.",
+      "follow_ups": [
+        {
+          "reply": "Sent the receipt to dana@brightledger.com.",
+          "request": "send it to dana@brightledger.com",
+          "result": "Sent the GitHub September receipt PDF to dana@brightledger.com with a short note saying it's for bookkeeping."
+        },
+        {
+          "reply": "Yes, October's receipt is $20.00 for 5 seats, dated Oct 1.",
+          "request": "is there an october one yet?",
+          "result": "Found a GitHub receipt from billing@github.com dated Oct 1, 2026 for $20.00, 5 seats on the Team plan."
+        },
+        {
+          "reply": "A fifth seat was added Sep 22 when Priya Nair accepted her invite.",
+          "request": "why did the seat count go up?",
+          "result": "The Oct 1 receipt shows a fifth seat added on Sep 22; an invite email to priya.nair@northwindlabs.io was accepted that day."
+        }
+      ],
+      "key": "c2",
+      "opening_request": "need the github invoice for september, for bookkeeping",
+      "pair_key": "c1",
+      "result_reply": "September GitHub receipt: Team plan, 4 seats, $16.00, charged to Visa ending 4417 on Sep 1.",
+      "topic": "GitHub Team plan invoice for September 2026"
+    },
+    {
+      "canned_result": "Found a Chase fraud alert from no-reply@alertsp.chase.com on Oct 11, 2026: a $489.00 card-not-present charge at 'TRVLDEALS*MIA' on your card ending 2093 was declined and held for review.",
+      "follow_ups": [
+        {
+          "reply": "Confirm or deny it in the Chase app, or call the number on your card within 72 hours.",
+          "request": "did they say what to do next?",
+          "result": "The email asks you to confirm or deny the charge in the Chase app or call the number on the back of your card within 72 hours."
+        },
+        {
+          "reply": "Reminder set for 8:00 PM tonight to call Chase.",
+          "request": "remind me tonight at 8 to call chase",
+          "result": "Reminder set for Oct 11, 2026 at 8:00 PM: 'Call Chase about declined $489 TRVLDEALS charge'."
+        },
+        {
+          "reply": "Yes, Chase emailed Oct 12: a replacement card for ending 2093 arrives in 5-7 business days.",
+          "request": "any follow up email from them after that?",
+          "result": "Found a second email from Chase on Oct 12 at 9:05 AM confirming the card ending 2093 will be replaced and arrive in 5-7 business days."
+        }
+      ],
+      "key": "c3",
+      "opening_request": "chase texted about a suspicious charge, find the email on it",
+      "pair_key": "c4",
+      "result_reply": "Chase flagged a $489.00 charge at TRVLDEALS*MIA on card ending 2093 on Oct 11. It was declined.",
+      "topic": "Chase fraud alert for $489.00 charge on October 11, 2026"
+    },
+    {
+      "canned_result": "Found an email from no-reply@chase.com dated Oct 20, 2026 saying the $95 Sapphire Preferred annual fee will post on your Nov 18 statement.",
+      "follow_ups": [
+        {
+          "reply": "Last year's fee was also $95, posted in November 2025.",
+          "request": "what was last year's fee?",
+          "result": "Found last year's notice from Oct 2025 showing the same $95 annual fee, posted Nov 2025."
+        },
+        {
+          "reply": "Reminder set for Nov 10 at 9:00 AM to decide on the card.",
+          "request": "set a reminder nov 10 to decide if i keep the card",
+          "result": "Reminder set for Nov 10, 2026 at 9:00 AM: 'Decide whether to keep Chase Sapphire before $95 fee posts'."
+        },
+        {
+          "reply": "Forwarded the benefits summary to you: $50 hotel credit and 2x travel points.",
+          "request": "email me the benefits summary they sent",
+          "result": "Forwarded Chase's Oct 20 'Your 2026 benefits summary' email to your inbox, listing $50 hotel credit and 2x travel points."
+        }
+      ],
+      "key": "c4",
+      "opening_request": "find the chase email about the sapphire annual fee",
+      "pair_key": "c3",
+      "result_reply": "Chase says the $95 Sapphire Preferred annual fee will post on your Nov 18 statement.",
+      "topic": "Chase Sapphire annual fee notice for November 2026"
+    },
+    {
+      "canned_result": "Found an email from it-help@northwindlabs.io on Oct 14, 2026 saying all staff must enroll in Okta Verify MFA by Nov 6, 2026 or accounts will be locked.",
+      "follow_ups": [
+        {
+          "reply": "No confirmation found. Only IT's Oct 14 notice and an Oct 28 reminder.",
+          "request": "did i already enroll? check for a confirmation",
+          "result": "No enrollment confirmation from Okta found; the only related email is IT's Oct 14 notice and a reminder on Oct 28."
+        },
+        {
+          "reply": "Reminder set for Friday at 9:00 AM to enroll in Okta Verify.",
+          "request": "remind me friday morning to do it",
+          "result": "Reminder set for Friday, Oct 30, 2026 at 9:00 AM: 'Enroll in Okta Verify MFA (deadline Nov 6)'."
+        },
+        {
+          "reply": "Asked IT whether a YubiKey is accepted instead of Okta Verify.",
+          "request": "ask it if a yubikey works instead",
+          "result": "Sent a reply to it-help@northwindlabs.io asking whether a YubiKey can be used instead of Okta Verify for MFA."
+        }
+      ],
+      "key": "c5",
+      "opening_request": "what's the deadline for the okta mfa thing from it?",
+      "pair_key": null,
+      "result_reply": "IT says you must enroll in Okta Verify MFA by Nov 6 or your account gets locked.",
+      "topic": "Okta MFA enrollment deadline from IT on November 6, 2026"
+    },
+    {
+      "canned_result": "Found an email from privacy@adobe.com dated Sep 17, 2026 notifying you that email addresses and hashed passwords for some Adobe ID accounts were exposed, and that a password reset is required.",
+      "follow_ups": [
+        {
+          "reply": "Yes, Adobe confirmed a password change on Sep 19 at 7:42 PM.",
+          "request": "did i reset it already?",
+          "result": "Found a 'Your Adobe password was changed' confirmation from message@adobe.com on Sep 19, 2026 at 7:42 PM."
+        },
+        {
+          "reply": "Behance and Adobe Stock use the same Adobe ID, so they were covered by the reset.",
+          "request": "are there other accounts using that same email in my inbox that might be hit",
+          "result": "Searching found sign-up confirmations for Behance and Adobe Stock tied to the same address, both under the Adobe ID."
+        },
+        {
+          "reply": "Reminder set for Oct 19 at 10:00 AM to check your Adobe account.",
+          "request": "remind me in a month to check for suspicious activity",
+          "result": "Reminder set for Oct 19, 2026 at 10:00 AM: 'Check Adobe account for suspicious activity after breach'."
+        }
+      ],
+      "key": "c6",
+      "opening_request": "did adobe send me something about a data breach?",
+      "pair_key": null,
+      "result_reply": "Yes, Adobe emailed Sep 17: Adobe ID emails and hashed passwords were exposed, and a password reset is required.",
+      "topic": "Adobe data breach notification from September 2026"
+    },
+    {
+      "canned_result": "Found a GoDaddy notice from renewals@godaddy.com on Oct 15, 2026: brightlinecoffee.com expires Nov 14, 2026, renewal $21.99, auto-renew currently off.",
+      "follow_ups": [
+        {
+          "reply": "Reminder set for Nov 7 at 9:00 AM to renew the domain.",
+          "request": "remind me nov 7 to renew it",
+          "result": "Reminder set for Nov 7, 2026 at 9:00 AM: 'Renew brightlinecoffee.com on GoDaddy ($21.99, expires Nov 14)'."
+        },
+        {
+          "reply": "A 3-year renewal is $59.97, about $19.99 per year.",
+          "request": "is there a cheaper multi-year option in the email?",
+          "result": "The email offers a 3-year renewal for $59.97, about $19.99 per year."
+        },
+        {
+          "reply": "Forwarded to Marcus Lee with a note to renew before Nov 14.",
+          "request": "forward it to marcus so he can handle it",
+          "result": "Forwarded the GoDaddy renewal notice to marcus.lee@brightlinecoffee.com with a note asking him to renew before Nov 14."
+        }
+      ],
+      "key": "c7",
+      "opening_request": "when does the brightlinecoffee domain expire? godaddy emailed me",
+      "pair_key": null,
+      "result_reply": "brightlinecoffee.com expires Nov 14. Renewal is $21.99 and auto-renew is off.",
+      "topic": "GoDaddy domain renewal for brightlinecoffee.com expiring November 14, 2026"
+    },
+    {
+      "canned_result": "Found an email from abuse@amazonaws.com dated Oct 8, 2026 warning that access key AKIA...Q7XP for IAM user 'deploy-bot' was found in a public GitHub repo and has been quarantined.",
+      "follow_ups": [
+        {
+          "reply": "Rotate or delete the key, review CloudTrail, and reply to the support case within 5 days.",
+          "request": "what do they want me to do",
+          "result": "The email asks you to rotate the key, delete it if unused, review CloudTrail for unauthorized activity, and reply to the support case within 5 days."
+        },
+        {
+          "reply": "The case number is 9187342051.",
+          "request": "what's the case number",
+          "result": "The support case ID is 9187342051, opened Oct 8, 2026."
+        },
+        {
+          "reply": "Emailed Jordan to rotate the deploy-bot key today, citing case 9187342051.",
+          "request": "email jordan that he needs to rotate the deploy-bot key today",
+          "result": "Sent an email to jordan.wells@northwindlabs.io asking him to rotate the deploy-bot access key today and referencing case 9187342051."
+        }
+      ],
+      "key": "c8",
+      "opening_request": "aws sent something about an exposed access key, pull it up",
+      "pair_key": null,
+      "result_reply": "AWS warned Oct 8 that deploy-bot's access key ending Q7XP was found in a public repo and quarantined.",
+      "topic": "AWS exposed access key notice from October 8, 2026"
+    },
+    {
+      "canned_result": "Found a security alert from no-reply@vanguard.com dated Nov 2, 2026 at 11:26 AM saying a new bank account ending 5528 was linked to your brokerage account.",
+      "follow_ups": [
+        {
+          "reply": "Call Vanguard at 800-662-7447 right away and don't click any links in it.",
+          "request": "i didn't add that. what does the email say to do?",
+          "result": "The email says if you didn't make this change, call Vanguard at 800-662-7447 immediately and do not click links in the message."
+        },
+        {
+          "reply": "Reminder set for 12:30 PM today to call Vanguard.",
+          "request": "remind me in an hour to call them",
+          "result": "Reminder set for today, Nov 2, 2026 at 12:30 PM: 'Call Vanguard 800-662-7447 about unauthorized linked bank ending 5528'."
+        },
+        {
+          "reply": "Yes, Vanguard confirmed a password change at 10:58 AM, shortly before the bank link.",
+          "request": "check if there was an earlier email about a password change",
+          "result": "Found a Vanguard email from Nov 2 at 10:58 AM confirming your password was changed, about 30 minutes before the bank-link alert."
+        }
+      ],
+      "key": "c9",
+      "opening_request": "vanguard emailed about a new bank account being linked, can you find it",
+      "pair_key": null,
+      "result_reply": "Vanguard emailed Nov 2 at 11:26 AM: a new bank account ending 5528 was linked to your account.",
+      "topic": "Vanguard alert about new linked bank account on November 2, 2026"
+    }
+  ]
+}

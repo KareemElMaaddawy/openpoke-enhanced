@@ -1,0 +1,237 @@
+{
+  "provenance": {
+    "attempts": 2,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "a5e84d6ff20bd16e3adb0800068bcc6759d5a106ce5c0142676f0810e3eb57f1",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found a confirmation from reminders@brightsidedental.com: cleaning with Dr. Anita Patel on Wednesday, October 14, 2026 at 8:30 AM, arrive 10 minutes early.",
+      "follow_ups": [
+        {
+          "reply": "Done. You'll get a reminder Oct 13 at 5 PM.",
+          "request": "set a reminder the day before at 5pm",
+          "result": "Created a reminder for Tuesday, October 13, 2026 at 5:00 PM titled 'Dental cleaning tomorrow 8:30 AM - Brightside'."
+        },
+        {
+          "reply": "Sent. I asked Brightside about earlier openings on Oct 14 and will tell you when they reply.",
+          "request": "reply and ask if they have anything earlier that day",
+          "result": "Sent a reply to reminders@brightsidedental.com asking whether any slots before 8:30 AM are open on October 14. No response yet."
+        },
+        {
+          "reply": "Yes, bring your insurance card and photo ID. Forms are only needed if your insurance changed.",
+          "request": "did they say if i need to bring insurance card",
+          "result": "The confirmation email says to bring a photo ID and current insurance card, and that new forms are only needed if insurance changed."
+        }
+      ],
+      "key": "c1",
+      "opening_request": "when is my cleaning at brightside dental? think it's in october",
+      "pair_key": "c2",
+      "result_reply": "Your cleaning with Dr. Patel is Wednesday, Oct 14 at 8:30 AM. Arrive 10 minutes early.",
+      "topic": "Brightside Dental cleaning appointment with Dr. Patel on October 14"
+    },
+    {
+      "canned_result": "Found a statement from billing@brightsidedental.com dated September 22, 2026: crown procedure total $1,150, insurance paid $738, patient balance $412 due October 22.",
+      "follow_ups": [
+        {
+          "reply": "Reminder set for Oct 20 at 9 AM to pay the $412.",
+          "request": "remind me to pay it on october 20",
+          "result": "Set a reminder for October 20, 2026 at 9:00 AM: 'Pay Brightside Dental $412 balance, due Oct 22'."
+        },
+        {
+          "reply": "Yes, a 3-month interest-free plan at about $137.33 a month. You must request it before Oct 22.",
+          "request": "is there a payment plan option mentioned",
+          "result": "The statement mentions a 3-month interest-free plan of about $137.33 per month, available by calling billing or replying to billing@brightsidedental.com before the due date."
+        },
+        {
+          "reply": "Sent your request for the 3-month payment plan. I'll flag their confirmation when it arrives.",
+          "request": "ask them to set me up on the payment plan",
+          "result": "Sent a reply to billing@brightsidedental.com requesting the 3-month plan for the $412 balance and asking for confirmation of the first payment date."
+        }
+      ],
+      "key": "c2",
+      "opening_request": "find the brightside dental bill for the crown, how much do i owe",
+      "pair_key": "c1",
+      "result_reply": "You owe $412 for the crown, due October 22. Insurance already covered $738.",
+      "topic": "Brightside Dental billing statement for crown, $412 balance"
+    },
+    {
+      "canned_result": "Yes, Quest Diagnostics (noreply@questdiagnostics.com) emailed on September 18, 2026 saying results from the September 16 draw are available in the patient portal.",
+      "follow_ups": [
+        {
+          "reply": "Just a portal link, no values. The link expires 7 days after the email.",
+          "request": "does the email include the actual numbers or just a link",
+          "result": "The email has only a portal link and a note that it expires in 7 days. No test values are included in the message."
+        },
+        {
+          "reply": "Forwarded the Quest email to Dana.",
+          "request": "forward it to my wife",
+          "result": "Forwarded the September 18 Quest Diagnostics email to Dana Whitfield at dana.whitfield@gmail.com."
+        },
+        {
+          "reply": "Reminder set for Sunday at 10 AM to check the Quest portal.",
+          "request": "remind me sunday to log in and look at it",
+          "result": "Created a reminder for Sunday, September 20, 2026 at 10:00 AM: 'Check Quest portal for blood work results'."
+        }
+      ],
+      "key": "c3",
+      "opening_request": "did my quest lab results come in yet from last week's blood draw",
+      "pair_key": null,
+      "result_reply": "Yes, Quest emailed Sept 18 saying your Sept 16 results are ready in the patient portal.",
+      "topic": "Quest Diagnostics blood work results notification from September"
+    },
+    {
+      "canned_result": "Found an Aetna EOB from no-reply@aetna.com dated October 2, 2026: Riverside Imaging billed $1,840, plan allowed $960, and patient responsibility is $240 applied to the deductible.",
+      "follow_ups": [
+        {
+          "reply": "Yes, Riverside billed $240 on Oct 9, due Nov 8. It matches the EOB.",
+          "request": "has riverside imaging sent me an actual bill for that",
+          "result": "Found a bill from billing@riversideimaging.com dated October 9 for $240, due November 8, 2026. It matches the EOB."
+        },
+        {
+          "reply": "Reminder set for Nov 5 at 9 AM.",
+          "request": "remind me to pay it nov 5",
+          "result": "Set a reminder for November 5, 2026 at 9:00 AM: 'Pay Riverside Imaging $240, due Nov 8'."
+        },
+        {
+          "reply": "Sent the EOB to Jules with a note that it's for medical expense records.",
+          "request": "send the eob to my accountant jules",
+          "result": "Forwarded the October 2 Aetna EOB to Jules Park at jules@parkandcole.com, with a note that it is for medical expense records."
+        }
+      ],
+      "key": "c4",
+      "opening_request": "pull up the aetna eob for my knee mri",
+      "pair_key": "c5",
+      "result_reply": "Aetna's EOB says you owe $240 for the MRI, which went to your deductible.",
+      "topic": "Aetna explanation of benefits for knee MRI at Riverside Imaging"
+    },
+    {
+      "canned_result": "HR email from benefits@harborlinelogistics.com says open enrollment for Aetna plans runs October 26 to November 15, 2026, and elections are made in the Workday portal.",
+      "follow_ups": [
+        {
+          "reply": "Reminder set for Nov 12 at noon.",
+          "request": "remind me nov 12 so i don't miss it",
+          "result": "Set a reminder for November 12, 2026 at 12:00 PM: 'Finish Aetna open enrollment in Workday, deadline Nov 15'."
+        },
+        {
+          "reply": "PPO goes from $142 to $156 per pay period. The HDHP stays at $88.",
+          "request": "what are the premium changes they mentioned",
+          "result": "The HR email says the PPO premium rises from $142 to $156 per pay period, and the HDHP stays at $88 per pay period."
+        },
+        {
+          "reply": "Sent to HR asking about dependent documents. I'll let you know when they answer.",
+          "request": "email hr and ask if dependents need new docs",
+          "result": "Sent an email to benefits@harborlinelogistics.com asking whether existing dependents need new documentation for 2027 enrollment. Awaiting reply."
+        }
+      ],
+      "key": "c5",
+      "opening_request": "when's the deadline to pick my aetna plan for next year",
+      "pair_key": "c4",
+      "result_reply": "Open enrollment runs Oct 26 to Nov 15. Choose your plan in Workday.",
+      "topic": "Aetna open enrollment deadline November 15 for employer plan"
+    },
+    {
+      "canned_result": "Found Walgreens (noreply@walgreens.com) refill notices for lisinopril 10mg, 90-day supply, last filled September 3, 2026, 2 refills remaining. Set a recurring reminder on the 28th of each month at 9:00 AM.",
+      "follow_ups": [
+        {
+          "reply": "Changed to every 3 months, starting Nov 28 at 9 AM.",
+          "request": "wait, it's a 90 day supply so make it every 3 months",
+          "result": "Replaced the monthly reminder with one every three months, next on November 28, 2026 at 9:00 AM, then February 28 and May 28."
+        },
+        {
+          "reply": "Two refills left, and the prescription expires July 2027.",
+          "request": "how many refills do i have left",
+          "result": "The latest Walgreens notice, dated September 3, 2026, lists 2 refills remaining on the prescription, which expires July 2027."
+        },
+        {
+          "reply": "It was picked up Sept 4. You paid $12.00.",
+          "request": "was the last pickup ready or still waiting",
+          "result": "A Walgreens email on September 4, 2026 said the order was picked up and a receipt for $12.00 was charged to the card ending 4417."
+        }
+      ],
+      "key": "c6",
+      "opening_request": "can you remind me to refill my lisinopril every month, walgreens emails me",
+      "pair_key": null,
+      "result_reply": "Set a monthly reminder on the 28th at 9 AM. Two refills remain, last filled Sept 3.",
+      "topic": "Walgreens lisinopril prescription refill reminders"
+    },
+    {
+      "canned_result": "Yes, Greenfield Pediatrics (frontdesk@greenfieldpeds.com) emailed on September 11, 2026 a PDF immunization record signed by Dr. Elena Alvarez. Maya's school needs it by September 30.",
+      "follow_ups": [
+        {
+          "reply": "Sent the form to Mrs. Okafor at the school nurse's office.",
+          "request": "send it to the school nurse, mrs. okafor",
+          "result": "Forwarded the PDF to Grace Okafor at nurse@oakridgeelementary.org with a note that it's Maya Whitfield's immunization record."
+        },
+        {
+          "reply": "Reminder set for Sept 28 at 8 AM.",
+          "request": "remind me sept 28 to confirm she got it",
+          "result": "Set a reminder for September 28, 2026 at 8:00 AM: 'Confirm Oakridge nurse received Maya's immunization form'."
+        },
+        {
+          "reply": "Her next checkup is due March 2027. The email has a scheduling link.",
+          "request": "when is her next checkup according to that office",
+          "result": "The Greenfield Pediatrics email says Maya's next well-child visit is due in March 2027, and a scheduling link is included."
+        }
+      ],
+      "key": "c7",
+      "opening_request": "need maya's vaccine form from the pediatrician for school, did dr alvarez send it",
+      "pair_key": null,
+      "result_reply": "Yes, Dr. Alvarez sent the signed immunization PDF Sept 11. School needs it by Sept 30.",
+      "topic": "Maya's school immunization form from Dr. Alvarez at Greenfield Pediatrics"
+    },
+    {
+      "canned_result": "Summit PT (scheduling@summitpt.com) has you booked Tuesdays at 5:15 PM with therapist Marcus Lee from September 22 through November 10, 2026, 8 sessions total, $30 copay each.",
+      "follow_ups": [
+        {
+          "reply": "Weekly reminders set for Tuesdays at 4:15 PM through Nov 10.",
+          "request": "remind me an hour before each session",
+          "result": "Created a weekly recurring reminder for Tuesdays at 4:15 PM from September 22 through November 10, 2026: 'PT at Summit 5:15 PM'."
+        },
+        {
+          "reply": "Sent the cancellation for Oct 6 and asked about a makeup slot.",
+          "request": "i have to skip oct 6, email them to cancel that one",
+          "result": "Sent an email to scheduling@summitpt.com asking to cancel the October 6 session and asking whether a makeup slot exists the week of November 16."
+        },
+        {
+          "reply": "Wear a loose or sleeveless top and athletic shoes. Bring Dr. Kim's signed referral the first time.",
+          "request": "what should i wear or bring according to their emails",
+          "result": "Their welcome email says to wear a sleeveless or loose top for shoulder access, bring athletic shoes, and bring the signed referral from Dr. Kim on the first visit."
+        }
+      ],
+      "key": "c8",
+      "opening_request": "summarize my emails from summit physical therapy, what's my schedule",
+      "pair_key": null,
+      "result_reply": "You're booked Tuesdays at 5:15 PM with Marcus Lee, Sept 22 to Nov 10. Copay is $30.",
+      "topic": "Summit Physical Therapy Tuesday sessions for shoulder rehab"
+    },
+    {
+      "canned_result": "Yes, Clearview Optical (orders@clearviewoptical.com) emailed October 6, 2026 that order #CV-20418 is ready for pickup at the Maple Street store, open until 6 PM weekdays. The balance is $85.",
+      "follow_ups": [
+        {
+          "reply": "They hold them 30 days, so pick up by Nov 5.",
+          "request": "how long do they hold them",
+          "result": "The email says orders are held for 30 days, so pickup is needed by November 5, 2026."
+        },
+        {
+          "reply": "Reminder set for Thursday at 5 PM to pick up your glasses.",
+          "request": "remind me thursday after work to pick them up",
+          "result": "Set a reminder for Thursday, October 8, 2026 at 5:00 PM: 'Pick up glasses at Clearview Optical, Maple St, closes 6 PM'."
+        },
+        {
+          "reply": "Your order number is CV-20418.",
+          "request": "what was the order number again",
+          "result": "The order number in the October 6 Clearview Optical email is CV-20418."
+        }
+      ],
+      "key": "c9",
+      "opening_request": "did clearview optical say my new glasses are ready",
+      "pair_key": null,
+      "result_reply": "They're ready at the Maple Street store, open until 6 PM weekdays. Balance is $85.",
+      "topic": "Clearview Optical glasses order pickup after eye exam"
+    }
+  ]
+}

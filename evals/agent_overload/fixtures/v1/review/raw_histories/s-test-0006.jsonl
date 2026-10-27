@@ -1,0 +1,128 @@
+{"payload": "set a reminder to renew my car registration, dmv sent a notice", "tag": "user_message", "timestamp": "2026-10-05 08:30:50"}
+{"payload": "on it now", "tag": "poke_reply", "timestamp": "2026-10-05 08:30:55"}
+{"payload": "[SUCCESS] DMV Notice and Reminder: Found DMV notice (dmv-notices@dmv.ca.gov) for the 2019 Honda Civic, plate 8KLM442. Renewal fee is $168, due Oct 31. Reminder set for Oct 20 at 9:00am.", "tag": "agent_message", "timestamp": "2026-10-05 08:31:52"}
+{"payload": "Reminder set for October 20 at 9am. Renewal for the Civic is $168, due October 31.", "tag": "poke_reply", "timestamp": "2026-10-05 08:31:57"}
+{"payload": "do you believe in luck", "tag": "user_message", "timestamp": "2026-10-05 10:30:42"}
+{"payload": "A little. I think it's mostly preparation bumping into a good coincidence.", "tag": "poke_reply", "timestamp": "2026-10-05 10:30:47"}
+{"payload": "what's the boiling point of water", "tag": "user_message", "timestamp": "2026-10-05 10:35:20"}
+{"payload": "100 degrees Celsius, 212 Fahrenheit, at sea level. Up high it gets lazy.", "tag": "poke_reply", "timestamp": "2026-10-05 10:35:25"}
+{"payload": "i'm back", "tag": "user_message", "timestamp": "2026-10-05 10:55:50"}
+{"payload": "Welcome back. I missed you for almost thirty whole seconds.", "tag": "poke_reply", "timestamp": "2026-10-05 10:55:55"}
+{"payload": "i'm bored", "tag": "user_message", "timestamp": "2026-10-05 11:50:07"}
+{"payload": "Dangerous words. Fun fact to fix it: honey never spoils, and jars found in ancient tombs were still edible.", "tag": "poke_reply", "timestamp": "2026-10-05 11:50:12"}
+{"payload": "draft a reply to tom okafor saying no to the nov 5 demo", "tag": "user_message", "timestamp": "2026-10-05 12:05:28"}
+{"payload": "happy to, checking", "tag": "poke_reply", "timestamp": "2026-10-05 12:05:33"}
+{"payload": "[SUCCESS] Tom Okafor Nov 5 demo email: Found Tom Okafor's Oct 15 email from Stackline Software inviting you to a demo on Nov 5 at 11am. Drafted a polite decline saying the team is not evaluating new tools until January.", "tag": "agent_message", "timestamp": "2026-10-05 12:08:02"}
+{"payload": "Drafted a polite decline to Tom Okafor for the Nov 5 demo, mentioning January.", "tag": "poke_reply", "timestamp": "2026-10-05 12:08:07"}
+{"payload": "good morning", "tag": "user_message", "timestamp": "2026-10-05 12:20:36"}
+{"payload": "Morning! Hope the coffee is strong and the day is gentle.", "tag": "poke_reply", "timestamp": "2026-10-05 12:20:41"}
+{"payload": "lol", "tag": "user_message", "timestamp": "2026-10-05 12:30:20"}
+{"payload": "Glad that landed.", "tag": "poke_reply", "timestamp": "2026-10-05 12:30:25"}
+{"payload": "how much is the late fee if i miss it?", "tag": "user_message", "timestamp": "2026-10-05 13:20:37"}
+{"payload": "on it now", "tag": "poke_reply", "timestamp": "2026-10-05 13:20:42"}
+{"payload": "[SUCCESS] DMV Notice and Reminder: The notice says a late penalty of $20 is added after Oct 31, plus further fees after 30 days.", "tag": "agent_message", "timestamp": "2026-10-05 13:22:13"}
+{"payload": "A $20 late penalty applies after October 31, with more fees after 30 days.", "tag": "poke_reply", "timestamp": "2026-10-05 13:22:18"}
+{"payload": "bye for now", "tag": "user_message", "timestamp": "2026-10-05 14:20:17"}
+{"payload": "Later! I'll be here.", "tag": "poke_reply", "timestamp": "2026-10-05 14:20:22"}
+{"payload": "coffee or tea", "tag": "user_message", "timestamp": "2026-10-05 16:00:43"}
+{"payload": "Coffee for ambition, tea for peace. Which kind of day is it?", "tag": "poke_reply", "timestamp": "2026-10-05 16:00:48"}
+{"payload": "nice weather today", "tag": "user_message", "timestamp": "2026-10-05 16:55:59"}
+{"payload": "Love that for you. Go stand in it for a minute.", "tag": "poke_reply", "timestamp": "2026-10-05 16:56:04"}
+{"payload": "make it a bit warmer", "tag": "user_message", "timestamp": "2026-10-05 17:50:57"}
+{"payload": "got it, on it", "tag": "poke_reply", "timestamp": "2026-10-05 17:51:02"}
+{"payload": "[SUCCESS] Tom Okafor Nov 5 demo email: Revised the draft to open with thanks for his time and end with 'happy to reconnect in the new year'.", "tag": "agent_message", "timestamp": "2026-10-05 17:53:27"}
+{"payload": "Warmed it up with thanks and an offer to reconnect in the new year.", "tag": "poke_reply", "timestamp": "2026-10-05 17:53:32"}
+{"payload": "did the county send the property tax bill yet", "tag": "user_message", "timestamp": "2026-10-05 19:05:10"}
+{"payload": "got it, on it", "tag": "poke_reply", "timestamp": "2026-10-05 19:05:15"}
+{"payload": "[SUCCESS] County Property Tax Bill: Yes, Larimer County Treasurer (treasurer@larimer-county.example) emailed the 2026 second-half property tax notice on Sept 22: $2,318.40 due by Nov 1.", "tag": "agent_message", "timestamp": "2026-10-05 19:07:31"}
+{"payload": "Yes, the county's second-half bill is $2,318.40, due Nov 1.", "tag": "poke_reply", "timestamp": "2026-10-05 19:07:36"}
+{"payload": "i think i'm hungry", "tag": "user_message", "timestamp": "2026-10-06 08:50:36"}
+{"payload": "That \"think\" is doing a lot of work. You're probably hungry. Snack time.", "tag": "poke_reply", "timestamp": "2026-10-06 08:50:41"}
+{"payload": "haha you're funny", "tag": "user_message", "timestamp": "2026-10-06 09:05:53"}
+{"payload": "I try. Mostly I just get lucky.", "tag": "poke_reply", "timestamp": "2026-10-06 09:05:58"}
+{"payload": "remind me nov 1 to decide whether to renew the economist", "tag": "user_message", "timestamp": "2026-10-06 11:30:26"}
+{"payload": "let me dig in", "tag": "poke_reply", "timestamp": "2026-10-06 11:30:31"}
+{"payload": "[SUCCESS] Reminder: Found the Economist renewal notice from subscriptions@economist.com saying the $189 annual plan renews Nov 15. Reminder set for Nov 1 at 10:00am.", "tag": "agent_message", "timestamp": "2026-10-06 11:31:58"}
+{"payload": "Reminder set for Nov 1, 10am. The Economist renews Nov 15 at $189.", "tag": "poke_reply", "timestamp": "2026-10-06 11:32:03"}
+{"payload": "find my web summit lisbon registration and send it to my manager", "tag": "user_message", "timestamp": "2026-10-06 12:50:26"}
+{"payload": "one moment", "tag": "poke_reply", "timestamp": "2026-10-06 12:50:31"}
+{"payload": "[SUCCESS] Web Summit Registration: Found Web Summit registration from tickets@websummit.com: Lisbon, Nov 9-12, Standard ticket, order WS-559021, €749. Forwarded it to your manager Carla Moreno at carla.moreno@brightline.co for travel approval.", "tag": "agent_message", "timestamp": "2026-10-06 12:52:26"}
+{"payload": "Found order WS-559021 (€749, Nov 9-12) and forwarded it to Carla Moreno for approval.", "tag": "poke_reply", "timestamp": "2026-10-06 12:52:31"}
+{"payload": "how's your day going", "tag": "user_message", "timestamp": "2026-10-06 13:35:38"}
+{"payload": "Pretty smooth so far, no fires. Yours?", "tag": "poke_reply", "timestamp": "2026-10-06 13:35:43"}
+{"payload": "remind me to pay it on oct 25", "tag": "user_message", "timestamp": "2026-10-06 14:00:44"}
+{"payload": "working on it", "tag": "poke_reply", "timestamp": "2026-10-06 14:00:49"}
+{"payload": "[SUCCESS] County Property Tax Bill: Created a reminder for Oct 25, 2026 at 10:00am: 'Pay Larimer County property tax, $2,318.40, due Nov 1'.", "tag": "agent_message", "timestamp": "2026-10-06 14:02:07"}
+{"payload": "Reminder set for Oct 25 at 10am to pay the property tax.", "tag": "poke_reply", "timestamp": "2026-10-06 14:02:12"}
+{"payload": "move the reminder to oct 15 at 7am", "tag": "user_message", "timestamp": "2026-10-06 15:10:44"}
+{"payload": "give me a sec", "tag": "poke_reply", "timestamp": "2026-10-06 15:10:49"}
+{"payload": "[SUCCESS] DMV Notice and Reminder: Reminder moved to Oct 15 at 7:00am: 'Renew Honda Civic registration, $168, due Oct 31.'", "tag": "agent_message", "timestamp": "2026-10-06 15:12:03"}
+{"payload": "Moved to October 15 at 7am.", "tag": "poke_reply", "timestamp": "2026-10-06 15:12:08"}
+{"payload": "i should go to the gym", "tag": "user_message", "timestamp": "2026-10-06 17:00:29"}
+{"payload": "Should, or want to? Either way, future you will send a thank-you note.", "tag": "poke_reply", "timestamp": "2026-10-06 17:00:34"}
+{"payload": "what's the largest planet", "tag": "user_message", "timestamp": "2026-10-06 17:15:12"}
+{"payload": "Jupiter. Big enough to fit every other planet inside with room to spare.", "tag": "poke_reply", "timestamp": "2026-10-06 17:15:17"}
+{"payload": "did carla reply yet", "tag": "user_message", "timestamp": "2026-10-06 18:05:27"}
+{"payload": "one moment", "tag": "poke_reply", "timestamp": "2026-10-06 18:05:32"}
+{"payload": "[SUCCESS] Web Summit Registration: Carla replied Sept 30 at 4:12pm: 'Approved, please book flights under $900 and keep receipts.'", "tag": "agent_message", "timestamp": "2026-10-06 18:07:18"}
+{"payload": "Yes, Carla approved it. Book flights under $900 and keep receipts.", "tag": "poke_reply", "timestamp": "2026-10-06 18:07:23"}
+{"payload": "how much was it last year", "tag": "user_message", "timestamp": "2026-10-06 20:05:13"}
+{"payload": "checking now", "tag": "poke_reply", "timestamp": "2026-10-06 20:05:18"}
+{"payload": "[SUCCESS] Reminder: Last year's receipt from Nov 15, 2025 shows $169 for the annual plan.", "tag": "agent_message", "timestamp": "2026-10-06 20:07:38"}
+{"payload": "$169 last year, so a $20 increase.", "tag": "poke_reply", "timestamp": "2026-10-06 20:07:43"}
+{"payload": "thanks, you're the best", "tag": "user_message", "timestamp": "2026-10-07 08:50:29"}
+{"payload": "Stop, you'll make me blush, and I don't even have cheeks.", "tag": "poke_reply", "timestamp": "2026-10-07 08:50:34"}
+{"payload": "ok send it", "tag": "user_message", "timestamp": "2026-10-07 09:40:51"}
+{"payload": "right away", "tag": "poke_reply", "timestamp": "2026-10-07 09:40:56"}
+{"payload": "[SUCCESS] Tom Okafor Nov 5 demo email: Sent the reply to tom.okafor@stacklinesoftware.com at 2:41pm.", "tag": "agent_message", "timestamp": "2026-10-07 09:43:12"}
+{"payload": "Sent to Tom Okafor.", "tag": "poke_reply", "timestamp": "2026-10-07 09:43:17"}
+{"payload": "find the cancellation instructions in that email", "tag": "user_message", "timestamp": "2026-10-07 11:55:32"}
+{"payload": "right away", "tag": "poke_reply", "timestamp": "2026-10-07 11:55:37"}
+{"payload": "[SUCCESS] Reminder: The notice says to cancel via economist.com/manage or by emailing help@economist.com at least 3 days before renewal.", "tag": "agent_message", "timestamp": "2026-10-07 11:57:46"}
+{"payload": "Cancel at economist.com/manage or email help@economist.com at least 3 days before Nov 15.", "tag": "poke_reply", "timestamp": "2026-10-07 11:57:51"}
+{"payload": "did i get a smog check notice too?", "tag": "user_message", "timestamp": "2026-10-07 12:40:36"}
+{"payload": "on it now", "tag": "poke_reply", "timestamp": "2026-10-07 12:40:41"}
+{"payload": "[SUCCESS] DMV Notice and Reminder: Yes, the notice says a smog certificate is required for this renewal and has already been received electronically from a station dated Sep 12.", "tag": "agent_message", "timestamp": "2026-10-07 12:43:00"}
+{"payload": "Smog is required, but a certificate from September 12 is already on file.", "tag": "poke_reply", "timestamp": "2026-10-07 12:43:05"}
+{"payload": "draft a thank you reply to her", "tag": "user_message", "timestamp": "2026-10-07 13:40:56"}
+{"payload": "on it", "tag": "poke_reply", "timestamp": "2026-10-07 13:41:01"}
+{"payload": "[SUCCESS] Web Summit Registration: Drafted a short reply to Carla saying thanks for the approval and that flights will be booked under $900. It is saved in drafts.", "tag": "agent_message", "timestamp": "2026-10-07 13:42:45"}
+{"payload": "Thank-you draft to Carla is saved.", "tag": "poke_reply", "timestamp": "2026-10-07 13:42:50"}
+{"payload": "remind me jan 11 to follow up with him", "tag": "user_message", "timestamp": "2026-10-07 14:05:15"}
+{"payload": "pulling that up now", "tag": "poke_reply", "timestamp": "2026-10-07 14:05:20"}
+{"payload": "[SUCCESS] Tom Okafor Nov 5 demo email: Created a reminder for Jan 11, 2027 at 9:00am: 'Follow up with Tom Okafor at Stackline'.", "tag": "agent_message", "timestamp": "2026-10-07 14:06:34"}
+{"payload": "Reminder set for Jan 11 to follow up with Tom.", "tag": "poke_reply", "timestamp": "2026-10-07 14:06:39"}
+{"payload": "got any fun facts", "tag": "user_message", "timestamp": "2026-10-07 15:45:53"}
+{"payload": "Octopuses have three hearts. Two for the gills, one for everything else. Overachievers.", "tag": "poke_reply", "timestamp": "2026-10-07 15:45:58"}
+{"payload": "is there a late fee if i miss it", "tag": "user_message", "timestamp": "2026-10-07 16:20:25"}
+{"payload": "working on it", "tag": "poke_reply", "timestamp": "2026-10-07 16:20:30"}
+{"payload": "[SUCCESS] County Property Tax Bill: The notice says payments after Nov 1 get a 1.5% monthly interest charge, about $34.78 for the first month on this amount.", "tag": "agent_message", "timestamp": "2026-10-07 16:22:57"}
+{"payload": "Yes, 1.5% monthly interest, roughly $34.78 for the first month.", "tag": "poke_reply", "timestamp": "2026-10-07 16:23:02"}
+{"payload": "that's so annoying", "tag": "user_message", "timestamp": "2026-10-07 16:55:09"}
+{"payload": "Ugh, yeah, that's irritating. You're allowed to be mad about it for a minute.", "tag": "poke_reply", "timestamp": "2026-10-07 16:55:14"}
+{"payload": "move the reminder to oct 30", "tag": "user_message", "timestamp": "2026-10-07 18:35:49"}
+{"payload": "one moment", "tag": "poke_reply", "timestamp": "2026-10-07 18:35:54"}
+{"payload": "[SUCCESS] Reminder: Moved the reminder to Oct 30 at 10:00am.", "tag": "agent_message", "timestamp": "2026-10-07 18:37:05"}
+{"payload": "Moved to Oct 30 at 10am.", "tag": "poke_reply", "timestamp": "2026-10-07 18:37:10"}
+{"payload": "brb", "tag": "user_message", "timestamp": "2026-10-08 14:45:31"}
+{"payload": "Take your time.", "tag": "poke_reply", "timestamp": "2026-10-08 14:45:36"}
+{"payload": "remind me to book flights by oct 5", "tag": "user_message", "timestamp": "2026-10-08 15:45:33"}
+{"payload": "working on it", "tag": "poke_reply", "timestamp": "2026-10-08 15:45:38"}
+{"payload": "[SUCCESS] Web Summit Registration: Reminder set for Oct 5, 2026 at 9:00am: 'Book Lisbon flights for Web Summit, under $900'.", "tag": "agent_message", "timestamp": "2026-10-08 15:47:07"}
+{"payload": "Reminder set for Oct 5 at 9am.", "tag": "poke_reply", "timestamp": "2026-10-08 15:47:12"}
+{"payload": "it's raining again", "tag": "user_message", "timestamp": "2026-10-08 16:30:48"}
+{"payload": "Classic. Perfect excuse to stay in and feel smug about it.", "tag": "poke_reply", "timestamp": "2026-10-08 16:30:53"}
+{"payload": "send the notice to my accountant priya", "tag": "user_message", "timestamp": "2026-10-08 16:50:50"}
+{"payload": "right away", "tag": "poke_reply", "timestamp": "2026-10-08 16:50:55"}
+{"payload": "[SUCCESS] County Property Tax Bill: Forwarded the Sept 22 tax notice to priya.nair@nairtax.example with the PDF attached.", "tag": "agent_message", "timestamp": "2026-10-08 16:53:35"}
+{"payload": "Sent the tax notice PDF to Priya.", "tag": "poke_reply", "timestamp": "2026-10-08 16:53:40"}
+{"payload": "what was the order number for the web summit ticket again", "tag": "user_message", "timestamp": "2026-10-08 17:25:36"}
+{"payload": "Checking your Web Summit registration for the order number.", "tag": "poke_reply", "timestamp": "2026-10-08 17:25:41"}
+{"payload": "[SUCCESS] Web Summit Registration: Web Summit Lisbon registration order is WS-559021, Standard ticket, €749, Nov 9-12.", "tag": "agent_message", "timestamp": "2026-10-08 17:28:59"}
+{"payload": "Your Web Summit order number is WS-559021. It's the Standard ticket for €749, Nov 9-12 in Lisbon.", "tag": "poke_reply", "timestamp": "2026-10-08 17:29:04"}
+{"payload": "thanks, you're handy", "tag": "user_message", "timestamp": "2026-10-08 17:47:04"}
+{"payload": "Happy to help.", "tag": "poke_reply", "timestamp": "2026-10-08 17:47:09"}
+{"payload": "can you check if the county emailed any confirmation that they got my property tax payment", "tag": "user_message", "timestamp": "2026-10-08 19:59:09"}
+{"payload": "Looking for a payment confirmation from the county now.", "tag": "poke_reply", "timestamp": "2026-10-08 19:59:14"}
+{"payload": "[SUCCESS] County Property Tax Bill: No payment confirmation found yet from treasurer@larimer-county.example. The only email from them is the Sept 22 notice for $2,318.40 due Nov 1.", "tag": "agent_message", "timestamp": "2026-10-08 20:02:55"}
+{"payload": "I don't see a confirmation from the county yet. The only email from them is still the Sept 22 notice for $2,318.40, due Nov 1.", "tag": "poke_reply", "timestamp": "2026-10-08 20:03:00"}

@@ -1,0 +1,112 @@
+{
+  "provenance": {
+    "attempts": 1,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "d409a23eb84c0fa60c5f46bfbb1ee6e46a3ac9ebb6cf4ccdd43190444bb5285e",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found a September 12 email from billing@onemedical.com saying your annual membership renews September 30, 2026 for $199 on the Visa ending 4417.",
+      "follow_ups": [
+        {
+          "reply": "Done. You'll get a reminder September 28 at 9am.",
+          "request": "remind me september 28 to decide if i'm keeping it",
+          "result": "Set a reminder for September 28, 2026 at 9:00am: 'Decide on One Medical renewal ($199 charges Sept 30)'."
+        },
+        {
+          "reply": "Cancel in account settings under Membership, or email support@onemedical.com before September 30.",
+          "request": "does the email say how to cancel",
+          "result": "The email says to cancel by logging into your One Medical account under Membership settings, or by emailing support@onemedical.com before September 30 to avoid the charge."
+        },
+        {
+          "reply": "Forwarded the renewal notice to Priya.",
+          "request": "forward that renewal notice to priya",
+          "result": "Forwarded the September 12 One Medical renewal email to Priya at priya.shah@gmail.com with no added note."
+        }
+      ],
+      "key": "c1",
+      "opening_request": "find the one medical membership renewal email, when does it charge me",
+      "pair_key": "c2",
+      "result_reply": "It renews September 30 for $199 on your Visa ending 4417, per billing@onemedical.com.",
+      "topic": "One Medical annual membership renewal of $199 on September 30"
+    },
+    {
+      "canned_result": "Found a confirmation from appointments@onemedical.com for October 21, 2026 at 9:40am with Dr. Aisha Grant at One Medical Chicago Loop, 30 N LaSalle St, for typhoid and hepatitis A vaccines ahead of your Peru trip.",
+      "follow_ups": [
+        {
+          "reply": "Yes, an intake form in the app 24 hours before, and bring your immunization history.",
+          "request": "did they ask me to fill out anything beforehand",
+          "result": "Yes, the confirmation asks you to complete a travel health intake form in the One Medical app at least 24 hours before the visit and bring your immunization history."
+        },
+        {
+          "reply": "Reminder set for October 20 at noon.",
+          "request": "remind me the day before to do the intake form",
+          "result": "Set a reminder for October 20, 2026 at 12:00pm: 'Complete One Medical travel intake form before Oct 21 visit'."
+        },
+        {
+          "reply": "Sent your question to One Medical about adding yellow fever. No reply yet.",
+          "request": "email them and ask if i can get the yellow fever shot too",
+          "result": "Sent a reply to appointments@onemedical.com asking whether a yellow fever vaccine can be added to the October 21 visit with Dr. Grant. No response yet."
+        }
+      ],
+      "key": "c2",
+      "opening_request": "pull up my one medical travel vaccine appointment, when is it and where",
+      "pair_key": "c1",
+      "result_reply": "It's October 21 at 9:40am with Dr. Aisha Grant at One Medical Chicago Loop, on LaSalle St.",
+      "topic": "One Medical travel vaccine appointment with Dr. Aisha Grant on October 21 before Peru trip"
+    },
+    {
+      "canned_result": "Found a confirmation from scheduling@audiocareassoc.com for a hearing evaluation with Dr. Marcus Feld on Monday, November 9, 2026 at 2:15pm at AudioCare Associates, 220 Elm Street, Suite 3B.",
+      "follow_ups": [
+        {
+          "reply": "Asked AudioCare to move it to November 10 after 1pm. Waiting to hear back.",
+          "request": "ask them if i can move it to the 10th",
+          "result": "Sent a reply to scheduling@audiocareassoc.com asking to move the evaluation from November 9 to November 10, any time after 1pm. Awaiting response."
+        },
+        {
+          "reply": "Avoid loud noise for 24 hours before, and arrive 10 minutes early for paperwork.",
+          "request": "is there anything i need to do before the test",
+          "result": "The confirmation says to avoid loud noise for 24 hours before the test and to arrive 10 minutes early to complete paperwork. No fasting or prep is needed."
+        },
+        {
+          "reply": "Reminder set for November 8 at 6pm.",
+          "request": "remind me the evening before",
+          "result": "Set a reminder for November 8, 2026 at 6:00pm: 'Hearing test tomorrow 2:15pm at AudioCare, avoid loud noise'."
+        }
+      ],
+      "key": "c3",
+      "opening_request": "find my hearing test appointment confirmation with audiocare",
+      "pair_key": null,
+      "result_reply": "Hearing test is Monday, November 9 at 2:15pm with Dr. Marcus Feld, 220 Elm Street, Suite 3B.",
+      "topic": "Hearing test with Dr. Marcus Feld at AudioCare Associates on November 9"
+    },
+    {
+      "canned_result": "Found a reminder from frontdesk@willowcreekvet.com for Biscuit's rabies booster and heartworm test with Dr. Tran on Saturday, September 26, 2026 at 10:30am. The estimate is $148.",
+      "follow_ups": [
+        {
+          "reply": "Sent his current vaccine records to Pawsome Boarding, noting an update is coming after the 26th.",
+          "request": "send his vaccine records to pawsome boarding",
+          "result": "Emailed Biscuit's most recent vaccination record PDF, from Willow Creek's March email, to info@pawsomeboarding.com with a note that the rabies booster will be updated after September 26."
+        },
+        {
+          "reply": "Reminder set for Friday, September 25 at 7:30pm.",
+          "request": "remind me friday to take his stool sample",
+          "result": "Set a reminder for Friday, September 25, 2026 at 7:30pm: 'Collect Biscuit's stool sample for Willow Creek visit tomorrow'."
+        },
+        {
+          "reply": "No fasting needed. Just bring him on a leash.",
+          "request": "did they say he needs to fast",
+          "result": "The reminder says no fasting is needed, but to bring Biscuit on a leash and to skip his morning treats if he gets car sick."
+        }
+      ],
+      "key": "c4",
+      "opening_request": "what time is biscuit's vet appointment at willow creek",
+      "pair_key": null,
+      "result_reply": "Biscuit's appointment is Saturday, September 26 at 10:30am with Dr. Tran. Estimated cost is $148.",
+      "topic": "Biscuit the dog's rabies booster and heartworm test at Willow Creek Animal Hospital on September 26"
+    }
+  ]
+}

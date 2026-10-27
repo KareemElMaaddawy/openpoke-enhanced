@@ -1,0 +1,1353 @@
+{
+  "cost_profile": {
+    "routing_calls_per_turn": null,
+    "sequence_turn_usd": null,
+    "single_turn_usd": null,
+    "summarizer_per_sequence_run_usd": 0.0006633531249999999,
+    "token_probe_usd": null
+  },
+  "costs": {
+    "by_purpose": {
+      "summarizer": {
+        "calls": 2,
+        "completion_tokens": 4688,
+        "cost_usd": 0.0026534124999999997,
+        "prompt_tokens": 5496,
+        "reasoning_tokens": 3441
+      }
+    },
+    "total_calls": 2,
+    "total_cost_usd": 0.0026534124999999997
+  },
+  "metrics_version": "1",
+  "sequence": {
+    "dev": {
+      "carried": {
+        "10": {
+          "accuracy": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "accuracy_lenient": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "agents_shown_median": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "api_error_turns": 12,
+          "breakdowns": {
+            "label_kind": {},
+            "message_subtype": {},
+            "query_style": {},
+            "turn_index": {}
+          },
+          "calls_per_turn_mean": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "confusion": {},
+          "consistency": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "cost_per_turn_mean": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "dormant_fraction": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "duplicate_reuse_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "excluded_target_error_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "excluded_target_error_rate_old": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "extra_delegation_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "false_reuse_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "false_spawn_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "input_tokens_per_turn_median": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "input_tokens_per_turn_p95": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "invalid_call_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "latency_ms_per_turn_median": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "latency_ms_per_turn_p95": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "loop_limit_turns": 0,
+          "misroute_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "missed_delegation_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "near_duplicate_share": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "output_tokens_per_turn_mean": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "recency_lock_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "routing_calls_per_turn_mean": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "scored_turns": 0,
+          "turns": 12
+        },
+        "200": {
+          "accuracy": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "accuracy_lenient": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "agents_shown_median": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "api_error_turns": 12,
+          "breakdowns": {
+            "label_kind": {},
+            "message_subtype": {},
+            "query_style": {},
+            "turn_index": {}
+          },
+          "calls_per_turn_mean": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "confusion": {},
+          "consistency": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "cost_per_turn_mean": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "dormant_fraction": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "duplicate_reuse_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "excluded_target_error_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "excluded_target_error_rate_old": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "extra_delegation_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "false_reuse_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "false_spawn_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "input_tokens_per_turn_median": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "input_tokens_per_turn_p95": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "invalid_call_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "latency_ms_per_turn_median": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "latency_ms_per_turn_p95": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "loop_limit_turns": 0,
+          "misroute_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "missed_delegation_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "near_duplicate_share": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "output_tokens_per_turn_mean": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "recency_lock_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "routing_calls_per_turn_mean": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "scored_turns": 0,
+          "turns": 12
+        },
+        "all_N": {
+          "accuracy": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "accuracy_lenient": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "agents_shown_median": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "api_error_turns": 24,
+          "calls_per_turn_mean": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "confusion": {},
+          "consistency": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "cost_per_turn_mean": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "dormant_fraction": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "duplicate_reuse_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "excluded_target_error_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "excluded_target_error_rate_old": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "extra_delegation_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "false_reuse_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "false_spawn_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "input_tokens_per_turn_median": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "input_tokens_per_turn_p95": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "invalid_call_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "latency_ms_per_turn_median": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "latency_ms_per_turn_p95": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "loop_limit_turns": 0,
+          "misroute_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "missed_delegation_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "near_duplicate_share": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "output_tokens_per_turn_mean": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "recency_lock_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "routing_calls_per_turn_mean": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "scored_turns": 0,
+          "turns": 24
+        }
+      },
+      "compounding": {
+        "10": {
+          "overall_difference": {
+            "ci": null,
+            "value": null
+          },
+          "per_turn": {}
+        },
+        "200": {
+          "overall_difference": {
+            "ci": null,
+            "value": null
+          },
+          "per_turn": {}
+        }
+      },
+      "corrected": {
+        "10": {
+          "accuracy": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "accuracy_lenient": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "agents_shown_median": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "api_error_turns": 12,
+          "breakdowns": {
+            "label_kind": {},
+            "message_subtype": {},
+            "query_style": {},
+            "turn_index": {}
+          },
+          "calls_per_turn_mean": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "confusion": {},
+          "consistency": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "cost_per_turn_mean": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "dormant_fraction": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "duplicate_reuse_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "excluded_target_error_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "excluded_target_error_rate_old": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "extra_delegation_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "false_reuse_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "false_spawn_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "input_tokens_per_turn_median": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "input_tokens_per_turn_p95": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "invalid_call_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "latency_ms_per_turn_median": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "latency_ms_per_turn_p95": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "loop_limit_turns": 0,
+          "misroute_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "missed_delegation_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "near_duplicate_share": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "output_tokens_per_turn_mean": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "recency_lock_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "routing_calls_per_turn_mean": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "scored_turns": 0,
+          "turns": 12
+        },
+        "200": {
+          "accuracy": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "accuracy_lenient": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "agents_shown_median": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "api_error_turns": 12,
+          "breakdowns": {
+            "label_kind": {},
+            "message_subtype": {},
+            "query_style": {},
+            "turn_index": {}
+          },
+          "calls_per_turn_mean": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "confusion": {},
+          "consistency": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "cost_per_turn_mean": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "dormant_fraction": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "duplicate_reuse_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "excluded_target_error_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "excluded_target_error_rate_old": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "extra_delegation_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "false_reuse_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "false_spawn_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "input_tokens_per_turn_median": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "input_tokens_per_turn_p95": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "invalid_call_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "latency_ms_per_turn_median": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "latency_ms_per_turn_p95": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "loop_limit_turns": 0,
+          "misroute_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "missed_delegation_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "near_duplicate_share": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "output_tokens_per_turn_mean": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "recency_lock_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "routing_calls_per_turn_mean": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "scored_turns": 0,
+          "turns": 12
+        },
+        "all_N": {
+          "accuracy": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "accuracy_lenient": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "agents_shown_median": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "api_error_turns": 24,
+          "calls_per_turn_mean": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "confusion": {},
+          "consistency": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "cost_per_turn_mean": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "dormant_fraction": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "duplicate_reuse_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "excluded_target_error_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "excluded_target_error_rate_old": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "extra_delegation_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "false_reuse_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "false_spawn_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "input_tokens_per_turn_median": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "input_tokens_per_turn_p95": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "invalid_call_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "latency_ms_per_turn_median": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "latency_ms_per_turn_p95": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "loop_limit_turns": 0,
+          "misroute_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "missed_delegation_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "near_duplicate_share": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "output_tokens_per_turn_mean": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "recency_lock_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "routing_calls_per_turn_mean": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "scored_turns": 0,
+          "turns": 24
+        }
+      },
+      "duplicates": {
+        "10": {
+          "created_minus_gold": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "duplicate_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "extra_agents": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "extra_agents_per_thread": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "inflation_ratio": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "sequence_runs": 0,
+          "slug_collisions": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "slug_collisions_total": 0
+        },
+        "200": {
+          "created_minus_gold": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "duplicate_rate": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "extra_agents": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "extra_agents_per_thread": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "inflation_ratio": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "sequence_runs": 0,
+          "slug_collisions": {
+            "ci": null,
+            "n": 0,
+            "value": null
+          },
+          "slug_collisions_total": 0
+        }
+      }
+    }
+  },
+  "single": {
+    "dev": {
+      "10": {
+        "accuracy": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "accuracy_lenient": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "agents_shown_median": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "api_error_turns": 10,
+        "breakdowns": {
+          "history_type": {},
+          "label_kind": {},
+          "message_subtype": {},
+          "name_descriptiveness": {},
+          "query_style": {},
+          "target_age_bucket": {},
+          "target_name_visible": {},
+          "target_position": {}
+        },
+        "calls_per_turn_mean": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "confusion": {},
+        "consistency": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "cost_per_turn_mean": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "dormant_fraction": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "duplicate_reuse_rate": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "excluded_target_error_rate": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "excluded_target_error_rate_old": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "extra_delegation_rate": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "false_reuse_rate": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "false_spawn_rate": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "input_tokens_per_turn_median": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "input_tokens_per_turn_p95": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "invalid_call_rate": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "latency_ms_per_turn_median": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "latency_ms_per_turn_p95": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "loop_limit_turns": 0,
+        "misroute_rate": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "missed_delegation_rate": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "near_duplicate_share": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "output_tokens_per_turn_mean": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "recency_lock_rate": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "roster_tokens_per_call_median": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "roster_tokens_per_turn_median": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "routing_calls_per_turn_mean": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "scored_turns": 0,
+        "turns": 10
+      },
+      "200": {
+        "accuracy": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "accuracy_lenient": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "agents_shown_median": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "api_error_turns": 10,
+        "breakdowns": {
+          "history_type": {},
+          "label_kind": {},
+          "message_subtype": {},
+          "name_descriptiveness": {},
+          "query_style": {},
+          "target_age_bucket": {},
+          "target_name_visible": {},
+          "target_position": {}
+        },
+        "calls_per_turn_mean": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "confusion": {},
+        "consistency": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "cost_per_turn_mean": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "dormant_fraction": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "duplicate_reuse_rate": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "excluded_target_error_rate": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "excluded_target_error_rate_old": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "extra_delegation_rate": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "false_reuse_rate": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "false_spawn_rate": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "input_tokens_per_turn_median": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "input_tokens_per_turn_p95": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "invalid_call_rate": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "latency_ms_per_turn_median": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "latency_ms_per_turn_p95": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "loop_limit_turns": 0,
+        "misroute_rate": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "missed_delegation_rate": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "near_duplicate_share": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "output_tokens_per_turn_mean": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "recency_lock_rate": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "roster_tokens_per_call_median": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "roster_tokens_per_turn_median": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "routing_calls_per_turn_mean": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "scored_turns": 0,
+        "turns": 10
+      },
+      "all_N": {
+        "accuracy": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "accuracy_lenient": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "agents_shown_median": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "api_error_turns": 20,
+        "calls_per_turn_mean": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "confusion": {},
+        "consistency": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "cost_per_turn_mean": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "dormant_fraction": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "duplicate_reuse_rate": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "excluded_target_error_rate": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "excluded_target_error_rate_old": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "extra_delegation_rate": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "false_reuse_rate": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "false_spawn_rate": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "input_tokens_per_turn_median": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "input_tokens_per_turn_p95": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "invalid_call_rate": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "latency_ms_per_turn_median": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "latency_ms_per_turn_p95": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "loop_limit_turns": 0,
+        "misroute_rate": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "missed_delegation_rate": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "near_duplicate_share": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "output_tokens_per_turn_mean": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "recency_lock_rate": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "roster_tokens_per_call_median": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "roster_tokens_per_turn_median": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "routing_calls_per_turn_mean": {
+          "ci": null,
+          "n": 0,
+          "value": null
+        },
+        "scored_turns": 0,
+        "turns": 20
+      },
+      "drop_point": {
+        "baseline_n": 10,
+        "differences": {
+          "200": {
+            "ci": null,
+            "value": null
+          }
+        },
+        "drop_n": null
+      },
+      "roster_token_fit": {
+        "intercept": null,
+        "points": 0,
+        "slope": null
+      }
+    }
+  }
+}

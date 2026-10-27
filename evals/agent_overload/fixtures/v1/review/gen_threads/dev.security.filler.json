@@ -1,0 +1,131 @@
+{
+  "provenance": {
+    "attempts": 1,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "5b91ed7d148e40b9dac32a8e4788d0e7855be0903aea48fa3354237a6e080987",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found Twilio email from October 14, 2026 warning the account will be restricted on October 21 unless the owner phone number ending in 4417 is verified. It includes a verification link.",
+      "key": "f1",
+      "opening_request": "can you find that Twilio email about my account getting suspended over phone verification",
+      "result_reply": "Found it. Twilio will restrict your account October 21 unless you verify the phone ending 4417.",
+      "topic": "Twilio account suspension warning for unverified phone number, October 14, 2026"
+    },
+    {
+      "canned_result": "Shopify email from September 17, 2026 says store owner Elena Ruiz removed the 'Orders export' permission and added 'Inventory edit' to your staff account.",
+      "key": "f2",
+      "opening_request": "summarize the Shopify email about my staff permissions being changed last week",
+      "result_reply": "Elena Ruiz removed your Orders export permission and added Inventory edit on September 17.",
+      "topic": "Shopify staff account permission change by Elena Ruiz on September 17, 2026"
+    },
+    {
+      "canned_result": "Bank of America sent an alert on October 23, 2026 that 'Tom Delgado' was added as a Zelle recipient. The email says to call the number on your card if you did not do this.",
+      "key": "f3",
+      "opening_request": "check if BofA emailed me about a new Zelle recipient this week",
+      "result_reply": "Yes, BofA emailed October 23 that Tom Delgado was added as a Zelle recipient.",
+      "topic": "Bank of America online banking new Zelle recipient alert, October 23, 2026"
+    },
+    {
+      "canned_result": "Set a reminder for November 4, 2026 titled 'Rotate Mailchimp API key'. Mailchimp's email says the current key is over 12 months old and will be disabled November 12.",
+      "key": "f4",
+      "opening_request": "remind me on Nov 4 to rotate the Mailchimp API key per their email",
+      "result_reply": "Reminder set for November 4 to rotate the Mailchimp key, which gets disabled November 12.",
+      "topic": "Mailchimp API key rotation reminder for the Harbor Lane newsletter, November 5, 2026"
+    },
+    {
+      "canned_result": "Notion email dated October 12, 2026 says guest access for Tanaka Design (3 guests) expires October 26 unless a workspace owner renews it from Settings > Members.",
+      "key": "f5",
+      "opening_request": "find the Notion email about guest access expiring for Tanaka Design",
+      "result_reply": "Notion says Tanaka Design's 3 guests lose access October 26 unless an owner renews.",
+      "topic": "Notion workspace guest access expiry notice for Tanaka Design, October 12, 2026"
+    },
+    {
+      "canned_result": "Yes. Expensify emailed on September 30, 2026 confirming a mobile number ending 2086 was added for SMS login codes. It says to contact Concierge if this wasn't you.",
+      "key": "f6",
+      "opening_request": "did Expensify email me about a phone number being added to my account?",
+      "result_reply": "Yes, on September 30 Expensify confirmed a phone ending 2086 was added for SMS codes.",
+      "topic": "Expensify new SMS login code and phone number added notice, September 30, 2026"
+    },
+    {
+      "canned_result": "Drafted and sent a reply to Dana Whitfield at Brex confirming availability for the card limit verification call on Tuesday, November 10, 2026 at 2:00 PM.",
+      "key": "f7",
+      "opening_request": "reply to Dana at Brex and say I can do the verification call Tuesday at 2",
+      "result_reply": "Sent. I told Dana you can do the Brex verification call Tuesday, November 10 at 2 PM.",
+      "topic": "Reply to Dana Whitfield at Brex confirming card limit verification call on November 10, 2026"
+    },
+    {
+      "canned_result": "Found a Zendesk admin alert from October 16, 2026 saying user 'j.okafor' created an API token named 'reporting-sync'. It asks admins to review it under Admin Center > Apps and integrations.",
+      "key": "f8",
+      "opening_request": "look for the Zendesk alert about an api token someone created",
+      "result_reply": "Zendesk flagged an API token 'reporting-sync' created October 16 by j.okafor. Worth reviewing.",
+      "topic": "Zendesk admin alert about API token created by unknown user, October 16, 2026"
+    },
+    {
+      "canned_result": "Namecheap sent an email on November 1, 2026 confirming two-factor authentication was disabled on your account at 9:42 AM from an IP in Chicago. It includes a link to re-enable it.",
+      "key": "f9",
+      "opening_request": "pull up the Namecheap email saying 2FA got turned off",
+      "result_reply": "Namecheap says 2FA was disabled November 1 at 9:42 AM from Chicago. Re-enable link included.",
+      "topic": "Namecheap two-factor authentication disabled notice, November 1, 2026"
+    },
+    {
+      "canned_result": "HubSpot's September 26, 2026 notice says 6 failed login attempts on sam.ortiz@harborlane.io were blocked and the account was temporarily locked for 30 minutes.",
+      "key": "f10",
+      "opening_request": "summarize that HubSpot email about blocked login attempts for Sam",
+      "result_reply": "HubSpot blocked 6 failed logins on Sam Ortiz's account September 26 and locked it for 30 minutes.",
+      "topic": "HubSpot security notice about login attempts blocked for sam.ortiz@harborlane.io, September 26, 2026"
+    },
+    {
+      "canned_result": "Confirmed in Square's email that identity verification is due November 8, 2026. Set a reminder for November 6 at 9:00 AM to upload the ID documents.",
+      "key": "f11",
+      "opening_request": "set a reminder for the Square identity verification, deadline is Nov 8 I think",
+      "result_reply": "Deadline confirmed as November 8. Reminder set for November 6 at 9 AM.",
+      "topic": "Square seller account identity verification request due November 8, 2026"
+    },
+    {
+      "canned_result": "Leo Brandt's October 28, 2026 email says Figma will require SAML SSO for all org members starting November 16. Users with password logins must link their SSO account before then.",
+      "key": "f12",
+      "opening_request": "what did Leo's Figma email say about SSO being required",
+      "result_reply": "Figma will require SSO for everyone from November 16; link your SSO account before then.",
+      "topic": "Figma organization SAML SSO enforcement notice from admin Leo Brandt, October 28, 2026"
+    },
+    {
+      "canned_result": "American Express emailed on October 9, 2026 that a replacement Business Gold card ending 3009 shipped via UPS, arriving by October 14. The old card stays active until the new one is activated.",
+      "key": "f13",
+      "opening_request": "find the Amex email about my replacement card shipping",
+      "result_reply": "Amex shipped your replacement card ending 3009 on October 9, arriving by October 14.",
+      "topic": "American Express Business Gold card replacement shipped notice, October 9, 2026"
+    },
+    {
+      "canned_result": "Sent a reply to Hannah Cole at Gemini Insurance confirming that you requested the September 21, 2026 change of recovery email and asking her to complete it.",
+      "key": "f14",
+      "opening_request": "tell Hannah at Gemini Insurance yes I requested the recovery email change",
+      "result_reply": "Sent. Hannah Cole now knows you requested the recovery email change and can proceed.",
+      "topic": "Reply to Hannah Cole at Gemini Insurance verifying account recovery email change, September 21, 2026"
+    },
+    {
+      "canned_result": "Found an Intuit email from November 3, 2026 stating the account was locked after 5 failed sign-in attempts. It can be unlocked by resetting the password using the link, valid 24 hours.",
+      "key": "f15",
+      "opening_request": "any email from Intuit about my account being locked? think it was early November",
+      "result_reply": "Yes, Intuit locked your account November 3 after 5 failed attempts. Reset link was valid 24 hours.",
+      "topic": "Intuit TurboTax Business account locked after failed attempts, November 3, 2026"
+    },
+    {
+      "canned_result": "Asana emailed on October 20, 2026 that a personal access token named 'zapier-tasks' was created on your account. It says to revoke it in the developer console if unrecognized.",
+      "key": "f16",
+      "opening_request": "check Asana email about a new personal access token on my account",
+      "result_reply": "Asana notified you October 20 about a new token called 'zapier-tasks'. Revoke it if unfamiliar.",
+      "topic": "Asana personal access token created notice, October 20, 2026"
+    },
+    {
+      "canned_result": "Wells Fargo's November 6, 2026 email says the secure statement link expires November 13. Set a reminder for Friday, November 13 at 8:30 AM to download it.",
+      "key": "f17",
+      "opening_request": "remind me Friday to download the Wells Fargo statement before the link expires",
+      "result_reply": "Reminder set for Friday, November 13 at 8:30 AM, the day the Wells Fargo link expires.",
+      "topic": "Wells Fargo business account statement security code email, November 6, 2026"
+    }
+  ]
+}

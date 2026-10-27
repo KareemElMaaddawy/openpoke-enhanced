@@ -1,0 +1,137 @@
+{
+  "provenance": {
+    "attempts": 1,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "b84aae9e8ad2ceff87aab559ce5a5506a2c5cd836aaece4c2c907e6a4d5fa350",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found 'Q4 Offsite – Asheville' from dana.whitfield@northfieldco.com, 11 messages. It covers Blue Ridge Lodge on Oct 22-23, 14 attendees, and an $11,400 deposit due Sept 30.",
+      "follow_ups": [
+        {
+          "reply": "Pritam Shah, Joel Duarte and Annika Berg haven't RSVPed. The other 11 are confirmed.",
+          "request": "who hasn't rsvped yet",
+          "result": "Based on the replies, 11 of 14 have confirmed. Pritam Shah, Joel Duarte and Annika Berg haven't answered."
+        },
+        {
+          "reply": "Done, I forwarded Dana's agenda email to Ben Castellano.",
+          "request": "forward the agenda to ben castellano",
+          "result": "Forwarded Dana's Sept 26 email with the draft agenda PDF to ben.castellano@northfieldco.com."
+        },
+        {
+          "reply": "Reminder set for Oct 1 at 9am to book your Asheville flights.",
+          "request": "remind me oct 1 at 9am to book my flights",
+          "result": "Reminder created for Oct 1, 2026 at 9:00am: 'Book flights for Asheville offsite (Oct 22-23)'."
+        }
+      ],
+      "key": "c1",
+      "opening_request": "find the offsite thread with dana whitfield, the asheville one",
+      "pair_key": "c2",
+      "result_reply": "Found it: Dana's 'Q4 Offsite – Asheville' thread. Lodge booked Oct 22-23, deposit $11,400 due Sept 30.",
+      "topic": "Dana Whitfield's email thread on the Q4 team offsite at Blue Ridge Lodge in Asheville, Oct 22-23"
+    },
+    {
+      "canned_result": "Dana Whitfield emailed on Sept 29 asking for the self-assessment in Lattice by Oct 16. Created a reminder for Oct 15 at 9am.",
+      "follow_ups": [
+        {
+          "reply": "Drafted your extension request to Dana for Oct 23. It's in drafts, not sent.",
+          "request": "draft a reply asking dana for a week extension",
+          "result": "Drafted a reply to dana.whitfield@northfieldco.com asking to move the deadline from Oct 16 to Oct 23 because of the client launch. Saved in drafts, not sent."
+        },
+        {
+          "reply": "Yes, Lattice emailed on Oct 2. You need to nominate 3 peer reviewers by Oct 9.",
+          "request": "did she send the peer feedback form too",
+          "result": "Yes. A separate email from no-reply@lattice.com on Oct 2 asks you to nominate 3 peer reviewers by Oct 9."
+        },
+        {
+          "reply": "Moved your self-assessment reminder to Oct 14 at 8am.",
+          "request": "move the reminder to oct 14 at 8am",
+          "result": "Reminder moved to Oct 14, 2026 at 8:00am."
+        }
+      ],
+      "key": "c2",
+      "opening_request": "remind me about dana's performance review self-assessment, think it's due mid october",
+      "pair_key": "c1",
+      "result_reply": "Dana's self-assessment is due Oct 16 in Lattice. I set a reminder for Oct 15 at 9am.",
+      "topic": "Dana Whitfield's performance review request with self-assessment due Oct 16"
+    },
+    {
+      "canned_result": "Found invoice #4471 from jun@meridianprint.co dated Sept 18, $186.40 for 500 business cards with matte finish, due Oct 2.",
+      "follow_ups": [
+        {
+          "reply": "Yes, paid Sept 19. $186.40 was charged to your Visa ending 4417.",
+          "request": "was that paid already?",
+          "result": "Yes. A payment confirmation from Meridian Print dated Sept 19 shows $186.40 charged to the Visa ending 4417."
+        },
+        {
+          "reply": "Sent invoice #4471 and the payment confirmation to Leah Brandt.",
+          "request": "forward it to leah brandt, my accountant",
+          "result": "Forwarded invoice #4471 and the payment confirmation to leah.brandt@brandtbooks.com."
+        },
+        {
+          "reply": "Jun said they ship Sept 25 via UPS and should arrive around Sept 29.",
+          "request": "did jun say when the cards ship",
+          "result": "Jun's Sept 22 email says the order ships Sept 25 via UPS, tracking number 1Z84R90E0312, arriving around Sept 29."
+        }
+      ],
+      "key": "c3",
+      "opening_request": "find the meridian print invoice for the business cards",
+      "pair_key": "c4",
+      "result_reply": "Found Meridian Print invoice #4471: $186.40 for 500 business cards, due Oct 2.",
+      "topic": "Meridian Print invoice #4471 for business cards from Jun Takahashi"
+    },
+    {
+      "canned_result": "Found Oksana Lund's Oct 7 email from oksana.lund@meridianbank.com confirming a $12,500 wire to Calloway Supply Co., reference WR-90314, with a $25 fee.",
+      "follow_ups": [
+        {
+          "reply": "The wire fee was $25, charged separately from the $12,500.",
+          "request": "what was the wire fee again",
+          "result": "The confirmation lists a $25.00 outgoing domestic wire fee, taken separately from the $12,500 transfer."
+        },
+        {
+          "reply": "Sent Oksana a request for a PDF receipt for wire WR-90314.",
+          "request": "ask oksana for a pdf receipt",
+          "result": "Sent a reply to oksana.lund@meridianbank.com asking for a PDF receipt for wire WR-90314."
+        },
+        {
+          "reply": "Reminder set for Friday Oct 9 at 10am to confirm Calloway got the wire.",
+          "request": "remind me friday to check calloway got it",
+          "result": "Reminder created for Friday, Oct 9, 2026 at 10:00am: 'Confirm Calloway Supply received wire WR-90314'."
+        }
+      ],
+      "key": "c4",
+      "opening_request": "pull up the meridian bank wire confirmation from oksana for the calloway payment",
+      "pair_key": "c3",
+      "result_reply": "Found it: $12,500 wire to Calloway Supply on Oct 7, ref WR-90314, $25 fee.",
+      "topic": "Meridian Bank wire transfer confirmation from Oksana Lund for $12,500 to Calloway Supply"
+    },
+    {
+      "canned_result": "Drafted a reply to felix@bluepeakmedia.com asking to move the podcast recording from Nov 12 to Nov 18, 2026 at 2pm. Saved in drafts for review.",
+      "follow_ups": [
+        {
+          "reply": "Sent to Felix.",
+          "request": "yes send it",
+          "result": "Sent the reply to felix@bluepeakmedia.com on Oct 5, 2026."
+        },
+        {
+          "reply": "Yes, Felix confirmed Nov 18 at 2pm and attached a guest briefing doc.",
+          "request": "did felix answer yet",
+          "result": "Felix replied Oct 6 saying Nov 18 at 2pm works and attaching a guest briefing doc."
+        },
+        {
+          "reply": "Reminder set for Nov 17 at 4pm to read the briefing.",
+          "request": "set a reminder the day before to read the briefing",
+          "result": "Reminder created for Nov 17, 2026 at 4:00pm: 'Read Bluepeak podcast briefing doc'."
+        }
+      ],
+      "key": "c5",
+      "opening_request": "reply to felix at bluepeak that i need to move the podcast recording to nov 18",
+      "pair_key": null,
+      "result_reply": "Drafted your reply to Felix moving the recording to Nov 18 at 2pm. Want me to send it?",
+      "topic": "Reply to Felix Andersson of Bluepeak Media about moving the podcast recording to Nov 18"
+    }
+  ]
+}

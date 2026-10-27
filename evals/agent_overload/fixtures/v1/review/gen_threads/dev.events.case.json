@@ -1,0 +1,112 @@
+{
+  "provenance": {
+    "attempts": 1,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "15ccc3d4c1f1ccc87933e3238b4ac6dff1833acb0ea26bb52eeaebaa7d047f76",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found an AXS confirmation from orders@axs-tickets.com dated Sep 8: 2 tickets for Mara Quill at Juniper Hall, Oct 30, doors 7:00pm, Section B Row 12, total $146.50, order #JH-440218.",
+      "follow_ups": [
+        {
+          "reply": "Doors at 7pm, show at 8pm. Only clear bags up to 12x6x12 inches are allowed.",
+          "request": "what time do doors open and is there a bag policy",
+          "result": "Doors open at 7:00pm and the show starts at 8:00pm. The email says only clear bags under 12x6x12 inches are allowed."
+        },
+        {
+          "reply": "Forwarded to Jonah. Heads up: the actual transfer has to happen in the AXS app by Oct 29.",
+          "request": "forward the tickets to jonah so he can bring his girlfriend instead",
+          "result": "Forwarded the AXS confirmation with the mobile ticket link to jonah.weiss@gmail.com. The email notes that transfers must be done in the AXS app by Oct 29."
+        },
+        {
+          "reply": "Reminder set for Oct 30 at 9am to charge your phone for the mobile tickets.",
+          "request": "remind me the morning of the show to charge my phone for the tickets",
+          "result": "Set a reminder for Oct 30 at 9:00am: 'Charge phone - Mara Quill tickets are mobile only at Juniper Hall tonight.'"
+        }
+      ],
+      "key": "c1",
+      "opening_request": "can you find my axs confirmation for the mara quill show at juniper hall",
+      "pair_key": "c2",
+      "result_reply": "Found it: 2 tickets, Mara Quill at Juniper Hall Oct 30, Section B Row 12, $146.50 total.",
+      "topic": "AXS confirmation for Mara Quill tickets at Juniper Hall on Oct 30"
+    },
+    {
+      "canned_result": "Yes, Tom Reyes (events@juniperhall.com) emailed on Sep 22 a quote for the Mezzanine Room on Nov 19: $2,800 room fee plus $65 per person catering for up to 40 guests, with a $700 deposit due Oct 5.",
+      "follow_ups": [
+        {
+          "reply": "Sent. I asked Tom about vegetarian options and a lower room fee for a weeknight.",
+          "request": "reply to tom and ask if they can do vegetarian menu options and drop the room fee a bit",
+          "result": "Sent a reply to events@juniperhall.com asking about vegetarian menu options and whether the $2,800 room fee could be reduced for a weeknight booking."
+        },
+        {
+          "reply": "Deposit is refundable until Oct 20. Within 7 days of the event, you owe 50% of catering.",
+          "request": "what's the cancellation policy in that quote",
+          "result": "The quote says the deposit is refundable until Oct 20; after that it is forfeited, and cancellations within 7 days of the event owe 50% of the catering estimate."
+        },
+        {
+          "reply": "Done. Reminder set for Oct 3 at 10am to pay the $700 deposit.",
+          "request": "set a reminder to pay the deposit on oct 3",
+          "result": "Created a reminder for Oct 3 at 10:00am: 'Pay $700 Juniper Hall deposit to Tom Reyes (due Oct 5).'"
+        }
+      ],
+      "key": "c2",
+      "opening_request": "did tom reyes at juniper hall send the quote for our team dinner on nov 19",
+      "pair_key": "c1",
+      "result_reply": "Yes, Tom quoted $2,800 for the Mezzanine Room plus $65 per head, $700 deposit due Oct 5.",
+      "topic": "Juniper Hall private event rental quote for team dinner on Nov 19 from Tom Reyes"
+    },
+    {
+      "canned_result": "Found the Cirque Aurora email from tickets@cirqueaurora.com: 4 tickets are held at will call under 'Delgado', open from 5:30pm on Oct 28 for the 7:30pm show, photo ID required. Reminder set for Oct 28 at 5:00pm.",
+      "follow_ups": [
+        {
+          "reply": "Moved to 4:30pm on Oct 28.",
+          "request": "actually move the reminder to 4:30",
+          "result": "Updated the Oct 28 reminder from 5:00pm to 4:30pm."
+        },
+        {
+          "reply": "Gate C at the Harbor Street entrance of the Big Top lot, not the main box office.",
+          "request": "where is the will call window exactly",
+          "result": "The email says will call is at the Harbor Street entrance of the Aurora Big Top lot, Gate C, not the main box office."
+        },
+        {
+          "reply": "Sent Alma the details: meet at Gate C on Harbor Street by 6:45pm, show at 7:30.",
+          "request": "email my sister Alma the show time and where to meet us",
+          "result": "Sent an email to alma.delgado@outlook.com saying the show starts at 7:30pm and to meet at Gate C on Harbor Street by 6:45pm."
+        }
+      ],
+      "key": "c3",
+      "opening_request": "remind me about picking up the cirque aurora will call tickets, show is oct 28",
+      "pair_key": null,
+      "result_reply": "Reminder set for Oct 28 at 5pm. Tickets are at will call under 'Delgado', bring photo ID.",
+      "topic": "Will-call pickup for Cirque Aurora tickets on Oct 28"
+    },
+    {
+      "canned_result": "Found an email from no-reply@runsignup.com on Oct 1: bib #2217 can be picked up Oct 17 from 12-7pm at Fernhill Outfitters, 410 Mill St, or race morning Oct 18 until 6:30am. The race starts at 7:30am.",
+      "follow_ups": [
+        {
+          "reply": "Yes, with your signed waiver and a photo of your ID, but only on Oct 17.",
+          "request": "can someone else pick up my bib for me",
+          "result": "The email says friends can pick up a bib with a signed waiver and a photo of your ID, but there are no proxy pickups on race morning."
+        },
+        {
+          "reply": "Reminder set for Oct 16 at 6pm to print the waiver.",
+          "request": "set a reminder friday oct 16 to grab my waiver from the email and print it",
+          "result": "Set a reminder for Oct 16 at 6:00pm: 'Print Redwood Trail Half waiver (RunSignup email Oct 1).'"
+        },
+        {
+          "reply": "No start-line parking. Shuttles run from Millbrook High lot every 15 minutes, 5:30 to 7am.",
+          "request": "is there parking at the start line",
+          "result": "No parking at the start. The email says to use the shuttle from Millbrook High School lot, with shuttles every 15 minutes from 5:30am to 7:00am."
+        }
+      ],
+      "key": "c4",
+      "opening_request": "find the bib pickup info for the redwood trail half marathon",
+      "pair_key": null,
+      "result_reply": "Bib #2217. Pick up Oct 17, 12-7pm at Fernhill Outfitters, or race morning until 6:30am.",
+      "topic": "Redwood Trail Half Marathon bib pickup email from RunSignup for Oct 18"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{"payload": "set a reminder every monday morning to send out five job applications", "tag": "user_message", "timestamp": "2026-10-21 08:05:21"}
+{"payload": "let me dig in", "tag": "poke_reply", "timestamp": "2026-10-21 08:05:26"}
+{"payload": "[SUCCESS] Weekly Job Application Reminder: Recurring reminder created for every Monday at 8:30 AM starting Sep 14, 2026, titled 'Submit 5 job applications'.", "tag": "agent_message", "timestamp": "2026-10-21 08:07:41"}
+{"payload": "Done. Every Monday at 8:30 AM you'll be reminded to submit five applications.", "tag": "poke_reply", "timestamp": "2026-10-21 08:07:46"}
+{"payload": "sorry for the late reply", "tag": "user_message", "timestamp": "2026-10-21 08:20:26"}
+{"payload": "No apology needed. I'm not going anywhere.", "tag": "poke_reply", "timestamp": "2026-10-21 08:20:31"}
+{"payload": "has my warby parker order shipped yet", "tag": "user_message", "timestamp": "2026-10-21 12:20:15"}
+{"payload": "one moment", "tag": "poke_reply", "timestamp": "2026-10-21 12:20:20"}
+{"payload": "[SUCCESS] Warby Parker Order Status: Warby Parker email from orders@warbyparker.com (Nov 3) says order WP-5529104, Haskell frames in Whiskey Tortoise, $145, shipped via UPS with an estimated delivery of Nov 9.", "tag": "agent_message", "timestamp": "2026-10-21 12:22:03"}
+{"payload": "Shipped Nov 3. Your Haskell frames in Whiskey Tortoise are due Nov 9.", "tag": "poke_reply", "timestamp": "2026-10-21 12:22:08"}
+{"payload": "what's the ups tracking number", "tag": "user_message", "timestamp": "2026-10-21 14:35:50"}
+{"payload": "right away", "tag": "poke_reply", "timestamp": "2026-10-21 14:35:55"}
+{"payload": "[SUCCESS] Warby Parker Order Status: The shipping email lists UPS tracking number 1Z84F2910356718832.", "tag": "agent_message", "timestamp": "2026-10-21 14:37:54"}
+{"payload": "UPS tracking number is 1Z84F2910356718832.", "tag": "poke_reply", "timestamp": "2026-10-21 14:37:59"}
+{"payload": "thanks a ton", "tag": "user_message", "timestamp": "2026-10-21 14:45:25"}
+{"payload": "Happy to. Any time.", "tag": "poke_reply", "timestamp": "2026-10-21 14:45:30"}
+{"payload": "what's 15% of 200", "tag": "user_message", "timestamp": "2026-10-21 15:30:03"}
+{"payload": "30. Tip math is my love language.", "tag": "poke_reply", "timestamp": "2026-10-21 15:30:08"}
+{"payload": "did peloton confirm my membership pause", "tag": "user_message", "timestamp": "2026-10-21 15:40:42"}
+{"payload": "on it now", "tag": "poke_reply", "timestamp": "2026-10-21 15:40:47"}
+{"payload": "[SUCCESS] Peloton Membership Email Search: Yes. Email from no-reply@onepeloton.com on Sept 9, 2026 confirms the All-Access membership ($44/month) is paused Sept 12 through Dec 12.", "tag": "agent_message", "timestamp": "2026-10-21 15:43:12"}
+{"payload": "Yes, Peloton confirmed Sept 9: membership paused Sept 12 through Dec 12.", "tag": "poke_reply", "timestamp": "2026-10-21 15:43:17"}
+{"payload": "can you remind me to refill my lisinopril every month, walgreens emails me", "tag": "user_message", "timestamp": "2026-10-21 18:05:03"}
+{"payload": "one moment", "tag": "poke_reply", "timestamp": "2026-10-21 18:05:08"}
+{"payload": "[SUCCESS] Walgreens Refill Reminder: Found Walgreens (noreply@walgreens.com) refill notices for lisinopril 10mg, 90-day supply, last filled September 3, 2026, 2 refills remaining. Set a recurring reminder on the 28th of each month at 9:00 AM.", "tag": "agent_message", "timestamp": "2026-10-21 18:07:05"}
+{"payload": "Set a monthly reminder on the 28th at 9 AM. Two refills remain, last filled Sept 3.", "tag": "poke_reply", "timestamp": "2026-10-21 18:07:10"}
+{"payload": "wait, it's a 90 day supply so make it every 3 months", "tag": "user_message", "timestamp": "2026-10-21 19:20:17"}
+{"payload": "looking into it", "tag": "poke_reply", "timestamp": "2026-10-21 19:20:22"}
+{"payload": "[SUCCESS] Walgreens Refill Reminder: Replaced the monthly reminder with one every three months, next on November 28, 2026 at 9:00 AM, then February 28 and May 28.", "tag": "agent_message", "timestamp": "2026-10-21 19:23:07"}
+{"payload": "Changed to every 3 months, starting Nov 28 at 9 AM.", "tag": "poke_reply", "timestamp": "2026-10-21 19:23:12"}
+{"payload": "what's the capital of Australia", "tag": "user_message", "timestamp": "2026-10-21 19:40:23"}
+{"payload": "Canberra. Everyone guesses Sydney, so you're in good company.", "tag": "poke_reply", "timestamp": "2026-10-21 19:40:28"}
+{"payload": "wow that's wild", "tag": "user_message", "timestamp": "2026-10-21 19:55:12"}
+{"payload": "Right? Life's got range.", "tag": "poke_reply", "timestamp": "2026-10-21 19:55:17"}
+{"payload": "lol nice", "tag": "user_message", "timestamp": "2026-10-21 20:10:21"}
+{"payload": "Right? I'm choosing to take that as a compliment.", "tag": "poke_reply", "timestamp": "2026-10-21 20:10:26"}
+{"payload": "can you pull up my amtrak ticket for the boston trip in november", "tag": "user_message", "timestamp": "2026-10-21 20:35:31"}
+{"payload": "on it now", "tag": "poke_reply", "timestamp": "2026-10-21 20:35:36"}
+{"payload": "[SUCCESS] Amtrak Boston Ticket: Amtrak confirmation from no-reply@amtrak.com: Acela 2153 departs New York Penn Nov 13 at 8:00am and arrives Boston South Station 12:08pm, seat 7A car 3, $142, reservation 9XK4TQ.", "tag": "agent_message", "timestamp": "2026-10-21 20:37:09"}
+{"payload": "Acela 2153, Nov 13, 8:00am NY Penn to Boston 12:08pm, car 3 seat 7A, reservation 9XK4TQ.", "tag": "poke_reply", "timestamp": "2026-10-21 20:37:14"}
+{"payload": "i can't decide what to eat", "tag": "user_message", "timestamp": "2026-10-21 21:20:28"}
+{"payload": "Tragic and universal. Go with the first thing that sounded good. Your gut knows.", "tag": "poke_reply", "timestamp": "2026-10-21 21:20:33"}
+{"payload": "how many refills do i have left", "tag": "user_message", "timestamp": "2026-10-21 21:55:33"}
+{"payload": "working on it", "tag": "poke_reply", "timestamp": "2026-10-21 21:55:38"}
+{"payload": "[SUCCESS] Walgreens Refill Reminder: The latest Walgreens notice, dated September 3, 2026, lists 2 refills remaining on the prescription, which expires July 2027.", "tag": "agent_message", "timestamp": "2026-10-21 21:57:48"}
+{"payload": "Two refills left, and the prescription expires July 2027.", "tag": "poke_reply", "timestamp": "2026-10-21 21:57:53"}
+{"payload": "what time is the return train", "tag": "user_message", "timestamp": "2026-10-22 08:55:32"}
+{"payload": "on it now", "tag": "poke_reply", "timestamp": "2026-10-22 08:55:37"}
+{"payload": "[SUCCESS] Amtrak Boston Ticket: Return Acela 2174 departs Boston South Station Nov 14 at 5:30pm and arrives New York Penn at 9:41pm.", "tag": "agent_message", "timestamp": "2026-10-22 08:57:35"}
+{"payload": "Return is Nov 14, Acela 2174 leaves Boston at 5:30pm.", "tag": "poke_reply", "timestamp": "2026-10-22 08:57:40"}
+{"payload": "change it to 9am", "tag": "user_message", "timestamp": "2026-10-22 09:30:15"}
+{"payload": "looking into it", "tag": "poke_reply", "timestamp": "2026-10-22 09:30:20"}
+{"payload": "[SUCCESS] Weekly Job Application Reminder: Updated the recurring Monday reminder to 9:00 AM.", "tag": "agent_message", "timestamp": "2026-10-22 09:32:18"}
+{"payload": "Changed to Mondays at 9:00 AM.", "tag": "poke_reply", "timestamp": "2026-10-22 09:32:23"}
+{"payload": "haha you're funny", "tag": "user_message", "timestamp": "2026-10-22 10:30:39"}
+{"payload": "I try. Mostly I just get lucky.", "tag": "poke_reply", "timestamp": "2026-10-22 10:30:44"}
+{"payload": "did my insurance get applied?", "tag": "user_message", "timestamp": "2026-10-22 10:50:19"}
+{"payload": "pulling that up now", "tag": "poke_reply", "timestamp": "2026-10-22 10:50:24"}
+{"payload": "[SUCCESS] Warby Parker Order Status: The order email shows a $60 vision insurance discount applied, leaving $85 charged to the card.", "tag": "agent_message", "timestamp": "2026-10-22 10:53:00"}
+{"payload": "Yes, $60 insurance discount applied. You were charged $85.", "tag": "poke_reply", "timestamp": "2026-10-22 10:53:05"}
+{"payload": "thanks!", "tag": "user_message", "timestamp": "2026-10-22 12:25:51"}
+{"payload": "Anytime. Being helpful is basically my favorite hobby.", "tag": "poke_reply", "timestamp": "2026-10-22 12:25:56"}
+{"payload": "long day", "tag": "user_message", "timestamp": "2026-10-22 13:45:38"}
+{"payload": "Then you've earned a comfy spot on the couch. Go be horizontal.", "tag": "poke_reply", "timestamp": "2026-10-22 13:45:43"}
+{"payload": "i did it!", "tag": "user_message", "timestamp": "2026-10-22 14:15:49"}
+{"payload": "Yes! So proud of you. Go enjoy that for a minute.", "tag": "poke_reply", "timestamp": "2026-10-22 14:15:54"}
+{"payload": "skip it next monday, i'm traveling", "tag": "user_message", "timestamp": "2026-10-22 15:30:57"}
+{"payload": "happy to, checking", "tag": "poke_reply", "timestamp": "2026-10-22 15:31:02"}
+{"payload": "[SUCCESS] Weekly Job Application Reminder: Skipped the Oct 12, 2026 occurrence. The reminder resumes Oct 19.", "tag": "agent_message", "timestamp": "2026-10-22 15:33:50"}
+{"payload": "Skipped Oct 12. It picks back up Oct 19.", "tag": "poke_reply", "timestamp": "2026-10-22 15:33:55"}
+{"payload": "how are you", "tag": "user_message", "timestamp": "2026-10-22 15:50:36"}
+{"payload": "Doing great, no complaints, mostly because I have no body to ache. You?", "tag": "poke_reply", "timestamp": "2026-10-22 15:50:41"}
+{"payload": "do you believe in luck", "tag": "user_message", "timestamp": "2026-10-22 15:55:09"}
+{"payload": "A little. I think it's mostly preparation bumping into a good coincidence.", "tag": "poke_reply", "timestamp": "2026-10-22 15:55:14"}
+{"payload": "remind me nov 12 to email them if it hasn't come", "tag": "user_message", "timestamp": "2026-10-22 16:45:12"}
+{"payload": "working on it", "tag": "poke_reply", "timestamp": "2026-10-22 16:45:17"}
+{"payload": "[SUCCESS] Warby Parker Order Status: Reminder set for Nov 12, 2026 at 9:00am: 'Contact Warby Parker if order WP-5529104 hasn't arrived'.", "tag": "agent_message", "timestamp": "2026-10-22 16:48:11"}
+{"payload": "Reminder set for Nov 12 at 9am.", "tag": "poke_reply", "timestamp": "2026-10-22 16:48:16"}
+{"payload": "that's so annoying", "tag": "user_message", "timestamp": "2026-10-22 18:15:41"}
+{"payload": "Ugh, yeah, that's irritating. You're allowed to be mad about it for a minute.", "tag": "poke_reply", "timestamp": "2026-10-22 18:15:46"}
+{"payload": "when does billing start again", "tag": "user_message", "timestamp": "2026-10-22 20:50:36"}
+{"payload": "on it now", "tag": "poke_reply", "timestamp": "2026-10-22 20:50:41"}
+{"payload": "[SUCCESS] Peloton Membership Email Search: The email says billing resumes Dec 12, 2026, at $44/month.", "tag": "agent_message", "timestamp": "2026-10-22 20:52:36"}
+{"payload": "Billing resumes Dec 12 at $44/month.", "tag": "poke_reply", "timestamp": "2026-10-22 20:52:41"}
+{"payload": "send the confirmation to my assistant Lena", "tag": "user_message", "timestamp": "2026-10-23 08:00:01"}
+{"payload": "on it now", "tag": "poke_reply", "timestamp": "2026-10-23 08:00:06"}
+{"payload": "[SUCCESS] Amtrak Boston Ticket: Forwarded the Amtrak confirmation to lena.ortiz@tallowmedia.com.", "tag": "agent_message", "timestamp": "2026-10-23 08:03:01"}
+{"payload": "Forwarded the confirmation to Lena.", "tag": "poke_reply", "timestamp": "2026-10-23 08:03:06"}
+{"payload": "what's heavier, a pound of feathers or a pound of bricks", "tag": "user_message", "timestamp": "2026-10-23 08:25:14"}
+{"payload": "Same weight, a pound is a pound. The feathers just need a bigger bag.", "tag": "poke_reply", "timestamp": "2026-10-23 08:25:19"}
+{"payload": "remind me to check in the night before", "tag": "user_message", "timestamp": "2026-10-23 11:50:48"}
+{"payload": "working on it", "tag": "poke_reply", "timestamp": "2026-10-23 11:50:53"}
+{"payload": "[SUCCESS] Amtrak Boston Ticket: Reminder set for Nov 12 at 8pm to check the Amtrak trip and have the e-ticket ready.", "tag": "agent_message", "timestamp": "2026-10-23 11:52:26"}
+{"payload": "Reminder set for Nov 12 at 8pm.", "tag": "poke_reply", "timestamp": "2026-10-23 11:52:31"}
+{"payload": "set a reminder for dec 9 to decide if i keep it", "tag": "user_message", "timestamp": "2026-10-23 13:25:17"}
+{"payload": "let me dig in", "tag": "poke_reply", "timestamp": "2026-10-23 13:25:22"}
+{"payload": "[SUCCESS] Peloton Membership Email Search: Reminder set for Dec 9, 2026 at 9:00am: 'Decide on Peloton before Dec 12 resume'.", "tag": "agent_message", "timestamp": "2026-10-23 13:27:52"}
+{"payload": "Reminder set for Dec 9 at 9am.", "tag": "poke_reply", "timestamp": "2026-10-23 13:27:57"}
+{"payload": "i love weekends", "tag": "user_message", "timestamp": "2026-10-23 14:00:33"}
+{"payload": "Same. Best invention after the wheel and sliced bread.", "tag": "poke_reply", "timestamp": "2026-10-23 14:00:38"}
+{"payload": "add a friday reminder to follow up on pending applications", "tag": "user_message", "timestamp": "2026-10-23 16:10:18"}
+{"payload": "looking now", "tag": "poke_reply", "timestamp": "2026-10-23 16:10:23"}
+{"payload": "[SUCCESS] Weekly Job Application Reminder: New recurring reminder created for Fridays at 3:00 PM titled 'Follow up on pending applications'.", "tag": "agent_message", "timestamp": "2026-10-23 16:12:05"}
+{"payload": "Added a Friday 3:00 PM reminder to follow up on pending applications.", "tag": "poke_reply", "timestamp": "2026-10-23 16:12:10"}
+{"payload": "good job", "tag": "user_message", "timestamp": "2026-10-23 17:05:53"}
+{"payload": "Thank you. I'm going to imagine you said that in a deep, approving voice.", "tag": "poke_reply", "timestamp": "2026-10-23 17:05:58"}
+{"payload": "was i charged anything in october", "tag": "user_message", "timestamp": "2026-10-23 17:10:52"}
+{"payload": "working on it", "tag": "poke_reply", "timestamp": "2026-10-23 17:10:57"}
+{"payload": "[SUCCESS] Peloton Membership Email Search: Searched for Peloton receipts in October and found none; the last charge was $44 on Sept 5.", "tag": "agent_message", "timestamp": "2026-10-23 17:13:10"}
+{"payload": "No October charges. The last one was $44 on Sept 5.", "tag": "poke_reply", "timestamp": "2026-10-23 17:13:15"}
+{"payload": "bye for now", "tag": "user_message", "timestamp": "2026-10-23 18:55:23"}
+{"payload": "Later! I'll be here.", "tag": "poke_reply", "timestamp": "2026-10-23 18:55:28"}
+{"payload": "was the last pickup ready or still waiting", "tag": "user_message", "timestamp": "2026-10-24 08:05:43"}
+{"payload": "on it", "tag": "poke_reply", "timestamp": "2026-10-24 08:05:48"}
+{"payload": "[SUCCESS] Walgreens Refill Reminder: A Walgreens email on September 4, 2026 said the order was picked up and a receipt for $12.00 was charged to the card ending 4417.", "tag": "agent_message", "timestamp": "2026-10-24 08:07:12"}
+{"payload": "It was picked up Sept 4. You paid $12.00.", "tag": "poke_reply", "timestamp": "2026-10-24 08:07:17"}
+{"payload": "change it to 9am", "tag": "user_message", "timestamp": "2026-10-24 08:55:07"}
+{"payload": "on it, switching that to 9.", "tag": "poke_reply", "timestamp": "2026-10-24 08:55:12"}
+{"payload": "[SUCCESS] Weekly Job Application Reminder: Updated the recurring Monday reminder to 9:00 AM.", "tag": "agent_message", "timestamp": "2026-10-24 08:57:09"}
+{"payload": "done, your monday reminder now goes off at 9am.", "tag": "poke_reply", "timestamp": "2026-10-24 08:57:14"}
+{"payload": "ugh i have so many applications to get through", "tag": "user_message", "timestamp": "2026-10-24 10:14:14"}
+{"payload": "that's a lot, but a steady weekly pace should help. want me to adjust anything?", "tag": "poke_reply", "timestamp": "2026-10-24 10:14:19"}
+{"payload": "skip it next monday, i'm traveling", "tag": "user_message", "timestamp": "2026-10-24 11:25:19"}
+{"payload": "got it, skipping that one.", "tag": "poke_reply", "timestamp": "2026-10-24 11:25:24"}
+{"payload": "[SUCCESS] Weekly Job Application Reminder: Skipped the Oct 12, 2026 occurrence. The reminder resumes Oct 19.", "tag": "agent_message", "timestamp": "2026-10-24 11:28:31"}
+{"payload": "all set, no reminder on oct 12 and it picks back up oct 19. safe travels!", "tag": "poke_reply", "timestamp": "2026-10-24 11:28:36"}
+{"payload": "add a friday reminder to follow up on pending applications", "tag": "user_message", "timestamp": "2026-10-24 11:56:36"}
+{"payload": "adding that now.", "tag": "poke_reply", "timestamp": "2026-10-24 11:56:41"}
+{"payload": "[SUCCESS] Weekly Job Application Reminder: New recurring reminder created for Fridays at 3:00 PM titled 'Follow up on pending applications'.", "tag": "agent_message", "timestamp": "2026-10-24 11:59:55"}
+{"payload": "added. you'll get a reminder every friday at 3pm to follow up on pending applications.", "tag": "poke_reply", "timestamp": "2026-10-24 12:00:00"}

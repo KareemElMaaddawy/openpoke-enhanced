@@ -1,0 +1,134 @@
+{"payload": "are you a morning person or a night owl", "tag": "user_message", "timestamp": "2026-10-03 10:30:05"}
+{"payload": "Neither, I'm awake all the time, which feels like cheating. You?", "tag": "poke_reply", "timestamp": "2026-10-03 10:30:10"}
+{"payload": "remind me to send back the madewell jeans before the window closes", "tag": "user_message", "timestamp": "2026-10-03 10:55:31"}
+{"payload": "on it", "tag": "poke_reply", "timestamp": "2026-10-03 10:55:36"}
+{"payload": "[SUCCESS] Madewell Return Deadline: Found Madewell order MW-7741903 shipped Sept 21 with a 30-day return window, so returns close Oct 20 2026. Set a reminder for Oct 17 at 9:00 AM.", "tag": "agent_message", "timestamp": "2026-10-03 10:57:46"}
+{"payload": "Return window closes Oct 20. I set a reminder for Oct 17 at 9am.", "tag": "poke_reply", "timestamp": "2026-10-03 10:57:51"}
+{"payload": "coffee or tea", "tag": "user_message", "timestamp": "2026-10-03 13:05:13"}
+{"payload": "Coffee for ambition, tea for peace. Which kind of day is it?", "tag": "poke_reply", "timestamp": "2026-10-03 13:05:18"}
+{"payload": "check status of the lego order for leo's birthday", "tag": "user_message", "timestamp": "2026-10-03 13:10:07"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-03 13:10:12"}
+{"payload": "[SUCCESS] LEGO Order Status: Found LEGO order confirmation from legoshop@email.lego.com, order #LG-55120948 for the Technic Bugatti Bolide set, $54.99. It is processing, with estimated delivery Nov 9-11 2026.", "tag": "agent_message", "timestamp": "2026-10-03 13:12:15"}
+{"payload": "Your LEGO Technic Bugatti order is still processing. Estimated delivery is Nov 9 to 11.", "tag": "poke_reply", "timestamp": "2026-10-03 13:12:20"}
+{"payload": "long day", "tag": "user_message", "timestamp": "2026-10-03 14:10:22"}
+{"payload": "Then you've earned a comfy spot on the couch. Go be horizontal.", "tag": "poke_reply", "timestamp": "2026-10-03 14:10:27"}
+{"payload": "does madewell charge for return shipping", "tag": "user_message", "timestamp": "2026-10-03 16:30:13"}
+{"payload": "looking now", "tag": "poke_reply", "timestamp": "2026-10-03 16:30:18"}
+{"payload": "[SUCCESS] Madewell Return Deadline: Madewell's return policy email says mail returns have a $7.50 fee deducted from the refund. Returns to a store are free.", "tag": "agent_message", "timestamp": "2026-10-03 16:32:46"}
+{"payload": "Mail returns cost $7.50, deducted from the refund. Store returns are free.", "tag": "poke_reply", "timestamp": "2026-10-03 16:32:51"}
+{"payload": "i should go to the gym", "tag": "user_message", "timestamp": "2026-10-03 16:35:13"}
+{"payload": "Should, or want to? Either way, future you will send a thank-you note.", "tag": "poke_reply", "timestamp": "2026-10-03 16:35:18"}
+{"payload": "did duolingo email me about a failed payment? need to check", "tag": "user_message", "timestamp": "2026-10-03 17:00:20"}
+{"payload": "checking now", "tag": "poke_reply", "timestamp": "2026-10-03 17:00:25"}
+{"payload": "[SUCCESS] Duolingo payment email lookup: Yes. no-reply@duolingo.com sent 'We couldn't renew your Super Family plan' on Oct 14, 2026. The $119.99 annual renewal was declined on the card ending 9082, and the plan stays active until Oct 21.", "tag": "agent_message", "timestamp": "2026-10-03 17:01:58"}
+{"payload": "Yes. Duolingo said your $119.99 Super Family renewal was declined Oct 14 on the card ending 9082.", "tag": "poke_reply", "timestamp": "2026-10-03 17:02:03"}
+{"payload": "what's the opposite of up", "tag": "user_message", "timestamp": "2026-10-03 21:35:02"}
+{"payload": "Down. I suspect this is a setup, though. Go on, hit me.", "tag": "poke_reply", "timestamp": "2026-10-03 21:35:07"}
+{"payload": "how are you", "tag": "user_message", "timestamp": "2026-10-03 21:45:26"}
+{"payload": "Doing great, no complaints, mostly because I have no body to ache. You?", "tag": "poke_reply", "timestamp": "2026-10-03 21:45:31"}
+{"payload": "set a monthly reminder on the 1st to invoice calloway print", "tag": "user_message", "timestamp": "2026-10-04 08:30:31"}
+{"payload": "looking into it", "tag": "poke_reply", "timestamp": "2026-10-04 08:30:36"}
+{"payload": "[SUCCESS] Reminders: Created a recurring reminder on the 1st of each month at 9:00am, starting October 1, 2026: 'Send invoice to Calloway Print Co. (ap@callowayprint.com)'. Last invoice found was #2043 for $2,400 sent Sept 1.", "tag": "agent_message", "timestamp": "2026-10-04 08:32:06"}
+{"payload": "Monthly reminder set for the 1st at 9am, starting Oct 1. Last invoice was $2,400.", "tag": "poke_reply", "timestamp": "2026-10-04 08:32:11"}
+{"payload": "i love weekends", "tag": "user_message", "timestamp": "2026-10-04 11:15:38"}
+{"payload": "Same. Best invention after the wheel and sliced bread.", "tag": "poke_reply", "timestamp": "2026-10-04 11:15:43"}
+{"payload": "good morning", "tag": "user_message", "timestamp": "2026-10-04 11:55:22"}
+{"payload": "Morning! Hope the coffee is strong and the day is gentle.", "tag": "poke_reply", "timestamp": "2026-10-04 11:55:27"}
+{"payload": "when does it actually lapse if i don't fix it", "tag": "user_message", "timestamp": "2026-10-04 12:20:48"}
+{"payload": "looking now", "tag": "poke_reply", "timestamp": "2026-10-04 12:20:53"}
+{"payload": "[SUCCESS] Duolingo payment email lookup: The email says the Super Family plan stays active through Oct 21, 2026. After that, the family members revert to free accounts.", "tag": "agent_message", "timestamp": "2026-10-04 12:22:38"}
+{"payload": "It lapses after Oct 21, 2026. Then everyone drops to free accounts.", "tag": "poke_reply", "timestamp": "2026-10-04 12:22:43"}
+{"payload": "remind me on the 18th to update the card", "tag": "user_message", "timestamp": "2026-10-04 14:20:58"}
+{"payload": "pulling that up now", "tag": "poke_reply", "timestamp": "2026-10-04 14:21:03"}
+{"payload": "[SUCCESS] Duolingo payment email lookup: Set a reminder for Oct 18, 2026 at 9:00 AM: 'Update card for Duolingo Super Family before Oct 21 lapse'.", "tag": "agent_message", "timestamp": "2026-10-04 14:23:03"}
+{"payload": "Reminder set for Oct 18 at 9am to update the Duolingo card.", "tag": "poke_reply", "timestamp": "2026-10-04 14:23:08"}
+{"payload": "lol nice", "tag": "user_message", "timestamp": "2026-10-04 14:40:04"}
+{"payload": "Right? I'm choosing to take that as a compliment.", "tag": "poke_reply", "timestamp": "2026-10-04 14:40:09"}
+{"payload": "is a hot dog a sandwich", "tag": "user_message", "timestamp": "2026-10-04 14:45:43"}
+{"payload": "I say no. It's its own thing. A hot dog stands alone.", "tag": "poke_reply", "timestamp": "2026-10-04 14:45:48"}
+{"payload": "leo's party is nov 14, will it make it", "tag": "user_message", "timestamp": "2026-10-04 15:50:50"}
+{"payload": "on it now", "tag": "poke_reply", "timestamp": "2026-10-04 15:50:55"}
+{"payload": "[SUCCESS] LEGO Order Status: The estimated delivery of Nov 9-11 is three to five days before the Nov 14 party, as long as there are no carrier delays.", "tag": "agent_message", "timestamp": "2026-10-04 15:53:17"}
+{"payload": "Yes, it should arrive 3 to 5 days before the party.", "tag": "poke_reply", "timestamp": "2026-10-04 15:53:22"}
+{"payload": "change it to 8am", "tag": "user_message", "timestamp": "2026-10-04 16:40:11"}
+{"payload": "pulling that up now", "tag": "poke_reply", "timestamp": "2026-10-04 16:40:16"}
+{"payload": "[SUCCESS] Reminders: Recurring reminder updated to 8:00am on the 1st of each month.", "tag": "agent_message", "timestamp": "2026-10-04 16:42:11"}
+{"payload": "Updated to 8am on the 1st.", "tag": "poke_reply", "timestamp": "2026-10-04 16:42:16"}
+{"payload": "move the reminder to the 15th at 6pm", "tag": "user_message", "timestamp": "2026-10-04 19:00:22"}
+{"payload": "give me a sec", "tag": "poke_reply", "timestamp": "2026-10-04 19:00:27"}
+{"payload": "[SUCCESS] Madewell Return Deadline: Reminder moved to Oct 15 2026 at 6:00 PM.", "tag": "agent_message", "timestamp": "2026-10-04 19:02:35"}
+{"payload": "Moved to Oct 15 at 6pm.", "tag": "poke_reply", "timestamp": "2026-10-04 19:02:40"}
+{"payload": "what was the last invoice number again?", "tag": "user_message", "timestamp": "2026-10-04 20:25:36"}
+{"payload": "give me a sec", "tag": "poke_reply", "timestamp": "2026-10-04 20:25:41"}
+{"payload": "[SUCCESS] Reminders: The September invoice was #2043, $2,400, sent Sept 1, 2026 to ap@callowayprint.com.", "tag": "agent_message", "timestamp": "2026-10-04 20:28:15"}
+{"payload": "Invoice #2043, $2,400, sent Sept 1.", "tag": "poke_reply", "timestamp": "2026-10-04 20:28:20"}
+{"payload": "i need a vacation", "tag": "user_message", "timestamp": "2026-10-05 08:40:18"}
+{"payload": "Same energy, honestly. Somewhere with a beach and zero notifications.", "tag": "poke_reply", "timestamp": "2026-10-05 08:40:23"}
+{"payload": "got any fun facts", "tag": "user_message", "timestamp": "2026-10-05 08:45:00"}
+{"payload": "Octopuses have three hearts. Two for the gills, one for everything else. Overachievers.", "tag": "poke_reply", "timestamp": "2026-10-05 08:45:05"}
+{"payload": "do you believe in luck", "tag": "user_message", "timestamp": "2026-10-05 10:55:10"}
+{"payload": "A little. I think it's mostly preparation bumping into a good coincidence.", "tag": "poke_reply", "timestamp": "2026-10-05 10:55:15"}
+{"payload": "nailed it", "tag": "user_message", "timestamp": "2026-10-05 11:30:47"}
+{"payload": "Obviously. Take a victory lap.", "tag": "poke_reply", "timestamp": "2026-10-05 11:30:52"}
+{"payload": "which pair was it, the 30 or the 32 waist", "tag": "user_message", "timestamp": "2026-10-05 11:45:37"}
+{"payload": "pulling that up now", "tag": "poke_reply", "timestamp": "2026-10-05 11:45:42"}
+{"payload": "[SUCCESS] Madewell Return Deadline: The order shows one item: Curvy Perfect Vintage Straight Jeans, size 30, $138.00.", "tag": "agent_message", "timestamp": "2026-10-05 11:48:36"}
+{"payload": "It's the Perfect Vintage Straight jeans in size 30, $138.", "tag": "poke_reply", "timestamp": "2026-10-05 11:48:41"}
+{"payload": "did they send a second notice after that", "tag": "user_message", "timestamp": "2026-10-05 14:50:48"}
+{"payload": "let me dig in", "tag": "poke_reply", "timestamp": "2026-10-05 14:50:53"}
+{"payload": "[SUCCESS] Duolingo payment email lookup: Yes. A follow-up from no-reply@duolingo.com arrived Oct 17 with the subject 'Last chance to keep Super Family' and the same $119.99 renewal amount.", "tag": "agent_message", "timestamp": "2026-10-05 14:53:48"}
+{"payload": "Yes, a second notice came Oct 17: 'Last chance to keep Super Family'.", "tag": "poke_reply", "timestamp": "2026-10-05 14:53:53"}
+{"payload": "you there?", "tag": "user_message", "timestamp": "2026-10-05 15:15:09"}
+{"payload": "Always. What's up?", "tag": "poke_reply", "timestamp": "2026-10-05 15:15:14"}
+{"payload": "can the shipping address be changed to my sister's", "tag": "user_message", "timestamp": "2026-10-05 17:00:03"}
+{"payload": "happy to, checking", "tag": "poke_reply", "timestamp": "2026-10-05 17:00:08"}
+{"payload": "[SUCCESS] LEGO Order Status: Drafted a reply to LEGO customer service at help@lego.com asking to change the shipping address on #LG-55120948 to your sister's. It is ready for your review and not yet sent.", "tag": "agent_message", "timestamp": "2026-10-05 17:01:26"}
+{"payload": "Drafted a request to LEGO to change the address. Want me to send it?", "tag": "poke_reply", "timestamp": "2026-10-05 17:01:31"}
+{"payload": "find the cover letter template rachel kim emailed me", "tag": "user_message", "timestamp": "2026-10-05 17:30:40"}
+{"payload": "pulling that up now", "tag": "poke_reply", "timestamp": "2026-10-05 17:30:45"}
+{"payload": "[SUCCESS] Find Rachel Kim cover letter email: Found an email from rachel@kimcareercoaching.com (Oct 11) with 'Cover Letter Framework v2.docx' attached, plus three bullet tips on opening with a specific result and keeping it under 300 words.", "tag": "agent_message", "timestamp": "2026-10-05 17:33:13"}
+{"payload": "Rachel emailed Oct 11 with Cover Letter Framework v2.docx attached and three tips, including staying under 300 words.", "tag": "poke_reply", "timestamp": "2026-10-05 17:33:18"}
+{"payload": "cats or dogs", "tag": "user_message", "timestamp": "2026-10-05 17:35:30"}
+{"payload": "Dogs for enthusiasm, cats for attitude. I respect both, but I lean dog.", "tag": "poke_reply", "timestamp": "2026-10-05 17:35:35"}
+{"payload": "send me just her three tips as a short summary", "tag": "user_message", "timestamp": "2026-10-05 19:05:45"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-05 19:05:50"}
+{"payload": "[SUCCESS] Find Rachel Kim cover letter email: Summary of Rachel's tips: 1) open with a specific measurable result, 2) tie one project to the company's product, 3) keep it under 300 words.", "tag": "agent_message", "timestamp": "2026-10-05 19:07:11"}
+{"payload": "Her tips: open with a measurable result, tie a project to their product, stay under 300 words.", "tag": "poke_reply", "timestamp": "2026-10-05 19:07:16"}
+{"payload": "skip the november one, they're closed", "tag": "user_message", "timestamp": "2026-10-05 21:30:04"}
+{"payload": "give me a sec", "tag": "poke_reply", "timestamp": "2026-10-05 21:30:09"}
+{"payload": "[SUCCESS] Reminders: Skipped the November 1, 2026 occurrence; the reminder resumes December 1.", "tag": "agent_message", "timestamp": "2026-10-05 21:32:02"}
+{"payload": "Skipped November. It resumes Dec 1.", "tag": "poke_reply", "timestamp": "2026-10-05 21:32:07"}
+{"payload": "reply to rachel asking if she can review my draft by friday", "tag": "user_message", "timestamp": "2026-10-05 21:45:58"}
+{"payload": "checking now", "tag": "poke_reply", "timestamp": "2026-10-05 21:46:03"}
+{"payload": "[SUCCESS] Find Rachel Kim cover letter email: Sent a reply to rachel@kimcareercoaching.com asking if she can review the cover letter draft by this Friday, and noted it's for a Vercel application.", "tag": "agent_message", "timestamp": "2026-10-05 21:48:44"}
+{"payload": "Asked Rachel to review your draft by Friday and mentioned it's for Vercel.", "tag": "poke_reply", "timestamp": "2026-10-05 21:48:49"}
+{"payload": "that's so annoying", "tag": "user_message", "timestamp": "2026-10-06 08:00:20"}
+{"payload": "Ugh, yeah, that's irritating. You're allowed to be mad about it for a minute.", "tag": "poke_reply", "timestamp": "2026-10-06 08:00:25"}
+{"payload": "did she answer? what's her rate for a review", "tag": "user_message", "timestamp": "2026-10-06 08:20:58"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-06 08:21:03"}
+{"payload": "[SUCCESS] Find Rachel Kim cover letter email: Rachel replied Oct 13 that she can do it by Friday and charges $65 for a written review, payable by Venmo or invoice.", "tag": "agent_message", "timestamp": "2026-10-06 08:23:35"}
+{"payload": "Yes, she can do Friday. A written review is $65, by Venmo or invoice.", "tag": "poke_reply", "timestamp": "2026-10-06 08:23:40"}
+{"payload": "random thought: socks are weird", "tag": "user_message", "timestamp": "2026-10-06 08:40:24"}
+{"payload": "They really are. We wrap our feet in little tubes and call it comfort.", "tag": "poke_reply", "timestamp": "2026-10-06 08:40:29"}
+{"payload": "tell me a joke", "tag": "user_message", "timestamp": "2026-10-06 10:20:28"}
+{"payload": "Why did the scarecrow win an award? He was outstanding in his field. I'll see myself out.", "tag": "poke_reply", "timestamp": "2026-10-06 10:20:33"}
+{"payload": "brb", "tag": "user_message", "timestamp": "2026-10-06 10:25:38"}
+{"payload": "Take your time.", "tag": "poke_reply", "timestamp": "2026-10-06 10:25:43"}
+{"payload": "remind me nov 8 to check it shipped", "tag": "user_message", "timestamp": "2026-10-06 13:00:07"}
+{"payload": "happy to, checking", "tag": "poke_reply", "timestamp": "2026-10-06 13:00:12"}
+{"payload": "[SUCCESS] LEGO Order Status: Reminder set for Nov 8 2026 at 12:00 PM: 'Check LEGO Bugatti order shipped for Leo'.", "tag": "agent_message", "timestamp": "2026-10-06 13:02:07"}
+{"payload": "Reminder set for Nov 8 at noon.", "tag": "poke_reply", "timestamp": "2026-10-06 13:02:12"}
+{"payload": "can you find the statement email for the card ending 9082, the one duolingo tried to charge", "tag": "user_message", "timestamp": "2026-10-06 14:50:10"}
+{"payload": "on it, looking for that statement email.", "tag": "poke_reply", "timestamp": "2026-10-06 14:50:15"}
+{"payload": "[SUCCESS] Duolingo payment email lookup: Found an Oct 15 email from alerts@chasecard.com, 'Your October statement is ready', for the card ending 9082. Statement balance is $412.36, due Nov 8. The declined Duolingo renewal doesn't appear on it.", "tag": "agent_message", "timestamp": "2026-10-06 14:52:17"}
+{"payload": "Found it. Chase sent your October statement for the card ending 9082 on Oct 15. Balance is $412.36, due Nov 8, and the declined Duolingo charge isn't on it.", "tag": "poke_reply", "timestamp": "2026-10-06 14:52:22"}
+{"payload": "find the cover letter template rachel kim emailed me", "tag": "user_message", "timestamp": "2026-10-06 16:08:22"}
+{"payload": "searching for Rachel's email now.", "tag": "poke_reply", "timestamp": "2026-10-06 16:08:27"}
+{"payload": "[SUCCESS] Find Rachel Kim cover letter email: Found an email from rachel@kimcareercoaching.com (Oct 11) with 'Cover Letter Framework v2.docx' attached, plus three bullet tips on opening with a specific result and keeping it under 300 words.", "tag": "agent_message", "timestamp": "2026-10-06 16:12:17"}
+{"payload": "Found it. Rachel emailed on Oct 11 with the Cover Letter Framework v2 attached. Her tips are to open with a specific result and keep it under 300 words.", "tag": "poke_reply", "timestamp": "2026-10-06 16:12:22"}
+{"payload": "ugh this month is all bills", "tag": "user_message", "timestamp": "2026-10-06 18:16:22"}
+{"payload": "Sounds like it. Want me to look into anything else?", "tag": "poke_reply", "timestamp": "2026-10-06 18:16:27"}
+{"payload": "is the madewell jeans charge on that same card statement email", "tag": "user_message", "timestamp": "2026-10-06 19:28:27"}
+{"payload": "checking that statement for the Madewell charge.", "tag": "poke_reply", "timestamp": "2026-10-06 19:28:32"}
+{"payload": "[SUCCESS] Madewell Return Deadline: Yes. The Oct 15 statement email from alerts@chasecard.com for the card ending 9082 lists Madewell $138.00 on Sept 21, which matches order MW-7741903.", "tag": "agent_message", "timestamp": "2026-10-06 19:31:55"}
+{"payload": "Yes, the Madewell jeans show up on that statement as $138.00 on Sept 21, which matches your order.", "tag": "poke_reply", "timestamp": "2026-10-06 19:32:00"}

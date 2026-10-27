@@ -1,0 +1,138 @@
+{
+  "provenance": {
+    "attempts": 1,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "d36296895cd745a3fa9537d925c0e3078994ac0098cbc54899e47d8287727194",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found an email from Kelsey Brandt at Atlassian sent Sept 29 with a Greenhouse link to complete the candidate profile. It expires Oct 3.",
+      "key": "f1",
+      "opening_request": "find the Atlassian email with the candidate profile link, need to finish it",
+      "result_reply": "Found it. Kelsey Brandt's Sept 29 email has the Greenhouse link, expiring Oct 3.",
+      "topic": "Greenhouse portal link from Atlassian recruiter Kelsey Brandt to complete candidate profile by Oct 3"
+    },
+    {
+      "canned_result": "The invite from Aaron Fischer shows a Salesforce panel interview Oct 27 at 2:00 PM Mountain via Zoom, lasting 90 minutes with four interviewers.",
+      "key": "f2",
+      "opening_request": "what time is my Salesforce panel on the 27th? pull up the invite",
+      "result_reply": "Salesforce panel is Oct 27 at 2:00 PM Mountain on Zoom, 90 minutes.",
+      "topic": "Salesforce interview panel invite for Oct 27 at 2pm with hiring manager Aaron Fischer"
+    },
+    {
+      "canned_result": "Drafted a short thank-you to Lauren Pierce referencing the Nov 2 interview and the discussion on onboarding flow redesign. Saved in drafts for review.",
+      "key": "f3",
+      "opening_request": "draft a thank you to Lauren Pierce at Hubspot for yesterday's interview",
+      "result_reply": "Thank-you to Lauren Pierce is drafted and saved for your review.",
+      "topic": "Thank-you note to Hubspot hiring manager Lauren Pierce after Nov 2 interview"
+    },
+    {
+      "canned_result": "Created a reminder for Oct 19 at 9:00 AM: follow up with Miro recruiting about the Product Designer application.",
+      "key": "f4",
+      "opening_request": "remind me oct 19 to follow up with Miro about my application",
+      "result_reply": "Reminder set for Oct 19 at 9 AM to follow up with Miro.",
+      "topic": "Reminder to send Miro application follow-up on Oct 19"
+    },
+    {
+      "canned_result": "Yes, Vercel sent a rejection on Sept 26 for the Design Engineer role, saying they moved forward with other candidates and would keep your resume on file.",
+      "key": "f5",
+      "opening_request": "did Vercel ever get back to me about the design engineer role?",
+      "result_reply": "Yes, Vercel rejected you Sept 26 for Design Engineer but will keep your resume.",
+      "topic": "Rejection from Vercel for Design Engineer role dated Sept 26"
+    },
+    {
+      "canned_result": "Sent a reply to Yael Cohen confirming Oct 13 for the Monday.com video interview and asking for the interviewer names and Zoom link.",
+      "key": "f6",
+      "opening_request": "reply to Yael at Monday.com and say Oct 13 works for the interview",
+      "result_reply": "Sent. Confirmed Oct 13 with Yael Cohen and asked for interviewer names.",
+      "topic": "Accept video interview invite from Asana-competitor Monday.com recruiter Yael Cohen for Oct 13"
+    },
+    {
+      "canned_result": "Replied to Owen Park offering Nov 10 at 11 AM, Nov 11 at 3 PM, and Nov 12 at 10 AM Mountain for the Linear interview.",
+      "key": "f7",
+      "opening_request": "Owen from Linear wants my availability, send him times for the week of Nov 9",
+      "result_reply": "Sent Owen three options: Nov 10 at 11, Nov 11 at 3, Nov 12 at 10.",
+      "topic": "Linear recruiter Owen Park asking for availability week of Nov 9"
+    },
+    {
+      "canned_result": "Priscilla Odom's email lists medical starting day one, a 4% 401(k) match, 20 PTO days, and a $1,000 annual learning stipend. Start date proposed is Nov 16.",
+      "key": "f8",
+      "opening_request": "summarize the benefits details Warby Parker sent over",
+      "result_reply": "Day-one medical, 4% 401(k) match, 20 PTO days, $1,000 learning stipend; start Nov 16.",
+      "topic": "Summary of Warby Parker job offer benefits email from HR coordinator Priscilla Odom"
+    },
+    {
+      "canned_result": "Found the Glassdoor verification email from Sept 18 with a confirm-address button. The link is still active.",
+      "key": "f9",
+      "opening_request": "find the glassdoor verification email, I need to confirm my account",
+      "result_reply": "Found Glassdoor's Sept 18 verification email; the link is still active.",
+      "topic": "Glassdoor account email verification for new profile on Sept 18"
+    },
+    {
+      "canned_result": "Sent a polite withdrawal email to Uber's recruiting team for the Senior Product Designer application, thanking them for their time.",
+      "key": "f10",
+      "opening_request": "email Uber recruiting and withdraw my application, I took another job",
+      "result_reply": "Withdrawal sent to Uber recruiting, thanking them for their time.",
+      "topic": "Withdraw application from Uber after accepting another offer"
+    },
+    {
+      "canned_result": "Set reminders for Oct 21 at 6 PM and Oct 22 at 9 AM about the Reddit coding challenge due Oct 22 at 5 PM.",
+      "key": "f11",
+      "opening_request": "remind me about the Reddit challenge, it's due the 22nd",
+      "result_reply": "Set two reminders: Oct 21 at 6 PM and Oct 22 at 9 AM.",
+      "topic": "Calendar reminder for Reddit coding challenge due Oct 22 at 5pm"
+    },
+    {
+      "canned_result": "Sent Amanda Reyes a brief follow-up asking for a status update on the Oct 8 onsite and expected decision timeline.",
+      "key": "f12",
+      "opening_request": "ask Amanda at Pinterest if there's any update since my Oct 8 onsite",
+      "result_reply": "Follow-up sent to Amanda Reyes asking for status and decision timeline.",
+      "topic": "Ask Pinterest recruiter Amanda Reyes about interview feedback after Oct 8 onsite"
+    },
+    {
+      "canned_result": "Found a Dropbox Sign request from Zapier HR dated Oct 15 for the offer agreement, still unsigned and expiring Oct 29.",
+      "key": "f13",
+      "opening_request": "is there a docusign thing from Zapier I need to sign?",
+      "result_reply": "Yes, Zapier's offer agreement awaits your signature, expiring Oct 29.",
+      "topic": "Contract signature request from Dropbox Sign for Zapier offer"
+    },
+    {
+      "canned_result": "Replied to Mozilla onboarding confirming the shipping address on file at 482 Larimer St, Denver, for the laptop shipment before the Nov 2 start.",
+      "key": "f14",
+      "opening_request": "Mozilla onboarding asked for my shipping address, can you reply with it",
+      "result_reply": "Sent your Larimer St address to Mozilla onboarding for the laptop.",
+      "topic": "Verify I.T. equipment shipping address email from Mozilla onboarding"
+    },
+    {
+      "canned_result": "Found an email from Richard on Sept 24 forwarding a Denver Water posting for a UX Designer, closing Oct 16.",
+      "key": "f15",
+      "opening_request": "dad forwarded me something about a Denver Water job, find it",
+      "result_reply": "Found it: Dad's Sept 24 forward, Denver Water UX Designer, closes Oct 16.",
+      "topic": "Find job posting email forwarded by dad about Denver Water design role"
+    },
+    {
+      "canned_result": "Set a reminder for Oct 10 at 5 PM to update the portfolio before the Meta recruiter call on Oct 12.",
+      "key": "f16",
+      "opening_request": "remind me to update my portfolio before the Meta recruiter call on the 12th",
+      "result_reply": "Reminder set for Oct 10 at 5 PM, ahead of the Meta call.",
+      "topic": "Reminder to update portfolio website before Oct 12 Meta recruiter call"
+    },
+    {
+      "canned_result": "A Workday email from Nov 4 says the Dell UX Designer application status changed to 'Under Review'. No interview has been scheduled yet.",
+      "key": "f17",
+      "opening_request": "check workday email for my Dell application status",
+      "result_reply": "Dell's Nov 4 Workday email says 'Under Review'; no interview yet.",
+      "topic": "Dell job application status email from Workday on Nov 4"
+    },
+    {
+      "canned_result": "Emailed Vikram Nair the latest resume PDF with a short note, ahead of his Oct 6 request deadline.",
+      "key": "f18",
+      "opening_request": "send my latest resume to Vikram at Cisco, he asked for it",
+      "result_reply": "Resume sent to Vikram Nair at Cisco before his Oct 6 deadline.",
+      "topic": "Send updated resume to Cisco recruiter Vikram Nair by Oct 6"
+    }
+  ]
+}

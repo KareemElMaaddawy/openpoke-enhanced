@@ -1,0 +1,237 @@
+{
+  "provenance": {
+    "attempts": 1,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "9fccba49669268280d65045e3951c0502c78a3c62c1bffab20e6b8eab9cb5444",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found the Brightwave Energy bill from billing@brightwaveenergy.com dated Oct 8, 2026: $142.37 for 612 kWh, due Oct 29.",
+      "follow_ups": [
+        {
+          "reply": "Yes, autopay took $142.37 on Oct 29, from the account ending 4410.",
+          "request": "was that already paid?",
+          "result": "Checked for a payment confirmation. Brightwave sent an autopay receipt on Oct 29 for $142.37 from the account ending 4410."
+        },
+        {
+          "reply": "October is $23.47 higher than September's $118.90, with 91 more kWh used.",
+          "request": "how does it compare to september?",
+          "result": "The September bill (Sept 9) was $118.90 for 521 kWh, so October is $23.47 higher and uses 91 more kWh."
+        },
+        {
+          "reply": "Forwarded the bill to Dana, noting the Oct 29 due date.",
+          "request": "forward it to my roommate dana",
+          "result": "Forwarded the Oct 8 Brightwave bill email to dana.kowalski@mailbox.example with a short note that it's due Oct 29."
+        }
+      ],
+      "key": "c1",
+      "opening_request": "find my brightwave energy electric bill for october",
+      "pair_key": "c2",
+      "result_reply": "Found it: Brightwave's October bill is $142.37 for 612 kWh, due Oct 29.",
+      "topic": "Brightwave Energy electric bill for October 2026"
+    },
+    {
+      "canned_result": "Found the quote from Marcus Tran (marcus.tran@brightwaveenergy.com) dated Sept 17, 2026: 8.4 kW rooftop system for $21,850 before the federal tax credit, valid until Oct 31.",
+      "follow_ups": [
+        {
+          "reply": "Install takes 2 to 3 days, after 4 to 6 weeks of permitting.",
+          "request": "does it say how long install takes?",
+          "result": "The quote says installation takes 2 to 3 days once permits clear, with permitting estimated at 4 to 6 weeks."
+        },
+        {
+          "reply": "Reminder set for Oct 28 at 9am to reply to Marcus.",
+          "request": "remind me oct 28 to reply to marcus about it",
+          "result": "Set a reminder for Oct 28, 2026 at 9:00am: 'Reply to Marcus Tran at Brightwave about solar quote (expires Oct 31)'."
+        },
+        {
+          "reply": "Draft to Marcus asking about a 25-year warranty is in your drafts.",
+          "request": "draft a reply asking if they can match the 25 year warranty from the other bid",
+          "result": "Drafted a reply to Marcus asking whether Brightwave can extend panel and workmanship coverage to 25 years to match a competing bid. It's saved in drafts, not sent."
+        }
+      ],
+      "key": "c2",
+      "opening_request": "pull up the brightwave solar quote email, the rooftop panels one",
+      "pair_key": "c1",
+      "result_reply": "Marcus Tran quoted $21,850 for an 8.4 kW system, valid through Oct 31.",
+      "topic": "Brightwave Energy rooftop solar installation quote"
+    },
+    {
+      "canned_result": "Yes, Larimer County Treasurer (treasurer@larimer-county.example) emailed the 2026 second-half property tax notice on Sept 22: $2,318.40 due by Nov 1.",
+      "follow_ups": [
+        {
+          "reply": "Reminder set for Oct 25 at 10am to pay the property tax.",
+          "request": "remind me to pay it on oct 25",
+          "result": "Created a reminder for Oct 25, 2026 at 10:00am: 'Pay Larimer County property tax, $2,318.40, due Nov 1'."
+        },
+        {
+          "reply": "Yes, 1.5% monthly interest, roughly $34.78 for the first month.",
+          "request": "is there a late fee if i miss it",
+          "result": "The notice says payments after Nov 1 get a 1.5% monthly interest charge, about $34.78 for the first month on this amount."
+        },
+        {
+          "reply": "Sent the tax notice PDF to Priya.",
+          "request": "send the notice to my accountant priya",
+          "result": "Forwarded the Sept 22 tax notice to priya.nair@nairtax.example with the PDF attached."
+        }
+      ],
+      "key": "c3",
+      "opening_request": "did the county send the property tax bill yet",
+      "pair_key": null,
+      "result_reply": "Yes, the county's second-half bill is $2,318.40, due Nov 1.",
+      "topic": "Larimer County property tax bill due November 2026"
+    },
+    {
+      "canned_result": "Home Depot (orders@homedepot.example) confirmed delivery of the Bosch 800 Series dishwasher, order #HD-58213344, for Thursday Oct 8, 2026 between 1pm and 5pm.",
+      "follow_ups": [
+        {
+          "reply": "Asked Home Depot for a morning slot. They'll reply within 24 hours.",
+          "request": "can they come in the morning instead",
+          "result": "Sent a reschedule request to Home Depot delivery support asking for a morning slot on Oct 8. Their auto-reply says responses take up to 24 hours."
+        },
+        {
+          "reply": "Haul-away is included for $29, but installation isn't.",
+          "request": "does the order include haul away of the old one",
+          "result": "The order confirmation lists 'Haul-away of old appliance' for $29.00 and standard installation is not included."
+        },
+        {
+          "reply": "Reminder set for Oct 7 at 7pm to clear the kitchen.",
+          "request": "remind me the night before to clear the kitchen floor",
+          "result": "Set a reminder for Oct 7, 2026 at 7:00pm: 'Clear kitchen floor and shut off dishwasher water valve for delivery tomorrow'."
+        }
+      ],
+      "key": "c4",
+      "opening_request": "when is the home depot dishwasher getting delivered",
+      "pair_key": "c5",
+      "result_reply": "Delivery is Thursday Oct 8, between 1pm and 5pm.",
+      "topic": "Home Depot dishwasher delivery scheduling"
+    },
+    {
+      "canned_result": "Home Depot emailed a refund notice on Sept 30, 2026: $64.18 for two gallons of Behr Marquee returned, going back to the Visa ending 7732 in 5 to 7 business days.",
+      "follow_ups": [
+        {
+          "reply": "The original order was #HD-57990127, placed Sept 12.",
+          "request": "what was the original paint order number",
+          "result": "The refund email references original order #HD-57990127, placed Sept 12, 2026 for $64.18 including tax."
+        },
+        {
+          "reply": "Reminder set for Oct 9 at noon to check for the refund.",
+          "request": "remind me oct 9 to check if the money showed up",
+          "result": "Reminder set for Oct 9, 2026 at 12:00pm: 'Check Visa 7732 for $64.18 Home Depot paint refund'."
+        },
+        {
+          "reply": "Draft to Home Depot support is ready, saved for you to send after Oct 9.",
+          "request": "if it hasnt come by then email their support",
+          "result": "Drafted a note to Home Depot customer care (support@homedepot.example) citing order #HD-57990127 and the Sept 30 refund notice. Saved as a draft to send after Oct 9."
+        }
+      ],
+      "key": "c5",
+      "opening_request": "did home depot refund me for the paint i returned",
+      "pair_key": "c4",
+      "result_reply": "Yes, $64.18 refunded to your Visa ending 7732, arriving in 5 to 7 business days.",
+      "topic": "Home Depot refund for returned paint"
+    },
+    {
+      "canned_result": "Latest bill from utilities@auroraco.example (Sept 14, 2026) is $76.52 due on the 28th. Created a monthly reminder on the 25th at 9:00am starting Sept 25.",
+      "follow_ups": [
+        {
+          "reply": "Done, the reminder now runs on the 24th each month at 9am.",
+          "request": "actually make it the 24th",
+          "result": "Changed the recurring reminder to the 24th of each month at 9:00am, starting Oct 24, 2026."
+        },
+        {
+          "reply": "Yes, August was $91.06 versus September's $76.52, which is $14.54 lower.",
+          "request": "was the august bill higher than september",
+          "result": "The August bill (Aug 14) was $91.06 and the September bill was $76.52, so September was $14.54 lower."
+        },
+        {
+          "reply": "The autopay signup link is in the Sept 14 bill email: pay.auroraco.example/autopay.",
+          "request": "find the autopay signup link in their emails",
+          "result": "Found the link in the Sept 14 bill email footer from utilities@auroraco.example: 'Enroll in AutoPay' at pay.auroraco.example/autopay."
+        }
+      ],
+      "key": "c6",
+      "opening_request": "set a reminder to pay the aurora water bill every month",
+      "pair_key": null,
+      "result_reply": "Monthly reminder set for the 25th at 9am. The latest bill is $76.52, due the 28th.",
+      "topic": "City of Aurora water and sewer bill reminder"
+    },
+    {
+      "canned_result": "Cedar Ridge Heating (service@cedarridgeheating.example) confirmed a furnace tune-up for Tuesday Oct 13, 2026, 8am to 10am, technician Luis Ortega. Fee is $119.",
+      "follow_ups": [
+        {
+          "reply": "They offered Tuesday Oct 20 at 8am. Want me to confirm?",
+          "request": "push it to the following week",
+          "result": "Emailed Cedar Ridge asking to move the appointment to the week of Oct 19. They offered Tuesday Oct 20 at 8am and are holding it pending confirmation."
+        },
+        {
+          "reply": "Confirmed for Oct 20 at 8am. The fee is still $119.",
+          "request": "yes confirm oct 20",
+          "result": "Replied to Cedar Ridge confirming Oct 20 at 8am. They sent back an updated confirmation with the same $119 fee."
+        },
+        {
+          "reply": "Reminder set for Oct 20 at 7:15am to move the car.",
+          "request": "remind me that morning to move the car out of the garage",
+          "result": "Set a reminder for Oct 20, 2026 at 7:15am: 'Move car out of garage for Cedar Ridge furnace tune-up at 8'."
+        }
+      ],
+      "key": "c7",
+      "opening_request": "when's the furnace tune up with cedar ridge heating",
+      "pair_key": null,
+      "result_reply": "Tuesday Oct 13, 8 to 10am with technician Luis Ortega. The fee is $119.",
+      "topic": "Cedar Ridge Heating furnace tune-up appointment"
+    },
+    {
+      "canned_result": "Fiberlink (scheduling@fiberlink.example) booked installation for Saturday Nov 7, 2026, with a 10am to 2pm arrival window. Plan is 1 Gbps at $65/month, confirmation #FL-209841.",
+      "follow_ups": [
+        {
+          "reply": "$65 a month for 12 months, then $85. Install fee is waived.",
+          "request": "what's the monthly price after the promo",
+          "result": "The confirmation says $65/month for the first 12 months, then $85/month, with a $99 installation fee waived."
+        },
+        {
+          "reply": "Yes, an adult must be home for the roughly 2-hour install.",
+          "request": "does someone need to be home",
+          "result": "Yes, the email says an adult 18 or older must be present for the whole installation, which takes about 2 hours."
+        },
+        {
+          "reply": "Reminder set for Nov 6 at 5pm to cancel the old internet.",
+          "request": "remind me friday nov 6 to cancel the old internet",
+          "result": "Reminder set for Fri Nov 6, 2026 at 5:00pm: 'Call old provider to cancel internet, new Fiberlink install is tomorrow'."
+        }
+      ],
+      "key": "c8",
+      "opening_request": "find the fiberlink install email, need to know the arrival window",
+      "pair_key": null,
+      "result_reply": "Install is Saturday Nov 7, arriving between 10am and 2pm. Confirmation #FL-209841.",
+      "topic": "Fiberlink internet installation appointment"
+    },
+    {
+      "canned_result": "Found the renewal notice from renewals@pinecrestmutual.example dated Oct 2, 2026: the annual premium rises from $1,486 to $1,672, effective Dec 1, with payment due Nov 20.",
+      "follow_ups": [
+        {
+          "reply": "They cite a regional rate increase of 9% and a higher rebuild estimate of $438,000.",
+          "request": "why did it go up so much",
+          "result": "The notice cites a 9% rate increase for the region and a higher rebuild cost estimate, from $412,000 to $438,000."
+        },
+        {
+          "reply": "Forwarded to Tom with a request for cheaper options before Nov 20.",
+          "request": "forward it to my agent tom reyes, ask about cheaper options",
+          "result": "Forwarded the Oct 2 renewal notice to tom.reyes@reyesinsurance.example, asking him to look for lower-cost coverage before Nov 20."
+        },
+        {
+          "reply": "Reminder set for Nov 13 at 9am about the renewal decision.",
+          "request": "remind me nov 13 to decide before the deadline",
+          "result": "Set a reminder for Nov 13, 2026 at 9:00am: 'Decide on Pinecrest Mutual renewal, payment due Nov 20'."
+        }
+      ],
+      "key": "c9",
+      "opening_request": "need the pinecrest mutual homeowners renewal email from this fall",
+      "pair_key": null,
+      "result_reply": "Pinecrest renewal: premium goes from $1,486 to $1,672, starting Dec 1, due Nov 20.",
+      "topic": "Homeowners insurance renewal with Pinecrest Mutual"
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "provenance": {
+    "attempts": 1,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "e086c763278e82d53a0a1d750865619742f75f1c9fdd24b0733e1790d1690ade",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found the final folio from Marriott Austin Downtown (noreply@marriott.com), sent Oct 22, for 2 nights Oct 20-22. The total was $487.62, including $64.12 in taxes, charged to the Visa ending 4417. The PDF is attached.",
+      "follow_ups": [
+        {
+          "reply": "Yes, parking is its own line: $76 for two nights, separate from the $347.50 room charge.",
+          "request": "does it show the parking charge separately?",
+          "result": "Yes. The folio lists self-parking at $38/night, $76 total, as a separate line item from the room charges of $347.50."
+        },
+        {
+          "reply": "Done, forwarded to expenses@northfieldgroup.com with the subject 'Austin hotel receipt'.",
+          "request": "forward it to expenses@northfieldgroup.com with subject austin hotel receipt",
+          "result": "Forwarded the Oct 22 Marriott folio email with the PDF to expenses@northfieldgroup.com under the subject 'Austin hotel receipt'."
+        },
+        {
+          "reply": "Only the folio line: $23.40 at Garrison Kitchen on Oct 21. No separate receipt was emailed.",
+          "request": "was there also a receipt for the breakfast i charged to the room?",
+          "result": "The folio has one breakfast charge, $23.40 at Garrison Kitchen on Oct 21. No separate restaurant receipt was emailed."
+        }
+      ],
+      "key": "c1",
+      "opening_request": "find my marriott receipt from the austin conference stay last month, need it for expenses",
+      "pair_key": "c2",
+      "result_reply": "Found it: Marriott Austin Downtown folio, $487.62 for Oct 20-22, PDF attached in the Oct 22 email.",
+      "topic": "Marriott Austin Downtown hotel folio receipt for the Oct 20-22 conference stay"
+    },
+    {
+      "canned_result": "Marriott Charlotte Uptown's email (guestservices.clt@marriott.com, Sept 15) says a $300 incidental pre-authorization was placed at check-in. It will drop off 7-10 business days after checkout, depending on the card issuer. No release confirmation has been sent.",
+      "follow_ups": [
+        {
+          "reply": "Sent to guestservices.clt@marriott.com asking for confirmation that the $300 hold was released, with your confirmation number.",
+          "request": "email the hotel and ask them to confirm they released it",
+          "result": "Sent a message to guestservices.clt@marriott.com asking them to confirm the $300 pre-authorization was released, citing the Sept 14 checkout and confirmation number 83920117."
+        },
+        {
+          "reply": "Reminder set for Friday at 9am to check whether the Marriott $300 hold has cleared.",
+          "request": "remind me friday morning to check if the hold is gone",
+          "result": "Set a reminder for Friday at 9:00 AM: 'Check whether the Marriott Charlotte $300 hold has cleared.'"
+        },
+        {
+          "reply": "They replied: the hold was released Sept 16, but your card issuer may take a few more days.",
+          "request": "did they reply yet?",
+          "result": "Yes. Guest services replied at 2:14 PM: the hold was released on Sept 16, and the card issuer may take a few more days to show it."
+        }
+      ],
+      "key": "c2",
+      "opening_request": "marriott still has a hold on my card from charlotte in september, can you check emails",
+      "pair_key": "c1",
+      "result_reply": "Marriott Charlotte says the $300 hold should clear in 7-10 business days after Sept 14 checkout. No release confirmation yet.",
+      "topic": "Marriott $300 pre-authorization hold not released after the Sept 14 Charlotte stay"
+    },
+    {
+      "canned_result": "Tom Becker (tom@beckerbuilds.io) emailed invoice #218 on Oct 28 for $3,200: 32 hours at $100/hr for the website checkout rebuild. It is due Nov 12, net 15, payable by ACH.",
+      "follow_ups": [
+        {
+          "reply": "Sent. Tom now knows invoice #218 will be paid by ACH on Nov 10.",
+          "request": "reply to tom that i'll pay it on nov 10",
+          "result": "Replied to tom@beckerbuilds.io on the invoice #218 thread saying payment will go out Nov 10 by ACH."
+        },
+        {
+          "reply": "Reminder set for Nov 9 at 9am to approve Tom's $3,200 invoice.",
+          "request": "set a reminder for nov 9 to approve it",
+          "result": "Set a reminder for Nov 9 at 9:00 AM: 'Approve Tom Becker invoice #218 ($3,200) for Nov 10 payment.'"
+        },
+        {
+          "reply": "Yes. His Sept 8 estimate was 30-35 hours, and invoice #218 bills 32.",
+          "request": "does the invoice hours match his estimate from september?",
+          "result": "Tom's Sept 8 estimate email (tom@beckerbuilds.io) projected 30-35 hours for the checkout rebuild, so the 32 billed hours are within it."
+        }
+      ],
+      "key": "c3",
+      "opening_request": "tom becker sent his october invoice, can you pull it up and tell me the amount",
+      "pair_key": "c4",
+      "result_reply": "Tom's invoice #218 is $3,200 for 32 hours of checkout rebuild work, due Nov 12 by ACH.",
+      "topic": "Tom Becker freelance developer invoice #218 for October website work"
+    },
+    {
+      "canned_result": "Checked the inbox: there is no W-9 from Tom Becker (tom@beckerbuilds.io) on file. Drafted and sent a request asking him to return a signed W-9 by Nov 20, with the IRS form link included.",
+      "follow_ups": [
+        {
+          "reply": "Yes, Tom sent a signed W-9 on Nov 4 for Becker Builds LLC.",
+          "request": "any reply from tom yet?",
+          "result": "Tom replied on Nov 4 with a signed W-9 attached, listing Becker Builds LLC and a Denver address."
+        },
+        {
+          "reply": "Forwarded Tom's signed W-9 to dana@ortizbooks.com.",
+          "request": "send it to my accountant at dana@ortizbooks.com",
+          "result": "Forwarded Tom's Nov 4 email with the signed W-9 attached to dana@ortizbooks.com."
+        },
+        {
+          "reply": "Reminder set for Jan 15 at 10am to send Tom his 1099-NEC.",
+          "request": "remind me jan 15 to send tom his 1099",
+          "result": "Set a reminder for Jan 15 at 10:00 AM: 'Send Tom Becker his 1099-NEC.'"
+        }
+      ],
+      "key": "c4",
+      "opening_request": "need a w-9 from tom becker for my 1099s, can you ask him for it",
+      "pair_key": "c3",
+      "result_reply": "No W-9 on file for Tom, so I asked him to send a signed one by Nov 20.",
+      "topic": "Collect signed W-9 from Tom Becker before year-end 1099 filing"
+    },
+    {
+      "canned_result": "Hiscox (billing@hiscox.com) sent a renewal notice on Oct 8. The general liability premium is $1,284 for Nov 1, 2026 to Nov 1, 2027. That is up from $1,190 last year, and it is due Nov 1 or payable in 4 installments.",
+      "follow_ups": [
+        {
+          "reply": "Four quarterly payments of $321, first one due Nov 1, with no extra fee.",
+          "request": "what would the installments be?",
+          "result": "The notice lists 4 quarterly payments of $321.00, with the first due Nov 1. There is no added fee."
+        },
+        {
+          "reply": "Reminder set for Oct 28 at 9am to pay the Hiscox renewal.",
+          "request": "remind me oct 28 to pay it",
+          "result": "Set a reminder for Oct 28 at 9:00 AM: 'Pay Hiscox liability insurance renewal ($1,284, due Nov 1).'"
+        },
+        {
+          "reply": "Sent to billing@hiscox.com asking why the premium rose from $1,190 to $1,284, and about discounts.",
+          "request": "ask hiscox why it went up",
+          "result": "Sent an email to billing@hiscox.com asking what caused the premium increase from $1,190 to $1,284 and whether any discounts apply."
+        }
+      ],
+      "key": "c5",
+      "opening_request": "when is my hiscox business insurance renewal due and how much is it",
+      "pair_key": null,
+      "result_reply": "Hiscox renewal is $1,284, due Nov 1. That's up from $1,190 last year, with installments available.",
+      "topic": "Hiscox business liability insurance premium renewal due Nov 1"
+    }
+  ]
+}

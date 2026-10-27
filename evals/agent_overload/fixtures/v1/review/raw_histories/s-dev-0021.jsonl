@@ -1,0 +1,128 @@
+{"payload": "how's your day going", "tag": "user_message", "timestamp": "2026-10-03 08:15:54"}
+{"payload": "Pretty smooth so far, no fires. Yours?", "tag": "poke_reply", "timestamp": "2026-10-03 08:15:59"}
+{"payload": "reply to felix at bluepeak that i need to move the podcast recording to nov 18", "tag": "user_message", "timestamp": "2026-10-03 08:35:38"}
+{"payload": "working on it", "tag": "poke_reply", "timestamp": "2026-10-03 08:35:43"}
+{"payload": "[SUCCESS] Felix Bluepeak email: Drafted a reply to felix@bluepeakmedia.com asking to move the podcast recording from Nov 12 to Nov 18, 2026 at 2pm. Saved in drafts for review.", "tag": "agent_message", "timestamp": "2026-10-03 08:38:07"}
+{"payload": "Drafted your reply to Felix moving the recording to Nov 18 at 2pm. Want me to send it?", "tag": "poke_reply", "timestamp": "2026-10-03 08:38:12"}
+{"payload": "can you find my eurostar ticket for london to paris on oct 15", "tag": "user_message", "timestamp": "2026-10-03 09:25:40"}
+{"payload": "checking now", "tag": "poke_reply", "timestamp": "2026-10-03 09:25:45"}
+{"payload": "[SUCCESS] Eurostar ticket search: Found Eurostar booking confirmation from bookings@eurostar.com: train 9024 departs St Pancras 8:31am Oct 15, arrives Paris Gare du Nord 11:47am, Standard Premier seat, 14A, £212, booking ref QXT7MP.", "tag": "agent_message", "timestamp": "2026-10-03 09:28:36"}
+{"payload": "Found it: Eurostar 9024, Oct 15, departs 8:31am from St Pancras, seat 14A, ref QXT7MP.", "tag": "poke_reply", "timestamp": "2026-10-03 09:28:41"}
+{"payload": "yes send it", "tag": "user_message", "timestamp": "2026-10-03 09:55:58"}
+{"payload": "looking now", "tag": "poke_reply", "timestamp": "2026-10-03 09:56:03"}
+{"payload": "[SUCCESS] Felix Bluepeak email: Sent the reply to felix@bluepeakmedia.com on Oct 5, 2026.", "tag": "agent_message", "timestamp": "2026-10-03 09:57:21"}
+{"payload": "Sent to Felix.", "tag": "poke_reply", "timestamp": "2026-10-03 09:57:26"}
+{"payload": "do you believe in luck", "tag": "user_message", "timestamp": "2026-10-03 15:55:48"}
+{"payload": "A little. I think it's mostly preparation bumping into a good coincidence.", "tag": "poke_reply", "timestamp": "2026-10-03 15:55:53"}
+{"payload": "remind me to pay the hartwell parking permit renewal before oct 12", "tag": "user_message", "timestamp": "2026-10-03 16:20:52"}
+{"payload": "happy to, checking", "tag": "poke_reply", "timestamp": "2026-10-03 16:20:57"}
+{"payload": "[SUCCESS] Hartwell Parking Permit Reminder: Found the renewal notice from billing@hartwellpm.com: permit #P-4471 renewal is $145, due October 12, 2026. Set a reminder for October 9 at 9:00am.", "tag": "agent_message", "timestamp": "2026-10-03 16:22:05"}
+{"payload": "Done. Reminder set for Oct 9 at 9am; renewal is $145, due Oct 12.", "tag": "poke_reply", "timestamp": "2026-10-03 16:22:10"}
+{"payload": "how much was the late fee if i miss it?", "tag": "user_message", "timestamp": "2026-10-03 19:00:53"}
+{"payload": "on it now", "tag": "poke_reply", "timestamp": "2026-10-03 19:00:58"}
+{"payload": "[SUCCESS] Hartwell Parking Permit Reminder: The notice says payments after October 12 incur a $25 late fee, and permits lapse after October 19.", "tag": "agent_message", "timestamp": "2026-10-03 19:03:37"}
+{"payload": "$25 late fee after Oct 12, and the permit lapses Oct 19.", "tag": "poke_reply", "timestamp": "2026-10-03 19:03:42"}
+{"payload": "find the gusto email about my two-factor settings changing in september", "tag": "user_message", "timestamp": "2026-10-03 19:10:32"}
+{"payload": "pulling that up now", "tag": "poke_reply", "timestamp": "2026-10-03 19:10:37"}
+{"payload": "[SUCCESS] Find Gusto 2FA Email: Found an email from no-reply@gusto.com dated Sept 18, 2026, 'Your two-factor authentication method was updated.' It says the method switched from SMS to an authenticator app at 2:14 PM PT and to contact support if this wasn't you.", "tag": "agent_message", "timestamp": "2026-10-03 19:11:50"}
+{"payload": "Found it: Gusto says your 2FA switched from SMS to an authenticator app on Sept 18 at 2:14 PM.", "tag": "poke_reply", "timestamp": "2026-10-03 19:11:55"}
+{"payload": "did i actually make that change or is it suspicious", "tag": "user_message", "timestamp": "2026-10-03 20:25:27"}
+{"payload": "looking now", "tag": "poke_reply", "timestamp": "2026-10-03 20:25:32"}
+{"payload": "[SUCCESS] Find Gusto 2FA Email: I checked your sent mail and inbox. There's a Gusto 'Authenticator app setup complete' confirmation at 2:12 PM PT on Sept 18, two minutes before the notice, so it matches a change you started.", "tag": "agent_message", "timestamp": "2026-10-03 20:28:15"}
+{"payload": "Looks like you did it. A setup confirmation arrived two minutes before the notice, at 2:12 PM.", "tag": "poke_reply", "timestamp": "2026-10-03 20:28:20"}
+{"payload": "move the reminder to oct 8 at 8am", "tag": "user_message", "timestamp": "2026-10-04 09:45:05"}
+{"payload": "on it now", "tag": "poke_reply", "timestamp": "2026-10-04 09:45:10"}
+{"payload": "[SUCCESS] Hartwell Parking Permit Reminder: Reminder rescheduled from October 9 at 9:00am to October 8 at 8:00am.", "tag": "agent_message", "timestamp": "2026-10-04 09:47:44"}
+{"payload": "Moved to Oct 8 at 8am.", "tag": "poke_reply", "timestamp": "2026-10-04 09:47:49"}
+{"payload": "what hourly rate did tina morales at robert half quote me for the contract role?", "tag": "user_message", "timestamp": "2026-10-04 10:05:16"}
+{"payload": "right away", "tag": "poke_reply", "timestamp": "2026-10-04 10:05:21"}
+{"payload": "[SUCCESS] Robert Half Tina Morales: Found an email from tmorales@roberthalf.com (Oct 7) quoting $58/hour W-2 for a 6-month contract-to-hire UX Designer role at a healthcare client, starting Nov 2, with benefits available after 30 days.", "tag": "agent_message", "timestamp": "2026-10-04 10:08:03"}
+{"payload": "Tina quoted $58/hour W-2 for a 6-month contract-to-hire UX role starting Nov 2.", "tag": "poke_reply", "timestamp": "2026-10-04 10:08:08"}
+{"payload": "does the email say how to undo it", "tag": "user_message", "timestamp": "2026-10-04 12:55:20"}
+{"payload": "give me a sec", "tag": "poke_reply", "timestamp": "2026-10-04 12:55:25"}
+{"payload": "[SUCCESS] Find Gusto 2FA Email: The email says to reply or contact Gusto support at support@gusto.com or 1-800-936-0383 if the change wasn't authorized. It also links to Settings > Security to switch methods back.", "tag": "agent_message", "timestamp": "2026-10-04 12:57:36"}
+{"payload": "Yes: use Settings > Security to switch back, or contact support@gusto.com if it wasn't you.", "tag": "poke_reply", "timestamp": "2026-10-04 12:57:41"}
+{"payload": "reply and ask if the rate is negotiable and if it's remote", "tag": "user_message", "timestamp": "2026-10-04 15:55:44"}
+{"payload": "let me dig in", "tag": "poke_reply", "timestamp": "2026-10-04 15:55:49"}
+{"payload": "[SUCCESS] Robert Half Tina Morales: Sent a reply to tmorales@roberthalf.com asking whether the $58/hour rate is negotiable and whether the role can be fully remote.", "tag": "agent_message", "timestamp": "2026-10-04 15:58:30"}
+{"payload": "Sent Tina your questions about rate flexibility and remote work.", "tag": "poke_reply", "timestamp": "2026-10-04 15:58:35"}
+{"payload": "what did she say?", "tag": "user_message", "timestamp": "2026-10-04 17:10:07"}
+{"payload": "checking now", "tag": "poke_reply", "timestamp": "2026-10-04 17:10:12"}
+{"payload": "[SUCCESS] Robert Half Tina Morales: Tina replied Oct 9 that the rate can go up to $62/hour for the right candidate, and the role is hybrid with two days per week onsite in Denver.", "tag": "agent_message", "timestamp": "2026-10-04 17:11:42"}
+{"payload": "She said up to $62/hour is possible, and it's hybrid, two days onsite in Denver.", "tag": "poke_reply", "timestamp": "2026-10-04 17:11:47"}
+{"payload": "ok cool", "tag": "user_message", "timestamp": "2026-10-04 17:30:20"}
+{"payload": "Cool cool cool.", "tag": "poke_reply", "timestamp": "2026-10-04 17:30:25"}
+{"payload": "remind me tomorrow at 9am to save the gusto backup codes", "tag": "user_message", "timestamp": "2026-10-04 18:30:53"}
+{"payload": "looking now", "tag": "poke_reply", "timestamp": "2026-10-04 18:30:58"}
+{"payload": "[SUCCESS] Find Gusto 2FA Email: Reminder set for tomorrow at 9:00 AM: 'Save Gusto authenticator backup codes.'", "tag": "agent_message", "timestamp": "2026-10-04 18:32:01"}
+{"payload": "Done. I'll remind you tomorrow at 9:00 AM to save your Gusto backup codes.", "tag": "poke_reply", "timestamp": "2026-10-04 18:32:06"}
+{"payload": "i did it!", "tag": "user_message", "timestamp": "2026-10-04 18:35:20"}
+{"payload": "Yes! So proud of you. Go enjoy that for a minute.", "tag": "poke_reply", "timestamp": "2026-10-04 18:35:25"}
+{"payload": "goodnight", "tag": "user_message", "timestamp": "2026-10-05 10:00:32"}
+{"payload": "Night! Sleep well, tomorrow can wait its turn.", "tag": "poke_reply", "timestamp": "2026-10-05 10:00:37"}
+{"payload": "meh", "tag": "user_message", "timestamp": "2026-10-05 10:30:40"}
+{"payload": "Meh is a valid mood. Sometimes it's the whole forecast.", "tag": "poke_reply", "timestamp": "2026-10-05 10:30:45"}
+{"payload": "how many days in a leap year", "tag": "user_message", "timestamp": "2026-10-05 11:20:44"}
+{"payload": "366. That one extra day does a lot of work.", "tag": "poke_reply", "timestamp": "2026-10-05 11:20:49"}
+{"payload": "good morning", "tag": "user_message", "timestamp": "2026-10-05 12:55:47"}
+{"payload": "Morning! Hope the coffee is strong and the day is gentle.", "tag": "poke_reply", "timestamp": "2026-10-05 12:55:52"}
+{"payload": "surprise me", "tag": "user_message", "timestamp": "2026-10-05 13:15:56"}
+{"payload": "Okay: a group of flamingos is called a flamboyance. You're welcome.", "tag": "poke_reply", "timestamp": "2026-10-05 13:16:01"}
+{"payload": "what's the boiling point of water", "tag": "user_message", "timestamp": "2026-10-05 13:30:42"}
+{"payload": "100 degrees Celsius, 212 Fahrenheit, at sea level. Up high it gets lazy.", "tag": "poke_reply", "timestamp": "2026-10-05 13:30:47"}
+{"payload": "forward the notice to my roommate jess", "tag": "user_message", "timestamp": "2026-10-05 15:15:39"}
+{"payload": "looking now", "tag": "poke_reply", "timestamp": "2026-10-05 15:15:44"}
+{"payload": "[SUCCESS] Hartwell Parking Permit Reminder: Forwarded the Hartwell renewal notice to jess.tamura@gmail.com with a note that it's due Oct 12.", "tag": "agent_message", "timestamp": "2026-10-05 15:18:27"}
+{"payload": "Forwarded the notice to Jess with the Oct 12 due date.", "tag": "poke_reply", "timestamp": "2026-10-05 15:18:32"}
+{"payload": "did felix answer yet", "tag": "user_message", "timestamp": "2026-10-05 15:25:26"}
+{"payload": "working on it", "tag": "poke_reply", "timestamp": "2026-10-05 15:25:31"}
+{"payload": "[SUCCESS] Felix Bluepeak email: Felix replied Oct 6 saying Nov 18 at 2pm works and attaching a guest briefing doc.", "tag": "agent_message", "timestamp": "2026-10-05 15:27:00"}
+{"payload": "Yes, Felix confirmed Nov 18 at 2pm and attached a guest briefing doc.", "tag": "poke_reply", "timestamp": "2026-10-05 15:27:05"}
+{"payload": "what time do i need to be at the station", "tag": "user_message", "timestamp": "2026-10-05 15:30:49"}
+{"payload": "give me a sec", "tag": "poke_reply", "timestamp": "2026-10-05 15:30:54"}
+{"payload": "[SUCCESS] Eurostar ticket search: Eurostar's email says check-in closes 30 minutes before departure, so arrive at St Pancras by 8:01am. It recommends arriving 90 minutes early for passport control.", "tag": "agent_message", "timestamp": "2026-10-05 15:33:35"}
+{"payload": "Check-in closes 8:01am, but Eurostar recommends arriving around 7:00am for passport control.", "tag": "poke_reply", "timestamp": "2026-10-05 15:33:40"}
+{"payload": "pineapple on pizza yes or no", "tag": "user_message", "timestamp": "2026-10-05 17:00:00"}
+{"payload": "Yes, and I'll defend it politely. Sweet and salty is a fair deal.", "tag": "poke_reply", "timestamp": "2026-10-05 17:00:05"}
+{"payload": "forward the ticket to my colleague Ben Ortiz", "tag": "user_message", "timestamp": "2026-10-05 17:40:56"}
+{"payload": "checking now", "tag": "poke_reply", "timestamp": "2026-10-05 17:41:01"}
+{"payload": "[SUCCESS] Eurostar ticket search: Forwarded the Eurostar confirmation with the PDF ticket to ben.ortiz@harlowtech.com, with a note that it is for the Oct 15 train.", "tag": "agent_message", "timestamp": "2026-10-05 17:43:33"}
+{"payload": "Forwarded the ticket to Ben Ortiz at ben.ortiz@harlowtech.com.", "tag": "poke_reply", "timestamp": "2026-10-05 17:43:38"}
+{"payload": "remind me the night before to download the ticket to my phone", "tag": "user_message", "timestamp": "2026-10-05 18:25:15"}
+{"payload": "checking now", "tag": "poke_reply", "timestamp": "2026-10-05 18:25:20"}
+{"payload": "[SUCCESS] Eurostar ticket search: Reminder set for Oct 14 at 8:00pm: download Eurostar ticket (ref QXT7MP) to phone wallet.", "tag": "agent_message", "timestamp": "2026-10-05 18:27:47"}
+{"payload": "Done, reminder set for Oct 14 at 8:00pm to download the ticket.", "tag": "poke_reply", "timestamp": "2026-10-05 18:27:52"}
+{"payload": "set a reminder the day before to read the briefing", "tag": "user_message", "timestamp": "2026-10-05 19:05:35"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-05 19:05:40"}
+{"payload": "[SUCCESS] Felix Bluepeak email: Reminder created for Nov 17, 2026 at 4:00pm: 'Read Bluepeak podcast briefing doc'.", "tag": "agent_message", "timestamp": "2026-10-05 19:08:30"}
+{"payload": "Reminder set for Nov 17 at 4pm to read the briefing.", "tag": "poke_reply", "timestamp": "2026-10-05 19:08:35"}
+{"payload": "yay", "tag": "user_message", "timestamp": "2026-10-05 19:50:25"}
+{"payload": "Yay indeed!", "tag": "poke_reply", "timestamp": "2026-10-05 19:50:30"}
+{"payload": "i should go to the gym", "tag": "user_message", "timestamp": "2026-10-05 20:30:01"}
+{"payload": "Should, or want to? Either way, future you will send a thank-you note.", "tag": "poke_reply", "timestamp": "2026-10-05 20:30:06"}
+{"payload": "random thought: socks are weird", "tag": "user_message", "timestamp": "2026-10-05 21:30:29"}
+{"payload": "They really are. We wrap our feet in little tubes and call it comfort.", "tag": "poke_reply", "timestamp": "2026-10-05 21:30:34"}
+{"payload": "remind me thursday at 9am to give tina my answer", "tag": "user_message", "timestamp": "2026-10-06 09:20:32"}
+{"payload": "happy to, checking", "tag": "poke_reply", "timestamp": "2026-10-06 09:20:37"}
+{"payload": "[SUCCESS] Robert Half Tina Morales: Created a reminder for Thursday at 9:00am: 'Give Tina Morales at Robert Half an answer on the contract-to-hire UX role.'", "tag": "agent_message", "timestamp": "2026-10-06 09:21:46"}
+{"payload": "Reminder set for Thursday at 9am to answer Tina.", "tag": "poke_reply", "timestamp": "2026-10-06 09:21:51"}
+{"payload": "i'm back", "tag": "user_message", "timestamp": "2026-10-06 12:00:11"}
+{"payload": "Welcome back. I missed you for almost thirty whole seconds.", "tag": "poke_reply", "timestamp": "2026-10-06 12:00:16"}
+{"payload": "what's 15% of 200", "tag": "user_message", "timestamp": "2026-10-06 14:55:45"}
+{"payload": "30. Tip math is my love language.", "tag": "poke_reply", "timestamp": "2026-10-06 14:55:50"}
+{"payload": "move the hartwell reminder to oct 8 at 8am", "tag": "user_message", "timestamp": "2026-10-06 15:09:32"}
+{"payload": "On it, moving that reminder now.", "tag": "poke_reply", "timestamp": "2026-10-06 15:09:37"}
+{"payload": "[SUCCESS] Hartwell Parking Permit Reminder: Reminder rescheduled from October 9 at 9:00am to October 8 at 8:00am.", "tag": "agent_message", "timestamp": "2026-10-06 15:12:19"}
+{"payload": "Done. Your parking permit reminder is now Oct 8 at 8:00am.", "tag": "poke_reply", "timestamp": "2026-10-06 15:12:24"}
+{"payload": "remind me thursday at 9am to give tina my answer", "tag": "user_message", "timestamp": "2026-10-06 17:23:24"}
+{"payload": "Sure, setting that reminder.", "tag": "poke_reply", "timestamp": "2026-10-06 17:23:29"}
+{"payload": "[SUCCESS] Robert Half Tina Morales: Created a reminder for Thursday at 9:00am: 'Give Tina Morales at Robert Half an answer on the contract-to-hire UX role.'", "tag": "agent_message", "timestamp": "2026-10-06 17:25:17"}
+{"payload": "All set. You'll get a reminder Thursday at 9am to give Tina your answer.", "tag": "poke_reply", "timestamp": "2026-10-06 17:25:22"}
+{"payload": "did felix answer yet", "tag": "user_message", "timestamp": "2026-10-06 18:05:22"}
+{"payload": "Checking your email for Felix's reply.", "tag": "poke_reply", "timestamp": "2026-10-06 18:05:27"}
+{"payload": "[SUCCESS] Felix Bluepeak email: Felix replied Oct 6 saying Nov 18 at 2pm works and attaching a guest briefing doc.", "tag": "agent_message", "timestamp": "2026-10-06 18:07:19"}
+{"payload": "Yep, Felix replied on Oct 6. Nov 18 at 2pm works for him, and he attached a guest briefing doc.", "tag": "poke_reply", "timestamp": "2026-10-06 18:07:24"}
+{"payload": "set a reminder the day before the recording to read the briefing", "tag": "user_message", "timestamp": "2026-10-06 19:41:24"}
+{"payload": "Setting that reminder now.", "tag": "poke_reply", "timestamp": "2026-10-06 19:41:29"}
+{"payload": "[SUCCESS] Felix Bluepeak email: Reminder created for Nov 17, 2026 at 4:00pm: 'Read Bluepeak podcast briefing doc'.", "tag": "agent_message", "timestamp": "2026-10-06 19:43:55"}
+{"payload": "Done. You'll be reminded Nov 17 at 4:00pm to read the briefing doc.", "tag": "poke_reply", "timestamp": "2026-10-06 19:44:00"}
