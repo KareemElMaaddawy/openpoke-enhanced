@@ -582,6 +582,8 @@ If the first dev-quick costs more than estimated, drop the H4 variant first (spe
 
 The test run's `prepare()` also backfills the 308 test purposes once (about $0.07; it's in the dry run).
 
+**Run on 2026-10-27** as `20261027-223042-records_retrieval-756d8701`, with `--rpm 230 --max-cost 13`: $2.14 and 42 minutes. The dry run estimated $8.12 and warned that the estimate with margin was above the $10 cap, because it priced every turn with the `records_full` smoke run (all 200 records shown). With `full_roster_max` 50, only N ≤ 50 shows every record, so the estimate was about 4 times too high. Measured per-turn costs: about $0.0004 when retrieving and about $0.0009 at N = 50 with every record shown. A later method's dry run has the same bias until it has a smoke run of its own config.
+
 ```bash
 .venv/bin/python -m evals.agent_overload.run --config evals/agent_overload/configs/v1_records_test.json --profile test --dry-run
 ```

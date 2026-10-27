@@ -4,7 +4,7 @@ The implementation spec for the first solution version: richer agent records, ro
 
 The problem, the candidate directions and the decision log are in [agent-overload.md](agent-overload.md). Causes (D1, I2, ...) and metrics are in [agent-overload-causes-and-metrics.md](agent-overload-causes-and-metrics.md). The harness this plugs into is in [agent-overload-experiment-design.md](agent-overload-experiment-design.md).
 
-Status: designed 2026-10-26. Steps 1 to 4 of the [implementation order](#implementation-order) (server side) implemented 2026-10-26. Steps 6 (harness) and 7 (runbook section) implemented 2026-10-27, after the phase 1 baseline (`20261027-035635-names_only-e5cf9a5a`) had run. Step 5 was tried once by hand; the experiment plan's paid steps 2 to 7 haven't run. Decisions made while implementing are in [Implementation notes](#implementation-notes).
+Status: designed 2026-10-26. Steps 1 to 4 of the [implementation order](#implementation-order) (server side) implemented 2026-10-26. Steps 6 (harness) and 7 (runbook section) implemented 2026-10-27, after the phase 1 baseline (`20261027-035635-names_only-e5cf9a5a`) had run. Step 5 was tried once by hand. The experiment plan (steps 2 to 7) ran on 2026-10-27; results are in [agent-overload.md](agent-overload.md#experiments). Decisions made while implementing are in [Implementation notes](#implementation-notes).
 
 ## Where this stands in the method
 

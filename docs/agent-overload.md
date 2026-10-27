@@ -118,9 +118,81 @@ Which piece contributed what is checked with ablations on the dev split.
 
 ## Experiments
 
-None run yet. Record each one here: setup, metric, result, conclusion.
+Record each one here: setup, metric, result, conclusion.
 
-The agreed inputs for the baseline experiment (system under test, roster sizes, metrics, labels, multi-turn design) are in [agent-overload-baseline-experiment.md](agent-overload-baseline-experiment.md).
+The agreed inputs for the baseline experiment (system under test, roster sizes, metrics, labels, multi-turn design) are in [agent-overload-baseline-experiment.md](agent-overload-baseline-experiment.md). Rates below come with paired or cluster-bootstrap 95% CIs in brackets; every run directory is under `evals/agent_overload/results/`.
+
+### Phase 1 baseline: names only (2026-10-27)
+
+- **Setup:** run `20261027-035635-names_only-e5cf9a5a`, profile `full`: today's routing (`<active_agents>` with names only), gpt-6-luna through OpenAI's API, frozen case set v1 (120 test and 60 dev single-turn cases, plus sequences), roster sizes 10 to 200, 2 reps. Cost $2.43.
+- **Result (test, single-turn):**
+
+  | N | 10 | 25 | 50 | 100 | 125 | 200 |
+  | --- | --- | --- | --- | --- | --- | --- |
+  | Accuracy | 84.2% | 82.5% | 76.7% | 73.8% | 73.8% | 75.4% |
+  | Misroute | 1.2% | 0.0% | 12.2% | 15.2% | 12.2% | 9.8% |
+  | False reuse | 55.8% | 59.6% | 48.1% | 48.1% | 53.8% | 63.5% |
+  | Roster tok/turn | 309 | 792 | 1,587 | 3,216 | 4,017 | 6,363 |
+
+  - Accuracy drop point: N = 50 on test, N = 100 on dev (dev accuracy 82.5% at N = 10, 72.5% at N = 200).
+  - False spawns are near 0 at every N, and the duplicate rate in carried-forward sequences is at most 1%.
+  - Roster tokens per call ≈ 10.65 × N + 154.
+- **Conclusion:** hypothesis 1 (accuracy drops as the roster grows) holds: 8 to 10 points lower at N ≥ 50 than at N = 10. The main error isn't duplicates but **false reuse**: when a task needs a new agent, names only sends it to an existing one about half the time. Misroutes appear from N = 50. Hypothesis 3 (tokens grow linearly) holds.
+
+### Version 1: records, ID routing and retrieval (2026-10-27)
+
+Method `records_retrieval` v1 (harness 1.1.0), spec in [agent-overload-records-retrieval-spec.md](agent-overload-records-retrieval-spec.md). Dev routing runs use `dev-quick` (60 dev cases, N = 10 and 200, 1 rep) and are compared with the baseline's dev runs at the same N (2 reps). With 60 cases, only large effects are clear; McNemar slightly favours the 1-rep candidate, so the CIs carry the conclusions. Dev spend for the whole plan was $1.50.
+
+**Purposes.** The 252 backfilled dev purposes (11 to 26 words) name the person, company or thread and often add what the name leaves out ("Riverside Aquatic Email" → "Sophie's swim lessons"). Many end with boilerplate from the first task ("without sending replies"). Not vague, so the plan went on. Purposes the model wrote through `create_agent` in the smoke run read like task instructions ("Find … and report …"); they're kept only in `raw/`, which isn't committed.
+
+**Record size.** Smoke run `20261027-211114-records_retrieval-5bdc0131`: a record costs about 147 tokens against about 11 for a name (the spec guessed 8 times larger; it's 13.5).
+
+**Retrieval probe** (dev, 41 reuse cases at N = 50, 100 and 200; no routing calls; one setting changed per probe):
+
+| Probe | Change | Recall@5, all N | Recall@5, N = 200 | Recall@8, N = 200 | Recall@5, implicit follow-ups |
+| --- | --- | --- | --- | --- | --- |
+| `20261027-205615-probe-406ad05d` | none (defaults) | 97.6% | 97.6% | 97.6% | 100% |
+| `20261027-210749-probe-9cce9d45` | pins off | 64.2% | 58.5% | 61.0% | 22.2% |
+| `20261027-210819-probe-516be1cf` | BM25 off | 97.6% | 97.6% | 97.6% | 100% |
+| `20261027-210856-probe-d7f6b8c9` | previous-message query off | 98.4% | 97.6% | 100% | 100% |
+| `20261027-210924-probe-b1de63a8` | `w_rec` 0.5 | 98.4% | 97.6% | 97.6% | 100% |
+
+- Pins carry retrieval: without them, 12 of 41 targets at N = 200 aren't in the top 20, and paraphrased requests reach only 59% recall@5. Most dev targets were recently active, so the probe mostly measures the pin path.
+- Pinned agents are rendered first. With pins, the target is ranked first for 11% of explicit and near-distractor requests, against 74% without, which is the recency prior seen in the hand test.
+- Every difference between the channel variants comes from one case (`s-dev-0034`): a switch away from the recent agent, where the previous user message pointed at the old topic.
+
+**Hypotheses on dev:**
+
+| ID | Runs | Result | Verdict |
+| --- | --- | --- | --- |
+| H1 | `20261027-213728-records_retrieval-ca5a5cd5` (every record shown) vs baseline | Accuracy +7.5 [−2.5, +17.5] at N = 10, **+19.2 [+10.0, +29.2]** at N = 200, +13.3 [+5.4, +21.3] pooled. Sequences +16.1 [+7.3, +26.6] carried, +8.9 [+4.7, +12.5] corrected. False reuse −55.8 [−72.5, −37.5]. Accuracy no longer falls with N (90.0% at 10, 91.7% at 200) | **Holds.** The gain comes mostly from CREATE cases (29% → 85% correct), not, as predicted, mainly from paraphrased queries and generic names (paraphrased 86% → 100%; only 2 generic-name units). Costs: false spawns +2.4 [0, +6.4], duplicate rate 0% → 7.7%, input tokens +75,700 per turn at N = 200 |
+| H2 | `20261027-215608-records_retrieval-cdeb31cc` (K = 5, retrieval at every N) vs every record shown | Single-turn −3.3 [−10.8, +5.0] pooled, −5.0 [−15.0, +5.0] at N = 200. Sequences at N = 200 −10.4 [−16.7, −4.2] in both modes. Roster tokens per turn flat at about 2,200 (every record: 88,100 at N = 200; baseline 6,500). Against the baseline: +14.2 [+0.8, +26.7] at N = 200 | **Not rejected by its criterion**: only 1 of 21 false spawns had the target excluded. But a new failure appeared: single-turn false spawns rose to 11.0% [2.5, 21.2] (baseline 0.0%) and the duplicate rate to 15 to 21%, with the target **shown first** in 18 of 21 false spawns. Cause unknown |
+| H3 | Probes above | Recall@5 on implicit follow-ups 100% with pins, 22.2% without (9 cases × 3 sizes) | **Holds** |
+| H4 | `20261027-220052-records_retrieval-2720a158` (no purposes) vs H2's run | Accuracy 0.0 [−4.2, +4.2] pooled, +3.3 [−5.0, +11.7] at N = 10, −3.3 [−10.0, +3.3] at N = 200 | **Rejected on dev**: no worse without purposes. Tested with retrieval only; a small effect can't be ruled out, and recent work repeats the first task the purpose was written from |
+
+**K = 8 diagnostic** (`20261027-220957-records_retrieval-600b94f5`). Question: does a longer list stop the false spawns? Rule set before the run: K = 8 replaces K = 5 if its false-spawn rate (single and sequence turns pooled) is at most half of K = 5's and accuracy isn't lower. Result: 9.4% against 10.4% (every record shown 3.5%, baseline 0.2%), accuracy 88.1% against 87.2%. Single turns improved at N = 10 (+10.0 [+3.3, +18.3]) and corrected sequences got worse (−6.2 [−10.4, −2.1]). **List length isn't the cause; K stays 5.** The cause of retrieval false spawns is an open question for version 1.1.
+
+**Chosen parameters** (rules in [Decisions](#decisions), 2026-10-27): K = 5, `full_roster_max` 50, BM25 on, previous-message query off, `w_rec` 0, pins on (at most 3), purposes backfilled.
+
+**Test run** (`20261027-223042-records_retrieval-756d8701`, frozen config `v1_records_test.json`, run once; cost $2.14). Compared with the baseline's test split by `compare.py` (`results/comparisons/20261027-035635-names_only-e5cf9a5a__vs__20261027-223042-records_retrieval-756d8701/`).
+
+| N | 10 | 25 | 50 | 100 | 125 | 200 |
+| --- | --- | --- | --- | --- | --- | --- |
+| Accuracy, baseline | 84.2% | 82.5% | 76.7% | 73.8% | 73.8% | 75.4% |
+| Accuracy, version 1 | 91.2% | 95.0% | 91.2% | 84.6% | 85.4% | 85.4% |
+| Difference | +7.1 [+1.7, +12.9] | +12.5 [+6.2, +18.8] | +14.6 [+7.9, +22.1] | +10.8 [+2.5, +19.2] | +11.7 [+3.7, +20.0] | +10.0 [+1.7, +17.9] |
+| Roster tok/turn, baseline | 309 | 792 | 1,587 | 3,216 | 4,017 | 6,363 |
+| Roster tok/turn, version 1 | 4,320 | 10,797 | 21,657 | 2,184 | 2,211 | 2,193 |
+| False spawn, version 1 | 4.3% | 1.8% | 3.7% | 14.6% | 10.4% | 12.8% |
+| Duplicate rate (carried sequences), baseline → version 1 | 0.0% → 12.5% | n/a | 0.0% → 25.2% | 1.0% → 29.5% | 0.0% → 25.3% | 1.0% → 26.4% |
+
+- **T1 passes.** Single-turn accuracy +11.1 points [+5.6, +16.9] pooled over N (88.8% against 77.7%; McNemar p = 3.5e-8: 133 case-size units right only with version 1 against 57 only with the baseline), and the CI is above 0 at every N. False reuse fell by 46.2 points [−59.7, −33.8] and misroutes by 8.1 [−12.3, −4.5].
+- **T2 passes.** Roster tokens per turn at N = 100, 125 and 200 are 32%, 45% and 66% below the baseline, and flat in N. All input tokens per turn are 370, 1,270 and 3,340 lower there. At N ≤ 50, where every record is shown, input tokens per turn are 4,100 to 18,900 higher, as expected.
+- **Duplicates (reported, not a target) are the cost.** False spawns on reuse turns, single and sequence together: 15.4% (337 of 2,184) against 0.4%. At the end of carried-forward sequences, 12.5% to 29.5% of agents are duplicates (inflation ratio 1.16 to 1.47) against at most 1%. They happen with every record shown too (N = 10 and 50), in both sequence modes, and for every query style, including explicit requests. Retrieval misses explain only 28 of the 337; in 111 the target was shown first.
+- **Sequences show no accuracy gain:** +2.7 [−5.0, +9.1] carried forward, −0.8 [−5.6, +3.2] corrected. The fewer false reuses and misroutes are offset by false spawns (+24.0 [+19.0, +29.3] carried forward).
+- The accuracy drop point moved from N = 50 to N = 100 (−6.7 [−12.9, −0.8] from N = 10), which is where retrieval takes over, and accuracy at N = 200 stays 10 points above the baseline's.
+
+**Conclusion.** Version 1 meets both targets: routing is more accurate at every roster size, and above 50 agents the interaction agent sees a smaller, constant roster block. It doesn't solve agent overload yet. It creates a new agent for work an existing agent owns about 15% of the time, so in multi-turn use the roster grows about 1.2 to 1.5 times faster than the work requires, which feeds the problem it set out to fix. The baseline's error (reusing the wrong agent for new work) has largely been traded for this one. Version 1.1 should target false spawns: the model creates agents while the right one is listed, so the likely levers are the records prompt's create rule and the `create_agent` decision itself (for example a scorer that has to rule out the listed candidates first), not retrieval.
 
 ## Decisions
 
