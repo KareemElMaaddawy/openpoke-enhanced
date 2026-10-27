@@ -544,7 +544,7 @@ Everything else is identical to `baseline_names_only.json`. Variants (H3 `use_pi
 `evals/agent_overload/retrieval_probe.py`.
 
 - Loads the frozen fixtures, builds the roster for each (case, N) exactly as the runner does, and runs **only** `select_candidates`. No routing model calls.
-- Reports recall@k for k in 1, 3, 5, 8, 10, 20, overall and by query style, message subtype, `target_name_visible`, history type and N. Also reports the share of hits that came only from pins.
+- Reports recall@k for k in 1, 3, 5, 8, 10, 12, 20, overall and by query style, message subtype, `target_name_visible`, history type and N. Also reports the share of hits that came only from pins.
 - Costs only embeddings (cents) and the one-off purpose backfill (estimated under $0.20 for the dev agents).
 - It reads labels, so it **refuses `--split test`**. Same `--dry-run` and `--confirm-spend` rules as `run.py`.
 - Single-turn cases only. Sequences are measured by the routing runs.

@@ -506,7 +506,7 @@ Then read about 30 purposes in `evals/agent_overload/cache/records_retrieval/1/p
 
 ### V1-3. Retrieval probe (Paid: cents)
 
-Each command prints recall@k for k in 1, 3, 5, 8, 10 and 20, overall and by N, query style, message subtype, target-name visibility and history type, plus the share of hits at K that came only from pins. Each writes `results/probes/<probe_id>/probe.md` and `probe.json`. After V1-2 only the queries are embedded. `--set` changes one param for that probe only.
+Each command prints recall@k for k in 1, 3, 5, 8, 10, 12 and 20, overall and by N, query style, message subtype, target-name visibility and history type, plus the share of hits at K that came only from pins. Each writes `results/probes/<probe_id>/probe.md` and `probe.json`. After V1-2 only the queries are embedded. `--set` changes one param for that probe only.
 
 ```bash
 .venv/bin/python -m evals.agent_overload.retrieval_probe --config evals/agent_overload/configs/v1_records_retrieval.json --confirm-spend

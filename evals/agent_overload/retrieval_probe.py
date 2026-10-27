@@ -57,7 +57,7 @@ from .harness.util import EVAL_ROOT, REPO_ROOT, canonical_json, sha256_hex
 
 RESULTS_ROOT = EVAL_ROOT / "results" / "probes"
 FAKE_RESULTS_ROOT = EVAL_ROOT / "results" / "_fake" / "probes"
-RECALL_KS = (1, 3, 5, 8, 10, 20)
+RECALL_KS = (1, 3, 5, 8, 10, 12, 20)  # 5, 8 and 12 are the candidate K values
 DEFAULT_SIZES = (50, 100, 200)
 GROUPS = ("N", "query_style", "message_subtype", "target_name_visible", "history_type")
 QUERY_TOKENS = 120  # per probe unit, for the estimate: the message plus the previous user message
