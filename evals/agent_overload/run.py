@@ -27,6 +27,10 @@ from .harness.config import (
 from .harness.fixtures import FixtureError, load_fixtures
 from .harness.llm import (
     DEFAULT_RPM,
+    OPENAI_DEFAULT_RPM,
+    OpenAIClient,
+    check_openai_pins,
+    openai_key,
     FakeClient,
     OpenRouterClient,
     SpendTracker,
@@ -84,6 +88,11 @@ def nominal_units(plan) -> dict:
     return counts
 
 
+def model_api(config: dict) -> str:
+    """Where model calls go: "openrouter" (the default) or "openai" (OpenAI's API directly)."""
+    return config["models"].get("api", "openrouter")
+
+
 def latest_cost_profile(config: dict, results_root: Path = RESULTS_ROOT) -> tuple[dict, str]:
     """Per-unit costs from the latest real smoke run of the same method and model, else the design."""
     method = config["method"]
@@ -101,6 +110,7 @@ def latest_cost_profile(config: dict, results_root: Path = RESULTS_ROOT) -> tupl
             and recorded.get("method", {}).get("name") == method["name"]
             and str(recorded.get("method", {}).get("version")) == str(method["version"])
             and recorded.get("models", {}).get("interaction") == model
+            and recorded.get("models", {}).get("api", "openrouter") == model_api(config)
         ):
             metrics_path = cfg_path.parent / "metrics.json"
             if metrics_path.exists():
@@ -164,8 +174,9 @@ def parse_args(argv: Optional[list[str]] = None) -> argparse.Namespace:
     parser.add_argument("--results-dir", type=Path, default=None, help="where run directories go")
     parser.add_argument("--manifest", type=Path, default=None, help="override the config's fixture manifest")
     parser.add_argument(
-        "--rpm", type=float, default=DEFAULT_RPM,
-        help=f"max requests per minute per model (default {DEFAULT_RPM:g}, under OpenRouter's new-account limit; 0 = no pacing)",
+        "--rpm", type=float, default=None,
+        help=f"max requests per minute per model (default {DEFAULT_RPM:g} on OpenRouter, under its new-account limit; "
+        f"{OPENAI_DEFAULT_RPM:g} with models.api \"openai\", under Tier 1's token limit; 0 = no pacing)",
     )
     add_paid_args(parser)
     return parser.parse_args(argv)
@@ -174,6 +185,8 @@ def parse_args(argv: Optional[list[str]] = None) -> argparse.Namespace:
 def main(argv: Optional[list[str]] = None) -> int:
     args = parse_args(argv)
     config = load_config(args.config)
+    if args.rpm is None:
+        args.rpm = OPENAI_DEFAULT_RPM if model_api(config) == "openai" else DEFAULT_RPM
     plan = resolve_plan(config, args.profile)
     max_cost = args.max_cost if args.max_cost is not None else float(config["budget"]["max_cost_usd"])
     cfg_hash = config_hash(config, args.profile)
@@ -207,7 +220,8 @@ def main(argv: Optional[list[str]] = None) -> int:
         f"  single turns {units['single_turns']}, sequence turns {units['sequence_turns']} "
         f"({units['sequence_runs']} sequence-runs), token probes {units['token_probes']}",
         f"  estimated model calls ≈ {round((units['single_turns'] + units['sequence_turns']) * profile['routing_calls_per_turn'] + units['sequence_runs'] + units['token_probes'])}",
-        f"  models: interaction {config['models']['interaction']}, summarizer {config['models']['summarizer']}, provider {config['models']['provider']}",
+        f"  models: interaction {config['models']['interaction']}, summarizer {config['models']['summarizer']}, "
+        + (f"OpenAI API direct {config['models']['openai_model_ids']}" if model_api(config) == "openai" else f"provider {config['models']['provider']}"),
         f"  per-unit costs from {profile_source}: "
         + ", ".join(f"{k}={v}" for k, v in profile.items()),
         f"  config hash {cfg_hash[:16]}, git {git.get('sha')}{' DIRTY: ' + ', '.join(git['dirty_paths'][:5]) if git.get('dirty') else ''}",
@@ -261,13 +275,22 @@ async def execute(args, config, plan, fixtures, mode, cfg_hash, max_cost) -> int
         client = FakeClient(spend=spend, raw_dir=run_dir / "raw", concurrency=int(runtime_cfg["concurrency"]))
         observed = {m: f"{s}-fake" for m, s in expected_slugs.items()}
     else:
-        listing = await fetch_model_listing()
-        observed, problems = check_pins(listing, expected_slugs)
+        direct = model_api(config) == "openai"
+        if direct:
+            key = openai_key()
+            if not key:
+                print("error: OPENAI_API_KEY is not set (add it to .env at the repository root, or export it)")
+                run_dir.rmdir()
+                return 1
+            observed, problems = await check_openai_pins(config["models"]["openai_model_ids"], key)
+        else:
+            listing = await fetch_model_listing()
+            observed, problems = check_pins(listing, expected_slugs)
         if problems and not args.accept_model_change:
             print("Refusing: model pin check failed:\n  " + "\n  ".join(problems) + "\nPass --accept-model-change to run anyway.")
             run_dir.rmdir()
             return EXIT_MODEL_CHANGED
-        client = OpenRouterClient(
+        client_kwargs = dict(
             confirm_spend=args.confirm_spend,
             spend=spend,
             raw_dir=run_dir / "raw",
@@ -276,6 +299,10 @@ async def execute(args, config, plan, fixtures, mode, cfg_hash, max_cost) -> int
             max_retries=int(runtime_cfg["max_retries"]),
             rpm=args.rpm,
         )
+        if direct:
+            client = OpenAIClient(model_ids=config["models"]["openai_model_ids"], **client_kwargs)
+        else:
+            client = OpenRouterClient(**client_kwargs)
 
     method = make_method(config, client)
     recorded = build_recorded_config(

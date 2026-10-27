@@ -302,6 +302,26 @@ class LoopBehaviourTest(unittest.TestCase):
         self.assertEqual(len(out.llm_calls), 2)
         self.assertFalse(out.loop_limit_hit)
 
+    def test_wait_only_response_ends_the_turn(self):
+        responder, _ = scripted(
+            llm.fake_message("", [call("send_message_to_agent", {"agent_name": "AWS Invoice Lookup", "instructions": "x"})]),
+            llm.fake_message("", [call("wait", {"reason": "agent is working"}, "c1")]),
+            llm.fake_message("", [call("send_message_to_agent", {"agent_name": "Never", "instructions": "y"}, "c2")]),
+        )
+        out = self.route(responder)
+        self.assertEqual(len(out.llm_calls), 2)
+        self.assertEqual([d.agent_name for d in out.delegations], ["AWS Invoice Lookup"])
+        self.assertEqual(out.history_effects, [Entry("wait", "", "agent is working")])
+        self.assertFalse(out.loop_limit_hit)
+
+    def test_wait_with_other_calls_continues(self):
+        responder, _ = scripted(
+            llm.fake_message("", [call("wait", {"reason": "dup"}), call("send_message_to_user", {"message": "hi"}, "c1")]),
+            llm.fake_message("done"),
+        )
+        out = self.route(responder)
+        self.assertEqual(len(out.llm_calls), 2)
+
     def test_loop_limit_keeps_delegations(self):
         responder, _ = scripted(llm.fake_message("", [call("send_message_to_agent", {"agent_name": "Loop", "instructions": "x"})]))
         out = self.route(responder)

@@ -1,4 +1,4 @@
-"""Pinned OpenRouter client with usage capture, retries, raw logging and a spend cap.
+"""Pinned model clients with usage capture, retries, raw logging and a spend cap.
 
 Every model call in the experiment (routing, summarizer, token probe, fixture
 generation) goes through ``ModelClient.chat`` so cost and latency are counted the
@@ -10,6 +10,11 @@ The payload is production's (``model``, ``messages`` with the system prompt firs
 via ``openrouter_client.client._build_messages``, ``stream: false``, ``tools``) plus
 only ``provider``, ``usage`` and ``seed`` (design: Model calls), and ``max_tokens``
 for token probes.
+
+``OpenAIClient`` sends the same calls straight to OpenAI's API (configured with
+``models.api: "openai"``): the OpenRouter-only keys are dropped, the model alias is
+mapped to a dated snapshot, and cost is estimated from the pricing table (cached
+input at its own price), since OpenAI's usage has no cost field.
 """
 
 from __future__ import annotations
@@ -19,6 +24,7 @@ import contextvars
 import copy
 import json
 import math
+import os
 import re
 import threading
 import time
@@ -40,6 +46,11 @@ BACKOFF_S = (1, 2, 4, 8, 16)
 # OpenRouter limits new accounts to 20 requests per minute per model (seen 2026-10-26),
 # so paid clients pace themselves under that by default. --rpm overrides it; 0 disables pacing.
 DEFAULT_RPM = 18.0
+# OpenAI Tier 1 for gpt-6-luna: 500 requests and 500,000 tokens per minute (model page, 2026-10-27).
+# At about 6,100 prompt tokens per call the token limit binds near 80 calls a minute.
+OPENAI_DEFAULT_RPM = 75.0
+OPENAI_BASE_URL = "https://api.openai.com/v1"
+OPENROUTER_ONLY_KEYS = ("provider", "usage")
 MAX_RATE_LIMIT_WAIT_S = 65.0
 ADDED_KEYS = ("provider", "usage", "seed", "max_tokens")
 
@@ -67,12 +78,17 @@ def load_pricing(path: Path = PRICING_PATH) -> dict:
     return json.loads(path.read_text(encoding="utf-8"))
 
 
-def estimate_cost(model: str, input_tokens: float, output_tokens: float, pricing: Optional[dict] = None) -> float:
+def estimate_cost(
+    model: str, input_tokens: float, output_tokens: float, pricing: Optional[dict] = None, cached_tokens: float = 0
+) -> float:
+    """Cost at the table's prices. ``cached_tokens`` (part of ``input_tokens``) use ``cached_input`` if listed."""
     prices = (pricing or load_pricing())["prices_per_million"]
     if model not in prices:
         raise KeyError(f"no price for {model} in {PRICING_PATH.name}")
     entry = prices[model]
-    return (input_tokens * entry["input"] + output_tokens * entry["output"]) / 1_000_000
+    cached = min(cached_tokens or 0, input_tokens)
+    cached_price = entry.get("cached_input", entry["input"])
+    return ((input_tokens - cached) * entry["input"] + cached * cached_price + output_tokens * entry["output"]) / 1_000_000
 
 
 # ---------------------------------------------------------------------------
@@ -242,7 +258,26 @@ def rate_limit_wait(response: "httpx.Response", now_epoch: Optional[float] = Non
             return None
         seconds = value / 1000.0 - now_epoch if value > 1e11 else value - now_epoch
         return min(MAX_RATE_LIMIT_WAIT_S, max(1.0, seconds))
+    # OpenAI: durations such as "6s", "1m30s" or "250ms" until each limit resets.
+    durations = [parse_duration(response.headers.get(h)) for h in ("x-ratelimit-reset-requests", "x-ratelimit-reset-tokens")]
+    durations = [d for d in durations if d is not None]
+    if durations:
+        return min(MAX_RATE_LIMIT_WAIT_S, max(1.0, max(durations)))
     return None
+
+
+_DURATION_RE = re.compile(r"(\d+(?:\.\d+)?)(ms|h|m|s)")
+
+
+def parse_duration(text: Optional[str]) -> Optional[float]:
+    """Seconds in an OpenAI rate-limit duration ("1m30.5s", "250ms"), or None."""
+    if not text:
+        return None
+    parts = _DURATION_RE.findall(text.strip())
+    if not parts or "".join(n + u for n, u in parts) != text.strip():
+        return None
+    scale = {"ms": 0.001, "s": 1.0, "m": 60.0, "h": 3600.0}
+    return sum(float(n) * scale[u] for n, u in parts)
 
 
 # ---------------------------------------------------------------------------
@@ -315,7 +350,9 @@ class ModelClient:
         for key, value in _usage_fields(data).items():
             setattr(record, key, value)
         if record.cost is None and record.prompt_tokens is not None:
-            record.cost = estimate_cost(model, record.prompt_tokens or 0, record.completion_tokens or 0, self.pricing)
+            record.cost = estimate_cost(
+                model, record.prompt_tokens or 0, record.completion_tokens or 0, self.pricing, cached_tokens=record.cached_tokens or 0
+            )
             record.cost_estimated = True
         record.response_id = data.get("id")
         record.returned_model = data.get("model")
@@ -338,6 +375,8 @@ class ModelClient:
 class OpenRouterClient(ModelClient):
     """Real, paid calls to OpenRouter. Construct only after ``--confirm-spend``."""
 
+    KEY_NAME = "OPENROUTER_API_KEY"
+
     def __init__(
         self,
         *,
@@ -353,11 +392,9 @@ class OpenRouterClient(ModelClient):
             raise SpendNotConfirmed("refusing to create a paid OpenRouter client without --confirm-spend")
         super().__init__(**kwargs)
         if api_key is None:
-            from server.config import get_settings
-
-            api_key = get_settings().openrouter_api_key
+            api_key = self._default_key()
         if not (api_key or "").strip():
-            raise SpendNotConfirmed("OPENROUTER_API_KEY is not set (in .env or the environment)")
+            raise SpendNotConfirmed(f"{self.KEY_NAME} is not set (in .env or the environment)")
         self._headers = {
             "Authorization": f"Bearer {api_key.strip()}",
             "Content-Type": "application/json",
@@ -370,6 +407,21 @@ class OpenRouterClient(ModelClient):
         self.rpm = rpm
         self._limiters: dict[str, RateLimiter] = {}
 
+    def _default_key(self) -> Optional[str]:
+        from server.config import get_settings
+
+        return get_settings().openrouter_api_key
+
+    def _wire(self, payload: dict) -> dict:
+        """The request body actually sent."""
+        return payload
+
+    def _finish(self, data: dict) -> dict:
+        return data
+
+    def _fatal_429(self, response: "httpx.Response") -> bool:
+        return False
+
     def limiter(self, model: str) -> RateLimiter:
         if model not in self._limiters:
             self._limiters[model] = RateLimiter(self.rpm)
@@ -379,6 +431,7 @@ class OpenRouterClient(ModelClient):
         url = f"{self.base_url}/chat/completions"
         last_error = "unknown error"
         limiter = self.limiter(payload["model"])
+        wire = self._wire(payload)
         for attempt in range(self.max_retries + 1):
             record.attempts = attempt + 1
             await limiter.acquire()
@@ -386,12 +439,16 @@ class OpenRouterClient(ModelClient):
             retryable = False
             wait_s: Optional[float] = None
             try:
-                response = await self._http.post(url, headers=self._headers, json=payload)
+                response = await self._http.post(url, headers=self._headers, json=wire)
             except httpx.HTTPError as exc:
                 last_error = f"network error: {exc}"
                 retryable = True
             else:
                 record.latency_ms = (time.monotonic() - started) * 1000.0
+                if response.status_code == 429 and self._fatal_429(response):
+                    record.error = f"HTTP 429: {response.text[:500]}"
+                    self._save_raw(record.call_id, payload, {"status": 429, "body": response.text})
+                    raise ApiError(record.error)
                 if response.status_code == 429 or response.status_code >= 500:
                     last_error = f"HTTP {response.status_code}: {response.text[:300]}"
                     retryable = True
@@ -420,7 +477,7 @@ class OpenRouterClient(ModelClient):
                                 record.error = last_error
                                 raise ApiError(last_error)
                         else:
-                            return data
+                            return self._finish(data)
             if retryable and attempt < self.max_retries:
                 if wait_s is None:  # a 429 already paused the limiter, which acquire() waits out
                     await asyncio.sleep(BACKOFF_S[min(attempt, len(BACKOFF_S) - 1)])
@@ -432,6 +489,69 @@ class OpenRouterClient(ModelClient):
 
     async def aclose(self) -> None:
         await self._http.aclose()
+
+
+class OpenAIClient(OpenRouterClient):
+    """Real, paid calls straight to OpenAI's API, for runs configured with ``models.api: "openai"``.
+
+    ``model_ids`` maps the config's model names to OpenAI snapshot ids (the pin). The
+    OpenRouter-only keys are dropped and ``max_tokens`` becomes ``max_completion_tokens``.
+    """
+
+    KEY_NAME = "OPENAI_API_KEY"
+
+    def __init__(self, *, model_ids: dict[str, str], base_url: str = OPENAI_BASE_URL, rpm: Optional[float] = OPENAI_DEFAULT_RPM, **kwargs: Any):
+        super().__init__(base_url=base_url, rpm=rpm, **kwargs)
+        self.model_ids = dict(model_ids)
+
+    def _default_key(self) -> Optional[str]:
+        return openai_key()
+
+    def _wire(self, payload: dict) -> dict:
+        return openai_wire_payload(payload, self.model_ids)
+
+    def _finish(self, data: dict) -> dict:
+        data.setdefault("provider", "OpenAI")
+        return data
+
+    def _fatal_429(self, response: "httpx.Response") -> bool:
+        # Out of credit, not a rate limit: retrying can't help.
+        return "insufficient_quota" in response.text
+
+
+def openai_wire_payload(payload: dict, model_ids: dict[str, str]) -> dict:
+    wire = {k: v for k, v in payload.items() if k not in OPENROUTER_ONLY_KEYS}
+    wire["model"] = model_ids.get(payload["model"], payload["model"])
+    if "max_tokens" in wire:
+        wire["max_completion_tokens"] = wire.pop("max_tokens")
+    return wire
+
+
+def openai_key() -> Optional[str]:
+    import server.config  # noqa: F401  (loads .env into the environment)
+
+    return (os.environ.get("OPENAI_API_KEY") or "").strip() or None
+
+
+async def check_openai_pins(model_ids: dict[str, str], api_key: str, base_url: str = OPENAI_BASE_URL) -> tuple[dict[str, str], list[str]]:
+    """Each configured snapshot must be available to the key (``GET /models``, free)."""
+    async with httpx.AsyncClient(timeout=TIMEOUT_S) as client:
+        response = await client.get(f"{base_url.rstrip('/')}/models", headers={"Authorization": f"Bearer {api_key}"})
+    if response.status_code != 200:
+        return {}, [f"OpenAI GET /models returned HTTP {response.status_code}: {response.text[:200]}"]
+    available = {entry["id"] for entry in response.json().get("data", [])}
+    return pin_problems(model_ids, available)
+
+
+def pin_problems(model_ids: dict[str, str], available: set[str]) -> tuple[dict[str, str], list[str]]:
+    observed, problems = {}, []
+    for name, snapshot in model_ids.items():
+        observed[name] = snapshot
+        if snapshot not in available:
+            family = name.split("/")[-1]
+            similar = sorted(m for m in available if m.startswith(family))
+            problems.append(f"{snapshot} is not available to this OpenAI key; {family} models it can use: {similar or 'none'}")
+    return observed, problems
 
 
 async def fetch_model_listing(base_url: str = OpenRouterBaseURL) -> dict[str, dict]:
@@ -594,6 +714,13 @@ __all__ = [
     "build_payload",
     "check_pins",
     "estimate_cost",
+    "OpenAIClient",
+    "OPENAI_DEFAULT_RPM",
+    "check_openai_pins",
+    "openai_key",
+    "openai_wire_payload",
+    "parse_duration",
+    "pin_problems",
     "fetch_model_listing",
     "load_pricing",
     "message_content",

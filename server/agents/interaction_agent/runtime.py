@@ -182,6 +182,11 @@ class InteractionAgentRuntime:
                     "content": self._format_tool_result(tool_call, result),
                 }
                 messages.append(tool_message)
+
+            # A response made only of wait calls has nothing left to do this turn. Without this,
+            # some models keep calling wait until the iteration limit.
+            if all(tool_call.name == "wait" for tool_call in parsed_tool_calls):
+                break
         else:
             raise RuntimeError("Reached tool iteration limit without final response")
 

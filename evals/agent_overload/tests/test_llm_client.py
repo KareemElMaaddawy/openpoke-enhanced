@@ -184,3 +184,79 @@ class RateLimitHelpersTest(unittest.TestCase):
         r = httpx.Response(429, json={"error": {"metadata": {"headers": {"X-RateLimit-Reset": str(int((now + 600) * 1000))}}}})
         self.assertEqual(llm.rate_limit_wait(r, now), llm.MAX_RATE_LIMIT_WAIT_S)
         self.assertIsNone(llm.rate_limit_wait(httpx.Response(429, text="slow down"), now))
+
+
+OPENAI_BODY = {
+    "id": "chatcmpl-1",
+    "model": "gpt-6-luna-2026-09-22",
+    "system_fingerprint": "fp_2",
+    "choices": [{"message": {"role": "assistant", "content": "hi"}, "finish_reason": "stop"}],
+    "usage": {"prompt_tokens": 1000, "completion_tokens": 50, "prompt_tokens_details": {"cached_tokens": 800}},
+}
+
+
+def openai_client_with(responses):
+    calls = []
+
+    def handler(request: httpx.Request) -> httpx.Response:
+        calls.append((str(request.url), json.loads(request.content)))
+        status, body = responses[min(len(calls) - 1, len(responses) - 1)]
+        return httpx.Response(status, json=body) if isinstance(body, dict) else httpx.Response(status, text=body)
+
+    client = llm.OpenAIClient(confirm_spend=True, api_key="test-key", model_ids={"openai/gpt-6-luna": "gpt-6-luna-2026-09-22"}, rpm=None)
+    client._http = httpx.AsyncClient(transport=httpx.MockTransport(handler))
+    return client, calls
+
+
+@mock.patch.object(llm.asyncio, "sleep", no_sleep)
+class OpenAIClientTest(unittest.TestCase):
+    def test_wire_payload_and_estimated_cost(self):
+        client, calls = openai_client_with([(200, OPENAI_BODY)])
+
+        async def go():
+            try:
+                return await client.chat(
+                    purpose="token_probe", model="openai/gpt-6-luna", messages=[{"role": "user", "content": "x"}],
+                    system="s", provider={"order": ["openai"]}, seed=7, extra={"max_tokens": 1},
+                )
+            finally:
+                await client.aclose()
+
+        _data, record = asyncio.run(go())
+        url, sent = calls[0]
+        self.assertEqual(url, "https://api.openai.com/v1/chat/completions")
+        self.assertEqual(sent["model"], "gpt-6-luna-2026-09-22")
+        self.assertNotIn("provider", sent)
+        self.assertNotIn("usage", sent)
+        self.assertNotIn("max_tokens", sent)
+        self.assertEqual((sent["max_completion_tokens"], sent["seed"]), (1, 7))
+        self.assertEqual(record.provider, "OpenAI")
+        self.assertTrue(record.cost_estimated)
+        self.assertAlmostEqual(record.cost, (200 * 0.10 + 800 * 0.0125 + 50 * 0.50) / 1e6)
+
+    def test_out_of_credit_is_not_retried(self):
+        client, calls = openai_client_with([(429, {"error": {"code": "insufficient_quota", "message": "quota"}})])
+        with self.assertRaises(llm.ApiError):
+            chat(client)
+        self.assertEqual(len(calls), 1)
+
+    def test_requires_key(self):
+        with mock.patch.dict(llm.os.environ, {"OPENAI_API_KEY": ""}):
+            with self.assertRaises(llm.SpendNotConfirmed):
+                llm.OpenAIClient(confirm_spend=True, model_ids={})
+        with self.assertRaises(llm.SpendNotConfirmed):
+            llm.OpenAIClient(confirm_spend=False, api_key="k", model_ids={})
+
+    def test_openai_rate_limit_durations(self):
+        self.assertEqual(llm.parse_duration("1m30.5s"), 90.5)
+        self.assertEqual(llm.parse_duration("250ms"), 0.25)
+        self.assertIsNone(llm.parse_duration("soon"))
+        r = httpx.Response(429, headers={"x-ratelimit-reset-requests": "120ms", "x-ratelimit-reset-tokens": "6s"}, json={})
+        self.assertEqual(llm.rate_limit_wait(r, 0.0), 6.0)
+
+    def test_pin_problems_name_the_available_snapshots(self):
+        ids = {"openai/gpt-6-luna": "gpt-6-luna-2026-09-22"}
+        self.assertEqual(llm.pin_problems(ids, {"gpt-6-luna-2026-09-22", "gpt-6-luna"})[1], [])
+        _observed, problems = llm.pin_problems(ids, {"gpt-6-luna-2026-10-01", "gpt-5.6-luna"})
+        self.assertEqual(len(problems), 1)
+        self.assertIn("gpt-6-luna-2026-10-01", problems[0])

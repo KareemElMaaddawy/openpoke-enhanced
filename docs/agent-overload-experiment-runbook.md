@@ -19,8 +19,8 @@ Every command runs from the repository root. Commands that call a paid API are m
 | 8 | Second labels | `generation/cross_label.py` | Gemini 3.8 Flash | $2.68 | 5 to 10 min |
 | 9 | Label review (agent, then user) | `generation/build_review.py` | no | $0 | ≤ 30 min of your time |
 | 10 | Freeze | `generation/freeze.py` | no | $0 | seconds |
-| 11 | Smoke run | `run.py --profile smoke` | gpt-6-luna | $0.13 | a few minutes |
-| 12 | Baseline | `run.py --profile full` | gpt-6-luna | $7.86 | about 30 min unthrottled; at least 9.4 h at 18 requests/min |
+| 11 | Smoke run | `run.py --profile smoke` | gpt-6-luna (OpenAI API) | $0.13 | a few minutes |
+| 12 | Baseline | `run.py --profile full` | gpt-6-luna (OpenAI API) | about $5 | about 2.5 to 3 h at 75 requests/min (estimate) |
 
 Fixtures total about $11.90 (step 1 actual plus the other steps' estimates), plus about $8 for the baseline. Step 1 used about 1.75 times the output tokens estimated, so steps 4 and 5 were re-estimated on 2026-10-26 with that factor. Costs are the `--dry-run` estimates before any margin. Times are guesses until the first steps have run. Each paid step stops on its own at twice its estimate, and no step starts if the ledger total plus its estimate × 1.25 would pass $50.
 
@@ -41,6 +41,8 @@ Generation steps are **resumable**: each saves what it finished, even when cappe
 
 OpenRouter limits new accounts to **20 requests per minute per model** (an HTTP 429 says `new-account-rpm`; seen on 2026-10-26). Every paid command therefore paces itself: at most `--rpm` requests start in any minute for each model (default 18), and a 429 pauses that model's calls until the reset time OpenRouter reports. Each dry run prints the minimum time this implies. Once the limit is lifted, `--rpm 0` turns pacing off. The pacing wait isn't counted in measured latency.
 
+**Runs (`run.py`) call OpenAI's API directly** (`models.api: "openai"` in the config, decided 2026-10-27): at 18 requests per minute the baseline would have taken about 28 hours. OpenAI's Tier 1 limit for gpt-6-luna is 500 requests and 500,000 tokens per minute (model page, 2026-10-27). At about 6,100 prompt tokens per call the token limit binds near 80 calls a minute, so `run.py` paces at 75 by default. Check your account's limits page: on a higher tier, pass a higher `--rpm`. A 429 waits for the reset OpenAI reports; a 429 for `insufficient_quota` (out of credit) stops the call at once. Generation scripts (steps 1 to 8) still go through OpenRouter.
+
 ## 0. Setup
 
 1. Install dependencies, if you haven't already. This creates `.venv/` and installs `server/requirements.txt`; the harness needs nothing else.
@@ -53,13 +55,15 @@ OpenRouter limits new accounts to **20 requests per minute per model** (an HTTP 
 
 3. Make the key available as `OPENROUTER_API_KEY`, either in `.env` at the repository root (`server/config.py` reads it) or exported in the shell you run the commands from. A shell export wins over `.env`.
 
-4. Confirm the key is visible without printing it:
+4. **For runs (steps 11 and 12 and later methods), add an OpenAI API key** as `OPENAI_API_KEY`, in the same `.env` or exported. `run.py` sends calls straight to OpenAI (see [Rate limits](#rate-limits)). Your OpenAI organization needs prepaid credit (Tier 1 starts after the first $5). On the OpenAI platform, set a monthly budget for the project the key belongs to, so the provider enforces a limit too.
+
+5. Confirm the keys are visible without printing them:
 
    ```bash
-   .venv/bin/python -c "from server.config import get_settings; print('key set:', bool(get_settings().openrouter_api_key))"
+   .venv/bin/python -c "from server.config import get_settings; import os; print('openrouter key set:', bool(get_settings().openrouter_api_key), '| openai key set:', bool(os.environ.get('OPENAI_API_KEY')))"
    ```
 
-5. Run the free test suite (no API calls; about 10 seconds):
+6. Run the free test suite (no API calls; about 10 seconds):
 
    ```bash
    .venv/bin/python -m unittest discover -s evals/agent_overload/tests -t .
@@ -67,7 +71,7 @@ OpenRouter limits new accounts to **20 requests per minute per model** (an HTTP 
 
    All tests must pass. They include a full fake-model run of every step below.
 
-6. Work on a clean, committed tree. `run.py` refuses to run on uncommitted code or fixtures (`--allow-dirty` overrides it, and the report flags that). Run outputs under `evals/agent_overload/results/` don't count as dirty.
+7. Work on a clean, committed tree. `run.py` refuses to run on uncommitted code or fixtures (`--allow-dirty` overrides it, and the report flags that). Run outputs under `evals/agent_overload/results/` don't count as dirty.
 
 If your virtual environment is somewhere else, replace `.venv/bin/python` with its Python in every command.
 
@@ -346,7 +350,7 @@ After freezing, the harness verifies every file's hash when it loads the set and
 
 Checks the whole harness against the real model before the expensive run, on a small slice: dev split, N = 10 and 200, 1 rep, 10 single-turn cases picked across the label and style cells, 1 sequence in both modes, and token probes. It also measures the real calls, tokens and cost per turn, which later pre-run estimates use in place of the design's guesses.
 
-- **Estimated cost and time:** $0.13; a few minutes. 68 turns, about 160 calls.
+- **Estimated cost and time:** $0.13; a few minutes. 68 turns, about 160 calls. The first smoke run (2026-10-27, `20261027-023444-names_only-8ec89b24`, through OpenRouter) took 25 minutes and 468 calls: gpt-6-luna kept calling `wait` after delegating, and 52 of 68 turns hit the loop limit. The interaction loop now ends a turn at a wait-only response (see the design's decisions), so rerun it on OpenAI direct before the baseline.
 - **Writes:** `evals/agent_overload/results/<run_id>/` (see [What a run writes](#what-a-run-writes)), and a line in `spend_ledger.jsonl`.
 
 ```bash
@@ -373,7 +377,7 @@ Then tell the agent the run id. At checkpoint D the agent compares these numbers
 
 The full phase 1 baseline: both splits, every roster size (10, 25, 50, 100, 125, 200 for single-turn cases; sequences at 10, 50, 100, 125, 200 on test and 10, 200 on dev), 2 reps, both sequence modes, and token probes.
 
-- **Estimated cost and time:** $7.86 from the design's estimates. After the smoke run, the dry run uses the smoke run's measured costs instead. About 30 minutes at concurrency 16 without a rate limit; at least 9.4 hours at the new-account limit of 20 requests per minute (see [Rate limits](#rate-limits)).
+- **Estimated cost and time:** $7.86 from the design's estimates; after the smoke run, the dry run uses the smoke run's measured costs instead (only smoke runs with the same `models.api` count). At OpenAI's Tier 1 limit, about 2.5 to 3 hours (estimate: about 2.75 calls per turn after the wait fix, at 75 per minute; see [Rate limits](#rate-limits)).
 - **Writes:** `results/<run_id>/`, a line in `spend_ledger.jsonl`, and a line in `test_ledger.jsonl`, since it includes the test split.
 
 ```bash
