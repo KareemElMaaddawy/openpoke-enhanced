@@ -285,6 +285,27 @@ class FillerCleaningTest(unittest.TestCase):
         self.assertEqual(name_agents.topup_size(165, 210), 61)
         self.assertGreaterEqual(name_agents.topup_size(100, 210), 2 * 100)  # yield floor of 0.5
 
+    def test_review_exclusions_leave_filler_and_rosters(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            fixtures = Path(tmp)
+            (fixtures / "review" / "naming").mkdir(parents=True)
+            threads, state = [], {}
+            for i in range(1, 203):
+                tid = f"t-dev-{i:04d}"
+                threads.append({"thread_id": tid, "role": "case" if i == 1 else "filler", "canned_result": "r"})
+                name = f"{gen_threads.fake_word(tid)} {gen_threads.fake_word(tid + 'x')}"
+                state[tid] = {"status": "named", "name": name, "instructions": "x", "provenance": {}, "history": []}
+            common.write_rows(fixtures / "threads.dev.jsonl", threads)
+            common.write_json(fixtures / "review" / "naming" / "dev.json", state)
+            common.write_rows(fixtures / "threads.test.jsonl", [])
+            common.write_json(fixtures / "review" / "filler_exclusions.json", {"dev": {"a-dev-0002": "competes with a case"}})
+            name_agents.write_agents_and_rosters(fixtures)
+            order = common.read_json(fixtures / "rosters.dev.json")["filler_order"]
+            self.assertEqual(len(order), 200)
+            self.assertNotIn("a-dev-0002", order)
+            removed = common.read_json(fixtures / "review" / "filler_cleaning.dev.json")["removed"]
+            self.assertIn({"agent_id": "a-dev-0002", "name": state["t-dev-0002"]["name"], "reason": "excluded in review", "note": "competes with a case"}, removed)
+
     def test_topup_runs_in_batches(self):
         with tempfile.TemporaryDirectory() as tmp:
             fixtures = Path(tmp)

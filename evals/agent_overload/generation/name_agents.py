@@ -11,7 +11,9 @@ total; then the thread is dropped. Earlier thread ids win collisions.
 
 When every thread is named or dropped, filler agents whose names resemble a case
 agent's (``is_filler_conflict``: compared without task words such as "email" or
-"search") are removed, filler
+"search") are removed, and so are filler agents listed in
+``review/filler_exclusions.json`` (``{split: {agent_id: reason}}``, written when the
+label review finds a filler agent that competes with a case's answer). Filler
 is trimmed to 200 per split, and ``rosters.<split>.json`` is written with the
 filler order and ages (both seeded with 20261025).
 """
@@ -200,10 +202,13 @@ def write_agents_and_rosters(fixtures_dir: Path) -> list[str]:
                 }
             )
         case_names = [a["name"] for a in agents if a["role"] == "case"]
+        excluded = read_json(fixtures_dir / "review" / "filler_exclusions.json", {}).get(split, {})
         kept, removed = [], []
         for agent in (a for a in agents if a["role"] == "filler"):
             conflicts = [c for c in case_names if is_filler_conflict(agent["name"], c)]
-            if conflicts:
+            if agent["agent_id"] in excluded:
+                removed.append({"agent_id": agent["agent_id"], "name": agent["name"], "reason": "excluded in review", "note": excluded[agent["agent_id"]]})
+            elif conflicts:
                 removed.append({"agent_id": agent["agent_id"], "name": agent["name"], "reason": "similar to case agent", "conflicts": conflicts})
             else:
                 kept.append(agent)
