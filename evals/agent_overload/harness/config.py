@@ -178,6 +178,8 @@ def build_recorded_config(
             "observed_canonical_slugs": observed_slugs,
             "accept_model_change": accept_model_change,
             "provider": config["models"]["provider"],
+            "api": config["models"].get("api", "openrouter"),
+            "openai_model_ids": config["models"].get("openai_model_ids"),
             "extra_params": config["models"].get("extra_params", {}),
         },
         "summarization": {

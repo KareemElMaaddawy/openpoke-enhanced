@@ -93,6 +93,14 @@ def model_api(config: dict) -> str:
     return config["models"].get("api", "openrouter")
 
 
+def recorded_api(recorded: dict) -> str:
+    """The API a recorded run used. Runs before 2026-10-27 didn't record it: OpenRouter ones had a provider."""
+    models = recorded.get("models", {})
+    if "api" in models:
+        return models["api"]
+    return "openrouter" if models.get("provider") else "openai"
+
+
 def latest_cost_profile(config: dict, results_root: Path = RESULTS_ROOT) -> tuple[dict, str]:
     """Per-unit costs from the latest real smoke run of the same method and model, else the design."""
     method = config["method"]
@@ -110,7 +118,7 @@ def latest_cost_profile(config: dict, results_root: Path = RESULTS_ROOT) -> tupl
             and recorded.get("method", {}).get("name") == method["name"]
             and str(recorded.get("method", {}).get("version")) == str(method["version"])
             and recorded.get("models", {}).get("interaction") == model
-            and recorded.get("models", {}).get("api", "openrouter") == model_api(config)
+            and recorded_api(recorded) == model_api(config)
         ):
             metrics_path = cfg_path.parent / "metrics.json"
             if metrics_path.exists():
