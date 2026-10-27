@@ -346,6 +346,7 @@ async def execute(args, config, plan, fixtures, mode, cfg_hash, max_cost) -> int
     failed = api_rate > float(runtime_cfg["max_api_error_rate"]) or bool(ctx.unit_errors)
     capped = ctx.capped or spend.capped
     providers = Counter(c.get("provider") or "unknown" for c in calls)
+    returned_models = Counter(c.get("returned_model") or "unknown" for c in calls)
 
     warnings = []
     if fake:
@@ -364,6 +365,9 @@ async def execute(args, config, plan, fixtures, mode, cfg_hash, max_cost) -> int
         warnings.append(f"{ctx.summarizer_errors} summarizer calls failed (state left unsummarized, as production does).")
     if not fake and any(p not in ("OpenAI", "openai") for p in providers):
         warnings.append(f"Providers other than OpenAI seen: {dict(providers)}")
+    if not fake and len(returned_models) > 1:
+        # The alias moved (or a call came back without a model): the run mixes model versions.
+        warnings.append(f"More than one model version answered: {dict(returned_models)}")
 
     metrics = compute_metrics(turns, sequences, calls, StatsConfig.from_config(config["stats"]))
     metrics["cost_profile"] = cost_profile(turns, sequences, calls)
@@ -380,6 +384,7 @@ async def execute(args, config, plan, fixtures, mode, cfg_hash, max_cost) -> int
         "total_cost_usd": spend.total_usd,
         "calls": len(calls),
         "providers": dict(providers),
+        "returned_models": dict(returned_models),
         "price_check": price_check(calls, config["models"]["interaction"]),
         "warnings": warnings,
         "unit_errors": ctx.unit_errors,

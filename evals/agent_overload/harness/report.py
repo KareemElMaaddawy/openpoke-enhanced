@@ -143,6 +143,7 @@ def render_report(recorded: dict, metrics: dict, summary: dict) -> str:
         ["Summarizer model", models["summarizer"]],
         ["Provider settings", str(models["provider"])],
         ["Providers seen", providers],
+        ["Models returned", ", ".join(f"{m} ({n})" for m, n in sorted(summary.get("returned_models", {}).items())) or "n/a"],
         ["Git", f"{git.get('sha')}{' (dirty)' if git.get('dirty') else ''}"],
         ["Harness / scorer", f"{recorded['harness_version']} / {recorded['scorer_version']}"],
         ["Started / ended", f"{recorded['started_at']} / {summary.get('ended_at')}"],

@@ -20,7 +20,7 @@
     },
     "api": "openai",
     "openai_model_ids": {
-      "openai/gpt-6-luna": "gpt-6-luna-2026-09-22"
+      "openai/gpt-6-luna": "gpt-6-luna"
     },
     "provider": null,
     "seed_policy": "per_call_position",
