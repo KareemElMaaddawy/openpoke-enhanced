@@ -27,7 +27,7 @@ Each of these needs evidence before it shapes a design:
 
 ## Success criteria
 
-Agreed. The metrics, and the causes each one targets, are in [agent-overload-causes-and-metrics.md](agent-overload-causes-and-metrics.md#metrics). Targets stay open until there is a baseline.
+Agreed. The metrics, and the causes each one targets, are in [agent-overload-causes-and-metrics.md](agent-overload-causes-and-metrics.md#metrics). Targets are set per solution version before its test run: version 1's are in [Decisions](#decisions) (2026-10-27).
 
 ## Candidate directions (not yet evaluated)
 
@@ -126,3 +126,14 @@ The agreed inputs for the baseline experiment (system under test, roster sizes, 
 
 - **2026-10-25: Metrics agreed.** The primary, secondary and guardrail metrics in [agent-overload-causes-and-metrics.md](agent-overload-causes-and-metrics.md#metrics) are what solutions will be judged against. Targets are set after a baseline is measured.
 - **2026-10-25: Baseline experiment scope.** Roster sizes 10, 25, 50, 100, 125 and 200, names only as in today's code. Metrics measured first: routing accuracy, roster tokens per turn, duplicate rate, execution task success against history length, and batch latency (execution task success moved up to primary). Single-delegation cases first, then parallel-split cases. No new integrations before the baseline. Details in [agent-overload-baseline-experiment.md](agent-overload-baseline-experiment.md).
+- **2026-10-27: Version 1 test targets.** Agreed before the version 1 test run, which is compared with baseline `20261027-035635-names_only-e5cf9a5a` on the test split:
+  - **T1, accuracy gain:** single-turn suite, version 1 minus baseline accuracy pooled over all roster sizes. Passes if the paired 95% CI of the difference is above 0.
+  - **T2, fewer tokens shown to the interaction agent:** `<active_agents>` tokens per turn at N = 100, 125 and 200, where retrieval runs. Passes if lower than the baseline at all three. At N ≤ 50 the config shows every record, so those tokens are higher by design: a record costs about 147 tokens against about 11 for a name (smoke run `20261027-211114-records_retrieval-5bdc0131`).
+  - **Reported, not pass/fail:** false-spawn rate and duplicate rate. On dev, retrieval raised false spawns from 0.2% (baseline) to about 10%, and duplicates make the roster grow. Passing T1 and T2 shows more accurate routing and a cheaper roster block; it doesn't by itself show the overload problem is solved.
+- **2026-10-27: Version 1 test config frozen** (`evals/agent_overload/configs/v1_records_test.json`, copied into `RetrievalParams` so `make dev ROUTING=records` runs it). Every value was chosen on dev; the evidence is in [Experiments](#experiments).
+  - `full_roster_max` 50: the largest N in the baseline's dev sweep below its dev accuracy drop point (N = 100), per the spec's rule.
+  - K = 5: the smallest of {5, 8, 12} with dev recall@K ≥ 0.95 at N = 200 (0.976, 40 of 41). A K = 8 diagnostic for retrieval false spawns missed its pre-set rule (false spawns at most half of K = 5's: 9.4% against 10.4%), so K stayed 5.
+  - BM25 on and `w_rec` 0: ties with the alternative at K, kept at the defaults. `w_rec` 0.5 also lowered recall@3 (95.1% to 88.6%) and adds recency-lock risk on top of pins.
+  - Previous-user-message query off: never worse at any k, and it recovered the one topic-switch miss. This matches the hand test, where it added noise on topic switches.
+  - Pins on, at most 3: H3 holds on dev (recall@5 on implicit follow-ups 100% with pins against 22% without).
+  - Purposes kept (`seed_purposes` "backfill"), although H4 was rejected on dev: that run used retrieval only, so purposes were never tested with every record shown (N ≤ 50 in this config), and the product writes them through `create_agent` anyway.

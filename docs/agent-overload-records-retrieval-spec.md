@@ -94,13 +94,13 @@ make dev ROUTING=records
 
 `OPENPOKE_ROUTING=records` in `.env` or the shell does the same. Leaving it out runs `legacy`, which is today's system.
 
-To try retrieval without 25 agents, lower the full-roster threshold. With 3, any roster of 4 or more active agents goes through retrieval (and makes one small embedding call per turn):
+To try retrieval without 50 agents, lower the full-roster threshold. With 3, any roster of 4 or more active agents goes through retrieval (and makes one small embedding call per turn):
 
 ```bash
 OPENPOKE_FULL_ROSTER_MAX=3 make dev ROUTING=records
 ```
 
-`OPENPOKE_FULL_ROSTER_MAX` must be an integer of 0 or more; `0` means always retrieve. Unset or empty uses the default in `RetrievalParams` (25). Any other value stops the server at startup with an error naming the variable. `legacy` ignores it.
+`OPENPOKE_FULL_ROSTER_MAX` must be an integer of 0 or more; `0` means always retrieve. Unset or empty uses the default in `RetrievalParams` (50). Any other value stops the server at startup with an error naming the variable. `legacy` ignores it.
 
 ### Implementation
 
@@ -108,7 +108,7 @@ OPENPOKE_FULL_ROSTER_MAX=3 make dev ROUTING=records
 - **`full_roster_max` setting:** `Settings.full_roster_max: int` reads `OPENPOKE_FULL_ROSTER_MAX` through `default_factory`, and falls back to `RetrievalParams().full_roster_max`, so the default lives only in `params.py`. A validator (with `validate_default=True`) accepts integers of 0 or more and raises `ValueError` naming the variable otherwise. `RecordsRouting` takes `full_roster_max` from the setting, not from the dataclass default. A bad value in either variable stops startup with `Invalid configuration: ...` (`server/app.py` and `server/server.py` turn the validation error into `SystemExit`).
 - **`server/server.py`:** add `--routing {legacy,records}`. Parse the arguments **before** importing `server.app`: move `from .app import app` into `main()` after parsing. If `--routing` is given, set `os.environ["OPENPOKE_ROUTING"]` and call `get_settings.cache_clear()`. Setting the environment variable is what makes `--reload` work, because uvicorn's reload worker re-imports `server.app:app` in a child process that inherits the environment.
 - **`Makefile`:** `ROUTING ?=`, and in `dev` and `start` add `$(if $(ROUTING),--routing $(ROUTING),)` to the server command. Add `ROUTING` to the help text. Update [makefile.md](makefile.md).
-- **Startup log:** one line at app start, for example `Routing mode: records (embeddings openai/text-embedding-3-small@512, K=8, full_roster_max=25)`, so it's visible in `make logs` which system is running. The `full_roster_max` shown is the one in effect, after `OPENPOKE_FULL_ROSTER_MAX`. In `legacy` the line is `Routing mode: legacy`.
+- **Startup log:** one line at app start, for example `Routing mode: records (embeddings openai/text-embedding-3-small@512, K=5, full_roster_max=50)`, so it's visible in `make logs` which system is running. The `full_roster_max` shown is the one in effect, after `OPENPOKE_FULL_ROSTER_MAX`. In `legacy` the line is `Routing mode: legacy`.
 - **`/api/v1/meta`:** add `routing_mode` to `RootResponse` so the UI or `curl` can confirm the mode. The web UI itself doesn't change.
 - **Reading the mode:** code reads `get_settings().routing_mode` when a runtime is created, never at import time.
 
@@ -329,18 +329,18 @@ class Embedder(Protocol):
 
 ### Parameters
 
-`RetrievalParams` in `server/services/routing/params.py`, a frozen dataclass. These defaults are starting points to tune on dev, not decisions:
+`RetrievalParams` in `server/services/routing/params.py`, a frozen dataclass. The defaults were tuned on dev and frozen for the version 1 test run on 2026-10-27 (`configs/v1_records_test.json`; reasons in [agent-overload.md](agent-overload.md#decisions)). Before that, `full_roster_max` was 25, `k` 8 and `query_with_previous_user_message` true:
 
 | Param | Default | Meaning |
 | --- | --- | --- |
-| `full_roster_max` | 25 in production (a guess until the baseline); `OPENPOKE_FULL_ROSTER_MAX` overrides it in the server; set per config in evals | Show every record when there are at most this many active ones |
-| `k` | 8 | Records shown when retrieving |
+| `full_roster_max` | 50 in production (the rule below); `OPENPOKE_FULL_ROSTER_MAX` overrides it in the server; set per config in evals | Show every record when there are at most this many active ones |
+| `k` | 5 | Records shown when retrieving |
 | `max_pinned` | 3 | Pinned agents counted inside K |
 | `pin_lookback` | 3 | Recent `agent_message` entries scanned for result lines |
 | `use_pins` / `use_semantic` / `use_lexical` | true / true / true | Channel switches, for ablations |
 | `w_sem`, `w_lex`, `w_rec` | 1.0, 1.0, 0.0 | RRF weights. Recency is off by default because of the recency-lock risk |
 | `rrf_k` | 60 | Standard RRF constant |
-| `query_with_previous_user_message` | true | Also embed "previous user message + message" |
+| `query_with_previous_user_message` | false | Also embed "previous user message + message" |
 | `render_recent` | 1 | Snippets shown per prompt entry |
 
 The server uses these defaults. Eval configs override them through `method.params`. `rrf_k`, `k1` and `b` are standard values and aren't tuned. The rest are tuned on dev as described in the [experiment plan](#experiment-plan-for-version-1).
@@ -599,7 +599,7 @@ All on dev until the last step. The user runs every paid command. Costs are esti
 - **Legacy is untouched:** with `routing_mode="legacy"`, `InteractionAgentRuntime` gives the same system prompt, tool schemas and messages as calling the module functions directly. The sha256 of `system_prompt.md` and of `json.dumps(TOOL_SCHEMAS, sort_keys=True)` match the values recorded at the start of implementation.
 - **Prompt drift:** `system_prompt_records.md` outside the routing markers equals `system_prompt.md`.
 - **Mode switch:** `OPENPOKE_ROUTING` unset gives `legacy`. `records` gives `records`. A bad value raises. `server.server --routing records` sets the environment before `server.app` is imported (check with a subprocess and `/api/v1/meta`, or by patching `uvicorn.run`).
-- **Full-roster threshold:** `OPENPOKE_FULL_ROSTER_MAX` unset gives 25, a valid value is used (also by `RecordsRouting`), and a negative or non-integer value raises.
+- **Full-roster threshold:** `OPENPOKE_FULL_ROSTER_MAX` unset gives the `RetrievalParams` default (50), a valid value is used (also by `RecordsRouting`), and a negative or non-integer value raises.
 - **Store:** create, collision, alias, `touch_dispatch` keeping 3 snippets, `record_result` filling the right snippet, atomic write, clear.
 - **Import:** a temp roster plus temp logs with `Email Keith` and `email-keith` gives one record with an alias. Timestamps, counts and snippets come from the logs.
 - **Tools:** an unknown id errors and creates nothing; a name passed as id resolves; a create collision errors with the existing id; an empty purpose falls back; a create adds to `roster.json`. Execution dispatch is patched out.

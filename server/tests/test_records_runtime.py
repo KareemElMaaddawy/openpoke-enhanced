@@ -3,6 +3,7 @@
 import json
 import re
 import unittest
+from dataclasses import replace
 
 from server.agents.interaction_agent import routing as routing_module
 from server.agents.interaction_agent.records_prompt import build_records_system_prompt
@@ -100,18 +101,18 @@ class RetrievedModeTurnTest(RecordsRuntimeTestCase):
 
         block = self.active_agents_block(calls[0][1])
         shown = re.findall(r'<agent id="([^"]+)"', block)
-        self.assertTrue(block.startswith('<active_agents shown="8" total="12">'))
-        self.assertEqual(len(shown), 8)
+        self.assertTrue(block.startswith('<active_agents shown="5" total="12">'))
+        self.assertEqual(len(shown), 5)
         self.assertEqual(shown[0], self.keith)
         self.assertEqual(len(self.state.embedder.calls), 1)
         self.assertEqual(len(self.state.embedder.calls[0]), 1 + 12)   # q_msg + every record (all stale)
         self.assertTrue((self.state.base / "execution_agents" / "embeddings.json").exists())
-        self.assertIn("Routing candidates: mode=retrieved shown=8/12 full_roster_max=3 k=8", "\n".join(logs.output))
+        self.assertIn("Routing candidates: mode=retrieved shown=5/12 full_roster_max=3 k=5", "\n".join(logs.output))
 
         runtime, _ = self.runtime([assistant_reply("Ok.")])
         await runtime.execute("thanks")
         self.assertEqual(self.state.embedder.calls[1][:1], ["thanks"])
-        self.assertEqual(len(self.state.embedder.calls[1]), 2)   # q_msg + q_ctx; record vectors cached
+        self.assertEqual(len(self.state.embedder.calls[1]), 1)   # q_msg only (q_ctx off by default); record vectors cached
 
     async def test_execution_result_pins_agent(self) -> None:
         runtime, calls = self.runtime([assistant_reply("Done.")])
@@ -124,6 +125,8 @@ class RetrievedModeTurnTest(RecordsRuntimeTestCase):
         self.state.conversation.record_user_message("find the aws invoice")
         self.state.conversation.record_reply("Found it.")
         runtime, _ = self.runtime([assistant_reply("Sure.")])
+        self.assertFalse(runtime.routing.params.query_with_previous_user_message)   # off by default
+        runtime.routing.params = replace(runtime.routing.params, query_with_previous_user_message=True)
         await runtime.execute("reply to that")
         self.assertEqual(runtime.routing.last_candidate_set.queries, ["reply to that", "find the aws invoice\nreply to that"])
 
@@ -137,7 +140,7 @@ class RetrievedModeTurnTest(RecordsRuntimeTestCase):
         self.assertEqual(runtime.routing.last_candidate_set.mode, "retrieved_lexical_fallback")
         self.assertEqual(routing_module.EMBEDDING_FAILURES, before + 1)
         shown = re.findall(r'<agent id="([^"]+)"', self.active_agents_block(calls[0][1]))
-        self.assertEqual((len(shown), shown[0]), (8, self.keith))
+        self.assertEqual((len(shown), shown[0]), (5, self.keith))
         output = "\n".join(logs.output)
         self.assertIn("Embedding failed, using lexical retrieval for this turn", output)
         self.assertIn("mode=retrieved_lexical_fallback", output)
