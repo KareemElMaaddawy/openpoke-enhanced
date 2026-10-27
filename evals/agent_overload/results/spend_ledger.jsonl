@@ -24,3 +24,4 @@
 {"cost_usd": 6.3e-05, "date": "2026-10-27T21:08:59Z", "kind": "probe", "run_id": "20261027-210856-probe-d7f6b8c9"}
 {"cost_usd": 0.000158, "date": "2026-10-27T21:09:28Z", "kind": "probe", "run_id": "20261027-210924-probe-b1de63a8"}
 {"cost_usd": 0.164997, "date": "2026-10-27T21:13:45Z", "kind": "run:smoke", "run_id": "20261027-211114-records_retrieval-5bdc0131"}
+{"cost_usd": 0.717491, "date": "2026-10-27T21:49:51Z", "kind": "run:dev-quick", "run_id": "20261027-213728-records_retrieval-ca5a5cd5"}
