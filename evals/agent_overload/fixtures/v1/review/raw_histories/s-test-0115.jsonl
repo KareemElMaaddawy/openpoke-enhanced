@@ -1,0 +1,114 @@
+{"payload": "did the best buy gift card for mom get scheduled to send?", "tag": "user_message", "timestamp": "2026-10-06 10:30:42"}
+{"payload": "looking into it", "tag": "poke_reply", "timestamp": "2026-10-06 10:30:47"}
+{"payload": "[SUCCESS] Best Buy gift card schedule: Best Buy email (Oct 8) confirms a $100 e-gift card scheduled to email to linda.hart@gmail.com on Oct 22 at 8:00am with the message 'Happy birthday Mom'.", "tag": "agent_message", "timestamp": "2026-10-06 10:31:48"}
+{"payload": "Yes, a $100 gift card goes to linda.hart@gmail.com on Oct 22 at 8am.", "tag": "poke_reply", "timestamp": "2026-10-06 10:31:53"}
+{"payload": "what message did i put on it?", "tag": "user_message", "timestamp": "2026-10-06 10:45:06"}
+{"payload": "let me check", "tag": "poke_reply", "timestamp": "2026-10-06 10:45:11"}
+{"payload": "[SUCCESS] Best Buy gift card schedule: The confirmation shows the message 'Happy birthday Mom' and is signed from Jordan.", "tag": "agent_message", "timestamp": "2026-10-06 10:46:41"}
+{"payload": "It says 'Happy birthday Mom', signed from Jordan.", "tag": "poke_reply", "timestamp": "2026-10-06 10:46:46"}
+{"payload": "remind me to call her the morning it goes out", "tag": "user_message", "timestamp": "2026-10-06 11:10:09"}
+{"payload": "right away", "tag": "poke_reply", "timestamp": "2026-10-06 11:10:14"}
+{"payload": "[SUCCESS] Best Buy gift card schedule: Reminder set for Oct 22, 2026 at 8:15am: 'Call Mom, birthday gift card just sent'.", "tag": "agent_message", "timestamp": "2026-10-06 11:12:53"}
+{"payload": "Reminder set for Oct 22 at 8:15am to call her.", "tag": "poke_reply", "timestamp": "2026-10-06 11:12:58"}
+{"payload": "summarize elena's q3 board update email", "tag": "user_message", "timestamp": "2026-10-06 11:30:58"}
+{"payload": "let me check", "tag": "poke_reply", "timestamp": "2026-10-06 11:31:03"}
+{"payload": "[SUCCESS] Elena Q3 Board Email: Elena Vasquez (elena@brightloomhq.com) sent 'Q3 Board Update' on Oct 12: revenue $1.84M, up 11% over Q2, churn down to 2.1%, and a hiring freeze until January.", "tag": "agent_message", "timestamp": "2026-10-06 11:32:34"}
+{"payload": "Elena's Q3 update: revenue $1.84M (+11%), churn 2.1%, hiring freeze until January.", "tag": "poke_reply", "timestamp": "2026-10-06 11:32:39"}
+{"payload": "lol nice", "tag": "user_message", "timestamp": "2026-10-06 12:45:50"}
+{"payload": "Right? I'm choosing to take that as a compliment.", "tag": "poke_reply", "timestamp": "2026-10-06 12:45:55"}
+{"payload": "haha you're funny", "tag": "user_message", "timestamp": "2026-10-06 13:00:22"}
+{"payload": "I try. Mostly I just get lucky.", "tag": "poke_reply", "timestamp": "2026-10-06 13:00:27"}
+{"payload": "uber eats messed up my lunch order on oct 6, find the refund email", "tag": "user_message", "timestamp": "2026-10-06 14:30:04"}
+{"payload": "right away", "tag": "poke_reply", "timestamp": "2026-10-06 14:30:09"}
+{"payload": "[SUCCESS] Find Uber Eats refund email: Found an Oct 7 email from uber@uber.com confirming a $23.18 refund for missing items in the Sakura Bowl order, going back to the Visa ending 4417 in 3-5 business days.", "tag": "agent_message", "timestamp": "2026-10-06 14:32:49"}
+{"payload": "Uber Eats refunded $23.18 for the Sakura Bowl order, due on your Visa in 3-5 business days.", "tag": "poke_reply", "timestamp": "2026-10-06 14:32:54"}
+{"payload": "are you a morning person or a night owl", "tag": "user_message", "timestamp": "2026-10-06 15:05:12"}
+{"payload": "Neither, I'm awake all the time, which feels like cheating. You?", "tag": "poke_reply", "timestamp": "2026-10-06 15:05:17"}
+{"payload": "has the refund actually gone through yet?", "tag": "user_message", "timestamp": "2026-10-06 17:05:25"}
+{"payload": "looking now", "tag": "poke_reply", "timestamp": "2026-10-06 17:05:30"}
+{"payload": "[SUCCESS] Find Uber Eats refund email: A second Uber Eats email dated Oct 9 says the refund was issued. There's no bank confirmation in the inbox.", "tag": "agent_message", "timestamp": "2026-10-06 17:06:54"}
+{"payload": "Uber says it was issued Oct 9, but nothing from your bank yet.", "tag": "poke_reply", "timestamp": "2026-10-06 17:06:59"}
+{"payload": "ok cool", "tag": "user_message", "timestamp": "2026-10-06 17:30:07"}
+{"payload": "Cool cool cool.", "tag": "poke_reply", "timestamp": "2026-10-06 17:30:12"}
+{"payload": "good job", "tag": "user_message", "timestamp": "2026-10-07 12:10:47"}
+{"payload": "Thank you. I'm going to imagine you said that in a deep, approving voice.", "tag": "poke_reply", "timestamp": "2026-10-07 12:10:52"}
+{"payload": "thanks a ton", "tag": "user_message", "timestamp": "2026-10-07 13:00:21"}
+{"payload": "Happy to. Any time.", "tag": "poke_reply", "timestamp": "2026-10-07 13:00:26"}
+{"payload": "draft a note asking support about the $4.99 tip that wasn't refunded", "tag": "user_message", "timestamp": "2026-10-07 14:05:22"}
+{"payload": "one moment", "tag": "poke_reply", "timestamp": "2026-10-07 14:05:27"}
+{"payload": "[SUCCESS] Find Uber Eats refund email: Drafted a reply to Uber Eats support asking why the $4.99 courier tip wasn't included in the $23.18 refund. Not sent.", "tag": "agent_message", "timestamp": "2026-10-07 14:07:50"}
+{"payload": "Draft ready asking support about the $4.99 tip. Want me to send it?", "tag": "poke_reply", "timestamp": "2026-10-07 14:07:55"}
+{"payload": "remind me about my dentist cleaning with dr patel in october", "tag": "user_message", "timestamp": "2026-10-07 15:20:48"}
+{"payload": "happy to, checking", "tag": "poke_reply", "timestamp": "2026-10-07 15:20:53"}
+{"payload": "[SUCCESS] Dentist appointment: Found the confirmation from Dr. Anita Patel (office@brightsmiledental.com) for a cleaning on Wed Oct 14, 2026 at 9:30am. Set a reminder for Oct 13 at 5pm.", "tag": "agent_message", "timestamp": "2026-10-07 15:23:36"}
+{"payload": "Your cleaning with Dr. Patel is Oct 14 at 9:30am. I set a reminder for Oct 13 at 5pm.", "tag": "poke_reply", "timestamp": "2026-10-07 15:23:41"}
+{"payload": "is a hot dog a sandwich", "tag": "user_message", "timestamp": "2026-10-07 18:10:35"}
+{"payload": "I say no. It's its own thing. A hot dog stands alone.", "tag": "poke_reply", "timestamp": "2026-10-07 18:10:40"}
+{"payload": "remind me oct 14 to check my card for it", "tag": "user_message", "timestamp": "2026-10-07 19:15:22"}
+{"payload": "on it now", "tag": "poke_reply", "timestamp": "2026-10-07 19:15:27"}
+{"payload": "[SUCCESS] Find Uber Eats refund email: Set a reminder for Oct 14 at 9:00am: 'Check Visa 4417 for Uber Eats refund $23.18'.", "tag": "agent_message", "timestamp": "2026-10-07 19:17:38"}
+{"payload": "Reminder set for Oct 14 at 9am to check your card.", "tag": "poke_reply", "timestamp": "2026-10-07 19:17:43"}
+{"payload": "can i change the delivery date?", "tag": "user_message", "timestamp": "2026-10-07 21:15:26"}
+{"payload": "let me check", "tag": "poke_reply", "timestamp": "2026-10-07 21:15:31"}
+{"payload": "[SUCCESS] Best Buy gift card schedule: The confirmation email says scheduled e-gift cards can be edited by using the Manage Delivery link until the day before sending, so up to Oct 21.", "tag": "agent_message", "timestamp": "2026-10-07 21:18:24"}
+{"payload": "Yes, use the Manage Delivery link in that email until Oct 21.", "tag": "poke_reply", "timestamp": "2026-10-07 21:18:29"}
+{"payload": "can you remind me to refill my lisinopril every month, walgreens emails me", "tag": "user_message", "timestamp": "2026-10-07 21:35:15"}
+{"payload": "let me check", "tag": "poke_reply", "timestamp": "2026-10-07 21:35:20"}
+{"payload": "[SUCCESS] Walgreens Refill Reminder: Found Walgreens (noreply@walgreens.com) refill notices for lisinopril 10mg, 90-day supply, last filled September 3, 2026, 2 refills remaining. Set a recurring reminder on the 28th of each month at 9:00 AM.", "tag": "agent_message", "timestamp": "2026-10-07 21:37:19"}
+{"payload": "Set a monthly reminder on the 28th at 9 AM. Two refills remain, last filled Sept 3.", "tag": "poke_reply", "timestamp": "2026-10-07 21:37:24"}
+{"payload": "do you like music", "tag": "user_message", "timestamp": "2026-10-07 21:40:28"}
+{"payload": "Love it. Can't hum, but I have strong opinions about a good bassline.", "tag": "poke_reply", "timestamp": "2026-10-07 21:40:33"}
+{"payload": "wait, it's a 90 day supply so make it every 3 months", "tag": "user_message", "timestamp": "2026-10-08 09:15:56"}
+{"payload": "pulling that up now", "tag": "poke_reply", "timestamp": "2026-10-08 09:16:01"}
+{"payload": "[SUCCESS] Walgreens Refill Reminder: Replaced the monthly reminder with one every three months, next on November 28, 2026 at 9:00 AM, then February 28 and May 28.", "tag": "agent_message", "timestamp": "2026-10-08 09:18:15"}
+{"payload": "Changed to every 3 months, starting Nov 28 at 9 AM.", "tag": "poke_reply", "timestamp": "2026-10-08 09:18:20"}
+{"payload": "what did she say about churn", "tag": "user_message", "timestamp": "2026-10-08 10:30:31"}
+{"payload": "one moment", "tag": "poke_reply", "timestamp": "2026-10-08 10:30:36"}
+{"payload": "[SUCCESS] Elena Q3 Board Email: She said churn fell from 2.9% to 2.1%, credited to the new onboarding emails.", "tag": "agent_message", "timestamp": "2026-10-08 10:33:07"}
+{"payload": "Churn dropped from 2.9% to 2.1% thanks to the new onboarding emails.", "tag": "poke_reply", "timestamp": "2026-10-08 10:33:12"}
+{"payload": "reply thanking her and asking for the slide deck", "tag": "user_message", "timestamp": "2026-10-08 11:20:56"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-08 11:21:01"}
+{"payload": "[SUCCESS] Elena Q3 Board Email: Drafted a reply to Elena thanking her for the update and asking her to share the slide deck. Not sent yet.", "tag": "agent_message", "timestamp": "2026-10-08 11:22:40"}
+{"payload": "Drafted a thank-you asking for the deck. Should I send it?", "tag": "poke_reply", "timestamp": "2026-10-08 11:22:45"}
+{"payload": "good morning", "tag": "user_message", "timestamp": "2026-10-08 13:50:59"}
+{"payload": "Morning! Hope the coffee is strong and the day is gentle.", "tag": "poke_reply", "timestamp": "2026-10-08 13:51:04"}
+{"payload": "how many refills do i have left", "tag": "user_message", "timestamp": "2026-10-08 14:05:20"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-08 14:05:25"}
+{"payload": "[SUCCESS] Walgreens Refill Reminder: The latest Walgreens notice, dated September 3, 2026, lists 2 refills remaining on the prescription, which expires July 2027.", "tag": "agent_message", "timestamp": "2026-10-08 14:08:15"}
+{"payload": "Two refills left, and the prescription expires July 2027.", "tag": "poke_reply", "timestamp": "2026-10-08 14:08:20"}
+{"payload": "is there a board meeting date in there", "tag": "user_message", "timestamp": "2026-10-08 18:10:35"}
+{"payload": "checking now", "tag": "poke_reply", "timestamp": "2026-10-08 18:10:40"}
+{"payload": "[SUCCESS] Elena Q3 Board Email: Yes, the email mentions the board meeting on Nov 18 at 2:00pm Eastern.", "tag": "agent_message", "timestamp": "2026-10-08 18:13:20"}
+{"payload": "Board meeting is Nov 18 at 2pm Eastern.", "tag": "poke_reply", "timestamp": "2026-10-08 18:13:25"}
+{"payload": "thanks, you're the best", "tag": "user_message", "timestamp": "2026-10-08 19:30:38"}
+{"payload": "Stop, you'll make me blush, and I don't even have cheeks.", "tag": "poke_reply", "timestamp": "2026-10-08 19:30:43"}
+{"payload": "what's the address of the dental office again?", "tag": "user_message", "timestamp": "2026-10-08 19:35:07"}
+{"payload": "one moment", "tag": "poke_reply", "timestamp": "2026-10-08 19:35:12"}
+{"payload": "[SUCCESS] Dentist appointment: The confirmation lists Bright Smile Dental, 214 Maple Ave, Suite 3, Portland, OR 97205.", "tag": "agent_message", "timestamp": "2026-10-08 19:37:57"}
+{"payload": "Bright Smile Dental, 214 Maple Ave, Suite 3, Portland. Parking details weren't in the email.", "tag": "poke_reply", "timestamp": "2026-10-08 19:38:02"}
+{"payload": "what's the boiling point of water", "tag": "user_message", "timestamp": "2026-10-09 08:00:21"}
+{"payload": "100 degrees Celsius, 212 Fahrenheit, at sea level. Up high it gets lazy.", "tag": "poke_reply", "timestamp": "2026-10-09 08:00:26"}
+{"payload": "can you also remind me an hour before", "tag": "user_message", "timestamp": "2026-10-09 08:10:23"}
+{"payload": "working on it", "tag": "poke_reply", "timestamp": "2026-10-09 08:10:28"}
+{"payload": "[SUCCESS] Dentist appointment: Added a second reminder for Oct 14 at 8:30am titled 'Dentist 9:30 - Dr. Patel'.", "tag": "agent_message", "timestamp": "2026-10-09 08:11:33"}
+{"payload": "Done. You'll also get a reminder Oct 14 at 8:30am.", "tag": "poke_reply", "timestamp": "2026-10-09 08:11:38"}
+{"payload": "was the last pickup ready or still waiting", "tag": "user_message", "timestamp": "2026-10-09 09:00:24"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-09 09:00:29"}
+{"payload": "[SUCCESS] Walgreens Refill Reminder: A Walgreens email on September 4, 2026 said the order was picked up and a receipt for $12.00 was charged to the card ending 4417.", "tag": "agent_message", "timestamp": "2026-10-09 09:02:53"}
+{"payload": "It was picked up Sept 4. You paid $12.00.", "tag": "poke_reply", "timestamp": "2026-10-09 09:02:58"}
+{"payload": "goodnight", "tag": "user_message", "timestamp": "2026-10-09 10:20:56"}
+{"payload": "Night! Sleep well, tomorrow can wait its turn.", "tag": "poke_reply", "timestamp": "2026-10-09 10:21:01"}
+{"payload": "summarize elena's q3 board update email", "tag": "user_message", "timestamp": "2026-10-09 12:39:06"}
+{"payload": "on it, pulling up elena's email now.", "tag": "poke_reply", "timestamp": "2026-10-09 12:39:11"}
+{"payload": "[SUCCESS] Elena Q3 Board Email: Elena Vasquez (elena@brightloomhq.com) sent 'Q3 Board Update' on Oct 12: revenue $1.84M, up 11% over Q2, churn down to 2.1%, and a hiring freeze until January.", "tag": "agent_message", "timestamp": "2026-10-09 12:42:23"}
+{"payload": "elena's q3 board update (oct 12): revenue $1.84M, up 11% from q2, churn down to 2.1%, and a hiring freeze until january.", "tag": "poke_reply", "timestamp": "2026-10-09 12:42:28"}
+{"payload": "what did she say about churn", "tag": "user_message", "timestamp": "2026-10-09 14:53:28"}
+{"payload": "checking what she wrote about churn.", "tag": "poke_reply", "timestamp": "2026-10-09 14:53:33"}
+{"payload": "[SUCCESS] Elena Q3 Board Email: She said churn fell from 2.9% to 2.1%, credited to the new onboarding emails.", "tag": "agent_message", "timestamp": "2026-10-09 14:56:19"}
+{"payload": "she said churn dropped from 2.9% to 2.1% and credited the new onboarding emails.", "tag": "poke_reply", "timestamp": "2026-10-09 14:56:24"}
+{"payload": "nice, that's good news honestly", "tag": "user_message", "timestamp": "2026-10-09 17:21:24"}
+{"payload": "agreed, a solid quarter overall.", "tag": "poke_reply", "timestamp": "2026-10-09 17:21:29"}
+{"payload": "reply thanking her and asking for the slide deck", "tag": "user_message", "timestamp": "2026-10-09 19:21:29"}
+{"payload": "drafting that reply to elena now.", "tag": "poke_reply", "timestamp": "2026-10-09 19:21:34"}
+{"payload": "[SUCCESS] Elena Q3 Board Email: Drafted a reply to Elena thanking her for the update and asking her to share the slide deck. Not sent yet.", "tag": "agent_message", "timestamp": "2026-10-09 19:22:55"}
+{"payload": "i drafted a reply thanking her and asking for the slide deck. it's not sent yet.", "tag": "poke_reply", "timestamp": "2026-10-09 19:23:00"}

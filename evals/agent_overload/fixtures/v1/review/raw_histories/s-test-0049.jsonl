@@ -1,0 +1,130 @@
+{"payload": "has my warby parker order shipped yet", "tag": "user_message", "timestamp": "2026-10-07 08:25:43"}
+{"payload": "looking into it", "tag": "poke_reply", "timestamp": "2026-10-07 08:25:48"}
+{"payload": "[SUCCESS] Warby Parker Order Status: Warby Parker email from orders@warbyparker.com (Nov 3) says order WP-5529104, Haskell frames in Whiskey Tortoise, $145, shipped via UPS with an estimated delivery of Nov 9.", "tag": "agent_message", "timestamp": "2026-10-07 08:27:48"}
+{"payload": "Shipped Nov 3. Your Haskell frames in Whiskey Tortoise are due Nov 9.", "tag": "poke_reply", "timestamp": "2026-10-07 08:27:53"}
+{"payload": "set a reminder to renew my car registration, dmv sent a notice", "tag": "user_message", "timestamp": "2026-10-07 08:35:33"}
+{"payload": "right away", "tag": "poke_reply", "timestamp": "2026-10-07 08:35:38"}
+{"payload": "[SUCCESS] DMV Notice and Reminder: Found DMV notice (dmv-notices@dmv.ca.gov) for the 2019 Honda Civic, plate 8KLM442. Renewal fee is $168, due Oct 31. Reminder set for Oct 20 at 9:00am.", "tag": "agent_message", "timestamp": "2026-10-07 08:37:06"}
+{"payload": "Reminder set for October 20 at 9am. Renewal for the Civic is $168, due October 31.", "tag": "poke_reply", "timestamp": "2026-10-07 08:37:11"}
+{"payload": "how much is the late fee if i miss it?", "tag": "user_message", "timestamp": "2026-10-07 08:45:13"}
+{"payload": "looking into it", "tag": "poke_reply", "timestamp": "2026-10-07 08:45:18"}
+{"payload": "[SUCCESS] DMV Notice and Reminder: The notice says a late penalty of $20 is added after Oct 31, plus further fees after 30 days.", "tag": "agent_message", "timestamp": "2026-10-07 08:47:01"}
+{"payload": "A $20 late penalty applies after October 31, with more fees after 30 days.", "tag": "poke_reply", "timestamp": "2026-10-07 08:47:06"}
+{"payload": "cats or dogs", "tag": "user_message", "timestamp": "2026-10-07 08:55:38"}
+{"payload": "Dogs for enthusiasm, cats for attitude. I respect both, but I lean dog.", "tag": "poke_reply", "timestamp": "2026-10-07 08:55:43"}
+{"payload": "it's raining again", "tag": "user_message", "timestamp": "2026-10-07 12:00:49"}
+{"payload": "Classic. Perfect excuse to stay in and feel smug about it.", "tag": "poke_reply", "timestamp": "2026-10-07 12:00:54"}
+{"payload": "find my northwind dev conference registration and when badge pickup is", "tag": "user_message", "timestamp": "2026-10-07 13:10:08"}
+{"payload": "right away", "tag": "poke_reply", "timestamp": "2026-10-07 13:10:13"}
+{"payload": "[SUCCESS] Northwind Dev conference registration: Receipt from registration@northwinddev.com dated Aug 30 shows a $649 full pass for the Oct 7-9 conference in Austin, with badge pickup Oct 6 from 4-8pm at the Hollis Convention Center.", "tag": "agent_message", "timestamp": "2026-10-07 13:12:58"}
+{"payload": "Registered, $649 pass for Oct 7-9 in Austin. Badge pickup is Oct 6, 4-8pm.", "tag": "poke_reply", "timestamp": "2026-10-07 13:13:03"}
+{"payload": "forward the receipt to accounting@tallowmedia.com for expenses", "tag": "user_message", "timestamp": "2026-10-07 15:25:10"}
+{"payload": "got it, on it", "tag": "poke_reply", "timestamp": "2026-10-07 15:25:15"}
+{"payload": "[SUCCESS] Northwind Dev conference registration: Forwarded the $649 Northwind receipt to accounting@tallowmedia.com with a note that it's a conference expense.", "tag": "agent_message", "timestamp": "2026-10-07 15:26:53"}
+{"payload": "Forwarded the receipt to accounting@tallowmedia.com.", "tag": "poke_reply", "timestamp": "2026-10-07 15:26:58"}
+{"payload": "i can't decide what to eat", "tag": "user_message", "timestamp": "2026-10-07 16:30:56"}
+{"payload": "Tragic and universal. Go with the first thing that sounded good. Your gut knows.", "tag": "poke_reply", "timestamp": "2026-10-07 16:31:01"}
+{"payload": "what's the order number on it", "tag": "user_message", "timestamp": "2026-10-07 16:50:01"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-07 16:50:06"}
+{"payload": "[SUCCESS] Northwind Dev conference registration: The order number is NDC-26-30457.", "tag": "agent_message", "timestamp": "2026-10-07 16:52:28"}
+{"payload": "Order number NDC-26-30457.", "tag": "poke_reply", "timestamp": "2026-10-07 16:52:33"}
+{"payload": "aws sent something about an exposed access key, pull it up", "tag": "user_message", "timestamp": "2026-10-07 17:50:53"}
+{"payload": "pulling that up now", "tag": "poke_reply", "timestamp": "2026-10-07 17:50:58"}
+{"payload": "[SUCCESS] AWS Security Alert: Found an email from abuse@amazonaws.com dated Oct 8, 2026 warning that access key AKIA...Q7XP for IAM user 'deploy-bot' was found in a public GitHub repo and has been quarantined.", "tag": "agent_message", "timestamp": "2026-10-07 17:52:52"}
+{"payload": "AWS warned Oct 8 that deploy-bot's access key ending Q7XP was found in a public repo and quarantined.", "tag": "poke_reply", "timestamp": "2026-10-07 17:52:57"}
+{"payload": "good job", "tag": "user_message", "timestamp": "2026-10-07 19:45:15"}
+{"payload": "Thank you. I'm going to imagine you said that in a deep, approving voice.", "tag": "poke_reply", "timestamp": "2026-10-07 19:45:20"}
+{"payload": "remind me oct 5 to screenshot the qr badge code", "tag": "user_message", "timestamp": "2026-10-07 19:50:35"}
+{"payload": "right away", "tag": "poke_reply", "timestamp": "2026-10-07 19:50:40"}
+{"payload": "[SUCCESS] Northwind Dev conference registration: Reminder set for Oct 5 at 7pm to save the Northwind badge QR code.", "tag": "agent_message", "timestamp": "2026-10-07 19:53:09"}
+{"payload": "Reminder set for Oct 5 at 7pm.", "tag": "poke_reply", "timestamp": "2026-10-07 19:53:14"}
+{"payload": "are you a morning person or a night owl", "tag": "user_message", "timestamp": "2026-10-07 21:25:10"}
+{"payload": "Neither, I'm awake all the time, which feels like cheating. You?", "tag": "poke_reply", "timestamp": "2026-10-07 21:25:15"}
+{"payload": "remind me to renew bluefinstudio.com before it expires", "tag": "user_message", "timestamp": "2026-10-08 08:05:52"}
+{"payload": "checking now", "tag": "poke_reply", "timestamp": "2026-10-08 08:05:57"}
+{"payload": "[SUCCESS] Bluefin domain renewal reminder: Namecheap (support@namecheap.com) notice says bluefinstudio.com expires Oct 28, 2026, renewal $14.98. Set reminders for Oct 21 and Oct 27 at 10am.", "tag": "agent_message", "timestamp": "2026-10-08 08:08:14"}
+{"payload": "bluefinstudio.com expires Oct 28 ($14.98 to renew). Reminders set for Oct 21 and Oct 27.", "tag": "poke_reply", "timestamp": "2026-10-08 08:08:19"}
+{"payload": "do you believe in luck", "tag": "user_message", "timestamp": "2026-10-08 09:05:35"}
+{"payload": "A little. I think it's mostly preparation bumping into a good coincidence.", "tag": "poke_reply", "timestamp": "2026-10-08 09:05:40"}
+{"payload": "move the reminder to oct 15 at 7am", "tag": "user_message", "timestamp": "2026-10-08 10:00:51"}
+{"payload": "one moment", "tag": "poke_reply", "timestamp": "2026-10-08 10:00:56"}
+{"payload": "[SUCCESS] DMV Notice and Reminder: Reminder moved to Oct 15 at 7:00am: 'Renew Honda Civic registration, $168, due Oct 31.'", "tag": "agent_message", "timestamp": "2026-10-08 10:02:38"}
+{"payload": "Moved to October 15 at 7am.", "tag": "poke_reply", "timestamp": "2026-10-08 10:02:43"}
+{"payload": "that's so annoying", "tag": "user_message", "timestamp": "2026-10-08 10:10:56"}
+{"payload": "Ugh, yeah, that's irritating. You're allowed to be mad about it for a minute.", "tag": "poke_reply", "timestamp": "2026-10-08 10:11:01"}
+{"payload": "did i get a smog check notice too?", "tag": "user_message", "timestamp": "2026-10-08 12:00:54"}
+{"payload": "on it now", "tag": "poke_reply", "timestamp": "2026-10-08 12:00:59"}
+{"payload": "[SUCCESS] DMV Notice and Reminder: Yes, the notice says a smog certificate is required for this renewal and has already been received electronically from a station dated Sep 12.", "tag": "agent_message", "timestamp": "2026-10-08 12:02:38"}
+{"payload": "Smog is required, but a certificate from September 12 is already on file.", "tag": "poke_reply", "timestamp": "2026-10-08 12:02:43"}
+{"payload": "meh", "tag": "user_message", "timestamp": "2026-10-08 14:55:09"}
+{"payload": "Meh is a valid mood. Sometimes it's the whole forecast.", "tag": "poke_reply", "timestamp": "2026-10-08 14:55:14"}
+{"payload": "ok cool", "tag": "user_message", "timestamp": "2026-10-08 15:00:32"}
+{"payload": "Cool cool cool.", "tag": "poke_reply", "timestamp": "2026-10-08 15:00:37"}
+{"payload": "lol", "tag": "user_message", "timestamp": "2026-10-08 15:15:37"}
+{"payload": "Glad that landed.", "tag": "poke_reply", "timestamp": "2026-10-08 15:15:42"}
+{"payload": "what's the ups tracking number", "tag": "user_message", "timestamp": "2026-10-08 16:45:45"}
+{"payload": "checking now", "tag": "poke_reply", "timestamp": "2026-10-08 16:45:50"}
+{"payload": "[SUCCESS] Warby Parker Order Status: The shipping email lists UPS tracking number 1Z84F2910356718832.", "tag": "agent_message", "timestamp": "2026-10-08 16:48:44"}
+{"payload": "UPS tracking number is 1Z84F2910356718832.", "tag": "poke_reply", "timestamp": "2026-10-08 16:48:49"}
+{"payload": "did my insurance get applied?", "tag": "user_message", "timestamp": "2026-10-08 16:55:27"}
+{"payload": "working on it", "tag": "poke_reply", "timestamp": "2026-10-08 16:55:32"}
+{"payload": "[SUCCESS] Warby Parker Order Status: The order email shows a $60 vision insurance discount applied, leaving $85 charged to the card.", "tag": "agent_message", "timestamp": "2026-10-08 16:58:01"}
+{"payload": "Yes, $60 insurance discount applied. You were charged $85.", "tag": "poke_reply", "timestamp": "2026-10-08 16:58:06"}
+{"payload": "is auto-renew on?", "tag": "user_message", "timestamp": "2026-10-08 18:50:55"}
+{"payload": "on it", "tag": "poke_reply", "timestamp": "2026-10-08 18:51:00"}
+{"payload": "[SUCCESS] Bluefin domain renewal reminder: The notice says auto-renew is off for this domain.", "tag": "agent_message", "timestamp": "2026-10-08 18:53:08"}
+{"payload": "No, auto-renew is off for bluefinstudio.com.", "tag": "poke_reply", "timestamp": "2026-10-08 18:53:13"}
+{"payload": "random thought: socks are weird", "tag": "user_message", "timestamp": "2026-10-08 20:15:52"}
+{"payload": "They really are. We wrap our feet in little tubes and call it comfort.", "tag": "poke_reply", "timestamp": "2026-10-08 20:15:57"}
+{"payload": "thanks!", "tag": "user_message", "timestamp": "2026-10-09 08:35:39"}
+{"payload": "Anytime. Being helpful is basically my favorite hobby.", "tag": "poke_reply", "timestamp": "2026-10-09 08:35:44"}
+{"payload": "what's 15% of 200", "tag": "user_message", "timestamp": "2026-10-09 08:40:02"}
+{"payload": "30. Tip math is my love language.", "tag": "poke_reply", "timestamp": "2026-10-09 08:40:07"}
+{"payload": "got any fun facts", "tag": "user_message", "timestamp": "2026-10-09 09:45:34"}
+{"payload": "Octopuses have three hearts. Two for the gills, one for everything else. Overachievers.", "tag": "poke_reply", "timestamp": "2026-10-09 09:45:39"}
+{"payload": "how much is renewal for 2 years", "tag": "user_message", "timestamp": "2026-10-09 11:05:38"}
+{"payload": "happy to, checking", "tag": "poke_reply", "timestamp": "2026-10-09 11:05:43"}
+{"payload": "[SUCCESS] Bluefin domain renewal reminder: The notice only lists the one-year price of $14.98, with no two-year quote.", "tag": "agent_message", "timestamp": "2026-10-09 11:08:36"}
+{"payload": "Only the one-year price ($14.98) is in the email. No two-year quote.", "tag": "poke_reply", "timestamp": "2026-10-09 11:08:41"}
+{"payload": "what do they want me to do", "tag": "user_message", "timestamp": "2026-10-09 12:15:25"}
+{"payload": "right away", "tag": "poke_reply", "timestamp": "2026-10-09 12:15:30"}
+{"payload": "[SUCCESS] AWS Security Alert: The email asks you to rotate the key, delete it if unused, review CloudTrail for unauthorized activity, and reply to the support case within 5 days.", "tag": "agent_message", "timestamp": "2026-10-09 12:17:52"}
+{"payload": "Rotate or delete the key, review CloudTrail, and reply to the support case within 5 days.", "tag": "poke_reply", "timestamp": "2026-10-09 12:17:57"}
+{"payload": "what's the case number", "tag": "user_message", "timestamp": "2026-10-09 15:30:44"}
+{"payload": "looking now", "tag": "poke_reply", "timestamp": "2026-10-09 15:30:49"}
+{"payload": "[SUCCESS] AWS Security Alert: The support case ID is 9187342051, opened Oct 8, 2026.", "tag": "agent_message", "timestamp": "2026-10-09 15:32:11"}
+{"payload": "The case number is 9187342051.", "tag": "poke_reply", "timestamp": "2026-10-09 15:32:16"}
+{"payload": "tell me a joke", "tag": "user_message", "timestamp": "2026-10-09 15:55:23"}
+{"payload": "Why did the scarecrow win an award? He was outstanding in his field. I'll see myself out.", "tag": "poke_reply", "timestamp": "2026-10-09 15:55:28"}
+{"payload": "email jordan that he needs to rotate the deploy-bot key today", "tag": "user_message", "timestamp": "2026-10-09 16:40:46"}
+{"payload": "give me a sec", "tag": "poke_reply", "timestamp": "2026-10-09 16:40:51"}
+{"payload": "[SUCCESS] AWS Security Alert: Sent an email to jordan.wells@northwindlabs.io asking him to rotate the deploy-bot access key today and referencing case 9187342051.", "tag": "agent_message", "timestamp": "2026-10-09 16:43:09"}
+{"payload": "Emailed Jordan to rotate the deploy-bot key today, citing case 9187342051.", "tag": "poke_reply", "timestamp": "2026-10-09 16:43:14"}
+{"payload": "cancel the oct 21 reminder, i'll do it on the 27th", "tag": "user_message", "timestamp": "2026-10-09 17:35:12"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-09 17:35:17"}
+{"payload": "[SUCCESS] Bluefin domain renewal reminder: Removed the Oct 21 reminder. The Oct 27 at 10am reminder stays.", "tag": "agent_message", "timestamp": "2026-10-09 17:37:54"}
+{"payload": "Oct 21 reminder removed. Oct 27 at 10am remains.", "tag": "poke_reply", "timestamp": "2026-10-09 17:37:59"}
+{"payload": "i think i'm hungry", "tag": "user_message", "timestamp": "2026-10-09 19:10:25"}
+{"payload": "That \"think\" is doing a lot of work. You're probably hungry. Snack time.", "tag": "poke_reply", "timestamp": "2026-10-09 19:10:30"}
+{"payload": "remind me nov 12 to email them if it hasn't come", "tag": "user_message", "timestamp": "2026-10-09 19:30:32"}
+{"payload": "checking now", "tag": "poke_reply", "timestamp": "2026-10-09 19:30:37"}
+{"payload": "[SUCCESS] Warby Parker Order Status: Reminder set for Nov 12, 2026 at 9:00am: 'Contact Warby Parker if order WP-5529104 hasn't arrived'.", "tag": "agent_message", "timestamp": "2026-10-09 19:31:35"}
+{"payload": "Reminder set for Nov 12 at 9am.", "tag": "poke_reply", "timestamp": "2026-10-09 19:31:40"}
+{"payload": "nice weather today", "tag": "user_message", "timestamp": "2026-10-09 20:55:00"}
+{"payload": "Love that for you. Go stand in it for a minute.", "tag": "poke_reply", "timestamp": "2026-10-09 20:55:05"}
+{"payload": "good morning", "tag": "user_message", "timestamp": "2026-10-09 21:55:21"}
+{"payload": "Morning! Hope the coffee is strong and the day is gentle.", "tag": "poke_reply", "timestamp": "2026-10-09 21:55:26"}
+{"payload": "has my warby parker order shipped yet", "tag": "user_message", "timestamp": "2026-10-10 03:03:30"}
+{"payload": "checking your email for the warby parker order now", "tag": "poke_reply", "timestamp": "2026-10-10 03:03:35"}
+{"payload": "[SUCCESS] Warby Parker Order Status: Warby Parker email from orders@warbyparker.com (Nov 3) says order WP-5529104, Haskell frames in Whiskey Tortoise, $145, shipped via UPS with an estimated delivery of Nov 9.", "tag": "agent_message", "timestamp": "2026-10-10 03:07:29"}
+{"payload": "yep, it shipped. your Haskell frames in whiskey tortoise are on the way via UPS and should arrive around Nov 9.", "tag": "poke_reply", "timestamp": "2026-10-10 03:07:34"}
+{"payload": "set a reminder to renew my car registration, dmv sent a notice", "tag": "user_message", "timestamp": "2026-10-10 04:14:34"}
+{"payload": "on it, looking for the dmv notice and setting a reminder", "tag": "poke_reply", "timestamp": "2026-10-10 04:14:39"}
+{"payload": "[SUCCESS] DMV Notice and Reminder: Found DMV notice (dmv-notices@dmv.ca.gov) for the 2019 Honda Civic, plate 8KLM442. Renewal fee is $168, due Oct 31. Reminder set for Oct 20 at 9:00am.", "tag": "agent_message", "timestamp": "2026-10-10 04:17:29"}
+{"payload": "found the dmv notice. renewal for the civic is $168 and due Oct 31. i set a reminder for Oct 20 at 9am.", "tag": "poke_reply", "timestamp": "2026-10-10 04:17:34"}
+{"payload": "ugh i always forget this stuff", "tag": "user_message", "timestamp": "2026-10-10 06:22:34"}
+{"payload": "that's what the reminders are for. i've got you on this one.", "tag": "poke_reply", "timestamp": "2026-10-10 06:22:39"}
+{"payload": "remind me nov 12 to email them if it hasn't come", "tag": "user_message", "timestamp": "2026-10-10 09:12:39"}
+{"payload": "setting that reminder now", "tag": "poke_reply", "timestamp": "2026-10-10 09:12:44"}
+{"payload": "[SUCCESS] Warby Parker Order Status: Reminder set for Nov 12, 2026 at 9:00am: 'Contact Warby Parker if order WP-5529104 hasn't arrived'.", "tag": "agent_message", "timestamp": "2026-10-10 09:14:55"}
+{"payload": "done. i'll remind you Nov 12 at 9am to contact warby parker if the glasses haven't shown up.", "tag": "poke_reply", "timestamp": "2026-10-10 09:15:00"}

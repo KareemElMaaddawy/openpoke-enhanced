@@ -1,0 +1,134 @@
+{"payload": "i need a vacation", "tag": "user_message", "timestamp": "2026-10-07 08:15:19"}
+{"payload": "Same energy, honestly. Somewhere with a beach and zero notifications.", "tag": "poke_reply", "timestamp": "2026-10-07 08:15:24"}
+{"payload": "ok cool", "tag": "user_message", "timestamp": "2026-10-07 08:40:51"}
+{"payload": "Cool cool cool.", "tag": "poke_reply", "timestamp": "2026-10-07 08:40:56"}
+{"payload": "i'm so tired", "tag": "user_message", "timestamp": "2026-10-07 09:45:49"}
+{"payload": "Sounds like a blanket-and-do-nothing kind of day. Go easy on yourself.", "tag": "poke_reply", "timestamp": "2026-10-07 09:45:54"}
+{"payload": "mondays am i right", "tag": "user_message", "timestamp": "2026-10-07 12:15:43"}
+{"payload": "Monday really should come with a gentle opening act.", "tag": "poke_reply", "timestamp": "2026-10-07 12:15:48"}
+{"payload": "lol", "tag": "user_message", "timestamp": "2026-10-07 13:50:28"}
+{"payload": "Glad that landed.", "tag": "poke_reply", "timestamp": "2026-10-07 13:50:33"}
+{"payload": "remind me to renew the brightloomhq domain before it expires", "tag": "user_message", "timestamp": "2026-10-07 14:10:38"}
+{"payload": "give me a sec", "tag": "poke_reply", "timestamp": "2026-10-07 14:10:43"}
+{"payload": "[SUCCESS] Domain Renewal Reminder: Found a Namecheap email from support@namecheap.com saying brightloomhq.com expires Oct 30, 2026, renewal $14.98. Set a reminder for Oct 26 at 9:00am.", "tag": "agent_message", "timestamp": "2026-10-07 14:13:07"}
+{"payload": "Domain expires Oct 30 ($14.98 to renew). Reminder set for Oct 26 at 9am.", "tag": "poke_reply", "timestamp": "2026-10-07 14:13:12"}
+{"payload": "summarize the linkedin email from the datadog recruiter", "tag": "user_message", "timestamp": "2026-10-07 17:10:00"}
+{"payload": "give me a sec", "tag": "poke_reply", "timestamp": "2026-10-07 17:10:05"}
+{"payload": "[SUCCESS] Datadog Recruiter Email: Tom Alvarez at Datadog (notification from messages-noreply@linkedin.com, Oct 2, 2026) is hiring a Senior Backend Engineer on the Metrics team in NYC or remote, and asks for a 20-minute intro call next week.", "tag": "agent_message", "timestamp": "2026-10-07 17:12:21"}
+{"payload": "Tom Alvarez at Datadog wants a 20-minute intro call for a Senior Backend Engineer role on Metrics.", "tag": "poke_reply", "timestamp": "2026-10-07 17:12:26"}
+{"payload": "remind me to finish keith's performance review feedback before the deadline", "tag": "user_message", "timestamp": "2026-10-07 18:15:19"}
+{"payload": "give me a sec", "tag": "poke_reply", "timestamp": "2026-10-07 18:15:24"}
+{"payload": "[SUCCESS] Keith Review Deadline: HR (people@northwindlabs.com) set the peer feedback deadline for Keith Morales' review at Nov 6, 2026, 5pm. Set reminders for Nov 3 and Nov 5 at 9am.", "tag": "agent_message", "timestamp": "2026-10-07 18:17:53"}
+{"payload": "Keith's review feedback is due Nov 6 at 5pm. Reminders set for Nov 3 and Nov 5 at 9am.", "tag": "poke_reply", "timestamp": "2026-10-07 18:17:58"}
+{"payload": "what's heavier, a pound of feathers or a pound of bricks", "tag": "user_message", "timestamp": "2026-10-07 18:50:15"}
+{"payload": "Same weight, a pound is a pound. The feathers just need a bigger bag.", "tag": "poke_reply", "timestamp": "2026-10-07 18:50:20"}
+{"payload": "wow that's wild", "tag": "user_message", "timestamp": "2026-10-07 20:15:01"}
+{"payload": "Right? Life's got range.", "tag": "poke_reply", "timestamp": "2026-10-07 20:15:06"}
+{"payload": "how much is the renewal", "tag": "user_message", "timestamp": "2026-10-07 20:25:36"}
+{"payload": "on it", "tag": "poke_reply", "timestamp": "2026-10-07 20:25:41"}
+{"payload": "[SUCCESS] Domain Renewal Reminder: The Namecheap email lists the one-year renewal at $14.98.", "tag": "agent_message", "timestamp": "2026-10-07 20:26:52"}
+{"payload": "Renewal is $14.98 for one year.", "tag": "poke_reply", "timestamp": "2026-10-07 20:26:57"}
+{"payload": "remind me the first friday of every month to pay the studio rent to hartwell", "tag": "user_message", "timestamp": "2026-10-08 08:05:20"}
+{"payload": "pulling that up now", "tag": "poke_reply", "timestamp": "2026-10-08 08:05:25"}
+{"payload": "[SUCCESS] Monthly Reminder: Created a recurring reminder for the first Friday of each month at 9:00am, 'Pay Hartwell Properties studio rent $1,850', starting Oct 2. The amount comes from the lease email from payments@hartwellprop.com.", "tag": "agent_message", "timestamp": "2026-10-08 08:07:36"}
+{"payload": "Set a first-Friday 9am reminder for the $1,850 Hartwell rent, starting Oct 2.", "tag": "poke_reply", "timestamp": "2026-10-08 08:07:41"}
+{"payload": "got any fun facts", "tag": "user_message", "timestamp": "2026-10-08 08:15:38"}
+{"payload": "Octopuses have three hearts. Two for the gills, one for everything else. Overachievers.", "tag": "poke_reply", "timestamp": "2026-10-08 08:15:43"}
+{"payload": "what's the deal with the all-hands invite from tallow media in november", "tag": "user_message", "timestamp": "2026-10-08 08:40:34"}
+{"payload": "working on it", "tag": "poke_reply", "timestamp": "2026-10-08 08:40:39"}
+{"payload": "[SUCCESS] Tallow Media November Invite: Invite from hr@tallowmedia.com says the company all-hands is Nov 5 from 1-3pm at the Pier 9 venue, with lunch at 12:15pm and an RSVP deadline of Oct 29.", "tag": "agent_message", "timestamp": "2026-10-08 08:43:23"}
+{"payload": "All-hands is Nov 5, 1-3pm at Pier 9, lunch at 12:15. RSVP by Oct 29.", "tag": "poke_reply", "timestamp": "2026-10-08 08:43:28"}
+{"payload": "move it to 7am", "tag": "user_message", "timestamp": "2026-10-08 09:10:43"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-08 09:10:48"}
+{"payload": "[SUCCESS] Monthly Reminder: Updated the recurring reminder to 7:00am on the first Friday of each month.", "tag": "agent_message", "timestamp": "2026-10-08 09:11:48"}
+{"payload": "Changed to 7am on first Fridays.", "tag": "poke_reply", "timestamp": "2026-10-08 09:11:53"}
+{"payload": "still up, can't sleep", "tag": "user_message", "timestamp": "2026-10-08 09:25:04"}
+{"payload": "Bold choice. Try boring thoughts, they work better than counting sheep.", "tag": "poke_reply", "timestamp": "2026-10-08 09:25:09"}
+{"payload": "do you believe in luck", "tag": "user_message", "timestamp": "2026-10-08 09:35:25"}
+{"payload": "A little. I think it's mostly preparation bumping into a good coincidence.", "tag": "poke_reply", "timestamp": "2026-10-08 09:35:30"}
+{"payload": "what's the late fee if i miss it?", "tag": "user_message", "timestamp": "2026-10-08 11:45:57"}
+{"payload": "on it", "tag": "poke_reply", "timestamp": "2026-10-08 11:46:02"}
+{"payload": "[SUCCESS] Monthly Reminder: The lease email from Hartwell says rent paid after the 5th incurs a $75 late fee.", "tag": "agent_message", "timestamp": "2026-10-08 11:48:21"}
+{"payload": "Hartwell charges a $75 late fee after the 5th.", "tag": "poke_reply", "timestamp": "2026-10-08 11:48:26"}
+{"payload": "rsvp yes and say i have a vegetarian lunch", "tag": "user_message", "timestamp": "2026-10-08 12:30:21"}
+{"payload": "checking now", "tag": "poke_reply", "timestamp": "2026-10-08 12:30:26"}
+{"payload": "[SUCCESS] Tallow Media November Invite: Replied to hr@tallowmedia.com confirming attendance and requesting a vegetarian lunch.", "tag": "agent_message", "timestamp": "2026-10-08 12:32:15"}
+{"payload": "Sent your RSVP yes with a vegetarian lunch request.", "tag": "poke_reply", "timestamp": "2026-10-08 12:32:20"}
+{"payload": "move the reminder to oct 23", "tag": "user_message", "timestamp": "2026-10-08 14:50:15"}
+{"payload": "working on it", "tag": "poke_reply", "timestamp": "2026-10-08 14:50:20"}
+{"payload": "[SUCCESS] Domain Renewal Reminder: Updated the reminder to Oct 23 at 9:00am.", "tag": "agent_message", "timestamp": "2026-10-08 14:51:50"}
+{"payload": "Moved the reminder to Oct 23 at 9am.", "tag": "poke_reply", "timestamp": "2026-10-08 14:51:55"}
+{"payload": "is there a remote option", "tag": "user_message", "timestamp": "2026-10-08 15:50:52"}
+{"payload": "one moment", "tag": "poke_reply", "timestamp": "2026-10-08 15:50:57"}
+{"payload": "[SUCCESS] Tallow Media November Invite: The invite says a livestream link will be emailed Nov 4 for remote employees only.", "tag": "agent_message", "timestamp": "2026-10-08 15:52:48"}
+{"payload": "Yes, a livestream link is emailed Nov 4 for remote staff.", "tag": "poke_reply", "timestamp": "2026-10-08 15:52:53"}
+{"payload": "sorry for the late reply", "tag": "user_message", "timestamp": "2026-10-08 18:10:04"}
+{"payload": "No apology needed. I'm not going anywhere.", "tag": "poke_reply", "timestamp": "2026-10-08 18:10:09"}
+{"payload": "tell me a joke", "tag": "user_message", "timestamp": "2026-10-08 18:55:15"}
+{"payload": "Why did the scarecrow win an award? He was outstanding in his field. I'll see myself out.", "tag": "poke_reply", "timestamp": "2026-10-08 18:55:20"}
+{"payload": "where's the link to the review form", "tag": "user_message", "timestamp": "2026-10-08 19:20:56"}
+{"payload": "right away", "tag": "poke_reply", "timestamp": "2026-10-08 19:21:01"}
+{"payload": "[SUCCESS] Keith Review Deadline: The Sep 30 email from people@northwindlabs.com, 'Peer feedback: Keith Morales', has a link to the Culture Amp form.", "tag": "agent_message", "timestamp": "2026-10-08 19:22:24"}
+{"payload": "It's in HR's Sep 30 email 'Peer feedback: Keith Morales'. Want me to forward it to you?", "tag": "poke_reply", "timestamp": "2026-10-08 19:22:29"}
+{"payload": "goodnight", "tag": "user_message", "timestamp": "2026-10-08 20:25:05"}
+{"payload": "Night! Sleep well, tomorrow can wait its turn.", "tag": "poke_reply", "timestamp": "2026-10-08 20:25:10"}
+{"payload": "haha you're funny", "tag": "user_message", "timestamp": "2026-10-08 20:35:56"}
+{"payload": "I try. Mostly I just get lucky.", "tag": "poke_reply", "timestamp": "2026-10-08 20:36:01"}
+{"payload": "how many questions is it", "tag": "user_message", "timestamp": "2026-10-08 20:45:26"}
+{"payload": "working on it", "tag": "poke_reply", "timestamp": "2026-10-08 20:45:31"}
+{"payload": "[SUCCESS] Keith Review Deadline: The email says the form has 6 short questions and takes about 15 minutes.", "tag": "agent_message", "timestamp": "2026-10-08 20:47:10"}
+{"payload": "HR says six short questions, roughly 15 minutes.", "tag": "poke_reply", "timestamp": "2026-10-08 20:47:15"}
+{"payload": "coffee or tea", "tag": "user_message", "timestamp": "2026-10-08 20:50:44"}
+{"payload": "Coffee for ambition, tea for peace. Which kind of day is it?", "tag": "poke_reply", "timestamp": "2026-10-08 20:50:49"}
+{"payload": "reply and say i'm free thursday afternoon", "tag": "user_message", "timestamp": "2026-10-09 08:15:26"}
+{"payload": "looking now", "tag": "poke_reply", "timestamp": "2026-10-09 08:15:31"}
+{"payload": "[SUCCESS] Datadog Recruiter Email: Reply sent through the LinkedIn notification thread to Tom Alvarez offering Thursday Oct 8 between 1 PM and 5 PM ET.", "tag": "agent_message", "timestamp": "2026-10-09 08:16:34"}
+{"payload": "Replied to Tom offering Thursday Oct 8, 1 to 5 PM ET.", "tag": "poke_reply", "timestamp": "2026-10-09 08:16:39"}
+{"payload": "good morning", "tag": "user_message", "timestamp": "2026-10-09 09:30:49"}
+{"payload": "Morning! Hope the coffee is strong and the day is gentle.", "tag": "poke_reply", "timestamp": "2026-10-09 09:30:54"}
+{"payload": "is auto-renew on", "tag": "user_message", "timestamp": "2026-10-09 09:40:28"}
+{"payload": "let me dig in", "tag": "poke_reply", "timestamp": "2026-10-09 09:40:33"}
+{"payload": "[SUCCESS] Domain Renewal Reminder: The email says auto-renew is off for brightloomhq.com.", "tag": "agent_message", "timestamp": "2026-10-09 09:42:04"}
+{"payload": "No, auto-renew is off, so you'll need to renew manually.", "tag": "poke_reply", "timestamp": "2026-10-09 09:42:09"}
+{"payload": "did he say what the salary range is", "tag": "user_message", "timestamp": "2026-10-09 11:45:18"}
+{"payload": "on it now", "tag": "poke_reply", "timestamp": "2026-10-09 11:45:23"}
+{"payload": "[SUCCESS] Datadog Recruiter Email: Tom's message does not mention salary. The linked job posting email lists a base range of $165,000 to $195,000.", "tag": "agent_message", "timestamp": "2026-10-09 11:47:44"}
+{"payload": "Not in Tom's message, but the posting lists $165k to $195k base.", "tag": "poke_reply", "timestamp": "2026-10-09 11:47:49"}
+{"payload": "cats or dogs", "tag": "user_message", "timestamp": "2026-10-09 13:05:59"}
+{"payload": "Dogs for enthusiasm, cats for attitude. I respect both, but I lean dog.", "tag": "poke_reply", "timestamp": "2026-10-09 13:06:04"}
+{"payload": "do you ever sleep", "tag": "user_message", "timestamp": "2026-10-09 15:30:24"}
+{"payload": "Nope. Sounds productive, but I'd honestly love a nap.", "tag": "poke_reply", "timestamp": "2026-10-09 15:30:29"}
+{"payload": "cancel the nov 3 reminder, keep the other", "tag": "user_message", "timestamp": "2026-10-09 16:00:57"}
+{"payload": "give me a sec", "tag": "poke_reply", "timestamp": "2026-10-09 16:01:02"}
+{"payload": "[SUCCESS] Keith Review Deadline: Deleted the Nov 3 reminder. The Nov 5 at 9am reminder remains.", "tag": "agent_message", "timestamp": "2026-10-09 16:03:06"}
+{"payload": "Nov 3 reminder removed. Nov 5 at 9am is still set.", "tag": "poke_reply", "timestamp": "2026-10-09 16:03:11"}
+{"payload": "i did it!", "tag": "user_message", "timestamp": "2026-10-09 16:20:13"}
+{"payload": "Yes! So proud of you. Go enjoy that for a minute.", "tag": "poke_reply", "timestamp": "2026-10-09 16:20:18"}
+{"payload": "that's so annoying", "tag": "user_message", "timestamp": "2026-10-09 17:10:35"}
+{"payload": "Ugh, yeah, that's irritating. You're allowed to be mad about it for a minute.", "tag": "poke_reply", "timestamp": "2026-10-09 17:10:40"}
+{"payload": "thanks, you're the best", "tag": "user_message", "timestamp": "2026-10-09 17:20:37"}
+{"payload": "Stop, you'll make me blush, and I don't even have cheeks.", "tag": "poke_reply", "timestamp": "2026-10-09 17:20:42"}
+{"payload": "did i get a confirmation for the september payment?", "tag": "user_message", "timestamp": "2026-10-09 17:25:02"}
+{"payload": "give me a sec", "tag": "poke_reply", "timestamp": "2026-10-09 17:25:07"}
+{"payload": "[SUCCESS] Monthly Reminder: Found a Sep 4 email from payments@hartwellprop.com confirming a $1,850 payment received, confirmation #HP-30918.", "tag": "agent_message", "timestamp": "2026-10-09 17:26:34"}
+{"payload": "Yes, Hartwell confirmed your $1,850 payment on Sep 4, #HP-30918.", "tag": "poke_reply", "timestamp": "2026-10-09 17:26:39"}
+{"payload": "set a reminder for the call", "tag": "user_message", "timestamp": "2026-10-09 18:10:34"}
+{"payload": "right away", "tag": "poke_reply", "timestamp": "2026-10-09 18:10:39"}
+{"payload": "[SUCCESS] Datadog Recruiter Email: Tom confirmed Oct 8 at 2:30 PM ET. Reminder set for 2:15 PM ET that day titled 'Datadog intro call with Tom'.", "tag": "agent_message", "timestamp": "2026-10-09 18:13:32"}
+{"payload": "Tom confirmed 2:30 PM ET on Oct 8. Reminder set for 2:15.", "tag": "poke_reply", "timestamp": "2026-10-09 18:13:37"}
+{"payload": "remind me oct 28 in case i forget", "tag": "user_message", "timestamp": "2026-10-10 08:15:47"}
+{"payload": "looking into it", "tag": "poke_reply", "timestamp": "2026-10-10 08:15:52"}
+{"payload": "[SUCCESS] Tallow Media November Invite: Reminder set for Oct 28 at 9am about the all-hands RSVP deadline.", "tag": "agent_message", "timestamp": "2026-10-10 08:18:20"}
+{"payload": "Reminder set for Oct 28 at 9am.", "tag": "poke_reply", "timestamp": "2026-10-10 08:18:25"}
+{"payload": "bye for now", "tag": "user_message", "timestamp": "2026-10-10 08:35:26"}
+{"payload": "Later! I'll be here.", "tag": "poke_reply", "timestamp": "2026-10-10 08:35:31"}
+{"payload": "remind me the first friday of every month to pay the studio rent to hartwell", "tag": "user_message", "timestamp": "2026-10-10 08:48:31"}
+{"payload": "on it, setting up a monthly rent reminder.", "tag": "poke_reply", "timestamp": "2026-10-10 08:48:36"}
+{"payload": "[SUCCESS] Monthly Reminder: Created a recurring reminder for the first Friday of each month at 9:00am, 'Pay Hartwell Properties studio rent $1,850', starting Oct 2. The amount comes from the lease email from payments@hartwellprop.com.", "tag": "agent_message", "timestamp": "2026-10-10 08:49:50"}
+{"payload": "done. you'll get a reminder every first friday at 9am to pay the $1,850 studio rent to Hartwell, starting oct 2.", "tag": "poke_reply", "timestamp": "2026-10-10 08:49:55"}
+{"payload": "thanks, i always forget this stuff", "tag": "user_message", "timestamp": "2026-10-10 09:20:55"}
+{"payload": "no problem, that should keep you covered.", "tag": "poke_reply", "timestamp": "2026-10-10 09:21:00"}
+{"payload": "move it to 7am", "tag": "user_message", "timestamp": "2026-10-10 11:39:00"}
+{"payload": "sure, changing the time now.", "tag": "poke_reply", "timestamp": "2026-10-10 11:39:05"}
+{"payload": "[SUCCESS] Monthly Reminder: Updated the recurring reminder to 7:00am on the first Friday of each month.", "tag": "agent_message", "timestamp": "2026-10-10 11:42:55"}
+{"payload": "all set, the rent reminder now goes off at 7am on the first friday of each month.", "tag": "poke_reply", "timestamp": "2026-10-10 11:43:00"}

@@ -1,0 +1,136 @@
+{"payload": "long day", "tag": "user_message", "timestamp": "2026-10-14 08:00:06"}
+{"payload": "Then you've earned a comfy spot on the couch. Go be horizontal.", "tag": "poke_reply", "timestamp": "2026-10-14 08:00:11"}
+{"payload": "vanguard emailed about a new bank account being linked, can you find it", "tag": "user_message", "timestamp": "2026-10-14 09:10:45"}
+{"payload": "right away", "tag": "poke_reply", "timestamp": "2026-10-14 09:10:50"}
+{"payload": "[SUCCESS] Find Vanguard linked bank email: Found a security alert from no-reply@vanguard.com dated Nov 2, 2026 at 11:26 AM saying a new bank account ending 5528 was linked to your brokerage account.", "tag": "agent_message", "timestamp": "2026-10-14 09:11:59"}
+{"payload": "Vanguard emailed Nov 2 at 11:26 AM: a new bank account ending 5528 was linked to your account.", "tag": "poke_reply", "timestamp": "2026-10-14 09:12:04"}
+{"payload": "find the lisbon trip itinerary marcus sent for november", "tag": "user_message", "timestamp": "2026-10-14 10:45:42"}
+{"payload": "checking now", "tag": "poke_reply", "timestamp": "2026-10-14 10:45:47"}
+{"payload": "[SUCCESS] Find Lisbon itinerary: Found 'Lisbon trip itinerary' from marcus.webb@northwindlogistics.com, sent Sept 14. It lists TAP flight TP204 leaving JFK Nov 9 at 9:40pm, returning Nov 14, and a Memmo Alfama hotel booking, confirmation MA55821.", "tag": "agent_message", "timestamp": "2026-10-14 10:47:20"}
+{"payload": "Found Marcus's Sept 14 itinerary: TAP TP204 out of JFK Nov 9, back Nov 14, Memmo Alfama hotel.", "tag": "poke_reply", "timestamp": "2026-10-14 10:47:25"}
+{"payload": "favorite season?", "tag": "user_message", "timestamp": "2026-10-14 10:55:32"}
+{"payload": "Autumn, I think. Cozy sweaters, good light, and nobody judges you for eating soup.", "tag": "poke_reply", "timestamp": "2026-10-14 10:55:37"}
+{"payload": "get me the dropbox invoice from this year, need it for taxes", "tag": "user_message", "timestamp": "2026-10-14 11:55:31"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-14 11:55:36"}
+{"payload": "[SUCCESS] Dropbox Invoice Search: Found Dropbox invoice from no-reply@dropbox.com dated Sept 27, 2026: Plus plan annual, $119.00, paid by PayPal. PDF attached to the email.", "tag": "agent_message", "timestamp": "2026-10-14 11:57:41"}
+{"payload": "Found it: Dropbox Plus, $119.00 paid via PayPal on Sept 27, PDF attached.", "tag": "poke_reply", "timestamp": "2026-10-14 11:57:46"}
+{"payload": "i did it!", "tag": "user_message", "timestamp": "2026-10-14 12:15:32"}
+{"payload": "Yes! So proud of you. Go enjoy that for a minute.", "tag": "poke_reply", "timestamp": "2026-10-14 12:15:37"}
+{"payload": "thanks, you're the best", "tag": "user_message", "timestamp": "2026-10-14 13:50:55"}
+{"payload": "Stop, you'll make me blush, and I don't even have cheeks.", "tag": "poke_reply", "timestamp": "2026-10-14 13:51:00"}
+{"payload": "remind me about my dentist cleaning with dr patel in october", "tag": "user_message", "timestamp": "2026-10-14 14:50:04"}
+{"payload": "on it", "tag": "poke_reply", "timestamp": "2026-10-14 14:50:09"}
+{"payload": "[SUCCESS] Dentist appointment: Found the confirmation from Dr. Anita Patel (office@brightsmiledental.com) for a cleaning on Wed Oct 14, 2026 at 9:30am. Set a reminder for Oct 13 at 5pm.", "tag": "agent_message", "timestamp": "2026-10-14 14:51:40"}
+{"payload": "Your cleaning with Dr. Patel is Oct 14 at 9:30am. I set a reminder for Oct 13 at 5pm.", "tag": "poke_reply", "timestamp": "2026-10-14 14:51:45"}
+{"payload": "i didn't add that. what does the email say to do?", "tag": "user_message", "timestamp": "2026-10-14 15:05:46"}
+{"payload": "looking now", "tag": "poke_reply", "timestamp": "2026-10-14 15:05:51"}
+{"payload": "[SUCCESS] Find Vanguard linked bank email: The email says if you didn't make this change, call Vanguard at 800-662-7447 immediately and do not click links in the message.", "tag": "agent_message", "timestamp": "2026-10-14 15:07:07"}
+{"payload": "Call Vanguard at 800-662-7447 right away and don't click any links in it.", "tag": "poke_reply", "timestamp": "2026-10-14 15:07:12"}
+{"payload": "i'm back", "tag": "user_message", "timestamp": "2026-10-14 15:20:14"}
+{"payload": "Welcome back. I missed you for almost thirty whole seconds.", "tag": "poke_reply", "timestamp": "2026-10-14 15:20:19"}
+{"payload": "what's the hotel confirmation number", "tag": "user_message", "timestamp": "2026-10-14 16:15:06"}
+{"payload": "pulling that up now", "tag": "poke_reply", "timestamp": "2026-10-14 16:15:11"}
+{"payload": "[SUCCESS] Find Lisbon itinerary: The hotel confirmation number in Marcus's email is MA55821, for Memmo Alfama, Nov 10 to 14.", "tag": "agent_message", "timestamp": "2026-10-14 16:16:40"}
+{"payload": "Hotel confirmation is MA55821 at Memmo Alfama, Nov 10 to 14.", "tag": "poke_reply", "timestamp": "2026-10-14 16:16:45"}
+{"payload": "need the pinecrest mutual homeowners renewal email from this fall", "tag": "user_message", "timestamp": "2026-10-14 16:35:18"}
+{"payload": "working on it", "tag": "poke_reply", "timestamp": "2026-10-14 16:35:23"}
+{"payload": "[SUCCESS] Pinecrest renewal email search: Found the renewal notice from renewals@pinecrestmutual.example dated Oct 2, 2026: the annual premium rises from $1,486 to $1,672, effective Dec 1, with payment due Nov 20.", "tag": "agent_message", "timestamp": "2026-10-14 16:38:06"}
+{"payload": "Pinecrest renewal: premium goes from $1,486 to $1,672, starting Dec 1, due Nov 20.", "tag": "poke_reply", "timestamp": "2026-10-14 16:38:11"}
+{"payload": "why did it go up so much", "tag": "user_message", "timestamp": "2026-10-14 16:40:44"}
+{"payload": "happy to, checking", "tag": "poke_reply", "timestamp": "2026-10-14 16:40:49"}
+{"payload": "[SUCCESS] Pinecrest renewal email search: The notice cites a 9% rate increase for the region and a higher rebuild cost estimate, from $412,000 to $438,000.", "tag": "agent_message", "timestamp": "2026-10-14 16:43:04"}
+{"payload": "They cite a regional rate increase of 9% and a higher rebuild estimate of $438,000.", "tag": "poke_reply", "timestamp": "2026-10-14 16:43:09"}
+{"payload": "remind me in an hour to call them", "tag": "user_message", "timestamp": "2026-10-14 18:25:09"}
+{"payload": "let me dig in", "tag": "poke_reply", "timestamp": "2026-10-14 18:25:14"}
+{"payload": "[SUCCESS] Find Vanguard linked bank email: Reminder set for today, Nov 2, 2026 at 12:30 PM: 'Call Vanguard 800-662-7447 about unauthorized linked bank ending 5528'.", "tag": "agent_message", "timestamp": "2026-10-14 18:27:42"}
+{"payload": "Reminder set for 12:30 PM today to call Vanguard.", "tag": "poke_reply", "timestamp": "2026-10-14 18:27:47"}
+{"payload": "coffee or tea", "tag": "user_message", "timestamp": "2026-10-14 21:10:45"}
+{"payload": "Coffee for ambition, tea for peace. Which kind of day is it?", "tag": "poke_reply", "timestamp": "2026-10-14 21:10:50"}
+{"payload": "forward it to my agent tom reyes, ask about cheaper options", "tag": "user_message", "timestamp": "2026-10-14 21:45:57"}
+{"payload": "working on it", "tag": "poke_reply", "timestamp": "2026-10-14 21:46:02"}
+{"payload": "[SUCCESS] Pinecrest renewal email search: Forwarded the Oct 2 renewal notice to tom.reyes@reyesinsurance.example, asking him to look for lower-cost coverage before Nov 20.", "tag": "agent_message", "timestamp": "2026-10-14 21:47:30"}
+{"payload": "Forwarded to Tom with a request for cheaper options before Nov 20.", "tag": "poke_reply", "timestamp": "2026-10-14 21:47:35"}
+{"payload": "still up, can't sleep", "tag": "user_message", "timestamp": "2026-10-15 10:35:12"}
+{"payload": "Bold choice. Try boring thoughts, they work better than counting sheep.", "tag": "poke_reply", "timestamp": "2026-10-15 10:35:17"}
+{"payload": "random thought: socks are weird", "tag": "user_message", "timestamp": "2026-10-15 11:15:51"}
+{"payload": "They really are. We wrap our feet in little tubes and call it comfort.", "tag": "poke_reply", "timestamp": "2026-10-15 11:15:56"}
+{"payload": "what's the capital of Australia", "tag": "user_message", "timestamp": "2026-10-15 11:55:33"}
+{"payload": "Canberra. Everyone guesses Sydney, so you're in good company.", "tag": "poke_reply", "timestamp": "2026-10-15 11:55:38"}
+{"payload": "surprise me", "tag": "user_message", "timestamp": "2026-10-15 12:00:09"}
+{"payload": "Okay: a group of flamingos is called a flamboyance. You're welcome.", "tag": "poke_reply", "timestamp": "2026-10-15 12:00:14"}
+{"payload": "ok cool", "tag": "user_message", "timestamp": "2026-10-15 13:50:39"}
+{"payload": "Cool cool cool.", "tag": "poke_reply", "timestamp": "2026-10-15 13:50:44"}
+{"payload": "goodnight", "tag": "user_message", "timestamp": "2026-10-15 14:30:35"}
+{"payload": "Night! Sleep well, tomorrow can wait its turn.", "tag": "poke_reply", "timestamp": "2026-10-15 14:30:40"}
+{"payload": "rough day", "tag": "user_message", "timestamp": "2026-10-15 15:30:02"}
+{"payload": "I'm sorry. Want to vent, or want a distraction? Either works for me.", "tag": "poke_reply", "timestamp": "2026-10-15 15:30:07"}
+{"payload": "remind me nov 13 to decide before the deadline", "tag": "user_message", "timestamp": "2026-10-15 16:00:30"}
+{"payload": "looking into it", "tag": "poke_reply", "timestamp": "2026-10-15 16:00:35"}
+{"payload": "[SUCCESS] Pinecrest renewal email search: Set a reminder for Nov 13, 2026 at 9:00am: 'Decide on Pinecrest Mutual renewal, payment due Nov 20'.", "tag": "agent_message", "timestamp": "2026-10-15 16:02:17"}
+{"payload": "Reminder set for Nov 13 at 9am about the renewal decision.", "tag": "poke_reply", "timestamp": "2026-10-15 16:02:22"}
+{"payload": "what's the address of the dental office again?", "tag": "user_message", "timestamp": "2026-10-15 17:10:17"}
+{"payload": "looking into it", "tag": "poke_reply", "timestamp": "2026-10-15 17:10:22"}
+{"payload": "[SUCCESS] Dentist appointment: The confirmation lists Bright Smile Dental, 214 Maple Ave, Suite 3, Portland, OR 97205.", "tag": "agent_message", "timestamp": "2026-10-15 17:12:30"}
+{"payload": "Bright Smile Dental, 214 Maple Ave, Suite 3, Portland. Parking details weren't in the email.", "tag": "poke_reply", "timestamp": "2026-10-15 17:12:35"}
+{"payload": "can you also remind me an hour before", "tag": "user_message", "timestamp": "2026-10-15 17:35:57"}
+{"payload": "looking now", "tag": "poke_reply", "timestamp": "2026-10-15 17:36:02"}
+{"payload": "[SUCCESS] Dentist appointment: Added a second reminder for Oct 14 at 8:30am titled 'Dentist 9:30 - Dr. Patel'.", "tag": "agent_message", "timestamp": "2026-10-15 17:37:13"}
+{"payload": "Done. You'll also get a reminder Oct 14 at 8:30am.", "tag": "poke_reply", "timestamp": "2026-10-15 17:37:18"}
+{"payload": "check if there was an earlier email about a password change", "tag": "user_message", "timestamp": "2026-10-15 18:45:07"}
+{"payload": "give me a sec", "tag": "poke_reply", "timestamp": "2026-10-15 18:45:12"}
+{"payload": "[SUCCESS] Find Vanguard linked bank email: Found a Vanguard email from Nov 2 at 10:58 AM confirming your password was changed, about 30 minutes before the bank-link alert.", "tag": "agent_message", "timestamp": "2026-10-15 18:47:26"}
+{"payload": "Yes, Vanguard confirmed a password change at 10:58 AM, shortly before the bank link.", "tag": "poke_reply", "timestamp": "2026-10-15 18:47:31"}
+{"payload": "how many days in a leap year", "tag": "user_message", "timestamp": "2026-10-15 19:00:47"}
+{"payload": "366. That one extra day does a lot of work.", "tag": "poke_reply", "timestamp": "2026-10-15 19:00:52"}
+{"payload": "i need a vacation", "tag": "user_message", "timestamp": "2026-10-15 19:05:42"}
+{"payload": "Same energy, honestly. Somewhere with a beach and zero notifications.", "tag": "poke_reply", "timestamp": "2026-10-15 19:05:47"}
+{"payload": "send it to my bookkeeper marcus", "tag": "user_message", "timestamp": "2026-10-15 19:40:44"}
+{"payload": "working on it", "tag": "poke_reply", "timestamp": "2026-10-15 19:40:49"}
+{"payload": "[SUCCESS] Dropbox Invoice Search: Sent the invoice with PDF to marcus.lee@leebooks.com with the subject 'Dropbox invoice Sept 2026'.", "tag": "agent_message", "timestamp": "2026-10-15 19:42:47"}
+{"payload": "Sent to Marcus at leebooks.com with the PDF.", "tag": "poke_reply", "timestamp": "2026-10-15 19:42:52"}
+{"payload": "cats or dogs", "tag": "user_message", "timestamp": "2026-10-15 20:50:49"}
+{"payload": "Dogs for enthusiasm, cats for attitude. I respect both, but I lean dog.", "tag": "poke_reply", "timestamp": "2026-10-15 20:50:54"}
+{"payload": "is a hot dog a sandwich", "tag": "user_message", "timestamp": "2026-10-15 20:55:52"}
+{"payload": "I say no. It's its own thing. A hot dog stands alone.", "tag": "poke_reply", "timestamp": "2026-10-15 20:55:57"}
+{"payload": "forward it to dana in finance", "tag": "user_message", "timestamp": "2026-10-16 08:30:44"}
+{"payload": "let me check", "tag": "poke_reply", "timestamp": "2026-10-16 08:30:49"}
+{"payload": "[SUCCESS] Find Lisbon itinerary: Forwarded Marcus's itinerary email to dana.liu@northwindlogistics.com with no added message.", "tag": "agent_message", "timestamp": "2026-10-16 08:33:43"}
+{"payload": "Forwarded the itinerary to Dana Liu in finance.", "tag": "poke_reply", "timestamp": "2026-10-16 08:33:48"}
+{"payload": "hey", "tag": "user_message", "timestamp": "2026-10-16 09:25:32"}
+{"payload": "Hey you. Good to hear from you.", "tag": "poke_reply", "timestamp": "2026-10-16 09:25:37"}
+{"payload": "do you believe in luck", "tag": "user_message", "timestamp": "2026-10-16 12:25:08"}
+{"payload": "A little. I think it's mostly preparation bumping into a good coincidence.", "tag": "poke_reply", "timestamp": "2026-10-16 12:25:13"}
+{"payload": "good morning", "tag": "user_message", "timestamp": "2026-10-16 16:10:56"}
+{"payload": "Morning! Hope the coffee is strong and the day is gentle.", "tag": "poke_reply", "timestamp": "2026-10-16 16:11:01"}
+{"payload": "is there a tax or vat line on it", "tag": "user_message", "timestamp": "2026-10-16 16:45:42"}
+{"payload": "let me dig in", "tag": "poke_reply", "timestamp": "2026-10-16 16:45:47"}
+{"payload": "[SUCCESS] Dropbox Invoice Search: The invoice shows $119.00 with $0.00 tax listed.", "tag": "agent_message", "timestamp": "2026-10-16 16:46:49"}
+{"payload": "No tax charged: $119.00 with $0.00 tax.", "tag": "poke_reply", "timestamp": "2026-10-16 16:46:54"}
+{"payload": "they asked for a form, did they send one?", "tag": "user_message", "timestamp": "2026-10-16 17:45:54"}
+{"payload": "happy to, checking", "tag": "poke_reply", "timestamp": "2026-10-16 17:45:59"}
+{"payload": "[SUCCESS] Dentist appointment: Yes, an email from office@brightsmiledental.com on Sep 28 has a PDF 'New Patient Intake Form' attached, asking it be returned before the visit.", "tag": "agent_message", "timestamp": "2026-10-16 17:47:50"}
+{"payload": "Yes, they sent an intake form PDF on Sep 28 to return before your visit.", "tag": "poke_reply", "timestamp": "2026-10-16 17:47:55"}
+{"payload": "happy friday", "tag": "user_message", "timestamp": "2026-10-16 18:00:43"}
+{"payload": "Happy Friday! The weekend is practically knocking.", "tag": "poke_reply", "timestamp": "2026-10-16 18:00:48"}
+{"payload": "find last year's too", "tag": "user_message", "timestamp": "2026-10-16 18:05:22"}
+{"payload": "pulling that up now", "tag": "poke_reply", "timestamp": "2026-10-16 18:05:27"}
+{"payload": "[SUCCESS] Dropbox Invoice Search: Found the Sept 27, 2025 invoice from no-reply@dropbox.com for $119.00 and attached its PDF.", "tag": "agent_message", "timestamp": "2026-10-16 18:06:23"}
+{"payload": "Last year's was also $119.00, dated Sept 27, 2025. PDF attached.", "tag": "poke_reply", "timestamp": "2026-10-16 18:06:28"}
+{"payload": "remind me nov 8 to check in online for the flight", "tag": "user_message", "timestamp": "2026-10-16 19:25:31"}
+{"payload": "looking into it", "tag": "poke_reply", "timestamp": "2026-10-16 19:25:36"}
+{"payload": "[SUCCESS] Find Lisbon itinerary: Created a reminder for Nov 8 at 9:00am: 'Check in online for TAP TP204 to Lisbon'.", "tag": "agent_message", "timestamp": "2026-10-16 19:26:48"}
+{"payload": "Reminder set for Nov 8 at 9am to check in for TP204.", "tag": "poke_reply", "timestamp": "2026-10-16 19:26:53"}
+{"payload": "find the lisbon trip itinerary marcus sent for november", "tag": "user_message", "timestamp": "2026-10-17 08:48:14"}
+{"payload": "on it, looking for marcus's lisbon itinerary now.", "tag": "poke_reply", "timestamp": "2026-10-17 08:48:19"}
+{"payload": "[SUCCESS] Find Lisbon itinerary: Found 'Lisbon trip itinerary' from marcus.webb@northwindlogistics.com, sent Sept 14. It lists TAP flight TP204 leaving JFK Nov 9 at 9:40pm, returning Nov 14, and a Memmo Alfama hotel booking, confirmation MA55821.", "tag": "agent_message", "timestamp": "2026-10-17 08:49:40"}
+{"payload": "found it. marcus sent it sept 14. you're on TAP TP204 out of JFK nov 9 at 9:40pm, back nov 14, and the hotel is memmo alfama (conf MA55821).", "tag": "poke_reply", "timestamp": "2026-10-17 08:49:45"}
+{"payload": "what's the hotel confirmation number", "tag": "user_message", "timestamp": "2026-10-17 09:16:45"}
+{"payload": "checking the email for that.", "tag": "poke_reply", "timestamp": "2026-10-17 09:16:50"}
+{"payload": "[SUCCESS] Find Lisbon itinerary: The hotel confirmation number in Marcus's email is MA55821, for Memmo Alfama, Nov 10 to 14.", "tag": "agent_message", "timestamp": "2026-10-17 09:20:20"}
+{"payload": "it's MA55821, memmo alfama, nov 10 to 14.", "tag": "poke_reply", "timestamp": "2026-10-17 09:20:25"}
+{"payload": "ugh i hate overnight flights", "tag": "user_message", "timestamp": "2026-10-17 12:15:25"}
+{"payload": "same, but at least you get a full day there after landing.", "tag": "poke_reply", "timestamp": "2026-10-17 12:15:30"}
+{"payload": "forward it to dana in finance", "tag": "user_message", "timestamp": "2026-10-17 14:23:30"}
+{"payload": "forwarding it to dana now.", "tag": "poke_reply", "timestamp": "2026-10-17 14:23:35"}
+{"payload": "[SUCCESS] Find Lisbon itinerary: Forwarded Marcus's itinerary email to dana.liu@northwindlogistics.com with no added message.", "tag": "agent_message", "timestamp": "2026-10-17 14:25:55"}
+{"payload": "done, forwarded to dana at dana.liu@northwindlogistics.com with no note.", "tag": "poke_reply", "timestamp": "2026-10-17 14:26:00"}

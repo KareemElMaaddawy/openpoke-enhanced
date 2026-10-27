@@ -1,0 +1,136 @@
+{"payload": "i need a vacation", "tag": "user_message", "timestamp": "2026-10-21 08:05:26"}
+{"payload": "Same energy, honestly. Somewhere with a beach and zero notifications.", "tag": "poke_reply", "timestamp": "2026-10-21 08:05:31"}
+{"payload": "do you like music", "tag": "user_message", "timestamp": "2026-10-21 08:25:40"}
+{"payload": "Love it. Can't hum, but I have strong opinions about a good bassline.", "tag": "poke_reply", "timestamp": "2026-10-21 08:25:45"}
+{"payload": "did the county send the property tax bill yet", "tag": "user_message", "timestamp": "2026-10-21 09:25:44"}
+{"payload": "let me check", "tag": "poke_reply", "timestamp": "2026-10-21 09:25:49"}
+{"payload": "[SUCCESS] County Property Tax Bill: Yes, Larimer County Treasurer (treasurer@larimer-county.example) emailed the 2026 second-half property tax notice on Sept 22: $2,318.40 due by Nov 1.", "tag": "agent_message", "timestamp": "2026-10-21 09:28:39"}
+{"payload": "Yes, the county's second-half bill is $2,318.40, due Nov 1.", "tag": "poke_reply", "timestamp": "2026-10-21 09:28:44"}
+{"payload": "aws sent something about an exposed access key, pull it up", "tag": "user_message", "timestamp": "2026-10-21 10:00:30"}
+{"payload": "got it, on it", "tag": "poke_reply", "timestamp": "2026-10-21 10:00:35"}
+{"payload": "[SUCCESS] AWS Security Alert: Found an email from abuse@amazonaws.com dated Oct 8, 2026 warning that access key AKIA...Q7XP for IAM user 'deploy-bot' was found in a public GitHub repo and has been quarantined.", "tag": "agent_message", "timestamp": "2026-10-21 10:03:12"}
+{"payload": "AWS warned Oct 8 that deploy-bot's access key ending Q7XP was found in a public repo and quarantined.", "tag": "poke_reply", "timestamp": "2026-10-21 10:03:17"}
+{"payload": "has my warby parker order shipped yet", "tag": "user_message", "timestamp": "2026-10-21 10:05:06"}
+{"payload": "happy to, checking", "tag": "poke_reply", "timestamp": "2026-10-21 10:05:11"}
+{"payload": "[SUCCESS] Warby Parker Order Status: Warby Parker email from orders@warbyparker.com (Nov 3) says order WP-5529104, Haskell frames in Whiskey Tortoise, $145, shipped via UPS with an estimated delivery of Nov 9.", "tag": "agent_message", "timestamp": "2026-10-21 10:06:47"}
+{"payload": "Shipped Nov 3. Your Haskell frames in Whiskey Tortoise are due Nov 9.", "tag": "poke_reply", "timestamp": "2026-10-21 10:06:52"}
+{"payload": "remind me about my dentist cleaning with dr patel in october", "tag": "user_message", "timestamp": "2026-10-21 10:50:32"}
+{"payload": "working on it", "tag": "poke_reply", "timestamp": "2026-10-21 10:50:37"}
+{"payload": "[SUCCESS] Dentist appointment: Found the confirmation from Dr. Anita Patel (office@brightsmiledental.com) for a cleaning on Wed Oct 14, 2026 at 9:30am. Set a reminder for Oct 13 at 5pm.", "tag": "agent_message", "timestamp": "2026-10-21 10:51:57"}
+{"payload": "Your cleaning with Dr. Patel is Oct 14 at 9:30am. I set a reminder for Oct 13 at 5pm.", "tag": "poke_reply", "timestamp": "2026-10-21 10:52:02"}
+{"payload": "what's the capital of Australia", "tag": "user_message", "timestamp": "2026-10-21 12:30:31"}
+{"payload": "Canberra. Everyone guesses Sydney, so you're in good company.", "tag": "poke_reply", "timestamp": "2026-10-21 12:30:36"}
+{"payload": "what's the ups tracking number", "tag": "user_message", "timestamp": "2026-10-21 12:55:09"}
+{"payload": "on it now", "tag": "poke_reply", "timestamp": "2026-10-21 12:55:14"}
+{"payload": "[SUCCESS] Warby Parker Order Status: The shipping email lists UPS tracking number 1Z84F2910356718832.", "tag": "agent_message", "timestamp": "2026-10-21 12:57:14"}
+{"payload": "UPS tracking number is 1Z84F2910356718832.", "tag": "poke_reply", "timestamp": "2026-10-21 12:57:19"}
+{"payload": "what's the opposite of up", "tag": "user_message", "timestamp": "2026-10-21 15:25:01"}
+{"payload": "Down. I suspect this is a setup, though. Go on, hit me.", "tag": "poke_reply", "timestamp": "2026-10-21 15:25:06"}
+{"payload": "mondays am i right", "tag": "user_message", "timestamp": "2026-10-21 15:30:56"}
+{"payload": "Monday really should come with a gentle opening act.", "tag": "poke_reply", "timestamp": "2026-10-21 15:31:01"}
+{"payload": "brb", "tag": "user_message", "timestamp": "2026-10-21 17:05:44"}
+{"payload": "Take your time.", "tag": "poke_reply", "timestamp": "2026-10-21 17:05:49"}
+{"payload": "what do they want me to do", "tag": "user_message", "timestamp": "2026-10-21 17:15:13"}
+{"payload": "one moment", "tag": "poke_reply", "timestamp": "2026-10-21 17:15:18"}
+{"payload": "[SUCCESS] AWS Security Alert: The email asks you to rotate the key, delete it if unused, review CloudTrail for unauthorized activity, and reply to the support case within 5 days.", "tag": "agent_message", "timestamp": "2026-10-21 17:16:59"}
+{"payload": "Rotate or delete the key, review CloudTrail, and reply to the support case within 5 days.", "tag": "poke_reply", "timestamp": "2026-10-21 17:17:04"}
+{"payload": "yay", "tag": "user_message", "timestamp": "2026-10-21 17:35:14"}
+{"payload": "Yay indeed!", "tag": "poke_reply", "timestamp": "2026-10-21 17:35:19"}
+{"payload": "good morning", "tag": "user_message", "timestamp": "2026-10-21 19:45:02"}
+{"payload": "Morning! Hope the coffee is strong and the day is gentle.", "tag": "poke_reply", "timestamp": "2026-10-21 19:45:07"}
+{"payload": "i should go to the gym", "tag": "user_message", "timestamp": "2026-10-21 21:05:38"}
+{"payload": "Should, or want to? Either way, future you will send a thank-you note.", "tag": "poke_reply", "timestamp": "2026-10-21 21:05:43"}
+{"payload": "can you remind me to refill my lisinopril every month, walgreens emails me", "tag": "user_message", "timestamp": "2026-10-21 21:10:07"}
+{"payload": "pulling that up now", "tag": "poke_reply", "timestamp": "2026-10-21 21:10:12"}
+{"payload": "[SUCCESS] Walgreens Refill Reminder: Found Walgreens (noreply@walgreens.com) refill notices for lisinopril 10mg, 90-day supply, last filled September 3, 2026, 2 refills remaining. Set a recurring reminder on the 28th of each month at 9:00 AM.", "tag": "agent_message", "timestamp": "2026-10-21 21:12:27"}
+{"payload": "Set a monthly reminder on the 28th at 9 AM. Two refills remain, last filled Sept 3.", "tag": "poke_reply", "timestamp": "2026-10-21 21:12:32"}
+{"payload": "what's the case number", "tag": "user_message", "timestamp": "2026-10-21 21:25:23"}
+{"payload": "got it, on it", "tag": "poke_reply", "timestamp": "2026-10-21 21:25:28"}
+{"payload": "[SUCCESS] AWS Security Alert: The support case ID is 9187342051, opened Oct 8, 2026.", "tag": "agent_message", "timestamp": "2026-10-21 21:27:31"}
+{"payload": "The case number is 9187342051.", "tag": "poke_reply", "timestamp": "2026-10-21 21:27:36"}
+{"payload": "are you a morning person or a night owl", "tag": "user_message", "timestamp": "2026-10-21 21:50:57"}
+{"payload": "Neither, I'm awake all the time, which feels like cheating. You?", "tag": "poke_reply", "timestamp": "2026-10-21 21:51:02"}
+{"payload": "what's 15% of 200", "tag": "user_message", "timestamp": "2026-10-22 10:10:21"}
+{"payload": "30. Tip math is my love language.", "tag": "poke_reply", "timestamp": "2026-10-22 10:10:26"}
+{"payload": "you there?", "tag": "user_message", "timestamp": "2026-10-22 10:25:05"}
+{"payload": "Always. What's up?", "tag": "poke_reply", "timestamp": "2026-10-22 10:25:10"}
+{"payload": "remind me to pay it on oct 25", "tag": "user_message", "timestamp": "2026-10-22 11:30:08"}
+{"payload": "checking now", "tag": "poke_reply", "timestamp": "2026-10-22 11:30:13"}
+{"payload": "[SUCCESS] County Property Tax Bill: Created a reminder for Oct 25, 2026 at 10:00am: 'Pay Larimer County property tax, $2,318.40, due Nov 1'.", "tag": "agent_message", "timestamp": "2026-10-22 11:33:02"}
+{"payload": "Reminder set for Oct 25 at 10am to pay the property tax.", "tag": "poke_reply", "timestamp": "2026-10-22 11:33:07"}
+{"payload": "meh", "tag": "user_message", "timestamp": "2026-10-22 12:10:41"}
+{"payload": "Meh is a valid mood. Sometimes it's the whole forecast.", "tag": "poke_reply", "timestamp": "2026-10-22 12:10:46"}
+{"payload": "wait, it's a 90 day supply so make it every 3 months", "tag": "user_message", "timestamp": "2026-10-22 12:20:38"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-22 12:20:43"}
+{"payload": "[SUCCESS] Walgreens Refill Reminder: Replaced the monthly reminder with one every three months, next on November 28, 2026 at 9:00 AM, then February 28 and May 28.", "tag": "agent_message", "timestamp": "2026-10-22 12:23:00"}
+{"payload": "Changed to every 3 months, starting Nov 28 at 9 AM.", "tag": "poke_reply", "timestamp": "2026-10-22 12:23:05"}
+{"payload": "did my insurance get applied?", "tag": "user_message", "timestamp": "2026-10-22 15:20:51"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-22 15:20:56"}
+{"payload": "[SUCCESS] Warby Parker Order Status: The order email shows a $60 vision insurance discount applied, leaving $85 charged to the card.", "tag": "agent_message", "timestamp": "2026-10-22 15:22:20"}
+{"payload": "Yes, $60 insurance discount applied. You were charged $85.", "tag": "poke_reply", "timestamp": "2026-10-22 15:22:25"}
+{"payload": "bye for now", "tag": "user_message", "timestamp": "2026-10-22 17:05:45"}
+{"payload": "Later! I'll be here.", "tag": "poke_reply", "timestamp": "2026-10-22 17:05:50"}
+{"payload": "email jordan that he needs to rotate the deploy-bot key today", "tag": "user_message", "timestamp": "2026-10-22 18:45:19"}
+{"payload": "on it", "tag": "poke_reply", "timestamp": "2026-10-22 18:45:24"}
+{"payload": "[SUCCESS] AWS Security Alert: Sent an email to jordan.wells@northwindlabs.io asking him to rotate the deploy-bot access key today and referencing case 9187342051.", "tag": "agent_message", "timestamp": "2026-10-22 18:47:31"}
+{"payload": "Emailed Jordan to rotate the deploy-bot key today, citing case 9187342051.", "tag": "poke_reply", "timestamp": "2026-10-22 18:47:36"}
+{"payload": "is there a late fee if i miss it", "tag": "user_message", "timestamp": "2026-10-22 19:20:54"}
+{"payload": "on it now", "tag": "poke_reply", "timestamp": "2026-10-22 19:20:59"}
+{"payload": "[SUCCESS] County Property Tax Bill: The notice says payments after Nov 1 get a 1.5% monthly interest charge, about $34.78 for the first month on this amount.", "tag": "agent_message", "timestamp": "2026-10-22 19:23:06"}
+{"payload": "Yes, 1.5% monthly interest, roughly $34.78 for the first month.", "tag": "poke_reply", "timestamp": "2026-10-22 19:23:11"}
+{"payload": "got any fun facts", "tag": "user_message", "timestamp": "2026-10-22 21:30:48"}
+{"payload": "Octopuses have three hearts. Two for the gills, one for everything else. Overachievers.", "tag": "poke_reply", "timestamp": "2026-10-22 21:30:53"}
+{"payload": "hey", "tag": "user_message", "timestamp": "2026-10-23 08:00:54"}
+{"payload": "Hey you. Good to hear from you.", "tag": "poke_reply", "timestamp": "2026-10-23 08:00:59"}
+{"payload": "how many refills do i have left", "tag": "user_message", "timestamp": "2026-10-23 10:05:15"}
+{"payload": "checking now", "tag": "poke_reply", "timestamp": "2026-10-23 10:05:20"}
+{"payload": "[SUCCESS] Walgreens Refill Reminder: The latest Walgreens notice, dated September 3, 2026, lists 2 refills remaining on the prescription, which expires July 2027.", "tag": "agent_message", "timestamp": "2026-10-23 10:07:44"}
+{"payload": "Two refills left, and the prescription expires July 2027.", "tag": "poke_reply", "timestamp": "2026-10-23 10:07:49"}
+{"payload": "remind me nov 12 to email them if it hasn't come", "tag": "user_message", "timestamp": "2026-10-23 11:40:14"}
+{"payload": "pulling that up now", "tag": "poke_reply", "timestamp": "2026-10-23 11:40:19"}
+{"payload": "[SUCCESS] Warby Parker Order Status: Reminder set for Nov 12, 2026 at 9:00am: 'Contact Warby Parker if order WP-5529104 hasn't arrived'.", "tag": "agent_message", "timestamp": "2026-10-23 11:41:44"}
+{"payload": "Reminder set for Nov 12 at 9am.", "tag": "poke_reply", "timestamp": "2026-10-23 11:41:49"}
+{"payload": "ugh fine", "tag": "user_message", "timestamp": "2026-10-23 12:00:21"}
+{"payload": "Dramatic sigh accepted. It'll be over before you know it.", "tag": "poke_reply", "timestamp": "2026-10-23 12:00:26"}
+{"payload": "what's the address of the dental office again?", "tag": "user_message", "timestamp": "2026-10-23 13:05:25"}
+{"payload": "happy to, checking", "tag": "poke_reply", "timestamp": "2026-10-23 13:05:30"}
+{"payload": "[SUCCESS] Dentist appointment: The confirmation lists Bright Smile Dental, 214 Maple Ave, Suite 3, Portland, OR 97205.", "tag": "agent_message", "timestamp": "2026-10-23 13:07:28"}
+{"payload": "Bright Smile Dental, 214 Maple Ave, Suite 3, Portland. Parking details weren't in the email.", "tag": "poke_reply", "timestamp": "2026-10-23 13:07:33"}
+{"payload": "tell me a joke", "tag": "user_message", "timestamp": "2026-10-23 14:15:41"}
+{"payload": "Why did the scarecrow win an award? He was outstanding in his field. I'll see myself out.", "tag": "poke_reply", "timestamp": "2026-10-23 14:15:46"}
+{"payload": "can you also remind me an hour before", "tag": "user_message", "timestamp": "2026-10-23 14:50:38"}
+{"payload": "let me dig in", "tag": "poke_reply", "timestamp": "2026-10-23 14:50:43"}
+{"payload": "[SUCCESS] Dentist appointment: Added a second reminder for Oct 14 at 8:30am titled 'Dentist 9:30 - Dr. Patel'.", "tag": "agent_message", "timestamp": "2026-10-23 14:53:09"}
+{"payload": "Done. You'll also get a reminder Oct 14 at 8:30am.", "tag": "poke_reply", "timestamp": "2026-10-23 14:53:14"}
+{"payload": "what's heavier, a pound of feathers or a pound of bricks", "tag": "user_message", "timestamp": "2026-10-23 16:10:22"}
+{"payload": "Same weight, a pound is a pound. The feathers just need a bigger bag.", "tag": "poke_reply", "timestamp": "2026-10-23 16:10:27"}
+{"payload": "nailed it", "tag": "user_message", "timestamp": "2026-10-23 16:25:43"}
+{"payload": "Obviously. Take a victory lap.", "tag": "poke_reply", "timestamp": "2026-10-23 16:25:48"}
+{"payload": "send the notice to my accountant priya", "tag": "user_message", "timestamp": "2026-10-23 16:50:12"}
+{"payload": "looking now", "tag": "poke_reply", "timestamp": "2026-10-23 16:50:17"}
+{"payload": "[SUCCESS] County Property Tax Bill: Forwarded the Sept 22 tax notice to priya.nair@nairtax.example with the PDF attached.", "tag": "agent_message", "timestamp": "2026-10-23 16:52:16"}
+{"payload": "Sent the tax notice PDF to Priya.", "tag": "poke_reply", "timestamp": "2026-10-23 16:52:21"}
+{"payload": "was the last pickup ready or still waiting", "tag": "user_message", "timestamp": "2026-10-23 20:05:18"}
+{"payload": "give me a sec", "tag": "poke_reply", "timestamp": "2026-10-23 20:05:23"}
+{"payload": "[SUCCESS] Walgreens Refill Reminder: A Walgreens email on September 4, 2026 said the order was picked up and a receipt for $12.00 was charged to the card ending 4417.", "tag": "agent_message", "timestamp": "2026-10-23 20:07:12"}
+{"payload": "It was picked up Sept 4. You paid $12.00.", "tag": "poke_reply", "timestamp": "2026-10-23 20:07:17"}
+{"payload": "they asked for a form, did they send one?", "tag": "user_message", "timestamp": "2026-10-23 20:10:08"}
+{"payload": "pulling that up now", "tag": "poke_reply", "timestamp": "2026-10-23 20:10:13"}
+{"payload": "[SUCCESS] Dentist appointment: Yes, an email from office@brightsmiledental.com on Sep 28 has a PDF 'New Patient Intake Form' attached, asking it be returned before the visit.", "tag": "agent_message", "timestamp": "2026-10-23 20:12:04"}
+{"payload": "Yes, they sent an intake form PDF on Sep 28 to return before your visit.", "tag": "poke_reply", "timestamp": "2026-10-23 20:12:09"}
+{"payload": "happy friday", "tag": "user_message", "timestamp": "2026-10-23 21:50:45"}
+{"payload": "Happy Friday! The weekend is practically knocking.", "tag": "poke_reply", "timestamp": "2026-10-23 21:50:50"}
+{"payload": "aws sent something about an exposed access key, pull it up", "tag": "user_message", "timestamp": "2026-10-24 06:32:25"}
+{"payload": "On it, checking for the AWS email now.", "tag": "poke_reply", "timestamp": "2026-10-24 06:32:30"}
+{"payload": "[SUCCESS] AWS Security Alert: Found an email from abuse@amazonaws.com dated Oct 8, 2026 warning that access key AKIA...Q7XP for IAM user 'deploy-bot' was found in a public GitHub repo and has been quarantined.", "tag": "agent_message", "timestamp": "2026-10-24 06:34:12"}
+{"payload": "Found it. AWS emailed on Oct 8 saying the access key for the deploy-bot IAM user was found in a public GitHub repo, and they've quarantined it.", "tag": "poke_reply", "timestamp": "2026-10-24 06:34:17"}
+{"payload": "they asked for a form for the dentist, did they send one?", "tag": "user_message", "timestamp": "2026-10-24 06:59:17"}
+{"payload": "Let me check the dentist's emails.", "tag": "poke_reply", "timestamp": "2026-10-24 06:59:22"}
+{"payload": "[SUCCESS] Dentist appointment: Yes, an email from office@brightsmiledental.com on Sep 28 has a PDF 'New Patient Intake Form' attached, asking it be returned before the visit.", "tag": "agent_message", "timestamp": "2026-10-24 07:02:59"}
+{"payload": "Yep, the office sent a new patient intake form as a PDF on Sep 28. They want it back before your visit.", "tag": "poke_reply", "timestamp": "2026-10-24 07:03:04"}
+{"payload": "ugh this week is a mess", "tag": "user_message", "timestamp": "2026-10-24 09:38:04"}
+{"payload": "Sounds like it. Want me to take anything off your plate?", "tag": "poke_reply", "timestamp": "2026-10-24 09:38:09"}
+{"payload": "email jordan that he needs to rotate the deploy-bot key today", "tag": "user_message", "timestamp": "2026-10-24 12:13:09"}
+{"payload": "Sending Jordan a note now.", "tag": "poke_reply", "timestamp": "2026-10-24 12:13:14"}
+{"payload": "[SUCCESS] AWS Security Alert: Sent an email to jordan.wells@northwindlabs.io asking him to rotate the deploy-bot access key today and referencing case 9187342051.", "tag": "agent_message", "timestamp": "2026-10-24 12:16:55"}
+{"payload": "Done. I emailed Jordan asking him to rotate the deploy-bot key today and included the case number.", "tag": "poke_reply", "timestamp": "2026-10-24 12:17:00"}

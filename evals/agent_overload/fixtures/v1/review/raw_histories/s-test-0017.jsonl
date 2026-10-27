@@ -1,0 +1,124 @@
+{"payload": "yay", "tag": "user_message", "timestamp": "2026-10-12 08:35:21"}
+{"payload": "Yay indeed!", "tag": "poke_reply", "timestamp": "2026-10-12 08:35:26"}
+{"payload": "remind me to renew the brightloomhq domain before it expires", "tag": "user_message", "timestamp": "2026-10-12 10:05:49"}
+{"payload": "checking now", "tag": "poke_reply", "timestamp": "2026-10-12 10:05:54"}
+{"payload": "[SUCCESS] Domain Renewal Reminder: Found a Namecheap email from support@namecheap.com saying brightloomhq.com expires Oct 30, 2026, renewal $14.98. Set a reminder for Oct 26 at 9:00am.", "tag": "agent_message", "timestamp": "2026-10-12 10:08:03"}
+{"payload": "Domain expires Oct 30 ($14.98 to renew). Reminder set for Oct 26 at 9am.", "tag": "poke_reply", "timestamp": "2026-10-12 10:08:08"}
+{"payload": "hey", "tag": "user_message", "timestamp": "2026-10-12 10:55:26"}
+{"payload": "Hey you. Good to hear from you.", "tag": "poke_reply", "timestamp": "2026-10-12 10:55:31"}
+{"payload": "find my northwind dev conference registration and when badge pickup is", "tag": "user_message", "timestamp": "2026-10-12 13:55:51"}
+{"payload": "on it", "tag": "poke_reply", "timestamp": "2026-10-12 13:55:56"}
+{"payload": "[SUCCESS] Northwind Dev conference registration: Receipt from registration@northwinddev.com dated Aug 30 shows a $649 full pass for the Oct 7-9 conference in Austin, with badge pickup Oct 6 from 4-8pm at the Hollis Convention Center.", "tag": "agent_message", "timestamp": "2026-10-12 13:57:48"}
+{"payload": "Registered, $649 pass for Oct 7-9 in Austin. Badge pickup is Oct 6, 4-8pm.", "tag": "poke_reply", "timestamp": "2026-10-12 13:57:53"}
+{"payload": "i can't decide what to eat", "tag": "user_message", "timestamp": "2026-10-12 14:45:33"}
+{"payload": "Tragic and universal. Go with the first thing that sounded good. Your gut knows.", "tag": "poke_reply", "timestamp": "2026-10-12 14:45:38"}
+{"payload": "summarize the linkedin email from the datadog recruiter", "tag": "user_message", "timestamp": "2026-10-12 15:00:20"}
+{"payload": "got it, on it", "tag": "poke_reply", "timestamp": "2026-10-12 15:00:25"}
+{"payload": "[SUCCESS] Datadog Recruiter Email: Tom Alvarez at Datadog (notification from messages-noreply@linkedin.com, Oct 2, 2026) is hiring a Senior Backend Engineer on the Metrics team in NYC or remote, and asks for a 20-minute intro call next week.", "tag": "agent_message", "timestamp": "2026-10-12 15:02:33"}
+{"payload": "Tom Alvarez at Datadog wants a 20-minute intro call for a Senior Backend Engineer role on Metrics.", "tag": "poke_reply", "timestamp": "2026-10-12 15:02:38"}
+{"payload": "how's your day going", "tag": "user_message", "timestamp": "2026-10-12 15:25:28"}
+{"payload": "Pretty smooth so far, no fires. Yours?", "tag": "poke_reply", "timestamp": "2026-10-12 15:25:33"}
+{"payload": "how much is the renewal", "tag": "user_message", "timestamp": "2026-10-12 16:55:37"}
+{"payload": "looking into it", "tag": "poke_reply", "timestamp": "2026-10-12 16:55:42"}
+{"payload": "[SUCCESS] Domain Renewal Reminder: The Namecheap email lists the one-year renewal at $14.98.", "tag": "agent_message", "timestamp": "2026-10-12 16:57:45"}
+{"payload": "Renewal is $14.98 for one year.", "tag": "poke_reply", "timestamp": "2026-10-12 16:57:50"}
+{"payload": "summarize my emails from summit physical therapy, what's my schedule", "tag": "user_message", "timestamp": "2026-10-12 17:30:21"}
+{"payload": "checking now", "tag": "poke_reply", "timestamp": "2026-10-12 17:30:26"}
+{"payload": "[SUCCESS] Summit Physical Therapy Emails: Summit PT (scheduling@summitpt.com) has you booked Tuesdays at 5:15 PM with therapist Marcus Lee from September 22 through November 10, 2026, 8 sessions total, $30 copay each.", "tag": "agent_message", "timestamp": "2026-10-12 17:33:11"}
+{"payload": "You're booked Tuesdays at 5:15 PM with Marcus Lee, Sept 22 to Nov 10. Copay is $30.", "tag": "poke_reply", "timestamp": "2026-10-12 17:33:16"}
+{"payload": "how are you", "tag": "user_message", "timestamp": "2026-10-12 18:20:03"}
+{"payload": "Doing great, no complaints, mostly because I have no body to ache. You?", "tag": "poke_reply", "timestamp": "2026-10-12 18:20:08"}
+{"payload": "lol", "tag": "user_message", "timestamp": "2026-10-12 21:30:27"}
+{"payload": "Glad that landed.", "tag": "poke_reply", "timestamp": "2026-10-12 21:30:32"}
+{"payload": "summarize elena's q3 board update email", "tag": "user_message", "timestamp": "2026-10-12 21:45:13"}
+{"payload": "one moment", "tag": "poke_reply", "timestamp": "2026-10-12 21:45:18"}
+{"payload": "[SUCCESS] Elena Q3 Board Email: Elena Vasquez (elena@brightloomhq.com) sent 'Q3 Board Update' on Oct 12: revenue $1.84M, up 11% over Q2, churn down to 2.1%, and a hiring freeze until January.", "tag": "agent_message", "timestamp": "2026-10-12 21:46:28"}
+{"payload": "Elena's Q3 update: revenue $1.84M (+11%), churn 2.1%, hiring freeze until January.", "tag": "poke_reply", "timestamp": "2026-10-12 21:46:33"}
+{"payload": "nice weather today", "tag": "user_message", "timestamp": "2026-10-13 09:45:45"}
+{"payload": "Love that for you. Go stand in it for a minute.", "tag": "poke_reply", "timestamp": "2026-10-13 09:45:50"}
+{"payload": "remind me an hour before each session", "tag": "user_message", "timestamp": "2026-10-13 11:35:43"}
+{"payload": "checking now", "tag": "poke_reply", "timestamp": "2026-10-13 11:35:48"}
+{"payload": "[SUCCESS] Summit Physical Therapy Emails: Created a weekly recurring reminder for Tuesdays at 4:15 PM from September 22 through November 10, 2026: 'PT at Summit 5:15 PM'.", "tag": "agent_message", "timestamp": "2026-10-13 11:37:24"}
+{"payload": "Weekly reminders set for Tuesdays at 4:15 PM through Nov 10.", "tag": "poke_reply", "timestamp": "2026-10-13 11:37:29"}
+{"payload": "what did she say about churn", "tag": "user_message", "timestamp": "2026-10-13 14:20:19"}
+{"payload": "got it, on it", "tag": "poke_reply", "timestamp": "2026-10-13 14:20:24"}
+{"payload": "[SUCCESS] Elena Q3 Board Email: She said churn fell from 2.9% to 2.1%, credited to the new onboarding emails.", "tag": "agent_message", "timestamp": "2026-10-13 14:22:18"}
+{"payload": "Churn dropped from 2.9% to 2.1% thanks to the new onboarding emails.", "tag": "poke_reply", "timestamp": "2026-10-13 14:22:23"}
+{"payload": "pineapple on pizza yes or no", "tag": "user_message", "timestamp": "2026-10-13 15:15:16"}
+{"payload": "Yes, and I'll defend it politely. Sweet and salty is a fair deal.", "tag": "poke_reply", "timestamp": "2026-10-13 15:15:21"}
+{"payload": "reply thanking her and asking for the slide deck", "tag": "user_message", "timestamp": "2026-10-13 15:55:08"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-13 15:55:13"}
+{"payload": "[SUCCESS] Elena Q3 Board Email: Drafted a reply to Elena thanking her for the update and asking her to share the slide deck. Not sent yet.", "tag": "agent_message", "timestamp": "2026-10-13 15:56:45"}
+{"payload": "Drafted a thank-you asking for the deck. Should I send it?", "tag": "poke_reply", "timestamp": "2026-10-13 15:56:50"}
+{"payload": "brb", "tag": "user_message", "timestamp": "2026-10-13 16:00:24"}
+{"payload": "Take your time.", "tag": "poke_reply", "timestamp": "2026-10-13 16:00:29"}
+{"payload": "happy friday", "tag": "user_message", "timestamp": "2026-10-13 16:05:11"}
+{"payload": "Happy Friday! The weekend is practically knocking.", "tag": "poke_reply", "timestamp": "2026-10-13 16:05:16"}
+{"payload": "rough day", "tag": "user_message", "timestamp": "2026-10-13 17:50:24"}
+{"payload": "I'm sorry. Want to vent, or want a distraction? Either works for me.", "tag": "poke_reply", "timestamp": "2026-10-13 17:50:29"}
+{"payload": "i have to skip oct 6, email them to cancel that one", "tag": "user_message", "timestamp": "2026-10-13 21:15:40"}
+{"payload": "got it, on it", "tag": "poke_reply", "timestamp": "2026-10-13 21:15:45"}
+{"payload": "[SUCCESS] Summit Physical Therapy Emails: Sent an email to scheduling@summitpt.com asking to cancel the October 6 session and asking whether a makeup slot exists the week of November 16.", "tag": "agent_message", "timestamp": "2026-10-13 21:17:47"}
+{"payload": "Sent the cancellation for Oct 6 and asked about a makeup slot.", "tag": "poke_reply", "timestamp": "2026-10-13 21:17:52"}
+{"payload": "reply and say i'm free thursday afternoon", "tag": "user_message", "timestamp": "2026-10-14 08:40:57"}
+{"payload": "one moment", "tag": "poke_reply", "timestamp": "2026-10-14 08:41:02"}
+{"payload": "[SUCCESS] Datadog Recruiter Email: Reply sent through the LinkedIn notification thread to Tom Alvarez offering Thursday Oct 8 between 1 PM and 5 PM ET.", "tag": "agent_message", "timestamp": "2026-10-14 08:43:53"}
+{"payload": "Replied to Tom offering Thursday Oct 8, 1 to 5 PM ET.", "tag": "poke_reply", "timestamp": "2026-10-14 08:43:58"}
+{"payload": "goodnight", "tag": "user_message", "timestamp": "2026-10-14 08:50:04"}
+{"payload": "Night! Sleep well, tomorrow can wait its turn.", "tag": "poke_reply", "timestamp": "2026-10-14 08:50:09"}
+{"payload": "is there a board meeting date in there", "tag": "user_message", "timestamp": "2026-10-14 08:55:51"}
+{"payload": "on it", "tag": "poke_reply", "timestamp": "2026-10-14 08:55:56"}
+{"payload": "[SUCCESS] Elena Q3 Board Email: Yes, the email mentions the board meeting on Nov 18 at 2:00pm Eastern.", "tag": "agent_message", "timestamp": "2026-10-14 08:58:23"}
+{"payload": "Board meeting is Nov 18 at 2pm Eastern.", "tag": "poke_reply", "timestamp": "2026-10-14 08:58:28"}
+{"payload": "did he say what the salary range is", "tag": "user_message", "timestamp": "2026-10-14 09:55:07"}
+{"payload": "checking now", "tag": "poke_reply", "timestamp": "2026-10-14 09:55:12"}
+{"payload": "[SUCCESS] Datadog Recruiter Email: Tom's message does not mention salary. The linked job posting email lists a base range of $165,000 to $195,000.", "tag": "agent_message", "timestamp": "2026-10-14 09:56:27"}
+{"payload": "Not in Tom's message, but the posting lists $165k to $195k base.", "tag": "poke_reply", "timestamp": "2026-10-14 09:56:32"}
+{"payload": "move the reminder to oct 23", "tag": "user_message", "timestamp": "2026-10-14 10:15:02"}
+{"payload": "one moment", "tag": "poke_reply", "timestamp": "2026-10-14 10:15:07"}
+{"payload": "[SUCCESS] Domain Renewal Reminder: Updated the reminder to Oct 23 at 9:00am.", "tag": "agent_message", "timestamp": "2026-10-14 10:16:36"}
+{"payload": "Moved the reminder to Oct 23 at 9am.", "tag": "poke_reply", "timestamp": "2026-10-14 10:16:41"}
+{"payload": "forward the receipt to accounting@tallowmedia.com for expenses", "tag": "user_message", "timestamp": "2026-10-14 11:35:58"}
+{"payload": "let me check", "tag": "poke_reply", "timestamp": "2026-10-14 11:36:03"}
+{"payload": "[SUCCESS] Northwind Dev conference registration: Forwarded the $649 Northwind receipt to accounting@tallowmedia.com with a note that it's a conference expense.", "tag": "agent_message", "timestamp": "2026-10-14 11:38:38"}
+{"payload": "Forwarded the receipt to accounting@tallowmedia.com.", "tag": "poke_reply", "timestamp": "2026-10-14 11:38:43"}
+{"payload": "do you like music", "tag": "user_message", "timestamp": "2026-10-14 11:50:03"}
+{"payload": "Love it. Can't hum, but I have strong opinions about a good bassline.", "tag": "poke_reply", "timestamp": "2026-10-14 11:50:08"}
+{"payload": "what's the order number on it", "tag": "user_message", "timestamp": "2026-10-14 12:50:46"}
+{"payload": "looking into it", "tag": "poke_reply", "timestamp": "2026-10-14 12:50:51"}
+{"payload": "[SUCCESS] Northwind Dev conference registration: The order number is NDC-26-30457.", "tag": "agent_message", "timestamp": "2026-10-14 12:52:36"}
+{"payload": "Order number NDC-26-30457.", "tag": "poke_reply", "timestamp": "2026-10-14 12:52:41"}
+{"payload": "remind me oct 5 to screenshot the qr badge code", "tag": "user_message", "timestamp": "2026-10-14 13:20:28"}
+{"payload": "on it", "tag": "poke_reply", "timestamp": "2026-10-14 13:20:33"}
+{"payload": "[SUCCESS] Northwind Dev conference registration: Reminder set for Oct 5 at 7pm to save the Northwind badge QR code.", "tag": "agent_message", "timestamp": "2026-10-14 13:22:41"}
+{"payload": "Reminder set for Oct 5 at 7pm.", "tag": "poke_reply", "timestamp": "2026-10-14 13:22:46"}
+{"payload": "are you a morning person or a night owl", "tag": "user_message", "timestamp": "2026-10-14 14:10:14"}
+{"payload": "Neither, I'm awake all the time, which feels like cheating. You?", "tag": "poke_reply", "timestamp": "2026-10-14 14:10:19"}
+{"payload": "long day", "tag": "user_message", "timestamp": "2026-10-14 17:10:01"}
+{"payload": "Then you've earned a comfy spot on the couch. Go be horizontal.", "tag": "poke_reply", "timestamp": "2026-10-14 17:10:06"}
+{"payload": "is auto-renew on", "tag": "user_message", "timestamp": "2026-10-14 19:05:55"}
+{"payload": "working on it", "tag": "poke_reply", "timestamp": "2026-10-14 19:06:00"}
+{"payload": "[SUCCESS] Domain Renewal Reminder: The email says auto-renew is off for brightloomhq.com.", "tag": "agent_message", "timestamp": "2026-10-14 19:07:03"}
+{"payload": "No, auto-renew is off, so you'll need to renew manually.", "tag": "poke_reply", "timestamp": "2026-10-14 19:07:08"}
+{"payload": "set a reminder for the call", "tag": "user_message", "timestamp": "2026-10-14 21:00:43"}
+{"payload": "let me dig in", "tag": "poke_reply", "timestamp": "2026-10-14 21:00:48"}
+{"payload": "[SUCCESS] Datadog Recruiter Email: Tom confirmed Oct 8 at 2:30 PM ET. Reminder set for 2:15 PM ET that day titled 'Datadog intro call with Tom'.", "tag": "agent_message", "timestamp": "2026-10-14 21:02:07"}
+{"payload": "Tom confirmed 2:30 PM ET on Oct 8. Reminder set for 2:15.", "tag": "poke_reply", "timestamp": "2026-10-14 21:02:12"}
+{"payload": "what should i wear or bring according to their emails", "tag": "user_message", "timestamp": "2026-10-15 08:10:37"}
+{"payload": "looking now", "tag": "poke_reply", "timestamp": "2026-10-15 08:10:42"}
+{"payload": "[SUCCESS] Summit Physical Therapy Emails: Their welcome email says to wear a sleeveless or loose top for shoulder access, bring athletic shoes, and bring the signed referral from Dr. Kim on the first visit.", "tag": "agent_message", "timestamp": "2026-10-15 08:12:57"}
+{"payload": "Wear a loose or sleeveless top and athletic shoes. Bring Dr. Kim's signed referral the first time.", "tag": "poke_reply", "timestamp": "2026-10-15 08:13:02"}
+{"payload": "forward the receipt to accounting@tallowmedia.com for expenses", "tag": "user_message", "timestamp": "2026-10-15 08:24:58"}
+{"payload": "on it, forwarding that receipt to accounting now.", "tag": "poke_reply", "timestamp": "2026-10-15 08:25:03"}
+{"payload": "[SUCCESS] Northwind Dev conference registration: Forwarded the $649 Northwind receipt to accounting@tallowmedia.com with a note that it's a conference expense.", "tag": "agent_message", "timestamp": "2026-10-15 08:27:21"}
+{"payload": "done, the $649 northwind receipt is with accounting@tallowmedia.com and marked as a conference expense.", "tag": "poke_reply", "timestamp": "2026-10-15 08:27:26"}
+{"payload": "ugh i have so much to do this month", "tag": "user_message", "timestamp": "2026-10-15 10:34:26"}
+{"payload": "sounds like a lot. want me to set any reminders to help keep track?", "tag": "poke_reply", "timestamp": "2026-10-15 10:34:31"}
+{"payload": "what should i wear or bring according to their emails", "tag": "user_message", "timestamp": "2026-10-15 11:17:31"}
+{"payload": "checking the summit emails for that.", "tag": "poke_reply", "timestamp": "2026-10-15 11:17:36"}
+{"payload": "[SUCCESS] Summit Physical Therapy Emails: Their welcome email says to wear a sleeveless or loose top for shoulder access, bring athletic shoes, and bring the signed referral from Dr. Kim on the first visit.", "tag": "agent_message", "timestamp": "2026-10-15 11:20:34"}
+{"payload": "wear a sleeveless or loose top so they can get to your shoulder, bring athletic shoes, and don't forget the signed referral from Dr. Kim for your first visit.", "tag": "poke_reply", "timestamp": "2026-10-15 11:20:39"}
+{"payload": "is auto-renew on", "tag": "user_message", "timestamp": "2026-10-15 13:57:39"}
+{"payload": "let me check the namecheap email.", "tag": "poke_reply", "timestamp": "2026-10-15 13:57:44"}
+{"payload": "[SUCCESS] Domain Renewal Reminder: The email says auto-renew is off for brightloomhq.com.", "tag": "agent_message", "timestamp": "2026-10-15 13:59:55"}
+{"payload": "auto-renew is off for brightloomhq.com, so you'll need to renew it manually. your reminder is still in place.", "tag": "poke_reply", "timestamp": "2026-10-15 14:00:00"}

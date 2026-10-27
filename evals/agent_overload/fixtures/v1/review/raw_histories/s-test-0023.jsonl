@@ -1,0 +1,136 @@
+{"payload": "can you remind me every other friday to submit my timesheet", "tag": "user_message", "timestamp": "2026-10-17 09:10:47"}
+{"payload": "looking into it", "tag": "poke_reply", "timestamp": "2026-10-17 09:10:52"}
+{"payload": "[SUCCESS] Timesheet Reminder: Created a recurring reminder every other Friday at 3pm starting Sep 18, 2026, titled 'Submit timesheet in Gusto'. Gusto's payroll email (no-reply@gusto.com) lists a Monday 9am cutoff.", "tag": "agent_message", "timestamp": "2026-10-17 09:13:10"}
+{"payload": "Set a reminder every other Friday at 3pm, starting Sep 18, to submit your timesheet.", "tag": "poke_reply", "timestamp": "2026-10-17 09:13:15"}
+{"payload": "remind me to finish keith's performance review feedback before the deadline", "tag": "user_message", "timestamp": "2026-10-17 09:40:10"}
+{"payload": "happy to, checking", "tag": "poke_reply", "timestamp": "2026-10-17 09:40:15"}
+{"payload": "[SUCCESS] Keith Review Deadline: HR (people@northwindlabs.com) set the peer feedback deadline for Keith Morales' review at Nov 6, 2026, 5pm. Set reminders for Nov 3 and Nov 5 at 9am.", "tag": "agent_message", "timestamp": "2026-10-17 09:42:20"}
+{"payload": "Keith's review feedback is due Nov 6 at 5pm. Reminders set for Nov 3 and Nov 5 at 9am.", "tag": "poke_reply", "timestamp": "2026-10-17 09:42:25"}
+{"payload": "when is sophie's dentist appointment? bright smiles sent something", "tag": "user_message", "timestamp": "2026-10-17 09:55:22"}
+{"payload": "give me a sec", "tag": "poke_reply", "timestamp": "2026-10-17 09:55:27"}
+{"payload": "[SUCCESS] Sophie Dentist Appointment: Bright Smiles Pediatric Dentistry (appointments@brightsmilespd.com) confirmed Sophie's cleaning for Sep 30 at 3:45pm with Dr. Kim. The email asks for new insurance info before the visit.", "tag": "agent_message", "timestamp": "2026-10-17 09:57:23"}
+{"payload": "Sophie's cleaning is September 30 at 3:45pm with Dr. Kim. They need updated insurance info.", "tag": "poke_reply", "timestamp": "2026-10-17 09:57:28"}
+{"payload": "change it to 1pm", "tag": "user_message", "timestamp": "2026-10-17 10:15:34"}
+{"payload": "checking now", "tag": "poke_reply", "timestamp": "2026-10-17 10:15:39"}
+{"payload": "[SUCCESS] Timesheet Reminder: Updated the recurring reminder to 1pm, effective Sep 18.", "tag": "agent_message", "timestamp": "2026-10-17 10:17:51"}
+{"payload": "Updated. It now fires at 1pm every other Friday.", "tag": "poke_reply", "timestamp": "2026-10-17 10:17:56"}
+{"payload": "random thought: socks are weird", "tag": "user_message", "timestamp": "2026-10-17 10:50:21"}
+{"payload": "They really are. We wrap our feet in little tubes and call it comfort.", "tag": "poke_reply", "timestamp": "2026-10-17 10:50:26"}
+{"payload": "what did they need for the insurance?", "tag": "user_message", "timestamp": "2026-10-17 11:25:56"}
+{"payload": "give me a sec", "tag": "poke_reply", "timestamp": "2026-10-17 11:26:01"}
+{"payload": "[SUCCESS] Sophie Dentist Appointment: The email links a patient form asking for the new Aetna member ID and group number, to be submitted by Sep 28.", "tag": "agent_message", "timestamp": "2026-10-17 11:27:32"}
+{"payload": "They need her new Aetna member ID and group number via their form by September 28.", "tag": "poke_reply", "timestamp": "2026-10-17 11:27:37"}
+{"payload": "remind me the morning of to pick her up early from school", "tag": "user_message", "timestamp": "2026-10-17 12:50:18"}
+{"payload": "let me check", "tag": "poke_reply", "timestamp": "2026-10-17 12:50:23"}
+{"payload": "[SUCCESS] Sophie Dentist Appointment: Reminder set for Sep 30 at 8:00am: 'Pick Sophie up early for 3:45pm dentist at Bright Smiles.'", "tag": "agent_message", "timestamp": "2026-10-17 12:52:11"}
+{"payload": "Reminder set for September 30 at 8am.", "tag": "poke_reply", "timestamp": "2026-10-17 12:52:16"}
+{"payload": "where's the link to the review form", "tag": "user_message", "timestamp": "2026-10-17 13:05:08"}
+{"payload": "right away", "tag": "poke_reply", "timestamp": "2026-10-17 13:05:13"}
+{"payload": "[SUCCESS] Keith Review Deadline: The Sep 30 email from people@northwindlabs.com, 'Peer feedback: Keith Morales', has a link to the Culture Amp form.", "tag": "agent_message", "timestamp": "2026-10-17 13:06:41"}
+{"payload": "It's in HR's Sep 30 email 'Peer feedback: Keith Morales'. Want me to forward it to you?", "tag": "poke_reply", "timestamp": "2026-10-17 13:06:46"}
+{"payload": "can we push it a week? reply to them", "tag": "user_message", "timestamp": "2026-10-17 14:05:40"}
+{"payload": "let me check", "tag": "poke_reply", "timestamp": "2026-10-17 14:05:45"}
+{"payload": "[SUCCESS] Sophie Dentist Appointment: Sent a reply to appointments@brightsmilespd.com asking to move Sophie's Sep 30 cleaning to Oct 7 or later in the afternoon. Awaiting their confirmation.", "tag": "agent_message", "timestamp": "2026-10-17 14:08:12"}
+{"payload": "Asked Bright Smiles to move it to October 7 or later. Waiting to hear back.", "tag": "poke_reply", "timestamp": "2026-10-17 14:08:17"}
+{"payload": "get me the dropbox invoice from this year, need it for taxes", "tag": "user_message", "timestamp": "2026-10-17 14:35:21"}
+{"payload": "on it now", "tag": "poke_reply", "timestamp": "2026-10-17 14:35:26"}
+{"payload": "[SUCCESS] Dropbox Invoice Search: Found Dropbox invoice from no-reply@dropbox.com dated Sept 27, 2026: Plus plan annual, $119.00, paid by PayPal. PDF attached to the email.", "tag": "agent_message", "timestamp": "2026-10-17 14:36:21"}
+{"payload": "Found it: Dropbox Plus, $119.00 paid via PayPal on Sept 27, PDF attached.", "tag": "poke_reply", "timestamp": "2026-10-17 14:36:26"}
+{"payload": "thanks, you're the best", "tag": "user_message", "timestamp": "2026-10-17 15:05:01"}
+{"payload": "Stop, you'll make me blush, and I don't even have cheeks.", "tag": "poke_reply", "timestamp": "2026-10-17 15:05:06"}
+{"payload": "meh", "tag": "user_message", "timestamp": "2026-10-17 16:45:38"}
+{"payload": "Meh is a valid mood. Sometimes it's the whole forecast.", "tag": "poke_reply", "timestamp": "2026-10-17 16:45:43"}
+{"payload": "how many questions is it", "tag": "user_message", "timestamp": "2026-10-17 17:20:41"}
+{"payload": "happy to, checking", "tag": "poke_reply", "timestamp": "2026-10-17 17:20:46"}
+{"payload": "[SUCCESS] Keith Review Deadline: The email says the form has 6 short questions and takes about 15 minutes.", "tag": "agent_message", "timestamp": "2026-10-17 17:22:58"}
+{"payload": "HR says six short questions, roughly 15 minutes.", "tag": "poke_reply", "timestamp": "2026-10-17 17:23:03"}
+{"payload": "cancel the nov 3 reminder, keep the other", "tag": "user_message", "timestamp": "2026-10-17 17:45:28"}
+{"payload": "give me a sec", "tag": "poke_reply", "timestamp": "2026-10-17 17:45:33"}
+{"payload": "[SUCCESS] Keith Review Deadline: Deleted the Nov 3 reminder. The Nov 5 at 9am reminder remains.", "tag": "agent_message", "timestamp": "2026-10-17 17:48:15"}
+{"payload": "Nov 3 reminder removed. Nov 5 at 9am is still set.", "tag": "poke_reply", "timestamp": "2026-10-17 17:48:20"}
+{"payload": "favorite season?", "tag": "user_message", "timestamp": "2026-10-17 20:20:54"}
+{"payload": "Autumn, I think. Cozy sweaters, good light, and nobody judges you for eating soup.", "tag": "poke_reply", "timestamp": "2026-10-17 20:20:59"}
+{"payload": "how many days in a leap year", "tag": "user_message", "timestamp": "2026-10-17 20:45:59"}
+{"payload": "366. That one extra day does a lot of work.", "tag": "poke_reply", "timestamp": "2026-10-17 20:46:04"}
+{"payload": "nice weather today", "tag": "user_message", "timestamp": "2026-10-17 20:55:41"}
+{"payload": "Love that for you. Go stand in it for a minute.", "tag": "poke_reply", "timestamp": "2026-10-17 20:55:46"}
+{"payload": "send it to my bookkeeper marcus", "tag": "user_message", "timestamp": "2026-10-17 21:10:53"}
+{"payload": "looking now", "tag": "poke_reply", "timestamp": "2026-10-17 21:10:58"}
+{"payload": "[SUCCESS] Dropbox Invoice Search: Sent the invoice with PDF to marcus.lee@leebooks.com with the subject 'Dropbox invoice Sept 2026'.", "tag": "agent_message", "timestamp": "2026-10-17 21:13:18"}
+{"payload": "Sent to Marcus at leebooks.com with the PDF.", "tag": "poke_reply", "timestamp": "2026-10-17 21:13:23"}
+{"payload": "cats or dogs", "tag": "user_message", "timestamp": "2026-10-17 21:15:49"}
+{"payload": "Dogs for enthusiasm, cats for attitude. I respect both, but I lean dog.", "tag": "poke_reply", "timestamp": "2026-10-17 21:15:54"}
+{"payload": "it's raining again", "tag": "user_message", "timestamp": "2026-10-17 21:20:06"}
+{"payload": "Classic. Perfect excuse to stay in and feel smug about it.", "tag": "poke_reply", "timestamp": "2026-10-17 21:20:11"}
+{"payload": "haha you're funny", "tag": "user_message", "timestamp": "2026-10-18 08:15:28"}
+{"payload": "I try. Mostly I just get lucky.", "tag": "poke_reply", "timestamp": "2026-10-18 08:15:33"}
+{"payload": "draft a reply to tom okafor saying no to the nov 5 demo", "tag": "user_message", "timestamp": "2026-10-18 09:50:28"}
+{"payload": "looking now", "tag": "poke_reply", "timestamp": "2026-10-18 09:50:33"}
+{"payload": "[SUCCESS] Tom Okafor Nov 5 demo email: Found Tom Okafor's Oct 15 email from Stackline Software inviting you to a demo on Nov 5 at 11am. Drafted a polite decline saying the team is not evaluating new tools until January.", "tag": "agent_message", "timestamp": "2026-10-18 09:51:39"}
+{"payload": "Drafted a polite decline to Tom Okafor for the Nov 5 demo, mentioning January.", "tag": "poke_reply", "timestamp": "2026-10-18 09:51:44"}
+{"payload": "make it a bit warmer", "tag": "user_message", "timestamp": "2026-10-18 10:10:54"}
+{"payload": "on it now", "tag": "poke_reply", "timestamp": "2026-10-18 10:10:59"}
+{"payload": "[SUCCESS] Tom Okafor Nov 5 demo email: Revised the draft to open with thanks for his time and end with 'happy to reconnect in the new year'.", "tag": "agent_message", "timestamp": "2026-10-18 10:12:36"}
+{"payload": "Warmed it up with thanks and an offer to reconnect in the new year.", "tag": "poke_reply", "timestamp": "2026-10-18 10:12:41"}
+{"payload": "is there a tax or vat line on it", "tag": "user_message", "timestamp": "2026-10-18 10:15:35"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-18 10:15:40"}
+{"payload": "[SUCCESS] Dropbox Invoice Search: The invoice shows $119.00 with $0.00 tax listed.", "tag": "agent_message", "timestamp": "2026-10-18 10:16:58"}
+{"payload": "No tax charged: $119.00 with $0.00 tax.", "tag": "poke_reply", "timestamp": "2026-10-18 10:17:03"}
+{"payload": "skip the one on oct 16, i'll be out", "tag": "user_message", "timestamp": "2026-10-18 12:45:49"}
+{"payload": "give me a sec", "tag": "poke_reply", "timestamp": "2026-10-18 12:45:54"}
+{"payload": "[SUCCESS] Timesheet Reminder: Skipped the Oct 16 occurrence. The next will be Oct 30.", "tag": "agent_message", "timestamp": "2026-10-18 12:47:32"}
+{"payload": "Skipped Oct 16. Next reminder is Oct 30 at 1pm.", "tag": "poke_reply", "timestamp": "2026-10-18 12:47:37"}
+{"payload": "coffee or tea", "tag": "user_message", "timestamp": "2026-10-18 13:35:56"}
+{"payload": "Coffee for ambition, tea for peace. Which kind of day is it?", "tag": "poke_reply", "timestamp": "2026-10-18 13:36:01"}
+{"payload": "how's your day going", "tag": "user_message", "timestamp": "2026-10-18 13:40:10"}
+{"payload": "Pretty smooth so far, no fires. Yours?", "tag": "poke_reply", "timestamp": "2026-10-18 13:40:15"}
+{"payload": "do you like music", "tag": "user_message", "timestamp": "2026-10-18 14:35:25"}
+{"payload": "Love it. Can't hum, but I have strong opinions about a good bassline.", "tag": "poke_reply", "timestamp": "2026-10-18 14:35:30"}
+{"payload": "rough day", "tag": "user_message", "timestamp": "2026-10-18 15:30:48"}
+{"payload": "I'm sorry. Want to vent, or want a distraction? Either works for me.", "tag": "poke_reply", "timestamp": "2026-10-18 15:30:53"}
+{"payload": "got any fun facts", "tag": "user_message", "timestamp": "2026-10-18 16:40:56"}
+{"payload": "Octopuses have three hearts. Two for the gills, one for everything else. Overachievers.", "tag": "poke_reply", "timestamp": "2026-10-18 16:41:01"}
+{"payload": "ok send it", "tag": "user_message", "timestamp": "2026-10-18 17:40:13"}
+{"payload": "on it", "tag": "poke_reply", "timestamp": "2026-10-18 17:40:18"}
+{"payload": "[SUCCESS] Tom Okafor Nov 5 demo email: Sent the reply to tom.okafor@stacklinesoftware.com at 2:41pm.", "tag": "agent_message", "timestamp": "2026-10-18 17:43:00"}
+{"payload": "Sent to Tom Okafor.", "tag": "poke_reply", "timestamp": "2026-10-18 17:43:05"}
+{"payload": "what's the capital of Australia", "tag": "user_message", "timestamp": "2026-10-18 19:40:21"}
+{"payload": "Canberra. Everyone guesses Sydney, so you're in good company.", "tag": "poke_reply", "timestamp": "2026-10-18 19:40:26"}
+{"payload": "remind me jan 11 to follow up with him", "tag": "user_message", "timestamp": "2026-10-18 20:15:07"}
+{"payload": "working on it", "tag": "poke_reply", "timestamp": "2026-10-18 20:15:12"}
+{"payload": "[SUCCESS] Tom Okafor Nov 5 demo email: Created a reminder for Jan 11, 2027 at 9:00am: 'Follow up with Tom Okafor at Stackline'.", "tag": "agent_message", "timestamp": "2026-10-18 20:16:54"}
+{"payload": "Reminder set for Jan 11 to follow up with Tom.", "tag": "poke_reply", "timestamp": "2026-10-18 20:16:59"}
+{"payload": "are you a morning person or a night owl", "tag": "user_message", "timestamp": "2026-10-19 13:20:19"}
+{"payload": "Neither, I'm awake all the time, which feels like cheating. You?", "tag": "poke_reply", "timestamp": "2026-10-19 13:20:24"}
+{"payload": "pineapple on pizza yes or no", "tag": "user_message", "timestamp": "2026-10-19 13:35:35"}
+{"payload": "Yes, and I'll defend it politely. Sweet and salty is a fair deal.", "tag": "poke_reply", "timestamp": "2026-10-19 13:35:40"}
+{"payload": "good morning", "tag": "user_message", "timestamp": "2026-10-19 15:30:56"}
+{"payload": "Morning! Hope the coffee is strong and the day is gentle.", "tag": "poke_reply", "timestamp": "2026-10-19 15:31:01"}
+{"payload": "brb", "tag": "user_message", "timestamp": "2026-10-19 17:05:40"}
+{"payload": "Take your time.", "tag": "poke_reply", "timestamp": "2026-10-19 17:05:45"}
+{"payload": "when's the cutoff for payroll again", "tag": "user_message", "timestamp": "2026-10-19 18:20:55"}
+{"payload": "one moment", "tag": "poke_reply", "timestamp": "2026-10-19 18:21:00"}
+{"payload": "[SUCCESS] Timesheet Reminder: Gusto's latest email says timesheets must be in by Monday at 9am Pacific.", "tag": "agent_message", "timestamp": "2026-10-19 18:22:03"}
+{"payload": "Monday at 9am Pacific, per Gusto's last email.", "tag": "poke_reply", "timestamp": "2026-10-19 18:22:08"}
+{"payload": "find last year's too", "tag": "user_message", "timestamp": "2026-10-19 21:00:03"}
+{"payload": "give me a sec", "tag": "poke_reply", "timestamp": "2026-10-19 21:00:08"}
+{"payload": "[SUCCESS] Dropbox Invoice Search: Found the Sept 27, 2025 invoice from no-reply@dropbox.com for $119.00 and attached its PDF.", "tag": "agent_message", "timestamp": "2026-10-19 21:01:43"}
+{"payload": "Last year's was also $119.00, dated Sept 27, 2025. PDF attached.", "tag": "poke_reply", "timestamp": "2026-10-19 21:01:48"}
+{"payload": "nailed it", "tag": "user_message", "timestamp": "2026-10-20 09:00:15"}
+{"payload": "Obviously. Take a victory lap.", "tag": "poke_reply", "timestamp": "2026-10-20 09:00:20"}
+{"payload": "how are you", "tag": "user_message", "timestamp": "2026-10-20 09:30:19"}
+{"payload": "Doing great, no complaints, mostly because I have no body to ache. You?", "tag": "poke_reply", "timestamp": "2026-10-20 09:30:24"}
+{"payload": "skip the one on oct 16, i'll be out", "tag": "user_message", "timestamp": "2026-10-20 13:18:17"}
+{"payload": "On it, skipping that one.", "tag": "poke_reply", "timestamp": "2026-10-20 13:18:22"}
+{"payload": "[SUCCESS] Timesheet Reminder: Skipped the Oct 16 occurrence. The next will be Oct 30.", "tag": "agent_message", "timestamp": "2026-10-20 13:21:27"}
+{"payload": "Done. Oct 16 is skipped and the next one is Oct 30.", "tag": "poke_reply", "timestamp": "2026-10-20 13:21:32"}
+{"payload": "when is sophie's dentist appointment? bright smiles sent something", "tag": "user_message", "timestamp": "2026-10-20 14:58:32"}
+{"payload": "Checking your email for that.", "tag": "poke_reply", "timestamp": "2026-10-20 14:58:37"}
+{"payload": "[SUCCESS] Sophie Dentist Appointment: Bright Smiles Pediatric Dentistry (appointments@brightsmilespd.com) confirmed Sophie's cleaning for Sep 30 at 3:45pm with Dr. Kim. The email asks for new insurance info before the visit.", "tag": "agent_message", "timestamp": "2026-10-20 15:00:58"}
+{"payload": "Sophie's cleaning is Sep 30 at 3:45pm with Dr. Kim. They want new insurance info before the visit.", "tag": "poke_reply", "timestamp": "2026-10-20 15:01:03"}
+{"payload": "ugh this week is dragging", "tag": "user_message", "timestamp": "2026-10-20 17:23:03"}
+{"payload": "Hang in there, almost the weekend.", "tag": "poke_reply", "timestamp": "2026-10-20 17:23:08"}
+{"payload": "when's the cutoff for payroll again", "tag": "user_message", "timestamp": "2026-10-20 20:13:08"}
+{"payload": "Let me check Gusto's latest email.", "tag": "poke_reply", "timestamp": "2026-10-20 20:13:13"}
+{"payload": "[SUCCESS] Timesheet Reminder: Gusto's latest email says timesheets must be in by Monday at 9am Pacific.", "tag": "agent_message", "timestamp": "2026-10-20 20:16:55"}
+{"payload": "Gusto says it has to be in by Monday at 9am Pacific.", "tag": "poke_reply", "timestamp": "2026-10-20 20:17:00"}

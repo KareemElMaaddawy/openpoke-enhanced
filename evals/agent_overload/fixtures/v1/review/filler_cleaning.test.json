@@ -1,0 +1,431 @@
+{
+  "dropped_threads": [
+    "t-test-0031",
+    "t-test-0089",
+    "t-test-0202",
+    "t-test-0236",
+    "t-test-0250",
+    "t-test-0258",
+    "t-test-0266",
+    "t-test-0269",
+    "t-test-0276",
+    "t-test-0329",
+    "t-test-0339",
+    "t-test-0344",
+    "t-test-0368",
+    "t-test-0391",
+    "t-test-0405",
+    "t-test-0452",
+    "t-test-0455",
+    "t-test-0466"
+  ],
+  "kept": 200,
+  "removed": [
+    {
+      "agent_id": "a-test-0201",
+      "conflicts": [
+        "Find Adobe invoice",
+        "Adobe Trial Reminder"
+      ],
+      "name": "Find Adobe receipt",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-test-0203",
+      "conflicts": [
+        "Find October Stripe payout email",
+        "Find Stripe dispute email",
+        "Stripe Recruiter Email"
+      ],
+      "name": "Stripe payout email lookup",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-test-0205",
+      "conflicts": [
+        "Brightside Dental bill"
+      ],
+      "name": "Brightwater Dental invoice follow-up",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-test-0206",
+      "conflicts": [
+        "Delta Refund Search"
+      ],
+      "name": "Delta Receipt Search",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-test-0209",
+      "conflicts": [
+        "Adobe Trial Reminder",
+        "Dropbox Invoice Search"
+      ],
+      "name": "Dropbox Trial Reminder",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-test-0214",
+      "conflicts": [
+        "Hartwell Email Search"
+      ],
+      "name": "Printwell Quote",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-test-0224",
+      "conflicts": [
+        "Delta flight reminder"
+      ],
+      "name": "Alaska Flight Reminder",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-test-0226",
+      "conflicts": [
+        "Travel Details"
+      ],
+      "name": "Travel Confirmation Search",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-test-0228",
+      "conflicts": [
+        "Priya Wedding RSVP",
+        "Find Priya wedding invite"
+      ],
+      "name": "Priya Dinner Email",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-test-0240",
+      "conflicts": [
+        "Oakwood Lease Renewal Search"
+      ],
+      "name": "Email search — Tallowfield lease",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-test-0256",
+      "name": "Zoom renewal reminder",
+      "note": "\"Zoom renewal reminder\" found the Zoom billing email; it is a valid answer for q-test-004 turn 7 (CREATE for the Zoom renewal) at N=200.",
+      "reason": "excluded in review"
+    },
+    {
+      "agent_id": "a-test-0261",
+      "conflicts": [
+        "Elena Q3 Board Email"
+      ],
+      "name": "Eleanor Chu Board Invite",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-test-0278",
+      "conflicts": [
+        "Home Depot Order",
+        "Home Depot Refund Check"
+      ],
+      "name": "Home Depot faucet email",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-test-0295",
+      "conflicts": [
+        "Weekly Job Application Reminder"
+      ],
+      "name": "Twilio Application Reminder",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-test-0297",
+      "conflicts": [
+        "Stripe Recruiter Email",
+        "Datadog Recruiter Email"
+      ],
+      "name": "Gusto recruiter email",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-test-0300",
+      "conflicts": [
+        "Calendar scheduling"
+      ],
+      "name": "Canva panel scheduling",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-test-0301",
+      "conflicts": [
+        "Weekly Job Application Reminder"
+      ],
+      "name": "Square application email search",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-test-0306",
+      "conflicts": [
+        "Asana Offer Email"
+      ],
+      "name": "Etsy offer email",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-test-0308",
+      "conflicts": [
+        "Dropbox Invoice Search"
+      ],
+      "name": "Dropbox role email",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-test-0315",
+      "conflicts": [
+        "Peloton Membership Email Search"
+      ],
+      "name": "Costco Membership Reminder",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-test-0316",
+      "conflicts": [
+        "Hacker Newsletter search"
+      ],
+      "name": "Morning Brew newsletter",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-test-0320",
+      "conflicts": [
+        "LinkedIn Premium Billing Email"
+      ],
+      "name": "LinkedIn Premium cancellation feedback",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-test-0322",
+      "conflicts": [
+        "Hacker Newsletter search"
+      ],
+      "name": "Thursday newsletter reminder",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-test-0323",
+      "conflicts": [
+        "October AWS invoice search"
+      ],
+      "name": "October Invoice Comparison",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-test-0325",
+      "conflicts": [
+        "Zoom Subscription",
+        "NYT Subscription Email"
+      ],
+      "name": "Atlantic Subscription Status",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-test-0340",
+      "conflicts": [
+        "Hartwell Email Search",
+        "Hartwell NDA status",
+        "Hartwell Boyd invoice"
+      ],
+      "name": "Hartwell Movers Quote",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-test-0350",
+      "conflicts": [
+        "Delta flight reminder"
+      ],
+      "name": "Denver Flight Reminder",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-test-0360",
+      "conflicts": [
+        "Find United Thanksgiving Flight"
+      ],
+      "name": "Find Thanksgiving Trash Email",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-test-0380",
+      "name": "Northside Heart Center Email",
+      "note": "\"Northside Heart Center Email\" found a cardiology follow-up email; it is a valid answer for s-test-0086 and s-test-0102 (CREATE for Dad's cardiology appointment) at N=200.",
+      "reason": "excluded in review"
+    },
+    {
+      "agent_id": "a-test-0388",
+      "conflicts": [
+        "BrightWave bill search",
+        "BrightWave Solar Email"
+      ],
+      "name": "Bright Smiles Appointment",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-test-0395",
+      "conflicts": [
+        "Dropbox Invoice Search"
+      ],
+      "name": "Find Dropbox space email",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-test-0399",
+      "conflicts": [
+        "Find GitHub login alert email"
+      ],
+      "name": "PayPal login alert",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-test-0400",
+      "conflicts": [
+        "Find GitHub login alert email"
+      ],
+      "name": "Google Alert Search",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-test-0410",
+      "conflicts": [
+        "Dropbox Invoice Search"
+      ],
+      "name": "Find Box email",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-test-0411",
+      "conflicts": [
+        "Find United Thanksgiving Flight"
+      ],
+      "name": "Rover Thanksgiving booking",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-test-0415",
+      "conflicts": [
+        "Domain Expiration Lookup"
+      ],
+      "name": "American miles expiration email",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-test-0427",
+      "conflicts": [
+        "Berlin Trip Receipts"
+      ],
+      "name": "Oberlin Alumni Email",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-test-0441",
+      "conflicts": [
+        "Maple Street Vet email"
+      ],
+      "name": "Pearl Street Bakery email",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-test-0448",
+      "conflicts": [
+        "Peloton Membership Email Search"
+      ],
+      "name": "Equinox Membership Email",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-test-0462",
+      "conflicts": [
+        "Uber Receipts"
+      ],
+      "name": "Gutter Appointment",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-test-0468",
+      "conflicts": [
+        "Zoom Subscription",
+        "NYT Subscription Email"
+      ],
+      "name": "Blue Bottle subscription",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-test-0454",
+      "name": "Pawsh Grooming Booking",
+      "reason": "trimmed to 200"
+    },
+    {
+      "agent_id": "a-test-0456",
+      "name": "Mason birthday invite",
+      "reason": "trimmed to 200"
+    },
+    {
+      "agent_id": "a-test-0457",
+      "name": "Mister Car Wash Cancellation",
+      "reason": "trimmed to 200"
+    },
+    {
+      "agent_id": "a-test-0458",
+      "name": "Capital One CD",
+      "reason": "trimmed to 200"
+    },
+    {
+      "agent_id": "a-test-0459",
+      "name": "Tattered Cover book club",
+      "reason": "trimmed to 200"
+    },
+    {
+      "agent_id": "a-test-0460",
+      "name": "Zapier Billing Email",
+      "reason": "trimmed to 200"
+    },
+    {
+      "agent_id": "a-test-0461",
+      "name": "Harry & David gift baskets",
+      "reason": "trimmed to 200"
+    },
+    {
+      "agent_id": "a-test-0463",
+      "name": "Schmitt Music Email Search",
+      "reason": "trimmed to 200"
+    },
+    {
+      "agent_id": "a-test-0464",
+      "name": "Denver Art Museum membership",
+      "reason": "trimmed to 200"
+    },
+    {
+      "agent_id": "a-test-0465",
+      "name": "Gina Pivot PR email",
+      "reason": "trimmed to 200"
+    },
+    {
+      "agent_id": "a-test-0467",
+      "name": "IRS Payment Plan Email",
+      "reason": "trimmed to 200"
+    },
+    {
+      "agent_id": "a-test-0469",
+      "name": "Toastmasters Event",
+      "reason": "trimmed to 200"
+    },
+    {
+      "agent_id": "a-test-0470",
+      "name": "Denver Parking Ticket Email",
+      "reason": "trimmed to 200"
+    },
+    {
+      "agent_id": "a-test-0471",
+      "name": "Alder & Finch quote search",
+      "reason": "trimmed to 200"
+    }
+  ]
+}

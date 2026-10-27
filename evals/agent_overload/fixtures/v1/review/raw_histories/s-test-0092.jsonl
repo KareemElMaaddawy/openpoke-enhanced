@@ -1,0 +1,118 @@
+{"payload": "good morning", "tag": "user_message", "timestamp": "2026-10-07 10:50:04"}
+{"payload": "Morning! Hope the coffee is strong and the day is gentle.", "tag": "poke_reply", "timestamp": "2026-10-07 10:50:09"}
+{"payload": "what's the capital of Australia", "tag": "user_message", "timestamp": "2026-10-07 17:05:52"}
+{"payload": "Canberra. Everyone guesses Sydney, so you're in good company.", "tag": "poke_reply", "timestamp": "2026-10-07 17:05:57"}
+{"payload": "hey", "tag": "user_message", "timestamp": "2026-10-07 18:55:10"}
+{"payload": "Hey you. Good to hear from you.", "tag": "poke_reply", "timestamp": "2026-10-07 18:55:15"}
+{"payload": "find my northwind dev conference registration and when badge pickup is", "tag": "user_message", "timestamp": "2026-10-07 19:05:25"}
+{"payload": "working on it", "tag": "poke_reply", "timestamp": "2026-10-07 19:05:30"}
+{"payload": "[SUCCESS] Northwind Dev conference registration: Receipt from registration@northwinddev.com dated Aug 30 shows a $649 full pass for the Oct 7-9 conference in Austin, with badge pickup Oct 6 from 4-8pm at the Hollis Convention Center.", "tag": "agent_message", "timestamp": "2026-10-07 19:06:56"}
+{"payload": "Registered, $649 pass for Oct 7-9 in Austin. Badge pickup is Oct 6, 4-8pm.", "tag": "poke_reply", "timestamp": "2026-10-07 19:07:01"}
+{"payload": "find the asana offer letter email, when do i have to answer", "tag": "user_message", "timestamp": "2026-10-07 19:10:36"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-07 19:10:41"}
+{"payload": "[SUCCESS] Asana Offer Email: Found the offer email from Priyanka Desai (offers@asana.com) dated Oct 16, 2026 for Product Designer II, $152,000 base plus equity, with a decision deadline of Oct 30.", "tag": "agent_message", "timestamp": "2026-10-07 19:12:08"}
+{"payload": "Asana offered Product Designer II at $152,000 base plus equity. You must answer by Oct 30.", "tag": "poke_reply", "timestamp": "2026-10-07 19:12:13"}
+{"payload": "find the 1099 from fable studios and send it to maria", "tag": "user_message", "timestamp": "2026-10-07 20:15:38"}
+{"payload": "happy to, checking", "tag": "poke_reply", "timestamp": "2026-10-07 20:15:43"}
+{"payload": "[SUCCESS] Fable Studios 1099 and Maria: Found a 1099-NEC email from tax@fablestudios.com dated Nov 9 showing $18,500 in 2026 nonemployee compensation. I haven't sent it yet because there are two Marias in contacts.", "tag": "agent_message", "timestamp": "2026-10-07 20:17:37"}
+{"payload": "Found Fable's 1099-NEC for $18,500. Which Maria: Chen Books or Maria Ortiz?", "tag": "poke_reply", "timestamp": "2026-10-07 20:17:42"}
+{"payload": "maria chen, the accountant", "tag": "user_message", "timestamp": "2026-10-07 21:15:39"}
+{"payload": "looking now", "tag": "poke_reply", "timestamp": "2026-10-07 21:15:44"}
+{"payload": "[SUCCESS] Fable Studios 1099 and Maria: Forwarded the Fable Studios 1099-NEC email with attachment to maria@chenbooks.com.", "tag": "agent_message", "timestamp": "2026-10-07 21:17:52"}
+{"payload": "Sent to maria@chenbooks.com.", "tag": "poke_reply", "timestamp": "2026-10-07 21:17:57"}
+{"payload": "are there any other 1099s in my inbox this year?", "tag": "user_message", "timestamp": "2026-10-08 09:20:21"}
+{"payload": "happy to, checking", "tag": "poke_reply", "timestamp": "2026-10-08 09:20:26"}
+{"payload": "[SUCCESS] Fable Studios 1099 and Maria: Found one more: a 1099-NEC from Lumen Labs for $6,200, sent Nov 2 from payroll@lumenlabs.io.", "tag": "agent_message", "timestamp": "2026-10-08 09:22:07"}
+{"payload": "One more, from Lumen Labs for $6,200, dated Nov 2.", "tag": "poke_reply", "timestamp": "2026-10-08 09:22:12"}
+{"payload": "forward the receipt to accounting@tallowmedia.com for expenses", "tag": "user_message", "timestamp": "2026-10-08 13:15:20"}
+{"payload": "pulling that up now", "tag": "poke_reply", "timestamp": "2026-10-08 13:15:25"}
+{"payload": "[SUCCESS] Northwind Dev conference registration: Forwarded the $649 Northwind receipt to accounting@tallowmedia.com with a note that it's a conference expense.", "tag": "agent_message", "timestamp": "2026-10-08 13:18:08"}
+{"payload": "Forwarded the receipt to accounting@tallowmedia.com.", "tag": "poke_reply", "timestamp": "2026-10-08 13:18:13"}
+{"payload": "look up my amtrak ticket for boston in november", "tag": "user_message", "timestamp": "2026-10-08 13:40:19"}
+{"payload": "checking now", "tag": "poke_reply", "timestamp": "2026-10-08 13:40:24"}
+{"payload": "[SUCCESS] Travel Details: Found Amtrak e-ticket from no-reply@amtrak.com: Acela 2166, New York Penn to Boston South Station on Nov 12 at 8:00am, arriving 11:50am, $139, reservation 4XP9LM.", "tag": "agent_message", "timestamp": "2026-10-08 13:41:41"}
+{"payload": "Acela 2166, New York to Boston, Nov 12 at 8:00am, $139, reservation 4XP9LM.", "tag": "poke_reply", "timestamp": "2026-10-08 13:41:46"}
+{"payload": "remind me nov 20 to ask maria if she got everything", "tag": "user_message", "timestamp": "2026-10-08 15:10:29"}
+{"payload": "on it now", "tag": "poke_reply", "timestamp": "2026-10-08 15:10:34"}
+{"payload": "[SUCCESS] Fable Studios 1099 and Maria: Set a reminder for Nov 20 at 11:00am: 'Ask Maria Chen if she has all 1099s'.", "tag": "agent_message", "timestamp": "2026-10-08 15:11:58"}
+{"payload": "Reminder set for Nov 20 at 11am.", "tag": "poke_reply", "timestamp": "2026-10-08 15:12:03"}
+{"payload": "what's the order number on it", "tag": "user_message", "timestamp": "2026-10-08 15:40:51"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-08 15:40:56"}
+{"payload": "[SUCCESS] Northwind Dev conference registration: The order number is NDC-26-30457.", "tag": "agent_message", "timestamp": "2026-10-08 15:42:43"}
+{"payload": "Order number NDC-26-30457.", "tag": "poke_reply", "timestamp": "2026-10-08 15:42:48"}
+{"payload": "draft a reply asking for a few more days", "tag": "user_message", "timestamp": "2026-10-08 19:10:36"}
+{"payload": "got it, on it", "tag": "poke_reply", "timestamp": "2026-10-08 19:10:41"}
+{"payload": "[SUCCESS] Asana Offer Email: Drafted a reply to offers@asana.com requesting an extension to Nov 6, 2026 to finish a comparison with other processes.", "tag": "agent_message", "timestamp": "2026-10-08 19:13:35"}
+{"payload": "Draft ready, asking Asana to extend the deadline to Nov 6. Send it?", "tag": "poke_reply", "timestamp": "2026-10-08 19:13:40"}
+{"payload": "how many days in a leap year", "tag": "user_message", "timestamp": "2026-10-08 20:05:20"}
+{"payload": "366. That one extra day does a lot of work.", "tag": "poke_reply", "timestamp": "2026-10-08 20:05:25"}
+{"payload": "remind me to finish keith's performance review feedback before the deadline", "tag": "user_message", "timestamp": "2026-10-08 20:40:08"}
+{"payload": "looking into it", "tag": "poke_reply", "timestamp": "2026-10-08 20:40:13"}
+{"payload": "[SUCCESS] Keith Review Deadline: HR (people@northwindlabs.com) set the peer feedback deadline for Keith Morales' review at Nov 6, 2026, 5pm. Set reminders for Nov 3 and Nov 5 at 9am.", "tag": "agent_message", "timestamp": "2026-10-08 20:42:07"}
+{"payload": "Keith's review feedback is due Nov 6 at 5pm. Reminders set for Nov 3 and Nov 5 at 9am.", "tag": "poke_reply", "timestamp": "2026-10-08 20:42:12"}
+{"payload": "i think i'm hungry", "tag": "user_message", "timestamp": "2026-10-08 21:35:59"}
+{"payload": "That \"think\" is doing a lot of work. You're probably hungry. Snack time.", "tag": "poke_reply", "timestamp": "2026-10-08 21:36:04"}
+{"payload": "i'm back", "tag": "user_message", "timestamp": "2026-10-09 08:20:46"}
+{"payload": "Welcome back. I missed you for almost thirty whole seconds.", "tag": "poke_reply", "timestamp": "2026-10-09 08:20:51"}
+{"payload": "where's the link to the review form", "tag": "user_message", "timestamp": "2026-10-09 09:30:18"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-09 09:30:23"}
+{"payload": "[SUCCESS] Keith Review Deadline: The Sep 30 email from people@northwindlabs.com, 'Peer feedback: Keith Morales', has a link to the Culture Amp form.", "tag": "agent_message", "timestamp": "2026-10-09 09:32:38"}
+{"payload": "It's in HR's Sep 30 email 'Peer feedback: Keith Morales'. Want me to forward it to you?", "tag": "poke_reply", "timestamp": "2026-10-09 09:32:43"}
+{"payload": "how's your day going", "tag": "user_message", "timestamp": "2026-10-09 09:45:18"}
+{"payload": "Pretty smooth so far, no fires. Yours?", "tag": "poke_reply", "timestamp": "2026-10-09 09:45:23"}
+{"payload": "is it business class or coach", "tag": "user_message", "timestamp": "2026-10-09 09:55:53"}
+{"payload": "checking now", "tag": "poke_reply", "timestamp": "2026-10-09 09:55:58"}
+{"payload": "[SUCCESS] Travel Details: The ticket is Acela Business class, car 2, seat 7A.", "tag": "agent_message", "timestamp": "2026-10-09 09:58:49"}
+{"payload": "Business class, car 2, seat 7A.", "tag": "poke_reply", "timestamp": "2026-10-09 09:58:54"}
+{"payload": "remind me oct 5 to screenshot the qr badge code", "tag": "user_message", "timestamp": "2026-10-09 10:00:07"}
+{"payload": "give me a sec", "tag": "poke_reply", "timestamp": "2026-10-09 10:00:12"}
+{"payload": "[SUCCESS] Northwind Dev conference registration: Reminder set for Oct 5 at 7pm to save the Northwind badge QR code.", "tag": "agent_message", "timestamp": "2026-10-09 10:02:32"}
+{"payload": "Reminder set for Oct 5 at 7pm.", "tag": "poke_reply", "timestamp": "2026-10-09 10:02:37"}
+{"payload": "yay", "tag": "user_message", "timestamp": "2026-10-09 10:45:42"}
+{"payload": "Yay indeed!", "tag": "poke_reply", "timestamp": "2026-10-09 10:45:47"}
+{"payload": "how many questions is it", "tag": "user_message", "timestamp": "2026-10-09 12:05:21"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-09 12:05:26"}
+{"payload": "[SUCCESS] Keith Review Deadline: The email says the form has 6 short questions and takes about 15 minutes.", "tag": "agent_message", "timestamp": "2026-10-09 12:07:57"}
+{"payload": "HR says six short questions, roughly 15 minutes.", "tag": "poke_reply", "timestamp": "2026-10-09 12:08:02"}
+{"payload": "nice weather today", "tag": "user_message", "timestamp": "2026-10-09 12:10:14"}
+{"payload": "Love that for you. Go stand in it for a minute.", "tag": "poke_reply", "timestamp": "2026-10-09 12:10:19"}
+{"payload": "send it", "tag": "user_message", "timestamp": "2026-10-09 13:25:40"}
+{"payload": "looking into it", "tag": "poke_reply", "timestamp": "2026-10-09 13:25:45"}
+{"payload": "[SUCCESS] Asana Offer Email: Sent on Oct 19 at 11:05 AM to Priyanka Desai.", "tag": "agent_message", "timestamp": "2026-10-09 13:28:36"}
+{"payload": "Sent to Priyanka at 11:05 AM.", "tag": "poke_reply", "timestamp": "2026-10-09 13:28:41"}
+{"payload": "remind me to leave for penn station at 7am that day", "tag": "user_message", "timestamp": "2026-10-09 14:10:23"}
+{"payload": "on it now", "tag": "poke_reply", "timestamp": "2026-10-09 14:10:28"}
+{"payload": "[SUCCESS] Travel Details: Reminder set for Nov 12, 2026 at 6:45am: 'Leave for Penn Station, Acela 2166 departs 8:00am'.", "tag": "agent_message", "timestamp": "2026-10-09 14:13:01"}
+{"payload": "Set for Nov 12 at 6:45am, a bit early so you have buffer.", "tag": "poke_reply", "timestamp": "2026-10-09 14:13:06"}
+{"payload": "remind me oct 28 to decide", "tag": "user_message", "timestamp": "2026-10-09 16:25:39"}
+{"payload": "looking now", "tag": "poke_reply", "timestamp": "2026-10-09 16:25:44"}
+{"payload": "[SUCCESS] Asana Offer Email: Reminder set for Oct 28, 2026 at 9:00 AM titled 'Decide on Asana offer'.", "tag": "agent_message", "timestamp": "2026-10-09 16:27:18"}
+{"payload": "Reminder set for Oct 28 at 9:00 AM to decide on the Asana offer.", "tag": "poke_reply", "timestamp": "2026-10-09 16:27:23"}
+{"payload": "i should go to the gym", "tag": "user_message", "timestamp": "2026-10-09 17:05:22"}
+{"payload": "Should, or want to? Either way, future you will send a thank-you note.", "tag": "poke_reply", "timestamp": "2026-10-09 17:05:27"}
+{"payload": "what's the change fee if i move it to the 13th", "tag": "user_message", "timestamp": "2026-10-09 18:50:17"}
+{"payload": "let me dig in", "tag": "poke_reply", "timestamp": "2026-10-09 18:50:22"}
+{"payload": "[SUCCESS] Travel Details: The ticket says changes are free for Acela Business class, with any fare difference charged. Changes must be made before departure.", "tag": "agent_message", "timestamp": "2026-10-09 18:52:34"}
+{"payload": "No change fee for Business class, only any fare difference, if changed before departure.", "tag": "poke_reply", "timestamp": "2026-10-09 18:52:39"}
+{"payload": "i need a vacation", "tag": "user_message", "timestamp": "2026-10-09 21:50:31"}
+{"payload": "Same energy, honestly. Somewhere with a beach and zero notifications.", "tag": "poke_reply", "timestamp": "2026-10-09 21:50:36"}
+{"payload": "cancel the nov 3 reminder, keep the other", "tag": "user_message", "timestamp": "2026-10-10 08:50:13"}
+{"payload": "let me dig in", "tag": "poke_reply", "timestamp": "2026-10-10 08:50:18"}
+{"payload": "[SUCCESS] Keith Review Deadline: Deleted the Nov 3 reminder. The Nov 5 at 9am reminder remains.", "tag": "agent_message", "timestamp": "2026-10-10 08:51:49"}
+{"payload": "Nov 3 reminder removed. Nov 5 at 9am is still set.", "tag": "poke_reply", "timestamp": "2026-10-10 08:51:54"}
+{"payload": "wow that's wild", "tag": "user_message", "timestamp": "2026-10-10 09:45:00"}
+{"payload": "Right? Life's got range.", "tag": "poke_reply", "timestamp": "2026-10-10 09:45:05"}
+{"payload": "find the asana offer letter email, when do i have to answer", "tag": "user_message", "timestamp": "2026-10-10 11:37:45"}
+{"payload": "On it, pulling up the Asana offer email now.", "tag": "poke_reply", "timestamp": "2026-10-10 11:37:50"}
+{"payload": "[SUCCESS] Asana Offer Email: Found the offer email from Priyanka Desai (offers@asana.com) dated Oct 16, 2026 for Product Designer II, $152,000 base plus equity, with a decision deadline of Oct 30.", "tag": "agent_message", "timestamp": "2026-10-10 11:40:38"}
+{"payload": "Found it. Priyanka Desai sent the Product Designer II offer on Oct 16, $152k base plus equity, and you need to answer by Oct 30.", "tag": "poke_reply", "timestamp": "2026-10-10 11:40:43"}
+{"payload": "ugh that's soon", "tag": "user_message", "timestamp": "2026-10-10 13:21:43"}
+{"payload": "It's tight, but you still have some time. Want me to help ask for more?", "tag": "poke_reply", "timestamp": "2026-10-10 13:21:48"}
+{"payload": "draft a reply asking for a few more days", "tag": "user_message", "timestamp": "2026-10-10 15:25:48"}
+{"payload": "Sure, drafting that reply now.", "tag": "poke_reply", "timestamp": "2026-10-10 15:25:53"}
+{"payload": "[SUCCESS] Asana Offer Email: Drafted a reply to offers@asana.com requesting an extension to Nov 6, 2026 to finish a comparison with other processes.", "tag": "agent_message", "timestamp": "2026-10-10 15:29:40"}
+{"payload": "Draft is ready. It asks Priyanka for an extension to Nov 6 so you can finish comparing your other processes.", "tag": "poke_reply", "timestamp": "2026-10-10 15:29:45"}
+{"payload": "send it", "tag": "user_message", "timestamp": "2026-10-10 16:22:45"}
+{"payload": "Sending it now.", "tag": "poke_reply", "timestamp": "2026-10-10 16:22:50"}
+{"payload": "[SUCCESS] Asana Offer Email: Sent on Oct 19 at 11:05 AM to Priyanka Desai.", "tag": "agent_message", "timestamp": "2026-10-10 16:23:55"}
+{"payload": "Sent to Priyanka Desai on Oct 19 at 11:05 AM.", "tag": "poke_reply", "timestamp": "2026-10-10 16:24:00"}

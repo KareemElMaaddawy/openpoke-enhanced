@@ -1,0 +1,120 @@
+{"payload": "will the etsy cutting board get here before the wedding on nov 7?", "tag": "user_message", "timestamp": "2026-10-17 08:15:02"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-17 08:15:07"}
+{"payload": "[SUCCESS] Etsy cutting board order: Etsy seller OakAndAnvil messaged (Oct 15) that the engraved walnut cutting board shipped via USPS Priority, tracking 9400 1118 9922 3045 6718 11, estimated delivery Oct 21.", "tag": "agent_message", "timestamp": "2026-10-17 08:17:58"}
+{"payload": "Yes, USPS estimates delivery Oct 21, well ahead of the Nov 7 wedding.", "tag": "poke_reply", "timestamp": "2026-10-17 08:18:03"}
+{"payload": "what name did i have them engrave?", "tag": "user_message", "timestamp": "2026-10-17 09:20:59"}
+{"payload": "let me dig in", "tag": "poke_reply", "timestamp": "2026-10-17 09:21:04"}
+{"payload": "[SUCCESS] Etsy cutting board order: The Etsy order confirmation lists the engraving text as 'Emma & Tyler, Est. 11.07.2026'.", "tag": "agent_message", "timestamp": "2026-10-17 09:22:02"}
+{"payload": "The engraving reads 'Emma & Tyler, Est. 11.07.2026'.", "tag": "poke_reply", "timestamp": "2026-10-17 09:22:07"}
+{"payload": "can you remind me every other friday to submit my timesheet", "tag": "user_message", "timestamp": "2026-10-17 09:35:34"}
+{"payload": "let me check", "tag": "poke_reply", "timestamp": "2026-10-17 09:35:39"}
+{"payload": "[SUCCESS] Timesheet Reminder: Created a recurring reminder every other Friday at 3pm starting Sep 18, 2026, titled 'Submit timesheet in Gusto'. Gusto's payroll email (no-reply@gusto.com) lists a Monday 9am cutoff.", "tag": "agent_message", "timestamp": "2026-10-17 09:37:21"}
+{"payload": "Set a reminder every other Friday at 3pm, starting Sep 18, to submit your timesheet.", "tag": "poke_reply", "timestamp": "2026-10-17 09:37:26"}
+{"payload": "message the seller thanks and ask for a photo before shipping next time", "tag": "user_message", "timestamp": "2026-10-17 10:00:45"}
+{"payload": "on it", "tag": "poke_reply", "timestamp": "2026-10-17 10:00:50"}
+{"payload": "[SUCCESS] Etsy cutting board order: Sent a reply to OakAndAnvil via the Etsy message email thanking them and asking for a photo proof on future engraved orders.", "tag": "agent_message", "timestamp": "2026-10-17 10:02:23"}
+{"payload": "Sent a thank-you to OakAndAnvil and asked for photo proofs next time.", "tag": "poke_reply", "timestamp": "2026-10-17 10:02:28"}
+{"payload": "ok cool", "tag": "user_message", "timestamp": "2026-10-17 10:25:17"}
+{"payload": "Cool cool cool.", "tag": "poke_reply", "timestamp": "2026-10-17 10:25:22"}
+{"payload": "remind me to finish keith's performance review feedback before the deadline", "tag": "user_message", "timestamp": "2026-10-17 11:55:28"}
+{"payload": "working on it", "tag": "poke_reply", "timestamp": "2026-10-17 11:55:33"}
+{"payload": "[SUCCESS] Keith Review Deadline: HR (people@northwindlabs.com) set the peer feedback deadline for Keith Morales' review at Nov 6, 2026, 5pm. Set reminders for Nov 3 and Nov 5 at 9am.", "tag": "agent_message", "timestamp": "2026-10-17 11:56:43"}
+{"payload": "Keith's review feedback is due Nov 6 at 5pm. Reminders set for Nov 3 and Nov 5 at 9am.", "tag": "poke_reply", "timestamp": "2026-10-17 11:56:48"}
+{"payload": "where's the link to the review form", "tag": "user_message", "timestamp": "2026-10-17 14:05:36"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-17 14:05:41"}
+{"payload": "[SUCCESS] Keith Review Deadline: The Sep 30 email from people@northwindlabs.com, 'Peer feedback: Keith Morales', has a link to the Culture Amp form.", "tag": "agent_message", "timestamp": "2026-10-17 14:06:59"}
+{"payload": "It's in HR's Sep 30 email 'Peer feedback: Keith Morales'. Want me to forward it to you?", "tag": "poke_reply", "timestamp": "2026-10-17 14:07:04"}
+{"payload": "i'm bored", "tag": "user_message", "timestamp": "2026-10-17 14:30:24"}
+{"payload": "Dangerous words. Fun fact to fix it: honey never spoils, and jars found in ancient tombs were still edible.", "tag": "poke_reply", "timestamp": "2026-10-17 14:30:29"}
+{"payload": "what's the deal with the all-hands invite from tallow media in november", "tag": "user_message", "timestamp": "2026-10-17 14:40:36"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-17 14:40:41"}
+{"payload": "[SUCCESS] Tallow Media November Invite: Invite from hr@tallowmedia.com says the company all-hands is Nov 5 from 1-3pm at the Pier 9 venue, with lunch at 12:15pm and an RSVP deadline of Oct 29.", "tag": "agent_message", "timestamp": "2026-10-17 14:43:23"}
+{"payload": "All-hands is Nov 5, 1-3pm at Pier 9, lunch at 12:15. RSVP by Oct 29.", "tag": "poke_reply", "timestamp": "2026-10-17 14:43:28"}
+{"payload": "rsvp yes and say i have a vegetarian lunch", "tag": "user_message", "timestamp": "2026-10-17 14:55:42"}
+{"payload": "working on it", "tag": "poke_reply", "timestamp": "2026-10-17 14:55:47"}
+{"payload": "[SUCCESS] Tallow Media November Invite: Replied to hr@tallowmedia.com confirming attendance and requesting a vegetarian lunch.", "tag": "agent_message", "timestamp": "2026-10-17 14:58:15"}
+{"payload": "Sent your RSVP yes with a vegetarian lunch request.", "tag": "poke_reply", "timestamp": "2026-10-17 14:58:20"}
+{"payload": "lol", "tag": "user_message", "timestamp": "2026-10-17 15:25:02"}
+{"payload": "Glad that landed.", "tag": "poke_reply", "timestamp": "2026-10-17 15:25:07"}
+{"payload": "change it to 1pm", "tag": "user_message", "timestamp": "2026-10-17 16:55:23"}
+{"payload": "give me a sec", "tag": "poke_reply", "timestamp": "2026-10-17 16:55:28"}
+{"payload": "[SUCCESS] Timesheet Reminder: Updated the recurring reminder to 1pm, effective Sep 18.", "tag": "agent_message", "timestamp": "2026-10-17 16:57:21"}
+{"payload": "Updated. It now fires at 1pm every other Friday.", "tag": "poke_reply", "timestamp": "2026-10-17 16:57:26"}
+{"payload": "brb", "tag": "user_message", "timestamp": "2026-10-17 20:15:08"}
+{"payload": "Take your time.", "tag": "poke_reply", "timestamp": "2026-10-17 20:15:13"}
+{"payload": "do you like music", "tag": "user_message", "timestamp": "2026-10-17 20:50:20"}
+{"payload": "Love it. Can't hum, but I have strong opinions about a good bassline.", "tag": "poke_reply", "timestamp": "2026-10-17 20:50:25"}
+{"payload": "did the county send the property tax bill yet", "tag": "user_message", "timestamp": "2026-10-17 21:10:32"}
+{"payload": "on it now", "tag": "poke_reply", "timestamp": "2026-10-17 21:10:37"}
+{"payload": "[SUCCESS] County Property Tax Bill: Yes, Larimer County Treasurer (treasurer@larimer-county.example) emailed the 2026 second-half property tax notice on Sept 22: $2,318.40 due by Nov 1.", "tag": "agent_message", "timestamp": "2026-10-17 21:11:57"}
+{"payload": "Yes, the county's second-half bill is $2,318.40, due Nov 1.", "tag": "poke_reply", "timestamp": "2026-10-17 21:12:02"}
+{"payload": "skip the one on oct 16, i'll be out", "tag": "user_message", "timestamp": "2026-10-18 08:25:28"}
+{"payload": "happy to, checking", "tag": "poke_reply", "timestamp": "2026-10-18 08:25:33"}
+{"payload": "[SUCCESS] Timesheet Reminder: Skipped the Oct 16 occurrence. The next will be Oct 30.", "tag": "agent_message", "timestamp": "2026-10-18 08:28:05"}
+{"payload": "Skipped Oct 16. Next reminder is Oct 30 at 1pm.", "tag": "poke_reply", "timestamp": "2026-10-18 08:28:10"}
+{"payload": "i'm so tired", "tag": "user_message", "timestamp": "2026-10-18 09:25:26"}
+{"payload": "Sounds like a blanket-and-do-nothing kind of day. Go easy on yourself.", "tag": "poke_reply", "timestamp": "2026-10-18 09:25:31"}
+{"payload": "mondays am i right", "tag": "user_message", "timestamp": "2026-10-18 10:25:55"}
+{"payload": "Monday really should come with a gentle opening act.", "tag": "poke_reply", "timestamp": "2026-10-18 10:26:00"}
+{"payload": "when's the cutoff for payroll again", "tag": "user_message", "timestamp": "2026-10-18 13:00:20"}
+{"payload": "working on it", "tag": "poke_reply", "timestamp": "2026-10-18 13:00:25"}
+{"payload": "[SUCCESS] Timesheet Reminder: Gusto's latest email says timesheets must be in by Monday at 9am Pacific.", "tag": "agent_message", "timestamp": "2026-10-18 13:01:49"}
+{"payload": "Monday at 9am Pacific, per Gusto's last email.", "tag": "poke_reply", "timestamp": "2026-10-18 13:01:54"}
+{"payload": "is there a remote option", "tag": "user_message", "timestamp": "2026-10-18 13:55:23"}
+{"payload": "checking now", "tag": "poke_reply", "timestamp": "2026-10-18 13:55:28"}
+{"payload": "[SUCCESS] Tallow Media November Invite: The invite says a livestream link will be emailed Nov 4 for remote employees only.", "tag": "agent_message", "timestamp": "2026-10-18 13:58:16"}
+{"payload": "Yes, a livestream link is emailed Nov 4 for remote staff.", "tag": "poke_reply", "timestamp": "2026-10-18 13:58:21"}
+{"payload": "rough day", "tag": "user_message", "timestamp": "2026-10-18 14:10:27"}
+{"payload": "I'm sorry. Want to vent, or want a distraction? Either works for me.", "tag": "poke_reply", "timestamp": "2026-10-18 14:10:32"}
+{"payload": "remind me to pay it on oct 25", "tag": "user_message", "timestamp": "2026-10-18 16:00:30"}
+{"payload": "give me a sec", "tag": "poke_reply", "timestamp": "2026-10-18 16:00:35"}
+{"payload": "[SUCCESS] County Property Tax Bill: Created a reminder for Oct 25, 2026 at 10:00am: 'Pay Larimer County property tax, $2,318.40, due Nov 1'.", "tag": "agent_message", "timestamp": "2026-10-18 16:03:23"}
+{"payload": "Reminder set for Oct 25 at 10am to pay the property tax.", "tag": "poke_reply", "timestamp": "2026-10-18 16:03:28"}
+{"payload": "what's the boiling point of water", "tag": "user_message", "timestamp": "2026-10-18 16:05:14"}
+{"payload": "100 degrees Celsius, 212 Fahrenheit, at sea level. Up high it gets lazy.", "tag": "poke_reply", "timestamp": "2026-10-18 16:05:19"}
+{"payload": "remind me oct 28 in case i forget", "tag": "user_message", "timestamp": "2026-10-18 16:40:58"}
+{"payload": "looking into it", "tag": "poke_reply", "timestamp": "2026-10-18 16:41:03"}
+{"payload": "[SUCCESS] Tallow Media November Invite: Reminder set for Oct 28 at 9am about the all-hands RSVP deadline.", "tag": "agent_message", "timestamp": "2026-10-18 16:42:13"}
+{"payload": "Reminder set for Oct 28 at 9am.", "tag": "poke_reply", "timestamp": "2026-10-18 16:42:18"}
+{"payload": "remind me oct 22 to wrap it", "tag": "user_message", "timestamp": "2026-10-18 17:25:55"}
+{"payload": "right away", "tag": "poke_reply", "timestamp": "2026-10-18 17:26:00"}
+{"payload": "[SUCCESS] Etsy cutting board order: Reminder set for Oct 22, 2026 at 7:00pm: 'Wrap Etsy cutting board for Emma and Tyler's wedding'.", "tag": "agent_message", "timestamp": "2026-10-18 17:27:42"}
+{"payload": "Reminder set for Oct 22 at 7pm.", "tag": "poke_reply", "timestamp": "2026-10-18 17:27:47"}
+{"payload": "what's the capital of Australia", "tag": "user_message", "timestamp": "2026-10-18 17:30:17"}
+{"payload": "Canberra. Everyone guesses Sydney, so you're in good company.", "tag": "poke_reply", "timestamp": "2026-10-18 17:30:22"}
+{"payload": "how many questions is it", "tag": "user_message", "timestamp": "2026-10-18 20:45:15"}
+{"payload": "one moment", "tag": "poke_reply", "timestamp": "2026-10-18 20:45:20"}
+{"payload": "[SUCCESS] Keith Review Deadline: The email says the form has 6 short questions and takes about 15 minutes.", "tag": "agent_message", "timestamp": "2026-10-18 20:47:36"}
+{"payload": "HR says six short questions, roughly 15 minutes.", "tag": "poke_reply", "timestamp": "2026-10-18 20:47:41"}
+{"payload": "nice weather today", "tag": "user_message", "timestamp": "2026-10-19 10:15:09"}
+{"payload": "Love that for you. Go stand in it for a minute.", "tag": "poke_reply", "timestamp": "2026-10-19 10:15:14"}
+{"payload": "cats or dogs", "tag": "user_message", "timestamp": "2026-10-19 13:35:06"}
+{"payload": "Dogs for enthusiasm, cats for attitude. I respect both, but I lean dog.", "tag": "poke_reply", "timestamp": "2026-10-19 13:35:11"}
+{"payload": "cancel the nov 3 reminder, keep the other", "tag": "user_message", "timestamp": "2026-10-19 14:35:28"}
+{"payload": "working on it", "tag": "poke_reply", "timestamp": "2026-10-19 14:35:33"}
+{"payload": "[SUCCESS] Keith Review Deadline: Deleted the Nov 3 reminder. The Nov 5 at 9am reminder remains.", "tag": "agent_message", "timestamp": "2026-10-19 14:38:16"}
+{"payload": "Nov 3 reminder removed. Nov 5 at 9am is still set.", "tag": "poke_reply", "timestamp": "2026-10-19 14:38:21"}
+{"payload": "is there a late fee if i miss it", "tag": "user_message", "timestamp": "2026-10-19 18:15:49"}
+{"payload": "right away", "tag": "poke_reply", "timestamp": "2026-10-19 18:15:54"}
+{"payload": "[SUCCESS] County Property Tax Bill: The notice says payments after Nov 1 get a 1.5% monthly interest charge, about $34.78 for the first month on this amount.", "tag": "agent_message", "timestamp": "2026-10-19 18:17:55"}
+{"payload": "Yes, 1.5% monthly interest, roughly $34.78 for the first month.", "tag": "poke_reply", "timestamp": "2026-10-19 18:18:00"}
+{"payload": "send the notice to my accountant priya", "tag": "user_message", "timestamp": "2026-10-19 19:15:43"}
+{"payload": "pulling that up now", "tag": "poke_reply", "timestamp": "2026-10-19 19:15:48"}
+{"payload": "[SUCCESS] County Property Tax Bill: Forwarded the Sept 22 tax notice to priya.nair@nairtax.example with the PDF attached.", "tag": "agent_message", "timestamp": "2026-10-19 19:17:10"}
+{"payload": "Sent the tax notice PDF to Priya.", "tag": "poke_reply", "timestamp": "2026-10-19 19:17:15"}
+{"payload": "wow that's wild", "tag": "user_message", "timestamp": "2026-10-19 20:10:19"}
+{"payload": "Right? Life's got range.", "tag": "poke_reply", "timestamp": "2026-10-19 20:10:24"}
+{"payload": "what time is lunch again at the tallow all hands", "tag": "user_message", "timestamp": "2026-10-20 04:57:53"}
+{"payload": "checking the invite for the lunch time.", "tag": "poke_reply", "timestamp": "2026-10-20 04:57:58"}
+{"payload": "[SUCCESS] Tallow Media November Invite: Lunch is at 12:15pm, and the all-hands runs 1-3pm on Nov 5 at the Pier 9 venue.", "tag": "agent_message", "timestamp": "2026-10-20 05:01:53"}
+{"payload": "lunch is at 12:15pm on nov 5, and the all-hands itself is 1-3 at pier 9.", "tag": "poke_reply", "timestamp": "2026-10-20 05:01:58"}
+{"payload": "ugh this week is a lot", "tag": "user_message", "timestamp": "2026-10-20 07:58:58"}
+{"payload": "sounds like it. let me know if you want me to track anything for you.", "tag": "poke_reply", "timestamp": "2026-10-20 07:59:03"}
+{"payload": "how much was the property tax and when's it due", "tag": "user_message", "timestamp": "2026-10-20 08:35:03"}
+{"payload": "looking at the county notice.", "tag": "poke_reply", "timestamp": "2026-10-20 08:35:08"}
+{"payload": "[SUCCESS] County Property Tax Bill: The Larimer County 2026 second-half property tax is $2,318.40, due Nov 1.", "tag": "agent_message", "timestamp": "2026-10-20 08:37:17"}
+{"payload": "it's $2,318.40, due nov 1.", "tag": "poke_reply", "timestamp": "2026-10-20 08:37:22"}
+{"payload": "remind me what time the timesheet reminder goes off and when the next one is", "tag": "user_message", "timestamp": "2026-10-20 11:28:22"}
+{"payload": "checking your recurring reminder.", "tag": "poke_reply", "timestamp": "2026-10-20 11:28:27"}
+{"payload": "[SUCCESS] Timesheet Reminder: The recurring reminder fires every other Friday at 1pm. The next one is Oct 30, since Oct 16 was skipped.", "tag": "agent_message", "timestamp": "2026-10-20 11:31:55"}
+{"payload": "it goes off at 1pm every other friday, and the next one is oct 30.", "tag": "poke_reply", "timestamp": "2026-10-20 11:32:00"}

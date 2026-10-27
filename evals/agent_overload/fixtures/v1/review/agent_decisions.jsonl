@@ -1,0 +1,31 @@
+{"item": "s-dev-0030", "decision": "rewritten", "label": null, "note": "Old-thread case: 'mara quill tickets email' didn't link to \"Find AXS confirmation\" by name. The message now says 'axs tickets email'."}
+{"item": "s-dev-0031", "decision": "keep_draft", "label": null, "note": "'zapier weekly digest email' matches \"Find Zapier newsletter template\" by name, and 'going back to' signals earlier work."}
+{"item": "q-dev-001#t1", "decision": "keep_draft", "label": null, "note": "'double check ... is it still $199' asks to re-check the email for changes, which the history can't answer."}
+{"item": "q-dev-001#t5", "decision": "keep_draft", "label": null, "note": "\"Venmo receipts search\" visibly found the September payments to Maya the babysitter."}
+{"item": "q-dev-001#t6", "decision": "rewritten", "label": null, "note": "\"Zapier Invoice Search\" isn't visible before this turn and the message didn't say zapier. Added 'zapier'."}
+{"item": "q-dev-001#t12", "decision": "rewritten", "label": null, "note": "Start date and benefits were already visible in the history. Now asks to reply to Tina accepting at $62/hour; gold updated."}
+{"item": "q-dev-003#t6", "decision": "keep_draft", "label": null, "note": "\"Find Pioneer invoice\" vs the visible Pioneer salt-delivery agent: 'how much do i still owe on the softener install' points to the invoice."}
+{"item": "s-test-0059", "decision": "keep_draft", "label": null, "note": "'sample kit ... still sitting at the oak street fedex office' matches \"FedEx Package Status\", not the FedEx invoice agent."}
+{"item": "s-test-0060", "decision": "rewritten", "label": null, "note": "'team plan receipt' plus Dana also fits the filler \"Slack Invoice and Dana\" at N=200. Added 'github'."}
+{"item": "s-test-0061", "decision": "keep_draft", "label": null, "note": "'$3,500 retainer bill' matches \"Hartwell Boyd invoice\"; the visible NDA agent is the near-distractor."}
+{"item": "s-test-0063", "decision": "keep_draft", "label": null, "note": "'marcus approving my expense report' matches \"September Expense Report\" by name."}
+{"item": "s-test-0065", "decision": "rewritten", "label": null, "note": "Target name \"Calendar Lookup\" is generic and wasn't in the history. Replaced a chat exchange with the thread's own 'ask for an earlier slot' exchange, so the target is visible."}
+{"item": "s-test-0067", "decision": "rewritten", "label": null, "note": "How to cancel Prime was already answered in the history. Now asks to forward the renewal email."}
+{"item": "s-test-0070", "decision": "keep_draft", "label": null, "note": "The result line said only 'returning Nov 14'; asking the agent to check the email for the time is right."}
+{"item": "s-test-0086", "decision": "keep_draft", "label": null, "note": "CREATE is right. The labeler picked the filler \"Northside Heart Center Email\"; that filler is now excluded (filler_exclusions.json)."}
+{"item": "s-test-0102", "decision": "keep_draft", "label": null, "note": "Same as s-test-0086; the competing filler is excluded."}
+{"item": "q-test-001#t6", "decision": "keep_draft", "label": null, "note": "'docusign completion email for the confidentiality agreement' = NDA; \"Hartwell NDA status\" is the only NDA agent."}
+{"item": "q-test-001#t8", "decision": "use_labeler", "label": {"kind": "REUSE_ANY", "threads": ["t-test-0005", "t-test-0011"]}, "note": "The AWS agent has the invoice and the Delta agent opened EXP-2291; both hold useful context. REUSE_ANY, AWS listed first, so the gold state is unchanged."}
+{"item": "q-test-002#t2", "decision": "keep_draft", "label": null, "note": "'order email for tonight's lumen hollow tickets' matches \"Find Ticketmaster confirmation\", not the refund agent."}
+{"item": "q-test-002#t10", "decision": "keep_draft", "label": null, "note": "Both the United and the Delta agent reported the same Navan trip summary email, so REUSE_ANY."}
+{"item": "q-test-003#t1", "decision": "rewritten", "label": null, "note": "The September total was already visible. Now asks to resend the invoice to Dana; gold updated."}
+{"item": "q-test-003#t6", "decision": "rewritten", "label": null, "note": "'held box at the oak street place' never said fedex and the package agent isn't visible. Added 'fedex'."}
+{"item": "q-test-004#t1", "decision": "rewritten", "label": null, "note": "The history already shows the decline as sent. Now asks whether Tom replied; gold updated."}
+{"item": "q-test-004#t7", "decision": "keep_draft", "label": null, "note": "CREATE is right. The labeler picked the filler \"Zoom renewal reminder\"; that filler is now excluded."}
+{"item": "q-test-004#t10", "decision": "keep_draft", "label": null, "note": "Jordan's agent reported the confirmation's order number, so REUSE_ANY stays lenient; forwarding needs no agent-owned state."}
+{"item": "q-test-005#t1", "decision": "rewritten", "label": null, "note": "The history already showed the Oct 21 reminder removed (the gold even contradicted it). Reminders belong to the agent that created them (triggers are filtered by agent_name). Now asks to move the Oct 27 reminder to 9am; gold updated (turn 8 gold: 'another' instead of 'third')."}
+{"item": "q-test-005#t9", "decision": "keep_draft", "label": null, "note": "Both agents reported Marcus's Oct 13 email, so REUSE_ANY."}
+{"item": "q-test-006#t2", "decision": "rewritten", "label": null, "note": "'team plan receipt from september' didn't name GitHub and the invoice agent isn't visible. Added 'github'."}
+{"item": "q-test-007#t1", "decision": "rewritten", "label": null, "note": "The end date was already visible. Now asks whether the pause can be extended; gold updated."}
+{"item": "q-test-007#t5", "decision": "rewritten", "label": null, "note": "The account digits and time were already visible. Now asks to forward the alert; gold updated."}
+{"item": "q-test-007#t9", "decision": "keep_draft", "label": null, "note": "Both agents reported the account ending 5528, so REUSE_ANY."}
