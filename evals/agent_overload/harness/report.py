@@ -113,6 +113,37 @@ def breakdown_tables(block_by_n: dict, dims: tuple[str, ...]) -> list[str]:
     return lines
 
 
+def retrieval_tables(metrics: dict) -> list[str]:
+    """Recall@k, agents shown and target-excluded errors, for methods that report candidates."""
+    rows = []
+    ks: list[str] = []
+    for split, block in sorted(metrics["single"].items()):
+        for n in _n_keys(block):
+            b = block[n]
+            recall = b.get("recall_at_k")
+            if not recall:
+                continue
+            ks = ks or sorted(recall, key=int)
+            rows.append(
+                [split, n, fmt(b.get("agents_shown_median"), "int")]
+                + [fmt(recall[k]) for k in ks]
+                + [fmt(b.get("excluded_target_error_rate"))]
+            )
+    if not rows:
+        return []
+    lines = [
+        "### Retrieval (single-turn suite)",
+        "",
+        "Recall@k: share of reuse turns whose target agent is in the method's first k candidates "
+        "(turns where retrieval ran). Target excluded: share of delegating turns that went wrong because "
+        "the target agent was hidden.",
+        "",
+    ]
+    lines += _table(["split", "N", "agents shown"] + [f"recall@{k}" for k in ks] + ["target excluded"], rows)
+    lines.append("")
+    return lines
+
+
 def render_report(recorded: dict, metrics: dict, summary: dict) -> str:
     lines: list[str] = []
     method = recorded["method"]
@@ -298,6 +329,7 @@ def render_report(recorded: dict, metrics: dict, summary: dict) -> str:
             )
         lines += _table(["N", "roster tok/call", "roster tok/turn", "input tok/turn p50", "input tok/turn p95", "routing calls/turn"], rows)
         lines.append("")
+    lines += retrieval_tables(metrics)
 
     # 8. Consistency, invalid calls, loop limits
     lines.append("## 8. Consistency, invalid calls, loop limits")

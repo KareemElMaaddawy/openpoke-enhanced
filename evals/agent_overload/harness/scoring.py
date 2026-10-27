@@ -62,6 +62,7 @@ class DistinctDelegation:
     iteration: int
     order: int
     repeat_calls: int
+    extra: dict = field(default_factory=dict)
 
 
 @dataclass
@@ -102,6 +103,7 @@ def collapse(delegations: list[Delegation]) -> list[DistinctDelegation]:
             iteration=d.iteration,
             order=d.order,
             repeat_calls=0,
+            extra=dict(d.extra),
         )
     return list(distinct.values())
 

@@ -1,5 +1,6 @@
 """Candidate selection: short-circuits, pins, queries, BM25, RRF, index staleness, failure."""
 
+import asyncio
 import json
 import tempfile
 import unittest
@@ -317,6 +318,36 @@ class IndexTest(unittest.IsolatedAsyncioTestCase):
             self.assertFalse(reloaded.is_stale("ag_a", "Alpha", "m", 2))
             reloaded.clear()
             self.assertFalse(path.exists())
+
+    def test_content_keyed_index_holds_two_texts_for_one_id(self) -> None:
+        index = EmbeddingIndex(key_by_content=True)
+        index.put("a-run-1", "Flights", "m", 2, [1.0, 0.0])
+        index.put("a-run-1", "Invoices", "m", 2, [0.0, 1.0])
+        self.assertEqual(index.lookup("a-run-1", "Flights", "m", 2), [1.0, 0.0])
+        self.assertEqual(index.lookup("other-id", "Invoices", "m", 2), [0.0, 1.0])
+        self.assertIsNone(index.lookup("a-run-1", "Flights", "m", 3))
+
+    async def test_concurrent_turns_keep_their_own_vectors(self) -> None:
+        """Two turns share an index; the second re-embeds ag_x with another text while the
+        first waits on its embedding call. The first must still score its own text."""
+        index = EmbeddingIndex()
+        first_text, second_text = "Alpha", "Bravo"
+        index.put("ag_x", first_text, FakeEmbedder.model, 2, [1.0, 0.0])
+
+        class SlowEmbedder(FakeEmbedder):
+            async def embed(self, texts, purpose):
+                # The first turn (query only) answers last, after the second stored its vector.
+                await asyncio.sleep(0.02 if len(texts) == 1 else 0.0)
+                return await super().embed(texts, purpose)
+
+        embedder = SlowEmbedder(dimensions=2, vectors={"alpha": [1.0, 0.0], second_text: [0.0, 1.0]})
+        one = [view("ag_x", "Alpha")]
+        two = [view("ag_x", "Bravo")]
+        first, _ = await asyncio.gather(
+            select_candidates(one, "alpha", "user", [], RETRIEVE, embedder, index),
+            select_candidates(two, "alpha", "user", [], RETRIEVE, embedder, index),
+        )
+        self.assertAlmostEqual(first.scores["ag_x"]["sem"], 1.0)
 
     def test_normalize_rounds_to_six_places(self) -> None:
         self.assertEqual(normalize([1.0, 2.0]), [0.447214, 0.894427])

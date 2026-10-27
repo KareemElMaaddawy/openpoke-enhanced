@@ -4,7 +4,7 @@ The implementation spec for the first solution version: richer agent records, ro
 
 The problem, the candidate directions and the decision log are in [agent-overload.md](agent-overload.md). Causes (D1, I2, ...) and metrics are in [agent-overload-causes-and-metrics.md](agent-overload-causes-and-metrics.md). The harness this plugs into is in [agent-overload-experiment-design.md](agent-overload-experiment-design.md).
 
-Status: designed 2026-10-26. Steps 1 to 4 of the [implementation order](#implementation-order) (server side) implemented 2026-10-26; steps 5 to 7 not done.
+Status: designed 2026-10-26. Steps 1 to 4 of the [implementation order](#implementation-order) (server side) implemented 2026-10-26. Steps 6 (harness) and 7 (runbook section) implemented 2026-10-27, after the phase 1 baseline (`20261027-035635-names_only-e5cf9a5a`) had run. Step 5 was tried once by hand; the experiment plan's paid steps 2 to 7 haven't run. Decisions made while implementing are in [Implementation notes](#implementation-notes).
 
 ## Where this stands in the method
 
@@ -642,6 +642,30 @@ The implementing agent never passes `--confirm-spend` and never runs paid comman
 - **Log sharing** between slug-equal names (I4) is fixed for new agents and folded into aliases for old ones.
 - **New failure mode:** retrieval misses become false spawns (`target_excluded`). The pins and BM25 channels are there to reduce them, and the probe measures them before any routing run.
 - **New dependency:** an embedding call on every turn above the threshold. Its latency is a guardrail metric. If OpenRouter's embedding endpoint is down, the system degrades to lexical retrieval rather than failing.
+
+## Implementation notes
+
+Readings of the spec that the implementation had to choose, recorded so the experiment and later versions build on the same ones. Each kept `legacy` and `names_only` unchanged; tests pin both.
+
+**Server**
+
+- `RecordView` has two more fields with defaults: `task_count` (the prompt entry shows `tasks="N"`) and `aliases` (pins match aliases). `CandidateSet` has `error`, the reason the semantic channel was dropped.
+- Records no channel ranks are still ordered after the ranked ones, by the tie-break (`last_active`, then `agent_id`), so K fills on lexical-only turns. In `full` and `empty` mode pins, queries and scores stay empty.
+- Text cuts collapse whitespace and count the "…" inside the limit. Names over 60 characters are cut without "…". An empty result is stored as "(no response)", so a later result can't fill the wrong snippet.
+- Import pairs each `agent_request` with the next unpaired `agent_response`; responses with no open request (trigger runs) are skipped. A log with no requests sets `last_active` to `created_at`.
+- The routing markers stay in `system_prompt_records.md` for the drift test but are removed before the prompt is sent. `last_active` is left out of an entry when it's unknown.
+- Retrieval reads every cached vector before its first `await`, so a concurrent turn re-embedding the same agent can't swap a vector mid-turn. `EmbeddingIndex(key_by_content=True)` keys vectors by `sha256(model|dimensions|text)` instead of `agent_id`; the harness uses it, since its `a-run-<n>` ids repeat across concurrent sequences with different texts.
+- `server/services/agents/purpose.py` holds the backfill prompt, its cache key and the output cleanup. The optional production backfill CLI isn't built.
+
+**Harness (version 1.1.0)**
+
+- Embeddings go through the run's API: OpenAI's `/v1/embeddings` for `models.api: "openai"` (the baseline's setting since phase 1 moved runs off OpenRouter), else OpenRouter with the provider pinned. On OpenAI direct, a model's id is its `openai_model_ids` entry or the name without `openai/`, so the configs' `models` block stays identical to the baseline's.
+- The token probe uses the method's own prompt and tools with an empty roster (`probe_request`), so roster tokens are measured against the records prompt, not names_only's.
+- `diagnostics["candidates"]` is set only when retrieval ran. In `full` mode the order is the roster order, so recall@k would measure nothing.
+- An agent the stub creates gets a deterministic id, `ag_` + 8 hex characters from its name, so a later `send_message_to_agent` in the same turn resolves to it.
+- Cached purposes are keyed by agent id, prompt + name + first task, and the summarizer model. Fake-model runs use no cache.
+- A spend cap reached during an embedding call stops the run instead of falling back to lexical retrieval. A failed embedding call (after retries) falls back, as in production.
+- Recall is also reported at k = 8 (the default K), and `report.md` gains a retrieval table in section 7. The mixed-model-version warning now compares versions per requested model, since embedding and backfill calls return other models.
 
 ## Open questions
 

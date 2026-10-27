@@ -30,7 +30,7 @@ SINGLE_DIMS = (
     "target_name_visible",
 )
 SEQUENCE_DIMS = ("query_style", "message_subtype", "label_kind", "turn_index")
-RECALL_KS = (1, 3, 5, 10, 20)
+RECALL_KS = (1, 3, 5, 8, 10, 20)  # 8 is records_retrieval's default K
 DROP_THRESHOLD = 0.05
 DORMANT_DAYS = 14
 

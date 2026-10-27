@@ -3,7 +3,8 @@
   "prices_per_million": {
     "openai/gpt-6-luna": {"input": 0.10, "cached_input": 0.0125, "output": 0.50, "source": "OpenRouter standard OpenAI endpoint, checked 2026-10-25 (design doc); cached_input implied by smoke run 20261027-023444 (OpenRouter usage.cost, 90% of prompt tokens cached)"},
     "google/gemini-3.8-flash": {"input": 0.825, "output": 4.125, "source": "OpenRouter, checked 2026-10-25 (design doc)"},
-    "anthropic/claude-sonnet-5.5": {"input": 2.0, "output": 10.0, "source": "third-party price trackers, 2026-10-25; OpenRouter EU route lists 2.20 / 11"}
+    "anthropic/claude-sonnet-5.5": {"input": 2.0, "output": 10.0, "source": "third-party price trackers, 2026-10-25; OpenRouter EU route lists 2.20 / 11"},
+    "openai/text-embedding-3-small": {"input": 0.02, "output": 0.0, "source": "OpenRouter GET /api/v1/embeddings/models, checked 2026-10-26 (records spec); used to estimate OpenAI direct embedding costs"}
   },
   "design_estimates": {
     "note": "Per-unit costs from the design's Cost section, used by run.py until a smoke run for the same method and model exists.",

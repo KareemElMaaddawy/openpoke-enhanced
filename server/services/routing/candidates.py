@@ -7,7 +7,7 @@ run the same code.
 
 from __future__ import annotations
 
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 from typing import Any, Dict, List, Optional, Sequence, Tuple
 
 from ..agents.records import WorkSnippet
@@ -84,9 +84,16 @@ async def _semantic_scores(
         raise EmbeddingError("no embedder configured")
 
     model, dimensions = embedder.model, embedder.dimensions
-    stale = [r for r in records if index.is_stale(r.agent_id, texts[r.agent_id], model, dimensions)]
+    # Cached vectors are read before the first await, so a concurrent turn that re-embeds
+    # the same agent_id can't swap a vector under this turn.
+    vectors_by_id: Dict[str, List[float]] = {}
     inputs: List[Tuple[Optional[str], str]] = [(None, q) for q in queries]
-    inputs += [(r.agent_id, texts[r.agent_id]) for r in stale]
+    for r in records:
+        cached = index.lookup(r.agent_id, texts[r.agent_id], model, dimensions)
+        if cached is None:
+            inputs.append((r.agent_id, texts[r.agent_id]))
+        else:
+            vectors_by_id[r.agent_id] = cached
 
     query_vectors: List[List[float]] = []
     for start in range(0, len(inputs), EMBED_BATCH_SIZE):
@@ -99,13 +106,9 @@ async def _semantic_scores(
             if agent_id is None:
                 query_vectors.append(normalize(vector))
             else:
-                index.put(agent_id, text, model, dimensions, vector)
+                vectors_by_id[agent_id] = index.put(agent_id, text, model, dimensions, vector)
 
-    scores: Dict[str, float] = {}
-    for r in records:
-        vector = index.get(r.agent_id) or []
-        scores[r.agent_id] = max(dot(q, vector) for q in query_vectors)
-    return scores
+    return {r.agent_id: max(dot(q, vectors_by_id[r.agent_id]) for q in query_vectors) for r in records}
 
 
 def _rank(ids: Sequence[str], key: Dict[str, Any]) -> Dict[str, int]:

@@ -113,6 +113,7 @@ class AgentRecord:
     seeded: bool
     work_log: list[WorkItem] = field(default_factory=list)
     map_order: int = 0  # order in which the agent was mapped to its thread
+    extra: dict = field(default_factory=dict)  # what the creating method stored (Delegation.extra)
 
     def view(self) -> AgentView:
         return AgentView(
@@ -121,6 +122,7 @@ class AgentRecord:
             work_log=tuple(self.work_log),
             created_at=self.created_at,
             last_active=self.last_active,
+            extra=tuple(sorted(self.extra.items())),
         )
 
 
@@ -197,13 +199,14 @@ class RoutingState:
     def transcript(self) -> str:
         return render_transcript(self.summary_text, self.entries, self.last_index)
 
-    def routing_input(self, message_text: str, message_type: str) -> RoutingInput:
+    def routing_input(self, message_text: str, message_type: str, now: str = "") -> RoutingInput:
         return RoutingInput(
             roster=tuple(a.view() for a in self.roster),
             summary_text=self.summary_text,
             entries=tuple(self.entries),
             message_text=message_text,
             message_type=message_type,
+            now=now,
         )
 
     # -- mutation ----------------------------------------------------------
@@ -297,6 +300,7 @@ class WorkAssignment:
     instructions: str
     result_text: str
     new_agent_id: Optional[str] = None  # id for a created agent (a-run-<n> or the frozen gold id)
+    extra: dict = field(default_factory=dict)  # stored on a created agent (carried mode)
 
 
 def apply_turn(
@@ -335,6 +339,7 @@ def apply_turn(
                     created_at=timestamp,
                     last_active=timestamp,
                     seeded=False,
+                    extra=dict(item.extra),
                 )
             )
         else:

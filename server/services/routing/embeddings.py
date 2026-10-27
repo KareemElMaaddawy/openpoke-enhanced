@@ -47,19 +47,50 @@ def dot(a: List[float], b: List[float]) -> float:
     return sum(x * y for x, y in zip(a, b))
 
 
+def content_key(text: str, model: str, dimensions: int) -> str:
+    """sha256(model|dimensions|text): the key of a vector that depends only on its text."""
+    return text_sha256(f"{model}|{dimensions}|{text}")
+
+
 class EmbeddingIndex:
     """agent_id -> {"text_sha256", "model", "dimensions", "vector"}.
 
     With a path, it loads lazily from and saves atomically to that JSON file (production).
-    Without one it is in-memory only (eval harness, tests).
+    Without one it is in-memory only (eval harness, tests). With ``key_by_content`` entries
+    are keyed by ``content_key`` instead of agent_id, so the same agent_id can carry
+    different texts at once (the harness runs many conversations concurrently).
     """
 
-    def __init__(self, path: Optional[Path] = None):
+    def __init__(self, path: Optional[Path] = None, *, key_by_content: bool = False):
         self._path = path
         self._lock = threading.Lock()
         self._entries: Dict[str, dict] = {}
         self._loaded = path is None
+        self._key_by_content = key_by_content
         self.dirty = False
+
+    def _key(self, agent_id: str, text: str, model: str, dimensions: int) -> str:
+        return content_key(text, model, dimensions) if self._key_by_content else agent_id
+
+    def lookup(self, agent_id: str, text: str, model: str, dimensions: int) -> Optional[List[float]]:
+        """The stored vector for this text, model and dimensions, or None if missing or stale."""
+        with self._lock:
+            self._ensure_loaded_locked()
+            entry = self._entries.get(self._key(agent_id, text, model, dimensions))
+        if (
+            entry is None
+            or entry.get("text_sha256") != text_sha256(text)
+            or entry.get("model") != model
+            or entry.get("dimensions") != dimensions
+        ):
+            return None
+        return entry["vector"]
+
+    def prefill(self, entries: Dict[str, dict]) -> None:
+        """Add stored entries (already normalized) without marking the index dirty."""
+        with self._lock:
+            self._ensure_loaded_locked()
+            self._entries.update(entries)
 
     @property
     def path(self) -> Optional[Path]:
@@ -79,32 +110,28 @@ class EmbeddingIndex:
             self._entries = {}
 
     def is_stale(self, agent_id: str, text: str, model: str, dimensions: int) -> bool:
-        with self._lock:
-            self._ensure_loaded_locked()
-            entry = self._entries.get(agent_id)
-        return (
-            entry is None
-            or entry.get("text_sha256") != text_sha256(text)
-            or entry.get("model") != model
-            or entry.get("dimensions") != dimensions
-        )
+        return self.lookup(agent_id, text, model, dimensions) is None
 
     def get(self, agent_id: str) -> Optional[List[float]]:
+        """The vector stored under agent_id (agent_id-keyed indexes only)."""
         with self._lock:
             self._ensure_loaded_locked()
             entry = self._entries.get(agent_id)
         return entry["vector"] if entry else None
 
-    def put(self, agent_id: str, text: str, model: str, dimensions: int, vector: List[float]) -> None:
+    def put(self, agent_id: str, text: str, model: str, dimensions: int, vector: List[float]) -> List[float]:
+        """Store the normalized vector and return it."""
+        normalized = normalize(vector)
         with self._lock:
             self._ensure_loaded_locked()
-            self._entries[agent_id] = {
+            self._entries[self._key(agent_id, text, model, dimensions)] = {
                 "text_sha256": text_sha256(text),
                 "model": model,
                 "dimensions": dimensions,
-                "vector": normalize(vector),
+                "vector": normalized,
             }
             self.dirty = True
+        return normalized
 
     def save(self) -> None:
         """Write to disk atomically (no-op without a path)."""
@@ -201,6 +228,7 @@ class OpenRouterEmbedder:
 
 __all__ = [
     "EMBED_BATCH_SIZE",
+    "content_key",
     "Embedder",
     "EmbeddingError",
     "EmbeddingIndex",

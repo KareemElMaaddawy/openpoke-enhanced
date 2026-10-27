@@ -462,6 +462,140 @@ A later routing method (for example richer records with retrieval) is compared a
 
    It refuses to compare runs with different case sets or splits, fake-model runs, capped runs and failed runs. It warns when the model slugs, the provider, the harness version or the concurrency differ (latency is only comparable at the same concurrency, ideally on the same day). The baseline's `full` run contains the test split, so it pairs with a candidate's `test` run on the test templates.
 
+## Version 1: records and retrieval
+
+The commands for the [version 1 experiment plan](agent-overload-records-retrieval-spec.md#experiment-plan-for-version-1): richer agent records, routing by agent ID, and bounded retrieval (method `records_retrieval` v1). Everything stays on dev until step 7. Every paid command is yours to run; do the `--dry-run` first each time.
+
+**What's different from the baseline**
+
+- **Harness 1.1.0.** The method interface gained `RoutingInput.now`, `AgentView.extra`, `Delegation.extra` and `ModelClient.embed`, and the token probe uses the method's own prompt. `baseline_names_only.json` moved to harness 1.1.0 so it still loads. A test checks that a fake-model names_only run gives byte-identical turns before and after these changes. `compare.py` will warn that the harness versions differ (1.0.0 against 1.1.0); that warning is expected.
+- **Two configs**, identical to the baseline except `method`:
+  - `configs/v1_records_full.json`: `full_roster_max` 100000, so every agent is shown at every N (hypothesis H1).
+  - `configs/v1_records_retrieval.json`: `full_roster_max` 0, so retrieval runs at every N, with K = 8 (hypothesis H2).
+- **One-off `prepare()` calls.** On its first run per split, the method writes a purpose for every fixture agent (one gpt-6-luna call each: 252 dev, 308 test) and embeds every agent record (`openai/text-embedding-3-small`, 512 dimensions). Both are cached under `evals/agent_overload/cache/records_retrieval/1/`. The dirty-tree check ignores that folder, and later runs reuse what's in it. The dry run lists these calls, and they're included in its estimate.
+- **Embeddings go through the run's API.** With `models.api: "openai"` that's OpenAI's `/v1/embeddings` (model id `text-embedding-3-small`); otherwise it's OpenRouter's, with the provider pinned to OpenAI. It's the same model either way. Embedding calls count toward the run's cost, tokens and latency.
+- **The report** gains a "Retrieval" table in section 7: agents shown, recall@k and the target-excluded error rate per N. It only appears for runs where retrieval ran, so `v1_records_full` has none.
+
+### V1-1. Free checks
+
+```bash
+.venv/bin/python -m unittest discover -s evals/agent_overload/tests -t .
+```
+
+```bash
+.venv/bin/python -m unittest discover server/tests
+```
+
+```bash
+.venv/bin/python -m evals.agent_overload.run --config evals/agent_overload/configs/v1_records_retrieval.json --profile smoke --fake-model
+```
+
+### V1-2. Purpose backfill and record index (Paid: about $0.05)
+
+The probe's first run does the dev `prepare()`: it backfills the 252 dev purposes and embeds the dev records. Read the dry run, then run it:
+
+```bash
+.venv/bin/python -m evals.agent_overload.retrieval_probe --config evals/agent_overload/configs/v1_records_retrieval.json --dry-run
+```
+
+```bash
+.venv/bin/python -m evals.agent_overload.retrieval_probe --config evals/agent_overload/configs/v1_records_retrieval.json --confirm-spend
+```
+
+Then read about 30 purposes in `evals/agent_overload/cache/records_retrieval/1/purposes.jsonl` by hand. If they're as vague as the names, tell the agent before going on (open question 2 in the spec). Commit the cache folder, so the purposes the runs use are versioned.
+
+### V1-3. Retrieval probe (Paid: cents)
+
+Each command prints recall@k for k in 1, 3, 5, 8, 10 and 20, overall and by N, query style, message subtype, target-name visibility and history type, plus the share of hits at K that came only from pins. Each writes `results/probes/<probe_id>/probe.md` and `probe.json`. After V1-2 only the queries are embedded. `--set` changes one param for that probe only.
+
+```bash
+.venv/bin/python -m evals.agent_overload.retrieval_probe --config evals/agent_overload/configs/v1_records_retrieval.json --confirm-spend
+```
+
+```bash
+.venv/bin/python -m evals.agent_overload.retrieval_probe --config evals/agent_overload/configs/v1_records_retrieval.json --set use_pins=false --confirm-spend
+```
+
+```bash
+.venv/bin/python -m evals.agent_overload.retrieval_probe --config evals/agent_overload/configs/v1_records_retrieval.json --set use_lexical=false --confirm-spend
+```
+
+```bash
+.venv/bin/python -m evals.agent_overload.retrieval_probe --config evals/agent_overload/configs/v1_records_retrieval.json --set query_with_previous_user_message=false --confirm-spend
+```
+
+```bash
+.venv/bin/python -m evals.agent_overload.retrieval_probe --config evals/agent_overload/configs/v1_records_retrieval.json --set w_rec=0.5 --confirm-spend
+```
+
+**What it settles**
+
+- **H3 (pins):** compare recall@8 on `implicit_follow_up` between the first two probes.
+- **K:** the smallest value in {5, 8, 12} with dev recall@K ≥ 0.95 at N = 200. If none reaches it, use 12 and say so.
+- **Channels and weights:** keep `use_lexical`, `query_with_previous_user_message` and `w_rec` at the setting with the higher recall@K.
+
+Tell the agent the probe ids. The tuned values go into `v1_records_retrieval.json` before V1-5.
+
+### V1-4. Records with the full roster (Paid: about $1.20, H1)
+
+Smoke first, so later dry runs estimate from this method's measured per-turn costs instead of the baseline design's:
+
+```bash
+.venv/bin/python -m evals.agent_overload.run --config evals/agent_overload/configs/v1_records_full.json --profile smoke --dry-run
+```
+
+```bash
+.venv/bin/python -m evals.agent_overload.run --config evals/agent_overload/configs/v1_records_full.json --profile smoke --confirm-spend
+```
+
+```bash
+.venv/bin/python -m evals.agent_overload.run --config evals/agent_overload/configs/v1_records_full.json --profile dev-quick --dry-run
+```
+
+```bash
+.venv/bin/python -m evals.agent_overload.run --config evals/agent_overload/configs/v1_records_full.json --profile dev-quick --confirm-spend
+```
+
+### V1-5. Records with retrieval (Paid: about $0.40 each, H2 and H4)
+
+With the K and weights from V1-3 in `v1_records_retrieval.json`, commit, then:
+
+```bash
+.venv/bin/python -m evals.agent_overload.run --config evals/agent_overload/configs/v1_records_retrieval.json --profile dev-quick --dry-run
+```
+
+```bash
+.venv/bin/python -m evals.agent_overload.run --config evals/agent_overload/configs/v1_records_retrieval.json --profile dev-quick --confirm-spend
+```
+
+For H4, copy it to `configs/v1_records_retrieval_no_purpose.json`, change only `"seed_purposes": "backfill"` to `"none"`, commit, and run the same two commands with that config. With `"none"`, seeded agents have no purpose; agents the model creates during a sequence still get the purpose it writes.
+
+If the first dev-quick costs more than estimated, drop the H4 variant first (spec: budget check).
+
+### V1-6. Freeze the test config (free)
+
+- **`full_roster_max`:** the rule is the largest N in the baseline's dev sweep that's below the dev accuracy drop point. Baseline `20261027-035635-names_only-e5cf9a5a` has its dev drop point at N = 100, so the value is **50**.
+- **The frozen config:** copy `v1_records_retrieval.json` to `configs/v1_records_test.json` with the tuned values and `full_roster_max` 50, and record the targets in [agent-overload.md](agent-overload.md#decisions).
+- **Server defaults in the same commit:** copy the same retrieval params into `RetrievalParams` in `server/services/routing/params.py`, so `make dev ROUTING=records` runs what was measured. The test `test_frozen_test_config_matches_server_defaults` fails until they match. It skips while `v1_records_test.json` doesn't exist.
+
+### V1-7. Test run and comparison (Paid: about $5)
+
+The test run's `prepare()` also backfills the 308 test purposes once (about $0.07; it's in the dry run).
+
+```bash
+.venv/bin/python -m evals.agent_overload.run --config evals/agent_overload/configs/v1_records_test.json --profile test --dry-run
+```
+
+```bash
+.venv/bin/python -m evals.agent_overload.run --config evals/agent_overload/configs/v1_records_test.json --profile test --confirm-spend
+```
+
+```bash
+.venv/bin/python -m evals.agent_overload.compare 20261027-035635-names_only-e5cf9a5a <records_test_run_id>
+```
+
+Commit the run directories, the probe directories, both ledgers and the cache folder. Then tell the agent the run ids, so the probe's recall table, the dev comparisons for H1 to H4 and the test comparison go into [agent-overload.md](agent-overload.md#experiments).
+
 ## What a run writes
 
 `evals/agent_overload/results/<run_id>/`, with `run_id = <UTC yyyymmdd-HHMMSS>-<method>-<config hash[:8]>`:
@@ -498,9 +632,13 @@ Fake-model runs go to `results/_fake/` (ignored by git) unless `--results-dir` i
 | --- | --- |
 | `evals/agent_overload/configs/baseline_names_only.json` | The baseline run config (models, provider pin, sizes, reps, budget) |
 | `evals/agent_overload/configs/pricing.json` | Prices used for estimates only |
+| `evals/agent_overload/configs/v1_records_full.json`, `v1_records_retrieval.json` | Version 1 configs (records with the full roster; records with retrieval) |
+| `evals/agent_overload/harness/methods/records_retrieval.py` | The version 1 method, its tool stubs and its caches |
+| `evals/agent_overload/retrieval_probe.py` | Retrieval-only recall probe (dev only) |
+| `evals/agent_overload/cache/records_retrieval/1/` | Backfilled purposes and record vectors, reused across runs |
 | `evals/agent_overload/fixtures/v1/` | The case set; `review/` holds the generation and review records |
 | `evals/agent_overload/generation/` | The generation scripts and `prompts/` |
 | `evals/agent_overload/harness/` | State, rosters, scoring, metrics, report, model client, methods |
 | `evals/agent_overload/run.py`, `compare.py` | The CLIs |
-| `evals/agent_overload/results/` | Run directories, `spend_ledger.jsonl`, `test_ledger.jsonl` |
+| `evals/agent_overload/results/` | Run directories, `probes/`, `spend_ledger.jsonl`, `test_ledger.jsonl` |
 | `evals/agent_overload/tests/` | Unit and fake-model end-to-end tests |

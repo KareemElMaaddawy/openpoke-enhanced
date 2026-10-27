@@ -1,3 +1,3 @@
 """Harness for the agent overload experiment."""
 
-HARNESS_VERSION = "1.0.0"
+HARNESS_VERSION = "1.1.0"
