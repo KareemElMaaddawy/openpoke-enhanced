@@ -11,10 +11,12 @@ via ``openrouter_client.client._build_messages``, ``stream: false``, ``tools``) 
 only ``provider``, ``usage`` and ``seed`` (design: Model calls), and ``max_tokens``
 for token probes.
 
-``OpenAIClient`` sends the same calls straight to OpenAI's API (configured with
-``models.api: "openai"``): the OpenRouter-only keys are dropped, the model alias is
-mapped to a dated snapshot, and cost is estimated from the pricing table (cached
-input at its own price), since OpenAI's usage has no cost field.
+``OpenAIClient`` sends the same calls straight to OpenAI's Responses API (configured
+with ``models.api: "openai"``). OpenAI's Chat Completions endpoint rejects tools while
+gpt-6-luna reasons, so each chat-completions payload is translated to a Responses
+request and the answer back to the chat-completions shape the loop reads. Cost is
+estimated from the pricing table (cached input at its own price), since OpenAI's
+usage has no cost field.
 """
 
 from __future__ import annotations
@@ -376,6 +378,7 @@ class OpenRouterClient(ModelClient):
     """Real, paid calls to OpenRouter. Construct only after ``--confirm-spend``."""
 
     KEY_NAME = "OPENROUTER_API_KEY"
+    ENDPOINT = "/chat/completions"
 
     def __init__(
         self,
@@ -428,7 +431,7 @@ class OpenRouterClient(ModelClient):
         return self._limiters[model]
 
     async def _send(self, payload: dict, record: CallRecord, fake_hint: Any) -> dict:
-        url = f"{self.base_url}/chat/completions"
+        url = f"{self.base_url}{self.ENDPOINT}"
         last_error = "unknown error"
         limiter = self.limiter(payload["model"])
         wire = self._wire(payload)
@@ -492,13 +495,15 @@ class OpenRouterClient(ModelClient):
 
 
 class OpenAIClient(OpenRouterClient):
-    """Real, paid calls straight to OpenAI's API, for runs configured with ``models.api: "openai"``.
+    """Real, paid calls to OpenAI's Responses API, for runs configured with ``models.api: "openai"``.
 
-    ``model_ids`` maps the config's model names to OpenAI snapshot ids (the pin). The
-    OpenRouter-only keys are dropped and ``max_tokens`` becomes ``max_completion_tokens``.
+    ``model_ids`` maps the config's model names to OpenAI model ids. Requests and
+    answers are translated (``responses_request``, ``responses_to_chat``), so callers
+    and the production loop see the same chat-completions shape as on OpenRouter.
     """
 
     KEY_NAME = "OPENAI_API_KEY"
+    ENDPOINT = "/responses"
 
     def __init__(self, *, model_ids: dict[str, str], base_url: str = OPENAI_BASE_URL, rpm: Optional[float] = OPENAI_DEFAULT_RPM, **kwargs: Any):
         super().__init__(base_url=base_url, rpm=rpm, **kwargs)
@@ -508,23 +513,96 @@ class OpenAIClient(OpenRouterClient):
         return openai_key()
 
     def _wire(self, payload: dict) -> dict:
-        return openai_wire_payload(payload, self.model_ids)
+        return responses_request(payload, self.model_ids)
 
     def _finish(self, data: dict) -> dict:
-        data.setdefault("provider", "OpenAI")
-        return data
+        return responses_to_chat(data)
 
     def _fatal_429(self, response: "httpx.Response") -> bool:
         # Out of credit, not a rate limit: retrying can't help.
         return "insufficient_quota" in response.text
 
 
-def openai_wire_payload(payload: dict, model_ids: dict[str, str]) -> dict:
-    wire = {k: v for k, v in payload.items() if k not in OPENROUTER_ONLY_KEYS}
-    wire["model"] = model_ids.get(payload["model"], payload["model"])
-    if "max_tokens" in wire:
-        wire["max_completion_tokens"] = wire.pop("max_tokens")
-    return wire
+# The Responses API's smallest allowed max_output_tokens; token probes ask for 1.
+MIN_OUTPUT_TOKENS = 16
+
+
+def responses_request(payload: dict, model_ids: dict[str, str]) -> dict:
+    """A chat-completions payload as a Responses API request.
+
+    Messages become input items (assistant tool calls become ``function_call`` items,
+    tool results ``function_call_output`` items), tools lose their ``function``
+    wrapper and keep chat-completions' non-strict validation. ``seed``, ``provider``
+    and ``usage`` have no Responses equivalent and are dropped. Nothing is stored on
+    OpenAI's side, and reasoning is left at the model's default.
+    """
+    items: list[dict] = []
+    for message in payload["messages"]:
+        role = message.get("role")
+        if role == "tool":
+            items.append({"type": "function_call_output", "call_id": message.get("tool_call_id"), "output": message.get("content") or ""})
+            continue
+        content = message.get("content")
+        if content:
+            items.append({"role": role, "content": content})
+        for call in message.get("tool_calls") or []:
+            function = call.get("function") or {}
+            items.append({"type": "function_call", "call_id": call.get("id"), "name": function.get("name"), "arguments": function.get("arguments") or ""})
+    request: dict[str, Any] = {"model": model_ids.get(payload["model"], payload["model"]), "input": items, "store": False}
+    if payload.get("tools"):
+        request["tools"] = [
+            {
+                "type": "function",
+                "name": tool["function"]["name"],
+                "description": tool["function"].get("description", ""),
+                "parameters": tool["function"].get("parameters", {}),
+                "strict": False,
+            }
+            for tool in payload["tools"]
+        ]
+    if "max_tokens" in payload:
+        request["max_output_tokens"] = max(MIN_OUTPUT_TOKENS, int(payload["max_tokens"]))
+    skipped = OPENROUTER_ONLY_KEYS + ("model", "messages", "tools", "max_tokens", "seed", "stream")
+    for key, value in payload.items():
+        if key not in skipped:
+            request[key] = value
+    return request
+
+
+def responses_to_chat(data: dict) -> dict:
+    """A Responses API answer in the chat-completions shape (``choices``, ``usage``)."""
+    text, calls = [], []
+    for item in data.get("output") or []:
+        if item.get("type") == "message":
+            text += [part.get("text", "") for part in item.get("content") or [] if part.get("type") == "output_text"]
+        elif item.get("type") == "function_call":
+            calls.append({"id": item.get("call_id"), "type": "function", "function": {"name": item.get("name"), "arguments": item.get("arguments") or ""}})
+    message: dict[str, Any] = {"role": "assistant", "content": "".join(text)}
+    if calls:
+        message["tool_calls"] = calls
+    if calls:
+        finish = "tool_calls"
+    elif data.get("status") == "incomplete":
+        finish = "length"
+    else:
+        finish = "stop"
+    usage = data.get("usage") or {}
+    chat: dict[str, Any] = {
+        "id": data.get("id"),
+        "model": data.get("model"),
+        "provider": "OpenAI",
+        "choices": [{"message": message, "finish_reason": finish}],
+        "usage": {
+            "prompt_tokens": usage.get("input_tokens"),
+            "completion_tokens": usage.get("output_tokens"),
+            "prompt_tokens_details": {"cached_tokens": (usage.get("input_tokens_details") or {}).get("cached_tokens")},
+            "completion_tokens_details": {"reasoning_tokens": (usage.get("output_tokens_details") or {}).get("reasoning_tokens")},
+        },
+        "responses_output": data.get("output"),
+    }
+    if data.get("error"):
+        chat["error"] = data["error"]
+    return chat
 
 
 def openai_key() -> Optional[str]:
@@ -718,7 +796,8 @@ __all__ = [
     "OPENAI_DEFAULT_RPM",
     "check_openai_pins",
     "openai_key",
-    "openai_wire_payload",
+    "responses_request",
+    "responses_to_chat",
     "parse_duration",
     "pin_problems",
     "fetch_model_listing",
