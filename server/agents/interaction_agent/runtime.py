@@ -4,9 +4,10 @@ import json
 from dataclasses import dataclass, field
 from typing import Any, Dict, List, Optional, Set
 
-from .agent import build_system_prompt, prepare_message_with_history
-from .tools import ToolResult, get_tool_schemas, handle_tool_call
+from .routing import get_routing_strategy
+from .tools import ToolResult
 from ...config import get_settings
+from ...services.routing import EntryView
 from ...services.conversation import get_conversation_log, get_working_memory_log
 from ...openrouter_client import request_chat_completion
 from ...logging_config import logger
@@ -54,7 +55,8 @@ class InteractionAgentRuntime:
         self.settings = settings
         self.conversation_log = get_conversation_log()
         self.working_memory_log = get_working_memory_log()
-        self.tool_schemas = get_tool_schemas()
+        self.routing = get_routing_strategy()
+        self.tool_schemas = self.routing.tool_schemas()
 
         if not self.api_key:
             raise ValueError(
@@ -67,11 +69,12 @@ class InteractionAgentRuntime:
 
         try:
             transcript_before = self._load_conversation_transcript()
+            entries_before = self._load_conversation_entries()
             self.conversation_log.record_user_message(user_message)
 
-            system_prompt = build_system_prompt()
-            messages = prepare_message_with_history(
-                user_message, transcript_before, message_type="user"
+            system_prompt = self.routing.build_system_prompt()
+            messages = await self.routing.prepare_messages(
+                user_message, transcript_before, "user", entries_before
             )
 
             logger.info("Processing user message through interaction agent")
@@ -102,11 +105,12 @@ class InteractionAgentRuntime:
 
         try:
             transcript_before = self._load_conversation_transcript()
+            entries_before = self._load_conversation_entries()
             self.conversation_log.record_agent_message(agent_message)
 
-            system_prompt = build_system_prompt()
-            messages = prepare_message_with_history(
-                agent_message, transcript_before, message_type="agent"
+            system_prompt = self.routing.build_system_prompt()
+            messages = await self.routing.prepare_messages(
+                agent_message, transcript_before, "agent", entries_before
             )
 
             logger.info("Processing execution agent results")
@@ -197,6 +201,14 @@ class InteractionAgentRuntime:
             if rendered.strip():
                 return rendered
         return self.conversation_log.load_transcript()
+
+    # Load the entries the transcript above renders, for records-mode candidate selection
+    def _load_conversation_entries(self) -> List[EntryView]:
+        if self.settings.summarization_enabled:
+            state = self.working_memory_log.load_summary_state()
+            if self.working_memory_log.render_transcript(state).strip():
+                return [EntryView(entry.tag, entry.payload) for entry in state.unsummarized_entries]
+        return [EntryView(tag, payload) for tag, _, payload in self.conversation_log.iter_entries()]
 
     # Execute API call to OpenRouter with system prompt, messages, and tool schemas
     async def _make_llm_call(
@@ -294,7 +306,7 @@ class InteractionAgentRuntime:
 
         try:
             self._log_tool_invocation(tool_call, stage="start")
-            result = handle_tool_call(tool_call.name, tool_call.arguments)
+            result = self.routing.handle_tool_call(tool_call.name, tool_call.arguments)
         except Exception as exc:  # pragma: no cover - defensive
             logger.error(
                 "Tool execution crashed",

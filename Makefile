@@ -16,6 +16,11 @@ PYTHON ?= $(shell for p in python3.13 python3.12 python3.11 python3.10 python3; 
 # Named API_PORT, not PORT, because Next.js would also bind to an exported PORT.
 API_PORT ?= $(or $(OPENPOKE_PORT),$(shell sed -n 's/^OPENPOKE_PORT=//p' .env 2>/dev/null | tr -d "\"' "),8001)
 
+# Interaction-agent routing mode passed to the server: legacy or records. Empty uses
+# OPENPOKE_ROUTING (environment or .env), else legacy. See docs/makefile.md.
+ROUTING ?=
+ROUTING_ARG = $(if $(ROUTING),--routing $(ROUTING),)
+
 PID_FILE := .server.pid
 LOG_FILE := .server.log
 REQUIRED_ENV := OPENROUTER_API_KEY COMPOSIO_API_KEY COMPOSIO_GMAIL_AUTH_CONFIG_ID
@@ -50,19 +55,19 @@ web/node_modules/.installed: web/package-lock.json
 	npm ci --prefix web
 	@touch $@
 
-dev: install ## Run the API server (with reload) and web app together; Ctrl-C stops both
+dev: install ## Run the API server (with reload) and web app together; Ctrl-C stops both. ROUTING=records for records routing
 	@trap 'kill 0' INT TERM EXIT; \
-	$(PY) -m server.server --reload --port $(API_PORT) & \
+	$(PY) -m server.server --reload --port $(API_PORT) $(ROUTING_ARG) & \
 	$(WEB_DEV) & \
 	wait
 
 web: web/node_modules/.installed ## Run only the web UI (expects the API server from 'make start')
 	@$(WEB_DEV)
 
-start: install ## Start the API server in the background (logs to .server.log)
+start: install ## Start the API server in the background (logs to .server.log). ROUTING=records for records routing
 	@if [ -f $(PID_FILE) ] && kill -0 $$(cat $(PID_FILE)) 2>/dev/null; then \
 		echo "Server already running (pid $$(cat $(PID_FILE)))"; exit 0; fi; \
-	nohup $(PY) -m server.server --port $(API_PORT) > $(LOG_FILE) 2>&1 & echo $$! > $(PID_FILE); \
+	nohup $(PY) -m server.server --port $(API_PORT) $(ROUTING_ARG) > $(LOG_FILE) 2>&1 & echo $$! > $(PID_FILE); \
 	echo "Server started on port $(API_PORT) (pid $$(cat $(PID_FILE))); 'make logs' to follow output"
 
 stop: ## Stop the background API server

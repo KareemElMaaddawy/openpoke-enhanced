@@ -16,6 +16,7 @@ class RootResponse(BaseModel):
     service: str
     version: str
     endpoints: List[str]
+    routing_mode: str
 
 
 class SetTimezoneRequest(BaseModel):

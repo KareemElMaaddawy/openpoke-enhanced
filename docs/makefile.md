@@ -53,6 +53,30 @@ make start
 make web
 ```
 
+### Choosing the routing mode
+
+`ROUTING` picks how the interaction agent routes work to execution agents. It's passed to the server as `--routing`, and works with `make dev` and `make start`:
+
+```bash
+make dev ROUTING=records
+```
+
+| `ROUTING` | What runs |
+|---|---|
+| unset | `OPENPOKE_ROUTING` from your environment or `.env`, else `legacy` |
+| `legacy` | Today's system: a names-only roster, and `send_message_to_agent(agent_name, ...)` creates or reuses by name |
+| `records` | Agent records with IDs and purposes, routing by `agent_id`, and retrieval of at most K agents once the roster is large. See the [records and retrieval spec](agent-overload-records-retrieval-spec.md) |
+
+In `records` mode the roster is shown in full up to 25 active agents and retrieved above that. To see retrieval with only a few agents, lower the threshold with `OPENPOKE_FULL_ROSTER_MAX` (an integer of 0 or more; `0` always retrieves):
+
+```bash
+OPENPOKE_FULL_ROSTER_MAX=3 make dev ROUTING=records
+```
+
+The server logs the mode in effect at startup, for example `Routing mode: records (embeddings openai/text-embedding-3-small@512, K=8, full_roster_max=3)`, and in `records` mode one `Routing candidates: ...` line per interaction-agent turn. `make start` writes these to `.server.log` (follow it with `make logs`); `make dev` prints them in the terminal. `GET /api/v1/meta` also reports `routing_mode`.
+
+`make start` does nothing if the server is already running, so run `make stop` before switching modes.
+
 ### Choosing the API port
 
 The API port is `API_PORT`. It defaults to `OPENPOKE_PORT` from your environment or `.env`, and then to `8001`, matching `server/config.py`. Override it per command:

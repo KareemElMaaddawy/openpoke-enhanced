@@ -6,6 +6,7 @@ from fastapi import FastAPI, HTTPException, Request, status
 from fastapi.exceptions import RequestValidationError
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
+from pydantic import ValidationError
 
 from .config import get_settings
 from .logging_config import configure_logging, logger
@@ -44,7 +45,10 @@ def register_exception_handlers(app: FastAPI) -> None:
 
 
 configure_logging()
-_settings = get_settings()
+try:
+    _settings = get_settings()
+except ValidationError as exc:
+    raise SystemExit(f"Invalid configuration:\n{exc}") from None
 
 app = FastAPI(
     title=_settings.app_name,
@@ -63,6 +67,14 @@ app.add_middleware(
 
 register_exception_handlers(app)
 app.include_router(api_router)
+
+
+@app.on_event("startup")
+# Log the routing mode and, in records mode, import legacy roster names as agent records
+async def _init_routing() -> None:
+    from .agents.interaction_agent.routing import initialize_routing
+
+    initialize_routing()
 
 
 @app.on_event("startup")
