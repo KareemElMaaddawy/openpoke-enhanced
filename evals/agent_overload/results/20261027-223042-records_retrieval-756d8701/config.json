@@ -1,0 +1,333 @@
+{
+  "budget": {
+    "effective_max_cost_usd": 13.0,
+    "estimate_margin": 1.25,
+    "max_cost_usd": 10.0,
+    "total_cap_usd": 50.0
+  },
+  "case_set_hash": "8ac0f493fdaf81d36d07c25e22450c4cde67dbdcb913da75afb383d7267aea68",
+  "case_set_version": "v1",
+  "config_hash": "756d87012e8119aef06970178864867eac3bd1bff5c8a0988d54a901ce26d65c",
+  "end": {
+    "api_error_rate": 0.0,
+    "api_error_turns": 0,
+    "calls": 11714,
+    "capped": false,
+    "ended_at": "2026-10-27T23:12:53Z",
+    "failed": false,
+    "loop_limit_turns": 0,
+    "price_check": null,
+    "providers": {
+      "OpenAI": 11714
+    },
+    "returned_models": {
+      "gpt-6-luna": 9532,
+      "text-embedding-3-small": 2182
+    },
+    "summarizer_errors": 0,
+    "total_cost_usd": 2.143212112499987,
+    "turns": 3360,
+    "unit_errors": [],
+    "warnings": []
+  },
+  "fake_model": false,
+  "git": {
+    "dirty": false,
+    "dirty_paths": [],
+    "sha": "8f5ec02644b14c5fb385f0256ba3600e4d017c08"
+  },
+  "harness_version": "1.1.0",
+  "hashes": {
+    "harness_tree_sha256": "40d3d53574ac530da9f56a39c223631d73e2442850387d1278afd1fb1a08fd0c",
+    "interaction_system_prompt_sha256": "d8257b89da9fcb47eaf980b1f9a097c8e147c45196e569e13303c04ec9a1da37",
+    "server_tree_sha256": "b33d0a6f585de0425fda17e4730163936b364091a57c0f518b973780450055f6",
+    "summarizer_system_prompt_sha256": "8f5c0643452e89d3e0dcf8c058ed47096aa0aa48527e77733c84b5e814ed8051",
+    "tool_schemas_sha256": "3d957311ef46de6c7f5f2fc8eb173c4c213e7d45330c5ddf90f39a720b20b5bc"
+  },
+  "input_config": {
+    "budget": {
+      "estimate_margin": 1.25,
+      "max_cost_usd": 10.0,
+      "total_cap_usd": 50.0
+    },
+    "case_set": {
+      "expected_hash": "8ac0f493fdaf81d36d07c25e22450c4cde67dbdcb913da75afb383d7267aea68",
+      "manifest": "evals/agent_overload/fixtures/v1/MANIFEST.json",
+      "version": "v1"
+    },
+    "experiment": "agent_overload",
+    "harness_version": "1.1.0",
+    "method": {
+      "name": "records_retrieval",
+      "params": {
+        "embedding": {
+          "dimensions": 512,
+          "model": "openai/text-embedding-3-small"
+        },
+        "full_roster_max": 50,
+        "k": 5,
+        "max_pinned": 3,
+        "query_with_previous_user_message": false,
+        "scorer": {
+          "name": "interaction_agent"
+        },
+        "seed_purposes": "backfill",
+        "use_lexical": true,
+        "use_pins": true,
+        "w_lex": 1.0,
+        "w_rec": 0.0,
+        "w_sem": 1.0
+      },
+      "version": "1"
+    },
+    "models": {
+      "api": "openai",
+      "expected_canonical_slugs": {
+        "openai/gpt-6-luna": "openai/gpt-6-luna-20260922"
+      },
+      "extra_params": {},
+      "interaction": "openai/gpt-6-luna",
+      "openai_model_ids": {
+        "openai/gpt-6-luna": "gpt-6-luna"
+      },
+      "provider": null,
+      "seed_policy": "per_call_position",
+      "summarizer": "openai/gpt-6-luna"
+    },
+    "runtime": {
+      "concurrency": 16,
+      "max_api_error_rate": 0.02,
+      "max_retries": 5,
+      "timeout_s": 60
+    },
+    "scorer_version": "1",
+    "stats": {
+      "bootstrap_resamples": 2000,
+      "ci": 0.95,
+      "seed": 20261025
+    },
+    "suites": {
+      "sequence": {
+        "modes": [
+          "carried",
+          "corrected"
+        ],
+        "reps": 2,
+        "roster_sizes": {
+          "dev": [
+            10,
+            200
+          ],
+          "test": [
+            10,
+            50,
+            100,
+            125,
+            200
+          ]
+        }
+      },
+      "single": {
+        "reps": 2,
+        "roster_sizes": {
+          "dev": [
+            10,
+            25,
+            50,
+            100,
+            125,
+            200
+          ],
+          "test": [
+            10,
+            25,
+            50,
+            100,
+            125,
+            200
+          ]
+        }
+      },
+      "token_probe": {
+        "enabled": true
+      }
+    }
+  },
+  "max_tool_iterations": 8,
+  "method": {
+    "cache": {
+      "dir": "evals/agent_overload/cache/records_retrieval/1",
+      "embeddings_sha256": "1672623027fdb2dccadb783cf88427c64ae9189794edfb3bbc01218d46dc8182",
+      "purposes_sha256": "b3370ae5ea1f4eb447d89c24b2b422d48f75840026670a71f8b0b08027870faf"
+    },
+    "embedding": {
+      "dimensions": 512,
+      "model": "openai/text-embedding-3-small"
+    },
+    "max_tool_iterations": 8,
+    "method_source_sha256": "124fac0899b7370816600de9370c99fca493e5dd8350d66ea0bf588b58de892e",
+    "name": "records_retrieval",
+    "params": {
+      "embedding": {
+        "dimensions": 512,
+        "model": "openai/text-embedding-3-small"
+      },
+      "full_roster_max": 50,
+      "k": 5,
+      "max_pinned": 3,
+      "pin_lookback": 3,
+      "query_with_previous_user_message": false,
+      "render_recent": 1,
+      "rrf_k": 60,
+      "scorer": {
+        "name": "interaction_agent"
+      },
+      "seed_purposes": "backfill",
+      "use_lexical": true,
+      "use_pins": true,
+      "use_semantic": true,
+      "w_lex": 1.0,
+      "w_rec": 0.0,
+      "w_sem": 1.0
+    },
+    "prepare": {
+      "embed_calls": 0,
+      "empty_purposes": 0,
+      "purpose_calls": 0
+    },
+    "purpose_prompt_sha256": "8b347a73503b0a942f1dca820c02c12a87f22965bff6995fc435254be6938736",
+    "scorer": {
+      "name": "interaction_agent",
+      "version": "1"
+    },
+    "summarizer_model": "openai/gpt-6-luna",
+    "system_prompt_sha256": "55b285f719caa44ce922b0784410aef9b7e51cdca50128f14658264fabf4b689",
+    "tool_schemas_sha256": "92c6a1228304d6cf3dc50850a4d02a88566896080f6a61d1d23e01e602f521d0",
+    "version": "1"
+  },
+  "method_after_run": {
+    "cache": {
+      "dir": "evals/agent_overload/cache/records_retrieval/1",
+      "embeddings_sha256": "66373c7ad0126ac62900dd37960592ce3c85be7a1383902d6bdae99ee885f533",
+      "purposes_sha256": "486e03a69369d13a6cdc43c5aebb34b44f14980363238d8227bf6e04a996a4c5"
+    },
+    "embedding": {
+      "dimensions": 512,
+      "model": "openai/text-embedding-3-small"
+    },
+    "max_tool_iterations": 8,
+    "method_source_sha256": "124fac0899b7370816600de9370c99fca493e5dd8350d66ea0bf588b58de892e",
+    "name": "records_retrieval",
+    "params": {
+      "embedding": {
+        "dimensions": 512,
+        "model": "openai/text-embedding-3-small"
+      },
+      "full_roster_max": 50,
+      "k": 5,
+      "max_pinned": 3,
+      "pin_lookback": 3,
+      "query_with_previous_user_message": false,
+      "render_recent": 1,
+      "rrf_k": 60,
+      "scorer": {
+        "name": "interaction_agent"
+      },
+      "seed_purposes": "backfill",
+      "use_lexical": true,
+      "use_pins": true,
+      "use_semantic": true,
+      "w_lex": 1.0,
+      "w_rec": 0.0,
+      "w_sem": 1.0
+    },
+    "prepare": {
+      "embed_calls": 5,
+      "empty_purposes": 0,
+      "purpose_calls": 308
+    },
+    "purpose_prompt_sha256": "8b347a73503b0a942f1dca820c02c12a87f22965bff6995fc435254be6938736",
+    "scorer": {
+      "name": "interaction_agent",
+      "version": "1"
+    },
+    "summarizer_model": "openai/gpt-6-luna",
+    "system_prompt_sha256": "55b285f719caa44ce922b0784410aef9b7e51cdca50128f14658264fabf4b689",
+    "tool_schemas_sha256": "92c6a1228304d6cf3dc50850a4d02a88566896080f6a61d1d23e01e602f521d0",
+    "version": "1"
+  },
+  "models": {
+    "accept_model_change": false,
+    "api": "openai",
+    "expected_canonical_slugs": {
+      "openai/gpt-6-luna": "openai/gpt-6-luna-20260922"
+    },
+    "extra_params": {},
+    "interaction": "openai/gpt-6-luna",
+    "observed_canonical_slugs": {
+      "openai/gpt-6-luna": "gpt-6-luna"
+    },
+    "openai_model_ids": {
+      "openai/gpt-6-luna": "gpt-6-luna"
+    },
+    "provider": null,
+    "summarizer": "openai/gpt-6-luna"
+  },
+  "plan": {
+    "modes": [
+      "carried",
+      "corrected"
+    ],
+    "profile": "test",
+    "sequence_limit": null,
+    "sequence_reps": 2,
+    "sequence_sizes": {
+      "test": [
+        10,
+        50,
+        100,
+        125,
+        200
+      ]
+    },
+    "single_limit": null,
+    "single_reps": 2,
+    "single_sizes": {
+      "test": [
+        10,
+        25,
+        50,
+        100,
+        125,
+        200
+      ]
+    },
+    "splits": [
+      "test"
+    ],
+    "token_probe": true
+  },
+  "python_version": "3.11.7",
+  "run_id": "20261027-223042-records_retrieval-756d8701",
+  "runtime": {
+    "concurrency": 16,
+    "max_api_error_rate": 0.02,
+    "max_retries": 5,
+    "timeout_s": 60
+  },
+  "runtime_pacing": {
+    "note": "operational; not part of the config hash",
+    "rpm_per_model": 230.0
+  },
+  "scorer_version": "1",
+  "started_at": "2026-10-27T22:30:42Z",
+  "stats": {
+    "bootstrap_resamples": 2000,
+    "ci": 0.95,
+    "seed": 20261025
+  },
+  "summarization": {
+    "conversation_summary_tail_size": 10,
+    "conversation_summary_threshold": 100
+  }
+}

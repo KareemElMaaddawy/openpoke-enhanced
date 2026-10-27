@@ -436,7 +436,7 @@ class ProbeTest(unittest.TestCase):
             self.assertFalse((Path(tmp) / "l.jsonl").exists())
         self.assertEqual(result["meta"]["params"]["max_pinned"], 2)
         self.assertEqual(set(result["summary"]["by"]["N"]), {"50", "200"})
-        self.assertEqual(set(result["summary"]["overall"]["recall_at"]), {"1", "3", "5", "8", "10", "20"})
+        self.assertEqual(set(result["summary"]["overall"]["recall_at"]), {"1", "3", "5", "8", "10", "12", "20"})
         self.assertIn("pin_only_share_of_hits_at_k", result["summary"]["overall"])
 
 

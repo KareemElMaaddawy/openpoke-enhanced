@@ -30,8 +30,9 @@ from server.services.routing.query import build_queries
 from server.services.routing.scorer import InteractionAgentScorer, ScoringInput
 from server.tests.fakes import FakeEmbedder
 
-# Always retrieve unless a test says otherwise.
-RETRIEVE = RetrievalParams(full_roster_max=0)
+# Always retrieve unless a test says otherwise. The context query is on so its tests
+# exercise it, although the frozen default turns it off.
+RETRIEVE = RetrievalParams(full_roster_max=0, query_with_previous_user_message=True)
 
 
 def view(agent_id, name, purpose="", work=(), last_active="2026-10-01 09:00:00", aliases=()):

@@ -75,10 +75,10 @@ class FullRosterMaxSettingTest(unittest.TestCase):
         with mock.patch.dict(os.environ, env, clear=True):
             return Settings()
 
-    def test_unset_gives_default_25(self) -> None:
-        self.assertEqual(RetrievalParams().full_roster_max, 25)
-        self.assertEqual(self._settings().full_roster_max, 25)
-        self.assertEqual(self._settings("").full_roster_max, 25)
+    def test_unset_gives_default_50(self) -> None:
+        self.assertEqual(RetrievalParams().full_roster_max, 50)
+        self.assertEqual(self._settings().full_roster_max, 50)
+        self.assertEqual(self._settings("").full_roster_max, 50)
 
     def test_valid_values_are_used(self) -> None:
         self.assertEqual(self._settings("3").full_roster_max, 3)
@@ -107,7 +107,7 @@ class FullRosterMaxSettingTest(unittest.TestCase):
     def test_startup_line_shows_mode_and_full_roster_max(self) -> None:
         self.assertEqual(
             describe_routing(make_settings(routing_mode="records", full_roster_max=3)),
-            "Routing mode: records (embeddings openai/text-embedding-3-small@512, K=8, full_roster_max=3)",
+            "Routing mode: records (embeddings openai/text-embedding-3-small@512, K=5, full_roster_max=3)",
         )
         self.assertEqual(describe_routing(make_settings(routing_mode="legacy")), "Routing mode: legacy")
 
@@ -123,7 +123,7 @@ class InitializeRoutingTest(unittest.TestCase):
         with self.assertLogs("openpoke.server", "INFO") as logs:
             initialize_routing()
         self.assertIn(
-            "Routing mode: records (embeddings openai/text-embedding-3-small@512, K=8, full_roster_max=3)",
+            "Routing mode: records (embeddings openai/text-embedding-3-small@512, K=5, full_roster_max=3)",
             "\n".join(logs.output),
         )
         records = self.state.records.all()

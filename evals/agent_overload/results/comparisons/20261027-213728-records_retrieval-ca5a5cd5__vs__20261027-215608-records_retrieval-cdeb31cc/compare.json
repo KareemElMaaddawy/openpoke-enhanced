@@ -1,0 +1,1412 @@
+{
+  "baseline": {
+    "method": {
+      "cache": {
+        "dir": "evals/agent_overload/cache/records_retrieval/1",
+        "embeddings_sha256": "51b7206bb9cf775cdb9258549537af964f8da0a1399a6acf7b15950fc5d521c6",
+        "purposes_sha256": "b3370ae5ea1f4eb447d89c24b2b422d48f75840026670a71f8b0b08027870faf"
+      },
+      "embedding": {
+        "dimensions": 512,
+        "model": "openai/text-embedding-3-small"
+      },
+      "max_tool_iterations": 8,
+      "method_source_sha256": "124fac0899b7370816600de9370c99fca493e5dd8350d66ea0bf588b58de892e",
+      "name": "records_retrieval",
+      "params": {
+        "embedding": {
+          "dimensions": 512,
+          "model": "openai/text-embedding-3-small"
+        },
+        "full_roster_max": 100000,
+        "k": 8,
+        "max_pinned": 3,
+        "pin_lookback": 3,
+        "query_with_previous_user_message": true,
+        "render_recent": 1,
+        "rrf_k": 60,
+        "scorer": {
+          "name": "interaction_agent"
+        },
+        "seed_purposes": "backfill",
+        "use_lexical": true,
+        "use_pins": true,
+        "use_semantic": true,
+        "w_lex": 1.0,
+        "w_rec": 0.0,
+        "w_sem": 1.0
+      },
+      "prepare": {
+        "embed_calls": 0,
+        "empty_purposes": 0,
+        "purpose_calls": 0
+      },
+      "purpose_prompt_sha256": "8b347a73503b0a942f1dca820c02c12a87f22965bff6995fc435254be6938736",
+      "scorer": {
+        "name": "interaction_agent",
+        "version": "1"
+      },
+      "summarizer_model": "openai/gpt-6-luna",
+      "system_prompt_sha256": "55b285f719caa44ce922b0784410aef9b7e51cdca50128f14658264fabf4b689",
+      "tool_schemas_sha256": "92c6a1228304d6cf3dc50850a4d02a88566896080f6a61d1d23e01e602f521d0",
+      "version": "1"
+    },
+    "run_id": "20261027-213728-records_retrieval-ca5a5cd5"
+  },
+  "candidate": {
+    "method": {
+      "cache": {
+        "dir": "evals/agent_overload/cache/records_retrieval/1",
+        "embeddings_sha256": "51b7206bb9cf775cdb9258549537af964f8da0a1399a6acf7b15950fc5d521c6",
+        "purposes_sha256": "b3370ae5ea1f4eb447d89c24b2b422d48f75840026670a71f8b0b08027870faf"
+      },
+      "embedding": {
+        "dimensions": 512,
+        "model": "openai/text-embedding-3-small"
+      },
+      "max_tool_iterations": 8,
+      "method_source_sha256": "124fac0899b7370816600de9370c99fca493e5dd8350d66ea0bf588b58de892e",
+      "name": "records_retrieval",
+      "params": {
+        "embedding": {
+          "dimensions": 512,
+          "model": "openai/text-embedding-3-small"
+        },
+        "full_roster_max": 0,
+        "k": 5,
+        "max_pinned": 3,
+        "pin_lookback": 3,
+        "query_with_previous_user_message": false,
+        "render_recent": 1,
+        "rrf_k": 60,
+        "scorer": {
+          "name": "interaction_agent"
+        },
+        "seed_purposes": "backfill",
+        "use_lexical": true,
+        "use_pins": true,
+        "use_semantic": true,
+        "w_lex": 1.0,
+        "w_rec": 0.0,
+        "w_sem": 1.0
+      },
+      "prepare": {
+        "embed_calls": 0,
+        "empty_purposes": 0,
+        "purpose_calls": 0
+      },
+      "purpose_prompt_sha256": "8b347a73503b0a942f1dca820c02c12a87f22965bff6995fc435254be6938736",
+      "scorer": {
+        "name": "interaction_agent",
+        "version": "1"
+      },
+      "summarizer_model": "openai/gpt-6-luna",
+      "system_prompt_sha256": "55b285f719caa44ce922b0784410aef9b7e51cdca50128f14658264fabf4b689",
+      "tool_schemas_sha256": "92c6a1228304d6cf3dc50850a4d02a88566896080f6a61d1d23e01e602f521d0",
+      "version": "1"
+    },
+    "run_id": "20261027-215608-records_retrieval-cdeb31cc"
+  },
+  "case_set_hash": "8ac0f493fdaf81d36d07c25e22450c4cde67dbdcb913da75afb383d7267aea68",
+  "groups": {
+    "dev|sequence|carried|10": {
+      "mcnemar": {
+        "baseline_only_correct": 3,
+        "candidate_only_correct": 1,
+        "p_value": 0.625
+      },
+      "metrics": {
+        "accuracy": {
+          "baseline": 0.8958333333333334,
+          "candidate": 0.8541666666666666,
+          "difference": {
+            "ci": [
+              -0.08333333333333337,
+              0.04166666666666663
+            ],
+            "value": -0.04166666666666674
+          },
+          "kind": "pct"
+        },
+        "accuracy_lenient": {
+          "baseline": 0.9166666666666666,
+          "candidate": 0.8541666666666666,
+          "difference": {
+            "ci": [
+              -0.14583333333333326,
+              0.04166666666666663
+            ],
+            "value": -0.0625
+          },
+          "kind": "pct"
+        },
+        "cost_per_turn_mean": {
+          "baseline": 0.0007250309895833333,
+          "candidate": 0.0006346191145833334,
+          "difference": {
+            "ci": [
+              -0.0001108713541666665,
+              -6.629151041666651e-05
+            ],
+            "value": -9.041187499999996e-05
+          },
+          "kind": "usd"
+        },
+        "extra_delegation_rate": {
+          "baseline": 0.041666666666666664,
+          "candidate": 0.08333333333333333,
+          "difference": {
+            "ci": [
+              0.0,
+              0.08333333333333334
+            ],
+            "value": 0.041666666666666664
+          },
+          "kind": "pct"
+        },
+        "false_reuse_rate": {
+          "baseline": 0.0,
+          "candidate": 0.0,
+          "difference": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "value": 0.0
+          },
+          "kind": "pct"
+        },
+        "false_spawn_rate": {
+          "baseline": 0.03333333333333333,
+          "candidate": 0.1,
+          "difference": {
+            "ci": [
+              -0.0625,
+              0.14285714285714285
+            ],
+            "value": 0.06666666666666668
+          },
+          "kind": "pct"
+        },
+        "input_tokens_per_turn_mean": {
+          "baseline": 18638.125,
+          "candidate": 16382.333333333334,
+          "difference": {
+            "ci": [
+              -3236.958333333334,
+              -1274.625
+            ],
+            "value": -2255.791666666666
+          },
+          "kind": "int"
+        },
+        "invalid_call_rate": {
+          "baseline": 0.020833333333333332,
+          "candidate": 0.0,
+          "difference": {
+            "ci": [
+              -0.0625,
+              0.0
+            ],
+            "value": -0.020833333333333332
+          },
+          "kind": "pct"
+        },
+        "latency_ms_per_turn_mean": {
+          "baseline": 10941.868677997263,
+          "candidate": 7098.969084200992,
+          "difference": {
+            "ci": [
+              -4486.641835891836,
+              -3027.5282492851447
+            ],
+            "value": -3842.899593796271
+          },
+          "kind": "ms"
+        },
+        "misroute_rate": {
+          "baseline": 0.03333333333333333,
+          "candidate": 0.0,
+          "difference": {
+            "ci": [
+              -0.0967741935483871,
+              0.0
+            ],
+            "value": -0.03333333333333333
+          },
+          "kind": "pct"
+        },
+        "missed_delegation_rate": {
+          "baseline": 0.0,
+          "candidate": 0.0,
+          "difference": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "value": 0.0
+          },
+          "kind": "pct"
+        }
+      },
+      "templates": 48,
+      "turns_baseline": 48,
+      "turns_candidate": 48
+    },
+    "dev|sequence|carried|200": {
+      "mcnemar": {
+        "baseline_only_correct": 6,
+        "candidate_only_correct": 1,
+        "p_value": 0.125
+      },
+      "metrics": {
+        "accuracy": {
+          "baseline": 0.8958333333333334,
+          "candidate": 0.7916666666666666,
+          "difference": {
+            "ci": [
+              -0.16666666666666663,
+              -0.04166666666666663
+            ],
+            "value": -0.10416666666666674
+          },
+          "kind": "pct"
+        },
+        "accuracy_lenient": {
+          "baseline": 0.9166666666666666,
+          "candidate": 0.8541666666666666,
+          "difference": {
+            "ci": [
+              -0.08333333333333337,
+              -0.02083333333333326
+            ],
+            "value": -0.0625
+          },
+          "kind": "pct"
+        },
+        "cost_per_turn_mean": {
+          "baseline": 0.003981328645833333,
+          "candidate": 0.00060714875,
+          "difference": {
+            "ci": [
+              -0.0035069280729166665,
+              -0.0032661080729166677
+            ],
+            "value": -0.003374179895833333
+          },
+          "kind": "usd"
+        },
+        "extra_delegation_rate": {
+          "baseline": 0.0625,
+          "candidate": 0.0625,
+          "difference": {
+            "ci": [
+              -0.04166666666666667,
+              0.0625
+            ],
+            "value": 0.0
+          },
+          "kind": "pct"
+        },
+        "false_reuse_rate": {
+          "baseline": 0.0,
+          "candidate": 0.0,
+          "difference": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "value": 0.0
+          },
+          "kind": "pct"
+        },
+        "false_spawn_rate": {
+          "baseline": 0.03333333333333333,
+          "candidate": 0.13333333333333333,
+          "difference": {
+            "ci": [
+              0.0,
+              0.2
+            ],
+            "value": 0.1
+          },
+          "kind": "pct"
+        },
+        "input_tokens_per_turn_mean": {
+          "baseline": 94754.75,
+          "candidate": 16407.645833333332,
+          "difference": {
+            "ci": [
+              -81816.66666666667,
+              -73467.1875
+            ],
+            "value": -78347.10416666667
+          },
+          "kind": "int"
+        },
+        "invalid_call_rate": {
+          "baseline": 0.020833333333333332,
+          "candidate": 0.0,
+          "difference": {
+            "ci": [
+              -0.0625,
+              0.0
+            ],
+            "value": -0.020833333333333332
+          },
+          "kind": "pct"
+        },
+        "latency_ms_per_turn_mean": {
+          "baseline": 11716.794693629103,
+          "candidate": 6731.468302910798,
+          "difference": {
+            "ci": [
+              -6066.848204388711,
+              -3972.513312677621
+            ],
+            "value": -4985.3263907183045
+          },
+          "kind": "ms"
+        },
+        "misroute_rate": {
+          "baseline": 0.0,
+          "candidate": 0.0,
+          "difference": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "value": 0.0
+          },
+          "kind": "pct"
+        },
+        "missed_delegation_rate": {
+          "baseline": 0.0,
+          "candidate": 0.0,
+          "difference": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "value": 0.0
+          },
+          "kind": "pct"
+        }
+      },
+      "templates": 48,
+      "turns_baseline": 48,
+      "turns_candidate": 48
+    },
+    "dev|sequence|corrected|10": {
+      "mcnemar": {
+        "baseline_only_correct": 1,
+        "candidate_only_correct": 5,
+        "p_value": 0.21875
+      },
+      "metrics": {
+        "accuracy": {
+          "baseline": 0.875,
+          "candidate": 0.9583333333333334,
+          "difference": {
+            "ci": [
+              0.0,
+              0.1875
+            ],
+            "value": 0.08333333333333337
+          },
+          "kind": "pct"
+        },
+        "accuracy_lenient": {
+          "baseline": 0.875,
+          "candidate": 0.9583333333333334,
+          "difference": {
+            "ci": [
+              0.0,
+              0.1875
+            ],
+            "value": 0.08333333333333337
+          },
+          "kind": "pct"
+        },
+        "cost_per_turn_mean": {
+          "baseline": 0.0007104565104166667,
+          "candidate": 0.0005950178645833334,
+          "difference": {
+            "ci": [
+              -0.00015873249999999992,
+              -8.469677083333335e-05
+            ],
+            "value": -0.00011543864583333325
+          },
+          "kind": "usd"
+        },
+        "extra_delegation_rate": {
+          "baseline": 0.0625,
+          "candidate": 0.0,
+          "difference": {
+            "ci": [
+              -0.125,
+              0.0
+            ],
+            "value": -0.0625
+          },
+          "kind": "pct"
+        },
+        "false_reuse_rate": {
+          "baseline": 0.0,
+          "candidate": 0.0,
+          "difference": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "value": 0.0
+          },
+          "kind": "pct"
+        },
+        "false_spawn_rate": {
+          "baseline": 0.1,
+          "candidate": 0.06666666666666667,
+          "difference": {
+            "ci": [
+              -0.14285714285714285,
+              0.06451612903225806
+            ],
+            "value": -0.03333333333333334
+          },
+          "kind": "pct"
+        },
+        "input_tokens_per_turn_mean": {
+          "baseline": 18154.020833333332,
+          "candidate": 15651.520833333334,
+          "difference": {
+            "ci": [
+              -2887.979166666668,
+              -1983.4375
+            ],
+            "value": -2502.499999999998
+          },
+          "kind": "int"
+        },
+        "invalid_call_rate": {
+          "baseline": 0.0,
+          "candidate": 0.0,
+          "difference": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "value": 0.0
+          },
+          "kind": "pct"
+        },
+        "latency_ms_per_turn_mean": {
+          "baseline": 9260.054153729774,
+          "candidate": 6594.968970588525,
+          "difference": {
+            "ci": [
+              -3907.015258024331,
+              -1785.1867549761664
+            ],
+            "value": -2665.085183141249
+          },
+          "kind": "ms"
+        },
+        "misroute_rate": {
+          "baseline": 0.0,
+          "candidate": 0.0,
+          "difference": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "value": 0.0
+          },
+          "kind": "pct"
+        },
+        "missed_delegation_rate": {
+          "baseline": 0.0,
+          "candidate": 0.0,
+          "difference": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "value": 0.0
+          },
+          "kind": "pct"
+        }
+      },
+      "templates": 48,
+      "turns_baseline": 48,
+      "turns_candidate": 48
+    },
+    "dev|sequence|corrected|200": {
+      "mcnemar": {
+        "baseline_only_correct": 5,
+        "candidate_only_correct": 0,
+        "p_value": 0.0625
+      },
+      "metrics": {
+        "accuracy": {
+          "baseline": 0.9791666666666666,
+          "candidate": 0.875,
+          "difference": {
+            "ci": [
+              -0.16666666666666663,
+              -0.04166666666666663
+            ],
+            "value": -0.10416666666666663
+          },
+          "kind": "pct"
+        },
+        "accuracy_lenient": {
+          "baseline": 0.9791666666666666,
+          "candidate": 0.875,
+          "difference": {
+            "ci": [
+              -0.16666666666666663,
+              -0.04166666666666663
+            ],
+            "value": -0.10416666666666663
+          },
+          "kind": "pct"
+        },
+        "cost_per_turn_mean": {
+          "baseline": 0.003940209114583333,
+          "candidate": 0.0006327155208333333,
+          "difference": {
+            "ci": [
+              -0.003415063958333333,
+              -0.003199923229166667
+            ],
+            "value": -0.00330749359375
+          },
+          "kind": "usd"
+        },
+        "extra_delegation_rate": {
+          "baseline": 0.020833333333333332,
+          "candidate": 0.0625,
+          "difference": {
+            "ci": [
+              0.0,
+              0.08333333333333334
+            ],
+            "value": 0.04166666666666667
+          },
+          "kind": "pct"
+        },
+        "false_reuse_rate": {
+          "baseline": 0.0,
+          "candidate": 0.0,
+          "difference": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "value": 0.0
+          },
+          "kind": "pct"
+        },
+        "false_spawn_rate": {
+          "baseline": 0.0,
+          "candidate": 0.1,
+          "difference": {
+            "ci": [
+              0.03225806451612903,
+              0.14285714285714285
+            ],
+            "value": 0.1
+          },
+          "kind": "pct"
+        },
+        "input_tokens_per_turn_mean": {
+          "baseline": 88594.29166666667,
+          "candidate": 16074.625,
+          "difference": {
+            "ci": [
+              -73506.95833333334,
+              -71532.375
+            ],
+            "value": -72519.66666666667
+          },
+          "kind": "int"
+        },
+        "invalid_call_rate": {
+          "baseline": 0.0,
+          "candidate": 0.0,
+          "difference": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "value": 0.0
+          },
+          "kind": "pct"
+        },
+        "latency_ms_per_turn_mean": {
+          "baseline": 11624.588740548157,
+          "candidate": 6750.3418019769015,
+          "difference": {
+            "ci": [
+              -7126.471878757003,
+              -2622.0219983855104
+            ],
+            "value": -4874.246938571256
+          },
+          "kind": "ms"
+        },
+        "misroute_rate": {
+          "baseline": 0.0,
+          "candidate": 0.0,
+          "difference": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "value": 0.0
+          },
+          "kind": "pct"
+        },
+        "missed_delegation_rate": {
+          "baseline": 0.0,
+          "candidate": 0.0,
+          "difference": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "value": 0.0
+          },
+          "kind": "pct"
+        }
+      },
+      "templates": 48,
+      "turns_baseline": 48,
+      "turns_candidate": 48
+    },
+    "dev|single|-|10": {
+      "mcnemar": {
+        "baseline_only_correct": 4,
+        "candidate_only_correct": 3,
+        "p_value": 1.0
+      },
+      "metrics": {
+        "accuracy": {
+          "baseline": 0.9,
+          "candidate": 0.8833333333333333,
+          "difference": {
+            "ci": [
+              -0.09999999999999998,
+              0.06666666666666665
+            ],
+            "value": -0.01666666666666672
+          },
+          "kind": "pct"
+        },
+        "accuracy_lenient": {
+          "baseline": 0.9,
+          "candidate": 0.8833333333333333,
+          "difference": {
+            "ci": [
+              -0.09999999999999998,
+              0.06666666666666665
+            ],
+            "value": -0.01666666666666672
+          },
+          "kind": "pct"
+        },
+        "cost_per_turn_mean": {
+          "baseline": 0.0005040866666666667,
+          "candidate": 0.000459644,
+          "difference": {
+            "ci": [
+              -6.653981666666656e-05,
+              -2.105980208333332e-05
+            ],
+            "value": -4.44426666666667e-05
+          },
+          "kind": "usd"
+        },
+        "extra_delegation_rate": {
+          "baseline": 0.03333333333333333,
+          "candidate": 0.016666666666666666,
+          "difference": {
+            "ci": [
+              -0.08333333333333333,
+              0.03333333333333334
+            ],
+            "value": -0.016666666666666666
+          },
+          "kind": "pct"
+        },
+        "false_reuse_rate": {
+          "baseline": 0.15384615384615385,
+          "candidate": 0.07692307692307693,
+          "difference": {
+            "ci": [
+              -0.25,
+              0.0
+            ],
+            "value": -0.07692307692307693
+          },
+          "kind": "pct"
+        },
+        "false_spawn_rate": {
+          "baseline": 0.024390243902439025,
+          "candidate": 0.0975609756097561,
+          "difference": {
+            "ci": [
+              0.0,
+              0.16326530612244897
+            ],
+            "value": 0.07317073170731708
+          },
+          "kind": "pct"
+        },
+        "input_tokens_per_turn_mean": {
+          "baseline": 14240.183333333332,
+          "candidate": 12764.166666666666,
+          "difference": {
+            "ci": [
+              -2002.1487500000003,
+              -904.0037500000009
+            ],
+            "value": -1476.0166666666664
+          },
+          "kind": "int"
+        },
+        "invalid_call_rate": {
+          "baseline": 0.0,
+          "candidate": 0.016666666666666666,
+          "difference": {
+            "ci": [
+              0.0,
+              0.05
+            ],
+            "value": 0.016666666666666666
+          },
+          "kind": "pct"
+        },
+        "latency_ms_per_turn_mean": {
+          "baseline": 13781.402641589133,
+          "candidate": 7192.179822995483,
+          "difference": {
+            "ci": [
+              -8966.86673548771,
+              -4435.872303208257
+            ],
+            "value": -6589.22281859365
+          },
+          "kind": "ms"
+        },
+        "misroute_rate": {
+          "baseline": 0.0,
+          "candidate": 0.0,
+          "difference": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "value": 0.0
+          },
+          "kind": "pct"
+        },
+        "missed_delegation_rate": {
+          "baseline": 0.018518518518518517,
+          "candidate": 0.018518518518518517,
+          "difference": {
+            "ci": [
+              -0.05555555555555555,
+              0.05454545454545454
+            ],
+            "value": 0.0
+          },
+          "kind": "pct"
+        }
+      },
+      "templates": 60,
+      "turns_baseline": 60,
+      "turns_candidate": 60
+    },
+    "dev|single|-|200": {
+      "mcnemar": {
+        "baseline_only_correct": 6,
+        "candidate_only_correct": 3,
+        "p_value": 0.5078125
+      },
+      "metrics": {
+        "accuracy": {
+          "baseline": 0.9166666666666666,
+          "candidate": 0.8666666666666667,
+          "difference": {
+            "ci": [
+              -0.15000000000000002,
+              0.04999999999999993
+            ],
+            "value": -0.04999999999999993
+          },
+          "kind": "pct"
+        },
+        "accuracy_lenient": {
+          "baseline": 0.9166666666666666,
+          "candidate": 0.8666666666666667,
+          "difference": {
+            "ci": [
+              -0.15000000000000002,
+              0.04999999999999993
+            ],
+            "value": -0.04999999999999993
+          },
+          "kind": "pct"
+        },
+        "cost_per_turn_mean": {
+          "baseline": 0.003517718750000001,
+          "candidate": 0.0004473996249999999,
+          "difference": {
+            "ci": [
+              -0.003302652908333333,
+              -0.0028126461979166672
+            ],
+            "value": -0.003070319125000001
+          },
+          "kind": "usd"
+        },
+        "extra_delegation_rate": {
+          "baseline": 0.016666666666666666,
+          "candidate": 0.016666666666666666,
+          "difference": {
+            "ci": [
+              -0.05,
+              0.05
+            ],
+            "value": 0.0
+          },
+          "kind": "pct"
+        },
+        "false_reuse_rate": {
+          "baseline": 0.15384615384615385,
+          "candidate": 0.0,
+          "difference": {
+            "ci": [
+              -0.375,
+              0.0
+            ],
+            "value": -0.15384615384615385
+          },
+          "kind": "pct"
+        },
+        "false_spawn_rate": {
+          "baseline": 0.024390243902439025,
+          "candidate": 0.12195121951219512,
+          "difference": {
+            "ci": [
+              -0.021739130434782608,
+              0.21428571428571427
+            ],
+            "value": 0.0975609756097561
+          },
+          "kind": "pct"
+        },
+        "input_tokens_per_turn_mean": {
+          "baseline": 91638.83333333333,
+          "candidate": 12368.233333333334,
+          "difference": {
+            "ci": [
+              -82382.58416666667,
+              -75972.83374999999
+            ],
+            "value": -79270.59999999999
+          },
+          "kind": "int"
+        },
+        "invalid_call_rate": {
+          "baseline": 0.0,
+          "candidate": 0.0,
+          "difference": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "value": 0.0
+          },
+          "kind": "pct"
+        },
+        "latency_ms_per_turn_mean": {
+          "baseline": 13427.365252014715,
+          "candidate": 6531.346886717559,
+          "difference": {
+            "ci": [
+              -9820.118532569322,
+              -4316.972756926454
+            ],
+            "value": -6896.018365297156
+          },
+          "kind": "ms"
+        },
+        "misroute_rate": {
+          "baseline": 0.024390243902439025,
+          "candidate": 0.024390243902439025,
+          "difference": {
+            "ci": [
+              -0.06898556535685642,
+              0.07147212543554023
+            ],
+            "value": 0.0
+          },
+          "kind": "pct"
+        },
+        "missed_delegation_rate": {
+          "baseline": 0.0,
+          "candidate": 0.018518518518518517,
+          "difference": {
+            "ci": [
+              0.0,
+              0.057692307692307696
+            ],
+            "value": 0.018518518518518517
+          },
+          "kind": "pct"
+        }
+      },
+      "templates": 60,
+      "turns_baseline": 60,
+      "turns_candidate": 60
+    }
+  },
+  "pooled": {
+    "dev|sequence|carried|all_N": {
+      "mcnemar": {
+        "baseline_only_correct": 9,
+        "candidate_only_correct": 2,
+        "p_value": 0.0654296875
+      },
+      "metrics": {
+        "accuracy": {
+          "baseline": 0.8958333333333334,
+          "candidate": 0.8229166666666666,
+          "difference": {
+            "ci": [
+              -0.10416666666666674,
+              -0.04166666666666663
+            ],
+            "value": -0.07291666666666674
+          },
+          "kind": "pct"
+        },
+        "accuracy_lenient": {
+          "baseline": 0.9166666666666666,
+          "candidate": 0.8541666666666666,
+          "difference": {
+            "ci": [
+              -0.08333333333333337,
+              -0.02083333333333337
+            ],
+            "value": -0.0625
+          },
+          "kind": "pct"
+        },
+        "cost_per_turn_mean": {
+          "baseline": 0.0023531798177083333,
+          "candidate": 0.0006208839322916667,
+          "difference": {
+            "ci": [
+              -0.0018091379166666668,
+              -0.0016634794270833334
+            ],
+            "value": -0.0017322958854166666
+          },
+          "kind": "usd"
+        },
+        "extra_delegation_rate": {
+          "baseline": 0.052083333333333336,
+          "candidate": 0.07291666666666667,
+          "difference": {
+            "ci": [
+              -0.020833333333333332,
+              0.06250000000000001
+            ],
+            "value": 0.020833333333333336
+          },
+          "kind": "pct"
+        },
+        "false_reuse_rate": {
+          "baseline": 0.0,
+          "candidate": 0.0,
+          "difference": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "value": 0.0
+          },
+          "kind": "pct"
+        },
+        "false_spawn_rate": {
+          "baseline": 0.03333333333333333,
+          "candidate": 0.11666666666666667,
+          "difference": {
+            "ci": [
+              0.0625,
+              0.12068965517241378
+            ],
+            "value": 0.08333333333333334
+          },
+          "kind": "pct"
+        },
+        "input_tokens_per_turn_mean": {
+          "baseline": 56696.4375,
+          "candidate": 16394.989583333332,
+          "difference": {
+            "ci": [
+              -41920.4375,
+              -37609.95833333333
+            ],
+            "value": -40301.44791666667
+          },
+          "kind": "int"
+        },
+        "invalid_call_rate": {
+          "baseline": 0.020833333333333332,
+          "candidate": 0.0,
+          "difference": {
+            "ci": [
+              -0.041666666666666664,
+              0.0
+            ],
+            "value": -0.020833333333333332
+          },
+          "kind": "pct"
+        },
+        "latency_ms_per_turn_mean": {
+          "baseline": 11329.331685813182,
+          "candidate": 6915.218693555896,
+          "difference": {
+            "ci": [
+              -5276.7450201402735,
+              -3578.825319382304
+            ],
+            "value": -4414.112992257286
+          },
+          "kind": "ms"
+        },
+        "misroute_rate": {
+          "baseline": 0.016666666666666666,
+          "candidate": 0.0,
+          "difference": {
+            "ci": [
+              -0.04838709677419355,
+              0.0
+            ],
+            "value": -0.016666666666666666
+          },
+          "kind": "pct"
+        },
+        "missed_delegation_rate": {
+          "baseline": 0.0,
+          "candidate": 0.0,
+          "difference": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "value": 0.0
+          },
+          "kind": "pct"
+        }
+      },
+      "templates": 96,
+      "turns_baseline": 96,
+      "turns_candidate": 96
+    },
+    "dev|sequence|corrected|all_N": {
+      "mcnemar": {
+        "baseline_only_correct": 6,
+        "candidate_only_correct": 5,
+        "p_value": 1.0
+      },
+      "metrics": {
+        "accuracy": {
+          "baseline": 0.9270833333333334,
+          "candidate": 0.9166666666666666,
+          "difference": {
+            "ci": [
+              -0.0625,
+              0.03125
+            ],
+            "value": -0.01041666666666674
+          },
+          "kind": "pct"
+        },
+        "accuracy_lenient": {
+          "baseline": 0.9270833333333334,
+          "candidate": 0.9166666666666666,
+          "difference": {
+            "ci": [
+              -0.0625,
+              0.03125
+            ],
+            "value": -0.01041666666666674
+          },
+          "kind": "pct"
+        },
+        "cost_per_turn_mean": {
+          "baseline": 0.0023253328125000003,
+          "candidate": 0.0006138666927083333,
+          "difference": {
+            "ci": [
+              -0.0017792784375000002,
+              -0.001643653802083334
+            ],
+            "value": -0.001711466119791667
+          },
+          "kind": "usd"
+        },
+        "extra_delegation_rate": {
+          "baseline": 0.041666666666666664,
+          "candidate": 0.03125,
+          "difference": {
+            "ci": [
+              -0.03125,
+              0.0
+            ],
+            "value": -0.010416666666666664
+          },
+          "kind": "pct"
+        },
+        "false_reuse_rate": {
+          "baseline": 0.0,
+          "candidate": 0.0,
+          "difference": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "value": 0.0
+          },
+          "kind": "pct"
+        },
+        "false_spawn_rate": {
+          "baseline": 0.05,
+          "candidate": 0.08333333333333333,
+          "difference": {
+            "ci": [
+              0.0,
+              0.0967741935483871
+            ],
+            "value": 0.033333333333333326
+          },
+          "kind": "pct"
+        },
+        "input_tokens_per_turn_mean": {
+          "baseline": 53374.15625,
+          "candidate": 15863.072916666666,
+          "difference": {
+            "ci": [
+              -38149.66666666667,
+              -36878.70833333333
+            ],
+            "value": -37511.083333333336
+          },
+          "kind": "int"
+        },
+        "invalid_call_rate": {
+          "baseline": 0.0,
+          "candidate": 0.0,
+          "difference": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "value": 0.0
+          },
+          "kind": "pct"
+        },
+        "latency_ms_per_turn_mean": {
+          "baseline": 10442.321447138966,
+          "candidate": 6672.655386282713,
+          "difference": {
+            "ci": [
+              -5482.145829654959,
+              -2462.5377674043802
+            ],
+            "value": -3769.6660608562524
+          },
+          "kind": "ms"
+        },
+        "misroute_rate": {
+          "baseline": 0.0,
+          "candidate": 0.0,
+          "difference": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "value": 0.0
+          },
+          "kind": "pct"
+        },
+        "missed_delegation_rate": {
+          "baseline": 0.0,
+          "candidate": 0.0,
+          "difference": {
+            "ci": [
+              0.0,
+              0.0
+            ],
+            "value": 0.0
+          },
+          "kind": "pct"
+        }
+      },
+      "templates": 96,
+      "turns_baseline": 96,
+      "turns_candidate": 96
+    },
+    "dev|single|-|all_N": {
+      "mcnemar": {
+        "baseline_only_correct": 10,
+        "candidate_only_correct": 6,
+        "p_value": 0.454498291015625
+      },
+      "metrics": {
+        "accuracy": {
+          "baseline": 0.9083333333333333,
+          "candidate": 0.875,
+          "difference": {
+            "ci": [
+              -0.10833333333333339,
+              0.04999999999999993
+            ],
+            "value": -0.033333333333333326
+          },
+          "kind": "pct"
+        },
+        "accuracy_lenient": {
+          "baseline": 0.9083333333333333,
+          "candidate": 0.875,
+          "difference": {
+            "ci": [
+              -0.10833333333333339,
+              0.04999999999999993
+            ],
+            "value": -0.033333333333333326
+          },
+          "kind": "pct"
+        },
+        "cost_per_turn_mean": {
+          "baseline": 0.002010902708333333,
+          "candidate": 0.00045352181249999987,
+          "difference": {
+            "ci": [
+              -0.0016808495338541671,
+              -0.0014213662317708335
+            ],
+            "value": -0.0015573808958333332
+          },
+          "kind": "usd"
+        },
+        "extra_delegation_rate": {
+          "baseline": 0.025,
+          "candidate": 0.016666666666666666,
+          "difference": {
+            "ci": [
+              -0.05833333333333333,
+              0.03333333333333333
+            ],
+            "value": -0.008333333333333335
+          },
+          "kind": "pct"
+        },
+        "false_reuse_rate": {
+          "baseline": 0.15384615384615385,
+          "candidate": 0.038461538461538464,
+          "difference": {
+            "ci": [
+              -0.25,
+              0.0
+            ],
+            "value": -0.11538461538461539
+          },
+          "kind": "pct"
+        },
+        "false_spawn_rate": {
+          "baseline": 0.024390243902439025,
+          "candidate": 0.10975609756097561,
+          "difference": {
+            "ci": [
+              0.0,
+              0.18181818181818182
+            ],
+            "value": 0.08536585365853658
+          },
+          "kind": "pct"
+        },
+        "input_tokens_per_turn_mean": {
+          "baseline": 52939.50833333333,
+          "candidate": 12566.2,
+          "difference": {
+            "ci": [
+              -41971.918958333335,
+              -38640.61145833333
+            ],
+            "value": -40373.308333333334
+          },
+          "kind": "int"
+        },
+        "invalid_call_rate": {
+          "baseline": 0.0,
+          "candidate": 0.008333333333333333,
+          "difference": {
+            "ci": [
+              0.0,
+              0.025
+            ],
+            "value": 0.008333333333333333
+          },
+          "kind": "pct"
+        },
+        "latency_ms_per_turn_mean": {
+          "baseline": 13604.383946801923,
+          "candidate": 6861.763354856521,
+          "difference": {
+            "ci": [
+              -8903.641142894629,
+              -4869.011203313953
+            ],
+            "value": -6742.620591945402
+          },
+          "kind": "ms"
+        },
+        "misroute_rate": {
+          "baseline": 0.012195121951219513,
+          "candidate": 0.012195121951219513,
+          "difference": {
+            "ci": [
+              -0.03449278267842821,
+              0.03573606271777011
+            ],
+            "value": 0.0
+          },
+          "kind": "pct"
+        },
+        "missed_delegation_rate": {
+          "baseline": 0.009259259259259259,
+          "candidate": 0.018518518518518517,
+          "difference": {
+            "ci": [
+              -0.026797889610389588,
+              0.05457070707070716
+            ],
+            "value": 0.009259259259259259
+          },
+          "kind": "pct"
+        }
+      },
+      "templates": 120,
+      "turns_baseline": 120,
+      "turns_candidate": 120
+    }
+  },
+  "warnings": []
+}

@@ -73,7 +73,7 @@ In `records` mode the roster is shown in full up to 25 active agents and retriev
 OPENPOKE_FULL_ROSTER_MAX=3 make dev ROUTING=records
 ```
 
-The server logs the mode in effect at startup, for example `Routing mode: records (embeddings openai/text-embedding-3-small@512, K=8, full_roster_max=3)`, and in `records` mode one `Routing candidates: ...` line per interaction-agent turn. `make start` writes these to `.server.log` (follow it with `make logs`); `make dev` prints them in the terminal. `GET /api/v1/meta` also reports `routing_mode`.
+The server logs the mode in effect at startup, for example `Routing mode: records (embeddings openai/text-embedding-3-small@512, K=5, full_roster_max=3)`, and in `records` mode one `Routing candidates: ...` line per interaction-agent turn. `make start` writes these to `.server.log` (follow it with `make logs`); `make dev` prints them in the terminal. `GET /api/v1/meta` also reports `routing_mode`.
 
 `make start` does nothing if the server is already running, so run `make stop` before switching modes.
 
