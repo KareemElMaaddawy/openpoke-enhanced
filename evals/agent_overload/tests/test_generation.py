@@ -23,7 +23,7 @@ from evals.agent_overload.generation import (
     summarize_histories,
 )
 from evals.agent_overload.harness.spend import EXIT_NOT_CONFIRMED
-from evals.agent_overload.harness.util import EVAL_ROOT, parse_ts
+from evals.agent_overload.harness.util import EVAL_ROOT, is_filler_conflict, parse_ts
 
 PAID_SCRIPTS = [gen_threads, name_agents, rate_names, draft_cases, draft_sequences, summarize_histories, cross_label]
 
@@ -258,6 +258,49 @@ class NamingStateTest(unittest.TestCase):
         }
         self.assertEqual(name_agents.requeue(state), 1)
         self.assertEqual([state[k]["status"] for k in "abc"], ["pending", "dropped", "named"])
+
+
+class FillerCleaningTest(unittest.TestCase):
+    def test_task_words_alone_do_not_conflict(self):
+        for filler, case in [
+            ("Figma Invoice Email", "Zapier Invoice Search"),
+            ("Mailchimp downgrade email check", "Pioneer Water Email Check"),
+            ("Singapore trip email check", "Pioneer Water Email Check"),
+            ("Delta Receipt Search", "Uber Receipts"),
+            ("Calendar and Reminders", "Reminders"),  # empty core
+        ]:
+            self.assertFalse(is_filler_conflict(filler, case), (filler, case))
+
+    def test_shared_entities_conflict(self):
+        for filler, case in [
+            ("Find Adobe receipt", "Find Adobe invoice"),
+            ("Stripe payout email lookup", "Find October Stripe payout email"),
+            ("Find Costco tire appointment email", "Costco Tire Appointment Email"),
+            ("Delta Receipt Search", "Delta Refund Search"),
+        ]:
+            self.assertTrue(is_filler_conflict(filler, case), (filler, case))
+
+    def test_topup_size_covers_shortfall_with_margin(self):
+        self.assertEqual(name_agents.topup_size(175, 210), 43)
+        self.assertEqual(name_agents.topup_size(165, 210), 61)
+        self.assertGreaterEqual(name_agents.topup_size(100, 210), 2 * 100)  # yield floor of 0.5
+
+    def test_topup_runs_in_batches(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            fixtures = Path(tmp)
+            (fixtures / "review" / "gen_threads").mkdir(parents=True)
+            rows = [{"thread_id": f"t-dev-{i:04d}", "topic": f"topic {i}", "role": "filler"} for i in range(201, 211)]
+            common.write_rows(fixtures / "threads.dev.jsonl", rows)
+            out = io.StringIO()
+            with contextlib.redirect_stdout(out):
+                code = gen_threads.main(["--fake-model", "--confirm-spend", "--fixtures-dir", str(fixtures), "--top-up-filler", "45", "--split", "dev"])
+            self.assertEqual(code, 0, out.getvalue())
+            threads = common.read_rows(fixtures / "threads.dev.jsonl")
+            self.assertEqual(len(threads), 55)
+            self.assertEqual(threads[-1]["thread_id"], "t-dev-0255")
+            self.assertEqual(len({t["thread_id"] for t in threads}), 55)
+            self.assertEqual(len(common.read_rows(fixtures / "review" / "gen_threads" / "dev.topup.jsonl")), 45)
+            self.assertIn("added 5 filler threads (45 of 45)", out.getvalue())
 
 
 class CompareRulesTest(unittest.TestCase):

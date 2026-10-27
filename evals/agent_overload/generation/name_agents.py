@@ -5,12 +5,13 @@
 For each thread, the ``names_only`` loop runs the production prompt with the pinned
 interaction model and provider, an empty roster and empty history, and the thread's
 ``opening_request`` as the new user message. The first ``send_message_to_agent``
-name is kept. A turn with no delegation, or a name that matches or slug-collides
+name is kept, and the loop stops there (the rest of the turn can't change it). A turn with no delegation, or a name that matches or slug-collides
 with one already taken in the split, is resampled (new seed), up to 3 attempts in
 total; then the thread is dropped. Earlier thread ids win collisions.
 
 When every thread is named or dropped, filler agents whose names resemble a case
-agent's (slug ratio >= 0.6 or >= 2 shared non-stopword tokens) are removed, filler
+agent's (``is_filler_conflict``: compared without task words such as "email" or
+"search") are removed, filler
 is trimmed to 200 per split, and ``rosters.<split>.json`` is written with the
 filler order and ages (both seeded with 20261025).
 """
@@ -18,6 +19,7 @@ filler order and ages (both seeded with 20261025).
 from __future__ import annotations
 
 import asyncio
+import math
 import random
 from collections import Counter
 from pathlib import Path
@@ -46,6 +48,7 @@ MAX_ATTEMPTS = 3  # model failures (no delegation, or a colliding name) before a
 MAX_TRIES_PER_RUN = 10  # API errors included; past this a thread stays pending until the next run
 CHUNK = 40  # threads per save, in thread-id order
 FILLER_PER_SPLIT = 200
+TOPUP_MARGIN = 1.25  # extra threads asked for on top of the observed yield, so one top-up is enough
 NOMINAL_THREADS = 585
 MODEL_FAILURES = ("no delegation", "collision")
 
@@ -160,6 +163,12 @@ async def name_split(ctx: StepContext, method: NamesOnlyMethod, fixtures_dir: Pa
         print(f"{split}: {len(stuck)} threads still pending after repeated API errors; rerun this step to continue.")
 
 
+def topup_size(kept: int, filler_threads: int) -> int:
+    """Filler threads to add so cleaning leaves 200: the shortfall over the observed yield, plus margin."""
+    rate = kept / filler_threads if filler_threads else 1.0
+    return math.ceil((FILLER_PER_SPLIT - kept) / max(rate, 0.5) * TOPUP_MARGIN) + 5
+
+
 def write_agents_and_rosters(fixtures_dir: Path) -> list[str]:
     """Agents files, filler cleaning and rosters. Returns problems (empty when complete)."""
     problems = []
@@ -211,7 +220,8 @@ def write_agents_and_rosters(fixtures_dir: Path) -> list[str]:
         if len(kept) < FILLER_PER_SPLIT:
             problems.append(
                 f"{split}: only {len(kept)} filler agents after cleaning; run gen_threads.py --top-up-filler "
-                f"{FILLER_PER_SPLIT - len(kept) + 5} --split {split}, then this step again"
+                f"{topup_size(len(kept), sum(1 for t in threads.values() if t['role'] == 'filler'))} "
+                f"--split {split}, then this step again"
             )
             continue
         ids = sorted(a["agent_id"] for a in kept)
@@ -234,7 +244,7 @@ def main(argv: Optional[list[str]] = None) -> int:
     model = config["models"]["interaction"]
     have_threads = all((fixtures_dir / f"threads.{s}.jsonl").exists() for s in SPLITS)
     pending = sum(len(pending_threads(fixtures_dir, s)) for s in SPLITS) if have_threads else NOMINAL_THREADS
-    planned = [PlannedCalls("naming", model, pending * 3.2 * 1.1, 2000, 70, "measured: about 3.2 calls per loop, 2,000 prompt tokens")]
+    planned = [PlannedCalls("naming", model, pending * 1.5 * 1.1, 2000, 70, "stops at the first delegation: about 1.5 calls per thread (guess); 2,000 prompt tokens")]
     extra = [
         "",
         f"threads to name: {pending}" + ("" if have_threads else " (nominal: threads files not found yet)"),
@@ -248,6 +258,7 @@ def main(argv: Optional[list[str]] = None) -> int:
         method = NamesOnlyMethod(
             ctx.client, model=model, provider=ctx.provider_for(model),
             extra_params=config["models"].get("extra_params") or {}, purpose="naming",
+            stop_at_first_delegation=True,
         )
         for split in SPLITS:
             await name_split(ctx, method, fixtures_dir, split)

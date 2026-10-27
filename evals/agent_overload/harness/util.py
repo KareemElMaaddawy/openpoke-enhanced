@@ -24,6 +24,16 @@ EVAL_ROOT = REPO_ROOT / "evals" / "agent_overload"
 # Stopwords for token comparisons of agent-name slugs (design: Tags, near_duplicate).
 STOPWORDS = frozenset({"to", "for", "the", "a", "an", "of", "and", "with", "my", "re"})
 
+# Words that say what kind of task an agent does, not which entity it's about. Filler cleaning
+# ignores them. Every word here appeared in at least 8 of the 548 v1 names (2026-10-26), plus "mail".
+TASK_WORDS = frozenset(
+    {
+        "email", "mail", "search", "find", "reminder", "receipt", "invoice", "lookup", "order", "renewal",
+        "appointment", "confirmation", "contact", "check", "calendar", "status", "invite", "quote",
+        "refund", "message", "billing",
+    }
+)
+
 
 # ---------------------------------------------------------------------------
 # Timestamps
@@ -162,11 +172,27 @@ def is_near_duplicate(new_name: str, existing_name: str) -> bool:
     return slug_ratio(new_name, existing_name) >= 0.75 or token_jaccard(new_name, existing_name) >= 0.5
 
 
+def _is_task_word(token: str) -> bool:
+    return token in TASK_WORDS or (token.endswith("s") and token[:-1] in TASK_WORDS)
+
+
+def name_core(name: str) -> list[str]:
+    """Slug tokens without stopwords and task words: the part of a name that names the entity."""
+    return [tok for tok in slug(name).split("-") if tok and tok not in STOPWORDS and not _is_task_word(tok)]
+
+
 def is_filler_conflict(filler_name: str, case_name: str) -> bool:
-    """Filler cleaning rule (ratio >= 0.6, or at least 2 shared non-stopword tokens)."""
-    if slug_ratio(filler_name, case_name) >= 0.6:
+    """Filler cleaning rule v2: on the name cores, ratio >= 0.6 or at least 2 shared tokens.
+
+    v1 compared whole slugs, so "Figma Invoice Email" and "Zapier Invoice Search" conflicted
+    on task words alone. A name whose core is empty never conflicts.
+    """
+    a, b = name_core(filler_name), name_core(case_name)
+    if not a or not b:
+        return False
+    if SequenceMatcher(None, "-".join(a), "-".join(b)).ratio() >= 0.6:
         return True
-    return len(slug_tokens(filler_name) & slug_tokens(case_name)) >= 2
+    return len(set(a) & set(b)) >= 2
 
 
 # ---------------------------------------------------------------------------

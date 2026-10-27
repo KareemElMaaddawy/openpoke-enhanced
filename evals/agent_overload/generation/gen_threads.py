@@ -8,13 +8,15 @@ in parallel; within a category the four batches run in order, each told the
 topics already written, so splits share nothing. Each batch's parsed output is
 saved under ``review/gen_threads/`` and reused on a rerun; the thread files are
 assembled once every batch exists. ``--top-up-filler N --split S`` adds N filler
-threads to one split if filler cleaning leaves fewer than 200.
+threads to one split if filler cleaning leaves fewer than 200, in batches of at most
+20 so each call is the size step 1's filler batches were.
 """
 
 from __future__ import annotations
 
 import asyncio
 import json
+import math
 from pathlib import Path
 from typing import Any, Optional
 
@@ -44,6 +46,7 @@ CHITCHAT_EXCHANGES = 60
 CHITCHAT_ACKS = 15
 MAX_ATTEMPTS = 3
 FILLER_ID_START = 201
+TOPUP_BATCH = 20
 
 
 def spread(total: int, parts: int) -> list[int]:
@@ -254,22 +257,27 @@ async def run_chitchat(ctx: StepContext, fixtures_dir: Path) -> None:
 
 
 async def run_topup(ctx: StepContext, fixtures_dir: Path, split: str, count: int) -> None:
-    threads = read_rows(fixtures_dir / f"threads.{split}.jsonl")
-    if not threads:
-        raise GenerationError("run the full step first")
-    topics = [t["topic"] for t in threads]
-    prompt = render_prompt(
-        "gen_threads_filler.md", count=count, category_description="any everyday category", existing_topics=_topics_text(topics)
-    )
-    batch, _prov = await ask_json(ctx, "gen_threads", prompt, lambda d: validate_filler_batch(d, count), {"split": split, "category": "topup", "kind": "filler", "count": count})
-    next_number = max(int(t["thread_id"].rsplit("-", 1)[1]) for t in threads) + 1
+    """Batches run in order, each told every topic so far; each batch is saved as soon as it passes."""
     topup_path = fixtures_dir / "review" / "gen_threads" / f"{split}.topup.jsonl"
-    existing = read_rows(topup_path)
-    new_rows = [
-        _thread_row(f"t-{split}-{next_number + i:04d}", split, "filler", "mixed", t, None) for i, t in enumerate(batch)
-    ]
-    write_rows(topup_path, existing + new_rows)
-    write_rows(fixtures_dir / f"threads.{split}.jsonl", threads + new_rows)
+    remaining = count
+    while remaining > 0:
+        size = min(TOPUP_BATCH, remaining)
+        threads = read_rows(fixtures_dir / f"threads.{split}.jsonl")
+        if not threads:
+            raise GenerationError("run the full step first")
+        topics = [t["topic"] for t in threads]
+        prompt = render_prompt(
+            "gen_threads_filler.md", count=size, category_description="any everyday category", existing_topics=_topics_text(topics)
+        )
+        batch, _prov = await ask_json(ctx, "gen_threads", prompt, lambda d: validate_filler_batch(d, size), {"split": split, "category": "topup", "kind": "filler", "count": size})
+        next_number = max(int(t["thread_id"].rsplit("-", 1)[1]) for t in threads) + 1
+        new_rows = [
+            _thread_row(f"t-{split}-{next_number + i:04d}", split, "filler", "mixed", t, None) for i, t in enumerate(batch)
+        ]
+        write_rows(topup_path, read_rows(topup_path) + new_rows)
+        write_rows(fixtures_dir / f"threads.{split}.jsonl", threads + new_rows)
+        remaining -= size
+        print(f"{split}: added {len(new_rows)} filler threads ({count - remaining} of {count})")
 
 
 # ---------------------------------------------------------------------------
@@ -331,7 +339,8 @@ def main(argv: Optional[list[str]] = None) -> int:
     if args.top_up_filler:
         if not args.split:
             parser.error("--top-up-filler needs --split")
-        planned = [PlannedCalls("gen_threads (top-up)", GEN_MODEL, 1.2, 6000, args.top_up_filler * 180)]
+        batches = math.ceil(args.top_up_filler / TOPUP_BATCH)
+        planned = [PlannedCalls("gen_threads (top-up)", GEN_MODEL, batches * 1.2, 6000, min(args.top_up_filler, TOPUP_BATCH) * 180)]
 
         async def topup_body(ctx: StepContext) -> None:
             await run_topup(ctx, fixtures_dir, args.split, args.top_up_filler)

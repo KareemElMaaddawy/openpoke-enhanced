@@ -10,7 +10,7 @@ Every command runs from the repository root. Commands that call a paid API are m
 | --- | --- | --- | --- | --- | --- |
 | 0 | Setup and free checks | `make setup`, unit tests | no | $0 | 5 min |
 | 1 | Thread specs and chit-chat | `generation/gen_threads.py` | Sonnet 5.5 | **$2.35 actual** (est. $1.54) | about 4 min |
-| 2 | Agent names, filler cleaning, rosters | `generation/name_agents.py` | gpt-6-luna | $0.46 | about 2 h at 18 requests/min |
+| 2 | Agent names, filler cleaning, rosters | `generation/name_agents.py` | gpt-6-luna | $0.46 | first run took hours; now stops at the first delegation, about 50 min for all 585 threads at 18 requests/min (guess) |
 | 3 | Name ratings | `generation/rate_names.py` | Sonnet 5.5 | $0.31 | 1 min |
 | 4 | Single-turn cases | `generation/draft_cases.py` | Sonnet 5.5 | $5.00 | 8 to 15 min |
 | 5 | Sequences | `generation/draft_sequences.py` | Sonnet 5.5 | $0.83 | 1 to 3 min |
@@ -109,9 +109,9 @@ Writes the world the cases are built from: per split, about 110 (test) or 55 (de
 
 ### Step 2. Agent names, filler cleaning and rosters (Paid: gpt-6-luna)
 
-For each of about 585 threads, runs the **real** interaction prompt (production system prompt, tool schemas and loop, the pinned model, OpenAI as the only provider) with an empty roster and history and the thread's opening request as the new message. It keeps the name of the first agent the model creates. Turns with no delegation, and names that match or slug-collide with one already taken, are resampled with a new seed, up to 3 attempts; then the thread is dropped. Attempts that fail with an API error (a 429 after its retries, say) don't count toward the 3; the thread is tried again, and if API errors persist it stays pending for the next rerun. Then it removes filler agents whose names resemble a case agent's, trims filler to 200 per split, and writes each split's fixed filler order and filler ages (30% 0 to 3 days, 30% 4 to 14, 40% 15 to 60).
+For each of about 585 threads, runs the **real** interaction prompt (production system prompt, tool schemas and loop, the pinned model, OpenAI as the only provider) with an empty roster and history and the thread's opening request as the new message. It keeps the name of the first agent the model creates, and stops the loop there. Turns with no delegation, and names that match or slug-collide with one already taken, are resampled with a new seed, up to 3 attempts; then the thread is dropped. Attempts that fail with an API error (a 429 after its retries, say) don't count toward the 3; the thread is tried again, and if API errors persist it stays pending for the next rerun. Then it removes filler agents whose names resemble a case agent's, trims filler to 200 per split, and writes each split's fixed filler order and filler ages (30% 0 to 3 days, 30% 4 to 14, 40% 15 to 60).
 
-- **Estimated cost and time:** $0.46 (cap $0.93); at least 110 minutes at 18 requests per minute. It prints progress every 40 threads. The first attempt on 2026-10-26 hit the rate limit and was stopped after naming 24 dev threads ($0.06); the rerun continues from there.
+- **Estimated cost and time:** $0.46 (cap $0.93) when it ran the whole loop. It prints progress every 40 threads. The first attempt on 2026-10-26 hit the rate limit and was stopped after naming 24 dev threads ($0.06); the rerun named the rest over several hours. Cleaning rule v1 then left 126 dev and 100 test filler, so the rule changed (v2) and naming now stops at the first delegation; see the design's decisions table. On those names v2 keeps 175 dev and 165 test, so the first run needs one top-up per split: 43 dev, 61 test.
 - **Writes:** `agents.dev.jsonl`, `agents.test.jsonl`, `rosters.dev.json`, `rosters.test.json`, `review/naming/<split>.json` (every attempt), `review/filler_cleaning.<split>.json`.
 
 ```bash
@@ -131,10 +131,10 @@ For each of about 585 threads, runs the **real** interaction prompt (production 
 
 **If it fails or is capped**
 
-- `warning: <split>: only N filler agents after cleaning` means cleaning removed more than 10. Top up and rerun this step; only the new threads get named:
+- `warning: <split>: only N filler agents after cleaning` means cleaning removed more than 10. Top up by the number the warning prints (the shortfall over the split's observed yield, plus 25%) and rerun this step; only the new threads get named. The top-up runs in batches of 20:
 
   ```bash
-  .venv/bin/python -m evals.agent_overload.generation.gen_threads --top-up-filler 20 --split test --confirm-spend
+  .venv/bin/python -m evals.agent_overload.generation.gen_threads --top-up-filler 61 --split test --confirm-spend
   ```
 
   ```bash

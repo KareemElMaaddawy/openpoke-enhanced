@@ -288,6 +288,20 @@ class LoopBehaviourTest(unittest.TestCase):
         self.assertIn("Unknown tool: make_coffee", errors)
         self.assertTrue(any(c["raw_arguments"] == '{"agent_name": "br' for c in out.invalid_calls))
 
+    def test_stop_at_first_delegation(self):
+        responder, _ = scripted(
+            llm.fake_message("", [call("send_message_to_agent", {"agent_name": "", "instructions": "a"}, "c1")]),
+            llm.fake_message("", [call("send_message_to_agent", {"agent_name": "Denver", "instructions": "b"}, "c2"), call("send_message_to_agent", {"agent_name": "Later", "instructions": "c"}, "c3")]),
+            llm.fake_message("done"),
+        )
+        client = llm.FakeClient(responders={"routing": responder})
+        method = names_only.NamesOnlyMethod(client, model="openai/gpt-6-luna", stop_at_first_delegation=True)
+        llm.CALL_CONTEXT.set({"case_id": "t-dev-0001", "N": 0, "mode": None, "rep": 1, "turn": None})
+        out = asyncio.run(method.route(make_input()))
+        self.assertEqual([d.agent_name for d in out.delegations], ["Denver"])  # the empty name doesn't count
+        self.assertEqual(len(out.llm_calls), 2)
+        self.assertFalse(out.loop_limit_hit)
+
     def test_loop_limit_keeps_delegations(self):
         responder, _ = scripted(llm.fake_message("", [call("send_message_to_agent", {"agent_name": "Loop", "instructions": "x"})]))
         out = self.route(responder)

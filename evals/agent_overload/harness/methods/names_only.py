@@ -30,6 +30,10 @@ from .base import AgentView, Delegation, Entry, RoutingInput, RoutingOutput, new
 
 LOOP_LIMIT_MESSAGE = "Reached tool iteration limit without final response"
 
+
+class _FirstDelegation(Exception):
+    """Ends the loop at the first delegation when the caller only needs that (``name_agents.py``)."""
+
 _ROSTER_NAMES: contextvars.ContextVar[tuple[str, ...]] = contextvars.ContextVar("names_only_roster", default=())
 
 
@@ -83,9 +87,10 @@ class TurnRecorder:
 class ToolStubs:
     """Same signatures and ``ToolResult`` payloads as ``server/agents/interaction_agent/tools.py``."""
 
-    def __init__(self, recorder: TurnRecorder):
+    def __init__(self, recorder: TurnRecorder, stop_at_first_delegation: bool = False):
         self.r = recorder
         self.current_call: Optional[_ToolCall] = None
+        self.stop_at_first_delegation = stop_at_first_delegation
 
     def _raw(self) -> Any:
         call = self.current_call
@@ -118,6 +123,8 @@ class ToolStubs:
                 order=len(self.r.delegations),
             )
         )
+        if self.stop_at_first_delegation:
+            raise _FirstDelegation()
         return ToolResult(success=True, payload=payload)
 
     def send_message_to_user(self, message: str) -> ToolResult:
@@ -158,6 +165,8 @@ class ToolStubs:
             return ToolResult(success=False, payload={"error": f"Unknown tool: {name}"})
         except json.JSONDecodeError:
             return ToolResult(success=False, payload={"error": "Invalid JSON"})
+        except _FirstDelegation:
+            raise
         except TypeError as exc:
             if str(exc) == "agent_name must be a string":
                 return ToolResult(success=False, payload={"error": "Failed to execute"})
@@ -184,6 +193,7 @@ class HarnessInteractionRuntime(InteractionAgentRuntime):
         extra_params: Optional[dict],
         recorder: TurnRecorder,
         purpose: str = "routing",
+        stop_at_first_delegation: bool = False,
     ) -> None:
         # Not calling super().__init__: it requires an API key and opens the real logs,
         # neither of which the harness uses. The loop only needs these attributes.
@@ -195,7 +205,7 @@ class HarnessInteractionRuntime(InteractionAgentRuntime):
         self._provider = provider
         self._extra = dict(extra_params or {})
         self._recorder = recorder
-        self._stubs = ToolStubs(recorder)
+        self._stubs = ToolStubs(recorder, stop_at_first_delegation)
         self._purpose = purpose
         self.calls: list = []
 
@@ -271,12 +281,16 @@ class NamesOnlyMethod:
         provider: Optional[dict] = None,
         extra_params: Optional[dict] = None,
         purpose: str = "routing",
+        stop_at_first_delegation: bool = False,
     ):
+        """``stop_at_first_delegation`` skips the rest of the loop once a delegation is made.
+        The first delegation is the same either way; only naming uses it."""
         self.client = client
         self.model = model
         self.provider = provider
         self.extra_params = dict(extra_params or {})
         self.purpose = purpose
+        self.stop_at_first_delegation = stop_at_first_delegation
         install_roster_patch()
 
     def describe(self) -> dict:
@@ -306,10 +320,13 @@ class NamesOnlyMethod:
             extra_params=self.extra_params,
             recorder=recorder,
             purpose=self.purpose,
+            stop_at_first_delegation=self.stop_at_first_delegation,
         )
         loop_limit_hit = False
         try:
             summary = await runtime._run_interaction_loop(system_prompt, messages)
+        except _FirstDelegation:
+            pass
         except RuntimeError as exc:
             if str(exc) != LOOP_LIMIT_MESSAGE:
                 raise
