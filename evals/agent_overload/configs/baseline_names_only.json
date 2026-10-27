@@ -1,6 +1,6 @@
 {
   "experiment": "agent_overload",
-  "harness_version": "1.0.0",
+  "harness_version": "1.1.0",
   "scorer_version": "1",
   "case_set": {
     "version": "v1",

@@ -40,11 +40,21 @@ from .harness.llm import (
     load_pricing,
 )
 from .harness.methods.names_only import NamesOnlyMethod
+from .harness.methods.records_retrieval import CACHE_DIR as RECORDS_CACHE_DIR
+from .harness.methods.records_retrieval import MethodConfigError, RecordsRetrievalMethod, prepare_plan
 from .harness.metrics import StatsConfig, compute_metrics
 from .harness.report import render_report
-from .harness.runner import RunContext, cost_profile, planned_units, run_all, sort_key, write_jsonl_gz
+from .harness.runner import (
+    RunContext,
+    cost_profile,
+    fixture_agent_views,
+    planned_units,
+    run_all,
+    sort_key,
+    write_jsonl_gz,
+)
 from .harness.scoring import STATUS_API_ERROR
-from .harness.spend import Budget, add_paid_args, append_spend, gate
+from .harness.spend import Budget, PlannedCalls, add_paid_args, append_spend, gate
 from .harness.util import EVAL_ROOT, REPO_ROOT, append_jsonl, read_jsonl
 
 RESULTS_ROOT = EVAL_ROOT / "results"
@@ -72,7 +82,33 @@ def make_method(config: dict, client):
             provider=config["models"]["provider"],
             extra_params=config["models"].get("extra_params") or {},
         )
+    if method["name"] == "records_retrieval" and str(method["version"]) == RecordsRetrievalMethod.version:
+        try:
+            return RecordsRetrievalMethod(
+                client,
+                model=config["models"]["interaction"],
+                provider=config["models"]["provider"],
+                extra_params=config["models"].get("extra_params") or {},
+                params=method.get("params") or {},
+                summarizer_model=config["models"]["summarizer"],
+                # Fake purposes and vectors must never land in the real cache.
+                cache_dir=None if client.fake else RECORDS_CACHE_DIR,
+            )
+        except MethodConfigError as exc:
+            raise ConfigError(str(exc)) from exc
     raise ConfigError(f"unknown method {method['name']} v{method['version']}")
+
+
+def method_prepare_plan(config: dict, plan, fixtures) -> list[PlannedCalls]:
+    """One-off calls the method's ``prepare()`` would make (records_retrieval's backfill and embeddings)."""
+    method = config["method"]
+    if method["name"] != "records_retrieval" or fixtures is None:
+        return []
+    agents = [view for split in plan.splits for view in fixture_agent_views(fixtures, split)]
+    try:
+        return prepare_plan(method.get("params") or {}, agents, config["models"]["summarizer"], RECORDS_CACHE_DIR)
+    except MethodConfigError as exc:
+        raise ConfigError(str(exc)) from exc
 
 
 def nominal_units(plan) -> dict:
@@ -219,7 +255,9 @@ def main(argv: Optional[list[str]] = None) -> int:
 
     units = planned_units(plan, fixtures) if fixtures else nominal_units(plan)
     profile, profile_source = latest_cost_profile(config)
-    estimate = estimate_run_cost(units, profile)
+    prepare_calls = method_prepare_plan(config, plan, fixtures)
+    pricing = load_pricing()
+    estimate = estimate_run_cost(units, profile) + sum(p.cost(pricing) for p in prepare_calls)
     git = git_state()
     extra = [
         "",
@@ -247,8 +285,10 @@ def main(argv: Optional[list[str]] = None) -> int:
             f"(${max_cost:.2f}); the run would probably be capped and unusable. Pass --max-cost "
             f"{round(estimate * budget.estimate_margin * 1.2 + 0.5)} after checking the smoke run's costs."
         )
+    if prepare_calls:
+        extra.append("  the method's one-off prepare() calls are listed above and included in the estimate")
     mode = gate(
-        args, f"run.py --profile {args.profile} ({config['method']['name']} v{config['method']['version']})", [],
+        args, f"run.py --profile {args.profile} ({config['method']['name']} v{config['method']['version']})", prepare_calls,
         budget=budget, cap_usd=max_cost, extra_lines=extra, estimate_override=estimate,
     )
     if mode == "dry_run":
@@ -344,6 +384,8 @@ async def execute(args, config, plan, fixtures, mode, cfg_hash, max_cost) -> int
         await client.aclose()
         if not fake:
             append_spend(args.ledger, run_id, f"run:{plan.profile}", spend.total_usd)
+    # The description again after the run: method caches (records_retrieval) are filled during it.
+    recorded["method_after_run"] = method.describe()
 
     turns = sorted(ctx.turns, key=sort_key)
     sequences = sorted(ctx.sequences, key=sort_key)
@@ -355,6 +397,9 @@ async def execute(args, config, plan, fixtures, mode, cfg_hash, max_cost) -> int
     capped = ctx.capped or spend.capped
     providers = Counter(c.get("provider") or "unknown" for c in calls)
     returned_models = Counter(c.get("returned_model") or "unknown" for c in calls)
+    returned_by_model: dict[str, Counter] = {}
+    for c in calls:
+        returned_by_model.setdefault(c.get("model") or "unknown", Counter())[c.get("returned_model") or "unknown"] += 1
 
     warnings = []
     if fake:
@@ -373,9 +418,10 @@ async def execute(args, config, plan, fixtures, mode, cfg_hash, max_cost) -> int
         warnings.append(f"{ctx.summarizer_errors} summarizer calls failed (state left unsummarized, as production does).")
     if not fake and any(p not in ("OpenAI", "openai") for p in providers):
         warnings.append(f"Providers other than OpenAI seen: {dict(providers)}")
-    if not fake and len(returned_models) > 1:
+    mixed = {m: dict(r) for m, r in returned_by_model.items() if len(r) > 1}
+    if not fake and mixed:
         # The alias moved (or a call came back without a model): the run mixes model versions.
-        warnings.append(f"More than one model version answered: {dict(returned_models)}")
+        warnings.append(f"More than one model version answered: {mixed}")
 
     metrics = compute_metrics(turns, sequences, calls, StatsConfig.from_config(config["stats"]))
     metrics["cost_profile"] = cost_profile(turns, sequences, calls)

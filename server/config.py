@@ -5,7 +5,7 @@ from functools import lru_cache
 from pathlib import Path
 from typing import List, Optional
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
 
 
 def _load_env_file() -> None:
@@ -39,6 +39,25 @@ def _env_int(name: str, fallback: int) -> int:
         return fallback
 
 
+ROUTING_MODES = ("legacy", "records")
+
+
+# These read the environment when Settings() is built, not when the class is defined,
+# so `server.server --routing` can set OPENPOKE_ROUTING after this module is imported.
+def _routing_mode_from_env() -> str:
+    return os.getenv("OPENPOKE_ROUTING", "legacy").strip().lower()
+
+
+def _full_roster_max_from_env() -> object:
+    raw = os.getenv("OPENPOKE_FULL_ROSTER_MAX", "").strip()
+    if raw:
+        return raw
+    # Imported here: services import this module, so a top-level import would be circular.
+    from .services.routing.params import RetrievalParams
+
+    return RetrievalParams().full_roster_max
+
+
 class Settings(BaseModel):
     """Application settings with lightweight env fallbacks."""
 
@@ -70,6 +89,37 @@ class Settings(BaseModel):
     # Summarisation controls
     conversation_summary_threshold: int = Field(default=100)
     conversation_summary_tail_size: int = Field(default=10)
+
+    # Interaction-agent routing: "legacy" (names only) or "records" (records and retrieval)
+    routing_mode: str = Field(default_factory=_routing_mode_from_env, validate_default=True)
+    # Records mode shows every agent up to this many active ones, and retrieves above it
+    full_roster_max: int = Field(default_factory=_full_roster_max_from_env, validate_default=True)
+    embedding_model: str = Field(default="openai/text-embedding-3-small")
+    embedding_dimensions: int = Field(default=512)
+
+    @field_validator("routing_mode", mode="before")
+    @classmethod
+    def _validate_routing_mode(cls, value: object) -> str:
+        mode = str(value).strip().lower()
+        if mode not in ROUTING_MODES:
+            raise ValueError(
+                f"OPENPOKE_ROUTING must be one of: {', '.join(ROUTING_MODES)} (got {value!r})"
+            )
+        return mode
+
+    @field_validator("full_roster_max", mode="before")
+    @classmethod
+    def _validate_full_roster_max(cls, value: object) -> int:
+        message = f"OPENPOKE_FULL_ROSTER_MAX must be an integer >= 0, where 0 means always retrieve (got {value!r})"
+        if isinstance(value, bool):
+            raise ValueError(message)
+        try:
+            parsed = value if isinstance(value, int) else int(str(value).strip())
+        except ValueError:
+            raise ValueError(message) from None
+        if parsed < 0:
+            raise ValueError(message)
+        return parsed
 
     @property
     def cors_allow_origins(self) -> List[str]:

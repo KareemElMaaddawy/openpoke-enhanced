@@ -17,6 +17,10 @@ gpt-6-luna reasons, so each chat-completions payload is translated to a Response
 request and the answer back to the chat-completions shape the loop reads. Cost is
 estimated from the pricing table (cached input at its own price), since OpenAI's
 usage has no cost field.
+
+``ModelClient.embed`` makes embedding calls (``records_retrieval``) with the same
+bookkeeping: spend cap, pacing, retries and a ``CallRecord``. On OpenAI direct the
+model's OpenAI id comes from ``model_ids``, or from dropping an ``openai/`` prefix.
 """
 
 from __future__ import annotations
@@ -367,7 +371,60 @@ class ModelClient:
         self.records.append(record)
         return data, record
 
+    async def embed(
+        self,
+        *,
+        purpose: str,
+        model: str,
+        inputs: list[str],
+        dimensions: int,
+        provider: Optional[dict] = None,
+    ) -> tuple[list[list[float]], CallRecord]:
+        """Embed ``inputs`` (one call). Vectors come back in input order."""
+        payload: dict[str, Any] = {
+            "model": model,
+            "input": list(inputs),
+            "dimensions": int(dimensions),
+            "encoding_format": "float",
+        }
+        if provider:
+            payload["provider"] = provider
+        record = CallRecord(
+            call_id=self._next_call_id(),
+            purpose=purpose,
+            model=model,
+            request_sha256=sha256_hex(canonical_json(payload)),
+            seed=None,
+            context=dict(CALL_CONTEXT.get()),
+            fake=self.fake,
+        )
+        async with self._semaphore:
+            self.spend.check()
+            data = await self._send_embedding(payload, record)
+        usage = data.get("usage") or {}
+        record.prompt_tokens = usage.get("prompt_tokens")
+        record.completion_tokens = 0
+        record.cost = usage.get("cost")
+        if record.cost is None and record.prompt_tokens is not None:
+            record.cost = estimate_cost(model, record.prompt_tokens, 0, self.pricing)
+            record.cost_estimated = True
+        record.response_id = data.get("id")
+        record.returned_model = data.get("model")
+        record.provider = data.get("provider")
+        record.raw_path = self._save_raw(record.call_id, payload, _without_vectors(data))
+        self.spend.charge(record.cost)
+        self.records.append(record)
+        try:
+            vectors = embedding_vectors(data, len(inputs), dimensions)
+        except ApiError as exc:
+            record.error = str(exc)
+            raise
+        return vectors, record
+
     async def _send(self, payload: dict, record: CallRecord, fake_hint: Any) -> dict:  # pragma: no cover
+        raise NotImplementedError
+
+    async def _send_embedding(self, payload: dict, record: CallRecord) -> dict:  # pragma: no cover
         raise NotImplementedError
 
     async def aclose(self) -> None:
@@ -379,6 +436,7 @@ class OpenRouterClient(ModelClient):
 
     KEY_NAME = "OPENROUTER_API_KEY"
     ENDPOINT = "/chat/completions"
+    EMBEDDING_ENDPOINT = "/embeddings"
 
     def __init__(
         self,
@@ -422,6 +480,12 @@ class OpenRouterClient(ModelClient):
     def _finish(self, data: dict) -> dict:
         return data
 
+    def _wire_embedding(self, payload: dict) -> dict:
+        return payload
+
+    def _finish_embedding(self, data: dict) -> dict:
+        return data
+
     def _fatal_429(self, response: "httpx.Response") -> bool:
         return False
 
@@ -430,11 +494,15 @@ class OpenRouterClient(ModelClient):
             self._limiters[model] = RateLimiter(self.rpm)
         return self._limiters[model]
 
-    async def _send(self, payload: dict, record: CallRecord, fake_hint: Any) -> dict:
-        url = f"{self.base_url}{self.ENDPOINT}"
+    async def _send_embedding(self, payload: dict, record: CallRecord) -> dict:
+        return await self._send(payload, record, None, kind="embedding")
+
+    async def _send(self, payload: dict, record: CallRecord, fake_hint: Any, kind: str = "chat") -> dict:
+        embedding = kind == "embedding"
+        url = f"{self.base_url}{self.EMBEDDING_ENDPOINT if embedding else self.ENDPOINT}"
         last_error = "unknown error"
         limiter = self.limiter(payload["model"])
-        wire = self._wire(payload)
+        wire = self._wire_embedding(payload) if embedding else self._wire(payload)
         for attempt in range(self.max_retries + 1):
             record.attempts = attempt + 1
             await limiter.acquire()
@@ -480,7 +548,7 @@ class OpenRouterClient(ModelClient):
                                 record.error = last_error
                                 raise ApiError(last_error)
                         else:
-                            return self._finish(data)
+                            return self._finish_embedding(data) if embedding else self._finish(data)
             if retryable and attempt < self.max_retries:
                 if wait_s is None:  # a 429 already paused the limiter, which acquire() waits out
                     await asyncio.sleep(BACKOFF_S[min(attempt, len(BACKOFF_S) - 1)])
@@ -518,9 +586,44 @@ class OpenAIClient(OpenRouterClient):
     def _finish(self, data: dict) -> dict:
         return responses_to_chat(data)
 
+    def _wire_embedding(self, payload: dict) -> dict:
+        # OpenAI's /embeddings takes the same fields minus OpenRouter's provider routing.
+        request = {k: v for k, v in payload.items() if k not in OPENROUTER_ONLY_KEYS}
+        request["model"] = openai_model_id(payload["model"], self.model_ids)
+        return request
+
+    def _finish_embedding(self, data: dict) -> dict:
+        return {**data, "provider": "OpenAI"}
+
     def _fatal_429(self, response: "httpx.Response") -> bool:
         # Out of credit, not a rate limit: retrying can't help.
         return "insufficient_quota" in response.text
+
+
+def openai_model_id(model: str, model_ids: dict[str, str]) -> str:
+    """The OpenAI id for a config model name: the configured one, else the name without ``openai/``."""
+    if model in model_ids:
+        return model_ids[model]
+    return model.split("/", 1)[1] if model.startswith("openai/") else model
+
+
+def embedding_vectors(data: dict, expected: int, dimensions: int) -> list[list[float]]:
+    """Vectors from an embeddings response, ordered by ``data[].index``."""
+    items = data.get("data") if isinstance(data, dict) else None
+    if not isinstance(items, list) or len(items) != expected:
+        raise ApiError(f"expected {expected} embeddings, got {len(items) if isinstance(items, list) else 'none'}")
+    ordered = sorted(items, key=lambda item: item.get("index", 0))
+    vectors = [item.get("embedding") for item in ordered]
+    if any(not isinstance(v, list) or len(v) != dimensions for v in vectors):
+        raise ApiError(f"embeddings missing or not {dimensions}-dimensional")
+    return vectors
+
+
+def _without_vectors(data: dict) -> dict:
+    """An embeddings response for the raw log, with each vector replaced by its length."""
+    if not isinstance(data, dict) or not isinstance(data.get("data"), list):
+        return data
+    return {**data, "data": [{**item, "embedding": len(item.get("embedding") or [])} for item in data["data"]]}
 
 
 # The Responses API's smallest allowed max_output_tokens; token probes ask for 1.
@@ -683,12 +786,41 @@ def fake_tool_call(call_id: str, name: str, arguments: Any) -> dict:
     return {"id": call_id, "type": "function", "function": {"name": name, "arguments": raw}}
 
 
+_RECORD_RE = re.compile(r'<agent id="([^"]*)" name="([^"]*)"')
+
+
+def _is_records_payload(payload: dict) -> bool:
+    return any((t.get("function") or {}).get("name") == "create_agent" for t in payload.get("tools") or [])
+
+
+def _fake_records_calls(user: str, text: str, h: int) -> dict:
+    """records_retrieval's tools: reuse the shown agent sharing the most name tokens (by id), else create."""
+    agents = [(unescape(agent_id), unescape(name)) for agent_id, name in _RECORD_RE.findall(user)]
+    words = slug_tokens(text)
+    scored = sorted(((len(slug_tokens(n) & words), -i, agent_id) for i, (agent_id, n) in enumerate(agents)), reverse=True)
+    if scored and scored[0][0] > 0:
+        delegate = fake_tool_call("call_1", "send_message_to_agent", {"agent_id": scored[0][2], "instructions": text})
+    elif h % 7 == 0:
+        return fake_message("", [fake_tool_call("call_0", "send_message_to_user", {"message": "ha, sure"})])
+    else:
+        picked = sorted(words, key=lambda w: (-len(w), w))[:3] or ["task"]
+        name = " ".join(w.capitalize() for w in picked)
+        purpose = f"Handles {name.lower()} for the user."
+        delegate = fake_tool_call("call_1", "create_agent", {"name": name, "purpose": purpose, "instructions": text})
+    calls = [fake_tool_call("call_0", "send_message_to_user", {"message": "on it"}), delegate]
+    if h % 23 == 0:
+        calls.append(fake_tool_call("call_2", "send_message_to_agent", '{"agent_id": "broken'))
+    return fake_message("", calls)
+
+
 def fake_routing_responder(payload: dict, hint: Any) -> dict:
     """A crude, deterministic stand-in for the interaction model.
 
     First iteration: acknowledge and delegate (reuse the roster agent sharing the most
     name tokens with the message, else create one named after the message); agent
     messages get a summary only. Later iterations end the loop with no tool calls.
+    With the records tools (``create_agent`` offered) it reuses by ``agent_id`` and
+    creates with ``create_agent``.
     """
     messages = payload["messages"]
     if any(m.get("role") == "assistant" for m in messages):
@@ -699,6 +831,8 @@ def fake_routing_responder(payload: dict, hint: Any) -> dict:
     h = int(sha256_hex(f"{payload.get('seed')}|{text}")[:8], 16)
     if kind == "new_agent_message":
         return fake_message("", [fake_tool_call("call_0", "send_message_to_user", {"message": "fyi: " + text[:60]})])
+    if _is_records_payload(payload):
+        return _fake_records_calls(user, text, h)
     names = [unescape(n) for n in _AGENT_RE.findall(user)]
     words = slug_tokens(text)
     scored = sorted(((len(slug_tokens(n) & words), -i, n) for i, n in enumerate(names)), reverse=True)
@@ -732,6 +866,26 @@ def fake_probe_responder(payload: dict, hint: Any) -> dict:
     return fake_message("")
 
 
+def fake_purpose_responder(payload: dict, hint: Any) -> dict:
+    """Purpose backfill: a sentence built from the name and the first task."""
+    content = payload["messages"][-1]["content"]
+    name = content.split("\n", 1)[0].removeprefix("Name: ").strip()
+    task = content.split("First task: ", 1)[-1].strip()
+    return fake_message(f"Ongoing {name} work: {task[:80]}")
+
+
+_FAKE_TOKEN_RE = re.compile(r"[a-z0-9]+")
+
+
+def fake_embedding(text: str, dimensions: int) -> list[float]:
+    """Feature-hashed bag of words, normalized: lexically similar texts get similar vectors."""
+    vector = [0.0] * dimensions
+    for token in _FAKE_TOKEN_RE.findall(text.lower()):
+        vector[int(sha256_hex(token)[:8], 16) % dimensions] += 1.0
+    norm = math.sqrt(sum(x * x for x in vector)) or 1.0
+    return [x / norm for x in vector]
+
+
 class FakeClient(ModelClient):
     """Deterministic responses, synthetic usage, no network. Results are marked fake."""
 
@@ -746,6 +900,7 @@ class FakeClient(ModelClient):
             "fixture_summarizer": fake_summarizer_responder,
             "label_summarizer": fake_summarizer_responder,
             "token_probe": fake_probe_responder,
+            "purpose_backfill": fake_purpose_responder,
         }
         self.responders.update(responders or {})
 
@@ -771,6 +926,21 @@ class FakeClient(ModelClient):
             "usage": fake_usage(payload, completion_tokens, payload["model"], self.pricing),
         }
 
+    async def _send_embedding(self, payload: dict, record: CallRecord) -> dict:
+        record.attempts = 1
+        record.latency_ms = 50.0 + int(record.request_sha256[:4], 16) % 100
+        inputs, dimensions = payload["input"], payload["dimensions"]
+        tokens = sum(math.ceil(len(text) / 4) for text in inputs)
+        model = payload["model"]
+        cost = estimate_cost(model, tokens, 0, self.pricing) if model in self.pricing["prices_per_million"] else 0.0
+        return {
+            "id": f"fake-{record.call_id}",
+            "model": f"{model}-fake",
+            "provider": "Fake",
+            "data": [{"index": i, "embedding": fake_embedding(text, dimensions)} for i, text in enumerate(inputs)],
+            "usage": {"prompt_tokens": tokens, "total_tokens": tokens, "cost": cost},
+        }
+
 
 def message_content(response: dict) -> str:
     choice = (response.get("choices") or [{}])[0]
@@ -794,6 +964,9 @@ __all__ = [
     "estimate_cost",
     "OpenAIClient",
     "OPENAI_DEFAULT_RPM",
+    "embedding_vectors",
+    "fake_embedding",
+    "openai_model_id",
     "check_openai_pins",
     "openai_key",
     "responses_request",

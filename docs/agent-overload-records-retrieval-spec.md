@@ -4,7 +4,7 @@ The implementation spec for the first solution version: richer agent records, ro
 
 The problem, the candidate directions and the decision log are in [agent-overload.md](agent-overload.md). Causes (D1, I2, ...) and metrics are in [agent-overload-causes-and-metrics.md](agent-overload-causes-and-metrics.md). The harness this plugs into is in [agent-overload-experiment-design.md](agent-overload-experiment-design.md).
 
-Status: designed 2026-10-26, not implemented.
+Status: designed 2026-10-26. Steps 1 to 4 of the [implementation order](#implementation-order) (server side) implemented 2026-10-26. Steps 6 (harness) and 7 (runbook section) implemented 2026-10-27, after the phase 1 baseline (`20261027-035635-names_only-e5cf9a5a`) had run. Step 5 was tried once by hand; the experiment plan's paid steps 2 to 7 haven't run. Decisions made while implementing are in [Implementation notes](#implementation-notes).
 
 ## Where this stands in the method
 
@@ -94,12 +94,21 @@ make dev ROUTING=records
 
 `OPENPOKE_ROUTING=records` in `.env` or the shell does the same. Leaving it out runs `legacy`, which is today's system.
 
+To try retrieval without 25 agents, lower the full-roster threshold. With 3, any roster of 4 or more active agents goes through retrieval (and makes one small embedding call per turn):
+
+```bash
+OPENPOKE_FULL_ROSTER_MAX=3 make dev ROUTING=records
+```
+
+`OPENPOKE_FULL_ROSTER_MAX` must be an integer of 0 or more; `0` means always retrieve. Unset or empty uses the default in `RetrievalParams` (25). Any other value stops the server at startup with an error naming the variable. `legacy` ignores it.
+
 ### Implementation
 
 - **`server/config.py`:** add `routing_mode: str` to `Settings` with `Field(default_factory=lambda: os.getenv("OPENPOKE_ROUTING", "legacy").strip().lower())`. It has to be `default_factory`, not `default=os.getenv(...)`, because the existing fields read the environment when the class is defined, before `server.py` has parsed its arguments. Add a validator that allows only `legacy` and `records` and raises `ValueError` with the allowed values otherwise. Also add `embedding_model: str = "openai/text-embedding-3-small"` and `embedding_dimensions: int = 512`.
+- **`full_roster_max` setting:** `Settings.full_roster_max: int` reads `OPENPOKE_FULL_ROSTER_MAX` through `default_factory`, and falls back to `RetrievalParams().full_roster_max`, so the default lives only in `params.py`. A validator (with `validate_default=True`) accepts integers of 0 or more and raises `ValueError` naming the variable otherwise. `RecordsRouting` takes `full_roster_max` from the setting, not from the dataclass default. A bad value in either variable stops startup with `Invalid configuration: ...` (`server/app.py` and `server/server.py` turn the validation error into `SystemExit`).
 - **`server/server.py`:** add `--routing {legacy,records}`. Parse the arguments **before** importing `server.app`: move `from .app import app` into `main()` after parsing. If `--routing` is given, set `os.environ["OPENPOKE_ROUTING"]` and call `get_settings.cache_clear()`. Setting the environment variable is what makes `--reload` work, because uvicorn's reload worker re-imports `server.app:app` in a child process that inherits the environment.
 - **`Makefile`:** `ROUTING ?=`, and in `dev` and `start` add `$(if $(ROUTING),--routing $(ROUTING),)` to the server command. Add `ROUTING` to the help text. Update [makefile.md](makefile.md).
-- **Startup log:** one line at app start, for example `Routing mode: records (embeddings openai/text-embedding-3-small@512, K=8, full_roster_max=25)`, so it's visible in `make logs` which system is running.
+- **Startup log:** one line at app start, for example `Routing mode: records (embeddings openai/text-embedding-3-small@512, K=8, full_roster_max=25)`, so it's visible in `make logs` which system is running. The `full_roster_max` shown is the one in effect, after `OPENPOKE_FULL_ROSTER_MAX`. In `legacy` the line is `Routing mode: legacy`.
 - **`/api/v1/meta`:** add `routing_mode` to `RootResponse` so the UI or `curl` can confirm the mode. The web UI itself doesn't change.
 - **Reading the mode:** code reads `get_settings().routing_mode` when a runtime is created, never at import time.
 
@@ -324,7 +333,7 @@ class Embedder(Protocol):
 
 | Param | Default | Meaning |
 | --- | --- | --- |
-| `full_roster_max` | 25 in production (a guess until the baseline); set per config in evals | Show every record when there are at most this many active ones |
+| `full_roster_max` | 25 in production (a guess until the baseline); `OPENPOKE_FULL_ROSTER_MAX` overrides it in the server; set per config in evals | Show every record when there are at most this many active ones |
 | `k` | 8 | Records shown when retrieving |
 | `max_pinned` | 3 | Pinned agents counted inside K |
 | `pin_lookback` | 3 | Recent `agent_message` entries scanned for result lines |
@@ -590,6 +599,7 @@ All on dev until the last step. The user runs every paid command. Costs are esti
 - **Legacy is untouched:** with `routing_mode="legacy"`, `InteractionAgentRuntime` gives the same system prompt, tool schemas and messages as calling the module functions directly. The sha256 of `system_prompt.md` and of `json.dumps(TOOL_SCHEMAS, sort_keys=True)` match the values recorded at the start of implementation.
 - **Prompt drift:** `system_prompt_records.md` outside the routing markers equals `system_prompt.md`.
 - **Mode switch:** `OPENPOKE_ROUTING` unset gives `legacy`. `records` gives `records`. A bad value raises. `server.server --routing records` sets the environment before `server.app` is imported (check with a subprocess and `/api/v1/meta`, or by patching `uvicorn.run`).
+- **Full-roster threshold:** `OPENPOKE_FULL_ROSTER_MAX` unset gives 25, a valid value is used (also by `RecordsRouting`), and a negative or non-integer value raises.
 - **Store:** create, collision, alias, `touch_dispatch` keeping 3 snippets, `record_result` filling the right snippet, atomic write, clear.
 - **Import:** a temp roster plus temp logs with `Email Keith` and `email-keith` gives one record with an alias. Timestamps, counts and snippets come from the logs.
 - **Tools:** an unknown id errors and creates nothing; a name passed as id resolves; a create collision errors with the existing id; an empty purpose falls back; a create adds to `roster.json`. Execution dispatch is patched out.
@@ -632,6 +642,30 @@ The implementing agent never passes `--confirm-spend` and never runs paid comman
 - **Log sharing** between slug-equal names (I4) is fixed for new agents and folded into aliases for old ones.
 - **New failure mode:** retrieval misses become false spawns (`target_excluded`). The pins and BM25 channels are there to reduce them, and the probe measures them before any routing run.
 - **New dependency:** an embedding call on every turn above the threshold. Its latency is a guardrail metric. If OpenRouter's embedding endpoint is down, the system degrades to lexical retrieval rather than failing.
+
+## Implementation notes
+
+Readings of the spec that the implementation had to choose, recorded so the experiment and later versions build on the same ones. Each kept `legacy` and `names_only` unchanged; tests pin both.
+
+**Server**
+
+- `RecordView` has two more fields with defaults: `task_count` (the prompt entry shows `tasks="N"`) and `aliases` (pins match aliases). `CandidateSet` has `error`, the reason the semantic channel was dropped.
+- Records no channel ranks are still ordered after the ranked ones, by the tie-break (`last_active`, then `agent_id`), so K fills on lexical-only turns. In `full` and `empty` mode pins, queries and scores stay empty.
+- Text cuts collapse whitespace and count the "…" inside the limit. Names over 60 characters are cut without "…". An empty result is stored as "(no response)", so a later result can't fill the wrong snippet.
+- Import pairs each `agent_request` with the next unpaired `agent_response`; responses with no open request (trigger runs) are skipped. A log with no requests sets `last_active` to `created_at`.
+- The routing markers stay in `system_prompt_records.md` for the drift test but are removed before the prompt is sent. `last_active` is left out of an entry when it's unknown.
+- Retrieval reads every cached vector before its first `await`, so a concurrent turn re-embedding the same agent can't swap a vector mid-turn. `EmbeddingIndex(key_by_content=True)` keys vectors by `sha256(model|dimensions|text)` instead of `agent_id`; the harness uses it, since its `a-run-<n>` ids repeat across concurrent sequences with different texts.
+- `server/services/agents/purpose.py` holds the backfill prompt, its cache key and the output cleanup. The optional production backfill CLI isn't built.
+
+**Harness (version 1.1.0)**
+
+- Embeddings go through the run's API: OpenAI's `/v1/embeddings` for `models.api: "openai"` (the baseline's setting since phase 1 moved runs off OpenRouter), else OpenRouter with the provider pinned. On OpenAI direct, a model's id is its `openai_model_ids` entry or the name without `openai/`, so the configs' `models` block stays identical to the baseline's.
+- The token probe uses the method's own prompt and tools with an empty roster (`probe_request`), so roster tokens are measured against the records prompt, not names_only's.
+- `diagnostics["candidates"]` is set only when retrieval ran. In `full` mode the order is the roster order, so recall@k would measure nothing.
+- An agent the stub creates gets a deterministic id, `ag_` + 8 hex characters from its name, so a later `send_message_to_agent` in the same turn resolves to it.
+- Cached purposes are keyed by agent id, prompt + name + first task, and the summarizer model. Fake-model runs use no cache.
+- A spend cap reached during an embedding call stops the run instead of falling back to lexical retrieval. A failed embedding call (after retries) falls back, as in production.
+- Recall is also reported at k = 8 (the default K), and `report.md` gains a retrieval table in section 7. The mixed-model-version warning now compares versions per requested model, since embedding and backfill calls return other models.
 
 ## Open questions
 

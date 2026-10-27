@@ -22,6 +22,8 @@ class AgentView:
     work_log: tuple[WorkItem, ...]  # what this agent has done; names_only ignores it
     created_at: str  # "YYYY-MM-DD HH:MM:SS"; names_only ignores it
     last_active: str  # last delegation to this agent; names_only ignores it
+    # what a method stored when it created the agent (Delegation.extra), e.g. (("purpose", "..."),)
+    extra: tuple[tuple[str, str], ...] = ()
     # deliberately no thread_id
 
 
@@ -39,6 +41,7 @@ class RoutingInput:
     entries: tuple[Entry, ...]  # unsummarized entries, oldest first
     message_text: str
     message_type: str  # "user" | "agent"
+    now: str = ""  # the turn's message timestamp, "YYYY-MM-DD HH:MM:SS"
 
 
 @dataclass
@@ -48,6 +51,7 @@ class Delegation:
     instructions: str
     iteration: int  # loop iteration it came from (0-based)
     order: int  # order across the whole turn
+    extra: dict = field(default_factory=dict)  # stored on a created agent in carried mode (e.g. purpose)
 
 
 @dataclass

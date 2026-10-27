@@ -218,26 +218,31 @@ def _message_tag(message: dict) -> str:
 # Suites
 
 
+def single_case_state(fs: FixtureSet, split: str, case: dict, n: int) -> RoutingState:
+    """A single-turn case's starting state at roster size ``n`` (also used by the retrieval probe)."""
+    roster_ids = roster_for_case(case, n, fs.rosters[split]["filler_order"], fs.agent_of_thread[split], fs.threads[split])
+    return initial_state(
+        roster_ids=roster_ids,
+        agents=fs.agents[split],
+        agent_times=case["agent_times"],
+        filler_age_days=fs.rosters[split]["filler_age_days"],
+        now=case["message"]["timestamp"],
+        history=case["history"],
+    )
+
+
 async def run_single_unit(ctx: RunContext, split: str, case: dict, n: int, rep: int) -> None:
     if ctx.capped:
         return
     fs = ctx.fixtures
     CALL_CONTEXT.set({"case_id": case["case_id"], "N": n, "mode": None, "rep": rep, "turn": None, "suite": "single", "split": split})
-    roster_ids = roster_for_case(case, n, fs.rosters[split]["filler_order"], fs.agent_of_thread[split], fs.threads[split])
     now = case["message"]["timestamp"]
-    state = initial_state(
-        roster_ids=roster_ids,
-        agents=fs.agents[split],
-        agent_times=case["agent_times"],
-        filler_age_days=fs.rosters[split]["filler_age_days"],
-        now=now,
-        history=case["history"],
-    )
+    state = single_case_state(fs, split, case, n)
     sc = _scoring_context(case["label"], state, case["meta"].get("prev_thread"), with_context=False)
     output: Optional[RoutingOutput] = None
     error = None
     try:
-        output = await ctx.method.route(state.routing_input(case["message"]["text"], case["message"]["type"]))
+        output = await ctx.method.route(state.routing_input(case["message"]["text"], case["message"]["type"], now=now))
         score = score_turn(sc, output)
     except SpendCapReached:
         ctx.capped = True
@@ -269,7 +274,8 @@ def _carried_work(state: RoutingState, score: TurnScore, gold: dict) -> list[Wor
     for d in ordered:
         text = (gold.get("result_text") or DONE_TEXT) if d.agent_key == score.primary_key else DONE_TEXT
         new_id = next_run_agent_id(state) if is_new_key(d.agent_key) else None
-        work.append(WorkAssignment(d.agent_key, d.agent_name, d.instructions, text, new_id))
+        extra = dict(d.extra) if new_id else {}
+        work.append(WorkAssignment(d.agent_key, d.agent_name, d.instructions, text, new_id, extra))
     return work
 
 
@@ -395,7 +401,9 @@ async def run_sequence_unit(ctx: RunContext, split: str, seq: dict, n: int, mode
             error = "sequence-run aborted after an earlier api_error"
         else:
             try:
-                output = await ctx.method.route(state.routing_input(turn["message"]["text"], turn["message"]["type"]))
+                output = await ctx.method.route(
+                    state.routing_input(turn["message"]["text"], turn["message"]["type"], now=turn["timestamp"])
+                )
                 score = score_turn(sc, output)
             except SpendCapReached:
                 ctx.capped = True
@@ -476,7 +484,14 @@ async def run_probe_unit(ctx: RunContext, split: str, case: dict) -> None:
         now=case["message"]["timestamp"],
         history=case["history"],
     )
-    system_prompt, messages = build_messages(state.routing_input(case["message"]["text"], case["message"]["type"]))
+    inp = state.routing_input(case["message"]["text"], case["message"]["type"], now=case["message"]["timestamp"])
+    probe_request = getattr(ctx.method, "probe_request", None)
+    if probe_request is not None:
+        # The method's own prompt and tools with an empty roster (records_retrieval).
+        system_prompt, messages, tools = probe_request(inp)
+    else:
+        system_prompt, messages = build_messages(inp)
+        tools = TOOL_SCHEMAS
     record = {
         "run_id": ctx.run_id, "split": split, "suite": "token_probe", "case_id": case["case_id"], "turn": None,
         "mode": None, "N": 0, "rep": None, "status": "ok", "prompt_tokens": None, "cost": 0.0, "call_ids": [], "error": None,
@@ -487,7 +502,7 @@ async def run_probe_unit(ctx: RunContext, split: str, case: dict) -> None:
             model=ctx.interaction_model,
             messages=messages,
             system=system_prompt,
-            tools=TOOL_SCHEMAS,
+            tools=tools,
             provider=ctx.provider,
             seed=call_seed("token_probe", case["case_id"], 0),
             extra={**ctx.extra_params, "max_tokens": 1},
@@ -501,19 +516,26 @@ async def run_probe_unit(ctx: RunContext, split: str, case: dict) -> None:
     ctx.turns.append(record)
 
 
+def fixture_agent_views(fixtures: FixtureSet, split: str) -> list[AgentView]:
+    """Every agent of a split, as ``prepare()`` sees it (no times; work log from the fixtures)."""
+    return [
+        AgentView(a["agent_id"], a["name"], tuple(WorkItem(**w) for w in a.get("work_log", [])), "", "")
+        for a in fixtures.agents[split].values()
+    ]
+
+
 async def run_all(ctx: RunContext) -> None:
     plan, fs = ctx.plan, ctx.fixtures
     tasks = []
     for split in plan.splits:
         singles = select_single(fs.single.get(split, []), plan.single_limit)
         seqs = select_sequences(fs.sequences.get(split, []), plan.sequence_limit)
-        # names_only builds nothing here; later methods may index or cache agent records.
-        await ctx.method.prepare(
-            [
-                AgentView(a["agent_id"], a["name"], tuple(WorkItem(**w) for w in a.get("work_log", [])), "", "")
-                for a in fs.agents[split].values()
-            ]
-        )
+        # names_only builds nothing here; records_retrieval backfills purposes and embeds records.
+        try:
+            await ctx.method.prepare(fixture_agent_views(fs, split))
+        except SpendCapReached:
+            ctx.capped = True
+            return
         for seq in seqs:
             for n in plan.sequence_sizes[split]:
                 for mode in plan.modes:

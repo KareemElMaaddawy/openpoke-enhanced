@@ -34,6 +34,7 @@ def meta(request: Request, settings: Settings = Depends(get_settings)) -> RootRe
         service="openpoke",
         version=settings.app_version,
         endpoints=endpoints,
+        routing_mode=settings.routing_mode,
     )
 
 
