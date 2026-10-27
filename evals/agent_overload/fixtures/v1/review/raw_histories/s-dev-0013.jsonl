@@ -1,0 +1,138 @@
+{"payload": "i'm back", "tag": "user_message", "timestamp": "2026-10-13 08:30:55"}
+{"payload": "Welcome back. I missed you for almost thirty whole seconds.", "tag": "poke_reply", "timestamp": "2026-10-13 08:31:00"}
+{"payload": "pull up the lyft info session invite i signed up for in november", "tag": "user_message", "timestamp": "2026-10-13 12:45:32"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-13 12:45:37"}
+{"payload": "[SUCCESS] Lyft Info Session Invite: Found a confirmation from events@lyft.com (Oct 18) for the 'Lyft Product Design Virtual Info Session' on Nov 5 at 12:00pm MT, with a Zoom link and a note that attendees get early access to open roles.", "tag": "agent_message", "timestamp": "2026-10-13 12:47:57"}
+{"payload": "Lyft's design info session is Nov 5 at 12pm MT on Zoom; confirmation came Oct 18.", "tag": "poke_reply", "timestamp": "2026-10-13 12:48:02"}
+{"payload": "find the mailchimp email confirming i downgraded my plan", "tag": "user_message", "timestamp": "2026-10-13 12:50:53"}
+{"payload": "pulling that up now", "tag": "poke_reply", "timestamp": "2026-10-13 12:50:58"}
+{"payload": "[SUCCESS] Mail search: Found 'Your plan change is confirmed' from billing@mailchimp.com, dated Oct 6, 2026. The account moves from Standard to Essentials on Nov 1, and the new price is $27.50/month for up to 1,500 contacts.", "tag": "agent_message", "timestamp": "2026-10-13 12:53:12"}
+{"payload": "Found it: Mailchimp confirmed on Oct 6 you'll move to Essentials Nov 1 at $27.50/month.", "tag": "poke_reply", "timestamp": "2026-10-13 12:53:17"}
+{"payload": "add a reminder an hour before it starts", "tag": "user_message", "timestamp": "2026-10-13 12:55:13"}
+{"payload": "pulling that up now", "tag": "poke_reply", "timestamp": "2026-10-13 12:55:18"}
+{"payload": "[SUCCESS] Lyft Info Session Invite: Set a reminder for Nov 5 at 11:00am MT: 'Lyft Product Design info session starts at noon, Zoom link in confirmation email.'", "tag": "agent_message", "timestamp": "2026-10-13 12:56:45"}
+{"payload": "Reminder set for Nov 5 at 11am MT, an hour before the session.", "tag": "poke_reply", "timestamp": "2026-10-13 12:56:50"}
+{"payload": "do you believe in luck", "tag": "user_message", "timestamp": "2026-10-13 14:25:55"}
+{"payload": "A little. I think it's mostly preparation bumping into a good coincidence.", "tag": "poke_reply", "timestamp": "2026-10-13 14:26:00"}
+{"payload": "i think i'm hungry", "tag": "user_message", "timestamp": "2026-10-13 14:55:04"}
+{"payload": "That \"think\" is doing a lot of work. You're probably hungry. Snack time.", "tag": "poke_reply", "timestamp": "2026-10-13 14:55:09"}
+{"payload": "what's the boiling point of water", "tag": "user_message", "timestamp": "2026-10-13 17:50:58"}
+{"payload": "100 degrees Celsius, 212 Fahrenheit, at sea level. Up high it gets lazy.", "tag": "poke_reply", "timestamp": "2026-10-13 17:51:03"}
+{"payload": "did duolingo email me about a failed payment? need to check", "tag": "user_message", "timestamp": "2026-10-13 19:35:36"}
+{"payload": "looking now", "tag": "poke_reply", "timestamp": "2026-10-13 19:35:41"}
+{"payload": "[SUCCESS] Duolingo payment email lookup: Yes. no-reply@duolingo.com sent 'We couldn't renew your Super Family plan' on Oct 14, 2026. The $119.99 annual renewal was declined on the card ending 9082, and the plan stays active until Oct 21.", "tag": "agent_message", "timestamp": "2026-10-13 19:38:33"}
+{"payload": "Yes. Duolingo said your $119.99 Super Family renewal was declined Oct 14 on the card ending 9082.", "tag": "poke_reply", "timestamp": "2026-10-13 19:38:38"}
+{"payload": "can you send me the zoom link again, i lost it", "tag": "user_message", "timestamp": "2026-10-13 19:50:09"}
+{"payload": "checking now", "tag": "poke_reply", "timestamp": "2026-10-13 19:50:14"}
+{"payload": "[SUCCESS] Lyft Info Session Invite: Pulled the Zoom link from the Oct 18 confirmation: https://lyft.zoom.us/j/84920175533, passcode DESIGN26.", "tag": "agent_message", "timestamp": "2026-10-13 19:51:46"}
+{"payload": "Here's the link: lyft.zoom.us/j/84920175533, passcode DESIGN26.", "tag": "poke_reply", "timestamp": "2026-10-13 19:51:51"}
+{"payload": "hey", "tag": "user_message", "timestamp": "2026-10-13 20:35:04"}
+{"payload": "Hey you. Good to hear from you.", "tag": "poke_reply", "timestamp": "2026-10-13 20:35:09"}
+{"payload": "find my marriott receipt from the austin conference stay last month, need it for expenses", "tag": "user_message", "timestamp": "2026-10-13 21:15:46"}
+{"payload": "let me check", "tag": "poke_reply", "timestamp": "2026-10-13 21:15:51"}
+{"payload": "[SUCCESS] Marriott Austin Receipt Search: Found the final folio from Marriott Austin Downtown (noreply@marriott.com), sent Oct 22, for 2 nights Oct 20-22. The total was $487.62, including $64.12 in taxes, charged to the Visa ending 4417. The PDF is attached.", "tag": "agent_message", "timestamp": "2026-10-13 21:17:26"}
+{"payload": "Found it: Marriott Austin Downtown folio, $487.62 for Oct 20-22, PDF attached in the Oct 22 email.", "tag": "poke_reply", "timestamp": "2026-10-13 21:17:31"}
+{"payload": "what's heavier, a pound of feathers or a pound of bricks", "tag": "user_message", "timestamp": "2026-10-14 08:10:49"}
+{"payload": "Same weight, a pound is a pound. The feathers just need a bigger bag.", "tag": "poke_reply", "timestamp": "2026-10-14 08:10:54"}
+{"payload": "when does it actually lapse if i don't fix it", "tag": "user_message", "timestamp": "2026-10-14 10:00:40"}
+{"payload": "on it now", "tag": "poke_reply", "timestamp": "2026-10-14 10:00:45"}
+{"payload": "[SUCCESS] Duolingo payment email lookup: The email says the Super Family plan stays active through Oct 21, 2026. After that, the family members revert to free accounts.", "tag": "agent_message", "timestamp": "2026-10-14 10:02:15"}
+{"payload": "It lapses after Oct 21, 2026. Then everyone drops to free accounts.", "tag": "poke_reply", "timestamp": "2026-10-14 10:02:20"}
+{"payload": "bye for now", "tag": "user_message", "timestamp": "2026-10-14 11:15:21"}
+{"payload": "Later! I'll be here.", "tag": "poke_reply", "timestamp": "2026-10-14 11:15:26"}
+{"payload": "ok cool", "tag": "user_message", "timestamp": "2026-10-14 11:50:10"}
+{"payload": "Cool cool cool.", "tag": "poke_reply", "timestamp": "2026-10-14 11:50:15"}
+{"payload": "remind me to pay the hartwell parking permit renewal before oct 12", "tag": "user_message", "timestamp": "2026-10-14 14:45:01"}
+{"payload": "on it", "tag": "poke_reply", "timestamp": "2026-10-14 14:45:06"}
+{"payload": "[SUCCESS] Hartwell Parking Permit Reminder: Found the renewal notice from billing@hartwellpm.com: permit #P-4471 renewal is $145, due October 12, 2026. Set a reminder for October 9 at 9:00am.", "tag": "agent_message", "timestamp": "2026-10-14 14:47:16"}
+{"payload": "Done. Reminder set for Oct 9 at 9am; renewal is $145, due Oct 12.", "tag": "poke_reply", "timestamp": "2026-10-14 14:47:21"}
+{"payload": "good job", "tag": "user_message", "timestamp": "2026-10-14 17:05:01"}
+{"payload": "Thank you. I'm going to imagine you said that in a deep, approving voice.", "tag": "poke_reply", "timestamp": "2026-10-14 17:05:06"}
+{"payload": "random thought: socks are weird", "tag": "user_message", "timestamp": "2026-10-14 17:15:33"}
+{"payload": "They really are. We wrap our feet in little tubes and call it comfort.", "tag": "poke_reply", "timestamp": "2026-10-14 17:15:38"}
+{"payload": "wow that's wild", "tag": "user_message", "timestamp": "2026-10-14 18:35:39"}
+{"payload": "Right? Life's got range.", "tag": "poke_reply", "timestamp": "2026-10-14 18:35:44"}
+{"payload": "thanks!", "tag": "user_message", "timestamp": "2026-10-14 20:05:39"}
+{"payload": "Anytime. Being helpful is basically my favorite hobby.", "tag": "poke_reply", "timestamp": "2026-10-14 20:05:44"}
+{"payload": "surprise me", "tag": "user_message", "timestamp": "2026-10-14 20:20:26"}
+{"payload": "Okay: a group of flamingos is called a flamboyance. You're welcome.", "tag": "poke_reply", "timestamp": "2026-10-14 20:20:31"}
+{"payload": "is a hot dog a sandwich", "tag": "user_message", "timestamp": "2026-10-14 20:25:35"}
+{"payload": "I say no. It's its own thing. A hot dog stands alone.", "tag": "poke_reply", "timestamp": "2026-10-14 20:25:40"}
+{"payload": "how much was the late fee if i miss it?", "tag": "user_message", "timestamp": "2026-10-14 21:15:20"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-14 21:15:25"}
+{"payload": "[SUCCESS] Hartwell Parking Permit Reminder: The notice says payments after October 12 incur a $25 late fee, and permits lapse after October 19.", "tag": "agent_message", "timestamp": "2026-10-14 21:17:41"}
+{"payload": "$25 late fee after Oct 12, and the permit lapses Oct 19.", "tag": "poke_reply", "timestamp": "2026-10-14 21:17:46"}
+{"payload": "pineapple on pizza yes or no", "tag": "user_message", "timestamp": "2026-10-15 08:25:46"}
+{"payload": "Yes, and I'll defend it politely. Sweet and salty is a fair deal.", "tag": "poke_reply", "timestamp": "2026-10-15 08:25:51"}
+{"payload": "do you ever sleep", "tag": "user_message", "timestamp": "2026-10-15 08:40:39"}
+{"payload": "Nope. Sounds productive, but I'd honestly love a nap.", "tag": "poke_reply", "timestamp": "2026-10-15 08:40:44"}
+{"payload": "i need a vacation", "tag": "user_message", "timestamp": "2026-10-15 08:55:27"}
+{"payload": "Same energy, honestly. Somewhere with a beach and zero notifications.", "tag": "poke_reply", "timestamp": "2026-10-15 08:55:32"}
+{"payload": "i'm so tired", "tag": "user_message", "timestamp": "2026-10-15 14:10:36"}
+{"payload": "Sounds like a blanket-and-do-nothing kind of day. Go easy on yourself.", "tag": "poke_reply", "timestamp": "2026-10-15 14:10:41"}
+{"payload": "does it show the parking charge separately?", "tag": "user_message", "timestamp": "2026-10-15 15:05:11"}
+{"payload": "on it", "tag": "poke_reply", "timestamp": "2026-10-15 15:05:16"}
+{"payload": "[SUCCESS] Marriott Austin Receipt Search: Yes. The folio lists self-parking at $38/night, $76 total, as a separate line item from the room charges of $347.50.", "tag": "agent_message", "timestamp": "2026-10-15 15:06:58"}
+{"payload": "Yes, parking is its own line: $76 for two nights, separate from the $347.50 room charge.", "tag": "poke_reply", "timestamp": "2026-10-15 15:07:03"}
+{"payload": "lol", "tag": "user_message", "timestamp": "2026-10-15 18:10:08"}
+{"payload": "Glad that landed.", "tag": "poke_reply", "timestamp": "2026-10-15 18:10:13"}
+{"payload": "forward it to expenses@northfieldgroup.com with subject austin hotel receipt", "tag": "user_message", "timestamp": "2026-10-15 18:15:58"}
+{"payload": "looking now", "tag": "poke_reply", "timestamp": "2026-10-15 18:16:03"}
+{"payload": "[SUCCESS] Marriott Austin Receipt Search: Forwarded the Oct 22 Marriott folio email with the PDF to expenses@northfieldgroup.com under the subject 'Austin hotel receipt'.", "tag": "agent_message", "timestamp": "2026-10-15 18:17:48"}
+{"payload": "Done, forwarded to expenses@northfieldgroup.com with the subject 'Austin hotel receipt'.", "tag": "poke_reply", "timestamp": "2026-10-15 18:17:53"}
+{"payload": "what's the opposite of up", "tag": "user_message", "timestamp": "2026-10-15 18:35:42"}
+{"payload": "Down. I suspect this is a setup, though. Go on, hit me.", "tag": "poke_reply", "timestamp": "2026-10-15 18:35:47"}
+{"payload": "sorry for the late reply", "tag": "user_message", "timestamp": "2026-10-15 20:50:20"}
+{"payload": "No apology needed. I'm not going anywhere.", "tag": "poke_reply", "timestamp": "2026-10-15 20:50:25"}
+{"payload": "remind me on the 18th to update the card", "tag": "user_message", "timestamp": "2026-10-15 21:50:51"}
+{"payload": "on it", "tag": "poke_reply", "timestamp": "2026-10-15 21:50:56"}
+{"payload": "[SUCCESS] Duolingo payment email lookup: Set a reminder for Oct 18, 2026 at 9:00 AM: 'Update card for Duolingo Super Family before Oct 21 lapse'.", "tag": "agent_message", "timestamp": "2026-10-15 21:51:52"}
+{"payload": "Reminder set for Oct 18 at 9am to update the Duolingo card.", "tag": "poke_reply", "timestamp": "2026-10-15 21:51:57"}
+{"payload": "move the reminder to oct 8 at 8am", "tag": "user_message", "timestamp": "2026-10-16 08:25:33"}
+{"payload": "checking now", "tag": "poke_reply", "timestamp": "2026-10-16 08:25:38"}
+{"payload": "[SUCCESS] Hartwell Parking Permit Reminder: Reminder rescheduled from October 9 at 9:00am to October 8 at 8:00am.", "tag": "agent_message", "timestamp": "2026-10-16 08:27:37"}
+{"payload": "Moved to Oct 8 at 8am.", "tag": "poke_reply", "timestamp": "2026-10-16 08:27:42"}
+{"payload": "did they send a second notice after that", "tag": "user_message", "timestamp": "2026-10-16 08:30:35"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-16 08:30:40"}
+{"payload": "[SUCCESS] Duolingo payment email lookup: Yes. A follow-up from no-reply@duolingo.com arrived Oct 17 with the subject 'Last chance to keep Super Family' and the same $119.99 renewal amount.", "tag": "agent_message", "timestamp": "2026-10-16 08:33:00"}
+{"payload": "Yes, a second notice came Oct 17: 'Last chance to keep Super Family'.", "tag": "poke_reply", "timestamp": "2026-10-16 08:33:05"}
+{"payload": "was there also a receipt for the breakfast i charged to the room?", "tag": "user_message", "timestamp": "2026-10-16 08:45:09"}
+{"payload": "working on it", "tag": "poke_reply", "timestamp": "2026-10-16 08:45:14"}
+{"payload": "[SUCCESS] Marriott Austin Receipt Search: The folio has one breakfast charge, $23.40 at Garrison Kitchen on Oct 21. No separate restaurant receipt was emailed.", "tag": "agent_message", "timestamp": "2026-10-16 08:47:22"}
+{"payload": "Only the folio line: $23.40 at Garrison Kitchen on Oct 21. No separate receipt was emailed.", "tag": "poke_reply", "timestamp": "2026-10-16 08:47:27"}
+{"payload": "what was the old price on standard", "tag": "user_message", "timestamp": "2026-10-16 09:30:30"}
+{"payload": "working on it", "tag": "poke_reply", "timestamp": "2026-10-16 09:30:35"}
+{"payload": "[SUCCESS] Mail search: The confirmation shows Standard at $75.00/month for up to 1,500 contacts, so the downgrade saves $47.50 a month.", "tag": "agent_message", "timestamp": "2026-10-16 09:31:31"}
+{"payload": "Standard was $75.00/month, so you'll save $47.50 a month.", "tag": "poke_reply", "timestamp": "2026-10-16 09:31:36"}
+{"payload": "email events@lyft.com asking if the session will be recorded", "tag": "user_message", "timestamp": "2026-10-16 10:10:23"}
+{"payload": "right away", "tag": "poke_reply", "timestamp": "2026-10-16 10:10:28"}
+{"payload": "[SUCCESS] Lyft Info Session Invite: Sent an email to events@lyft.com asking whether the Nov 5 info session will be recorded and shared with attendees afterward.", "tag": "agent_message", "timestamp": "2026-10-16 10:12:12"}
+{"payload": "Sent your question to events@lyft.com about a recording of the Nov 5 session.", "tag": "poke_reply", "timestamp": "2026-10-16 10:12:17"}
+{"payload": "how many days in a leap year", "tag": "user_message", "timestamp": "2026-10-16 10:30:21"}
+{"payload": "366. That one extra day does a lot of work.", "tag": "poke_reply", "timestamp": "2026-10-16 10:30:26"}
+{"payload": "does it say what features i lose", "tag": "user_message", "timestamp": "2026-10-16 10:40:14"}
+{"payload": "pulling that up now", "tag": "poke_reply", "timestamp": "2026-10-16 10:40:19"}
+{"payload": "[SUCCESS] Mail search: The email lists three losses on Essentials: send-time optimization, advanced segmentation, and multivariate testing. Email support stays the same.", "tag": "agent_message", "timestamp": "2026-10-16 10:42:22"}
+{"payload": "You lose send-time optimization, advanced segmentation, and multivariate testing. Email support stays.", "tag": "poke_reply", "timestamp": "2026-10-16 10:42:27"}
+{"payload": "send a note to my teammate jess about the change", "tag": "user_message", "timestamp": "2026-10-16 10:45:21"}
+{"payload": "let me check", "tag": "poke_reply", "timestamp": "2026-10-16 10:45:26"}
+{"payload": "[SUCCESS] Mail search: Sent an email to jess.moreno@brightpath.co saying the Mailchimp plan moves to Essentials on Nov 1 and listing the three features that go away.", "tag": "agent_message", "timestamp": "2026-10-16 10:46:57"}
+{"payload": "Emailed Jess Moreno about the Nov 1 change and the lost features.", "tag": "poke_reply", "timestamp": "2026-10-16 10:47:02"}
+{"payload": "forward the notice to my roommate jess", "tag": "user_message", "timestamp": "2026-10-16 12:05:59"}
+{"payload": "let me check", "tag": "poke_reply", "timestamp": "2026-10-16 12:06:04"}
+{"payload": "[SUCCESS] Hartwell Parking Permit Reminder: Forwarded the Hartwell renewal notice to jess.tamura@gmail.com with a note that it's due Oct 12.", "tag": "agent_message", "timestamp": "2026-10-16 12:08:03"}
+{"payload": "Forwarded the notice to Jess with the Oct 12 due date.", "tag": "poke_reply", "timestamp": "2026-10-16 12:08:08"}
+{"payload": "remind me to pay the hartwell parking permit renewal before oct 12", "tag": "user_message", "timestamp": "2026-10-16 12:22:59"}
+{"payload": "On it, I'll find the notice and set a reminder.", "tag": "poke_reply", "timestamp": "2026-10-16 12:23:04"}
+{"payload": "[SUCCESS] Hartwell Parking Permit Reminder: Found the renewal notice from billing@hartwellpm.com: permit #P-4471 renewal is $145, due October 12, 2026. Set a reminder for October 9 at 9:00am.", "tag": "agent_message", "timestamp": "2026-10-16 12:26:42"}
+{"payload": "Done. The permit renewal is $145, due Oct 12, and I set a reminder for Oct 9 at 9am.", "tag": "poke_reply", "timestamp": "2026-10-16 12:26:47"}
+{"payload": "find the mailchimp email confirming i downgraded my plan", "tag": "user_message", "timestamp": "2026-10-16 13:48:47"}
+{"payload": "Looking for it now.", "tag": "poke_reply", "timestamp": "2026-10-16 13:48:52"}
+{"payload": "[SUCCESS] Mail search: Found 'Your plan change is confirmed' from billing@mailchimp.com, dated Oct 6, 2026. The account moves from Standard to Essentials on Nov 1, and the new price is $27.50/month for up to 1,500 contacts.", "tag": "agent_message", "timestamp": "2026-10-16 13:50:32"}
+{"payload": "Found it. Your plan moves from Standard to Essentials on Nov 1 at $27.50/month for up to 1,500 contacts.", "tag": "poke_reply", "timestamp": "2026-10-16 13:50:37"}
+{"payload": "ugh i keep forgetting stuff lately", "tag": "user_message", "timestamp": "2026-10-16 16:06:37"}
+{"payload": "Happy to help keep track of things. Just tell me what you need.", "tag": "poke_reply", "timestamp": "2026-10-16 16:06:42"}
+{"payload": "find my marriott receipt from the austin conference stay last month, need it for expenses", "tag": "user_message", "timestamp": "2026-10-16 17:50:42"}
+{"payload": "Searching for the Marriott folio.", "tag": "poke_reply", "timestamp": "2026-10-16 17:50:47"}
+{"payload": "[SUCCESS] Marriott Austin Receipt Search: Found the final folio from Marriott Austin Downtown (noreply@marriott.com), sent Oct 22, for 2 nights Oct 20-22. The total was $487.62, including $64.12 in taxes, charged to the Visa ending 4417. The PDF is attached.", "tag": "agent_message", "timestamp": "2026-10-16 17:51:55"}
+{"payload": "Found it. The Austin Marriott folio comes to $487.62 for the 2 nights, Oct 20-22, and the PDF is attached.", "tag": "poke_reply", "timestamp": "2026-10-16 17:52:00"}

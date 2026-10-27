@@ -1,0 +1,138 @@
+{
+  "provenance": {
+    "attempts": 1,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "0f89393450e3be9518c6da9d23f7f0bca40ce11a49a1e0a9a9d3b8fd89ccadd2",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found an email from Priya Raman at Notion confirming a 30-minute phone screen on Monday, Sept 14 at 2:00 PM PT, with a Zoom link attached.",
+      "key": "f1",
+      "opening_request": "can you find the email from Notion about my phone screen time?",
+      "result_reply": "Notion phone screen with Priya Raman is Mon Sept 14, 2:00 PM PT. Zoom link's in the email.",
+      "topic": "Phone screen with Notion recruiter Priya Raman on Sept 14"
+    },
+    {
+      "canned_result": "Drafted a short thank-you to Carlos Mendez referencing the Sept 22 design systems discussion and the team's plugin roadmap, and saved it in Drafts for review.",
+      "key": "f2",
+      "opening_request": "draft a thank you email to Carlos at Figma for yesterday's interview",
+      "result_reply": "Thank-you to Carlos is drafted and in your Drafts folder. Want me to send it?",
+      "topic": "Thank-you note to Figma hiring manager Carlos Mendez after Sept 22 interview"
+    },
+    {
+      "canned_result": "Sent a polite reply to Megan Cho at Airtable asking whether the $145,000 base is flexible, citing competing interest and relevant experience.",
+      "key": "f3",
+      "opening_request": "reply to Megan at Airtable, ask if the $145k base has any wiggle room",
+      "result_reply": "Sent your question to Megan about flexibility on the $145k base.",
+      "topic": "Salary negotiation reply to Airtable recruiter Megan Cho"
+    },
+    {
+      "canned_result": "Found a Sept 30 email from Slack's talent team declining the Senior UX Researcher application, with an invitation to apply to future openings.",
+      "key": "f4",
+      "opening_request": "did Slack ever get back to me about the UX researcher job?",
+      "result_reply": "Yes, Slack rejected you for Senior UX Researcher on Sept 30. They invited future applications.",
+      "topic": "Rejection email from Slack for Senior UX Researcher role"
+    },
+    {
+      "canned_result": "Set a reminder for Oct 19 at 9:00 AM to follow up on the Twilio Product Designer application submitted Oct 5.",
+      "key": "f5",
+      "opening_request": "remind me Oct 19 to follow up with Twilio about my application",
+      "result_reply": "Reminder set for Oct 19, 9 AM, to follow up with Twilio.",
+      "topic": "Follow-up reminder for Twilio application submitted Oct 5"
+    },
+    {
+      "canned_result": "Mailchimp's email from recruiter Alan Brooks says the take-home design exercise is due Thursday, Oct 8 at 5 PM ET, with a 4-hour time suggestion.",
+      "key": "f6",
+      "opening_request": "when is the Mailchimp take-home due? need the details",
+      "result_reply": "Mailchimp take-home is due Thursday Oct 8 at 5 PM ET. Suggested time is 4 hours.",
+      "topic": "Take-home design exercise from Mailchimp due Oct 8"
+    },
+    {
+      "canned_result": "Hannah Brooks at Gusto reached out about a Senior Product Designer role on the payroll team, remote-friendly, and asked for a 20-minute intro call this week.",
+      "key": "f7",
+      "opening_request": "summarize that email from the Gusto recruiter",
+      "result_reply": "Gusto's Hannah Brooks wants a 20-minute intro call about a Senior Product Designer role on payroll.",
+      "topic": "Recruiter intro email from Gusto's Hannah Brooks"
+    },
+    {
+      "canned_result": "Sent a courteous withdrawal email to Zendesk recruiter Owen Park, cancelling the Oct 12 interview and thanking the team for their time.",
+      "key": "f8",
+      "opening_request": "politely tell Zendesk I'm pulling out of the process",
+      "result_reply": "Withdrawal sent to Owen at Zendesk, and the Oct 12 interview is cancelled.",
+      "topic": "Decline Zendesk interview invitation for Oct 12"
+    },
+    {
+      "canned_result": "Replied to Elena Rossi at Spotify with the portfolio link and a short note highlighting three case studies, as she requested in her Oct 2 email.",
+      "key": "f9",
+      "opening_request": "send my portfolio link to Elena at Spotify, she asked for it",
+      "result_reply": "Portfolio link sent to Elena at Spotify with a short note on three case studies.",
+      "topic": "Portfolio request from Spotify recruiter Elena Rossi"
+    },
+    {
+      "canned_result": "Emailed Canva coordinator Lucy Tran requesting to move the Oct 15 panel interview to Friday, Oct 16, and offered morning or early afternoon slots.",
+      "key": "f10",
+      "opening_request": "ask Canva if we can move Thursday's panel to Friday",
+      "result_reply": "Asked Lucy at Canva to move the panel to Friday Oct 16. Waiting on her answer.",
+      "topic": "Reschedule Canva panel interview from Oct 15 to Oct 16"
+    },
+    {
+      "canned_result": "Found an automated email dated Oct 3 from Square confirming receipt of the Staff Designer application, reference number SQ-48213.",
+      "key": "f11",
+      "opening_request": "check if Square confirmed my application",
+      "result_reply": "Yes, Square confirmed your Staff Designer application on Oct 3. Reference is SQ-48213.",
+      "topic": "Application confirmation from Square for Staff Designer"
+    },
+    {
+      "canned_result": "Set a reminder for Oct 20 at 8:00 PM to review notes before the Adobe interview on Oct 21.",
+      "key": "f12",
+      "opening_request": "remind me the night before my Adobe interview to review my notes",
+      "result_reply": "Reminder set for Oct 20 at 8 PM to review Adobe notes.",
+      "topic": "Reminder to prep for Adobe interview on Oct 21"
+    },
+    {
+      "canned_result": "Found a HireRight email sent for Okta on Oct 26 with a background check link that expires Nov 2, requiring SSN and address history.",
+      "key": "f13",
+      "opening_request": "find the background check email from Okta, think it expires soon",
+      "result_reply": "Okta's HireRight background check link expires Nov 2. It needs SSN and address history.",
+      "topic": "Background check link from Okta via HireRight"
+    },
+    {
+      "canned_result": "Sent Professor Linda Hayes a request for a recommendation letter for the IDEO fellowship, noting the Nov 6 deadline and attaching the resume.",
+      "key": "f14",
+      "opening_request": "email Professor Hayes and ask for a recommendation letter for the IDEO fellowship",
+      "result_reply": "Request sent to Professor Hayes for the IDEO letter, with the Nov 6 deadline.",
+      "topic": "Recommendation letter request to Professor Linda Hayes"
+    },
+    {
+      "canned_result": "The CU Boulder email confirms the Career and Internship Fair on Oct 14 from 11 AM to 3 PM at the Events Center, with registration completed.",
+      "key": "f15",
+      "opening_request": "what time is the CU Boulder career fair again?",
+      "result_reply": "CU Boulder career fair is Oct 14, 11 AM to 3 PM at the Events Center.",
+      "topic": "Career fair confirmation from University of Colorado Boulder on Oct 14"
+    },
+    {
+      "canned_result": "Sent Nate Williams at Etsy a request to extend the offer decision deadline from Nov 10 to Nov 17, explaining you need time to finish another interview.",
+      "key": "f16",
+      "opening_request": "ask Nate at Etsy for a few more days to decide on the offer",
+      "result_reply": "Asked Nate at Etsy to extend your decision from Nov 10 to Nov 17.",
+      "topic": "Offer deadline extension request to Etsy recruiter Nate Williams"
+    },
+    {
+      "canned_result": "Found Sofia Duarte's Oct 9 email from Intercom with an interview prep PDF covering the portfolio presentation format, a 45-minute slot, and panelist names.",
+      "key": "f17",
+      "opening_request": "pull up the prep doc Sofia from Intercom sent me",
+      "result_reply": "Found Sofia's Intercom prep PDF: 45-minute portfolio presentation, with panelist names included.",
+      "topic": "Interview prep materials from Intercom's Sofia Duarte"
+    },
+    {
+      "canned_result": "Emailed Ben Ortiz at Dropbox asking whether the Senior Designer role can be fully remote from Denver or requires relocation to San Francisco.",
+      "key": "f18",
+      "opening_request": "ask Ben at Dropbox if the role can be fully remote",
+      "result_reply": "Sent Ben at Dropbox your question about full remote versus relocating to San Francisco.",
+      "topic": "Remote work and relocation question to Dropbox recruiter Ben Ortiz"
+    }
+  ]
+}

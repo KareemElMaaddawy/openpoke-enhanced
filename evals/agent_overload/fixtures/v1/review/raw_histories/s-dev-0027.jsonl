@@ -1,0 +1,114 @@
+{"payload": "need the staples receipt from september for my expense report", "tag": "user_message", "timestamp": "2026-10-14 09:30:00"}
+{"payload": "on it now", "tag": "poke_reply", "timestamp": "2026-10-14 09:30:05"}
+{"payload": "[SUCCESS] Staples September Receipt: Found Staples order receipt from orders@staples.com dated Sept 9 2026, order #STP-30918275. It covers 5 cases of copy paper and 2 HP 58A toner cartridges, $212.64 with tax.", "tag": "agent_message", "timestamp": "2026-10-14 09:32:08"}
+{"payload": "Found it: Staples order #STP-30918275 from Sept 9, $212.64 for paper and two HP 58A toners.", "tag": "poke_reply", "timestamp": "2026-10-14 09:32:13"}
+{"payload": "send it to priya in finance", "tag": "user_message", "timestamp": "2026-10-14 11:15:38"}
+{"payload": "looking now", "tag": "poke_reply", "timestamp": "2026-10-14 11:15:43"}
+{"payload": "[SUCCESS] Staples September Receipt: Forwarded the Staples receipt to priya.nair@halvorsenco.com with the subject 'Staples receipt for expense report, Sept 9'.", "tag": "agent_message", "timestamp": "2026-10-14 11:16:38"}
+{"payload": "Sent the receipt to Priya in finance.", "tag": "poke_reply", "timestamp": "2026-10-14 11:16:43"}
+{"payload": "bye for now", "tag": "user_message", "timestamp": "2026-10-14 11:25:09"}
+{"payload": "Later! I'll be here.", "tag": "poke_reply", "timestamp": "2026-10-14 11:25:14"}
+{"payload": "good job", "tag": "user_message", "timestamp": "2026-10-14 12:35:10"}
+{"payload": "Thank you. I'm going to imagine you said that in a deep, approving voice.", "tag": "poke_reply", "timestamp": "2026-10-14 12:35:15"}
+{"payload": "what time is biscuit's vet appointment at willow creek", "tag": "user_message", "timestamp": "2026-10-14 14:55:28"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-14 14:55:33"}
+{"payload": "[SUCCESS] Biscuit Willow Creek vet appointment: Found a reminder from frontdesk@willowcreekvet.com for Biscuit's rabies booster and heartworm test with Dr. Tran on Saturday, September 26, 2026 at 10:30am. The estimate is $148.", "tag": "agent_message", "timestamp": "2026-10-14 14:58:05"}
+{"payload": "Biscuit's appointment is Saturday, September 26 at 10:30am with Dr. Tran. Estimated cost is $148.", "tag": "poke_reply", "timestamp": "2026-10-14 14:58:10"}
+{"payload": "set up a call with lena okafor at ridgeway about the brand refresh", "tag": "user_message", "timestamp": "2026-10-14 17:05:29"}
+{"payload": "give me a sec", "tag": "poke_reply", "timestamp": "2026-10-14 17:05:34"}
+{"payload": "[SUCCESS] Lena Okafor Ridgeway scheduling: Found Lena's email from lena@ridgewaydesign.co offering Tuesday Sept 29 at 2pm or Thursday Oct 1 at 10am ET. Drafted a reply proposing Sept 29 at 2pm and am awaiting your approval.", "tag": "agent_message", "timestamp": "2026-10-14 17:07:35"}
+{"payload": "Drafted a reply proposing Sept 29 at 2pm, Lena's first option. Want me to send it?", "tag": "poke_reply", "timestamp": "2026-10-14 17:07:40"}
+{"payload": "cats or dogs", "tag": "user_message", "timestamp": "2026-10-14 17:15:11"}
+{"payload": "Dogs for enthusiasm, cats for attitude. I respect both, but I lean dog.", "tag": "poke_reply", "timestamp": "2026-10-14 17:15:16"}
+{"payload": "pull up the lyft info session invite i signed up for in november", "tag": "user_message", "timestamp": "2026-10-14 18:35:22"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-14 18:35:27"}
+{"payload": "[SUCCESS] Lyft Info Session Invite: Found a confirmation from events@lyft.com (Oct 18) for the 'Lyft Product Design Virtual Info Session' on Nov 5 at 12:00pm MT, with a Zoom link and a note that attendees get early access to open roles.", "tag": "agent_message", "timestamp": "2026-10-14 18:36:24"}
+{"payload": "Lyft's design info session is Nov 5 at 12pm MT on Zoom; confirmation came Oct 18.", "tag": "poke_reply", "timestamp": "2026-10-14 18:36:29"}
+{"payload": "happy friday", "tag": "user_message", "timestamp": "2026-10-14 20:00:37"}
+{"payload": "Happy Friday! The weekend is practically knocking.", "tag": "poke_reply", "timestamp": "2026-10-14 20:00:42"}
+{"payload": "what was the tax on it", "tag": "user_message", "timestamp": "2026-10-14 20:30:33"}
+{"payload": "on it now", "tag": "poke_reply", "timestamp": "2026-10-14 20:30:38"}
+{"payload": "[SUCCESS] Staples September Receipt: The receipt shows a subtotal of $196.40, sales tax of $16.24, and a total of $212.64.", "tag": "agent_message", "timestamp": "2026-10-14 20:33:30"}
+{"payload": "Tax was $16.24, on a $196.40 subtotal.", "tag": "poke_reply", "timestamp": "2026-10-14 20:33:35"}
+{"payload": "add a reminder an hour before it starts", "tag": "user_message", "timestamp": "2026-10-14 21:00:19"}
+{"payload": "checking now", "tag": "poke_reply", "timestamp": "2026-10-14 21:00:24"}
+{"payload": "[SUCCESS] Lyft Info Session Invite: Set a reminder for Nov 5 at 11:00am MT: 'Lyft Product Design info session starts at noon, Zoom link in confirmation email.'", "tag": "agent_message", "timestamp": "2026-10-14 21:02:40"}
+{"payload": "Reminder set for Nov 5 at 11am MT, an hour before the session.", "tag": "poke_reply", "timestamp": "2026-10-14 21:02:45"}
+{"payload": "hey", "tag": "user_message", "timestamp": "2026-10-14 21:15:57"}
+{"payload": "Hey you. Good to hear from you.", "tag": "poke_reply", "timestamp": "2026-10-14 21:16:02"}
+{"payload": "you there?", "tag": "user_message", "timestamp": "2026-10-14 21:25:19"}
+{"payload": "Always. What's up?", "tag": "poke_reply", "timestamp": "2026-10-14 21:25:24"}
+{"payload": "check status of the lego order for leo's birthday", "tag": "user_message", "timestamp": "2026-10-15 08:10:43"}
+{"payload": "let me dig in", "tag": "poke_reply", "timestamp": "2026-10-15 08:10:48"}
+{"payload": "[SUCCESS] LEGO Order Status: Found LEGO order confirmation from legoshop@email.lego.com, order #LG-55120948 for the Technic Bugatti Bolide set, $54.99. It is processing, with estimated delivery Nov 9-11 2026.", "tag": "agent_message", "timestamp": "2026-10-15 08:12:33"}
+{"payload": "Your LEGO Technic Bugatti order is still processing. Estimated delivery is Nov 9 to 11.", "tag": "poke_reply", "timestamp": "2026-10-15 08:12:38"}
+{"payload": "i need a vacation", "tag": "user_message", "timestamp": "2026-10-15 11:30:23"}
+{"payload": "Same energy, honestly. Somewhere with a beach and zero notifications.", "tag": "poke_reply", "timestamp": "2026-10-15 11:30:28"}
+{"payload": "yes send it", "tag": "user_message", "timestamp": "2026-10-15 12:15:36"}
+{"payload": "checking now", "tag": "poke_reply", "timestamp": "2026-10-15 12:15:41"}
+{"payload": "[SUCCESS] Lena Okafor Ridgeway scheduling: Sent the reply to lena@ridgewaydesign.co confirming Tuesday, Sept 29 at 2:00pm ET.", "tag": "agent_message", "timestamp": "2026-10-15 12:17:22"}
+{"payload": "Sent. Confirmed Sept 29 at 2pm ET with Lena.", "tag": "poke_reply", "timestamp": "2026-10-15 12:17:27"}
+{"payload": "leo's party is nov 14, will it make it", "tag": "user_message", "timestamp": "2026-10-15 13:20:55"}
+{"payload": "working on it", "tag": "poke_reply", "timestamp": "2026-10-15 13:21:00"}
+{"payload": "[SUCCESS] LEGO Order Status: The estimated delivery of Nov 9-11 is three to five days before the Nov 14 party, as long as there are no carrier delays.", "tag": "agent_message", "timestamp": "2026-10-15 13:23:00"}
+{"payload": "Yes, it should arrive 3 to 5 days before the party.", "tag": "poke_reply", "timestamp": "2026-10-15 13:23:05"}
+{"payload": "can't believe it's already Thursday", "tag": "user_message", "timestamp": "2026-10-15 15:20:54"}
+{"payload": "Time is being sneaky again. Just one more day to go.", "tag": "poke_reply", "timestamp": "2026-10-15 15:20:59"}
+{"payload": "haha you're funny", "tag": "user_message", "timestamp": "2026-10-15 15:35:08"}
+{"payload": "I try. Mostly I just get lucky.", "tag": "poke_reply", "timestamp": "2026-10-15 15:35:13"}
+{"payload": "send his vaccine records to pawsome boarding", "tag": "user_message", "timestamp": "2026-10-15 16:15:19"}
+{"payload": "working on it", "tag": "poke_reply", "timestamp": "2026-10-15 16:15:24"}
+{"payload": "[SUCCESS] Biscuit Willow Creek vet appointment: Emailed Biscuit's most recent vaccination record PDF, from Willow Creek's March email, to info@pawsomeboarding.com with a note that the rabies booster will be updated after September 26.", "tag": "agent_message", "timestamp": "2026-10-15 16:18:18"}
+{"payload": "Sent his current vaccine records to Pawsome Boarding, noting an update is coming after the 26th.", "tag": "poke_reply", "timestamp": "2026-10-15 16:18:23"}
+{"payload": "what's the opposite of up", "tag": "user_message", "timestamp": "2026-10-15 17:15:42"}
+{"payload": "Down. I suspect this is a setup, though. Go on, hit me.", "tag": "poke_reply", "timestamp": "2026-10-15 17:15:47"}
+{"payload": "remind me friday to take his stool sample", "tag": "user_message", "timestamp": "2026-10-15 18:00:24"}
+{"payload": "looking into it", "tag": "poke_reply", "timestamp": "2026-10-15 18:00:29"}
+{"payload": "[SUCCESS] Biscuit Willow Creek vet appointment: Set a reminder for Friday, September 25, 2026 at 7:30pm: 'Collect Biscuit's stool sample for Willow Creek visit tomorrow'.", "tag": "agent_message", "timestamp": "2026-10-15 18:01:25"}
+{"payload": "Reminder set for Friday, September 25 at 7:30pm.", "tag": "poke_reply", "timestamp": "2026-10-15 18:01:30"}
+{"payload": "ok cool", "tag": "user_message", "timestamp": "2026-10-15 19:30:25"}
+{"payload": "Cool cool cool.", "tag": "poke_reply", "timestamp": "2026-10-15 19:30:30"}
+{"payload": "can you send me the zoom link again, i lost it", "tag": "user_message", "timestamp": "2026-10-15 20:00:30"}
+{"payload": "one moment", "tag": "poke_reply", "timestamp": "2026-10-15 20:00:35"}
+{"payload": "[SUCCESS] Lyft Info Session Invite: Pulled the Zoom link from the Oct 18 confirmation: https://lyft.zoom.us/j/84920175533, passcode DESIGN26.", "tag": "agent_message", "timestamp": "2026-10-15 20:02:23"}
+{"payload": "Here's the link: lyft.zoom.us/j/84920175533, passcode DESIGN26.", "tag": "poke_reply", "timestamp": "2026-10-15 20:02:28"}
+{"payload": "can the shipping address be changed to my sister's", "tag": "user_message", "timestamp": "2026-10-15 20:35:28"}
+{"payload": "let me dig in", "tag": "poke_reply", "timestamp": "2026-10-15 20:35:33"}
+{"payload": "[SUCCESS] LEGO Order Status: Drafted a reply to LEGO customer service at help@lego.com asking to change the shipping address on #LG-55120948 to your sister's. It is ready for your review and not yet sent.", "tag": "agent_message", "timestamp": "2026-10-15 20:37:19"}
+{"payload": "Drafted a request to LEGO to change the address. Want me to send it?", "tag": "poke_reply", "timestamp": "2026-10-15 20:37:24"}
+{"payload": "was the toner delivered or did i pick it up", "tag": "user_message", "timestamp": "2026-10-16 10:00:29"}
+{"payload": "on it now", "tag": "poke_reply", "timestamp": "2026-10-16 10:00:34"}
+{"payload": "[SUCCESS] Staples September Receipt: The receipt and delivery email show it was delivered Sept 11 by Staples courier. A signature was not required.", "tag": "agent_message", "timestamp": "2026-10-16 10:02:39"}
+{"payload": "It was delivered Sept 11 by Staples courier, no signature needed.", "tag": "poke_reply", "timestamp": "2026-10-16 10:02:44"}
+{"payload": "did they say he needs to fast", "tag": "user_message", "timestamp": "2026-10-16 11:55:10"}
+{"payload": "pulling that up now", "tag": "poke_reply", "timestamp": "2026-10-16 11:55:15"}
+{"payload": "[SUCCESS] Biscuit Willow Creek vet appointment: The reminder says no fasting is needed, but to bring Biscuit on a leash and to skip his morning treats if he gets car sick.", "tag": "agent_message", "timestamp": "2026-10-16 11:57:33"}
+{"payload": "No fasting needed. Just bring him on a leash.", "tag": "poke_reply", "timestamp": "2026-10-16 11:57:38"}
+{"payload": "email events@lyft.com asking if the session will be recorded", "tag": "user_message", "timestamp": "2026-10-16 13:15:00"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-16 13:15:05"}
+{"payload": "[SUCCESS] Lyft Info Session Invite: Sent an email to events@lyft.com asking whether the Nov 5 info session will be recorded and shared with attendees afterward.", "tag": "agent_message", "timestamp": "2026-10-16 13:17:38"}
+{"payload": "Sent your question to events@lyft.com about a recording of the Nov 5 session.", "tag": "poke_reply", "timestamp": "2026-10-16 13:17:43"}
+{"payload": "did she reply yet?", "tag": "user_message", "timestamp": "2026-10-16 15:05:28"}
+{"payload": "on it", "tag": "poke_reply", "timestamp": "2026-10-16 15:05:33"}
+{"payload": "[SUCCESS] Lena Okafor Ridgeway scheduling: Lena replied at 4:12pm: 'Perfect, sending a Google Meet invite shortly.' No invite has arrived yet.", "tag": "agent_message", "timestamp": "2026-10-16 15:07:49"}
+{"payload": "She confirmed and says a Meet invite is coming; nothing yet.", "tag": "poke_reply", "timestamp": "2026-10-16 15:07:54"}
+{"payload": "remind me an hour before the call", "tag": "user_message", "timestamp": "2026-10-16 19:55:16"}
+{"payload": "one moment", "tag": "poke_reply", "timestamp": "2026-10-16 19:55:21"}
+{"payload": "[SUCCESS] Lena Okafor Ridgeway scheduling: Reminder set for September 29, 2026 at 1:00pm ET titled 'Call with Lena Okafor (Ridgeway) at 2pm'.", "tag": "agent_message", "timestamp": "2026-10-16 19:57:31"}
+{"payload": "Reminder set for Sept 29 at 1pm.", "tag": "poke_reply", "timestamp": "2026-10-16 19:57:36"}
+{"payload": "it's raining again", "tag": "user_message", "timestamp": "2026-10-16 20:35:27"}
+{"payload": "Classic. Perfect excuse to stay in and feel smug about it.", "tag": "poke_reply", "timestamp": "2026-10-16 20:35:32"}
+{"payload": "check status of the lego order for leo's birthday", "tag": "user_message", "timestamp": "2026-10-17 06:23:35"}
+{"payload": "On it, checking your LEGO order now.", "tag": "poke_reply", "timestamp": "2026-10-17 06:23:40"}
+{"payload": "[SUCCESS] LEGO Order Status: Found LEGO order confirmation from legoshop@email.lego.com, order #LG-55120948 for the Technic Bugatti Bolide set, $54.99. It is processing, with estimated delivery Nov 9-11 2026.", "tag": "agent_message", "timestamp": "2026-10-17 06:26:45"}
+{"payload": "Your LEGO order for the Technic Bugatti Bolide set ($54.99, #LG-55120948) is still processing. Estimated delivery is Nov 9-11.", "tag": "poke_reply", "timestamp": "2026-10-17 06:26:50"}
+{"payload": "ugh he's going to lose his mind over that set", "tag": "user_message", "timestamp": "2026-10-17 08:56:50"}
+{"payload": "Ha, sounds like a great gift. Hopefully it lands on time.", "tag": "poke_reply", "timestamp": "2026-10-17 08:56:55"}
+{"payload": "leo's party is nov 14, will it make it", "tag": "user_message", "timestamp": "2026-10-17 09:45:55"}
+{"payload": "Let me check that against the delivery estimate.", "tag": "poke_reply", "timestamp": "2026-10-17 09:46:00"}
+{"payload": "[SUCCESS] LEGO Order Status: The estimated delivery of Nov 9-11 is three to five days before the Nov 14 party, as long as there are no carrier delays.", "tag": "agent_message", "timestamp": "2026-10-17 09:48:33"}
+{"payload": "Yes, it should make it. Delivery is estimated three to five days before the party, barring carrier delays.", "tag": "poke_reply", "timestamp": "2026-10-17 09:48:38"}
+{"payload": "can the shipping address be changed to my sister's", "tag": "user_message", "timestamp": "2026-10-17 10:59:38"}
+{"payload": "I'll draft a request to LEGO about that.", "tag": "poke_reply", "timestamp": "2026-10-17 10:59:43"}
+{"payload": "[SUCCESS] LEGO Order Status: Drafted a reply to LEGO customer service at help@lego.com asking to change the shipping address on #LG-55120948 to your sister's. It is ready for your review and not yet sent.", "tag": "agent_message", "timestamp": "2026-10-17 11:00:55"}
+{"payload": "I drafted a note to LEGO customer service asking to change the shipping address to your sister's. It's ready for you to review and hasn't been sent.", "tag": "poke_reply", "timestamp": "2026-10-17 11:01:00"}

@@ -1,0 +1,138 @@
+{
+  "provenance": {
+    "attempts": 1,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "c1a2c305307b0dce51063f5ca4c2621650b9560884d04728c9aad1ae8c44563a",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found the calendar invite from Marcus Lindqvist for Oct 8 at 2pm and sent him a reschedule request proposing Oct 15 at 2pm; he accepted within the hour and the invite was updated.",
+      "key": "f1",
+      "opening_request": "can you move my budget review with Marcus Lindqvist to the 15th instead of the 8th",
+      "result_reply": "Done. Marcus accepted Oct 15 at 2pm, and your calendar is updated.",
+      "topic": "Reschedule quarterly budget review with Marcus Lindqvist from Oct 8 to Oct 15, 2026"
+    },
+    {
+      "canned_result": "Located the Zoom billing email stating the annual Business plan renews Nov 2, 2026 for $1,599; set a reminder for Oct 26 at 9am titled 'Review Zoom Business renewal'.",
+      "key": "f2",
+      "opening_request": "remind me to review our Zoom Business plan before it renews in early November",
+      "result_reply": "Reminder set for Oct 26 at 9am, a week before the Nov 2 Zoom renewal.",
+      "topic": "Reminder to renew Zoom Business subscription before Nov 2, 2026 auto-charge"
+    },
+    {
+      "canned_result": "Emailed Priya Raman at Harborview Logistics offering Tuesday Sept 29 at 2:30pm or Wednesday Sept 30 at 3pm; she confirmed Sept 30 at 3pm and a calendar invite with a Meet link was sent.",
+      "key": "f3",
+      "opening_request": "set up a kickoff call with Priya Raman at Harborview next week, afternoons are best",
+      "result_reply": "Kickoff booked with Priya for Sept 30 at 3pm, invite sent.",
+      "topic": "Schedule project kickoff with Harborview Logistics contact Priya Raman"
+    },
+    {
+      "canned_result": "Found Oakridge Properties' email from Tom Beckett with the lease addendum attached and a due date of Oct 9; created a reminder for Oct 8 at 10am with a link to that email.",
+      "key": "f4",
+      "opening_request": "need a reminder to send the signed lease addendum back to Oakridge Properties by Oct 9",
+      "result_reply": "Reminder set for Oct 8 at 10am, linked to Tom Beckett's email.",
+      "topic": "Reminder to send signed lease addendum to Oakridge Properties by Oct 9, 2026"
+    },
+    {
+      "canned_result": "Emailed Olive & Vine to confirm the order for 14 people; they replied that pickup is ready Sept 25 at 11:45am at the Maple Street location, order #4471.",
+      "key": "f5",
+      "opening_request": "can you confirm our Olive & Vine catering pickup for the team lunch on the 25th",
+      "result_reply": "Confirmed: order #4471 ready for pickup Sept 25 at 11:45am on Maple Street.",
+      "topic": "Confirm catering order pickup for team lunch from Olive & Vine on Sept 25, 2026"
+    },
+    {
+      "canned_result": "Found the Northwind Analytics speaker confirmation for the Oct 29 webinar at 1pm ET; set two reminders, Oct 22 for draft slides and Oct 27 for final run-through.",
+      "key": "f6",
+      "opening_request": "remind me to finish my slides for the Northwind Analytics webinar, it's Oct 29",
+      "result_reply": "Set reminders for Oct 22 (draft slides) and Oct 27 (final run-through).",
+      "topic": "Reminder to prepare slides for Northwind Analytics webinar on Oct 29, 2026"
+    },
+    {
+      "canned_result": "Found Eleanor Chu's invite for the board meeting on Nov 12, 2026 from 9am to 12pm in the Pine Room; accepted it and added it to your calendar.",
+      "key": "f7",
+      "opening_request": "did Eleanor Chu send the board meeting invite for November? accept it if so",
+      "result_reply": "Found it and accepted: board meeting Nov 12, 9am to noon, Pine Room.",
+      "topic": "Find and accept the board meeting invite from Eleanor Chu for Nov 12, 2026"
+    },
+    {
+      "canned_result": "Found the Sterling Auto Group confirmation for a 8:30am service appointment on Oct 6 for a 60,000-mile service; set a reminder for Oct 5 at 4pm to call and confirm.",
+      "key": "f8",
+      "opening_request": "remind me the day before to call Sterling Auto about my service appointment on the 6th",
+      "result_reply": "Reminder set for Oct 5 at 4pm to call Sterling Auto.",
+      "topic": "Reminder to call Sterling Auto Group about service appointment on Oct 6, 2026"
+    },
+    {
+      "canned_result": "Replied to Jonah Whitaker's email with morning availability; he proposed Oct 13 at 10am PT, which was accepted and added to your calendar with a Zoom link.",
+      "key": "f9",
+      "opening_request": "get a demo on the calendar with Jonah Whitaker from Tallgrass Software, mornings only",
+      "result_reply": "Demo with Jonah booked for Oct 13 at 10am PT, Zoom link included.",
+      "topic": "Schedule a vendor demo with Tallgrass Software rep Jonah Whitaker"
+    },
+    {
+      "canned_result": "Found the Greenfield Foundation invitation for the gala on Oct 24 with an RSVP deadline of Oct 2; set a reminder for Sept 30 at 12pm with the RSVP link.",
+      "key": "f10",
+      "opening_request": "remind me to RSVP for the Greenfield Foundation gala before October 2",
+      "result_reply": "Reminder set for Sept 30 at noon with the RSVP link.",
+      "topic": "Reminder to RSVP to Greenfield Foundation fall gala by Oct 2, 2026"
+    },
+    {
+      "canned_result": "Emailed facilities to cancel the Sept 24 booking of Conference Room B and booked Room B for Sept 28 from 10am to 11:30am; facilities confirmed by reply.",
+      "key": "f11",
+      "opening_request": "the Redwood sprint planning moved, can you rebook the conference room for the 28th",
+      "result_reply": "Room B is rebooked for Sept 28, 10 to 11:30am, confirmed by facilities.",
+      "topic": "Cancel and rebook conference room for Redwood sprint planning on Sept 28, 2026"
+    },
+    {
+      "canned_result": "Found Finance's email from Rhonda Pike stating Austin trip expense reports are due Oct 16; set a reminder for Oct 14 at 9am and attached the receipts folder link.",
+      "key": "f12",
+      "opening_request": "remind me to turn in my Austin trip expense report by Oct 16",
+      "result_reply": "Reminder set for Oct 14 at 9am, receipts folder linked.",
+      "topic": "Reminder to submit expense report for Austin trip to Finance by Oct 16, 2026"
+    },
+    {
+      "canned_result": "Found the Cloudline Security registration email with the join link for Oct 7 at 11am CT and added the event to your calendar with the link in the description.",
+      "key": "f13",
+      "opening_request": "where's the link for the Cloudline Security training on Oct 7? need it in my calendar",
+      "result_reply": "Added to your calendar for Oct 7 at 11am CT with the join link.",
+      "topic": "Find webinar link for Cloudline Security training on Oct 7, 2026"
+    },
+    {
+      "canned_result": "Sent Lucía Fernández an invite for Oct 14 at 3pm for a 30-minute check-in; she accepted and the invite includes a short agenda.",
+      "key": "f14",
+      "opening_request": "set up a 30-day check-in with Lucía Fernández, she started Sept 14",
+      "result_reply": "30-day check-in with Lucía set for Oct 14 at 3pm; she accepted.",
+      "topic": "Schedule performance check-in with new hire Lucía Fernández for her 30-day mark"
+    },
+    {
+      "canned_result": "Found Walter Nguyen's email saying the signed extension paperwork is ready at his office; set a reminder for Oct 12 at 8:30am with the office address and hours.",
+      "key": "f15",
+      "opening_request": "remind me to grab my extension paperwork from Walter Nguyen's office before the 15th",
+      "result_reply": "Reminder set for Oct 12 at 8:30am with Walter's address and hours.",
+      "topic": "Reminder to pick up tax documents from accountant Walter Nguyen's office by Oct 15, 2026"
+    },
+    {
+      "canned_result": "Emailed Gwen Ashford proposing Nov 5 or Nov 10 at noon; she chose Nov 10 at 12pm at Bellamy's and the calendar event was created.",
+      "key": "f16",
+      "opening_request": "Gwen Ashford at Fairmont cancelled our lunch, can you find a new time in November",
+      "result_reply": "Lunch with Gwen rebooked for Nov 10 at noon at Bellamy's.",
+      "topic": "Reschedule quarterly client lunch with Fairmont Capital's Gwen Ashford"
+    },
+    {
+      "canned_result": "Found the HR email assigning annual compliance training in Workday due Nov 20; set reminders for Nov 9 and Nov 17 at 10am.",
+      "key": "f17",
+      "opening_request": "remind me to finish the annual compliance training in Workday before Nov 20",
+      "result_reply": "Reminders set for Nov 9 and Nov 17 at 10am.",
+      "topic": "Reminder to complete annual compliance training in Workday by Nov 20, 2026"
+    },
+    {
+      "canned_result": "Replied to Fenwick & Cole's invitation confirming attendance for the Oct 21 dinner at 7pm at The Larkspur, and added it to your calendar with the address.",
+      "key": "f18",
+      "opening_request": "reply yes to the Fenwick & Cole dinner invite for Oct 21 and put it on my calendar",
+      "result_reply": "Confirmed with Fenwick & Cole; dinner is on your calendar for Oct 21 at 7pm.",
+      "topic": "Reply to confirm attendance at Fenwick & Cole client dinner on Oct 21, 2026"
+    }
+  ]
+}

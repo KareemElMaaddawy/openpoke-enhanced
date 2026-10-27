@@ -1,0 +1,112 @@
+{
+  "provenance": {
+    "attempts": 1,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "c867e2cfaa1fb85ebc44f3576c3e435c5d54bc069fb3df1ba1601b7d51155ad2",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found an email from no-reply@gusto.com dated Sept 18, 2026, 'Your two-factor authentication method was updated.' It says the method switched from SMS to an authenticator app at 2:14 PM PT and to contact support if this wasn't you.",
+      "follow_ups": [
+        {
+          "reply": "Looks like you did it. A setup confirmation arrived two minutes before the notice, at 2:12 PM.",
+          "request": "did i actually make that change or is it suspicious",
+          "result": "I checked your sent mail and inbox. There's a Gusto 'Authenticator app setup complete' confirmation at 2:12 PM PT on Sept 18, two minutes before the notice, so it matches a change you started."
+        },
+        {
+          "reply": "Yes: use Settings > Security to switch back, or contact support@gusto.com if it wasn't you.",
+          "request": "does the email say how to undo it",
+          "result": "The email says to reply or contact Gusto support at support@gusto.com or 1-800-936-0383 if the change wasn't authorized. It also links to Settings > Security to switch methods back."
+        },
+        {
+          "reply": "Done. I'll remind you tomorrow at 9:00 AM to save your Gusto backup codes.",
+          "request": "remind me tomorrow at 9am to save the gusto backup codes",
+          "result": "Reminder set for tomorrow at 9:00 AM: 'Save Gusto authenticator backup codes.'"
+        }
+      ],
+      "key": "c1",
+      "opening_request": "find the gusto email about my two-factor settings changing in september",
+      "pair_key": "c2",
+      "result_reply": "Found it: Gusto says your 2FA switched from SMS to an authenticator app on Sept 18 at 2:14 PM.",
+      "topic": "Gusto two-factor authentication change notice from September 18, 2026"
+    },
+    {
+      "canned_result": "Gusto (payroll-support@gusto.com) emailed Oct 6, 2026 saying two micro-deposits under $1.00 will reach the Mercer Federal business checking account ending 4417 in 1-2 business days. You must enter the amounts by Oct 13 or the first payroll on Oct 16 may be delayed.",
+      "follow_ups": [
+        {
+          "reply": "Yes, on Oct 8 Gusto said both deposits were sent. You can enter the amounts now.",
+          "request": "has gusto sent a follow up saying the deposits landed",
+          "result": "Yes, a second email from payroll-support@gusto.com on Oct 8 says both deposits were sent and should be visible now. It asks you to enter the amounts in Payroll Setup."
+        },
+        {
+          "reply": "Reminder set for Thursday at 8:00 AM to enter the Gusto deposit amounts.",
+          "request": "remind me thursday at 8am to enter the deposit amounts",
+          "result": "Reminder set for Thursday, Oct 8 at 8:00 AM: 'Enter Gusto micro-deposit amounts for account ending 4417.'"
+        },
+        {
+          "reply": "Forwarded the Oct 6 Gusto verification email to Dana.",
+          "request": "forward the original verification email to dana at dana.ortiz@lumenbooks.com",
+          "result": "Forwarded the Oct 6 Gusto verification email to dana.ortiz@lumenbooks.com with no added message."
+        }
+      ],
+      "key": "c2",
+      "opening_request": "check where gusto is at with verifying our payroll bank account",
+      "pair_key": "c1",
+      "result_reply": "Gusto is sending two small deposits to the account ending 4417. You need to confirm the amounts by Oct 13.",
+      "topic": "Gusto payroll bank account verification micro-deposits from October 6, 2026"
+    },
+    {
+      "canned_result": "Intuit QuickBooks (noreply@intuit.com) sent notices on Oct 20 and Oct 24, 2026 saying the Summit Credit Union business feed needs reauthorization by Oct 27. Otherwise, bank transactions will stop importing.",
+      "follow_ups": [
+        {
+          "reply": "The Summit Credit Union Business Checking feed ending 2290. No other accounts are mentioned.",
+          "request": "which account is it talking about exactly",
+          "result": "Both emails name the Summit Credit Union Business Checking feed ending 2290. They don't mention your other connected accounts."
+        },
+        {
+          "reply": "Reminder set for Monday, Oct 26 at 9:00 AM, one day before the deadline.",
+          "request": "set a reminder for monday morning to reconnect it",
+          "result": "Reminder set for Monday, Oct 26 at 9:00 AM: 'Reauthorize QuickBooks bank feed (Summit CU 2290), deadline Oct 27.'"
+        },
+        {
+          "reply": "Sender and links look legitimate (intuit.com, authenticated), but logging in directly is safer than clicking.",
+          "request": "is the email legit? check the sender",
+          "result": "Both emails came from noreply@intuit.com and passed SPF and DKIM. The link goes to the quickbooks.intuit.com domain, so it looks legitimate. Still, logging in directly is safer than clicking it."
+        }
+      ],
+      "key": "c3",
+      "opening_request": "quickbooks keeps emailing about reconnecting my bank, what's it say",
+      "pair_key": null,
+      "result_reply": "QuickBooks says your Summit Credit Union feed must be reauthorized by Oct 27 or transactions stop importing.",
+      "topic": "QuickBooks Online bank connection reauthorization needed by October 27, 2026"
+    },
+    {
+      "canned_result": "Found a Nov 4, 2026 email from verizonwireless-business@vzw.com, 'Set your Number Lock and port-out PIN.' It says the account owner must create a 6-10 digit PIN for the 4 lines on account ending 8832 by Nov 30 to enable SIM swap protection.",
+      "follow_ups": [
+        {
+          "reply": "Only the account owner or an authorized manager can set it, and you're listed as owner.",
+          "request": "does it say who can set the pin",
+          "result": "The email says only the account owner or an authorized account manager can set it. Employees on individual lines can't, and the owner on file is listed as you."
+        },
+        {
+          "reply": "Reminder set for Nov 16 at 9:00 AM to set the Verizon port-out PIN.",
+          "request": "remind me on nov 16 to do it",
+          "result": "Reminder set for Monday, Nov 16 at 9:00 AM: 'Set Verizon Business port-out PIN (account 8832), due Nov 30.'"
+        },
+        {
+          "reply": "Sent Tom a short note that the PIN is coming and he needs to do nothing.",
+          "request": "send a quick note to tom@lumenbooks.com that the pin is coming and he shouldn't worry",
+          "result": "Sent an email to tom@lumenbooks.com: 'Heads up, I'll be setting a port-out PIN on our Verizon lines before Nov 30 for SIM swap protection. No action is needed from you.'"
+        }
+      ],
+      "key": "c4",
+      "opening_request": "look for the verizon business email about the port out pin",
+      "pair_key": null,
+      "result_reply": "Verizon wants a port-out PIN set for the 4 lines on account 8832 by Nov 30 for SIM swap protection.",
+      "topic": "Verizon Business port-out PIN and SIM swap protection notice from November 4, 2026"
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "instructions": "Fill in decision for every item. unsure items: \"draft\", \"labeler\", \"label\" (then set label to {\"kind\": ..., \"agents\": [exact agent names]}) or \"drop\". sanity items: \"ok\" or \"wrong\" (and set label if wrong). note is optional.",
+  "items": [
+    {
+      "applied": true,
+      "decision": "drop",
+      "item": "s-dev-0037",
+      "kind": "unsure",
+      "label": null,
+      "note": ""
+    },
+    {
+      "applied": true,
+      "decision": "drop",
+      "item": "s-dev-0041",
+      "kind": "unsure",
+      "label": null,
+      "note": ""
+    },
+    {
+      "applied": true,
+      "decision": "drop",
+      "item": "s-test-0076",
+      "kind": "unsure",
+      "label": null,
+      "note": ""
+    },
+    {
+      "applied": true,
+      "decision": "drop",
+      "item": "s-test-0077",
+      "kind": "unsure",
+      "label": null,
+      "note": ""
+    },
+    {
+      "applied": true,
+      "decision": "ok",
+      "item": "q-dev-004#t3",
+      "kind": "sanity",
+      "label": null,
+      "note": ""
+    },
+    {
+      "applied": true,
+      "decision": "wrong",
+      "item": "q-test-003#t5",
+      "kind": "sanity",
+      "label": null,
+      "note": "Should create a new agent to search on GitHub"
+    },
+    {
+      "applied": true,
+      "decision": "ok",
+      "item": "q-test-004#t11",
+      "kind": "sanity",
+      "label": null,
+      "note": ""
+    },
+    {
+      "applied": true,
+      "decision": "ok",
+      "item": "q-test-006#t7",
+      "kind": "sanity",
+      "label": null,
+      "note": ""
+    },
+    {
+      "applied": true,
+      "decision": "ok",
+      "item": "q-test-008#t12",
+      "kind": "sanity",
+      "label": null,
+      "note": ""
+    },
+    {
+      "applied": true,
+      "decision": "ok",
+      "item": "s-test-0007",
+      "kind": "sanity",
+      "label": null,
+      "note": ""
+    },
+    {
+      "applied": true,
+      "decision": "ok",
+      "item": "s-test-0015",
+      "kind": "sanity",
+      "label": null,
+      "note": ""
+    },
+    {
+      "applied": true,
+      "decision": "ok",
+      "item": "s-test-0030",
+      "kind": "sanity",
+      "label": null,
+      "note": ""
+    },
+    {
+      "applied": true,
+      "decision": "ok",
+      "item": "s-test-0038",
+      "kind": "sanity",
+      "label": null,
+      "note": ""
+    },
+    {
+      "applied": true,
+      "decision": "ok",
+      "item": "s-test-0048",
+      "kind": "sanity",
+      "label": null,
+      "note": ""
+    }
+  ]
+}

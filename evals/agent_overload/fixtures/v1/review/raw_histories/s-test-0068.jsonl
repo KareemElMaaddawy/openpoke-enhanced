@@ -1,0 +1,116 @@
+{"payload": "favorite season?", "tag": "user_message", "timestamp": "2026-10-09 08:15:32"}
+{"payload": "Autumn, I think. Cozy sweaters, good light, and nobody judges you for eating soup.", "tag": "poke_reply", "timestamp": "2026-10-09 08:15:37"}
+{"payload": "did home depot refund me for the paint i returned", "tag": "user_message", "timestamp": "2026-10-09 10:10:05"}
+{"payload": "let me dig in", "tag": "poke_reply", "timestamp": "2026-10-09 10:10:10"}
+{"payload": "[SUCCESS] Home Depot Refund Check: Home Depot emailed a refund notice on Sept 30, 2026: $64.18 for two gallons of Behr Marquee returned, going back to the Visa ending 7732 in 5 to 7 business days.", "tag": "agent_message", "timestamp": "2026-10-09 10:11:09"}
+{"payload": "Yes, $64.18 refunded to your Visa ending 7732, arriving in 5 to 7 business days.", "tag": "poke_reply", "timestamp": "2026-10-09 10:11:14"}
+{"payload": "find the asana offer letter email, when do i have to answer", "tag": "user_message", "timestamp": "2026-10-09 10:45:28"}
+{"payload": "one moment", "tag": "poke_reply", "timestamp": "2026-10-09 10:45:33"}
+{"payload": "[SUCCESS] Asana Offer Email: Found the offer email from Priyanka Desai (offers@asana.com) dated Oct 16, 2026 for Product Designer II, $152,000 base plus equity, with a decision deadline of Oct 30.", "tag": "agent_message", "timestamp": "2026-10-09 10:46:54"}
+{"payload": "Asana offered Product Designer II at $152,000 base plus equity. You must answer by Oct 30.", "tag": "poke_reply", "timestamp": "2026-10-09 10:46:59"}
+{"payload": "gather my receipts from the berlin trip for the expense report", "tag": "user_message", "timestamp": "2026-10-09 11:00:39"}
+{"payload": "one moment", "tag": "poke_reply", "timestamp": "2026-10-09 11:00:44"}
+{"payload": "[SUCCESS] Berlin Trip Receipts: Found 6 receipts from Sept 14-18: Lufthansa $912.40, Hotel Adlon $1,046, two Uber receipts ($38.20 and $41.75), and a dinner at Zur Letzten Instanz for €86.", "tag": "agent_message", "timestamp": "2026-10-09 11:02:45"}
+{"payload": "Found 6 Berlin receipts, mainly Lufthansa $912.40 and Hotel Adlon $1,046, plus rides and a €86 dinner.", "tag": "poke_reply", "timestamp": "2026-10-09 11:02:50"}
+{"payload": "got any fun facts", "tag": "user_message", "timestamp": "2026-10-09 12:50:45"}
+{"payload": "Octopuses have three hearts. Two for the gills, one for everything else. Overachievers.", "tag": "poke_reply", "timestamp": "2026-10-09 12:50:50"}
+{"payload": "i think my comcast business bill failed to autopay, can you check", "tag": "user_message", "timestamp": "2026-10-09 14:35:39"}
+{"payload": "looking into it", "tag": "poke_reply", "timestamp": "2026-10-09 14:35:44"}
+{"payload": "[SUCCESS] Comcast Business Billing: Found an Oct 12 email from billing@comcastbusiness.com saying autopay of $189.99 failed because the card ending 8820 expired. The account is due Oct 27 to avoid a late fee.", "tag": "agent_message", "timestamp": "2026-10-09 14:38:02"}
+{"payload": "Yes, autopay of $189.99 failed Oct 12 because card 8820 expired. Due Oct 27.", "tag": "poke_reply", "timestamp": "2026-10-09 14:38:07"}
+{"payload": "lol", "tag": "user_message", "timestamp": "2026-10-09 15:00:27"}
+{"payload": "Glad that landed.", "tag": "poke_reply", "timestamp": "2026-10-09 15:00:32"}
+{"payload": "draft a reply asking for a few more days", "tag": "user_message", "timestamp": "2026-10-09 15:30:42"}
+{"payload": "let me check", "tag": "poke_reply", "timestamp": "2026-10-09 15:30:47"}
+{"payload": "[SUCCESS] Asana Offer Email: Drafted a reply to offers@asana.com requesting an extension to Nov 6, 2026 to finish a comparison with other processes.", "tag": "agent_message", "timestamp": "2026-10-09 15:33:21"}
+{"payload": "Draft ready, asking Asana to extend the deadline to Nov 6. Send it?", "tag": "poke_reply", "timestamp": "2026-10-09 15:33:26"}
+{"payload": "it's raining again", "tag": "user_message", "timestamp": "2026-10-09 15:50:14"}
+{"payload": "Classic. Perfect excuse to stay in and feel smug about it.", "tag": "poke_reply", "timestamp": "2026-10-09 15:50:19"}
+{"payload": "surprise me", "tag": "user_message", "timestamp": "2026-10-09 17:05:09"}
+{"payload": "Okay: a group of flamingos is called a flamboyance. You're welcome.", "tag": "poke_reply", "timestamp": "2026-10-09 17:05:14"}
+{"payload": "what's the total in dollars roughly", "tag": "user_message", "timestamp": "2026-10-09 17:25:14"}
+{"payload": "happy to, checking", "tag": "poke_reply", "timestamp": "2026-10-09 17:25:19"}
+{"payload": "[SUCCESS] Berlin Trip Receipts: The total is about $2,125, using the €86 dinner at roughly $94 on the card statement.", "tag": "agent_message", "timestamp": "2026-10-09 17:26:24"}
+{"payload": "Roughly $2,125 total, with the euro dinner converted at about $94.", "tag": "poke_reply", "timestamp": "2026-10-09 17:26:29"}
+{"payload": "find the rust link from the hacker newsletter i got last tuesday", "tag": "user_message", "timestamp": "2026-10-09 21:55:40"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-09 21:55:45"}
+{"payload": "[SUCCESS] Hacker Newsletter search: The Hacker Newsletter issue #702 from kale@hackernewsletter.com (Tue Oct 20) lists 'Rust in the Linux kernel: two years on' at lwn.net/Articles/948213.", "tag": "agent_message", "timestamp": "2026-10-09 21:58:11"}
+{"payload": "Found it in issue #702: 'Rust in the Linux kernel: two years on' at lwn.net/Articles/948213.", "tag": "poke_reply", "timestamp": "2026-10-09 21:58:16"}
+{"payload": "that's so annoying", "tag": "user_message", "timestamp": "2026-10-10 09:35:37"}
+{"payload": "Ugh, yeah, that's irritating. You're allowed to be mad about it for a minute.", "tag": "poke_reply", "timestamp": "2026-10-10 09:35:42"}
+{"payload": "email them all to dana in finance", "tag": "user_message", "timestamp": "2026-10-10 09:40:50"}
+{"payload": "on it", "tag": "poke_reply", "timestamp": "2026-10-10 09:40:55"}
+{"payload": "[SUCCESS] Berlin Trip Receipts: Sent one email to dana.whitfield@brightline.co with all 6 receipts attached and the subject 'Berlin trip expenses Sept 14-18'.", "tag": "agent_message", "timestamp": "2026-10-10 09:42:05"}
+{"payload": "Sent all 6 receipts to Dana in finance.", "tag": "poke_reply", "timestamp": "2026-10-10 09:42:10"}
+{"payload": "any other rust stuff in that issue", "tag": "user_message", "timestamp": "2026-10-10 11:05:34"}
+{"payload": "on it now", "tag": "poke_reply", "timestamp": "2026-10-10 11:05:39"}
+{"payload": "[SUCCESS] Hacker Newsletter search: Two more: 'Async Rust without tears' on blog.example-dev.org and a Rust 1.82 release notes link.", "tag": "agent_message", "timestamp": "2026-10-10 11:07:39"}
+{"payload": "Two more: 'Async Rust without tears' and the Rust 1.82 release notes.", "tag": "poke_reply", "timestamp": "2026-10-10 11:07:44"}
+{"payload": "i did it!", "tag": "user_message", "timestamp": "2026-10-10 12:30:41"}
+{"payload": "Yes! So proud of you. Go enjoy that for a minute.", "tag": "poke_reply", "timestamp": "2026-10-10 12:30:46"}
+{"payload": "remind me friday to update the card", "tag": "user_message", "timestamp": "2026-10-10 13:25:08"}
+{"payload": "right away", "tag": "poke_reply", "timestamp": "2026-10-10 13:25:13"}
+{"payload": "[SUCCESS] Comcast Business Billing: Set a reminder for Friday Oct 16 at 9:00am: 'Update card on Comcast Business account, $189.99 due Oct 27'.", "tag": "agent_message", "timestamp": "2026-10-10 13:27:47"}
+{"payload": "Reminder set for Friday Oct 16 at 9am.", "tag": "poke_reply", "timestamp": "2026-10-10 13:27:52"}
+{"payload": "send it", "tag": "user_message", "timestamp": "2026-10-10 13:30:57"}
+{"payload": "looking into it", "tag": "poke_reply", "timestamp": "2026-10-10 13:31:02"}
+{"payload": "[SUCCESS] Asana Offer Email: Sent on Oct 19 at 11:05 AM to Priyanka Desai.", "tag": "agent_message", "timestamp": "2026-10-10 13:32:31"}
+{"payload": "Sent to Priyanka at 11:05 AM.", "tag": "poke_reply", "timestamp": "2026-10-10 13:32:36"}
+{"payload": "good morning", "tag": "user_message", "timestamp": "2026-10-10 13:35:59"}
+{"payload": "Morning! Hope the coffee is strong and the day is gentle.", "tag": "poke_reply", "timestamp": "2026-10-10 13:36:04"}
+{"payload": "send the main link to me at my personal email", "tag": "user_message", "timestamp": "2026-10-10 14:05:38"}
+{"payload": "got it, on it", "tag": "poke_reply", "timestamp": "2026-10-10 14:05:43"}
+{"payload": "[SUCCESS] Hacker Newsletter search: Sent the lwn.net link to the personal address on file, jordan.fields@gmail.com.", "tag": "agent_message", "timestamp": "2026-10-10 14:08:10"}
+{"payload": "Sent the link to jordan.fields@gmail.com.", "tag": "poke_reply", "timestamp": "2026-10-10 14:08:15"}
+{"payload": "brb", "tag": "user_message", "timestamp": "2026-10-10 14:55:48"}
+{"payload": "Take your time.", "tag": "poke_reply", "timestamp": "2026-10-10 14:55:53"}
+{"payload": "you there?", "tag": "user_message", "timestamp": "2026-10-10 16:10:43"}
+{"payload": "Always. What's up?", "tag": "poke_reply", "timestamp": "2026-10-10 16:10:48"}
+{"payload": "how much is the late fee?", "tag": "user_message", "timestamp": "2026-10-10 21:15:39"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-10 21:15:44"}
+{"payload": "[SUCCESS] Comcast Business Billing: The email states a $25 late fee applies if payment is not received by Oct 27.", "tag": "agent_message", "timestamp": "2026-10-10 21:17:01"}
+{"payload": "$25 if it's not paid by Oct 27.", "tag": "poke_reply", "timestamp": "2026-10-10 21:17:06"}
+{"payload": "find the confirmation once i've paid", "tag": "user_message", "timestamp": "2026-10-11 09:55:45"}
+{"payload": "right away", "tag": "poke_reply", "timestamp": "2026-10-11 09:55:50"}
+{"payload": "[SUCCESS] Comcast Business Billing: Found an Oct 17 email from billing@comcastbusiness.com confirming a $189.99 payment, confirmation #CB-882014.", "tag": "agent_message", "timestamp": "2026-10-11 09:57:56"}
+{"payload": "Paid. Confirmation #CB-882014 from Oct 17.", "tag": "poke_reply", "timestamp": "2026-10-11 09:58:01"}
+{"payload": "what was the original paint order number", "tag": "user_message", "timestamp": "2026-10-11 13:20:25"}
+{"payload": "let me check", "tag": "poke_reply", "timestamp": "2026-10-11 13:20:30"}
+{"payload": "[SUCCESS] Home Depot Refund Check: The refund email references original order #HD-57990127, placed Sept 12, 2026 for $64.18 including tax.", "tag": "agent_message", "timestamp": "2026-10-11 13:21:33"}
+{"payload": "The original order was #HD-57990127, placed Sept 12.", "tag": "poke_reply", "timestamp": "2026-10-11 13:21:38"}
+{"payload": "meh", "tag": "user_message", "timestamp": "2026-10-11 14:10:21"}
+{"payload": "Meh is a valid mood. Sometimes it's the whole forecast.", "tag": "poke_reply", "timestamp": "2026-10-11 14:10:26"}
+{"payload": "remind me oct 9 to check if the money showed up", "tag": "user_message", "timestamp": "2026-10-11 16:05:41"}
+{"payload": "let me dig in", "tag": "poke_reply", "timestamp": "2026-10-11 16:05:46"}
+{"payload": "[SUCCESS] Home Depot Refund Check: Reminder set for Oct 9, 2026 at 12:00pm: 'Check Visa 7732 for $64.18 Home Depot paint refund'.", "tag": "agent_message", "timestamp": "2026-10-11 16:07:18"}
+{"payload": "Reminder set for Oct 9 at noon to check for the refund.", "tag": "poke_reply", "timestamp": "2026-10-11 16:07:23"}
+{"payload": "what's the largest planet", "tag": "user_message", "timestamp": "2026-10-11 16:20:33"}
+{"payload": "Jupiter. Big enough to fit every other planet inside with room to spare.", "tag": "poke_reply", "timestamp": "2026-10-11 16:20:38"}
+{"payload": "remind me oct 28 to decide", "tag": "user_message", "timestamp": "2026-10-11 20:00:49"}
+{"payload": "happy to, checking", "tag": "poke_reply", "timestamp": "2026-10-11 20:00:54"}
+{"payload": "[SUCCESS] Asana Offer Email: Reminder set for Oct 28, 2026 at 9:00 AM titled 'Decide on Asana offer'.", "tag": "agent_message", "timestamp": "2026-10-11 20:02:53"}
+{"payload": "Reminder set for Oct 28 at 9:00 AM to decide on the Asana offer.", "tag": "poke_reply", "timestamp": "2026-10-11 20:02:58"}
+{"payload": "remind me saturday morning to read it", "tag": "user_message", "timestamp": "2026-10-11 21:45:21"}
+{"payload": "let me dig in", "tag": "poke_reply", "timestamp": "2026-10-11 21:45:26"}
+{"payload": "[SUCCESS] Hacker Newsletter search: Reminder set for Saturday Oct 24 at 9:00am: 'Read Rust in the Linux kernel article'.", "tag": "agent_message", "timestamp": "2026-10-11 21:47:38"}
+{"payload": "Reminder set for Saturday 9am.", "tag": "poke_reply", "timestamp": "2026-10-11 21:47:43"}
+{"payload": "remind me thursday to follow up if she hasn't answered", "tag": "user_message", "timestamp": "2026-10-12 08:55:35"}
+{"payload": "on it now", "tag": "poke_reply", "timestamp": "2026-10-12 08:55:40"}
+{"payload": "[SUCCESS] Berlin Trip Receipts: Reminder set for Thursday, Oct 1, 2026 at 2:00pm: 'Follow up with Dana on Berlin expense report'.", "tag": "agent_message", "timestamp": "2026-10-12 08:57:31"}
+{"payload": "Reminder set for Thursday Oct 1 at 2pm.", "tag": "poke_reply", "timestamp": "2026-10-12 08:57:36"}
+{"payload": "did home depot refund me for the paint i returned", "tag": "user_message", "timestamp": "2026-10-12 11:14:29"}
+{"payload": "Checking your email for a Home Depot refund notice.", "tag": "poke_reply", "timestamp": "2026-10-12 11:14:34"}
+{"payload": "[SUCCESS] Home Depot Refund Check: Home Depot emailed a refund notice on Sept 30, 2026: $64.18 for two gallons of Behr Marquee returned, going back to the Visa ending 7732 in 5 to 7 business days.", "tag": "agent_message", "timestamp": "2026-10-12 11:16:38"}
+{"payload": "Yep, they refunded you. Home Depot sent a notice on Sept 30 for $64.18 for the two gallons of Behr Marquee. It's going back to your Visa ending 7732 and should land in 5 to 7 business days.", "tag": "poke_reply", "timestamp": "2026-10-12 11:16:43"}
+{"payload": "what was the original paint order number", "tag": "user_message", "timestamp": "2026-10-12 13:04:43"}
+{"payload": "Looking that up in the refund email.", "tag": "poke_reply", "timestamp": "2026-10-12 13:04:48"}
+{"payload": "[SUCCESS] Home Depot Refund Check: The refund email references original order #HD-57990127, placed Sept 12, 2026 for $64.18 including tax.", "tag": "agent_message", "timestamp": "2026-10-12 13:05:49"}
+{"payload": "The original paint order was #HD-57990127, placed Sept 12 for $64.18 with tax.", "tag": "poke_reply", "timestamp": "2026-10-12 13:05:54"}
+{"payload": "remind me oct 9 to check if the money showed up", "tag": "user_message", "timestamp": "2026-10-12 15:36:54"}
+{"payload": "Setting that reminder now.", "tag": "poke_reply", "timestamp": "2026-10-12 15:36:59"}
+{"payload": "[SUCCESS] Home Depot Refund Check: Reminder set for Oct 9, 2026 at 12:00pm: 'Check Visa 7732 for $64.18 Home Depot paint refund'.", "tag": "agent_message", "timestamp": "2026-10-12 15:39:37"}
+{"payload": "Done. I'll remind you Oct 9 at 12:00pm to check your Visa 7732 for the $64.18 refund.", "tag": "poke_reply", "timestamp": "2026-10-12 15:39:42"}
+{"payload": "if it hasnt come by then email their support", "tag": "user_message", "timestamp": "2026-10-12 17:49:42"}
+{"payload": "I'll draft that note to their support team.", "tag": "poke_reply", "timestamp": "2026-10-12 17:49:47"}
+{"payload": "[SUCCESS] Home Depot Refund Check: Drafted a note to Home Depot customer care (support@homedepot.example) citing order #HD-57990127 and the Sept 30 refund notice. Saved as a draft to send after Oct 9.", "tag": "agent_message", "timestamp": "2026-10-12 17:52:55"}
+{"payload": "I drafted an email to Home Depot customer care with the order number and the Sept 30 refund notice. It's saved as a draft to send after Oct 9 if the money hasn't shown up.", "tag": "poke_reply", "timestamp": "2026-10-12 17:53:00"}

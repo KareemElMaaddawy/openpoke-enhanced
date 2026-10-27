@@ -1,0 +1,131 @@
+{
+  "provenance": {
+    "attempts": 1,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "37a7f147d6b54dabf9c2799a5ac13eaf855d2a8270c1acc3c20d2d92332f9c67",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found Verizon Fios email from Sept 14, 2026 with a UPS return label for the old Quantum router (account ending 4471). Return is due by October 5 or a $150 equipment fee applies.",
+      "key": "f1",
+      "opening_request": "can you dig up the Verizon Fios email with the router return label? need to ship it back",
+      "result_reply": "Found it. UPS label is attached to the Sept 14 email; return the router by October 5 to avoid $150.",
+      "topic": "Find Spectrum Mobile-free: Verizon Fios router return label emailed September 2026"
+    },
+    {
+      "canned_result": "Costco quote dated Sept 21, 2026 covers a LiftMaster 8500W opener with install and old unit haul-away for $498.99. Installer availability starts October 12.",
+      "key": "f2",
+      "opening_request": "summarize that garage door opener quote from Costco, think it was a LiftMaster",
+      "result_reply": "Costco quoted $498.99 for a LiftMaster 8500W installed, haul-away included. Earliest install is October 12.",
+      "topic": "Summarize Costco Wholesale Home Services quote for replacing garage door opener, LiftMaster 8500W"
+    },
+    {
+      "canned_result": "Sent reply to Priya Nair saying you'll Venmo your $39.50 half of the October Spectrum bill by Sunday, October 11.",
+      "key": "f3",
+      "opening_request": "tell Priya I'll venmo her my half of the internet bill this weekend",
+      "result_reply": "Sent. Told Priya you'll Venmo your $39.50 half by Sunday, October 11.",
+      "topic": "Reply to roommate Priya Nair about splitting the October 2026 Spectrum internet bill"
+    },
+    {
+      "canned_result": "Set a reminder for October 26, 2026 at 9:00 AM to renew the Maple Court parking permit, which expires October 31.",
+      "key": "f4",
+      "opening_request": "remind me to renew my Maple Court parking permit before end of october",
+      "result_reply": "Reminder set for October 26 at 9 AM to renew your Maple Court parking permit.",
+      "topic": "Reminder to renew parking permit for Maple Court apartments by October 31, 2026"
+    },
+    {
+      "canned_result": "Found Lowe's e-receipt from September 8, 2026 for a Samsung WF45 front-load washer, $899.00 with order number 88213476. Receipt PDF is attached.",
+      "key": "f5",
+      "opening_request": "need the Lowe's receipt for the washer I bought last month, for the warranty",
+      "result_reply": "Found it: Lowe's receipt from Sept 8, Samsung WF45 washer, $899, order 88213476.",
+      "topic": "Find Lowe's receipt for Samsung washer purchase in September 2026"
+    },
+    {
+      "canned_result": "Drafted and sent reply to Peachtree Property Management accepting a 12-month renewal for unit 4B and asking them to justify the proposed $85 monthly rent increase.",
+      "key": "f6",
+      "opening_request": "reply to Peachtree and say yes to the 12 month renewal but ask about the rent bump",
+      "result_reply": "Sent. You accepted the 12-month renewal and asked why rent is going up $85.",
+      "topic": "Reply to Peachtree Property Management about lease renewal terms for unit 4B"
+    },
+    {
+      "canned_result": "SolarGuard Pest & Wildlife's Sept 19 email says they found a nesting raccoon in the attic. They propose trapping, sealing entry points, and insulation cleanup for $720, starting September 28.",
+      "key": "f7",
+      "opening_request": "what did the raccoon guys say in their email about the attic",
+      "result_reply": "SolarGuard quoted $720 for trapping, sealing, and cleanup. They can start September 28.",
+      "topic": "Summarize SolarGuard Pest & Wildlife email about raccoon removal in attic, September 2026"
+    },
+    {
+      "canned_result": "Found a National Grid notice from Oct 1, 2026 about planned gas main maintenance on October 14 from 9 AM to 2 PM affecting Elm Street addresses. No action required but appliances will relight afterward.",
+      "key": "f8",
+      "opening_request": "did National Grid send anything about a gas shutoff? neighbor said something",
+      "result_reply": "Yes. Gas will be off October 14, 9 AM to 2 PM for maintenance. No action needed.",
+      "topic": "Find National Grid gas shutoff notice for planned maintenance on October 14, 2026"
+    },
+    {
+      "canned_result": "Created a reminder for November 1, 2026 at 6:00 PM to submit the Southwest Gas meter reading, due November 2.",
+      "key": "f9",
+      "opening_request": "remind me to send my gas meter reading in by the 2nd of november",
+      "result_reply": "Reminder set for November 1 at 6 PM to submit your Southwest Gas meter reading.",
+      "topic": "Reminder to submit meter reading to Southwest Gas by November 2, 2026"
+    },
+    {
+      "canned_result": "Sent email to Bright Path Window Cleaning asking to move the October 17 appointment to October 24, same morning time slot, and requested confirmation.",
+      "key": "f10",
+      "opening_request": "ask the window cleaning people if we can move saturday the 17th to the 24th",
+      "result_reply": "Sent. Asked Bright Path to move your October 17 cleaning to October 24.",
+      "topic": "Reply to Bright Path Window Cleaning to reschedule October 17 appointment"
+    },
+    {
+      "canned_result": "IKEA order confirmation shows the PAX wardrobe, order #402918375, arriving September 30, 2026 between 1 PM and 5 PM. Delivery fee was $59.",
+      "key": "f11",
+      "opening_request": "when's the IKEA wardrobe getting delivered? can you check my email",
+      "result_reply": "IKEA's PAX wardrobe arrives September 30 between 1 and 5 PM.",
+      "topic": "Find IKEA order confirmation for PAX wardrobe delivery on September 30, 2026"
+    },
+    {
+      "canned_result": "Duke Energy's Sept 25 email says customers with outages over 12 hours after the Sept 18 storm get a $25 bill credit, applied automatically to the October statement.",
+      "key": "f12",
+      "opening_request": "summarize the Duke Energy email about the storm outage credit",
+      "result_reply": "Duke Energy will auto-apply a $25 credit on your October bill for the Sept 18 outage.",
+      "topic": "Summarize Duke Energy outage credit email after September 2026 storm"
+    },
+    {
+      "canned_result": "Sent reply to Rob Hendricks accepting the $3,850 bathroom tile quote and asking whether he can begin the week of November 2.",
+      "key": "f13",
+      "opening_request": "tell Rob Hendricks I accept the bathroom tile quote, can he start in November",
+      "result_reply": "Sent. Accepted Rob's $3,850 quote and asked about starting the week of November 2.",
+      "topic": "Reply to contractor Rob Hendricks accepting bathroom tile quote of $3,850"
+    },
+    {
+      "canned_result": "Set a reminder for Thursday, October 8, 2026 at 10:00 AM to call Culligan about the water test results.",
+      "key": "f14",
+      "opening_request": "remind me thursday to call Culligan about my water test results",
+      "result_reply": "Reminder set for Thursday, October 8 at 10 AM to call Culligan.",
+      "topic": "Reminder to call Culligan about water test results on October 8, 2026"
+    },
+    {
+      "canned_result": "Amazon shipping email from October 3, 2026 says the Schlage Encode smart lock shipped via UPS, tracking 1Z84A92, and arrives October 7.",
+      "key": "f15",
+      "opening_request": "where's my Schlage smart lock from Amazon? find the shipping email",
+      "result_reply": "Your Schlage lock shipped via UPS and should arrive October 7.",
+      "topic": "Find Schlage smart lock shipping notice from Amazon, order placed October 2026"
+    },
+    {
+      "canned_result": "EverClear's Sept 12 email states a lifetime transferable warranty on gutter guards, but labor coverage lasts only 5 years and requires annual inspection records.",
+      "key": "f16",
+      "opening_request": "summarize the warranty details EverClear sent for the gutter guards",
+      "result_reply": "Lifetime transferable warranty, but labor only covered 5 years and needs annual inspection records.",
+      "topic": "Summarize EverClear Gutter Guard warranty terms email, September 2026"
+    },
+    {
+      "canned_result": "Sent a message to Evergy customer service requesting autopay enrollment from the checking account ending 3392 effective before the November 2026 billing cycle.",
+      "key": "f17",
+      "opening_request": "email Evergy that I want autopay started before the November bill",
+      "result_reply": "Sent. Asked Evergy to start autopay from your account ending 3392 before November's bill.",
+      "topic": "Reply to Evergy about setting up autopay for the November 2026 bill"
+    }
+  ]
+}

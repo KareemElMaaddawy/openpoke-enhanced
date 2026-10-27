@@ -1,0 +1,131 @@
+{
+  "provenance": {
+    "attempts": 1,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "0413f1f911249ddddc2e0d1d30c958b559fd2e7727323c63db8153a1f6ad835d",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found Hannah Brooks's email proposing a sleepover at our place on September 26 for her twins and Sophie. Sent a reply confirming, with pickup at 10am on Sunday.",
+      "key": "f1",
+      "opening_request": "Hannah emailed about the cousins' sleepover on the 26th, can you tell her yes we'll host?",
+      "result_reply": "Replied to Hannah confirming the September 26 sleepover here, with Sunday 10am pickup.",
+      "topic": "Reply to sister-in-law Hannah about hosting Sophie's cousin sleepover on September 26"
+    },
+    {
+      "canned_result": "Spotify's email dated September 3 says the Premium Family plan rises from $16.99 to $19.99 per month, starting with the October 12 billing date.",
+      "key": "f2",
+      "opening_request": "find that Spotify email about the family plan price going up, what's the new price?",
+      "result_reply": "Spotify Family goes from $16.99 to $19.99 monthly, starting with your October 12 billing.",
+      "topic": "Find the Spotify Family plan renewal email and price increase"
+    },
+    {
+      "canned_result": "Set a reminder for October 2 at 4:00pm to pick up Sophie's glasses at Warby Parker. The pickup-ready email says the store closes at 7pm.",
+      "key": "f3",
+      "opening_request": "remind me friday the 2nd to pick up Sophie's new glasses at Warby Parker",
+      "result_reply": "Reminder set for October 2 at 4pm to pick up Sophie's glasses; store closes at 7.",
+      "topic": "Reminder to pick up Sophie's prescription glasses from Warby Parker on October 2"
+    },
+    {
+      "canned_result": "Raymond Henderson proposes a reunion in Lake Tahoe August 6-8, 2027, with lodging at Pinecrest Lodge at about $210 per household per night. He wants a headcount by November 15.",
+      "key": "f4",
+      "opening_request": "can you sum up Uncle Ray's long reunion email? mostly want dates and cost",
+      "result_reply": "Reunion is Aug 6-8, 2027 in Tahoe, about $210 per household nightly. Headcount due November 15.",
+      "topic": "Summarize Uncle Raymond's email about the Henderson family reunion in Tahoe next August"
+    },
+    {
+      "canned_result": "Replied to Dave Morrison's volunteer email, signing up for the 8am-11am shift at the Grace Community Church food drive on October 17.",
+      "key": "f5",
+      "opening_request": "tell Pastor Dave I can help at the food drive on the 17th, morning shift",
+      "result_reply": "Told Pastor Dave you'll work the 8-11am shift at the October 17 food drive.",
+      "topic": "Reply to Pastor Dave Morrison at Grace Community Church about volunteering for the October 17 food drive"
+    },
+    {
+      "canned_result": "Costco Tire Center confirmation shows a rotation and balance appointment on October 8 at 10:30am at the Sunnyvale warehouse, order number 48213.",
+      "key": "f6",
+      "opening_request": "what time is my tire appointment at Costco on the 8th? find the email",
+      "result_reply": "Your Costco tire appointment is October 8 at 10:30am at the Sunnyvale warehouse.",
+      "topic": "Find the Costco tire center appointment confirmation for October 8"
+    },
+    {
+      "canned_result": "Created a reminder for October 13 at 7pm to submit Sophie's Lifetouch picture order online by the October 14 deadline. Package B at $34 was pre-selected in the school's email.",
+      "key": "f7",
+      "opening_request": "remind me to turn in Sophie's picture order by the 14th",
+      "result_reply": "Reminder set for October 13, 7pm, to submit Sophie's Lifetouch order due the 14th.",
+      "topic": "Reminder to submit Sophie's school picture order form to Lifetouch by October 14"
+    },
+    {
+      "canned_result": "Replied to Linda Park's email saying she can borrow the extension ladder and pick it up from the garage on Saturday, September 19, any time after noon.",
+      "key": "f8",
+      "opening_request": "Linda asked for our ladder this weekend, tell her sure and she can grab it Saturday",
+      "result_reply": "Told Linda she can pick up the ladder Saturday after noon.",
+      "topic": "Reply to neighbor Linda Park about borrowing the ladder for gutter cleaning on September 20"
+    },
+    {
+      "canned_result": "September alerts show Netflix Standard at $17.99 on September 5 and Hulu with Ads at $9.99 on September 11, totaling $27.98.",
+      "key": "f9",
+      "opening_request": "how much did we get charged for streaming this month? check the alerts",
+      "result_reply": "Streaming totaled $27.98 in September: Netflix $17.99 and Hulu $9.99.",
+      "topic": "Summarize Netflix and Hulu subscription charges from September credit card alerts"
+    },
+    {
+      "canned_result": "Found Carol Whitman's email with the pumpkin bread recipe attached. Sent a thank-you saying the family will bake it Halloween weekend.",
+      "key": "f10",
+      "opening_request": "Aunt Carol sent her pumpkin bread recipe, thank her and say we'll make it for Halloween weekend",
+      "result_reply": "Thanked Aunt Carol and said you'll bake her pumpkin bread Halloween weekend.",
+      "topic": "Reply to Aunt Carol about the recipe for her pumpkin bread"
+    },
+    {
+      "canned_result": "Greenfield Landscaping emailed on September 8 quoting $145 for fall aeration and overseeding, with availability on October 3 or October 10.",
+      "key": "f11",
+      "opening_request": "did Greenfield Landscaping ever send the aeration quote? how much was it",
+      "result_reply": "Greenfield quoted $145 for aeration and overseeding, available October 3 or 10.",
+      "topic": "Find email from Greenfield Landscaping about fall lawn aeration quote"
+    },
+    {
+      "canned_result": "Set a reminder for September 28 at 6pm to have Sophie write a thank-you note to Aunt Rosa for the Lego set from her birthday.",
+      "key": "f12",
+      "opening_request": "remind me to get Sophie to write Aunt Rosa a thank you note before the end of september",
+      "result_reply": "Reminder set for September 28, 6pm, for Sophie's thank-you note to Aunt Rosa.",
+      "topic": "Reminder to send thank-you note to Aunt Rosa for Sophie's birthday gift by September 30"
+    },
+    {
+      "canned_result": "Replied to Jenna Ortiz confirming a 1pm-3pm shift at the Girl Scout booth outside Safeway on October 25.",
+      "key": "f13",
+      "opening_request": "tell Jenna I can cover the cookie booth shift on the 25th afternoon",
+      "result_reply": "Confirmed with Jenna: you're covering the 1-3pm booth shift on October 25.",
+      "topic": "Reply to Girl Scout troop leader Jenna Ortiz about cookie booth shift on October 25"
+    },
+    {
+      "canned_result": "Allstate's notice dated September 14 shows the renters policy renewing November 1 at $212 per year, up from $198. Autopay is on.",
+      "key": "f14",
+      "opening_request": "find the Allstate renewal notice, what's the new premium?",
+      "result_reply": "Allstate renewal is November 1 at $212 yearly, up from $198. Autopay is on.",
+      "topic": "Find the Allstate homeowner's insurance renewal notice and premium"
+    },
+    {
+      "canned_result": "Riverside Aquatic Center's fall session for Sophie's Level 3 class runs Tuesdays 4:30pm from September 22 to November 10, costing $128, with payment due September 15.",
+      "key": "f15",
+      "opening_request": "sum up the Riverside Aquatic email about Sophie's swim lessons, when do they start?",
+      "result_reply": "Level 3 swim runs Tuesdays 4:30pm, September 22 to November 10. $128 due September 15.",
+      "topic": "Summarize Sophie's swim lessons email from Riverside Aquatic Center for the fall session"
+    },
+    {
+      "canned_result": "Replied to Meera Shah's invitation accepting the November 1 baby shower at 2pm and asking whether she has a registry or needs a dish.",
+      "key": "f16",
+      "opening_request": "tell Meera yes I'll come to her baby shower on Nov 1, and ask what to bring",
+      "result_reply": "Accepted Meera's November 1 baby shower and asked about registry or food to bring.",
+      "topic": "Reply to college friend Meera Shah about her baby shower on November 1"
+    },
+    {
+      "canned_result": "Headspace's welcome email says the trial ends October 18 and then bills $69.99 annually. Set a reminder for October 16 at 9am to cancel.",
+      "key": "f17",
+      "opening_request": "remind me to cancel the Headspace free trial before it charges me",
+      "result_reply": "Reminder set for October 16, 9am. Headspace bills $69.99 on October 18 otherwise.",
+      "topic": "Reminder to cancel the free trial for Headspace before October 18"
+    }
+  ]
+}

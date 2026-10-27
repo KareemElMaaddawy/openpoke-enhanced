@@ -1,0 +1,262 @@
+{
+  "provenance": {
+    "attempts": 1,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "8e1d3ad18555e19227c6691d67f33886a6f706ddcbc09f40f27f3fd5ecd8f2ce",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found 11 Uber receipts from Sep 2 to Sep 24, sent from uber.receipts@uber.com, totaling $284.60. Most are airport and client rides in Boston.",
+      "follow_ups": [
+        {
+          "reply": "The Sep 17 Logan to Back Bay ride, $58.40.",
+          "request": "which one was the most expensive?",
+          "result": "The priciest was the Sep 17 ride from Logan Airport to Back Bay at $58.40."
+        },
+        {
+          "reply": "Done, all 11 receipts forwarded to expenses@northfieldco.com.",
+          "request": "forward them all to expenses@northfieldco.com",
+          "result": "Forwarded all 11 Uber receipt emails to expenses@northfieldco.com with the subject 'September Uber receipts'."
+        },
+        {
+          "reply": "The Sep 9 ride went on your Visa ending 4417.",
+          "request": "which card was the sep 9 ride charged to?",
+          "result": "The Sep 9 receipt ($19.85) shows it was charged to the Visa ending 4417."
+        }
+      ],
+      "key": "c1",
+      "opening_request": "grab all my uber ride receipts from september for the expense report",
+      "pair_key": "c2",
+      "result_reply": "Found 11 September Uber receipts totaling $284.60, mostly Boston airport and client rides.",
+      "topic": "September Uber ride receipts for the Boston client trips expense report"
+    },
+    {
+      "canned_result": "Found an Oct 7 email from uber@uber.com confirming a $23.18 refund for missing items in the Sakura Bowl order, going back to the Visa ending 4417 in 3-5 business days.",
+      "follow_ups": [
+        {
+          "reply": "Uber says it was issued Oct 9, but nothing from your bank yet.",
+          "request": "has the refund actually gone through yet?",
+          "result": "A second Uber Eats email dated Oct 9 says the refund was issued. There's no bank confirmation in the inbox."
+        },
+        {
+          "reply": "Draft ready asking support about the $4.99 tip. Want me to send it?",
+          "request": "draft a note asking support about the $4.99 tip that wasn't refunded",
+          "result": "Drafted a reply to Uber Eats support asking why the $4.99 courier tip wasn't included in the $23.18 refund. Not sent."
+        },
+        {
+          "reply": "Reminder set for Oct 14 at 9am to check your card.",
+          "request": "remind me oct 14 to check my card for it",
+          "result": "Set a reminder for Oct 14 at 9:00am: 'Check Visa 4417 for Uber Eats refund $23.18'."
+        }
+      ],
+      "key": "c2",
+      "opening_request": "uber eats messed up my lunch order on oct 6, find the refund email",
+      "pair_key": "c1",
+      "result_reply": "Uber Eats refunded $23.18 for the Sakura Bowl order, due on your Visa in 3-5 business days.",
+      "topic": "Uber Eats refund for missing items in the Oct 6 Sakura Bowl order"
+    },
+    {
+      "canned_result": "Created a recurring reminder for the first Friday of each month at 9:00am, 'Pay Hartwell Properties studio rent $1,850', starting Oct 2. The amount comes from the lease email from payments@hartwellprop.com.",
+      "follow_ups": [
+        {
+          "reply": "Changed to 7am on first Fridays.",
+          "request": "move it to 7am",
+          "result": "Updated the recurring reminder to 7:00am on the first Friday of each month."
+        },
+        {
+          "reply": "Hartwell charges a $75 late fee after the 5th.",
+          "request": "what's the late fee if i miss it?",
+          "result": "The lease email from Hartwell says rent paid after the 5th incurs a $75 late fee."
+        },
+        {
+          "reply": "Yes, Hartwell confirmed your $1,850 payment on Sep 4, #HP-30918.",
+          "request": "did i get a confirmation for the september payment?",
+          "result": "Found a Sep 4 email from payments@hartwellprop.com confirming a $1,850 payment received, confirmation #HP-30918."
+        }
+      ],
+      "key": "c3",
+      "opening_request": "remind me the first friday of every month to pay the studio rent to hartwell",
+      "pair_key": "c4",
+      "result_reply": "Set a first-Friday 9am reminder for the $1,850 Hartwell rent, starting Oct 2.",
+      "topic": "Recurring first-Friday reminder to pay Hartwell Properties studio rent"
+    },
+    {
+      "canned_result": "Found an Oct 19 email from Tom Alvarez (tom.alvarez@hartwellprop.com): the $2,400 deposit minus $320 for cleaning leaves $2,080, to be mailed by Nov 3.",
+      "follow_ups": [
+        {
+          "reply": "Carpet cleaning $210 and wall repair $110.",
+          "request": "what was the $320 deduction for?",
+          "result": "Tom's email itemizes the $320 as professional carpet cleaning ($210) and wall repair ($110), with an attached invoice."
+        },
+        {
+          "reply": "Draft to Tom disputing the $110 wall charge is ready for review.",
+          "request": "draft a reply disputing the wall repair charge",
+          "result": "Drafted a reply to Tom Alvarez saying the wall marks were normal wear and asking for the $110 back. Not sent."
+        },
+        {
+          "reply": "Reminder set for Nov 4 at 10am.",
+          "request": "remind me nov 4 to check if the check came",
+          "result": "Set a reminder for Nov 4 at 10:00am: 'Check for Hartwell deposit check $2,080'."
+        }
+      ],
+      "key": "c4",
+      "opening_request": "find hartwell's email about my security deposit from the old elm street place",
+      "pair_key": "c3",
+      "result_reply": "Tom at Hartwell says $2,080 of your $2,400 deposit will be mailed by Nov 3.",
+      "topic": "Hartwell Properties security deposit return for the old Elm Street unit"
+    },
+    {
+      "canned_result": "Found the October invoice in an email from no-reply@aws.amazon.com dated Nov 3: $1,342.77 total for account ending 5521, with the PDF attached.",
+      "follow_ups": [
+        {
+          "reply": "Up $224.37 from September's $1,118.40, mostly EC2 and data transfer.",
+          "request": "how does that compare to september?",
+          "result": "The September invoice from Oct 3 was $1,118.40, so October is $224.37 higher, mostly EC2 and data transfer."
+        },
+        {
+          "reply": "Sent the invoice to maria@chenbooks.com.",
+          "request": "forward it to my accountant maria at chenbooks.com",
+          "result": "Forwarded the October AWS invoice email with the PDF to maria@chenbooks.com."
+        },
+        {
+          "reply": "Yes, charged to your Visa ending 4417 on Nov 5.",
+          "request": "was it paid already?",
+          "result": "A Nov 5 email from AWS confirms the $1,342.77 payment was charged to the Visa ending 4417."
+        }
+      ],
+      "key": "c5",
+      "opening_request": "find the october aws invoice",
+      "pair_key": "c6",
+      "result_reply": "October AWS invoice is $1,342.77, emailed Nov 3 with the PDF attached.",
+      "topic": "October AWS invoice for the main account"
+    },
+    {
+      "canned_result": "Priya Nair (priya.nair@amazon.com) wrote on Oct 22 that $5,000 in AWS Activate credits were approved. They must be redeemed by Dec 31 and are valid for 12 months.",
+      "follow_ups": [
+        {
+          "reply": "Yes, the code is ACT-7Q4M-2026.",
+          "request": "is there a promo code in there?",
+          "result": "Yes, Priya's email includes the code ACT-7Q4M-2026 with a link to redeem it in the billing console."
+        },
+        {
+          "reply": "Reminder set for Dec 15 at 9am.",
+          "request": "remind me dec 15 to redeem it if i haven't",
+          "result": "Set a reminder for Dec 15 at 9:00am: 'Redeem AWS Activate credits, expires Dec 31'."
+        },
+        {
+          "reply": "Reply sent to Priya.",
+          "request": "reply to priya and say thanks, we'll redeem this week",
+          "result": "Sent a reply to priya.nair@amazon.com thanking her and saying the credits will be redeemed this week."
+        }
+      ],
+      "key": "c6",
+      "opening_request": "what did priya at aws say about the startup credits",
+      "pair_key": "c5",
+      "result_reply": "Priya approved $5,000 in AWS credits. Redeem by Dec 31, valid for 12 months.",
+      "topic": "AWS startup credits approval from Priya Nair"
+    },
+    {
+      "canned_result": "Found an Oct 14 email from Dana Whitfield (dana.whitfield@northfieldco.com) saying the Lisbon report #4471 for $2,196.30 was approved and will be paid with the Oct 30 payroll.",
+      "follow_ups": [
+        {
+          "reply": "Yes, a $48 minibar charge was removed from $2,244.30.",
+          "request": "was anything cut from the total?",
+          "result": "Dana's email says a $48 minibar charge was removed. The original submission was $2,244.30."
+        },
+        {
+          "reply": "Reminder set for Oct 30 at 4pm.",
+          "request": "remind me oct 30 to check my account for it",
+          "result": "Set a reminder for Oct 30 at 4:00pm: 'Check bank for Lisbon reimbursement $2,196.30'."
+        },
+        {
+          "reply": "Thank-you note sent to Dana.",
+          "request": "thank dana for the quick turnaround",
+          "result": "Sent a short thank-you reply to dana.whitfield@northfieldco.com."
+        }
+      ],
+      "key": "c7",
+      "opening_request": "did finance approve my lisbon trip expense report yet",
+      "pair_key": null,
+      "result_reply": "Dana approved your Lisbon report for $2,196.30, to be paid Oct 30.",
+      "topic": "Lisbon trip expense reimbursement from Northfield finance"
+    },
+    {
+      "canned_result": "Found an Oct 12 email from billing@comcastbusiness.com saying autopay of $189.99 failed because the card ending 8820 expired. The account is due Oct 27 to avoid a late fee.",
+      "follow_ups": [
+        {
+          "reply": "Reminder set for Friday Oct 16 at 9am.",
+          "request": "remind me friday to update the card",
+          "result": "Set a reminder for Friday Oct 16 at 9:00am: 'Update card on Comcast Business account, $189.99 due Oct 27'."
+        },
+        {
+          "reply": "$25 if it's not paid by Oct 27.",
+          "request": "how much is the late fee?",
+          "result": "The email states a $25 late fee applies if payment is not received by Oct 27."
+        },
+        {
+          "reply": "Paid. Confirmation #CB-882014 from Oct 17.",
+          "request": "find the confirmation once i've paid",
+          "result": "Found an Oct 17 email from billing@comcastbusiness.com confirming a $189.99 payment, confirmation #CB-882014."
+        }
+      ],
+      "key": "c8",
+      "opening_request": "i think my comcast business bill failed to autopay, can you check",
+      "pair_key": null,
+      "result_reply": "Yes, autopay of $189.99 failed Oct 12 because card 8820 expired. Due Oct 27.",
+      "topic": "Comcast Business internet autopay failure in October"
+    },
+    {
+      "canned_result": "Found a 1099-NEC email from tax@fablestudios.com dated Nov 9 showing $18,500 in 2026 nonemployee compensation. I haven't sent it yet because there are two Marias in contacts.",
+      "follow_ups": [
+        {
+          "reply": "Sent to maria@chenbooks.com.",
+          "request": "maria chen, the accountant",
+          "result": "Forwarded the Fable Studios 1099-NEC email with attachment to maria@chenbooks.com."
+        },
+        {
+          "reply": "One more, from Lumen Labs for $6,200, dated Nov 2.",
+          "request": "are there any other 1099s in my inbox this year?",
+          "result": "Found one more: a 1099-NEC from Lumen Labs for $6,200, sent Nov 2 from payroll@lumenlabs.io."
+        },
+        {
+          "reply": "Reminder set for Nov 20 at 11am.",
+          "request": "remind me nov 20 to ask maria if she got everything",
+          "result": "Set a reminder for Nov 20 at 11:00am: 'Ask Maria Chen if she has all 1099s'."
+        }
+      ],
+      "key": "c9",
+      "opening_request": "find the 1099 from fable studios and send it to maria",
+      "pair_key": null,
+      "result_reply": "Found Fable's 1099-NEC for $18,500. Which Maria: Chen Books or Maria Ortiz?",
+      "topic": "1099-NEC from Fable Studios for the accountant"
+    },
+    {
+      "canned_result": "A Zoom email from billing@zoom.us dated Oct 29 says the Pro annual plan renews Nov 12 for $159.90, charged to the Visa ending 4417.",
+      "follow_ups": [
+        {
+          "reply": "Reminder set for Nov 9 at 9am.",
+          "request": "remind me nov 9 in case i want to cancel",
+          "result": "Set a reminder for Nov 9 at 9:00am: 'Decide on Zoom Pro renewal, $159.90 on Nov 12'."
+        },
+        {
+          "reply": "Basic is free with a 40-minute limit, or Pro monthly at $15.99.",
+          "request": "is there a cheaper plan they mentioned?",
+          "result": "The email mentions a Basic plan at $0 with 40-minute meeting limits, and a Pro monthly plan at $15.99."
+        },
+        {
+          "reply": "Last year's was $149.90, invoice #INV-2291764. This year's is $10 more.",
+          "request": "find last year's zoom receipt",
+          "result": "Found a Nov 12, 2025 receipt from billing@zoom.us for $149.90, invoice #INV-2291764."
+        }
+      ],
+      "key": "c10",
+      "opening_request": "when does my zoom plan renew and how much",
+      "pair_key": null,
+      "result_reply": "Zoom Pro renews Nov 12 for $159.90 on your Visa ending 4417.",
+      "topic": "Zoom annual subscription renewal on Nov 12"
+    }
+  ]
+}

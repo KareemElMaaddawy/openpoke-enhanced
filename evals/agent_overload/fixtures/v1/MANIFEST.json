@@ -1,0 +1,265 @@
+{
+  "case_set_hash": "8ac0f493fdaf81d36d07c25e22450c4cde67dbdcb913da75afb383d7267aea68",
+  "case_set_version": "v1",
+  "files": {
+    "agents.dev.jsonl": "84e1a6ef830e4e5de8061d34040bbc6c83658fd7d3077ca9ebec017bf0d575e9",
+    "agents.test.jsonl": "b3e8c1c6660af8d3acaea21ea8a0011ccdfb570f0fd5e7f8c0050edcac7339bd",
+    "cases.sequence.dev.jsonl": "a24bcdd7a0805ed928f32e091cb9a4ccc01d31813d50aab590ad23986ca22a57",
+    "cases.sequence.test.jsonl": "9e526006b1dfd6c1a10f726e4fbfa34963be6750cec1a62e90b44f0cc37e5cd9",
+    "cases.single.dev.jsonl": "7f1f064d039ed5b213a600b198f0327887515d3fb65f674ccc2f8d6a6aa83e27",
+    "cases.single.test.jsonl": "47880a11bf090de79370345c082d260696ac7e6882ead7813203ed6aaea84385",
+    "chitchat.jsonl": "7eb5d96aa01bb709d53832971e637d0f3737cb3de64a043a7b96fbc47b4637bd",
+    "review/agent_decisions.jsonl": "a8821280dec855771ba39cc5c3bbbf857cea83a675be7cbd3988667e33379b56",
+    "review/cross_label_summary.json": "ea1ad305c67469cc0786bafc8e42b11a52c78de3ecd89c2ee0c1645afd803bb5",
+    "review/disagreements.jsonl": "b51d64459a5bdf3729c89af503ecae2e09610ded8e276140a8f82105114145ea",
+    "review/disagreements.md": "1caed5b54237eabc757cd29a5a3e1810b302cc4aeb97ce18bc806276b3008eed",
+    "review/draft_failures.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "review/filler_cleaning.dev.json": "81ba53e640a0a3bec8ea1234d1738b706a0996911f0fcc252774a5557a60168b",
+    "review/filler_cleaning.test.json": "39f2bd61d793ee709e2785f31fda7b0fc67dddb92ebb772e60663975633fad28",
+    "review/filler_exclusions.json": "11c991567a0fe15713849b2bcf15a01149cdda9e41c8dd90495af2b524505b12",
+    "review/gen_threads/chitchat.json": "873ea5a579bc1938fcc88801853b678c8dcb1b6683fa7ab40ba77b3bc8ce3d5a",
+    "review/gen_threads/dev.events.case.json": "95a1f90deb60d3e987772889e6fbd066eafa2120c05132b229d43cfbe291c126",
+    "review/gen_threads/dev.events.filler.json": "30e68333eb8a3ffe449ac44f7bd46cd503c089c5888bacdf35484110224b0bf1",
+    "review/gen_threads/dev.family.case.json": "75d69c4ccac9b083ce45231a2a0f11d6dc86a426a08411af7627c16bf731f524",
+    "review/gen_threads/dev.family.filler.json": "4728a3591e514c8935242d1bef09c7f465f8feaf21cc0b5f21689308078630ac",
+    "review/gen_threads/dev.finance.case.json": "f58359923df41a80128d4f0c001131e8e3242e5237904e76b4c6bc0aaa79a3b5",
+    "review/gen_threads/dev.finance.filler.json": "5d4d54927220a82ad4b0585063017dc5c65e0425a2bfe5593a5e8d04ee9b4964",
+    "review/gen_threads/dev.health.case.json": "858cf0fb2a98721ca6fa992aac901fd9a1039bfa7adabe6264d9abb41e411c36",
+    "review/gen_threads/dev.health.filler.json": "6718f7173a59a84252c418cadb98bec6f5522496dcb2ffb54e119a6d8f440130",
+    "review/gen_threads/dev.home.case.json": "4b80cd95bf0fe64023b9e459efa9bf428a8834fa0c9f7980d497f3c823924d36",
+    "review/gen_threads/dev.home.filler.json": "570ab37a751785d69cad62ac9019cdcaabd9fdd97a3a836147f6c55d90837222",
+    "review/gen_threads/dev.jobs.case.json": "dcd21ae522345389c175655785de73cf1e4cc79c899d9ab5926c627c155adde0",
+    "review/gen_threads/dev.jobs.filler.json": "5cd30c313820dc1c7ee1f3715927c3f50ab5c9ea115ba1b16d7903f3f39a1d38",
+    "review/gen_threads/dev.scheduling.case.json": "54f4fa684a3a2ed0c8dc91f8d5d9b47528b542e290d2cf5364f8053bfbd26a54",
+    "review/gen_threads/dev.scheduling.filler.json": "0e9b7be2470c05ae7b07eb9bea2d8cb69170749bf8372e64ad3bed6e787c7bbc",
+    "review/gen_threads/dev.security.case.json": "a284f49a7e7e3109d4fcaeaeec9d5be3a4b1bc78c040f2a0d4406e4c5869647f",
+    "review/gen_threads/dev.security.filler.json": "638ba500b233e7d35e791fb9ec07ecb2bface63260162bbe37c87a5874b5e69a",
+    "review/gen_threads/dev.shopping.case.json": "253192948d78a1d2dcc0e035bc60bb129351876bc0b24a9749e7f7ad5a835871",
+    "review/gen_threads/dev.shopping.filler.json": "c9713685b6b078cb3fce1579ce5ee7a65f3012a945b18070cebbe7bf39869504",
+    "review/gen_threads/dev.subscriptions.case.json": "f85846f78da5cc138a820f0f6303d0fa4201800cd652224676d1b9dfd7d5e187",
+    "review/gen_threads/dev.subscriptions.filler.json": "b2826ecebb53facd1ae19ba5e648515b815a2d948a87c0281bb5663cbf2f73c9",
+    "review/gen_threads/dev.topup.jsonl": "4fa4332635583a0987f4416662617e89de1335578db1148378ff9704ccbaaf4e",
+    "review/gen_threads/dev.travel.case.json": "4fe99c47931f5c59d04b5c61053d694d00770a9dadd61a414d56aab265795c6f",
+    "review/gen_threads/dev.travel.filler.json": "8eb748affa403421a73d222ab0969525c9e46250fde575167ee7ced662f099d6",
+    "review/gen_threads/dev.work.case.json": "b971f6aeeeba6105bbfeb3bc0686186e94f6568b2225f8bea3def9d1fbdfa23c",
+    "review/gen_threads/dev.work.filler.json": "53d8b7817aafbe95441c743e3d0cab049612d51daceabf09f236a7ca760062ea",
+    "review/gen_threads/test.events.case.json": "ca1e06e77b5c2f5f8e27db33bd7ef7c521a5a7347d3a337422d7bfdf7b384ed2",
+    "review/gen_threads/test.events.filler.json": "5b6f75537673a4ff733336ef86b1e065affa82e26e2f10de8610693a7bf642da",
+    "review/gen_threads/test.family.case.json": "31cd6ade73140ece9ff575a3ad23577ab093c3e83488b0bad2100043b9014c07",
+    "review/gen_threads/test.family.filler.json": "da7dda1f6a557f3e725f3214f2e717ed8c03e7a12c1d3e92669d47081020dd78",
+    "review/gen_threads/test.finance.case.json": "24d06e57a064e2df0e6db33614e8e5d6a16cfe5d3339d2341564781efe54bbdd",
+    "review/gen_threads/test.finance.filler.json": "ae6c3dd12d1c39ba8a4415a0ddd55930372da175a7dc3a11c1b8c4b2ec6a70dc",
+    "review/gen_threads/test.health.case.json": "136424ee14dda8b1030c01df343ba534b8c6cf6c3b16a7e3421b758ab8d8bf08",
+    "review/gen_threads/test.health.filler.json": "986ddb3bb1b2e3d1ec5b1071c07735346ff04e7ef93eb408f569d2383a446642",
+    "review/gen_threads/test.home.case.json": "a215e11530e2c44d46fa9da6426da88ff12b399ce237d20e1ac16587b24d3617",
+    "review/gen_threads/test.home.filler.json": "2efa6418b7236090ba970dd69e63b0334dafe1a9df4af5f7cebf23ce2e28fca4",
+    "review/gen_threads/test.jobs.case.json": "2f987009295b9a6da1b01efa6a0af9af8c2b69b4a2592aff30d61386a23e5c95",
+    "review/gen_threads/test.jobs.filler.json": "5a0e94a892fd11d4cfc674c2e50f962b402b286a48f716761bb8e43ffa2b3ab4",
+    "review/gen_threads/test.scheduling.case.json": "c51a6cfec6fed034b12d839e4b0455a9d19a6dbe8f9546fbd0307c965e379feb",
+    "review/gen_threads/test.scheduling.filler.json": "6c45b2175d65a4a9b84dd8bd408ef2aa8ea4a2b6b8f86181485e59fa8c115543",
+    "review/gen_threads/test.security.case.json": "10da902009e455324e83bbbd45698bb3ba6212ff580555ca73396da63cfff5ac",
+    "review/gen_threads/test.security.filler.json": "01221998f8939618166fe17cc2ae2e45588cd6c6c3d26ddd8716831a49da23d3",
+    "review/gen_threads/test.shopping.case.json": "d8ae45bb7f94df9c2ae6192bce1518d47b8faebf5e4d7a5188dad65355e21e2d",
+    "review/gen_threads/test.shopping.filler.json": "7dfd521ba8643ac19bb1de33ce22e86fde119530186b1d792ade43ba7ef74a67",
+    "review/gen_threads/test.subscriptions.case.json": "a8e4d9742da7a85ca7c9769ace2ed2da364e8a5f6489fe779b236e3b88fa4c48",
+    "review/gen_threads/test.subscriptions.filler.json": "d116946f8631edd930d7ba81a59776dff5280e4a6a97da83ce5a0f86bd679823",
+    "review/gen_threads/test.topup.jsonl": "3c54ad68ce939529da6ced706d9c6b221c92f60835fd92a5ee8b517d870ccf60",
+    "review/gen_threads/test.travel.case.json": "26eb093f40e8e6ad960c89cf789143ad63df7c96bd97663472f0d14faf4ff0f4",
+    "review/gen_threads/test.travel.filler.json": "8334fe3ad50a7118e73a96542d9ef35fe2223fd560e9e075bd615456b99e4404",
+    "review/gen_threads/test.work.case.json": "41f33af714531639a5cd0047c9cee4a9c6d07f7672205f629478925f91b2bf4a",
+    "review/gen_threads/test.work.filler.json": "2f7a24a057ebede5f9f77921895c66061958e81b28a60817d576089d787c6bed",
+    "review/name_ratings.json": "8c249f35ecf385d4c778f239a35b8f6716c982a6a4905d6b862a9c161303e2cf",
+    "review/naming/dev.json": "ba4c7bc62534b45b69c6c4e476845944c006c6309c948a414c8714f31910b0f7",
+    "review/naming/test.json": "c9ef7b9b9f5ee03ffbaabaeeddaeb585c7a8385fbce3256b807cac3b7fa3c613",
+    "review/raw_histories/s-dev-0002.jsonl": "bd00a80c36653963048e3aa2b44920658204232037b77b248a4a6eff8aaaa698",
+    "review/raw_histories/s-dev-0004.jsonl": "95c5c6ba039474cc8839e65f3f2a7405dfc1a3500c8145246a22db7fe7c29853",
+    "review/raw_histories/s-dev-0009.jsonl": "35c72db7c02dcc76962d427e4b753e4e5f023cc7e194fa52527794e275e88730",
+    "review/raw_histories/s-dev-0011.jsonl": "50057eb6b7413895afc2841dffc569735d8e3498e5ddc3f6d17b8f476c753ce5",
+    "review/raw_histories/s-dev-0013.jsonl": "c45790eb4a64c4b649f38287213921d90914a980f1ed401e72d2d5179d80a783",
+    "review/raw_histories/s-dev-0016.jsonl": "9d90ecd2ba21625222caf964ba8912f1ebf362eb4097dbd36a31e11c1cd0dd88",
+    "review/raw_histories/s-dev-0021.jsonl": "0b9e7c2d9e944ee3bc3e3b93c39fb659c654a029d95a4867b55852518e8c4355",
+    "review/raw_histories/s-dev-0024.jsonl": "86bec9d1d1bf2ada01a9bdf025cf2e9ceff99314d769f777e20443e4c9a7c6f7",
+    "review/raw_histories/s-dev-0027.jsonl": "d0184d78d7baeb0d0aee7819db2d251ebfcadbf8ed41d5e66fbe2946e458c20b",
+    "review/raw_histories/s-dev-0029.jsonl": "2a68baa7433e13c378de4081d095aef0556ecc7f3492277da294d2d754ad9ee0",
+    "review/raw_histories/s-dev-0031.jsonl": "6ca1fad510c13bb909287c7544476b601abdc3840e158eb94a4a472458843b33",
+    "review/raw_histories/s-dev-0037.jsonl": "17e48878262055fbdabcd82853f16266886cf18b353ee8047fe5f8f160634d89",
+    "review/raw_histories/s-dev-0046.jsonl": "d68150ebab0ad80714f8a4961e73cad00166283de183ce0240caf3ecc0c50447",
+    "review/raw_histories/s-dev-0048.jsonl": "df08f83ab6b1497de72b4baee3e1f3e52e185311eca5ed6623ea2282b2e39f5d",
+    "review/raw_histories/s-dev-0052.jsonl": "5eeb1d053eb7bed51a96824f1dc7a8dc612894b2f0e0246059d8b17f184b6e79",
+    "review/raw_histories/s-dev-0053.jsonl": "82117f4fb267272b00aebc49d52c1ac25ec1e19910d96dbd0d23d23f80b26bb8",
+    "review/raw_histories/s-dev-0056.jsonl": "96ba59a777d4a0f67c2869d68278155fd308c86e3a9570932fe2c16d1b2115ab",
+    "review/raw_histories/s-dev-0060.jsonl": "3fb5cff7cf9487227697c682ee76715731d31e2a265944587b0583bd153f32ca",
+    "review/raw_histories/s-test-0001.jsonl": "0f355e749ab6db83f857f8043d5c4ce2da8ac964add6508582edc23c7b77eb83",
+    "review/raw_histories/s-test-0005.jsonl": "770cdf2e7df53a148701544cd912b148173eb92737687f1fe2fba79be536bf0f",
+    "review/raw_histories/s-test-0006.jsonl": "5c695618ede9693c2fab044253fc660544647f18169422fb7a71479834f75ab3",
+    "review/raw_histories/s-test-0008.jsonl": "aa8072ed62f2796088f873ada289e85e68519f47c51716956250b10feec10074",
+    "review/raw_histories/s-test-0017.jsonl": "78d70c54927eb80b2e68986bd2c291fdc026c99aaf2f61533b94643c5105b05f",
+    "review/raw_histories/s-test-0018.jsonl": "2ba26056171bb5419d3143fcbc333b146a5a9c67ee63fa88e6faa96f0122c54d",
+    "review/raw_histories/s-test-0019.jsonl": "9826c36702bbe2282313ccab54509f26a0c3c817124f21f18c670420091d7c46",
+    "review/raw_histories/s-test-0021.jsonl": "4384e43630cdf4c9473292f32689eb6c780cb5930475072c2543c726fd7ef643",
+    "review/raw_histories/s-test-0023.jsonl": "024bf14d35518c96ec5ef19aa241506175ef1ccb22f13d6506e0eb4f84d2750e",
+    "review/raw_histories/s-test-0028.jsonl": "af8b613aecdcdfe51a6429822a023cddf17aa5129fdee272d5f6335eb91e45fa",
+    "review/raw_histories/s-test-0032.jsonl": "85e16c235f35af3e457ed9a272dfa790abb0178ab3deb01172f975f3a7b84aa2",
+    "review/raw_histories/s-test-0037.jsonl": "8931b420df6945c3d0cf8ecadb550b0cc1ff46275cff2033780e6216976bd1dd",
+    "review/raw_histories/s-test-0039.jsonl": "e11a321dcc84f38ca50eae0a7920665439674744aadb26b857ef88e77d6707ea",
+    "review/raw_histories/s-test-0041.jsonl": "8d46749f04f5d70e0b2fe876c5c19cdefb1d014f2f91d35b6a041b97a19f16ed",
+    "review/raw_histories/s-test-0049.jsonl": "89d49a47bdc030c0f6c17f56ff57c82200935d334e9aa09b45df894c59efbe7a",
+    "review/raw_histories/s-test-0050.jsonl": "573e0b7a32838d3dff3a046ff7ba854b6f0815d7d6dcf848e88c3c90b4ba5ed8",
+    "review/raw_histories/s-test-0055.jsonl": "ec7f8892bb022bdc5534d9eb08aabb6fd4730438c215d155d9735bdfa3a1ce56",
+    "review/raw_histories/s-test-0066.jsonl": "3947d9146979b9d0935d7df79b01566f292b4ae0b1becd01f0485fa8eda507ca",
+    "review/raw_histories/s-test-0067.jsonl": "648577b94c6dce8a04fb8eb3061585e99d5e616d539117b70e0a2295edb948b2",
+    "review/raw_histories/s-test-0068.jsonl": "36110bc8011640a3ac55c75251117c69b13a8f2506089808265e6039e17762c6",
+    "review/raw_histories/s-test-0070.jsonl": "f39c8ab15e59fc985cc6cbfab908a7bfcdc2cd02ce329b8a96441314e6042d31",
+    "review/raw_histories/s-test-0073.jsonl": "c5d8ce723db84824d24d0fec7ee7876b0adcebbb6cb0786fc75d65cf8e6d3da7",
+    "review/raw_histories/s-test-0074.jsonl": "6f2de7899ae9265ce2e97993ed6afdcadba9391d1f1df8e45b289789b738eadc",
+    "review/raw_histories/s-test-0078.jsonl": "3bbaeb7d5eb45d76888cedfadb4e8cf1dc580784c64dc5fcd7312cb3c774b4e8",
+    "review/raw_histories/s-test-0085.jsonl": "c4b55ed0f7598ad002fd41cf7eab517a1b85ff942cc5452c883725557259594e",
+    "review/raw_histories/s-test-0089.jsonl": "70a969bb2b790d2ba37a3ab4aeeb65d639d881188aa3fe288ec3448dcb7e8c6a",
+    "review/raw_histories/s-test-0090.jsonl": "2179062e0f2c6e733668c3265aca50e0f9b5bc331da9d1cd08620d468aafc9cb",
+    "review/raw_histories/s-test-0092.jsonl": "67776d131feee78e348d02224d2e0a0b1133226de5004db2cda3e06d1880e29a",
+    "review/raw_histories/s-test-0098.jsonl": "65ba52b29b701c36623dd9b9d22770bfad71f3efe6ee55d975c9080b85b5d0ab",
+    "review/raw_histories/s-test-0099.jsonl": "426254b2c48989347c4095c61a0fff25962fce80aba9d1cc106519ff24a3de2f",
+    "review/raw_histories/s-test-0102.jsonl": "7c51a40af959a2e25e8394b9f922f73039b7e11f5f5a96a621423481660aa710",
+    "review/raw_histories/s-test-0104.jsonl": "07e84af60ee23946f7dcd41b97d4fd7621910b0cb51f8ec3b5b5edf6b6eafc87",
+    "review/raw_histories/s-test-0112.jsonl": "1a6ec1f9f3427653e3f213b26c9bf2dd86ccf28b2c8f2616d8d696104b22b940",
+    "review/raw_histories/s-test-0115.jsonl": "157337ba78cfd4ab6958016af5e9f69d2f7fb02a573fc03e87e1bf9ba3f116e7",
+    "review/raw_histories/s-test-0117.jsonl": "14ede1ced719aeef5e6e6787c532a58f775cc06755cdb2a4ff261f645b981ffa",
+    "review/raw_histories/s-test-0118.jsonl": "2786f83f120ab31854d85e925d5f22e2170db2290a74427b925defc8a0a39e2a",
+    "review/review_sheet.md": "ffbd1771fffe162488b94480f9b5ecbeb6cd182ddf1ca6903d427272ab0368d7",
+    "review/user_decisions.json": "22daef555b4b1bee03e7e5ee47a0934e7b3e77210bff4f48d1b9b06efe867c26",
+    "rosters.dev.json": "09d14f2bc61d8b3fb76dc0b36eefedbbac6e1a4f3c39c25102585d798d5ae36b",
+    "rosters.test.json": "dbcbf2bd493f77eea7aa9715bac309d21fe15a529ca648b0b02568a226eea1a4",
+    "threads.dev.jsonl": "438eea10408f89b7af947282933d4e0ff6f0cb784e442946092271a2e0db053b",
+    "threads.test.jsonl": "fffb55e5fe33797dc77a7bc42ff4407141678ee97fba4e6b5d7c7a2a60addde6"
+  },
+  "frozen_at": "2026-10-27T02:31:03Z",
+  "generator_models": {
+    "anthropic/claude-sonnet-5.5": [
+      "anthropic/claude-sonnet-5.5-20260928"
+    ],
+    "google/gemini-3.8-flash": [
+      "google/gemini-3.8-flash-20260902"
+    ],
+    "openai/gpt-6-luna": [
+      "openai/gpt-6-luna-20260922"
+    ]
+  },
+  "prompt_sha256": {
+    "cross_label.md": "c56bc3bf0aa3cb2572777256f8e660ad525b4d83c273ecb377dd3a6c7cd1009f",
+    "draft_case.md": "5ac83b104fb0dda96a2f19745f4b3d603ff1679d7e6dde6b0c123b6fc1f46244",
+    "draft_sequence.md": "7a7560cedf191145897f830f7bb10bde034d1d5e50cfad7b4274fe1181577acc",
+    "gen_chitchat.md": "560cae38e6020757611f90d268a6cd4a9bc63e3ee57a6f03ac8ee7cad397ed2e",
+    "gen_threads_case.md": "d2a0abfee68b79091bb7d3c7ddc7b3d8066651abe18d4b142d7681c10e82dd2f",
+    "gen_threads_filler.md": "751d289c25812f40d9e8bf7a82e9ce3a430cac5bbbb9b735331273897e4cc136",
+    "labeling_rules.md": "1591c714e677bbd84dcb20821bef248bf3eff4fd7e157e4f3fce7bd2cea3ede0",
+    "rate_names.md": "114a1b83afcb5a271e319bbb83bebe26498cb427936a4f510f468b3c2d413850"
+  },
+  "quota_counts": {
+    "dev": {
+      "cells": {
+        "CREATE|near_distractor": 6,
+        "CREATE|plain": 7,
+        "NO_DELEGATION|any": 6,
+        "REUSE_ANY|any": 5,
+        "REUSE|explicit": 9,
+        "REUSE|implicit_follow_up": 9,
+        "REUSE|near_distractor": 9,
+        "REUSE|paraphrased": 9
+      },
+      "history_type": {
+        "short": 42,
+        "summarized": 18
+      },
+      "message_subtype": {
+        "email_alert": 4,
+        "execution_result": 4,
+        "user": 52
+      },
+      "name_descriptiveness": {
+        "None": 19,
+        "generic": 1,
+        "partial": 12,
+        "specific": 28
+      },
+      "old_thread": 6,
+      "sequence_turns": {
+        "CREATE": 8,
+        "NO_DELEGATION": 10,
+        "REUSE": 26,
+        "REUSE_ANY": 4
+      },
+      "sequences": 4,
+      "target_age_bucket": {
+        "None": 19,
+        "mid": 2,
+        "old": 6,
+        "recent": 33
+      },
+      "target_name_visible": {
+        "False": 8,
+        "None": 19,
+        "True": 33
+      },
+      "target_position": {
+        "None": 13,
+        "first_third": 15,
+        "last_third": 16,
+        "middle_third": 16
+      }
+    },
+    "test": {
+      "cells": {
+        "CREATE|near_distractor": 12,
+        "CREATE|plain": 14,
+        "NO_DELEGATION|any": 12,
+        "REUSE_ANY|any": 10,
+        "REUSE|explicit": 18,
+        "REUSE|implicit_follow_up": 18,
+        "REUSE|near_distractor": 18,
+        "REUSE|paraphrased": 18
+      },
+      "history_type": {
+        "short": 84,
+        "summarized": 36
+      },
+      "message_subtype": {
+        "email_alert": 8,
+        "execution_result": 8,
+        "user": 104
+      },
+      "name_descriptiveness": {
+        "None": 38,
+        "generic": 6,
+        "partial": 15,
+        "specific": 61
+      },
+      "old_thread": 11,
+      "sequence_turns": {
+        "CREATE": 16,
+        "NO_DELEGATION": 20,
+        "REUSE": 51,
+        "REUSE_ANY": 9
+      },
+      "sequences": 8,
+      "target_age_bucket": {
+        "None": 38,
+        "mid": 3,
+        "old": 11,
+        "recent": 68
+      },
+      "target_name_visible": {
+        "False": 14,
+        "None": 38,
+        "True": 68
+      },
+      "target_position": {
+        "None": 26,
+        "first_third": 32,
+        "last_third": 31,
+        "middle_third": 31
+      }
+    }
+  },
+  "quota_gaps_allowed": false,
+  "quota_problems": []
+}

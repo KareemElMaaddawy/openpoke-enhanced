@@ -1,0 +1,122 @@
+{"payload": "remind me to renew my costco membership before it expires", "tag": "user_message", "timestamp": "2026-10-18 08:45:06"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-18 08:45:11"}
+{"payload": "[SUCCESS] Costco membership reminder: Found a Costco email from costco@email.costco.com saying the Executive membership expires November 3, 2026; renewal is $130 with auto-renew off. Reminder set for October 27 at 10am.", "tag": "agent_message", "timestamp": "2026-10-18 08:46:39"}
+{"payload": "Reminder set for Oct 27 at 10am. Membership expires Nov 3; renewal is $130.", "tag": "poke_reply", "timestamp": "2026-10-18 08:46:44"}
+{"payload": "find my marriott receipt from the austin conference stay last month, need it for expenses", "tag": "user_message", "timestamp": "2026-10-18 08:50:35"}
+{"payload": "right away", "tag": "poke_reply", "timestamp": "2026-10-18 08:50:40"}
+{"payload": "[SUCCESS] Marriott Austin Receipt Search: Found the final folio from Marriott Austin Downtown (noreply@marriott.com), sent Oct 22, for 2 nights Oct 20-22. The total was $487.62, including $64.12 in taxes, charged to the Visa ending 4417. The PDF is attached.", "tag": "agent_message", "timestamp": "2026-10-18 08:52:26"}
+{"payload": "Found it: Marriott Austin Downtown folio, $487.62 for Oct 20-22, PDF attached in the Oct 22 email.", "tag": "poke_reply", "timestamp": "2026-10-18 08:52:31"}
+{"payload": "find the gusto email about my two-factor settings changing in september", "tag": "user_message", "timestamp": "2026-10-18 13:20:06"}
+{"payload": "let me dig in", "tag": "poke_reply", "timestamp": "2026-10-18 13:20:11"}
+{"payload": "[SUCCESS] Find Gusto 2FA Email: Found an email from no-reply@gusto.com dated Sept 18, 2026, 'Your two-factor authentication method was updated.' It says the method switched from SMS to an authenticator app at 2:14 PM PT and to contact support if this wasn't you.", "tag": "agent_message", "timestamp": "2026-10-18 13:22:27"}
+{"payload": "Found it: Gusto says your 2FA switched from SMS to an authenticator app on Sept 18 at 2:14 PM.", "tag": "poke_reply", "timestamp": "2026-10-18 13:22:32"}
+{"payload": "meh", "tag": "user_message", "timestamp": "2026-10-18 14:05:27"}
+{"payload": "Meh is a valid mood. Sometimes it's the whole forecast.", "tag": "poke_reply", "timestamp": "2026-10-18 14:05:32"}
+{"payload": "brb", "tag": "user_message", "timestamp": "2026-10-18 16:50:10"}
+{"payload": "Take your time.", "tag": "poke_reply", "timestamp": "2026-10-18 16:50:15"}
+{"payload": "i need a vacation", "tag": "user_message", "timestamp": "2026-10-18 18:35:33"}
+{"payload": "Same energy, honestly. Somewhere with a beach and zero notifications.", "tag": "poke_reply", "timestamp": "2026-10-18 18:35:38"}
+{"payload": "still up, can't sleep", "tag": "user_message", "timestamp": "2026-10-18 19:20:36"}
+{"payload": "Bold choice. Try boring thoughts, they work better than counting sheep.", "tag": "poke_reply", "timestamp": "2026-10-18 19:20:41"}
+{"payload": "can you find my eurostar ticket for london to paris on oct 15", "tag": "user_message", "timestamp": "2026-10-18 20:20:22"}
+{"payload": "one moment", "tag": "poke_reply", "timestamp": "2026-10-18 20:20:27"}
+{"payload": "[SUCCESS] Eurostar ticket search: Found Eurostar booking confirmation from bookings@eurostar.com: train 9024 departs St Pancras 8:31am Oct 15, arrives Paris Gare du Nord 11:47am, Standard Premier seat, 14A, £212, booking ref QXT7MP.", "tag": "agent_message", "timestamp": "2026-10-18 20:22:05"}
+{"payload": "Found it: Eurostar 9024, Oct 15, departs 8:31am from St Pancras, seat 14A, ref QXT7MP.", "tag": "poke_reply", "timestamp": "2026-10-18 20:22:10"}
+{"payload": "what time is biscuit's vet appointment at willow creek", "tag": "user_message", "timestamp": "2026-10-18 20:35:09"}
+{"payload": "checking now", "tag": "poke_reply", "timestamp": "2026-10-18 20:35:14"}
+{"payload": "[SUCCESS] Biscuit Willow Creek vet appointment: Found a reminder from frontdesk@willowcreekvet.com for Biscuit's rabies booster and heartworm test with Dr. Tran on Saturday, September 26, 2026 at 10:30am. The estimate is $148.", "tag": "agent_message", "timestamp": "2026-10-18 20:36:31"}
+{"payload": "Biscuit's appointment is Saturday, September 26 at 10:30am with Dr. Tran. Estimated cost is $148.", "tag": "poke_reply", "timestamp": "2026-10-18 20:36:36"}
+{"payload": "tell me a joke", "tag": "user_message", "timestamp": "2026-10-18 21:00:14"}
+{"payload": "Why did the scarecrow win an award? He was outstanding in his field. I'll see myself out.", "tag": "poke_reply", "timestamp": "2026-10-18 21:00:19"}
+{"payload": "what's the capital of Australia", "tag": "user_message", "timestamp": "2026-10-19 09:35:17"}
+{"payload": "Canberra. Everyone guesses Sydney, so you're in good company.", "tag": "poke_reply", "timestamp": "2026-10-19 09:35:22"}
+{"payload": "nice weather today", "tag": "user_message", "timestamp": "2026-10-19 10:20:27"}
+{"payload": "Love that for you. Go stand in it for a minute.", "tag": "poke_reply", "timestamp": "2026-10-19 10:20:32"}
+{"payload": "is auto renew on?", "tag": "user_message", "timestamp": "2026-10-19 13:40:36"}
+{"payload": "checking now", "tag": "poke_reply", "timestamp": "2026-10-19 13:40:41"}
+{"payload": "[SUCCESS] Costco membership reminder: The email states auto-renew is currently off for member #1118 and must be renewed manually.", "tag": "agent_message", "timestamp": "2026-10-19 13:42:36"}
+{"payload": "No, auto-renew is off. You'll need to renew manually.", "tag": "poke_reply", "timestamp": "2026-10-19 13:42:41"}
+{"payload": "what time do i need to be at the station", "tag": "user_message", "timestamp": "2026-10-19 14:40:39"}
+{"payload": "looking now", "tag": "poke_reply", "timestamp": "2026-10-19 14:40:44"}
+{"payload": "[SUCCESS] Eurostar ticket search: Eurostar's email says check-in closes 30 minutes before departure, so arrive at St Pancras by 8:01am. It recommends arriving 90 minutes early for passport control.", "tag": "agent_message", "timestamp": "2026-10-19 14:43:27"}
+{"payload": "Check-in closes 8:01am, but Eurostar recommends arriving around 7:00am for passport control.", "tag": "poke_reply", "timestamp": "2026-10-19 14:43:32"}
+{"payload": "does it show the parking charge separately?", "tag": "user_message", "timestamp": "2026-10-19 15:05:22"}
+{"payload": "looking now", "tag": "poke_reply", "timestamp": "2026-10-19 15:05:27"}
+{"payload": "[SUCCESS] Marriott Austin Receipt Search: Yes. The folio lists self-parking at $38/night, $76 total, as a separate line item from the room charges of $347.50.", "tag": "agent_message", "timestamp": "2026-10-19 15:06:32"}
+{"payload": "Yes, parking is its own line: $76 for two nights, separate from the $347.50 room charge.", "tag": "poke_reply", "timestamp": "2026-10-19 15:06:37"}
+{"payload": "long day", "tag": "user_message", "timestamp": "2026-10-19 17:25:18"}
+{"payload": "Then you've earned a comfy spot on the couch. Go be horizontal.", "tag": "poke_reply", "timestamp": "2026-10-19 17:25:23"}
+{"payload": "forward the ticket to my colleague Ben Ortiz", "tag": "user_message", "timestamp": "2026-10-19 17:35:22"}
+{"payload": "give me a sec", "tag": "poke_reply", "timestamp": "2026-10-19 17:35:27"}
+{"payload": "[SUCCESS] Eurostar ticket search: Forwarded the Eurostar confirmation with the PDF ticket to ben.ortiz@harlowtech.com, with a note that it is for the Oct 15 train.", "tag": "agent_message", "timestamp": "2026-10-19 17:37:00"}
+{"payload": "Forwarded the ticket to Ben Ortiz at ben.ortiz@harlowtech.com.", "tag": "poke_reply", "timestamp": "2026-10-19 17:37:05"}
+{"payload": "send his vaccine records to pawsome boarding", "tag": "user_message", "timestamp": "2026-10-19 18:15:02"}
+{"payload": "let me dig in", "tag": "poke_reply", "timestamp": "2026-10-19 18:15:07"}
+{"payload": "[SUCCESS] Biscuit Willow Creek vet appointment: Emailed Biscuit's most recent vaccination record PDF, from Willow Creek's March email, to info@pawsomeboarding.com with a note that the rabies booster will be updated after September 26.", "tag": "agent_message", "timestamp": "2026-10-19 18:17:42"}
+{"payload": "Sent his current vaccine records to Pawsome Boarding, noting an update is coming after the 26th.", "tag": "poke_reply", "timestamp": "2026-10-19 18:17:47"}
+{"payload": "wow that's wild", "tag": "user_message", "timestamp": "2026-10-19 18:55:56"}
+{"payload": "Right? Life's got range.", "tag": "poke_reply", "timestamp": "2026-10-19 18:56:01"}
+{"payload": "did i actually make that change or is it suspicious", "tag": "user_message", "timestamp": "2026-10-19 20:20:22"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-19 20:20:27"}
+{"payload": "[SUCCESS] Find Gusto 2FA Email: I checked your sent mail and inbox. There's a Gusto 'Authenticator app setup complete' confirmation at 2:12 PM PT on Sept 18, two minutes before the notice, so it matches a change you started.", "tag": "agent_message", "timestamp": "2026-10-19 20:22:33"}
+{"payload": "Looks like you did it. A setup confirmation arrived two minutes before the notice, at 2:12 PM.", "tag": "poke_reply", "timestamp": "2026-10-19 20:22:38"}
+{"payload": "forward it to expenses@northfieldgroup.com with subject austin hotel receipt", "tag": "user_message", "timestamp": "2026-10-20 08:35:35"}
+{"payload": "let me check", "tag": "poke_reply", "timestamp": "2026-10-20 08:35:40"}
+{"payload": "[SUCCESS] Marriott Austin Receipt Search: Forwarded the Oct 22 Marriott folio email with the PDF to expenses@northfieldgroup.com under the subject 'Austin hotel receipt'.", "tag": "agent_message", "timestamp": "2026-10-20 08:37:35"}
+{"payload": "Done, forwarded to expenses@northfieldgroup.com with the subject 'Austin hotel receipt'.", "tag": "poke_reply", "timestamp": "2026-10-20 08:37:40"}
+{"payload": "does the email say how to undo it", "tag": "user_message", "timestamp": "2026-10-20 09:05:48"}
+{"payload": "looking into it", "tag": "poke_reply", "timestamp": "2026-10-20 09:05:53"}
+{"payload": "[SUCCESS] Find Gusto 2FA Email: The email says to reply or contact Gusto support at support@gusto.com or 1-800-936-0383 if the change wasn't authorized. It also links to Settings > Security to switch methods back.", "tag": "agent_message", "timestamp": "2026-10-20 09:08:08"}
+{"payload": "Yes: use Settings > Security to switch back, or contact support@gusto.com if it wasn't you.", "tag": "poke_reply", "timestamp": "2026-10-20 09:08:13"}
+{"payload": "was there also a receipt for the breakfast i charged to the room?", "tag": "user_message", "timestamp": "2026-10-20 09:30:44"}
+{"payload": "pulling that up now", "tag": "poke_reply", "timestamp": "2026-10-20 09:30:49"}
+{"payload": "[SUCCESS] Marriott Austin Receipt Search: The folio has one breakfast charge, $23.40 at Garrison Kitchen on Oct 21. No separate restaurant receipt was emailed.", "tag": "agent_message", "timestamp": "2026-10-20 09:33:39"}
+{"payload": "Only the folio line: $23.40 at Garrison Kitchen on Oct 21. No separate receipt was emailed.", "tag": "poke_reply", "timestamp": "2026-10-20 09:33:44"}
+{"payload": "bye for now", "tag": "user_message", "timestamp": "2026-10-20 10:30:02"}
+{"payload": "Later! I'll be here.", "tag": "poke_reply", "timestamp": "2026-10-20 10:30:07"}
+{"payload": "thanks, you're the best", "tag": "user_message", "timestamp": "2026-10-20 13:30:15"}
+{"payload": "Stop, you'll make me blush, and I don't even have cheeks.", "tag": "poke_reply", "timestamp": "2026-10-20 13:30:20"}
+{"payload": "goodnight", "tag": "user_message", "timestamp": "2026-10-20 13:45:36"}
+{"payload": "Night! Sleep well, tomorrow can wait its turn.", "tag": "poke_reply", "timestamp": "2026-10-20 13:45:41"}
+{"payload": "remind me friday to take his stool sample", "tag": "user_message", "timestamp": "2026-10-20 14:40:04"}
+{"payload": "on it", "tag": "poke_reply", "timestamp": "2026-10-20 14:40:09"}
+{"payload": "[SUCCESS] Biscuit Willow Creek vet appointment: Set a reminder for Friday, September 25, 2026 at 7:30pm: 'Collect Biscuit's stool sample for Willow Creek visit tomorrow'.", "tag": "agent_message", "timestamp": "2026-10-20 14:42:25"}
+{"payload": "Reminder set for Friday, September 25 at 7:30pm.", "tag": "poke_reply", "timestamp": "2026-10-20 14:42:30"}
+{"payload": "find last year's renewal receipt", "tag": "user_message", "timestamp": "2026-10-20 16:00:01"}
+{"payload": "give me a sec", "tag": "poke_reply", "timestamp": "2026-10-20 16:00:06"}
+{"payload": "[SUCCESS] Costco membership reminder: Found the Nov 2025 receipt from costco@email.costco.com: Executive renewal, $120, charged Nov 1, 2025.", "tag": "agent_message", "timestamp": "2026-10-20 16:01:42"}
+{"payload": "Last year's renewal was $120, charged Nov 1, 2025.", "tag": "poke_reply", "timestamp": "2026-10-20 16:01:47"}
+{"payload": "i'm so tired", "tag": "user_message", "timestamp": "2026-10-20 16:10:41"}
+{"payload": "Sounds like a blanket-and-do-nothing kind of day. Go easy on yourself.", "tag": "poke_reply", "timestamp": "2026-10-20 16:10:46"}
+{"payload": "remind me tomorrow at 9am to save the gusto backup codes", "tag": "user_message", "timestamp": "2026-10-20 17:25:32"}
+{"payload": "let me dig in", "tag": "poke_reply", "timestamp": "2026-10-20 17:25:37"}
+{"payload": "[SUCCESS] Find Gusto 2FA Email: Reminder set for tomorrow at 9:00 AM: 'Save Gusto authenticator backup codes.'", "tag": "agent_message", "timestamp": "2026-10-20 17:28:16"}
+{"payload": "Done. I'll remind you tomorrow at 9:00 AM to save your Gusto backup codes.", "tag": "poke_reply", "timestamp": "2026-10-20 17:28:21"}
+{"payload": "remind me the night before to download the ticket to my phone", "tag": "user_message", "timestamp": "2026-10-20 18:35:06"}
+{"payload": "working on it", "tag": "poke_reply", "timestamp": "2026-10-20 18:35:11"}
+{"payload": "[SUCCESS] Eurostar ticket search: Reminder set for Oct 14 at 8:00pm: download Eurostar ticket (ref QXT7MP) to phone wallet.", "tag": "agent_message", "timestamp": "2026-10-20 18:36:37"}
+{"payload": "Done, reminder set for Oct 14 at 8:00pm to download the ticket.", "tag": "poke_reply", "timestamp": "2026-10-20 18:36:42"}
+{"payload": "haha you're funny", "tag": "user_message", "timestamp": "2026-10-20 18:55:37"}
+{"payload": "I try. Mostly I just get lucky.", "tag": "poke_reply", "timestamp": "2026-10-20 18:55:42"}
+{"payload": "did they say he needs to fast", "tag": "user_message", "timestamp": "2026-10-20 19:10:50"}
+{"payload": "working on it", "tag": "poke_reply", "timestamp": "2026-10-20 19:10:55"}
+{"payload": "[SUCCESS] Biscuit Willow Creek vet appointment: The reminder says no fasting is needed, but to bring Biscuit on a leash and to skip his morning treats if he gets car sick.", "tag": "agent_message", "timestamp": "2026-10-20 19:13:19"}
+{"payload": "No fasting needed. Just bring him on a leash.", "tag": "poke_reply", "timestamp": "2026-10-20 19:13:24"}
+{"payload": "mondays am i right", "tag": "user_message", "timestamp": "2026-10-20 19:40:23"}
+{"payload": "Monday really should come with a gentle opening act.", "tag": "poke_reply", "timestamp": "2026-10-20 19:40:28"}
+{"payload": "make the reminder a week earlier", "tag": "user_message", "timestamp": "2026-10-20 20:15:57"}
+{"payload": "let me check", "tag": "poke_reply", "timestamp": "2026-10-20 20:16:02"}
+{"payload": "[SUCCESS] Costco membership reminder: Reminder moved from October 27 to October 20 at 10:00am.", "tag": "agent_message", "timestamp": "2026-10-20 20:18:01"}
+{"payload": "Moved to Oct 20 at 10am.", "tag": "poke_reply", "timestamp": "2026-10-20 20:18:06"}
+{"payload": "how much was the renewal this year compared to last year", "tag": "user_message", "timestamp": "2026-10-21 10:37:31"}
+{"payload": "checking the renewal emails for the difference.", "tag": "poke_reply", "timestamp": "2026-10-21 10:37:36"}
+{"payload": "[SUCCESS] Costco membership reminder: This year's Executive renewal is $130, with auto-renew off. Last year's receipt from November 2025 shows $120 charged on Nov 1, 2025, so it's up $10.", "tag": "agent_message", "timestamp": "2026-10-21 10:39:38"}
+{"payload": "renewal is $130 this year vs $120 last year, so $10 more.", "tag": "poke_reply", "timestamp": "2026-10-21 10:39:43"}
+{"payload": "ugh everything keeps going up", "tag": "user_message", "timestamp": "2026-10-21 12:28:43"}
+{"payload": "tell me about it. at least it's only $10 on the membership.", "tag": "poke_reply", "timestamp": "2026-10-21 12:28:48"}
+{"payload": "remind me saturday after the vet to send pawsome biscuit's updated rabies record", "tag": "user_message", "timestamp": "2026-10-21 14:26:48"}
+{"payload": "setting that reminder for after the vet visit.", "tag": "poke_reply", "timestamp": "2026-10-21 14:26:53"}
+{"payload": "[SUCCESS] Biscuit Willow Creek vet appointment: Set a reminder for Saturday, September 26, 2026 at 1:00pm: 'Send Pawsome Boarding Biscuit's updated rabies record'.", "tag": "agent_message", "timestamp": "2026-10-21 14:27:50"}
+{"payload": "done, you'll get a reminder saturday at 1pm to send pawsome the updated rabies record.", "tag": "poke_reply", "timestamp": "2026-10-21 14:27:55"}
+{"payload": "thanks", "tag": "user_message", "timestamp": "2026-10-21 14:59:55"}
+{"payload": "anytime.", "tag": "poke_reply", "timestamp": "2026-10-21 15:00:00"}

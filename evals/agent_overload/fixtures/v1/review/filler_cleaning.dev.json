@@ -1,0 +1,216 @@
+{
+  "dropped_threads": [
+    "t-dev-0035",
+    "t-dev-0038",
+    "t-dev-0046",
+    "t-dev-0202",
+    "t-dev-0206",
+    "t-dev-0213",
+    "t-dev-0235",
+    "t-dev-0239",
+    "t-dev-0249",
+    "t-dev-0256",
+    "t-dev-0261",
+    "t-dev-0268",
+    "t-dev-0281",
+    "t-dev-0294",
+    "t-dev-0313",
+    "t-dev-0328",
+    "t-dev-0344",
+    "t-dev-0357",
+    "t-dev-0368",
+    "t-dev-0373",
+    "t-dev-0391",
+    "t-dev-0410",
+    "t-dev-0414",
+    "t-dev-0422",
+    "t-dev-0425",
+    "t-dev-0430",
+    "t-dev-0431",
+    "t-dev-0441",
+    "t-dev-0443",
+    "t-dev-0446"
+  ],
+  "kept": 200,
+  "removed": [
+    {
+      "agent_id": "a-dev-0204",
+      "conflicts": [
+        "Tom Becker W-9"
+      ],
+      "name": "Linda Maple W-9 reply",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-dev-0223",
+      "conflicts": [
+        "Eurostar ticket search"
+      ],
+      "name": "Find Trenitalia ticket",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-dev-0227",
+      "conflicts": [
+        "Find Edinburgh Booking.com reservation"
+      ],
+      "name": "DFW Parking Reservation Search",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-dev-0230",
+      "conflicts": [
+        "Eurostar ticket search",
+        "Cirque Aurora Ticket Reminder"
+      ],
+      "name": "Via Rail ticket reminder",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-dev-0244",
+      "conflicts": [
+        "Pioneer Water Email Check"
+      ],
+      "name": "Tidewater Renewal Email",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-dev-0257",
+      "conflicts": [
+        "Juniper Hall Dinner Quote"
+      ],
+      "name": "Juniper Call Update",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-dev-0258",
+      "conflicts": [
+        "Tom Becker W-9"
+      ],
+      "name": "W-9 reminder",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-dev-0277",
+      "conflicts": [
+        "REI Order Tracking"
+      ],
+      "name": "UNIQLO order tracking",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-dev-0299",
+      "conflicts": [
+        "Gusto payroll bank verification"
+      ],
+      "name": "Glassdoor verification email",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-dev-0305",
+      "conflicts": [
+        "Pioneer Water Email Check"
+      ],
+      "name": "Denver Water Job Email Search",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-dev-0330",
+      "conflicts": [
+        "Dana driveway quote"
+      ],
+      "name": "Food Drive Message",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-dev-0331",
+      "conflicts": [
+        "Costco Tire Appointment Email"
+      ],
+      "name": "Find Costco tire appointment email",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-dev-0351",
+      "conflicts": [
+        "Marriott Austin Receipt Search"
+      ],
+      "name": "Marriott Booking Lookup",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-dev-0361",
+      "conflicts": [
+        "Costco Tire Appointment Email"
+      ],
+      "name": "Find Costco LiftMaster quote",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-dev-0385",
+      "conflicts": [
+        "REI Order Tracking"
+      ],
+      "name": "Kaiser UPS tracking email",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-dev-0404",
+      "conflicts": [
+        "Gusto payroll bank verification"
+      ],
+      "name": "Square Identity Verification",
+      "reason": "similar to case agent"
+    },
+    {
+      "agent_id": "a-dev-0442",
+      "name": "Bose Warranty Claim Status",
+      "reason": "trimmed to 200"
+    },
+    {
+      "agent_id": "a-dev-0444",
+      "name": "Ticketmaster Harbor Kings refund",
+      "reason": "trimmed to 200"
+    },
+    {
+      "agent_id": "a-dev-0445",
+      "name": "Find PG&E rates email",
+      "reason": "trimmed to 200"
+    },
+    {
+      "agent_id": "a-dev-0447",
+      "name": "LinkedIn Premium receipt search",
+      "reason": "trimmed to 200"
+    },
+    {
+      "agent_id": "a-dev-0448",
+      "name": "Sparkle Cleaners Contact",
+      "reason": "trimmed to 200"
+    },
+    {
+      "agent_id": "a-dev-0449",
+      "name": "Sunrun Bill",
+      "reason": "trimmed to 200"
+    },
+    {
+      "agent_id": "a-dev-0450",
+      "name": "Sherwin-Williams Order Email",
+      "reason": "trimmed to 200"
+    },
+    {
+      "agent_id": "a-dev-0451",
+      "name": "Find Grubhub Panera Receipt",
+      "reason": "trimmed to 200"
+    },
+    {
+      "agent_id": "a-dev-0452",
+      "name": "Marisol Teton Ridge Coffee",
+      "reason": "trimmed to 200"
+    },
+    {
+      "agent_id": "a-dev-0453",
+      "name": "Gartner Renewal Quote",
+      "reason": "trimmed to 200"
+    }
+  ]
+}

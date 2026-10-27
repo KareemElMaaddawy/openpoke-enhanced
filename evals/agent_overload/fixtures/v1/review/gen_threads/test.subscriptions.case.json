@@ -1,0 +1,237 @@
+{
+  "provenance": {
+    "attempts": 1,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "459d741bf81b0904bef712f2eec1f346fd5d74d26d093553b20100076d332c85",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found Adobe invoice IEU-2026-4471893 from mailing@adobe.com dated Oct 3, 2026: Creative Cloud All Apps annual plan, $659.88 charged to the Visa ending 4417.",
+      "follow_ups": [
+        {
+          "reply": "Next renewal is Oct 3, 2027. Adobe says price changes come with 30 days' notice.",
+          "request": "does it say when the next renewal is",
+          "result": "The invoice says the plan auto-renews Oct 3, 2027, and the price may change with 30 days' notice."
+        },
+        {
+          "reply": "Forwarded to Priya at nairandco.com with the PDF attached.",
+          "request": "forward it to my accountant priya",
+          "result": "Forwarded the invoice email to priya.nair@nairandco.com with the PDF attached and a note that it's a business expense."
+        },
+        {
+          "reply": "Reminder set for Sept 25, 2027 at 9am to review Adobe plans.",
+          "request": "remind me sept 25 next year to look at cheaper plans",
+          "result": "Reminder set for Sept 25, 2027 at 9:00am: 'Review Adobe CC plan before Oct 3 renewal'."
+        }
+      ],
+      "key": "c1",
+      "opening_request": "find my adobe creative cloud renewal invoice from october",
+      "pair_key": "c2",
+      "result_reply": "Found it: Adobe Creative Cloud annual renewal, $659.88 on Oct 3, charged to Visa ending 4417.",
+      "topic": "Adobe Creative Cloud annual plan renewal invoice, October 2026"
+    },
+    {
+      "canned_result": "Found the Acrobat Pro 7-day trial confirmation from adobe@mail.adobe.com started Nov 4; it converts to $19.99/month on Nov 11. Set a reminder for Nov 10 at 6pm.",
+      "follow_ups": [
+        {
+          "reply": "Moved to Nov 10 at 8am.",
+          "request": "actually make it the morning of the 10th",
+          "result": "Moved the reminder to Nov 10 at 8:00am."
+        },
+        {
+          "reply": "Yes, a 'Manage plan' link at account.adobe.com/plans. Cancelling before Nov 11 avoids the charge.",
+          "request": "is there a cancel link in that email",
+          "result": "Yes, the trial email includes a 'Manage plan' link to account.adobe.com/plans, and says cancelling before Nov 11 avoids any charge."
+        },
+        {
+          "reply": "Nothing yet. The newest Adobe email is still the Nov 4 trial confirmation.",
+          "request": "did adobe send a cancellation confirmation yet",
+          "result": "No cancellation email from Adobe yet; the latest message is still the Nov 4 trial confirmation."
+        }
+      ],
+      "key": "c2",
+      "opening_request": "remind me to cancel the adobe acrobat trial before they charge me",
+      "pair_key": "c1",
+      "result_reply": "Trial converts Nov 11 at $19.99/month. Reminder set for Nov 10, 6pm.",
+      "topic": "Cancel Adobe Acrobat Pro free trial before it converts, Nov 2026"
+    },
+    {
+      "canned_result": "Found an email from nytimes@e.nytimes.com dated Sept 18, 2026: digital subscription rises from $17 to $25 every 4 weeks starting with the Oct 20 billing.",
+      "follow_ups": [
+        {
+          "reply": "$17.00 every 4 weeks, per the Sept 22 receipt.",
+          "request": "what was i paying before exactly",
+          "result": "The last receipt, Sept 22, shows $17.00 for the All Access digital plan, billed every 4 weeks."
+        },
+        {
+          "reply": "Drafted a note to customercare@nytimes.com asking to keep the $17 rate. Saved, not sent.",
+          "request": "draft a reply asking for a discount",
+          "result": "Drafted a reply to customercare@nytimes.com asking for a retention discount or the old $17 rate. It's saved, not sent."
+        },
+        {
+          "reply": "Sent to NYT customer care.",
+          "request": "ok send it",
+          "result": "Sent the draft to customercare@nytimes.com on Oct 6 at 10:12am."
+        }
+      ],
+      "key": "c3",
+      "opening_request": "nyt emailed about my subscription price going up, can you find it",
+      "pair_key": "c4",
+      "result_reply": "NYT emailed Sept 18: your plan goes from $17 to $25 per 4 weeks starting Oct 20.",
+      "topic": "New York Times digital subscription price increase notice"
+    },
+    {
+      "canned_result": "Found daily emails from cooking@nytimes.com, about 6 in the last week. Used the unsubscribe link in the latest one and got a confirmation page.",
+      "follow_ups": [
+        {
+          "reply": "Yes, The Morning briefing is separate and still active.",
+          "request": "will i still get the main nyt news briefings",
+          "result": "Yes. The Cooking opt-out covers only cooking@nytimes.com; The Morning briefing from nytdirect@nytimes.com is separate and unchanged."
+        },
+        {
+          "reply": "23 NYT Cooking emails since Oct 1.",
+          "request": "how many of those cooking emails did i get this month",
+          "result": "Counted 23 emails from cooking@nytimes.com since Oct 1."
+        },
+        {
+          "reply": "Reminder set for Monday 9am to check for stragglers.",
+          "request": "check if any more show up next week",
+          "result": "Set a reminder for next Monday at 9am to check for new cooking@nytimes.com emails."
+        }
+      ],
+      "key": "c4",
+      "opening_request": "i keep getting nyt cooking emails every day, unsubscribe me",
+      "pair_key": "c3",
+      "result_reply": "Unsubscribed you from NYT Cooking's daily emails. Confirmation page loaded successfully.",
+      "topic": "Unsubscribe from NYT Cooking newsletter emails"
+    },
+    {
+      "canned_result": "The Oct 12 issue from ben@ben-evans.com, 'AI and the shape of platforms', argues that generative AI looks more like a platform shift than a feature. It uses Apple and Google as examples and notes that most enterprise deployments are still pilots.",
+      "follow_ups": [
+        {
+          "reply": "Three: an FT piece on AI spending, Apple's earnings transcript, and a Google I/O recap.",
+          "request": "what links did he mention",
+          "result": "Three links: a Financial Times piece on enterprise AI spending, an Apple earnings transcript, and a Google I/O recap."
+        },
+        {
+          "reply": "Forwarded to Dev at brightlane.io.",
+          "request": "forward it to dev on my team",
+          "result": "Forwarded the Oct 12 newsletter to dev.malhotra@brightlane.io with no extra note."
+        },
+        {
+          "reply": "Platform shift like mobile; most companies are still just piloting.",
+          "request": "make the summary shorter, like 2 lines",
+          "result": "Two-line version: Evans says generative AI is a platform shift comparable to mobile. Most companies are still piloting, not deploying at scale."
+        }
+      ],
+      "key": "c5",
+      "opening_request": "summarize the latest benedict evans newsletter for me",
+      "pair_key": null,
+      "result_reply": "Oct 12 issue argues generative AI is a platform shift, not a feature, and enterprise use is mostly pilots.",
+      "topic": "Summary of Benedict Evans newsletter from October 12"
+    },
+    {
+      "canned_result": "Yes. Email from no-reply@onepeloton.com on Sept 9, 2026 confirms the All-Access membership ($44/month) is paused Sept 12 through Dec 12.",
+      "follow_ups": [
+        {
+          "reply": "Billing resumes Dec 12 at $44/month.",
+          "request": "when does billing start again",
+          "result": "The email says billing resumes Dec 12, 2026, at $44/month."
+        },
+        {
+          "reply": "Reminder set for Dec 9 at 9am.",
+          "request": "set a reminder for dec 9 to decide if i keep it",
+          "result": "Reminder set for Dec 9, 2026 at 9:00am: 'Decide on Peloton before Dec 12 resume'."
+        },
+        {
+          "reply": "No October charges. The last one was $44 on Sept 5.",
+          "request": "was i charged anything in october",
+          "result": "Searched for Peloton receipts in October and found none; the last charge was $44 on Sept 5."
+        }
+      ],
+      "key": "c6",
+      "opening_request": "did peloton confirm my membership pause",
+      "pair_key": null,
+      "result_reply": "Yes, Peloton confirmed Sept 9: membership paused Sept 12 through Dec 12.",
+      "topic": "Peloton All-Access membership pause confirmation"
+    },
+    {
+      "canned_result": "Found the Economist renewal notice from subscriptions@economist.com saying the $189 annual plan renews Nov 15. Reminder set for Nov 1 at 10:00am.",
+      "follow_ups": [
+        {
+          "reply": "$169 last year, so a $20 increase.",
+          "request": "how much was it last year",
+          "result": "Last year's receipt from Nov 15, 2025 shows $169 for the annual plan."
+        },
+        {
+          "reply": "Cancel at economist.com/manage or email help@economist.com at least 3 days before Nov 15.",
+          "request": "find the cancellation instructions in that email",
+          "result": "The notice says to cancel via economist.com/manage or by emailing help@economist.com at least 3 days before renewal."
+        },
+        {
+          "reply": "Moved to Oct 30 at 10am.",
+          "request": "move the reminder to oct 30",
+          "result": "Moved the reminder to Oct 30 at 10:00am."
+        }
+      ],
+      "key": "c7",
+      "opening_request": "remind me nov 1 to decide whether to renew the economist",
+      "pair_key": null,
+      "result_reply": "Reminder set for Nov 1, 10am. The Economist renews Nov 15 at $189.",
+      "topic": "The Economist subscription renewal decision reminder"
+    },
+    {
+      "canned_result": "Found Dropbox invoice from no-reply@dropbox.com dated Sept 27, 2026: Plus plan annual, $119.00, paid by PayPal. PDF attached to the email.",
+      "follow_ups": [
+        {
+          "reply": "Sent to Marcus at leebooks.com with the PDF.",
+          "request": "send it to my bookkeeper marcus",
+          "result": "Sent the invoice with PDF to marcus.lee@leebooks.com with the subject 'Dropbox invoice Sept 2026'."
+        },
+        {
+          "reply": "No tax charged: $119.00 with $0.00 tax.",
+          "request": "is there a tax or vat line on it",
+          "result": "The invoice shows $119.00 with $0.00 tax listed."
+        },
+        {
+          "reply": "Last year's was also $119.00, dated Sept 27, 2025. PDF attached.",
+          "request": "find last year's too",
+          "result": "Found the Sept 27, 2025 invoice from no-reply@dropbox.com for $119.00 and attached its PDF."
+        }
+      ],
+      "key": "c8",
+      "opening_request": "get me the dropbox invoice from this year, need it for taxes",
+      "pair_key": null,
+      "result_reply": "Found it: Dropbox Plus, $119.00 paid via PayPal on Sept 27, PDF attached.",
+      "topic": "Dropbox Plus annual invoice for accountant"
+    },
+    {
+      "canned_result": "The Hacker Newsletter issue #702 from kale@hackernewsletter.com (Tue Oct 20) lists 'Rust in the Linux kernel: two years on' at lwn.net/Articles/948213.",
+      "follow_ups": [
+        {
+          "reply": "Two more: 'Async Rust without tears' and the Rust 1.82 release notes.",
+          "request": "any other rust stuff in that issue",
+          "result": "Two more: 'Async Rust without tears' on blog.example-dev.org and a Rust 1.82 release notes link."
+        },
+        {
+          "reply": "Sent the link to jordan.fields@gmail.com.",
+          "request": "send the main link to me at my personal email",
+          "result": "Sent the lwn.net link to the personal address on file, jordan.fields@gmail.com."
+        },
+        {
+          "reply": "Reminder set for Saturday 9am.",
+          "request": "remind me saturday morning to read it",
+          "result": "Reminder set for Saturday Oct 24 at 9:00am: 'Read Rust in the Linux kernel article'."
+        }
+      ],
+      "key": "c9",
+      "opening_request": "find the rust link from the hacker newsletter i got last tuesday",
+      "pair_key": null,
+      "result_reply": "Found it in issue #702: 'Rust in the Linux kernel: two years on' at lwn.net/Articles/948213.",
+      "topic": "Find Rust article link in Hacker Newsletter issue"
+    }
+  ]
+}

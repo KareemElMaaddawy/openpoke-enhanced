@@ -1,0 +1,131 @@
+{
+  "provenance": {
+    "attempts": 1,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "61608844087352c1d721af66d681c561211f3c370022793cee67898c108457f1",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found a Summit Peak Waste notice dated Nov 2: Thursday pickups move to Friday Nov 27 during Thanksgiving week. Recycling stays on its normal schedule.",
+      "key": "f1",
+      "opening_request": "did the trash company email about pickup changes for thanksgiving week? find it",
+      "result_reply": "Yes, Summit Peak says Thursday trash moves to Friday, Nov 27. Recycling is unchanged.",
+      "topic": "Summit Peak Waste trash pickup schedule change for Thanksgiving week 2026"
+    },
+    {
+      "canned_result": "Found Greenleaf Lawn Care invoice #4471 dated Oct 14 for $185 covering aeration and leaf cleanup, due Oct 28.",
+      "key": "f2",
+      "opening_request": "can you find the greenleaf lawn care invoice for the fall cleanup",
+      "result_reply": "Found it: Greenleaf invoice #4471, $185 for aeration and leaf cleanup, due Oct 28.",
+      "topic": "Greenleaf Lawn Care final aeration and fall cleanup invoice"
+    },
+    {
+      "canned_result": "Sent a reply to Marcus Delgado saying the bathroom faucet is still dripping and that Thursday afternoon works for a repair visit.",
+      "key": "f3",
+      "opening_request": "reply to marcus that the bathroom faucet is still leaking and i'm home thursday afternoon",
+      "result_reply": "Sent. Marcus knows the faucet still leaks and that Thursday afternoon works.",
+      "topic": "Reply to landlord Marcus Delgado about leaking bathroom faucet repair"
+    },
+    {
+      "canned_result": "Created a reminder for Oct 1, 2026 at 9:00 AM: replace HVAC air filter (16x25x1).",
+      "key": "f4",
+      "opening_request": "remind me oct 1 to swap the hvac filter, it's a 16x25x1",
+      "result_reply": "Reminder set for Oct 1 at 9 AM to replace the 16x25x1 filter.",
+      "topic": "Reminder to replace HVAC air filter on October 1, 2026"
+    },
+    {
+      "canned_result": "Ridgeline Plumbing quoted $1,850 for a 50-gallon gas water heater, including installation and haul-away of the old unit. The quote is valid through Oct 31 and install takes about four hours.",
+      "key": "f5",
+      "opening_request": "summarize the ridgeline plumbing estimate for the water heater swap",
+      "result_reply": "Ridgeline quoted $1,850 for a 50-gallon gas unit, installed, valid through Oct 31.",
+      "topic": "Summarize Ridgeline Plumbing estimate for water heater replacement"
+    },
+    {
+      "canned_result": "Found an Xcel Energy confirmation from Sept 22 enrolling the account in budget billing at $64 per month starting with the October cycle.",
+      "key": "f6",
+      "opening_request": "did xcel confirm my budget billing enrollment for gas? check email",
+      "result_reply": "Yes, Xcel confirmed budget billing at $64/month starting with the October cycle.",
+      "topic": "Xcel Energy natural gas budget billing enrollment confirmation"
+    },
+    {
+      "canned_result": "Sent an email to Linda Park at Aspen Grove HOA asking for the status of the cedar fence stain color request submitted Sept 15.",
+      "key": "f7",
+      "opening_request": "email linda at the hoa asking if the cedar fence stain color is approved yet",
+      "result_reply": "Sent. I asked Linda for the status of your Sept 15 fence stain request.",
+      "topic": "Reply to HOA manager Linda Park about fence stain color approval"
+    },
+    {
+      "canned_result": "Found a Terminix confirmation for quarterly pest service on Friday, Oct 9 between 1 and 3 PM at the home address.",
+      "key": "f8",
+      "opening_request": "when's the terminix guy coming next? think it was early october",
+      "result_reply": "Terminix is coming Friday, Oct 9, between 1 and 3 PM.",
+      "topic": "Terminix pest control quarterly service appointment on October 9"
+    },
+    {
+      "canned_result": "Created a reminder for Nov 5, 2026 at 5:00 PM: disconnect garden hoses and shut off outdoor spigots before freeze.",
+      "key": "f9",
+      "opening_request": "set a reminder nov 5 to disconnect hoses and shut off the outside spigots",
+      "result_reply": "Done. Reminder set for Nov 5 at 5 PM to winterize the spigots.",
+      "topic": "Reminder to shut off outdoor hose bibs before first freeze, November 5"
+    },
+    {
+      "canned_result": "Found an Xfinity notice dated Sept 30: the TV and internet bundle rises from $129 to $142 per month effective Nov 1.",
+      "key": "f10",
+      "opening_request": "find that xfinity email about my tv price going up and tell me how much",
+      "result_reply": "Xfinity's bundle goes from $129 to $142 a month starting Nov 1.",
+      "topic": "Comcast Xfinity TV package price increase notice"
+    },
+    {
+      "canned_result": "Replied to Tony Vasquez confirming Tuesday, Oct 20 for installation of the 240V garage outlet and asked for an arrival window.",
+      "key": "f11",
+      "opening_request": "tell tony the electrician that Oct 20 works for the garage outlet",
+      "result_reply": "Sent. Confirmed Oct 20 with Tony and asked for his arrival window.",
+      "topic": "Reply to electrician Tony Vasquez confirming garage outlet install date"
+    },
+    {
+      "canned_result": "Created a reminder for Sunday, Oct 18, 2026 at 10:00 AM: replace smoke and CO detector batteries.",
+      "key": "f12",
+      "opening_request": "remind me on the 18th to change smoke detector batteries",
+      "result_reply": "Reminder set for Oct 18 at 10 AM to change the detector batteries.",
+      "topic": "Smoke detector battery replacement reminder for October 18"
+    },
+    {
+      "canned_result": "Found a Maid Brigade receipt dated Sept 26 for $240 for a deep clean of a 3-bedroom home, paid by Visa ending 4412.",
+      "key": "f13",
+      "opening_request": "pull up the receipt from the maid brigade deep clean last month",
+      "result_reply": "Found it: $240 Maid Brigade deep clean on Sept 26, paid with Visa ending 4412.",
+      "topic": "Maid Brigade deep cleaning receipt from September 26"
+    },
+    {
+      "canned_result": "Found an email from Chimney Sweep Co. quoting $139 for a Level 1 fireplace inspection and cleaning, with openings the week of Oct 12.",
+      "key": "f14",
+      "opening_request": "did the chimney sweep send a quote? how much for the inspection",
+      "result_reply": "Chimney Sweep Co. quoted $139 for inspection and cleaning, openings the week of Oct 12.",
+      "topic": "Chimney Sweep Co. inspection quote for wood fireplace"
+    },
+    {
+      "canned_result": "Replied to Ace Movers confirming Saturday, Nov 14 for storage box delivery and asked for a morning arrival time.",
+      "key": "f15",
+      "opening_request": "tell ace movers saturday nov 14 is fine for dropping off the storage boxes",
+      "result_reply": "Sent. Ace Movers have Nov 14 confirmed, and I asked for a morning slot.",
+      "topic": "Reply to Ace Movers about storage unit delivery on November 14"
+    },
+    {
+      "canned_result": "Found a Ring Support email from Oct 3 confirming the warranty claim for the Video Doorbell Pro, case number RG-882914, with a replacement shipping in 5 days.",
+      "key": "f16",
+      "opening_request": "search for the ring doorbell warranty claim email, need the case number",
+      "result_reply": "Case number is RG-882914. Ring is shipping a replacement doorbell within 5 days.",
+      "topic": "Ring doorbell warranty claim confirmation"
+    },
+    {
+      "canned_result": "Waterwise Landscaping offers sprinkler winterization for $85 for up to 6 zones, with appointments available Oct 19 through Nov 6. Booking requires a reply by Oct 12.",
+      "key": "f17",
+      "opening_request": "summarize the waterwise email about blowing out the sprinklers",
+      "result_reply": "Waterwise charges $85 for up to 6 zones, appointments Oct 19–Nov 6; reply by Oct 12.",
+      "topic": "Summarize Waterwise Landscaping sprinkler winterization offer"
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "budget": {
+    "effective_max_cost_usd": 10.0,
+    "estimate_margin": 1.25,
+    "max_cost_usd": 10.0,
+    "total_cap_usd": 50.0
+  },
+  "case_set_hash": "8ac0f493fdaf81d36d07c25e22450c4cde67dbdcb913da75afb383d7267aea68",
+  "case_set_version": "v1",
+  "config_hash": "6ba0954b766a449935f2f2140abc690a8d3dbbb9415eb887c093a2a3f175b047",
+  "end": {
+    "api_error_rate": 1.0,
+    "api_error_turns": 68,
+    "calls": 2,
+    "capped": false,
+    "ended_at": "2026-10-27T03:46:57Z",
+    "failed": true,
+    "loop_limit_turns": 0,
+    "price_check": null,
+    "providers": {
+      "OpenAI": 2
+    },
+    "returned_models": {
+      "gpt-6-luna": 2
+    },
+    "summarizer_errors": 0,
+    "total_cost_usd": 0.0026534124999999997,
+    "turns": 68,
+    "unit_errors": [],
+    "warnings": [
+      "FAILED: api_error rate 100.00% exceeds 2%."
+    ]
+  },
+  "fake_model": false,
+  "git": {
+    "dirty": false,
+    "dirty_paths": [],
+    "sha": "02da74df4f52077e192fdd5c784eb9c9c36cbb85"
+  },
+  "harness_version": "1.0.0",
+  "hashes": {
+    "harness_tree_sha256": "436be9c7065adefb219382157971176c3206b4af82305c4e3fd71f0f90ab8635",
+    "interaction_system_prompt_sha256": "d8257b89da9fcb47eaf980b1f9a097c8e147c45196e569e13303c04ec9a1da37",
+    "server_tree_sha256": "5d2a83647ab17431fbb4f18de0ed738b274fdcab1861d46edf618ca619b25d49",
+    "summarizer_system_prompt_sha256": "8f5c0643452e89d3e0dcf8c058ed47096aa0aa48527e77733c84b5e814ed8051",
+    "tool_schemas_sha256": "3d957311ef46de6c7f5f2fc8eb173c4c213e7d45330c5ddf90f39a720b20b5bc"
+  },
+  "input_config": {
+    "budget": {
+      "estimate_margin": 1.25,
+      "max_cost_usd": 10.0,
+      "total_cap_usd": 50.0
+    },
+    "case_set": {
+      "expected_hash": "8ac0f493fdaf81d36d07c25e22450c4cde67dbdcb913da75afb383d7267aea68",
+      "manifest": "evals/agent_overload/fixtures/v1/MANIFEST.json",
+      "version": "v1"
+    },
+    "experiment": "agent_overload",
+    "harness_version": "1.0.0",
+    "method": {
+      "name": "names_only",
+      "params": {},
+      "version": "1"
+    },
+    "models": {
+      "api": "openai",
+      "expected_canonical_slugs": {
+        "openai/gpt-6-luna": "openai/gpt-6-luna-20260922"
+      },
+      "extra_params": {},
+      "interaction": "openai/gpt-6-luna",
+      "openai_model_ids": {
+        "openai/gpt-6-luna": "gpt-6-luna"
+      },
+      "provider": null,
+      "seed_policy": "per_call_position",
+      "summarizer": "openai/gpt-6-luna"
+    },
+    "runtime": {
+      "concurrency": 16,
+      "max_api_error_rate": 0.02,
+      "max_retries": 5,
+      "timeout_s": 60
+    },
+    "scorer_version": "1",
+    "stats": {
+      "bootstrap_resamples": 2000,
+      "ci": 0.95,
+      "seed": 20261025
+    },
+    "suites": {
+      "sequence": {
+        "modes": [
+          "carried",
+          "corrected"
+        ],
+        "reps": 2,
+        "roster_sizes": {
+          "dev": [
+            10,
+            200
+          ],
+          "test": [
+            10,
+            50,
+            100,
+            125,
+            200
+          ]
+        }
+      },
+      "single": {
+        "reps": 2,
+        "roster_sizes": {
+          "dev": [
+            10,
+            25,
+            50,
+            100,
+            125,
+            200
+          ],
+          "test": [
+            10,
+            25,
+            50,
+            100,
+            125,
+            200
+          ]
+        }
+      },
+      "token_probe": {
+        "enabled": true
+      }
+    }
+  },
+  "max_tool_iterations": 8,
+  "method": {
+    "cache": null,
+    "max_tool_iterations": 8,
+    "method_source_sha256": "faf2209fc06b6fc04d7906e0e13de64add563be18c1a4d79c10aae5bc8d35a3c",
+    "name": "names_only",
+    "params": {},
+    "system_prompt_sha256": "d8257b89da9fcb47eaf980b1f9a097c8e147c45196e569e13303c04ec9a1da37",
+    "tool_schemas_sha256": "3d957311ef46de6c7f5f2fc8eb173c4c213e7d45330c5ddf90f39a720b20b5bc",
+    "version": "1"
+  },
+  "models": {
+    "accept_model_change": false,
+    "expected_canonical_slugs": {
+      "openai/gpt-6-luna": "openai/gpt-6-luna-20260922"
+    },
+    "extra_params": {},
+    "interaction": "openai/gpt-6-luna",
+    "observed_canonical_slugs": {
+      "openai/gpt-6-luna": "gpt-6-luna"
+    },
+    "provider": null,
+    "summarizer": "openai/gpt-6-luna"
+  },
+  "plan": {
+    "modes": [
+      "carried",
+      "corrected"
+    ],
+    "profile": "smoke",
+    "sequence_limit": 1,
+    "sequence_reps": 1,
+    "sequence_sizes": {
+      "dev": [
+        10,
+        200
+      ]
+    },
+    "single_limit": 10,
+    "single_reps": 1,
+    "single_sizes": {
+      "dev": [
+        10,
+        200
+      ]
+    },
+    "splits": [
+      "dev"
+    ],
+    "token_probe": true
+  },
+  "python_version": "3.11.7",
+  "run_id": "20261027-034627-names_only-6ba0954b",
+  "runtime": {
+    "concurrency": 16,
+    "max_api_error_rate": 0.02,
+    "max_retries": 5,
+    "timeout_s": 60
+  },
+  "runtime_pacing": {
+    "note": "operational; not part of the config hash",
+    "rpm_per_model": 280.0
+  },
+  "scorer_version": "1",
+  "started_at": "2026-10-27T03:46:27Z",
+  "stats": {
+    "bootstrap_resamples": 2000,
+    "ci": 0.95,
+    "seed": 20261025
+  },
+  "summarization": {
+    "conversation_summary_tail_size": 10,
+    "conversation_summary_threshold": 100
+  }
+}

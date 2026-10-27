@@ -1,0 +1,138 @@
+{
+  "provenance": {
+    "attempts": 1,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "572febba5c6396fbace91e41cbe593b1f5f1b4174d92ffad3807572eab9e3a91",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found Yuki Tanaka's Sept 18 email 'Harborline Q4 Rates' with a PDF rate sheet attached; standard freight is $2.85 per kg, effective Oct 1.",
+      "key": "f1",
+      "opening_request": "can you dig up Yuki Tanaka's email with the Harborline rate sheet for Q4",
+      "result_reply": "Found it: Yuki's Sept 18 email with the Harborline Q4 rate sheet attached. Freight is $2.85/kg.",
+      "topic": "Find Yuki Tanaka's email with the Harborline Shipping rate sheet for Q4 2026"
+    },
+    {
+      "canned_result": "Sent a reply to Callum Reid at Greywater Analytics confirming the onboarding call on Oct 21 at 2:00 PM and asking him to send the dial-in link.",
+      "key": "f2",
+      "opening_request": "tell Callum Reid we're good for the Oct 21 onboarding call at 2",
+      "result_reply": "Sent. Callum has confirmation for Oct 21 at 2pm, and I asked him for the dial-in link.",
+      "topic": "Reply to Callum Reid at Greywater Analytics confirming the Oct 21 onboarding call at 2pm"
+    },
+    {
+      "canned_result": "Reminder set for Oct 8 at 9:00 AM: 'Send Amara Osei the Q3 marketing spend breakdown, due Oct 9.'",
+      "key": "f3",
+      "opening_request": "remind me to send Amara Osei the Q3 marketing spend breakdown by Oct 9",
+      "result_reply": "Reminder set for Oct 8 at 9am, a day before the Oct 9 deadline for Amara.",
+      "topic": "Reminder to send Amara Osei the Q3 marketing spend breakdown by Oct 9"
+    },
+    {
+      "canned_result": "Lars says the Solvik CRM cutover is Oct 26, with a data freeze from Oct 24 at 6 PM and a two-hour downtime window. Each team lead must verify their contact exports by Oct 22.",
+      "key": "f4",
+      "opening_request": "summarize Lars Eriksen's email about the Solvik CRM migration",
+      "result_reply": "Cutover is Oct 26 with a data freeze starting Oct 24. Team leads must verify exports by Oct 22.",
+      "topic": "Summary of Lars Eriksen's email about the Solvik CRM migration cutover on Oct 26"
+    },
+    {
+      "canned_result": "Drafted a reply to Miriam Katz saying the revised Oakridge Dental logo files in SVG and PNG will arrive Friday, Oct 2, and inviting final comments before then.",
+      "key": "f5",
+      "opening_request": "draft a reply to Miriam Katz at Oakridge Dental saying revised logo files are coming Friday",
+      "result_reply": "Draft ready: tells Miriam the revised Oakridge logo files arrive Friday, Oct 2. Want me to send it?",
+      "topic": "Draft reply to Miriam Katz at Oakridge Dental about the revised logo files"
+    },
+    {
+      "canned_result": "Found Benedict Lowe's Sept 11 email 'Engagement Letter - Fenwick Legal' with a 4-page PDF attached, needing a signature by Sept 25.",
+      "key": "f6",
+      "opening_request": "find the engagement letter email from Benedict Lowe at Fenwick Legal",
+      "result_reply": "Found Benedict's Sept 11 email with the Fenwick engagement letter. It needs a signature by Sept 25.",
+      "topic": "Find Benedict Lowe's email with the Fenwick Legal engagement letter"
+    },
+    {
+      "canned_result": "Reminder set for Sept 29 at 10:00 AM: 'Call Pilar Gutierrez about the Crestline Printing proof.'",
+      "key": "f7",
+      "opening_request": "remind me sept 29 to call Pilar Gutierrez about the Crestline proof",
+      "result_reply": "Done. You'll be reminded Sept 29 at 10am to call Pilar about the Crestline proof.",
+      "topic": "Reminder to call Pilar Gutierrez about the Crestline Printing proof on Sept 29"
+    },
+    {
+      "canned_result": "Sent a reply to Stefan Novak at Tidewater Software accepting the $4,800 annual license renewal and asking him to send the invoice to accounts payable.",
+      "key": "f8",
+      "opening_request": "reply to Stefan Novak that we accept the Tidewater renewal at $4,800",
+      "result_reply": "Sent. Stefan has our acceptance of the $4,800 Tidewater renewal and a request for the invoice.",
+      "topic": "Reply to Stefan Novak at Tidewater Software accepting the $4,800 annual license renewal"
+    },
+    {
+      "canned_result": "Gwen says the Halvorsen Group security audit starts Nov 3 and runs three days. She needs access logs and the vendor list by Oct 27.",
+      "key": "f9",
+      "opening_request": "what's Gwen Albright's email about the Halvorsen audit say? short version",
+      "result_reply": "Audit starts Nov 3 for three days. Gwen needs access logs and the vendor list by Oct 27.",
+      "topic": "Summary of Gwen Albright's email about the Nov 3 Halvorsen Group security audit"
+    },
+    {
+      "canned_result": "Forwarded Ravi Menon's Sept 22 email with the Quillfeather Catering quote of $2,350 for 35 guests to Joanna Pierce.",
+      "key": "f10",
+      "opening_request": "forward Ravi Menon's catering quote from Quillfeather to Joanna Pierce",
+      "result_reply": "Forwarded Ravi's Quillfeather quote, $2,350 for 35 guests, to Joanna.",
+      "topic": "Forward Ravi Menon's Sept 22 Quillfeather catering quote to Joanna Pierce"
+    },
+    {
+      "canned_result": "Sent Daphne Ellis at Moonstone Realty a request to move the Oct 14 property walkthrough to Oct 16, offering morning or afternoon.",
+      "key": "f11",
+      "opening_request": "ask Daphne Ellis if we can move the Oct 14 walkthrough to the 16th",
+      "result_reply": "Sent. I asked Daphne to move the walkthrough from Oct 14 to Oct 16.",
+      "topic": "Reply to Daphne Ellis at Moonstone Realty asking to move the Oct 14 walkthrough to Oct 16"
+    },
+    {
+      "canned_result": "Found Hugo Bernard's Oct 2 email 'CF-2209 customs docs' with a commercial invoice and packing list attached.",
+      "key": "f12",
+      "opening_request": "find Hugo Bernard's email with customs docs for shipment CF-2209",
+      "result_reply": "Found Hugo's Oct 2 email with the CF-2209 commercial invoice and packing list attached.",
+      "topic": "Find Hugo Bernard's email with the Cobalt Freight customs documents for shipment CF-2209"
+    },
+    {
+      "canned_result": "Reminder set for Oct 29 at 3:00 PM: 'Submit timesheet approvals to Naveen Rao, due Oct 30.'",
+      "key": "f13",
+      "opening_request": "remind me to send Naveen Rao the timesheet approvals before Oct 30",
+      "result_reply": "Reminder set for Oct 29 at 3pm, ahead of Naveen's Oct 30 deadline.",
+      "topic": "Reminder to submit timesheet approvals to Naveen Rao by Friday Oct 30"
+    },
+    {
+      "canned_result": "Fiona confirmed a 10x10 booth at the Nov 17 trade show for $1,900. Setup begins at 8 AM, and the team still needs to send badge names by Nov 2.",
+      "key": "f14",
+      "opening_request": "catch me up on Fiona McBride's thread about the Lumen Labs booth",
+      "result_reply": "Booth is 10x10 for $1,900, setup Nov 17 at 8am. Badge names are due Nov 2.",
+      "topic": "Summary of Fiona McBride's email thread about the Lumen Labs trade show booth for Nov 17"
+    },
+    {
+      "canned_result": "Drafted a reply to Terrence Boyle at Alder & Finch saying the requested audit documents will be sent by Sept 30, with a note that bank statements come separately.",
+      "key": "f15",
+      "opening_request": "draft reply to Terrence Boyle saying audit documents will be sent by Sept 30",
+      "result_reply": "Draft ready for Terrence: documents by Sept 30, bank statements to follow separately. Send it?",
+      "topic": "Draft reply to Terrence Boyle at Alder & Finch about the Sept 30 audit document request"
+    },
+    {
+      "canned_result": "Sent Leilani Akana an email attaching the signed Coastal Dynamics vendor agreement PDF, 6 pages, with a request to confirm receipt.",
+      "key": "f16",
+      "opening_request": "email Leilani Akana the signed Coastal Dynamics vendor agreement",
+      "result_reply": "Sent the signed Coastal Dynamics agreement to Leilani and asked her to confirm receipt.",
+      "topic": "Send Leilani Akana the signed Coastal Dynamics vendor agreement"
+    },
+    {
+      "canned_result": "Found Sven Lindqvist's Oct 5 email announcing Fjordtech API maintenance on Oct 8 from 1 to 3 AM UTC, with no action required.",
+      "key": "f17",
+      "opening_request": "find Sven Lindqvist's email about the Fjordtech API downtime on Oct 8",
+      "result_reply": "Found it: Fjordtech API maintenance Oct 8, 1-3am UTC. Sven says no action needed.",
+      "topic": "Find Sven Lindqvist's email about the Oct 8 Fjordtech API downtime"
+    },
+    {
+      "canned_result": "Sent Colette Dubois at Verdant Café a reply thanking her for the invitation and confirming attendance at the Nov 6 tasting.",
+      "key": "f18",
+      "opening_request": "reply to Colette Dubois, thanks for the Nov 6 tasting invite, I'll be there",
+      "result_reply": "Sent. Colette knows you'll attend the Nov 6 Verdant Café tasting.",
+      "topic": "Reply to Colette Dubois at Verdant Café thanking her for the Nov 6 tasting invite"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{"payload": "can you find my eurostar ticket for london to paris on oct 15", "tag": "user_message", "timestamp": "2026-10-12 08:05:15"}
+{"payload": "pulling that up now", "tag": "poke_reply", "timestamp": "2026-10-12 08:05:20"}
+{"payload": "[SUCCESS] Eurostar ticket search: Found Eurostar booking confirmation from bookings@eurostar.com: train 9024 departs St Pancras 8:31am Oct 15, arrives Paris Gare du Nord 11:47am, Standard Premier seat, 14A, £212, booking ref QXT7MP.", "tag": "agent_message", "timestamp": "2026-10-12 08:07:19"}
+{"payload": "Found it: Eurostar 9024, Oct 15, departs 8:31am from St Pancras, seat 14A, ref QXT7MP.", "tag": "poke_reply", "timestamp": "2026-10-12 08:07:24"}
+{"payload": "set a monthly reminder on the 1st to invoice calloway print", "tag": "user_message", "timestamp": "2026-10-12 08:15:48"}
+{"payload": "give me a sec", "tag": "poke_reply", "timestamp": "2026-10-12 08:15:53"}
+{"payload": "[SUCCESS] Reminders: Created a recurring reminder on the 1st of each month at 9:00am, starting October 1, 2026: 'Send invoice to Calloway Print Co. (ap@callowayprint.com)'. Last invoice found was #2043 for $2,400 sent Sept 1.", "tag": "agent_message", "timestamp": "2026-10-12 08:18:40"}
+{"payload": "Monthly reminder set for the 1st at 9am, starting Oct 1. Last invoice was $2,400.", "tag": "poke_reply", "timestamp": "2026-10-12 08:18:45"}
+{"payload": "remind me to pay the hartwell parking permit renewal before oct 12", "tag": "user_message", "timestamp": "2026-10-12 08:30:40"}
+{"payload": "on it", "tag": "poke_reply", "timestamp": "2026-10-12 08:30:45"}
+{"payload": "[SUCCESS] Hartwell Parking Permit Reminder: Found the renewal notice from billing@hartwellpm.com: permit #P-4471 renewal is $145, due October 12, 2026. Set a reminder for October 9 at 9:00am.", "tag": "agent_message", "timestamp": "2026-10-12 08:33:06"}
+{"payload": "Done. Reminder set for Oct 9 at 9am; renewal is $145, due Oct 12.", "tag": "poke_reply", "timestamp": "2026-10-12 08:33:11"}
+{"payload": "what's heavier, a pound of feathers or a pound of bricks", "tag": "user_message", "timestamp": "2026-10-12 10:55:24"}
+{"payload": "Same weight, a pound is a pound. The feathers just need a bigger bag.", "tag": "poke_reply", "timestamp": "2026-10-12 10:55:29"}
+{"payload": "what time is biscuit's vet appointment at willow creek", "tag": "user_message", "timestamp": "2026-10-12 11:55:15"}
+{"payload": "checking now", "tag": "poke_reply", "timestamp": "2026-10-12 11:55:20"}
+{"payload": "[SUCCESS] Biscuit Willow Creek vet appointment: Found a reminder from frontdesk@willowcreekvet.com for Biscuit's rabies booster and heartworm test with Dr. Tran on Saturday, September 26, 2026 at 10:30am. The estimate is $148.", "tag": "agent_message", "timestamp": "2026-10-12 11:57:11"}
+{"payload": "Biscuit's appointment is Saturday, September 26 at 10:30am with Dr. Tran. Estimated cost is $148.", "tag": "poke_reply", "timestamp": "2026-10-12 11:57:16"}
+{"payload": "send his vaccine records to pawsome boarding", "tag": "user_message", "timestamp": "2026-10-12 15:55:35"}
+{"payload": "let me dig in", "tag": "poke_reply", "timestamp": "2026-10-12 15:55:40"}
+{"payload": "[SUCCESS] Biscuit Willow Creek vet appointment: Emailed Biscuit's most recent vaccination record PDF, from Willow Creek's March email, to info@pawsomeboarding.com with a note that the rabies booster will be updated after September 26.", "tag": "agent_message", "timestamp": "2026-10-12 15:58:00"}
+{"payload": "Sent his current vaccine records to Pawsome Boarding, noting an update is coming after the 26th.", "tag": "poke_reply", "timestamp": "2026-10-12 15:58:05"}
+{"payload": "remind me friday to take his stool sample", "tag": "user_message", "timestamp": "2026-10-12 16:25:57"}
+{"payload": "looking now", "tag": "poke_reply", "timestamp": "2026-10-12 16:26:02"}
+{"payload": "[SUCCESS] Biscuit Willow Creek vet appointment: Set a reminder for Friday, September 25, 2026 at 7:30pm: 'Collect Biscuit's stool sample for Willow Creek visit tomorrow'.", "tag": "agent_message", "timestamp": "2026-10-12 16:27:23"}
+{"payload": "Reminder set for Friday, September 25 at 7:30pm.", "tag": "poke_reply", "timestamp": "2026-10-12 16:27:28"}
+{"payload": "what time do i need to be at the station", "tag": "user_message", "timestamp": "2026-10-12 16:35:40"}
+{"payload": "one moment", "tag": "poke_reply", "timestamp": "2026-10-12 16:35:45"}
+{"payload": "[SUCCESS] Eurostar ticket search: Eurostar's email says check-in closes 30 minutes before departure, so arrive at St Pancras by 8:01am. It recommends arriving 90 minutes early for passport control.", "tag": "agent_message", "timestamp": "2026-10-12 16:36:54"}
+{"payload": "Check-in closes 8:01am, but Eurostar recommends arriving around 7:00am for passport control.", "tag": "poke_reply", "timestamp": "2026-10-12 16:36:59"}
+{"payload": "forward the ticket to my colleague Ben Ortiz", "tag": "user_message", "timestamp": "2026-10-12 19:00:09"}
+{"payload": "give me a sec", "tag": "poke_reply", "timestamp": "2026-10-12 19:00:14"}
+{"payload": "[SUCCESS] Eurostar ticket search: Forwarded the Eurostar confirmation with the PDF ticket to ben.ortiz@harlowtech.com, with a note that it is for the Oct 15 train.", "tag": "agent_message", "timestamp": "2026-10-12 19:02:03"}
+{"payload": "Forwarded the ticket to Ben Ortiz at ben.ortiz@harlowtech.com.", "tag": "poke_reply", "timestamp": "2026-10-12 19:02:08"}
+{"payload": "how much was the late fee if i miss it?", "tag": "user_message", "timestamp": "2026-10-12 19:15:21"}
+{"payload": "on it now", "tag": "poke_reply", "timestamp": "2026-10-12 19:15:26"}
+{"payload": "[SUCCESS] Hartwell Parking Permit Reminder: The notice says payments after October 12 incur a $25 late fee, and permits lapse after October 19.", "tag": "agent_message", "timestamp": "2026-10-12 19:17:29"}
+{"payload": "$25 late fee after Oct 12, and the permit lapses Oct 19.", "tag": "poke_reply", "timestamp": "2026-10-12 19:17:34"}
+{"payload": "change it to 8am", "tag": "user_message", "timestamp": "2026-10-13 09:05:09"}
+{"payload": "checking now", "tag": "poke_reply", "timestamp": "2026-10-13 09:05:14"}
+{"payload": "[SUCCESS] Reminders: Recurring reminder updated to 8:00am on the 1st of each month.", "tag": "agent_message", "timestamp": "2026-10-13 09:06:35"}
+{"payload": "Updated to 8am on the 1st.", "tag": "poke_reply", "timestamp": "2026-10-13 09:06:40"}
+{"payload": "i should go to the gym", "tag": "user_message", "timestamp": "2026-10-13 11:10:58"}
+{"payload": "Should, or want to? Either way, future you will send a thank-you note.", "tag": "poke_reply", "timestamp": "2026-10-13 11:11:03"}
+{"payload": "find the gusto email about my two-factor settings changing in september", "tag": "user_message", "timestamp": "2026-10-13 11:50:38"}
+{"payload": "looking now", "tag": "poke_reply", "timestamp": "2026-10-13 11:50:43"}
+{"payload": "[SUCCESS] Find Gusto 2FA Email: Found an email from no-reply@gusto.com dated Sept 18, 2026, 'Your two-factor authentication method was updated.' It says the method switched from SMS to an authenticator app at 2:14 PM PT and to contact support if this wasn't you.", "tag": "agent_message", "timestamp": "2026-10-13 11:52:53"}
+{"payload": "Found it: Gusto says your 2FA switched from SMS to an authenticator app on Sept 18 at 2:14 PM.", "tag": "poke_reply", "timestamp": "2026-10-13 11:52:58"}
+{"payload": "haha you're funny", "tag": "user_message", "timestamp": "2026-10-13 12:30:19"}
+{"payload": "I try. Mostly I just get lucky.", "tag": "poke_reply", "timestamp": "2026-10-13 12:30:24"}
+{"payload": "sorry for the late reply", "tag": "user_message", "timestamp": "2026-10-13 17:10:19"}
+{"payload": "No apology needed. I'm not going anywhere.", "tag": "poke_reply", "timestamp": "2026-10-13 17:10:24"}
+{"payload": "did they say he needs to fast", "tag": "user_message", "timestamp": "2026-10-14 08:05:47"}
+{"payload": "on it", "tag": "poke_reply", "timestamp": "2026-10-14 08:05:52"}
+{"payload": "[SUCCESS] Biscuit Willow Creek vet appointment: The reminder says no fasting is needed, but to bring Biscuit on a leash and to skip his morning treats if he gets car sick.", "tag": "agent_message", "timestamp": "2026-10-14 08:07:10"}
+{"payload": "No fasting needed. Just bring him on a leash.", "tag": "poke_reply", "timestamp": "2026-10-14 08:07:15"}
+{"payload": "move the reminder to oct 8 at 8am", "tag": "user_message", "timestamp": "2026-10-14 09:55:56"}
+{"payload": "let me dig in", "tag": "poke_reply", "timestamp": "2026-10-14 09:56:01"}
+{"payload": "[SUCCESS] Hartwell Parking Permit Reminder: Reminder rescheduled from October 9 at 9:00am to October 8 at 8:00am.", "tag": "agent_message", "timestamp": "2026-10-14 09:58:23"}
+{"payload": "Moved to Oct 8 at 8am.", "tag": "poke_reply", "timestamp": "2026-10-14 09:58:28"}
+{"payload": "rough day", "tag": "user_message", "timestamp": "2026-10-14 10:15:22"}
+{"payload": "I'm sorry. Want to vent, or want a distraction? Either works for me.", "tag": "poke_reply", "timestamp": "2026-10-14 10:15:27"}
+{"payload": "what was the last invoice number again?", "tag": "user_message", "timestamp": "2026-10-14 12:35:47"}
+{"payload": "let me dig in", "tag": "poke_reply", "timestamp": "2026-10-14 12:35:52"}
+{"payload": "[SUCCESS] Reminders: The September invoice was #2043, $2,400, sent Sept 1, 2026 to ap@callowayprint.com.", "tag": "agent_message", "timestamp": "2026-10-14 12:37:49"}
+{"payload": "Invoice #2043, $2,400, sent Sept 1.", "tag": "poke_reply", "timestamp": "2026-10-14 12:37:54"}
+{"payload": "hey", "tag": "user_message", "timestamp": "2026-10-14 12:50:33"}
+{"payload": "Hey you. Good to hear from you.", "tag": "poke_reply", "timestamp": "2026-10-14 12:50:38"}
+{"payload": "did i actually make that change or is it suspicious", "tag": "user_message", "timestamp": "2026-10-14 13:00:42"}
+{"payload": "on it", "tag": "poke_reply", "timestamp": "2026-10-14 13:00:47"}
+{"payload": "[SUCCESS] Find Gusto 2FA Email: I checked your sent mail and inbox. There's a Gusto 'Authenticator app setup complete' confirmation at 2:12 PM PT on Sept 18, two minutes before the notice, so it matches a change you started.", "tag": "agent_message", "timestamp": "2026-10-14 13:03:21"}
+{"payload": "Looks like you did it. A setup confirmation arrived two minutes before the notice, at 2:12 PM.", "tag": "poke_reply", "timestamp": "2026-10-14 13:03:26"}
+{"payload": "nice weather today", "tag": "user_message", "timestamp": "2026-10-14 15:35:48"}
+{"payload": "Love that for you. Go stand in it for a minute.", "tag": "poke_reply", "timestamp": "2026-10-14 15:35:53"}
+{"payload": "does the email say how to undo it", "tag": "user_message", "timestamp": "2026-10-14 15:45:34"}
+{"payload": "one moment", "tag": "poke_reply", "timestamp": "2026-10-14 15:45:39"}
+{"payload": "[SUCCESS] Find Gusto 2FA Email: The email says to reply or contact Gusto support at support@gusto.com or 1-800-936-0383 if the change wasn't authorized. It also links to Settings > Security to switch methods back.", "tag": "agent_message", "timestamp": "2026-10-14 15:48:00"}
+{"payload": "Yes: use Settings > Security to switch back, or contact support@gusto.com if it wasn't you.", "tag": "poke_reply", "timestamp": "2026-10-14 15:48:05"}
+{"payload": "remind me the night before to download the ticket to my phone", "tag": "user_message", "timestamp": "2026-10-14 15:50:35"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-14 15:50:40"}
+{"payload": "[SUCCESS] Eurostar ticket search: Reminder set for Oct 14 at 8:00pm: download Eurostar ticket (ref QXT7MP) to phone wallet.", "tag": "agent_message", "timestamp": "2026-10-14 15:52:16"}
+{"payload": "Done, reminder set for Oct 14 at 8:00pm to download the ticket.", "tag": "poke_reply", "timestamp": "2026-10-14 15:52:21"}
+{"payload": "wow that's wild", "tag": "user_message", "timestamp": "2026-10-14 18:20:16"}
+{"payload": "Right? Life's got range.", "tag": "poke_reply", "timestamp": "2026-10-14 18:20:21"}
+{"payload": "remind me tomorrow at 9am to save the gusto backup codes", "tag": "user_message", "timestamp": "2026-10-14 18:30:11"}
+{"payload": "working on it", "tag": "poke_reply", "timestamp": "2026-10-14 18:30:16"}
+{"payload": "[SUCCESS] Find Gusto 2FA Email: Reminder set for tomorrow at 9:00 AM: 'Save Gusto authenticator backup codes.'", "tag": "agent_message", "timestamp": "2026-10-14 18:32:34"}
+{"payload": "Done. I'll remind you tomorrow at 9:00 AM to save your Gusto backup codes.", "tag": "poke_reply", "timestamp": "2026-10-14 18:32:39"}
+{"payload": "skip the november one, they're closed", "tag": "user_message", "timestamp": "2026-10-14 19:20:13"}
+{"payload": "on it now", "tag": "poke_reply", "timestamp": "2026-10-14 19:20:18"}
+{"payload": "[SUCCESS] Reminders: Skipped the November 1, 2026 occurrence; the reminder resumes December 1.", "tag": "agent_message", "timestamp": "2026-10-14 19:22:47"}
+{"payload": "Skipped November. It resumes Dec 1.", "tag": "poke_reply", "timestamp": "2026-10-14 19:22:52"}
+{"payload": "yay", "tag": "user_message", "timestamp": "2026-10-14 19:50:22"}
+{"payload": "Yay indeed!", "tag": "poke_reply", "timestamp": "2026-10-14 19:50:27"}
+{"payload": "forward the notice to my roommate jess", "tag": "user_message", "timestamp": "2026-10-14 21:20:08"}
+{"payload": "got it, on it", "tag": "poke_reply", "timestamp": "2026-10-14 21:20:13"}
+{"payload": "[SUCCESS] Hartwell Parking Permit Reminder: Forwarded the Hartwell renewal notice to jess.tamura@gmail.com with a note that it's due Oct 12.", "tag": "agent_message", "timestamp": "2026-10-14 21:22:02"}
+{"payload": "Forwarded the notice to Jess with the Oct 12 due date.", "tag": "poke_reply", "timestamp": "2026-10-14 21:22:07"}
+{"payload": "you there?", "tag": "user_message", "timestamp": "2026-10-14 21:35:42"}
+{"payload": "Always. What's up?", "tag": "poke_reply", "timestamp": "2026-10-14 21:35:47"}
+{"payload": "i can't decide what to eat", "tag": "user_message", "timestamp": "2026-10-15 08:05:33"}
+{"payload": "Tragic and universal. Go with the first thing that sounded good. Your gut knows.", "tag": "poke_reply", "timestamp": "2026-10-15 08:05:38"}
+{"payload": "i need a vacation", "tag": "user_message", "timestamp": "2026-10-15 09:10:58"}
+{"payload": "Same energy, honestly. Somewhere with a beach and zero notifications.", "tag": "poke_reply", "timestamp": "2026-10-15 09:11:03"}
+{"payload": "what's the address for willow creek animal hospital? need to put it in my maps for biscuit's visit", "tag": "user_message", "timestamp": "2026-10-15 09:27:04"}
+{"payload": "On it, checking Willow Creek's address from their emails.", "tag": "poke_reply", "timestamp": "2026-10-15 09:27:09"}
+{"payload": "[SUCCESS] Biscuit Willow Creek vet appointment: Found Willow Creek Animal Hospital's address in the appointment reminder: 2210 Willow Creek Rd, Suite B. Parking is in the lot behind the building.", "tag": "agent_message", "timestamp": "2026-10-15 09:30:34"}
+{"payload": "Willow Creek Animal Hospital is at 2210 Willow Creek Rd, Suite B, with parking in the lot behind the building.", "tag": "poke_reply", "timestamp": "2026-10-15 09:30:39"}
+{"payload": "thanks, that's perfect", "tag": "user_message", "timestamp": "2026-10-15 12:08:39"}
+{"payload": "Anytime!", "tag": "poke_reply", "timestamp": "2026-10-15 12:08:44"}
+{"payload": "did the hartwell notice say if i can pay the permit online or only by check", "tag": "user_message", "timestamp": "2026-10-15 13:37:44"}
+{"payload": "Let me check the Hartwell notice for payment options.", "tag": "poke_reply", "timestamp": "2026-10-15 13:37:49"}
+{"payload": "[SUCCESS] Hartwell Parking Permit Reminder: The renewal notice says permit payments can be made online through the Hartwell resident portal or by check dropped at the management office. Cash is not accepted.", "tag": "agent_message", "timestamp": "2026-10-15 13:40:10"}
+{"payload": "You can pay online through the Hartwell resident portal or by check at the management office. No cash.", "tag": "poke_reply", "timestamp": "2026-10-15 13:40:15"}
+{"payload": "remind me saturday morning to bring biscuit's leash and the stool sample", "tag": "user_message", "timestamp": "2026-10-15 16:01:15"}
+{"payload": "Setting that reminder now.", "tag": "poke_reply", "timestamp": "2026-10-15 16:01:20"}
+{"payload": "[SUCCESS] Biscuit Willow Creek vet appointment: Set a reminder for Saturday, September 26, 2026 at 8:30am: 'Bring Biscuit's leash and stool sample to Willow Creek, appointment at 10:30'.", "tag": "agent_message", "timestamp": "2026-10-15 16:04:50"}
+{"payload": "Done. You'll get a reminder Saturday at 8:30am about the leash and the stool sample.", "tag": "poke_reply", "timestamp": "2026-10-15 16:04:55"}
+{"payload": "ok good, i always forget something", "tag": "user_message", "timestamp": "2026-10-15 18:03:55"}
+{"payload": "That's what the reminders are for.", "tag": "poke_reply", "timestamp": "2026-10-15 18:04:00"}

@@ -1,0 +1,237 @@
+{
+  "provenance": {
+    "attempts": 2,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "84cb9e1e66aaa475a7591be050e3424340cc3371605d8d8bdc0dbcdf20be58cc",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found an email from Dana Whitfield (dana.whitfield@stripe.com) dated Sep 22 offering onsite slots on Oct 8, Oct 9 or Oct 13, 2026, with a reply requested by Sep 26.",
+      "follow_ups": [
+        {
+          "reply": "Sent. I confirmed Oct 9 and asked Dana for the interviewer list and format.",
+          "request": "reply to dana and say oct 9 works",
+          "result": "Sent a reply to dana.whitfield@stripe.com confirming Oct 9 for the onsite and asking for the interviewer list and format."
+        },
+        {
+          "reply": "Yes, four interviewers: Hannah Cho, Luis Prado, Ayesha Rahman and Tom Berger. Starts 10:00 AM PT.",
+          "request": "did she send who i'm interviewing with yet",
+          "result": "Dana replied Sep 24 listing four interviewers: Hannah Cho (engineering manager), Luis Prado, Ayesha Rahman and Tom Berger. The day starts at 10:00 AM PT."
+        },
+        {
+          "reply": "Reminder set for Oct 8 at 8:00 PM to review your Stripe notes.",
+          "request": "remind me the night before to review stripe notes",
+          "result": "Reminder set for Oct 8, 2026 at 8:00 PM titled 'Review Stripe onsite notes'."
+        }
+      ],
+      "key": "c1",
+      "opening_request": "find the email from the stripe recruiter about scheduling my onsite",
+      "pair_key": "c2",
+      "result_reply": "Dana at Stripe offered onsite slots Oct 8, 9 or 13. She wants a reply by Sep 26.",
+      "topic": "Stripe onsite interview scheduling with recruiter Dana Whitfield"
+    },
+    {
+      "canned_result": "Drafted an email to Greg Altman (greg.altman@brightlane.io) asking him to act as a reference for the Stripe process, noting a call from Stripe's background vendor may come in the next two weeks.",
+      "follow_ups": [
+        {
+          "reply": "Sent to Greg this morning at 10:14.",
+          "request": "yeah send it",
+          "result": "Email sent to greg.altman@brightlane.io on Sep 28, 2026 at 10:14 AM."
+        },
+        {
+          "reply": "Greg said yes. He prefers calls after 3 PM ET, and his number is in his signature.",
+          "request": "has greg answered",
+          "result": "Greg replied Sep 29 saying he is happy to be a reference and prefers calls after 3 PM ET. His number is in his signature."
+        },
+        {
+          "reply": "Forwarded Greg's reply to Dana at Stripe with his availability.",
+          "request": "forward his reply to the stripe recruiter",
+          "result": "Forwarded Greg's reply to dana.whitfield@stripe.com with a note that he is available after 3 PM ET."
+        }
+      ],
+      "key": "c2",
+      "opening_request": "stripe wants references, draft an email asking my old manager greg to be one",
+      "pair_key": "c1",
+      "result_reply": "Draft to Greg is ready, asking him to be a Stripe reference. Want me to send it?",
+      "topic": "Stripe reference check request to former manager Greg Altman"
+    },
+    {
+      "canned_result": "Found the LinkedIn Premium Career receipt from billing@linkedin.com dated Sep 14, 2026 for $39.99, with the next renewal on Oct 14 and a cancel link in the email.",
+      "follow_ups": [
+        {
+          "reply": "Reminder set for Oct 10 at 9:00 AM to cancel LinkedIn Premium.",
+          "request": "remind me to cancel it on oct 10",
+          "result": "Reminder set for Oct 10, 2026 at 9:00 AM titled 'Cancel LinkedIn Premium before Oct 14 renewal'."
+        },
+        {
+          "reply": "Three receipts of $39.99, so $119.97 total since July.",
+          "request": "how much have i paid them total",
+          "result": "Found three LinkedIn Premium receipts of $39.99 each, dated Jul 14, Aug 14 and Sep 14, 2026, totaling $119.97."
+        },
+        {
+          "reply": "Forwarded the September receipt to jamie.rowe@gmail.com.",
+          "request": "forward the sept receipt to my email jamie.rowe@gmail.com",
+          "result": "Forwarded the Sep 14 LinkedIn receipt to jamie.rowe@gmail.com."
+        }
+      ],
+      "key": "c3",
+      "opening_request": "i need to cancel linkedin premium, can you find the billing email",
+      "pair_key": "c4",
+      "result_reply": "Found your $39.99 LinkedIn Premium receipt from Sep 14. It renews Oct 14, and the email has a cancel link.",
+      "topic": "LinkedIn Premium subscription cancellation and receipt"
+    },
+    {
+      "canned_result": "Tom Alvarez at Datadog (notification from messages-noreply@linkedin.com, Oct 2, 2026) is hiring a Senior Backend Engineer on the Metrics team in NYC or remote, and asks for a 20-minute intro call next week.",
+      "follow_ups": [
+        {
+          "reply": "Replied to Tom offering Thursday Oct 8, 1 to 5 PM ET.",
+          "request": "reply and say i'm free thursday afternoon",
+          "result": "Reply sent through the LinkedIn notification thread to Tom Alvarez offering Thursday Oct 8 between 1 PM and 5 PM ET."
+        },
+        {
+          "reply": "Not in Tom's message, but the posting lists $165k to $195k base.",
+          "request": "did he say what the salary range is",
+          "result": "Tom's message does not mention salary. The linked job posting email lists a base range of $165,000 to $195,000."
+        },
+        {
+          "reply": "Tom confirmed 2:30 PM ET on Oct 8. Reminder set for 2:15.",
+          "request": "set a reminder for the call",
+          "result": "Tom confirmed Oct 8 at 2:30 PM ET. Reminder set for 2:15 PM ET that day titled 'Datadog intro call with Tom'."
+        }
+      ],
+      "key": "c4",
+      "opening_request": "summarize the linkedin email from the datadog recruiter",
+      "pair_key": "c3",
+      "result_reply": "Tom Alvarez at Datadog wants a 20-minute intro call for a Senior Backend Engineer role on Metrics.",
+      "topic": "LinkedIn message from Datadog recruiter Tom Alvarez"
+    },
+    {
+      "canned_result": "Jordan Lee (jordan.lee@northpeak.co) replied Sep 18, 2026 with comments: move the skills section below experience, cut the resume to one page, and add metrics to the Brightlane bullets.",
+      "follow_ups": [
+        {
+          "reply": "Sent. I thanked Jordan and promised the new version Friday.",
+          "request": "thank him and say i'll send a new version friday",
+          "result": "Sent a thank-you reply to jordan.lee@northpeak.co saying an updated resume will follow on Friday, Sep 25."
+        },
+        {
+          "reply": "Reminder set for Thursday at 6:00 PM to finish the resume edits.",
+          "request": "remind me thursday to finish the resume edits",
+          "result": "Reminder set for Thursday Sep 24, 2026 at 6:00 PM titled 'Finish resume edits for Jordan'."
+        },
+        {
+          "reply": "Sent Resume_v4.pdf to Jordan, asking for any last comments.",
+          "request": "attach the new resume and send to jordan",
+          "result": "Sent Resume_v4.pdf to jordan.lee@northpeak.co on Sep 25 at 4:42 PM with a short note asking for any last comments."
+        }
+      ],
+      "key": "c5",
+      "opening_request": "what did jordan lee say about my resume",
+      "pair_key": "c6",
+      "result_reply": "Jordan suggested moving skills below experience, cutting to one page, and adding metrics to the Brightlane bullets.",
+      "topic": "Resume feedback from Jordan Lee"
+    },
+    {
+      "canned_result": "Found an Oct 5, 2026 email from Jordan Lee (jordan.lee@northpeak.co) offering to introduce you to Mei Tanaka, a design manager at Shopify, and asking for your availability for a 30-minute chat.",
+      "follow_ups": [
+        {
+          "reply": "Replied yes, offering Oct 13 or 14 mornings.",
+          "request": "tell him yes and i'm free next tues or wed mornings",
+          "result": "Replied to Jordan accepting the intro and offering Tuesday Oct 13 or Wednesday Oct 14, mornings before noon."
+        },
+        {
+          "reply": "Mei proposed a video chat Wed Oct 14 at 10:00 AM ET.",
+          "request": "jordan intro'd me, what did mei say",
+          "result": "Mei Tanaka (mei.tanaka@shopify.com) wrote Oct 7 proposing a video chat Wed Oct 14 at 10:00 AM ET and linked her calendar."
+        },
+        {
+          "reply": "Confirmed with Mei. Reminder set for 9:45 AM on Oct 14.",
+          "request": "confirm with mei and set a reminder",
+          "result": "Confirmation sent to mei.tanaka@shopify.com for Oct 14 at 10:00 AM ET. Reminder set for 9:45 AM that day."
+        }
+      ],
+      "key": "c6",
+      "opening_request": "jordan lee offered to intro me at shopify, find that email",
+      "pair_key": "c5",
+      "result_reply": "Jordan offered an intro to Mei Tanaka, a design manager at Shopify, and wants your availability.",
+      "topic": "Coffee chat scheduling with Jordan Lee about Shopify"
+    },
+    {
+      "canned_result": "Recurring reminder created for every Monday at 8:30 AM starting Sep 14, 2026, titled 'Submit 5 job applications'.",
+      "follow_ups": [
+        {
+          "reply": "Changed to Mondays at 9:00 AM.",
+          "request": "change it to 9am",
+          "result": "Updated the recurring Monday reminder to 9:00 AM."
+        },
+        {
+          "reply": "Skipped Oct 12. It picks back up Oct 19.",
+          "request": "skip it next monday, i'm traveling",
+          "result": "Skipped the Oct 12, 2026 occurrence. The reminder resumes Oct 19."
+        },
+        {
+          "reply": "Added a Friday 3:00 PM reminder to follow up on pending applications.",
+          "request": "add a friday reminder to follow up on pending applications",
+          "result": "New recurring reminder created for Fridays at 3:00 PM titled 'Follow up on pending applications'."
+        }
+      ],
+      "key": "c7",
+      "opening_request": "set a reminder every monday morning to send out five job applications",
+      "pair_key": null,
+      "result_reply": "Done. Every Monday at 8:30 AM you'll be reminded to submit five applications.",
+      "topic": "Weekly Monday reminder to submit job applications"
+    },
+    {
+      "canned_result": "Found the offer email from Priyanka Desai (offers@asana.com) dated Oct 16, 2026 for Product Designer II, $152,000 base plus equity, with a decision deadline of Oct 30.",
+      "follow_ups": [
+        {
+          "reply": "Draft ready, asking Asana to extend the deadline to Nov 6. Send it?",
+          "request": "draft a reply asking for a few more days",
+          "result": "Drafted a reply to offers@asana.com requesting an extension to Nov 6, 2026 to finish a comparison with other processes."
+        },
+        {
+          "reply": "Sent to Priyanka at 11:05 AM.",
+          "request": "send it",
+          "result": "Sent on Oct 19 at 11:05 AM to Priyanka Desai."
+        },
+        {
+          "reply": "Reminder set for Oct 28 at 9:00 AM to decide on the Asana offer.",
+          "request": "remind me oct 28 to decide",
+          "result": "Reminder set for Oct 28, 2026 at 9:00 AM titled 'Decide on Asana offer'."
+        }
+      ],
+      "key": "c8",
+      "opening_request": "find the asana offer letter email, when do i have to answer",
+      "pair_key": null,
+      "result_reply": "Asana offered Product Designer II at $152,000 base plus equity. You must answer by Oct 30.",
+      "topic": "Asana offer letter and Oct 30 deadline"
+    },
+    {
+      "canned_result": "Indeed alerts (alert@indeed.com) from Nov 2-6, 2026 list 14 Product Designer roles in Denver, notably Ibotta (Senior Product Designer, $135k-$160k), Gusto (UX Designer, hybrid) and Healthgrades (Lead Designer).",
+      "follow_ups": [
+        {
+          "reply": "Five are remote friendly, including Gusto and Calendly.",
+          "request": "which ones are remote friendly",
+          "result": "Of the 14, five allow remote work, including Gusto's UX Designer role and a Senior Product Designer role at Calendly."
+        },
+        {
+          "reply": "Forwarded the Ibotta listing to jamie.rowe@gmail.com.",
+          "request": "email me the ibotta listing details at jamie.rowe@gmail.com",
+          "result": "Forwarded the Ibotta Senior Product Designer alert, with the $135k-$160k range and apply link, to jamie.rowe@gmail.com."
+        },
+        {
+          "reply": "Reminder set for Saturday at 10:00 AM to apply to Ibotta.",
+          "request": "remind me saturday to apply to ibotta",
+          "result": "Reminder set for Saturday Nov 7, 2026 at 10:00 AM titled 'Apply to Ibotta Senior Product Designer'."
+        }
+      ],
+      "key": "c9",
+      "opening_request": "summarize this week's indeed job alerts for designer jobs in denver",
+      "pair_key": null,
+      "result_reply": "14 Denver designer roles this week. Top ones: Ibotta, Gusto and Healthgrades.",
+      "topic": "Indeed job alert digest for product designer roles in Denver"
+    }
+  ]
+}

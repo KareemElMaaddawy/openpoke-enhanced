@@ -1,0 +1,137 @@
+{
+  "provenance": {
+    "attempts": 1,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "ea6a806eec023520424c6c30c46576bb660a3a863e3d23b6d96b3214cd36c43d",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found Zapier invoice #ZAP-2026-48213 from billing@zapier.com, dated Oct 3, 2026, for $138.00 covering the Team plan (monthly) plus 2,000 extra tasks. It was charged to the Visa ending 4417.",
+      "follow_ups": [
+        {
+          "reply": "The base plan is $103.50, plus a $34.50 overage for 2,000 extra tasks this month.",
+          "request": "why is it 138 and not the usual amount",
+          "result": "The invoice lists the Team plan at $103.50 plus a $34.50 task overage charge for 2,000 extra tasks. Last month's invoice (#ZAP-2026-45977) was $103.50 flat."
+        },
+        {
+          "reply": "Forwarded the invoice to Tom Okafor at okaforbooks.com.",
+          "request": "forward it to my bookkeeper tom okafor",
+          "result": "Forwarded the Zapier invoice #ZAP-2026-48213 PDF to tom.okafor@okaforbooks.com with the subject 'Zapier invoice Oct 2026'."
+        },
+        {
+          "reply": "Yes, it was charged Oct 3 and the invoice is marked Paid.",
+          "request": "was that charge already taken from the card?",
+          "result": "Yes. Zapier's payment confirmation email from Oct 3 at 6:12 AM says the $138.00 charge succeeded. The invoice is marked Paid."
+        }
+      ],
+      "key": "c1",
+      "opening_request": "can you find the zapier team plan invoice from october",
+      "pair_key": "c2",
+      "result_reply": "Found it: Zapier invoice #ZAP-2026-48213, $138.00, dated Oct 3, charged to the Visa ending 4417.",
+      "topic": "Zapier Team plan invoice for October 2026"
+    },
+    {
+      "canned_result": "In the Zapier Weekly Automation Digest from digest@zapier.com (Oct 8, 2026), the 'Log Slack messages to Google Sheets' template link is in the second section under 'Template of the week'.",
+      "follow_ups": [
+        {
+          "reply": "It covers the Slack-to-Sheets template, new Zapier Tables formulas, and an Oct 21 AI automation webinar.",
+          "request": "give me a quick summary of that issue",
+          "result": "The Oct 8 digest covers three items: the Slack-to-Sheets template, a new Zapier Tables formula feature, and an Oct 21 webinar on AI automations at 11am PT."
+        },
+        {
+          "reply": "Sent you an email with the Oct 21 webinar registration link.",
+          "request": "email me the webinar registration link",
+          "result": "Sent an email to you with the Oct 21 webinar registration link from the digest, subject 'Zapier AI automations webinar link'."
+        },
+        {
+          "reply": "Unsubscribed you from the digest. Billing and account emails from Zapier will keep coming.",
+          "request": "unsubscribe me from the digest but keep billing emails",
+          "result": "Used the unsubscribe link in the Oct 8 digest and chose 'Weekly Automation Digest' only. Zapier's confirmation says billing and account emails will continue."
+        }
+      ],
+      "key": "c2",
+      "opening_request": "find the link to the slack to google sheets template in zapier's newsletter",
+      "pair_key": "c1",
+      "result_reply": "Found it in the Oct 8 Zapier Weekly Automation Digest, under 'Template of the week'. I can paste the link.",
+      "topic": "Zapier Weekly Automation Digest newsletter from October 8, 2026"
+    },
+    {
+      "canned_result": "Yes. no-reply@duolingo.com sent 'We couldn't renew your Super Family plan' on Oct 14, 2026. The $119.99 annual renewal was declined on the card ending 9082, and the plan stays active until Oct 21.",
+      "follow_ups": [
+        {
+          "reply": "It lapses after Oct 21, 2026. Then everyone drops to free accounts.",
+          "request": "when does it actually lapse if i don't fix it",
+          "result": "The email says the Super Family plan stays active through Oct 21, 2026. After that, the family members revert to free accounts."
+        },
+        {
+          "reply": "Reminder set for Oct 18 at 9am to update the Duolingo card.",
+          "request": "remind me on the 18th to update the card",
+          "result": "Set a reminder for Oct 18, 2026 at 9:00 AM: 'Update card for Duolingo Super Family before Oct 21 lapse'."
+        },
+        {
+          "reply": "Yes, a second notice came Oct 17: 'Last chance to keep Super Family'.",
+          "request": "did they send a second notice after that",
+          "result": "Yes. A follow-up from no-reply@duolingo.com arrived Oct 17 with the subject 'Last chance to keep Super Family' and the same $119.99 renewal amount."
+        }
+      ],
+      "key": "c3",
+      "opening_request": "did duolingo email me about a failed payment? need to check",
+      "pair_key": null,
+      "result_reply": "Yes. Duolingo said your $119.99 Super Family renewal was declined Oct 14 on the card ending 9082.",
+      "topic": "Duolingo Super Family plan payment failed notice from October 2026"
+    },
+    {
+      "canned_result": "Found 'Your plan change is confirmed' from billing@mailchimp.com, dated Oct 6, 2026. The account moves from Standard to Essentials on Nov 1, and the new price is $27.50/month for up to 1,500 contacts.",
+      "follow_ups": [
+        {
+          "reply": "Standard was $75.00/month, so you'll save $47.50 a month.",
+          "request": "what was the old price on standard",
+          "result": "The confirmation shows Standard at $75.00/month for up to 1,500 contacts, so the downgrade saves $47.50 a month."
+        },
+        {
+          "reply": "You lose send-time optimization, advanced segmentation, and multivariate testing. Email support stays.",
+          "request": "does it say what features i lose",
+          "result": "The email lists three losses on Essentials: send-time optimization, advanced segmentation, and multivariate testing. Email support stays the same."
+        },
+        {
+          "reply": "Emailed Jess Moreno about the Nov 1 change and the lost features.",
+          "request": "send a note to my teammate jess about the change",
+          "result": "Sent an email to jess.moreno@brightpath.co saying the Mailchimp plan moves to Essentials on Nov 1 and listing the three features that go away."
+        }
+      ],
+      "key": "c4",
+      "opening_request": "find the mailchimp email confirming i downgraded my plan",
+      "pair_key": null,
+      "result_reply": "Found it: Mailchimp confirmed on Oct 6 you'll move to Essentials Nov 1 at $27.50/month.",
+      "topic": "Mailchimp Standard to Essentials plan downgrade confirmation, October 2026"
+    },
+    {
+      "canned_result": "Created a reminder for Oct 28, 2026 at 9:00 AM: 'Review 1Password Teams renewal'. The latest billing notice from billing@1password.com says it renews Nov 15, 2026 for $79.92 for 8 seats.",
+      "follow_ups": [
+        {
+          "reply": "6 of 8 seats are active. Two August invites are still pending.",
+          "request": "how many seats are we actually using",
+          "result": "The latest 1Password usage email (Oct 1) says 6 of 8 seats are active. Two invitations sent in August are still pending."
+        },
+        {
+          "reply": "Done. The reminder is now Oct 28 at 8am.",
+          "request": "move the reminder to 8am",
+          "result": "Updated the Oct 28, 2026 reminder 'Review 1Password Teams renewal' from 9:00 AM to 8:00 AM."
+        },
+        {
+          "reply": "Added a backup reminder for Nov 10 at 9am.",
+          "request": "add a second reminder on nov 10 in case i forget",
+          "result": "Added a second reminder for Nov 10, 2026 at 9:00 AM: '1Password Teams renews Nov 15, decide seat count'."
+        }
+      ],
+      "key": "c5",
+      "opening_request": "remind me oct 28 to review the 1password teams renewal",
+      "pair_key": null,
+      "result_reply": "Reminder set for Oct 28 at 9am. The renewal is Nov 15, $79.92 for 8 seats.",
+      "topic": "Reminder to review 1Password Teams renewal before November 15, 2026"
+    }
+  ]
+}

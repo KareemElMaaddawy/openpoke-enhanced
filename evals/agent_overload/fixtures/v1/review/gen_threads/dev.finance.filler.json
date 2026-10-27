@@ -1,0 +1,138 @@
+{
+  "provenance": {
+    "attempts": 1,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "1d034fc362b68d12596b4f58a0d0110d58004aad794d69fd4b40c9a6ff0fa979",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found the FedEx Office receipt dated Oct 9, 2026 for three 24x36 foam-board posters, total $187.42, paid with the Visa ending 4417.",
+      "key": "f1",
+      "opening_request": "can you find the FedEx Office receipt from the poster printing on Oct 9",
+      "result_reply": "Found it: FedEx Office, Oct 9, three foam-board posters, $187.42 on Visa 4417.",
+      "topic": "FedEx Office receipt for poster printing on Oct 9 for the trade show"
+    },
+    {
+      "canned_result": "Set a reminder for Nov 5 at 9:00 AM to review the Squarespace renewal of greenfieldstudio.com, which is $20 and set to auto-renew on Nov 8.",
+      "key": "f2",
+      "opening_request": "remind me to check the squarespace domain renewal for greenfieldstudio.com before Nov 8",
+      "result_reply": "Reminder set for Nov 5 at 9 AM. Renewal is $20 on Nov 8.",
+      "topic": "Squarespace domain renewal for greenfieldstudio.com due Nov 8"
+    },
+    {
+      "canned_result": "Mailchimp emailed on Sept 18 confirming the downgrade from Standard to Free effective Oct 1, with a final invoice of $45.00 for September.",
+      "key": "f3",
+      "opening_request": "did mailchimp ever confirm my downgrade to the free plan? check email",
+      "result_reply": "Yes, confirmed Sept 18. Free plan starts Oct 1; final September invoice was $45.",
+      "topic": "Mailchimp plan downgrade confirmation and final invoice from September"
+    },
+    {
+      "canned_result": "Drafted and sent a reply to Linda Park at Maple & Co. on Oct 14 with the W-9 PDF attached, saying it's for their new vendor setup.",
+      "key": "f4",
+      "opening_request": "Linda at Maple & Co wants my W-9, send her a reply saying it's attached",
+      "result_reply": "Sent to Linda Park with the W-9 attached.",
+      "topic": "Reply to Linda Park at Maple & Co. asking for W-9 for a new vendor setup"
+    },
+    {
+      "canned_result": "The September Verizon Business bill was $213.60, up from $175.60, because of a $38 international data overage during the Sept 12-16 trip.",
+      "key": "f5",
+      "opening_request": "why is my verizon bill higher this month? check the september one",
+      "result_reply": "A $38 international data overage from your Sept 12-16 trip caused the increase.",
+      "topic": "Verizon Business mobile bill for September showing a $38 overage charge"
+    },
+    {
+      "canned_result": "Created a reminder for Nov 2 at 10:00 AM titled 'Send October mileage log to Ledgerly,' due Nov 3.",
+      "key": "f6",
+      "opening_request": "remind me to send my october mileage log to ledgerly by nov 3",
+      "result_reply": "Reminder set for Nov 2 at 10 AM, ahead of the Nov 3 deadline.",
+      "topic": "Reminder to submit October mileage log to Ledgerly by Nov 3"
+    },
+    {
+      "canned_result": "The Amex Business Gold statement closing Sept 28 shows a balance of $2,316.08 with a payment due date of Oct 23.",
+      "key": "f7",
+      "opening_request": "when's my amex business gold payment due for the sept statement?",
+      "result_reply": "Balance is $2,316.08, due Oct 23.",
+      "topic": "Amex Business Gold statement closing Sept 28 and payment due date"
+    },
+    {
+      "canned_result": "Canva emailed a receipt on Oct 3, 2026 for $59.96 covering Canva Pro for 4 seats on the monthly team plan.",
+      "key": "f8",
+      "opening_request": "find the canva charge from oct 3, how many seats are we paying for",
+      "result_reply": "Canva charged $59.96 on Oct 3 for 4 Pro seats.",
+      "topic": "Canva Pro team subscription charge on Oct 3 for 4 seats"
+    },
+    {
+      "canned_result": "Sent a reply to Rachel at Pinecrest Coworking asking to waive the $50 late fee on the October membership, citing a bank processing delay.",
+      "key": "f9",
+      "opening_request": "tell rachel at pinecrest i'd like the late fee waived, it was a bank hiccup",
+      "result_reply": "Sent. I asked Rachel to waive the $50 late fee, citing the bank delay.",
+      "topic": "Reply to Rachel at Pinecrest Coworking approving a $50 late fee waiver request"
+    },
+    {
+      "canned_result": "Shopify Payments notified of a chargeback on order #5531 for $142.00, claimed as 'item not received,' with evidence due Nov 6, 2026.",
+      "key": "f10",
+      "opening_request": "there's a chargeback email from shopify, what's the deadline and amount?",
+      "result_reply": "Chargeback on order #5531 for $142. Evidence is due Nov 6.",
+      "topic": "Shopify Payments chargeback notice for order #5531 with Nov 6 response deadline"
+    },
+    {
+      "canned_result": "Found the Home Depot receipt from Oct 12 for $96.37 of shelving brackets and lumber, and forwarded it to the bookkeeper with a note marking it as studio supplies.",
+      "key": "f11",
+      "opening_request": "forward the home depot receipt from oct 12 to my bookkeeper",
+      "result_reply": "Forwarded the $96.37 Home Depot receipt to your bookkeeper as studio supplies.",
+      "topic": "Forward Home Depot receipt from Oct 12 for studio shelving to bookkeeper"
+    },
+    {
+      "canned_result": "QuickBooks sent a notice on Oct 8 that the Simple Start plan rises from $35 to $38 per month starting Nov 15, 2026.",
+      "key": "f12",
+      "opening_request": "did quickbooks email about a price change? what's the new cost",
+      "result_reply": "Yes. Simple Start goes from $35 to $38 monthly starting Nov 15.",
+      "topic": "QuickBooks Online subscription price change effective Nov 15"
+    },
+    {
+      "canned_result": "Set a reminder for Nov 1, 2026 at 8:30 AM to review the Etsy October seller fee statement.",
+      "key": "f13",
+      "opening_request": "remind me nov 1 to look at the etsy fee statement for october",
+      "result_reply": "Reminder set for Nov 1 at 8:30 AM.",
+      "topic": "Reminder to review Etsy seller fee statement on Nov 1"
+    },
+    {
+      "canned_result": "Southwest emailed on Oct 2 that a $284.20 refund for the canceled Sept 26 Denver flight was issued to the original card, taking 7 to 10 business days.",
+      "key": "f14",
+      "opening_request": "has southwest refunded the canceled denver flight from sept 26 yet?",
+      "result_reply": "Refund of $284.20 was issued Oct 2; it should land in 7 to 10 business days.",
+      "topic": "Southwest Airlines refund for canceled Denver flight on Sept 26"
+    },
+    {
+      "canned_result": "Sent an email to Figma billing on Oct 20 requesting a PDF invoice for the October team plan charge of $45 and the company name for the bill-to line.",
+      "key": "f15",
+      "opening_request": "email figma billing and ask for a pdf invoice for october",
+      "result_reply": "Sent Figma billing a request for the October PDF invoice.",
+      "topic": "Request invoice copy from Figma for the October team plan billing"
+    },
+    {
+      "canned_result": "Waveform Audio invoice #7719 totals $1,250 for editing 5 podcast episodes, issued Oct 27, due Nov 10, payable by ACH or card.",
+      "key": "f16",
+      "opening_request": "summarize the waveform audio invoice for the podcast editing",
+      "result_reply": "Invoice #7719: $1,250 for 5 episodes, due Nov 10.",
+      "topic": "Waveform Audio invoice #7719 for $1,250 podcast editing due Nov 10"
+    },
+    {
+      "canned_result": "Wells Fargo emailed on Sept 30 that the $15 monthly service fee on business checking ending 2208 will apply starting Nov 1 unless the $1,000 minimum balance is maintained.",
+      "key": "f17",
+      "opening_request": "wells fargo sent something about a monthly fee, what's that about",
+      "result_reply": "A $15 monthly fee starts Nov 1 unless you keep a $1,000 minimum balance.",
+      "topic": "Wells Fargo business checking monthly fee notice for the account ending 2208"
+    },
+    {
+      "canned_result": "Sent a reply to Greg at Lakeview Storage confirming cancellation of unit 14B effective Oct 31 and asking for written confirmation and final billing.",
+      "key": "f18",
+      "opening_request": "tell greg at lakeview storage i'm ending unit 14B at the end of october",
+      "result_reply": "Sent. Greg is asked to confirm the Oct 31 cancellation of unit 14B.",
+      "topic": "Reply to Greg at Lakeview Storage confirming cancellation of unit 14B effective Oct 31"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{"payload": "meh", "tag": "user_message", "timestamp": "2026-10-21 08:10:16"}
+{"payload": "Meh is a valid mood. Sometimes it's the whole forecast.", "tag": "poke_reply", "timestamp": "2026-10-21 08:10:21"}
+{"payload": "it's raining again", "tag": "user_message", "timestamp": "2026-10-21 09:20:37"}
+{"payload": "Classic. Perfect excuse to stay in and feel smug about it.", "tag": "poke_reply", "timestamp": "2026-10-21 09:20:42"}
+{"payload": "set up a call with lena okafor at ridgeway about the brand refresh", "tag": "user_message", "timestamp": "2026-10-21 09:50:45"}
+{"payload": "one moment", "tag": "poke_reply", "timestamp": "2026-10-21 09:50:50"}
+{"payload": "[SUCCESS] Lena Okafor Ridgeway scheduling: Found Lena's email from lena@ridgewaydesign.co offering Tuesday Sept 29 at 2pm or Thursday Oct 1 at 10am ET. Drafted a reply proposing Sept 29 at 2pm and am awaiting your approval.", "tag": "agent_message", "timestamp": "2026-10-21 09:53:11"}
+{"payload": "Drafted a reply proposing Sept 29 at 2pm, Lena's first option. Want me to send it?", "tag": "poke_reply", "timestamp": "2026-10-21 09:53:16"}
+{"payload": "i need a vacation", "tag": "user_message", "timestamp": "2026-10-21 10:00:04"}
+{"payload": "Same energy, honestly. Somewhere with a beach and zero notifications.", "tag": "poke_reply", "timestamp": "2026-10-21 10:00:09"}
+{"payload": "i love weekends", "tag": "user_message", "timestamp": "2026-10-21 10:20:55"}
+{"payload": "Same. Best invention after the wheel and sliced bread.", "tag": "poke_reply", "timestamp": "2026-10-21 10:21:00"}
+{"payload": "remind me to pay the hartwell parking permit renewal before oct 12", "tag": "user_message", "timestamp": "2026-10-21 10:55:52"}
+{"payload": "pulling that up now", "tag": "poke_reply", "timestamp": "2026-10-21 10:55:57"}
+{"payload": "[SUCCESS] Hartwell Parking Permit Reminder: Found the renewal notice from billing@hartwellpm.com: permit #P-4471 renewal is $145, due October 12, 2026. Set a reminder for October 9 at 9:00am.", "tag": "agent_message", "timestamp": "2026-10-21 10:57:10"}
+{"payload": "Done. Reminder set for Oct 9 at 9am; renewal is $145, due Oct 12.", "tag": "poke_reply", "timestamp": "2026-10-21 10:57:15"}
+{"payload": "mondays am i right", "tag": "user_message", "timestamp": "2026-10-21 14:00:24"}
+{"payload": "Monday really should come with a gentle opening act.", "tag": "poke_reply", "timestamp": "2026-10-21 14:00:29"}
+{"payload": "yes send it", "tag": "user_message", "timestamp": "2026-10-21 16:35:33"}
+{"payload": "let me dig in", "tag": "poke_reply", "timestamp": "2026-10-21 16:35:38"}
+{"payload": "[SUCCESS] Lena Okafor Ridgeway scheduling: Sent the reply to lena@ridgewaydesign.co confirming Tuesday, Sept 29 at 2:00pm ET.", "tag": "agent_message", "timestamp": "2026-10-21 16:37:29"}
+{"payload": "Sent. Confirmed Sept 29 at 2pm ET with Lena.", "tag": "poke_reply", "timestamp": "2026-10-21 16:37:34"}
+{"payload": "can you find my eurostar ticket for london to paris on oct 15", "tag": "user_message", "timestamp": "2026-10-21 18:15:45"}
+{"payload": "on it", "tag": "poke_reply", "timestamp": "2026-10-21 18:15:50"}
+{"payload": "[SUCCESS] Eurostar ticket search: Found Eurostar booking confirmation from bookings@eurostar.com: train 9024 departs St Pancras 8:31am Oct 15, arrives Paris Gare du Nord 11:47am, Standard Premier seat, 14A, £212, booking ref QXT7MP.", "tag": "agent_message", "timestamp": "2026-10-21 18:17:01"}
+{"payload": "Found it: Eurostar 9024, Oct 15, departs 8:31am from St Pancras, seat 14A, ref QXT7MP.", "tag": "poke_reply", "timestamp": "2026-10-21 18:17:06"}
+{"payload": "coffee or tea", "tag": "user_message", "timestamp": "2026-10-21 20:10:19"}
+{"payload": "Coffee for ambition, tea for peace. Which kind of day is it?", "tag": "poke_reply", "timestamp": "2026-10-21 20:10:24"}
+{"payload": "did she reply yet?", "tag": "user_message", "timestamp": "2026-10-22 08:10:53"}
+{"payload": "one moment", "tag": "poke_reply", "timestamp": "2026-10-22 08:10:58"}
+{"payload": "[SUCCESS] Lena Okafor Ridgeway scheduling: Lena replied at 4:12pm: 'Perfect, sending a Google Meet invite shortly.' No invite has arrived yet.", "tag": "agent_message", "timestamp": "2026-10-22 08:12:03"}
+{"payload": "She confirmed and says a Meet invite is coming; nothing yet.", "tag": "poke_reply", "timestamp": "2026-10-22 08:12:08"}
+{"payload": "find my hearing test appointment confirmation with audiocare", "tag": "user_message", "timestamp": "2026-10-22 09:40:25"}
+{"payload": "looking into it", "tag": "poke_reply", "timestamp": "2026-10-22 09:40:30"}
+{"payload": "[SUCCESS] Audiocare Appointment Email Search: Found a confirmation from scheduling@audiocareassoc.com for a hearing evaluation with Dr. Marcus Feld on Monday, November 9, 2026 at 2:15pm at AudioCare Associates, 220 Elm Street, Suite 3B.", "tag": "agent_message", "timestamp": "2026-10-22 09:41:26"}
+{"payload": "Hearing test is Monday, November 9 at 2:15pm with Dr. Marcus Feld, 220 Elm Street, Suite 3B.", "tag": "poke_reply", "timestamp": "2026-10-22 09:41:31"}
+{"payload": "ask them if i can move it to the 10th", "tag": "user_message", "timestamp": "2026-10-22 10:25:35"}
+{"payload": "one moment", "tag": "poke_reply", "timestamp": "2026-10-22 10:25:40"}
+{"payload": "[SUCCESS] Audiocare Appointment Email Search: Sent a reply to scheduling@audiocareassoc.com asking to move the evaluation from November 9 to November 10, any time after 1pm. Awaiting response.", "tag": "agent_message", "timestamp": "2026-10-22 10:27:50"}
+{"payload": "Asked AudioCare to move it to November 10 after 1pm. Waiting to hear back.", "tag": "poke_reply", "timestamp": "2026-10-22 10:27:55"}
+{"payload": "is there anything i need to do before the test", "tag": "user_message", "timestamp": "2026-10-22 12:55:32"}
+{"payload": "looking now", "tag": "poke_reply", "timestamp": "2026-10-22 12:55:37"}
+{"payload": "[SUCCESS] Audiocare Appointment Email Search: The confirmation says to avoid loud noise for 24 hours before the test and to arrive 10 minutes early to complete paperwork. No fasting or prep is needed.", "tag": "agent_message", "timestamp": "2026-10-22 12:58:24"}
+{"payload": "Avoid loud noise for 24 hours before, and arrive 10 minutes early for paperwork.", "tag": "poke_reply", "timestamp": "2026-10-22 12:58:29"}
+{"payload": "can you check the pioneer water salt delivery emails, i think they changed my schedule", "tag": "user_message", "timestamp": "2026-10-22 14:05:31"}
+{"payload": "looking now", "tag": "poke_reply", "timestamp": "2026-10-22 14:05:36"}
+{"payload": "[SUCCESS] Pioneer Water Email Check: Pioneer Water emailed from service@pioneerwatersystems.com on Sept 29, 2026 that salt delivery moves from monthly to every 6 weeks. The next delivery is Nov 12, and it's 4 bags at $38.40.", "tag": "agent_message", "timestamp": "2026-10-22 14:08:07"}
+{"payload": "Yes, salt deliveries are now every 6 weeks. Next one is November 12, four bags, $38.40.", "tag": "poke_reply", "timestamp": "2026-10-22 14:08:12"}
+{"payload": "brb", "tag": "user_message", "timestamp": "2026-10-22 16:30:46"}
+{"payload": "Take your time.", "tag": "poke_reply", "timestamp": "2026-10-22 16:30:51"}
+{"payload": "what's the largest planet", "tag": "user_message", "timestamp": "2026-10-22 16:50:03"}
+{"payload": "Jupiter. Big enough to fit every other planet inside with room to spare.", "tag": "poke_reply", "timestamp": "2026-10-22 16:50:08"}
+{"payload": "reply and ask if i can keep monthly deliveries", "tag": "user_message", "timestamp": "2026-10-23 08:40:08"}
+{"payload": "pulling that up now", "tag": "poke_reply", "timestamp": "2026-10-23 08:40:13"}
+{"payload": "[SUCCESS] Pioneer Water Email Check: Sent a reply to service@pioneerwatersystems.com asking to stay on monthly salt delivery, 4 bags per month, and requesting confirmation of the price.", "tag": "agent_message", "timestamp": "2026-10-23 08:42:40"}
+{"payload": "Sent. I asked Pioneer to keep monthly delivery and confirm the price.", "tag": "poke_reply", "timestamp": "2026-10-23 08:42:45"}
+{"payload": "hey", "tag": "user_message", "timestamp": "2026-10-23 10:00:49"}
+{"payload": "Hey you. Good to hear from you.", "tag": "poke_reply", "timestamp": "2026-10-23 10:00:54"}
+{"payload": "what time do i need to be at the station", "tag": "user_message", "timestamp": "2026-10-23 11:40:25"}
+{"payload": "let me check", "tag": "poke_reply", "timestamp": "2026-10-23 11:40:30"}
+{"payload": "[SUCCESS] Eurostar ticket search: Eurostar's email says check-in closes 30 minutes before departure, so arrive at St Pancras by 8:01am. It recommends arriving 90 minutes early for passport control.", "tag": "agent_message", "timestamp": "2026-10-23 11:41:53"}
+{"payload": "Check-in closes 8:01am, but Eurostar recommends arriving around 7:00am for passport control.", "tag": "poke_reply", "timestamp": "2026-10-23 11:41:58"}
+{"payload": "how much was the late fee if i miss it?", "tag": "user_message", "timestamp": "2026-10-23 12:00:06"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-23 12:00:11"}
+{"payload": "[SUCCESS] Hartwell Parking Permit Reminder: The notice says payments after October 12 incur a $25 late fee, and permits lapse after October 19.", "tag": "agent_message", "timestamp": "2026-10-23 12:02:15"}
+{"payload": "$25 late fee after Oct 12, and the permit lapses Oct 19.", "tag": "poke_reply", "timestamp": "2026-10-23 12:02:20"}
+{"payload": "did they write back yet", "tag": "user_message", "timestamp": "2026-10-23 16:10:07"}
+{"payload": "let me dig in", "tag": "poke_reply", "timestamp": "2026-10-23 16:10:12"}
+{"payload": "[SUCCESS] Pioneer Water Email Check: Yes. Dee from Pioneer Water replied Oct 2 that monthly delivery can stay if he keeps 2 bags per drop, at $19.20 per delivery.", "tag": "agent_message", "timestamp": "2026-10-23 16:12:13"}
+{"payload": "They replied: monthly works if you drop to 2 bags, $19.20 per delivery.", "tag": "poke_reply", "timestamp": "2026-10-23 16:12:18"}
+{"payload": "forward the ticket to my colleague Ben Ortiz", "tag": "user_message", "timestamp": "2026-10-23 16:40:53"}
+{"payload": "one moment", "tag": "poke_reply", "timestamp": "2026-10-23 16:40:58"}
+{"payload": "[SUCCESS] Eurostar ticket search: Forwarded the Eurostar confirmation with the PDF ticket to ben.ortiz@harlowtech.com, with a note that it is for the Oct 15 train.", "tag": "agent_message", "timestamp": "2026-10-23 16:43:24"}
+{"payload": "Forwarded the ticket to Ben Ortiz at ben.ortiz@harlowtech.com.", "tag": "poke_reply", "timestamp": "2026-10-23 16:43:29"}
+{"payload": "remind me the night before to download the ticket to my phone", "tag": "user_message", "timestamp": "2026-10-23 17:40:43"}
+{"payload": "let me dig in", "tag": "poke_reply", "timestamp": "2026-10-23 17:40:48"}
+{"payload": "[SUCCESS] Eurostar ticket search: Reminder set for Oct 14 at 8:00pm: download Eurostar ticket (ref QXT7MP) to phone wallet.", "tag": "agent_message", "timestamp": "2026-10-23 17:41:53"}
+{"payload": "Done, reminder set for Oct 14 at 8:00pm to download the ticket.", "tag": "poke_reply", "timestamp": "2026-10-23 17:41:58"}
+{"payload": "yay", "tag": "user_message", "timestamp": "2026-10-23 21:05:51"}
+{"payload": "Yay indeed!", "tag": "poke_reply", "timestamp": "2026-10-23 21:05:56"}
+{"payload": "move the reminder to oct 8 at 8am", "tag": "user_message", "timestamp": "2026-10-24 08:25:04"}
+{"payload": "looking into it", "tag": "poke_reply", "timestamp": "2026-10-24 08:25:09"}
+{"payload": "[SUCCESS] Hartwell Parking Permit Reminder: Reminder rescheduled from October 9 at 9:00am to October 8 at 8:00am.", "tag": "agent_message", "timestamp": "2026-10-24 08:26:06"}
+{"payload": "Moved to Oct 8 at 8am.", "tag": "poke_reply", "timestamp": "2026-10-24 08:26:11"}
+{"payload": "ok accept that and set a reminder for nov 10 to put the salt bags somewhere dry", "tag": "user_message", "timestamp": "2026-10-24 10:50:19"}
+{"payload": "happy to, checking", "tag": "poke_reply", "timestamp": "2026-10-24 10:50:24"}
+{"payload": "[SUCCESS] Pioneer Water Email Check: Replied to Dee confirming 2 bags monthly at $19.20, and created a reminder for Nov 10, 2026: 'Clear dry spot for Pioneer salt delivery.'", "tag": "agent_message", "timestamp": "2026-10-24 10:53:14"}
+{"payload": "Confirmed 2 bags monthly with Pioneer, and set a November 10 reminder to clear a spot.", "tag": "poke_reply", "timestamp": "2026-10-24 10:53:19"}
+{"payload": "do you like music", "tag": "user_message", "timestamp": "2026-10-24 11:15:53"}
+{"payload": "Love it. Can't hum, but I have strong opinions about a good bassline.", "tag": "poke_reply", "timestamp": "2026-10-24 11:15:58"}
+{"payload": "remind me the evening before", "tag": "user_message", "timestamp": "2026-10-24 12:30:51"}
+{"payload": "give me a sec", "tag": "poke_reply", "timestamp": "2026-10-24 12:30:56"}
+{"payload": "[SUCCESS] Audiocare Appointment Email Search: Set a reminder for November 8, 2026 at 6:00pm: 'Hearing test tomorrow 2:15pm at AudioCare, avoid loud noise'.", "tag": "agent_message", "timestamp": "2026-10-24 12:33:09"}
+{"payload": "Reminder set for November 8 at 6pm.", "tag": "poke_reply", "timestamp": "2026-10-24 12:33:14"}
+{"payload": "remind me an hour before the call", "tag": "user_message", "timestamp": "2026-10-24 14:25:15"}
+{"payload": "right away", "tag": "poke_reply", "timestamp": "2026-10-24 14:25:20"}
+{"payload": "[SUCCESS] Lena Okafor Ridgeway scheduling: Reminder set for September 29, 2026 at 1:00pm ET titled 'Call with Lena Okafor (Ridgeway) at 2pm'.", "tag": "agent_message", "timestamp": "2026-10-24 14:27:48"}
+{"payload": "Reminder set for Sept 29 at 1pm.", "tag": "poke_reply", "timestamp": "2026-10-24 14:27:53"}
+{"payload": "thanks, you're the best", "tag": "user_message", "timestamp": "2026-10-24 14:40:20"}
+{"payload": "Stop, you'll make me blush, and I don't even have cheeks.", "tag": "poke_reply", "timestamp": "2026-10-24 14:40:25"}
+{"payload": "set up a call with lena okafor at ridgeway about the brand refresh", "tag": "user_message", "timestamp": "2026-10-24 18:16:00"}
+{"payload": "on it, i'll look for lena's email and line up a time.", "tag": "poke_reply", "timestamp": "2026-10-24 18:16:05"}
+{"payload": "[SUCCESS] Lena Okafor Ridgeway scheduling: Found Lena's email from lena@ridgewaydesign.co offering Tuesday Sept 29 at 2pm or Thursday Oct 1 at 10am ET. Drafted a reply proposing Sept 29 at 2pm and am awaiting your approval.", "tag": "agent_message", "timestamp": "2026-10-24 18:17:17"}
+{"payload": "lena offered tues sept 29 at 2pm or thurs oct 1 at 10am et. i drafted a reply for tuesday at 2pm. want me to send it?", "tag": "poke_reply", "timestamp": "2026-10-24 18:17:22"}
+{"payload": "can you check the pioneer water salt delivery emails, i think they changed my schedule", "tag": "user_message", "timestamp": "2026-10-24 18:31:22"}
+{"payload": "checking the pioneer water emails now.", "tag": "poke_reply", "timestamp": "2026-10-24 18:31:27"}
+{"payload": "[SUCCESS] Pioneer Water Email Check: Pioneer Water emailed from service@pioneerwatersystems.com on Sept 29, 2026 that salt delivery moves from monthly to every 6 weeks. The next delivery is Nov 12, and it's 4 bags at $38.40.", "tag": "agent_message", "timestamp": "2026-10-24 18:34:58"}
+{"payload": "you were right. pioneer water emailed on sept 29 saying salt delivery is moving from monthly to every 6 weeks. the next one is nov 12, 4 bags for $38.40.", "tag": "poke_reply", "timestamp": "2026-10-24 18:35:03"}
+{"payload": "yes send it", "tag": "user_message", "timestamp": "2026-10-24 18:54:03"}
+{"payload": "sending it to lena now.", "tag": "poke_reply", "timestamp": "2026-10-24 18:54:08"}
+{"payload": "[SUCCESS] Lena Okafor Ridgeway scheduling: Sent the reply to lena@ridgewaydesign.co confirming Tuesday, Sept 29 at 2:00pm ET.", "tag": "agent_message", "timestamp": "2026-10-24 18:55:50"}
+{"payload": "sent. you're confirmed with lena for tuesday sept 29 at 2:00pm et.", "tag": "poke_reply", "timestamp": "2026-10-24 18:55:55"}
+{"payload": "thanks, you're quick", "tag": "user_message", "timestamp": "2026-10-24 19:54:55"}
+{"payload": "anytime!", "tag": "poke_reply", "timestamp": "2026-10-24 19:55:00"}

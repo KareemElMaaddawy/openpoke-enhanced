@@ -1,0 +1,137 @@
+{
+  "provenance": {
+    "attempts": 3,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "d45472166c017a239bfd2dc246536ad31980b02f003a15aa9a8a8df8bbf390e0",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found the renewal notice from billing@hartwellpm.com: permit #P-4471 renewal is $145, due October 12, 2026. Set a reminder for October 9 at 9:00am.",
+      "follow_ups": [
+        {
+          "reply": "$25 late fee after Oct 12, and the permit lapses Oct 19.",
+          "request": "how much was the late fee if i miss it?",
+          "result": "The notice says payments after October 12 incur a $25 late fee, and permits lapse after October 19."
+        },
+        {
+          "reply": "Moved to Oct 8 at 8am.",
+          "request": "move the reminder to oct 8 at 8am",
+          "result": "Reminder rescheduled from October 9 at 9:00am to October 8 at 8:00am."
+        },
+        {
+          "reply": "Forwarded the notice to Jess with the Oct 12 due date.",
+          "request": "forward the notice to my roommate jess",
+          "result": "Forwarded the Hartwell renewal notice to jess.tamura@gmail.com with a note that it's due Oct 12."
+        }
+      ],
+      "key": "c1",
+      "opening_request": "remind me to pay the hartwell parking permit renewal before oct 12",
+      "pair_key": null,
+      "result_reply": "Done. Reminder set for Oct 9 at 9am; renewal is $145, due Oct 12.",
+      "topic": "Reminder to pay Hartwell Property Management parking permit renewal by October 12, 2026"
+    },
+    {
+      "canned_result": "Found Lena's email from lena@ridgewaydesign.co offering Tuesday Sept 29 at 2pm or Thursday Oct 1 at 10am ET. Drafted a reply proposing Sept 29 at 2pm and am awaiting your approval.",
+      "follow_ups": [
+        {
+          "reply": "Sent. Confirmed Sept 29 at 2pm ET with Lena.",
+          "request": "yes send it",
+          "result": "Sent the reply to lena@ridgewaydesign.co confirming Tuesday, Sept 29 at 2:00pm ET."
+        },
+        {
+          "reply": "She confirmed and says a Meet invite is coming; nothing yet.",
+          "request": "did she reply yet?",
+          "result": "Lena replied at 4:12pm: 'Perfect, sending a Google Meet invite shortly.' No invite has arrived yet."
+        },
+        {
+          "reply": "Reminder set for Sept 29 at 1pm.",
+          "request": "remind me an hour before the call",
+          "result": "Reminder set for September 29, 2026 at 1:00pm ET titled 'Call with Lena Okafor (Ridgeway) at 2pm'."
+        }
+      ],
+      "key": "c2",
+      "opening_request": "set up a call with lena okafor at ridgeway about the brand refresh",
+      "pair_key": null,
+      "result_reply": "Drafted a reply proposing Sept 29 at 2pm, Lena's first option. Want me to send it?",
+      "topic": "Scheduling a catch-up call with Lena Okafor of Ridgeway Design about the brand refresh"
+    },
+    {
+      "canned_result": "Found a Costco email from costco@email.costco.com saying the Executive membership expires November 3, 2026; renewal is $130 with auto-renew off. Reminder set for October 27 at 10am.",
+      "follow_ups": [
+        {
+          "reply": "No, auto-renew is off. You'll need to renew manually.",
+          "request": "is auto renew on?",
+          "result": "The email states auto-renew is currently off for member #1118 and must be renewed manually."
+        },
+        {
+          "reply": "Last year's renewal was $120, charged Nov 1, 2025.",
+          "request": "find last year's renewal receipt",
+          "result": "Found the Nov 2025 receipt from costco@email.costco.com: Executive renewal, $120, charged Nov 1, 2025."
+        },
+        {
+          "reply": "Moved to Oct 20 at 10am.",
+          "request": "make the reminder a week earlier",
+          "result": "Reminder moved from October 27 to October 20 at 10:00am."
+        }
+      ],
+      "key": "c3",
+      "opening_request": "remind me to renew my costco membership before it expires",
+      "pair_key": "c4",
+      "result_reply": "Reminder set for Oct 27 at 10am. Membership expires Nov 3; renewal is $130.",
+      "topic": "Reminder to renew Costco Executive membership before November 3, 2026"
+    },
+    {
+      "canned_result": "Found confirmation from tirecenter@costco.com: tire rotation and balance at Costco Tire Center, Framingham, Thursday October 8, 2026 at 8:30am, confirmation #TC-90215.",
+      "follow_ups": [
+        {
+          "reply": "Reminder set for Oct 7 at 7pm.",
+          "request": "set a reminder the night before",
+          "result": "Reminder set for October 7, 2026 at 7:00pm: 'Costco tire appointment tomorrow 8:30am'."
+        },
+        {
+          "reply": "Changes need the site or a call. I drafted an email asking for Oct 8 afternoon.",
+          "request": "can i move it to the afternoon?",
+          "result": "The confirmation email says changes must be made at costco.com or by calling the center; I drafted a reschedule request email to tirecenter@costco.com for Oct 8 after 1pm."
+        },
+        {
+          "reply": "About 45 minutes; arrive 10 minutes early.",
+          "request": "how long will it take?",
+          "result": "The email estimates 45 minutes for rotation and balance and recommends arriving 10 minutes early."
+        }
+      ],
+      "key": "c4",
+      "opening_request": "find my costco tire appointment email, need the time",
+      "pair_key": "c3",
+      "result_reply": "Your Costco tire appointment is Oct 8 at 8:30am, Framingham, confirmation #TC-90215.",
+      "topic": "Costco tire center appointment confirmation for October 8, 2026"
+    },
+    {
+      "canned_result": "Created a recurring reminder on the 1st of each month at 9:00am, starting October 1, 2026: 'Send invoice to Calloway Print Co. (ap@callowayprint.com)'. Last invoice found was #2043 for $2,400 sent Sept 1.",
+      "follow_ups": [
+        {
+          "reply": "Updated to 8am on the 1st.",
+          "request": "change it to 8am",
+          "result": "Recurring reminder updated to 8:00am on the 1st of each month."
+        },
+        {
+          "reply": "Invoice #2043, $2,400, sent Sept 1.",
+          "request": "what was the last invoice number again?",
+          "result": "The September invoice was #2043, $2,400, sent Sept 1, 2026 to ap@callowayprint.com."
+        },
+        {
+          "reply": "Skipped November. It resumes Dec 1.",
+          "request": "skip the november one, they're closed",
+          "result": "Skipped the November 1, 2026 occurrence; the reminder resumes December 1."
+        }
+      ],
+      "key": "c5",
+      "opening_request": "set a monthly reminder on the 1st to invoice calloway print",
+      "pair_key": null,
+      "result_reply": "Monthly reminder set for the 1st at 9am, starting Oct 1. Last invoice was $2,400.",
+      "topic": "Recurring monthly reminder on the 1st to send invoice to Calloway Print Co. client"
+    }
+  ]
+}

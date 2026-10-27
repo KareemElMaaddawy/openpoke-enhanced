@@ -1,0 +1,118 @@
+{"payload": "what time is biscuit's vet appointment at willow creek", "tag": "user_message", "timestamp": "2026-10-06 09:30:16"}
+{"payload": "right away", "tag": "poke_reply", "timestamp": "2026-10-06 09:30:21"}
+{"payload": "[SUCCESS] Biscuit Willow Creek vet appointment: Found a reminder from frontdesk@willowcreekvet.com for Biscuit's rabies booster and heartworm test with Dr. Tran on Saturday, September 26, 2026 at 10:30am. The estimate is $148.", "tag": "agent_message", "timestamp": "2026-10-06 09:32:50"}
+{"payload": "Biscuit's appointment is Saturday, September 26 at 10:30am with Dr. Tran. Estimated cost is $148.", "tag": "poke_reply", "timestamp": "2026-10-06 09:32:55"}
+{"payload": "set a monthly reminder on the 1st to invoice calloway print", "tag": "user_message", "timestamp": "2026-10-06 09:35:55"}
+{"payload": "let me check", "tag": "poke_reply", "timestamp": "2026-10-06 09:36:00"}
+{"payload": "[SUCCESS] Reminders: Created a recurring reminder on the 1st of each month at 9:00am, starting October 1, 2026: 'Send invoice to Calloway Print Co. (ap@callowayprint.com)'. Last invoice found was #2043 for $2,400 sent Sept 1.", "tag": "agent_message", "timestamp": "2026-10-06 09:38:30"}
+{"payload": "Monthly reminder set for the 1st at 9am, starting Oct 1. Last invoice was $2,400.", "tag": "poke_reply", "timestamp": "2026-10-06 09:38:35"}
+{"payload": "cats or dogs", "tag": "user_message", "timestamp": "2026-10-06 10:15:18"}
+{"payload": "Dogs for enthusiasm, cats for attitude. I respect both, but I lean dog.", "tag": "poke_reply", "timestamp": "2026-10-06 10:15:23"}
+{"payload": "hey", "tag": "user_message", "timestamp": "2026-10-06 10:35:20"}
+{"payload": "Hey you. Good to hear from you.", "tag": "poke_reply", "timestamp": "2026-10-06 10:35:25"}
+{"payload": "pineapple on pizza yes or no", "tag": "user_message", "timestamp": "2026-10-06 11:45:22"}
+{"payload": "Yes, and I'll defend it politely. Sweet and salty is a fair deal.", "tag": "poke_reply", "timestamp": "2026-10-06 11:45:27"}
+{"payload": "send his vaccine records to pawsome boarding", "tag": "user_message", "timestamp": "2026-10-06 11:50:07"}
+{"payload": "on it", "tag": "poke_reply", "timestamp": "2026-10-06 11:50:12"}
+{"payload": "[SUCCESS] Biscuit Willow Creek vet appointment: Emailed Biscuit's most recent vaccination record PDF, from Willow Creek's March email, to info@pawsomeboarding.com with a note that the rabies booster will be updated after September 26.", "tag": "agent_message", "timestamp": "2026-10-06 11:52:58"}
+{"payload": "Sent his current vaccine records to Pawsome Boarding, noting an update is coming after the 26th.", "tag": "poke_reply", "timestamp": "2026-10-06 11:53:03"}
+{"payload": "tell me a joke", "tag": "user_message", "timestamp": "2026-10-06 14:30:44"}
+{"payload": "Why did the scarecrow win an award? He was outstanding in his field. I'll see myself out.", "tag": "poke_reply", "timestamp": "2026-10-06 14:30:49"}
+{"payload": "remind me friday to take his stool sample", "tag": "user_message", "timestamp": "2026-10-06 16:40:08"}
+{"payload": "one moment", "tag": "poke_reply", "timestamp": "2026-10-06 16:40:13"}
+{"payload": "[SUCCESS] Biscuit Willow Creek vet appointment: Set a reminder for Friday, September 25, 2026 at 7:30pm: 'Collect Biscuit's stool sample for Willow Creek visit tomorrow'.", "tag": "agent_message", "timestamp": "2026-10-06 16:42:39"}
+{"payload": "Reminder set for Friday, September 25 at 7:30pm.", "tag": "poke_reply", "timestamp": "2026-10-06 16:42:44"}
+{"payload": "find the bib pickup info for the redwood trail half marathon", "tag": "user_message", "timestamp": "2026-10-06 19:25:03"}
+{"payload": "looking now", "tag": "poke_reply", "timestamp": "2026-10-06 19:25:08"}
+{"payload": "[SUCCESS] Redwood Trail Half Marathon Info: Found an email from no-reply@runsignup.com on Oct 1: bib #2217 can be picked up Oct 17 from 12-7pm at Fernhill Outfitters, 410 Mill St, or race morning Oct 18 until 6:30am. The race starts at 7:30am.", "tag": "agent_message", "timestamp": "2026-10-06 19:26:19"}
+{"payload": "Bib #2217. Pick up Oct 17, 12-7pm at Fernhill Outfitters, or race morning until 6:30am.", "tag": "poke_reply", "timestamp": "2026-10-06 19:26:24"}
+{"payload": "find my marriott receipt from the austin conference stay last month, need it for expenses", "tag": "user_message", "timestamp": "2026-10-06 20:35:10"}
+{"payload": "let me dig in", "tag": "poke_reply", "timestamp": "2026-10-06 20:35:15"}
+{"payload": "[SUCCESS] Marriott Austin Receipt Search: Found the final folio from Marriott Austin Downtown (noreply@marriott.com), sent Oct 22, for 2 nights Oct 20-22. The total was $487.62, including $64.12 in taxes, charged to the Visa ending 4417. The PDF is attached.", "tag": "agent_message", "timestamp": "2026-10-06 20:36:56"}
+{"payload": "Found it: Marriott Austin Downtown folio, $487.62 for Oct 20-22, PDF attached in the Oct 22 email.", "tag": "poke_reply", "timestamp": "2026-10-06 20:37:01"}
+{"payload": "can someone else pick up my bib for me", "tag": "user_message", "timestamp": "2026-10-07 11:50:41"}
+{"payload": "let me check", "tag": "poke_reply", "timestamp": "2026-10-07 11:50:46"}
+{"payload": "[SUCCESS] Redwood Trail Half Marathon Info: The email says friends can pick up a bib with a signed waiver and a photo of your ID, but there are no proxy pickups on race morning.", "tag": "agent_message", "timestamp": "2026-10-07 11:53:36"}
+{"payload": "Yes, with your signed waiver and a photo of your ID, but only on Oct 17.", "tag": "poke_reply", "timestamp": "2026-10-07 11:53:41"}
+{"payload": "set up a call with lena okafor at ridgeway about the brand refresh", "tag": "user_message", "timestamp": "2026-10-07 14:10:59"}
+{"payload": "looking now", "tag": "poke_reply", "timestamp": "2026-10-07 14:11:04"}
+{"payload": "[SUCCESS] Lena Okafor Ridgeway scheduling: Found Lena's email from lena@ridgewaydesign.co offering Tuesday Sept 29 at 2pm or Thursday Oct 1 at 10am ET. Drafted a reply proposing Sept 29 at 2pm and am awaiting your approval.", "tag": "agent_message", "timestamp": "2026-10-07 14:13:16"}
+{"payload": "Drafted a reply proposing Sept 29 at 2pm, Lena's first option. Want me to send it?", "tag": "poke_reply", "timestamp": "2026-10-07 14:13:21"}
+{"payload": "does it show the parking charge separately?", "tag": "user_message", "timestamp": "2026-10-07 21:00:03"}
+{"payload": "give me a sec", "tag": "poke_reply", "timestamp": "2026-10-07 21:00:08"}
+{"payload": "[SUCCESS] Marriott Austin Receipt Search: Yes. The folio lists self-parking at $38/night, $76 total, as a separate line item from the room charges of $347.50.", "tag": "agent_message", "timestamp": "2026-10-07 21:03:00"}
+{"payload": "Yes, parking is its own line: $76 for two nights, separate from the $347.50 room charge.", "tag": "poke_reply", "timestamp": "2026-10-07 21:03:05"}
+{"payload": "surprise me", "tag": "user_message", "timestamp": "2026-10-07 21:15:52"}
+{"payload": "Okay: a group of flamingos is called a flamboyance. You're welcome.", "tag": "poke_reply", "timestamp": "2026-10-07 21:15:57"}
+{"payload": "rough day", "tag": "user_message", "timestamp": "2026-10-07 21:25:52"}
+{"payload": "I'm sorry. Want to vent, or want a distraction? Either works for me.", "tag": "poke_reply", "timestamp": "2026-10-07 21:25:57"}
+{"payload": "goodnight", "tag": "user_message", "timestamp": "2026-10-08 08:20:35"}
+{"payload": "Night! Sleep well, tomorrow can wait its turn.", "tag": "poke_reply", "timestamp": "2026-10-08 08:20:40"}
+{"payload": "yes send it", "tag": "user_message", "timestamp": "2026-10-08 11:00:33"}
+{"payload": "looking now", "tag": "poke_reply", "timestamp": "2026-10-08 11:00:38"}
+{"payload": "[SUCCESS] Lena Okafor Ridgeway scheduling: Sent the reply to lena@ridgewaydesign.co confirming Tuesday, Sept 29 at 2:00pm ET.", "tag": "agent_message", "timestamp": "2026-10-08 11:02:16"}
+{"payload": "Sent. Confirmed Sept 29 at 2pm ET with Lena.", "tag": "poke_reply", "timestamp": "2026-10-08 11:02:21"}
+{"payload": "forward it to expenses@northfieldgroup.com with subject austin hotel receipt", "tag": "user_message", "timestamp": "2026-10-08 11:55:17"}
+{"payload": "let me dig in", "tag": "poke_reply", "timestamp": "2026-10-08 11:55:22"}
+{"payload": "[SUCCESS] Marriott Austin Receipt Search: Forwarded the Oct 22 Marriott folio email with the PDF to expenses@northfieldgroup.com under the subject 'Austin hotel receipt'.", "tag": "agent_message", "timestamp": "2026-10-08 11:56:51"}
+{"payload": "Done, forwarded to expenses@northfieldgroup.com with the subject 'Austin hotel receipt'.", "tag": "poke_reply", "timestamp": "2026-10-08 11:56:56"}
+{"payload": "i need a vacation", "tag": "user_message", "timestamp": "2026-10-08 14:20:18"}
+{"payload": "Same energy, honestly. Somewhere with a beach and zero notifications.", "tag": "poke_reply", "timestamp": "2026-10-08 14:20:23"}
+{"payload": "did she reply yet?", "tag": "user_message", "timestamp": "2026-10-08 14:40:08"}
+{"payload": "looking now", "tag": "poke_reply", "timestamp": "2026-10-08 14:40:13"}
+{"payload": "[SUCCESS] Lena Okafor Ridgeway scheduling: Lena replied at 4:12pm: 'Perfect, sending a Google Meet invite shortly.' No invite has arrived yet.", "tag": "agent_message", "timestamp": "2026-10-08 14:42:08"}
+{"payload": "She confirmed and says a Meet invite is coming; nothing yet.", "tag": "poke_reply", "timestamp": "2026-10-08 14:42:13"}
+{"payload": "did they say he needs to fast", "tag": "user_message", "timestamp": "2026-10-08 17:05:35"}
+{"payload": "on it now", "tag": "poke_reply", "timestamp": "2026-10-08 17:05:40"}
+{"payload": "[SUCCESS] Biscuit Willow Creek vet appointment: The reminder says no fasting is needed, but to bring Biscuit on a leash and to skip his morning treats if he gets car sick.", "tag": "agent_message", "timestamp": "2026-10-08 17:07:14"}
+{"payload": "No fasting needed. Just bring him on a leash.", "tag": "poke_reply", "timestamp": "2026-10-08 17:07:19"}
+{"payload": "was there also a receipt for the breakfast i charged to the room?", "tag": "user_message", "timestamp": "2026-10-08 17:10:49"}
+{"payload": "let me check", "tag": "poke_reply", "timestamp": "2026-10-08 17:10:54"}
+{"payload": "[SUCCESS] Marriott Austin Receipt Search: The folio has one breakfast charge, $23.40 at Garrison Kitchen on Oct 21. No separate restaurant receipt was emailed.", "tag": "agent_message", "timestamp": "2026-10-08 17:12:00"}
+{"payload": "Only the folio line: $23.40 at Garrison Kitchen on Oct 21. No separate receipt was emailed.", "tag": "poke_reply", "timestamp": "2026-10-08 17:12:05"}
+{"payload": "change it to 8am", "tag": "user_message", "timestamp": "2026-10-08 17:30:54"}
+{"payload": "let me check", "tag": "poke_reply", "timestamp": "2026-10-08 17:30:59"}
+{"payload": "[SUCCESS] Reminders: Recurring reminder updated to 8:00am on the 1st of each month.", "tag": "agent_message", "timestamp": "2026-10-08 17:32:32"}
+{"payload": "Updated to 8am on the 1st.", "tag": "poke_reply", "timestamp": "2026-10-08 17:32:37"}
+{"payload": "i love weekends", "tag": "user_message", "timestamp": "2026-10-08 19:10:04"}
+{"payload": "Same. Best invention after the wheel and sliced bread.", "tag": "poke_reply", "timestamp": "2026-10-08 19:10:09"}
+{"payload": "i should go to the gym", "tag": "user_message", "timestamp": "2026-10-08 19:25:43"}
+{"payload": "Should, or want to? Either way, future you will send a thank-you note.", "tag": "poke_reply", "timestamp": "2026-10-08 19:25:48"}
+{"payload": "i can't decide what to eat", "tag": "user_message", "timestamp": "2026-10-08 20:15:39"}
+{"payload": "Tragic and universal. Go with the first thing that sounded good. Your gut knows.", "tag": "poke_reply", "timestamp": "2026-10-08 20:15:44"}
+{"payload": "set a reminder friday oct 16 to grab my waiver from the email and print it", "tag": "user_message", "timestamp": "2026-10-09 09:30:49"}
+{"payload": "one moment", "tag": "poke_reply", "timestamp": "2026-10-09 09:30:54"}
+{"payload": "[SUCCESS] Redwood Trail Half Marathon Info: Set a reminder for Oct 16 at 6:00pm: 'Print Redwood Trail Half waiver (RunSignup email Oct 1).'", "tag": "agent_message", "timestamp": "2026-10-09 09:33:32"}
+{"payload": "Reminder set for Oct 16 at 6pm to print the waiver.", "tag": "poke_reply", "timestamp": "2026-10-09 09:33:37"}
+{"payload": "ok cool", "tag": "user_message", "timestamp": "2026-10-09 12:40:04"}
+{"payload": "Cool cool cool.", "tag": "poke_reply", "timestamp": "2026-10-09 12:40:09"}
+{"payload": "is there parking at the start line", "tag": "user_message", "timestamp": "2026-10-09 14:00:01"}
+{"payload": "let me dig in", "tag": "poke_reply", "timestamp": "2026-10-09 14:00:06"}
+{"payload": "[SUCCESS] Redwood Trail Half Marathon Info: No parking at the start. The email says to use the shuttle from Millbrook High School lot, with shuttles every 15 minutes from 5:30am to 7:00am.", "tag": "agent_message", "timestamp": "2026-10-09 14:02:54"}
+{"payload": "No start-line parking. Shuttles run from Millbrook High lot every 15 minutes, 5:30 to 7am.", "tag": "poke_reply", "timestamp": "2026-10-09 14:02:59"}
+{"payload": "yay", "tag": "user_message", "timestamp": "2026-10-09 14:20:18"}
+{"payload": "Yay indeed!", "tag": "poke_reply", "timestamp": "2026-10-09 14:20:23"}
+{"payload": "remind me an hour before the call", "tag": "user_message", "timestamp": "2026-10-09 15:40:35"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-09 15:40:40"}
+{"payload": "[SUCCESS] Lena Okafor Ridgeway scheduling: Reminder set for September 29, 2026 at 1:00pm ET titled 'Call with Lena Okafor (Ridgeway) at 2pm'.", "tag": "agent_message", "timestamp": "2026-10-09 15:43:30"}
+{"payload": "Reminder set for Sept 29 at 1pm.", "tag": "poke_reply", "timestamp": "2026-10-09 15:43:35"}
+{"payload": "thanks!", "tag": "user_message", "timestamp": "2026-10-09 15:55:44"}
+{"payload": "Anytime. Being helpful is basically my favorite hobby.", "tag": "poke_reply", "timestamp": "2026-10-09 15:55:49"}
+{"payload": "what was the last invoice number again?", "tag": "user_message", "timestamp": "2026-10-09 16:05:24"}
+{"payload": "right away", "tag": "poke_reply", "timestamp": "2026-10-09 16:05:29"}
+{"payload": "[SUCCESS] Reminders: The September invoice was #2043, $2,400, sent Sept 1, 2026 to ap@callowayprint.com.", "tag": "agent_message", "timestamp": "2026-10-09 16:06:55"}
+{"payload": "Invoice #2043, $2,400, sent Sept 1.", "tag": "poke_reply", "timestamp": "2026-10-09 16:07:00"}
+{"payload": "skip the november one, they're closed", "tag": "user_message", "timestamp": "2026-10-09 16:30:42"}
+{"payload": "give me a sec", "tag": "poke_reply", "timestamp": "2026-10-09 16:30:47"}
+{"payload": "[SUCCESS] Reminders: Skipped the November 1, 2026 occurrence; the reminder resumes December 1.", "tag": "agent_message", "timestamp": "2026-10-09 16:31:51"}
+{"payload": "Skipped November. It resumes Dec 1.", "tag": "poke_reply", "timestamp": "2026-10-09 16:31:56"}
+{"payload": "find the bib pickup info for the redwood trail half marathon", "tag": "user_message", "timestamp": "2026-10-09 17:15:17"}
+{"payload": "On it, looking for the bib pickup email now.", "tag": "poke_reply", "timestamp": "2026-10-09 17:15:22"}
+{"payload": "[SUCCESS] Redwood Trail Half Marathon Info: Found an email from no-reply@runsignup.com on Oct 1: bib #2217 can be picked up Oct 17 from 12-7pm at Fernhill Outfitters, 410 Mill St, or race morning Oct 18 until 6:30am. The race starts at 7:30am.", "tag": "agent_message", "timestamp": "2026-10-09 17:17:46"}
+{"payload": "Found it. Your bib is #2217. You can pick it up Oct 17 from 12-7pm at Fernhill Outfitters (410 Mill St), or race morning Oct 18 until 6:30am. The race starts at 7:30am.", "tag": "poke_reply", "timestamp": "2026-10-09 17:17:51"}
+{"payload": "ugh race morning pickup sounds stressful", "tag": "user_message", "timestamp": "2026-10-09 18:14:51"}
+{"payload": "Yeah, the day-before pickup is probably easier if you can make it.", "tag": "poke_reply", "timestamp": "2026-10-09 18:14:56"}
+{"payload": "can someone else pick up my bib for me", "tag": "user_message", "timestamp": "2026-10-09 19:27:56"}
+{"payload": "Let me check the email on that.", "tag": "poke_reply", "timestamp": "2026-10-09 19:28:01"}
+{"payload": "[SUCCESS] Redwood Trail Half Marathon Info: The email says friends can pick up a bib with a signed waiver and a photo of your ID, but there are no proxy pickups on race morning.", "tag": "agent_message", "timestamp": "2026-10-09 19:31:55"}
+{"payload": "Yes, but only before race day. A friend needs your signed waiver and a photo of your ID. There are no proxy pickups on race morning.", "tag": "poke_reply", "timestamp": "2026-10-09 19:32:00"}

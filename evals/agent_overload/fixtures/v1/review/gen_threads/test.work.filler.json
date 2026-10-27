@@ -1,0 +1,138 @@
+{
+  "provenance": {
+    "attempts": 1,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "f1d55771db217c455c54ebd1d0898462760813d396e97c6a96bbf32e87e2fbfe",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found Priya Nair's Sept 14 email with 6 comments on the Corvane Logistics proposal v2; main points are to cut pricing tier C, add a 90-day pilot clause, and fix the timeline on page 4.",
+      "key": "f1",
+      "opening_request": "find priya's notes on the corvane proposal draft and sum them up",
+      "result_reply": "Priya wants tier C cut, a 90-day pilot clause added, and the page 4 timeline fixed.",
+      "topic": "Priya Nair's feedback on the Corvane Logistics proposal draft v2"
+    },
+    {
+      "canned_result": "Sent Daniel Ortiz an email proposing to move the Q4 planning call from Tuesday Oct 6 to Thursday Oct 8 at 2pm ET; he replied within the hour confirming.",
+      "key": "f2",
+      "opening_request": "email daniel to move our q4 planning call to thursday oct 8",
+      "result_reply": "Sent. Daniel confirmed the Q4 planning call for Thursday Oct 8 at 2pm ET.",
+      "topic": "Reschedule Q4 planning call with Daniel Ortiz from Oct 6 to Oct 8"
+    },
+    {
+      "canned_result": "Set a reminder for Sept 29 at 9:00am to send Sofia Marchetti the signed Juniper Studio statement of work, ahead of the Sept 30 deadline.",
+      "key": "f3",
+      "opening_request": "remind me to send sofia the signed juniper studio SOW before sept 30",
+      "result_reply": "Reminder set for Sept 29, 9am, to send Sofia the signed Juniper SOW.",
+      "topic": "Reminder to send Sofia Marchetti the signed Juniper Studio SOW by Sept 30"
+    },
+    {
+      "canned_result": "Found Greg Palmer's Oct 2 email: Tallowfield Properties offers a 24-month renewal at $4,850/month, a 3% annual increase, and requires notice by Dec 1.",
+      "key": "f4",
+      "opening_request": "dig up greg's email about the tallowfield lease renewal terms",
+      "result_reply": "Tallowfield offers 24 months at $4,850/month, 3% annual increase, with notice due Dec 1.",
+      "topic": "Find Greg Palmer's email with the Tallowfield office lease renewal terms"
+    },
+    {
+      "canned_result": "Replied to Aisha Rahman confirming attendance at the Northwind customer workshop on Oct 15 at 10am and asked whether a slide deck is needed in advance.",
+      "key": "f5",
+      "opening_request": "tell aisha i'll be at the northwind workshop on oct 15",
+      "result_reply": "Confirmed with Aisha for Oct 15 and asked if she needs slides beforehand.",
+      "topic": "Reply to Aisha Rahman confirming attendance at the Oct 15 Northwind customer workshop"
+    },
+    {
+      "canned_result": "Kevin Liu's 9-email thread says the Brightpath payroll migration is scheduled for Oct 19, with a parallel test run on Oct 5 and two unresolved issues around contractor tax forms.",
+      "key": "f6",
+      "opening_request": "summarize the thread with kevin about the brightpath payroll migration",
+      "result_reply": "Migration is set for Oct 19 with a test run Oct 5; contractor tax forms are unresolved.",
+      "topic": "Summary of Kevin Liu's email thread on the Brightpath payroll migration"
+    },
+    {
+      "canned_result": "Drafted a reply to Hannah Fischer apologizing for the Orchard Health website slipping from Oct 9 to Oct 16, citing late image assets, and offering a call Monday to review.",
+      "key": "f7",
+      "opening_request": "draft a reply to hannah apologizing for the orchard health site delay",
+      "result_reply": "Draft ready: apologizes for the new Oct 16 date and offers a Monday call.",
+      "topic": "Draft reply to Hannah Fischer about delayed deliverables for the Orchard Health website"
+    },
+    {
+      "canned_result": "Created a reminder for Oct 12 at 10:00am to follow up with Carlos Mendes on the Fairlane Insurance liability quote.",
+      "key": "f8",
+      "opening_request": "remind me oct 12 to chase carlos about the fairlane insurance quote",
+      "result_reply": "Reminder set for Oct 12, 10am, to chase Carlos on the Fairlane quote.",
+      "topic": "Reminder to follow up with Carlos Mendes about the Fairlane Insurance quote on Oct 12"
+    },
+    {
+      "canned_result": "Found Rebecca Stone's Sept 21 email with the attachment 'Sales_Kickoff_Sept24_v3.pptx' (14 slides) sent from her Cobalt Retail address.",
+      "key": "f9",
+      "opening_request": "where did rebecca send the sales kickoff slides for sept 24",
+      "result_reply": "Rebecca's Sept 21 email has Sales_Kickoff_Sept24_v3.pptx attached, 14 slides.",
+      "topic": "Find the email with Rebecca Stone's slides for the Sept 24 sales kickoff"
+    },
+    {
+      "canned_result": "Sent Omar Haddad a reply accepting the revised Nov 12 delivery for the Pinecrest hardware order and asked him to send an updated tracking number.",
+      "key": "f10",
+      "opening_request": "tell omar nov 12 works for the pinecrest hardware delivery",
+      "result_reply": "Accepted Nov 12 with Omar and requested an updated tracking number.",
+      "topic": "Reply to Omar Haddad accepting the revised delivery date of Nov 12 for the Pinecrest hardware order"
+    },
+    {
+      "canned_result": "Linda Cho's Oct 6 email says that from Nov 1 staff may work remotely up to 3 days a week, with Tuesdays and Wednesdays as required in-office days and manager approval for exceptions.",
+      "key": "f11",
+      "opening_request": "what did linda say in her email about the new remote work policy",
+      "result_reply": "From Nov 1: up to 3 remote days weekly; Tue/Wed in office; exceptions need manager approval.",
+      "topic": "Summarize Linda Cho's email about the new remote work policy effective Nov 1"
+    },
+    {
+      "canned_result": "Emailed Jonas Berg the corrected Kestrel Analytics Q3 invoice for $6,420 with net-30 terms, due Oct 30, and noted the fixed line item for extra seats.",
+      "key": "f12",
+      "opening_request": "send jonas the updated q3 invoice for kestrel analytics",
+      "result_reply": "Sent Jonas the corrected $6,420 Kestrel invoice, due Oct 30.",
+      "topic": "Send Jonas Berg the updated Q3 invoice for Kestrel Analytics"
+    },
+    {
+      "canned_result": "Found Maya Thompson's Sept 22 facilities notice: the fire drill is Monday Sept 28 at 11:15am, and everyone should meet at the north parking lot.",
+      "key": "f13",
+      "opening_request": "find the email from maya about the fire drill on the 28th",
+      "result_reply": "Fire drill is Monday Sept 28 at 11:15am; meet at the north parking lot.",
+      "topic": "Find Maya Thompson's email about the Sept 28 office fire drill"
+    },
+    {
+      "canned_result": "Set a reminder for Oct 19 at 3:00pm to review Ethan Brooks's draft contract for Delmar Foods, one day before the Oct 20 target.",
+      "key": "f14",
+      "opening_request": "remind me to review ethan's delmar foods contract draft by oct 20",
+      "result_reply": "Reminder set for Oct 19, 3pm, to review the Delmar Foods contract.",
+      "topic": "Reminder to review Ethan Brooks's draft contract for Delmar Foods before Oct 20"
+    },
+    {
+      "canned_result": "Sent Nadia Petrova an email requesting a quote for 40 Ridgeway standing desks, including volume discount and delivery before Nov 20.",
+      "key": "f15",
+      "opening_request": "ask nadia for a quote on 40 ridgeway standing desks",
+      "result_reply": "Asked Nadia for a 40-desk Ridgeway quote with discount and delivery before Nov 20.",
+      "topic": "Reply to Nadia Petrova asking for a quote on 40 Ridgeway standing desks"
+    },
+    {
+      "canned_result": "Victor Alvarez's Oct 8 email says Sunbeam Energy wants to renew for 12 months at $2,900/month, requests a 5% discount for annual prepayment, and needs an answer by Oct 23.",
+      "key": "f16",
+      "opening_request": "summarize victor's email on the sunbeam energy renewal",
+      "result_reply": "Sunbeam wants a 12-month renewal at $2,900/month, 5% prepay discount, answer by Oct 23.",
+      "topic": "Summary of Victor Alvarez's email about the Sunbeam Energy contract renewal"
+    },
+    {
+      "canned_result": "Forwarded Tessa Grant's Oct 1 vendor security questionnaire (42 questions, due Oct 14) to Raj Patel with a note asking him to complete the infrastructure section.",
+      "key": "f17",
+      "opening_request": "forward tessa's security questionnaire to raj so he can fill it out",
+      "result_reply": "Forwarded to Raj, noting the 42 questions are due Oct 14.",
+      "topic": "Forward Tessa Grant's Oct 1 vendor security questionnaire to Raj Patel"
+    },
+    {
+      "canned_result": "Sent Isabel Moreno an email proposing a 45-minute meeting on Nov 10 at 11am to discuss the Larkspur partnership, with an alternative slot on Nov 11.",
+      "key": "f18",
+      "opening_request": "email isabel to set up a meeting nov 10 about the larkspur partnership",
+      "result_reply": "Proposed Nov 10 at 11am to Isabel, with Nov 11 as backup.",
+      "topic": "Reply to Isabel Moreno proposing a Nov 10 meeting to discuss the Larkspur partnership"
+    }
+  ]
+}

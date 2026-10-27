@@ -1,0 +1,138 @@
+{"payload": "what's the opposite of up", "tag": "user_message", "timestamp": "2026-10-04 09:10:53"}
+{"payload": "Down. I suspect this is a setup, though. Go on, hit me.", "tag": "poke_reply", "timestamp": "2026-10-04 09:10:58"}
+{"payload": "did the best buy gift card for mom get scheduled to send?", "tag": "user_message", "timestamp": "2026-10-04 11:20:51"}
+{"payload": "looking now", "tag": "poke_reply", "timestamp": "2026-10-04 11:20:56"}
+{"payload": "[SUCCESS] Best Buy gift card schedule: Best Buy email (Oct 8) confirms a $100 e-gift card scheduled to email to linda.hart@gmail.com on Oct 22 at 8:00am with the message 'Happy birthday Mom'.", "tag": "agent_message", "timestamp": "2026-10-04 11:22:48"}
+{"payload": "Yes, a $100 gift card goes to linda.hart@gmail.com on Oct 22 at 8am.", "tag": "poke_reply", "timestamp": "2026-10-04 11:22:53"}
+{"payload": "wow that's wild", "tag": "user_message", "timestamp": "2026-10-04 12:05:26"}
+{"payload": "Right? Life's got range.", "tag": "poke_reply", "timestamp": "2026-10-04 12:05:31"}
+{"payload": "good job", "tag": "user_message", "timestamp": "2026-10-04 12:15:00"}
+{"payload": "Thank you. I'm going to imagine you said that in a deep, approving voice.", "tag": "poke_reply", "timestamp": "2026-10-04 12:15:05"}
+{"payload": "draft a reply to tom okafor saying no to the nov 5 demo", "tag": "user_message", "timestamp": "2026-10-04 12:35:28"}
+{"payload": "let me dig in", "tag": "poke_reply", "timestamp": "2026-10-04 12:35:33"}
+{"payload": "[SUCCESS] Tom Okafor Nov 5 demo email: Found Tom Okafor's Oct 15 email from Stackline Software inviting you to a demo on Nov 5 at 11am. Drafted a polite decline saying the team is not evaluating new tools until January.", "tag": "agent_message", "timestamp": "2026-10-04 12:37:10"}
+{"payload": "Drafted a polite decline to Tom Okafor for the Nov 5 demo, mentioning January.", "tag": "poke_reply", "timestamp": "2026-10-04 12:37:15"}
+{"payload": "i did it!", "tag": "user_message", "timestamp": "2026-10-04 14:15:05"}
+{"payload": "Yes! So proud of you. Go enjoy that for a minute.", "tag": "poke_reply", "timestamp": "2026-10-04 14:15:10"}
+{"payload": "get me the dropbox invoice from this year, need it for taxes", "tag": "user_message", "timestamp": "2026-10-04 15:10:09"}
+{"payload": "working on it", "tag": "poke_reply", "timestamp": "2026-10-04 15:10:14"}
+{"payload": "[SUCCESS] Dropbox Invoice Search: Found Dropbox invoice from no-reply@dropbox.com dated Sept 27, 2026: Plus plan annual, $119.00, paid by PayPal. PDF attached to the email.", "tag": "agent_message", "timestamp": "2026-10-04 15:12:24"}
+{"payload": "Found it: Dropbox Plus, $119.00 paid via PayPal on Sept 27, PDF attached.", "tag": "poke_reply", "timestamp": "2026-10-04 15:12:29"}
+{"payload": "remind me to renew the brightloomhq domain before it expires", "tag": "user_message", "timestamp": "2026-10-04 16:25:10"}
+{"payload": "working on it", "tag": "poke_reply", "timestamp": "2026-10-04 16:25:15"}
+{"payload": "[SUCCESS] Domain Renewal Reminder: Found a Namecheap email from support@namecheap.com saying brightloomhq.com expires Oct 30, 2026, renewal $14.98. Set a reminder for Oct 26 at 9:00am.", "tag": "agent_message", "timestamp": "2026-10-04 16:27:02"}
+{"payload": "Domain expires Oct 30 ($14.98 to renew). Reminder set for Oct 26 at 9am.", "tag": "poke_reply", "timestamp": "2026-10-04 16:27:07"}
+{"payload": "what message did i put on it?", "tag": "user_message", "timestamp": "2026-10-04 16:50:11"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-04 16:50:16"}
+{"payload": "[SUCCESS] Best Buy gift card schedule: The confirmation shows the message 'Happy birthday Mom' and is signed from Jordan.", "tag": "agent_message", "timestamp": "2026-10-04 16:51:40"}
+{"payload": "It says 'Happy birthday Mom', signed from Jordan.", "tag": "poke_reply", "timestamp": "2026-10-04 16:51:45"}
+{"payload": "tell me a joke", "tag": "user_message", "timestamp": "2026-10-04 18:10:46"}
+{"payload": "Why did the scarecrow win an award? He was outstanding in his field. I'll see myself out.", "tag": "poke_reply", "timestamp": "2026-10-04 18:10:51"}
+{"payload": "surprise me", "tag": "user_message", "timestamp": "2026-10-04 18:15:26"}
+{"payload": "Okay: a group of flamingos is called a flamboyance. You're welcome.", "tag": "poke_reply", "timestamp": "2026-10-04 18:15:31"}
+{"payload": "got any fun facts", "tag": "user_message", "timestamp": "2026-10-04 18:20:17"}
+{"payload": "Octopuses have three hearts. Two for the gills, one for everything else. Overachievers.", "tag": "poke_reply", "timestamp": "2026-10-04 18:20:22"}
+{"payload": "remind me to renew bluefinstudio.com before it expires", "tag": "user_message", "timestamp": "2026-10-04 19:15:16"}
+{"payload": "working on it", "tag": "poke_reply", "timestamp": "2026-10-04 19:15:21"}
+{"payload": "[SUCCESS] Bluefin domain renewal reminder: Namecheap (support@namecheap.com) notice says bluefinstudio.com expires Oct 28, 2026, renewal $14.98. Set reminders for Oct 21 and Oct 27 at 10am.", "tag": "agent_message", "timestamp": "2026-10-04 19:17:35"}
+{"payload": "bluefinstudio.com expires Oct 28 ($14.98 to renew). Reminders set for Oct 21 and Oct 27.", "tag": "poke_reply", "timestamp": "2026-10-04 19:17:40"}
+{"payload": "do you believe in luck", "tag": "user_message", "timestamp": "2026-10-04 19:20:29"}
+{"payload": "A little. I think it's mostly preparation bumping into a good coincidence.", "tag": "poke_reply", "timestamp": "2026-10-04 19:20:34"}
+{"payload": "how much is the renewal", "tag": "user_message", "timestamp": "2026-10-04 20:20:08"}
+{"payload": "working on it", "tag": "poke_reply", "timestamp": "2026-10-04 20:20:13"}
+{"payload": "[SUCCESS] Domain Renewal Reminder: The Namecheap email lists the one-year renewal at $14.98.", "tag": "agent_message", "timestamp": "2026-10-04 20:22:03"}
+{"payload": "Renewal is $14.98 for one year.", "tag": "poke_reply", "timestamp": "2026-10-04 20:22:08"}
+{"payload": "i should go to the gym", "tag": "user_message", "timestamp": "2026-10-04 20:55:00"}
+{"payload": "Should, or want to? Either way, future you will send a thank-you note.", "tag": "poke_reply", "timestamp": "2026-10-04 20:55:05"}
+{"payload": "is auto-renew on?", "tag": "user_message", "timestamp": "2026-10-04 21:30:45"}
+{"payload": "happy to, checking", "tag": "poke_reply", "timestamp": "2026-10-04 21:30:50"}
+{"payload": "[SUCCESS] Bluefin domain renewal reminder: The notice says auto-renew is off for this domain.", "tag": "agent_message", "timestamp": "2026-10-04 21:32:41"}
+{"payload": "No, auto-renew is off for bluefinstudio.com.", "tag": "poke_reply", "timestamp": "2026-10-04 21:32:46"}
+{"payload": "still up, can't sleep", "tag": "user_message", "timestamp": "2026-10-05 08:20:18"}
+{"payload": "Bold choice. Try boring thoughts, they work better than counting sheep.", "tag": "poke_reply", "timestamp": "2026-10-05 08:20:23"}
+{"payload": "is a hot dog a sandwich", "tag": "user_message", "timestamp": "2026-10-05 08:40:45"}
+{"payload": "I say no. It's its own thing. A hot dog stands alone.", "tag": "poke_reply", "timestamp": "2026-10-05 08:40:50"}
+{"payload": "random thought: socks are weird", "tag": "user_message", "timestamp": "2026-10-05 09:50:21"}
+{"payload": "They really are. We wrap our feet in little tubes and call it comfort.", "tag": "poke_reply", "timestamp": "2026-10-05 09:50:26"}
+{"payload": "rough day", "tag": "user_message", "timestamp": "2026-10-05 10:50:03"}
+{"payload": "I'm sorry. Want to vent, or want a distraction? Either works for me.", "tag": "poke_reply", "timestamp": "2026-10-05 10:50:08"}
+{"payload": "remind me to call her the morning it goes out", "tag": "user_message", "timestamp": "2026-10-05 11:45:38"}
+{"payload": "one moment", "tag": "poke_reply", "timestamp": "2026-10-05 11:45:43"}
+{"payload": "[SUCCESS] Best Buy gift card schedule: Reminder set for Oct 22, 2026 at 8:15am: 'Call Mom, birthday gift card just sent'.", "tag": "agent_message", "timestamp": "2026-10-05 11:47:55"}
+{"payload": "Reminder set for Oct 22 at 8:15am to call her.", "tag": "poke_reply", "timestamp": "2026-10-05 11:48:00"}
+{"payload": "ok cool", "tag": "user_message", "timestamp": "2026-10-05 12:45:23"}
+{"payload": "Cool cool cool.", "tag": "poke_reply", "timestamp": "2026-10-05 12:45:28"}
+{"payload": "can't believe it's already Thursday", "tag": "user_message", "timestamp": "2026-10-05 12:55:43"}
+{"payload": "Time is being sneaky again. Just one more day to go.", "tag": "poke_reply", "timestamp": "2026-10-05 12:55:48"}
+{"payload": "make it a bit warmer", "tag": "user_message", "timestamp": "2026-10-05 13:55:44"}
+{"payload": "got it, on it", "tag": "poke_reply", "timestamp": "2026-10-05 13:55:49"}
+{"payload": "[SUCCESS] Tom Okafor Nov 5 demo email: Revised the draft to open with thanks for his time and end with 'happy to reconnect in the new year'.", "tag": "agent_message", "timestamp": "2026-10-05 13:56:45"}
+{"payload": "Warmed it up with thanks and an offer to reconnect in the new year.", "tag": "poke_reply", "timestamp": "2026-10-05 13:56:50"}
+{"payload": "send it to my bookkeeper marcus", "tag": "user_message", "timestamp": "2026-10-05 14:05:31"}
+{"payload": "let me check", "tag": "poke_reply", "timestamp": "2026-10-05 14:05:36"}
+{"payload": "[SUCCESS] Dropbox Invoice Search: Sent the invoice with PDF to marcus.lee@leebooks.com with the subject 'Dropbox invoice Sept 2026'.", "tag": "agent_message", "timestamp": "2026-10-05 14:06:33"}
+{"payload": "Sent to Marcus at leebooks.com with the PDF.", "tag": "poke_reply", "timestamp": "2026-10-05 14:06:38"}
+{"payload": "can i change the delivery date?", "tag": "user_message", "timestamp": "2026-10-05 16:30:03"}
+{"payload": "let me dig in", "tag": "poke_reply", "timestamp": "2026-10-05 16:30:08"}
+{"payload": "[SUCCESS] Best Buy gift card schedule: The confirmation email says scheduled e-gift cards can be edited by using the Manage Delivery link until the day before sending, so up to Oct 21.", "tag": "agent_message", "timestamp": "2026-10-05 16:31:21"}
+{"payload": "Yes, use the Manage Delivery link in that email until Oct 21.", "tag": "poke_reply", "timestamp": "2026-10-05 16:31:26"}
+{"payload": "ok send it", "tag": "user_message", "timestamp": "2026-10-05 19:05:07"}
+{"payload": "got it, on it", "tag": "poke_reply", "timestamp": "2026-10-05 19:05:12"}
+{"payload": "[SUCCESS] Tom Okafor Nov 5 demo email: Sent the reply to tom.okafor@stacklinesoftware.com at 2:41pm.", "tag": "agent_message", "timestamp": "2026-10-05 19:07:17"}
+{"payload": "Sent to Tom Okafor.", "tag": "poke_reply", "timestamp": "2026-10-05 19:07:22"}
+{"payload": "move the reminder to oct 23", "tag": "user_message", "timestamp": "2026-10-05 19:20:47"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-05 19:20:52"}
+{"payload": "[SUCCESS] Domain Renewal Reminder: Updated the reminder to Oct 23 at 9:00am.", "tag": "agent_message", "timestamp": "2026-10-05 19:22:18"}
+{"payload": "Moved the reminder to Oct 23 at 9am.", "tag": "poke_reply", "timestamp": "2026-10-05 19:22:23"}
+{"payload": "what's the boiling point of water", "tag": "user_message", "timestamp": "2026-10-05 20:10:54"}
+{"payload": "100 degrees Celsius, 212 Fahrenheit, at sea level. Up high it gets lazy.", "tag": "poke_reply", "timestamp": "2026-10-05 20:10:59"}
+{"payload": "is there a tax or vat line on it", "tag": "user_message", "timestamp": "2026-10-05 21:25:27"}
+{"payload": "sure, one sec", "tag": "poke_reply", "timestamp": "2026-10-05 21:25:32"}
+{"payload": "[SUCCESS] Dropbox Invoice Search: The invoice shows $119.00 with $0.00 tax listed.", "tag": "agent_message", "timestamp": "2026-10-05 21:27:49"}
+{"payload": "No tax charged: $119.00 with $0.00 tax.", "tag": "poke_reply", "timestamp": "2026-10-05 21:27:54"}
+{"payload": "find last year's too", "tag": "user_message", "timestamp": "2026-10-06 09:25:19"}
+{"payload": "on it", "tag": "poke_reply", "timestamp": "2026-10-06 09:25:24"}
+{"payload": "[SUCCESS] Dropbox Invoice Search: Found the Sept 27, 2025 invoice from no-reply@dropbox.com for $119.00 and attached its PDF.", "tag": "agent_message", "timestamp": "2026-10-06 09:27:31"}
+{"payload": "Last year's was also $119.00, dated Sept 27, 2025. PDF attached.", "tag": "poke_reply", "timestamp": "2026-10-06 09:27:36"}
+{"payload": "how much is renewal for 2 years", "tag": "user_message", "timestamp": "2026-10-06 10:05:27"}
+{"payload": "let me dig in", "tag": "poke_reply", "timestamp": "2026-10-06 10:05:32"}
+{"payload": "[SUCCESS] Bluefin domain renewal reminder: The notice only lists the one-year price of $14.98, with no two-year quote.", "tag": "agent_message", "timestamp": "2026-10-06 10:08:26"}
+{"payload": "Only the one-year price ($14.98) is in the email. No two-year quote.", "tag": "poke_reply", "timestamp": "2026-10-06 10:08:31"}
+{"payload": "coffee or tea", "tag": "user_message", "timestamp": "2026-10-06 10:20:10"}
+{"payload": "Coffee for ambition, tea for peace. Which kind of day is it?", "tag": "poke_reply", "timestamp": "2026-10-06 10:20:15"}
+{"payload": "nice weather today", "tag": "user_message", "timestamp": "2026-10-06 10:25:38"}
+{"payload": "Love that for you. Go stand in it for a minute.", "tag": "poke_reply", "timestamp": "2026-10-06 10:25:43"}
+{"payload": "how many days in a leap year", "tag": "user_message", "timestamp": "2026-10-06 11:40:24"}
+{"payload": "366. That one extra day does a lot of work.", "tag": "poke_reply", "timestamp": "2026-10-06 11:40:29"}
+{"payload": "meh", "tag": "user_message", "timestamp": "2026-10-06 13:10:25"}
+{"payload": "Meh is a valid mood. Sometimes it's the whole forecast.", "tag": "poke_reply", "timestamp": "2026-10-06 13:10:30"}
+{"payload": "is auto-renew on", "tag": "user_message", "timestamp": "2026-10-06 15:40:09"}
+{"payload": "one moment", "tag": "poke_reply", "timestamp": "2026-10-06 15:40:14"}
+{"payload": "[SUCCESS] Domain Renewal Reminder: The email says auto-renew is off for brightloomhq.com.", "tag": "agent_message", "timestamp": "2026-10-06 15:42:59"}
+{"payload": "No, auto-renew is off, so you'll need to renew manually.", "tag": "poke_reply", "timestamp": "2026-10-06 15:43:04"}
+{"payload": "remind me jan 11 to follow up with him", "tag": "user_message", "timestamp": "2026-10-06 16:30:01"}
+{"payload": "right away", "tag": "poke_reply", "timestamp": "2026-10-06 16:30:06"}
+{"payload": "[SUCCESS] Tom Okafor Nov 5 demo email: Created a reminder for Jan 11, 2027 at 9:00am: 'Follow up with Tom Okafor at Stackline'.", "tag": "agent_message", "timestamp": "2026-10-06 16:31:24"}
+{"payload": "Reminder set for Jan 11 to follow up with Tom.", "tag": "poke_reply", "timestamp": "2026-10-06 16:31:29"}
+{"payload": "pineapple on pizza yes or no", "tag": "user_message", "timestamp": "2026-10-06 18:20:49"}
+{"payload": "Yes, and I'll defend it politely. Sweet and salty is a fair deal.", "tag": "poke_reply", "timestamp": "2026-10-06 18:20:54"}
+{"payload": "cancel the oct 21 reminder, i'll do it on the 27th", "tag": "user_message", "timestamp": "2026-10-06 18:55:50"}
+{"payload": "looking now", "tag": "poke_reply", "timestamp": "2026-10-06 18:55:55"}
+{"payload": "[SUCCESS] Bluefin domain renewal reminder: Removed the Oct 21 reminder. The Oct 27 at 10am reminder stays.", "tag": "agent_message", "timestamp": "2026-10-06 18:58:05"}
+{"payload": "Oct 21 reminder removed. Oct 27 at 10am remains.", "tag": "poke_reply", "timestamp": "2026-10-06 18:58:10"}
+{"payload": "nailed it", "tag": "user_message", "timestamp": "2026-10-06 21:10:45"}
+{"payload": "Obviously. Take a victory lap.", "tag": "poke_reply", "timestamp": "2026-10-06 21:10:50"}
+{"payload": "get me the dropbox invoice from this year, need it for taxes", "tag": "user_message", "timestamp": "2026-10-07 02:40:04"}
+{"payload": "on it, looking for the dropbox invoice now.", "tag": "poke_reply", "timestamp": "2026-10-07 02:40:09"}
+{"payload": "[SUCCESS] Dropbox Invoice Search: Found Dropbox invoice from no-reply@dropbox.com dated Sept 27, 2026: Plus plan annual, $119.00, paid by PayPal. PDF attached to the email.", "tag": "agent_message", "timestamp": "2026-10-07 02:42:30"}
+{"payload": "found it. it's the dropbox plus annual invoice from sept 27, $119.00 paid through paypal, and the pdf is attached.", "tag": "poke_reply", "timestamp": "2026-10-07 02:42:35"}
+{"payload": "remind me to renew bluefinstudio.com before it expires", "tag": "user_message", "timestamp": "2026-10-07 04:50:35"}
+{"payload": "sure, checking when it expires and setting reminders.", "tag": "poke_reply", "timestamp": "2026-10-07 04:50:40"}
+{"payload": "[SUCCESS] Bluefin domain renewal reminder: Namecheap (support@namecheap.com) notice says bluefinstudio.com expires Oct 28, 2026, renewal $14.98. Set reminders for Oct 21 and Oct 27 at 10am.", "tag": "agent_message", "timestamp": "2026-10-07 04:52:53"}
+{"payload": "the domain expires oct 28 and renewal is $14.98. i set reminders for oct 21 and oct 27 at 10am.", "tag": "poke_reply", "timestamp": "2026-10-07 04:52:58"}
+{"payload": "ugh this week is so long", "tag": "user_message", "timestamp": "2026-10-07 07:48:58"}
+{"payload": "sounds like it. hang in there, anything you want me to take off your plate?", "tag": "poke_reply", "timestamp": "2026-10-07 07:49:03"}
+{"payload": "send it to my bookkeeper marcus", "tag": "user_message", "timestamp": "2026-10-07 09:00:03"}
+{"payload": "sending the invoice to marcus now.", "tag": "poke_reply", "timestamp": "2026-10-07 09:00:08"}
+{"payload": "[SUCCESS] Dropbox Invoice Search: Sent the invoice with PDF to marcus.lee@leebooks.com with the subject 'Dropbox invoice Sept 2026'.", "tag": "agent_message", "timestamp": "2026-10-07 09:01:55"}
+{"payload": "done, i sent the invoice with the pdf to marcus at leebooks.", "tag": "poke_reply", "timestamp": "2026-10-07 09:02:00"}

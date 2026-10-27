@@ -1,0 +1,237 @@
+{
+  "provenance": {
+    "attempts": 1,
+    "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
+    "fake": false,
+    "model": "anthropic/claude-sonnet-5.5",
+    "request_sha256": "ab052df193904354428734d660d1e53396b706b6862e0e882c93a66e611b6485",
+    "returned_model": "anthropic/claude-sonnet-5.5"
+  },
+  "threads": [
+    {
+      "canned_result": "Found Ticketmaster order #44-81920 from orders@ticketmaster.com: 2 tickets, Section 112 Row F, Lumen Hollow at Gorman Arena on Oct 17, doors 7pm, total $238.50.",
+      "follow_ups": [
+        {
+          "reply": "Seats 9 and 10, Section 112, Row F, together.",
+          "request": "what's the seat number range, i need to tell my friend",
+          "result": "The order lists seats 9 and 10 in Section 112, Row F, side by side."
+        },
+        {
+          "reply": "Forwarded the confirmation and transfer link to Sam at sam.whitaker@gmail.com.",
+          "request": "forward the tickets to my brother Sam",
+          "result": "Forwarded the Ticketmaster confirmation email with the mobile ticket transfer link to sam.whitaker@gmail.com."
+        },
+        {
+          "reply": "Reminder set for Oct 16 at 6pm to download the tickets.",
+          "request": "remind me the day before to download them to my phone",
+          "result": "Reminder set for Oct 16 at 6pm: download Lumen Hollow tickets to your phone wallet."
+        }
+      ],
+      "key": "c1",
+      "opening_request": "find my ticketmaster confirmation for the lumen hollow concert in october",
+      "pair_key": "c2",
+      "result_reply": "Found it: 2 tickets, Section 112 Row F, Gorman Arena Oct 17, doors at 7pm, $238.50 total.",
+      "topic": "Ticketmaster confirmation for Lumen Hollow concert tickets at Gorman Arena on Oct 17"
+    },
+    {
+      "canned_result": "Ticketmaster email from refunds@ticketmaster.com on Sep 22 says the Nov 6 Dana Pruitt show at Vale Theater was canceled and $112.00 will return to the Visa ending 4417 within 7-10 business days.",
+      "follow_ups": [
+        {
+          "reply": "Should arrive between Oct 1 and Oct 6.",
+          "request": "when exactly should the money show up",
+          "result": "Refund was approved Sep 22, so 7-10 business days lands between Oct 1 and Oct 6."
+        },
+        {
+          "reply": "Reminder set for Oct 7 at 9am to check for the refund.",
+          "request": "remind me to check my card on oct 7",
+          "result": "Reminder created for Oct 7 at 9am: check Visa 4417 for the $112.00 Ticketmaster refund."
+        },
+        {
+          "reply": "Draft to Ticketmaster refunds is saved. I haven't sent it.",
+          "request": "draft a note to ticketmaster asking for status if it's not there",
+          "result": "Drafted a reply to refunds@ticketmaster.com citing the Nov 6 Dana Pruitt order and the $112.00 amount, saved to drafts, not sent."
+        }
+      ],
+      "key": "c2",
+      "opening_request": "did ticketmaster refund me for the canceled dana pruitt comedy show yet",
+      "pair_key": "c1",
+      "result_reply": "Not yet received, but it's approved: $112.00 back to your Visa ending 4417 within 7-10 business days.",
+      "topic": "Ticketmaster refund for canceled Dana Pruitt comedy show on Nov 6"
+    },
+    {
+      "canned_result": "Found the invite from priya.nair@nairchen-wedding.com: ceremony Oct 24 at 4pm at Silverleaf Estate in Napa, RSVP by Oct 3 through the site with meal choice of beef, salmon or risotto.",
+      "follow_ups": [
+        {
+          "reply": "Sent Priya your yes with salmon. The site form still needs submitting.",
+          "request": "reply to priya that i'm coming and want the salmon",
+          "result": "Sent a reply to Priya saying you'll attend and choose salmon, and noted the site form still needs submitting."
+        },
+        {
+          "reply": "Riverbend Inn block, code NAIRCHEN, $189/night, closes Sep 24.",
+          "request": "is there a hotel block mentioned",
+          "result": "Yes, the invite lists a room block at the Riverbend Inn, code NAIRCHEN, $189 a night, booking closes Sep 24."
+        },
+        {
+          "reply": "Reminder set for Sep 20 at 8am.",
+          "request": "remind me to book the hotel by sep 20",
+          "result": "Reminder set for Sep 20 at 8am to book Riverbend Inn with code NAIRCHEN."
+        }
+      ],
+      "key": "c3",
+      "opening_request": "need to rsvp to priya's wedding, can you find the invite email",
+      "pair_key": "c4",
+      "result_reply": "Found it: Oct 24, 4pm at Silverleaf Estate, Napa. RSVP due Oct 3, with meal choice.",
+      "topic": "RSVP for Priya Nair's wedding in Napa on Oct 24"
+    },
+    {
+      "canned_result": "Priya Nair emailed from priya.nair@brightloop.io on Sep 15 asking you to give a 20-minute talk at Product Summit on Nov 12 in Chicago, and needs a title and bio by Oct 1.",
+      "follow_ups": [
+        {
+          "reply": "Travel and one hotel night covered, plus a $500 honorarium after the event.",
+          "request": "is there a speaker fee or travel covered",
+          "result": "Her email says travel and one hotel night are covered, with a $500 honorarium, paid after the event."
+        },
+        {
+          "reply": "Sent. I told her you'd confirm by Sep 22.",
+          "request": "reply saying i'm interested but need a few days to confirm",
+          "result": "Sent Priya a reply saying you're interested and will confirm by Sep 22."
+        },
+        {
+          "reply": "Reminder set for Sep 28 at 10am.",
+          "request": "set a reminder to send my bio sep 28",
+          "result": "Reminder set for Sep 28 at 10am: send title and bio to Priya for Product Summit."
+        }
+      ],
+      "key": "c4",
+      "opening_request": "priya also emailed about speaking at the product summit, what did she need",
+      "pair_key": "c3",
+      "result_reply": "She wants a 20-minute talk at Product Summit Nov 12 in Chicago, with title and bio by Oct 1.",
+      "topic": "Priya Nair's invitation to speak at Product Summit on Nov 12"
+    },
+    {
+      "canned_result": "Receipt from registration@northwinddev.com dated Aug 30 shows a $649 full pass for the Oct 7-9 conference in Austin, with badge pickup Oct 6 from 4-8pm at the Hollis Convention Center.",
+      "follow_ups": [
+        {
+          "reply": "Forwarded the receipt to accounting@tallowmedia.com.",
+          "request": "forward the receipt to accounting@tallowmedia.com for expenses",
+          "result": "Forwarded the $649 Northwind receipt to accounting@tallowmedia.com with a note that it's a conference expense."
+        },
+        {
+          "reply": "Order number NDC-26-30457.",
+          "request": "what's the order number on it",
+          "result": "The order number is NDC-26-30457."
+        },
+        {
+          "reply": "Reminder set for Oct 5 at 7pm.",
+          "request": "remind me oct 5 to screenshot the qr badge code",
+          "result": "Reminder set for Oct 5 at 7pm to save the Northwind badge QR code."
+        }
+      ],
+      "key": "c5",
+      "opening_request": "find my northwind dev conference registration and when badge pickup is",
+      "pair_key": null,
+      "result_reply": "Registered, $649 pass for Oct 7-9 in Austin. Badge pickup is Oct 6, 4-8pm.",
+      "topic": "Northwind Dev Conference registration receipt and badge pickup"
+    },
+    {
+      "canned_result": "Email from tickets@harborcityfilm.org says member presale opens Sep 18 at 10am Pacific with code HCFF-MEMBER, and general sale starts Sep 21. Passes cost $85 for 5 screenings.",
+      "follow_ups": [
+        {
+          "reply": "Reminder set for Sep 18 at 9:50am with the code.",
+          "request": "set a reminder 10 minutes before",
+          "result": "Reminder set for Sep 18 at 9:50am Pacific with the presale code HCFF-MEMBER."
+        },
+        {
+          "reply": "Oct 15-19 at the Marlowe Cinema downtown.",
+          "request": "when's the festival itself",
+          "result": "The festival runs Oct 15-19 at the Marlowe Cinema downtown."
+        },
+        {
+          "reply": "Your membership is valid through Dec 31, so the presale code works.",
+          "request": "can you check if the membership expires before then",
+          "result": "A Aug 12 receipt shows your membership is valid through Dec 31, 2026."
+        }
+      ],
+      "key": "c6",
+      "opening_request": "remind me when the harbor city film festival presale opens, it was in an email",
+      "pair_key": null,
+      "result_reply": "Presale opens Sep 18 at 10am Pacific, code HCFF-MEMBER. Passes are $85 for 5 screenings.",
+      "topic": "Harbor City Film Festival presale opening Sep 18"
+    },
+    {
+      "canned_result": "Found an Oct 1 receipt from pta@oakridgeelementary.org confirming 2 gala tickets at $75 each, for Oct 3 at 6:30pm in the school gym, with a silent auction.",
+      "follow_ups": [
+        {
+          "reply": "They ask for one auction item or $20 cash for the raffle.",
+          "request": "do they want us to bring anything",
+          "result": "The PTA email asks attendees to bring one auction donation item or a $20 raffle cash contribution."
+        },
+        {
+          "reply": "Sent Ms. Alvarez a note confirming you'll be there Oct 3.",
+          "request": "reply to ms. alvarez that we'll be there",
+          "result": "Sent a short reply to Ms. Alvarez at ealvarez@oakridgeelementary.org confirming your attendance on Oct 3."
+        },
+        {
+          "reply": "Reminder set for Oct 2 at 5pm.",
+          "request": "remind me oct 2 to pick up a gift basket",
+          "result": "Reminder set for Oct 2 at 5pm to pick up a gift basket for the Oakridge auction."
+        }
+      ],
+      "key": "c7",
+      "opening_request": "did we buy tickets for the oakridge elementary gala",
+      "pair_key": null,
+      "result_reply": "Yes, 2 tickets at $75 each for the Oct 3 gala, 6:30pm in the school gym.",
+      "topic": "Oakridge Elementary fall gala auction tickets on Oct 3"
+    },
+    {
+      "canned_result": "Amtrak confirmation from no-reply@amtrak.com: Acela 2153 departs New York Penn Nov 13 at 8:00am and arrives Boston South Station 12:08pm, seat 7A car 3, $142, reservation 9XK4TQ.",
+      "follow_ups": [
+        {
+          "reply": "Return is Nov 14, Acela 2174 leaves Boston at 5:30pm.",
+          "request": "what time is the return train",
+          "result": "Return Acela 2174 departs Boston South Station Nov 14 at 5:30pm and arrives New York Penn at 9:41pm."
+        },
+        {
+          "reply": "Forwarded the confirmation to Lena.",
+          "request": "send the confirmation to my assistant Lena",
+          "result": "Forwarded the Amtrak confirmation to lena.ortiz@tallowmedia.com."
+        },
+        {
+          "reply": "Reminder set for Nov 12 at 8pm.",
+          "request": "remind me to check in the night before",
+          "result": "Reminder set for Nov 12 at 8pm to check the Amtrak trip and have the e-ticket ready."
+        }
+      ],
+      "key": "c8",
+      "opening_request": "can you pull up my amtrak ticket for the boston trip in november",
+      "pair_key": null,
+      "result_reply": "Acela 2153, Nov 13, 8:00am NY Penn to Boston 12:08pm, car 3 seat 7A, reservation 9XK4TQ.",
+      "topic": "Amtrak Acela train ticket to Boston on Nov 13"
+    },
+    {
+      "canned_result": "Invite from hr@tallowmedia.com says the company all-hands is Nov 5 from 1-3pm at the Pier 9 venue, with lunch at 12:15pm and an RSVP deadline of Oct 29.",
+      "follow_ups": [
+        {
+          "reply": "Sent your RSVP yes with a vegetarian lunch request.",
+          "request": "rsvp yes and say i have a vegetarian lunch",
+          "result": "Replied to hr@tallowmedia.com confirming attendance and requesting a vegetarian lunch."
+        },
+        {
+          "reply": "Yes, a livestream link is emailed Nov 4 for remote staff.",
+          "request": "is there a remote option",
+          "result": "The invite says a livestream link will be emailed Nov 4 for remote employees only."
+        },
+        {
+          "reply": "Reminder set for Oct 28 at 9am.",
+          "request": "remind me oct 28 in case i forget",
+          "result": "Reminder set for Oct 28 at 9am about the all-hands RSVP deadline."
+        }
+      ],
+      "key": "c9",
+      "opening_request": "what's the deal with the all-hands invite from tallow media in november",
+      "pair_key": null,
+      "result_reply": "All-hands is Nov 5, 1-3pm at Pier 9, lunch at 12:15. RSVP by Oct 29.",
+      "topic": "Tallow Media all-hands meeting invite on Nov 5"
+    }
+  ]
+}
