@@ -9,7 +9,7 @@ This README is the take-home submission. It explains the problem, the starting h
 - **The problem.** OpenPoke never removes execution agents, and the interaction agent sees all of them, by name only, on every turn. On a labelled test set, routing accuracy fell from 84% with 10 agents to 74–77% with 50 or more, and the roster costs about 11 tokens per agent on every call.
 - **The solution** (version 1, `make dev ROUTING=records`). Each agent gets a record (ID, purpose, recent work), the interaction agent routes by ID, and above 50 agents it sees only the 5 most relevant records instead of the whole roster.
 - **The result** on the held-out test split, run once with targets set beforehand: accuracy rose from 77.7% to 88.8% (+11.1 points, 95% CI [+5.6, +16.9]) and is higher at every roster size. From 100 agents up, roster tokens per turn stay flat at about 2,200, which is 66% below the baseline at 200 agents.
-- **The cost.** The new system creates duplicate agents more often: on 15% of the turns that should reuse an agent, against 0.4% before. A scorer step is the proposed fix. It's designed but not built ([section 10](#10-with-more-time)).
+- **The cost.** Version 1 traded one kind of error for another. It nearly eliminated the baseline's main errors (sending new work to an existing agent, or to the wrong one), but it now creates a new agent for work an existing agent owns on 15% of such turns, against 0.4% before. Those duplicates build up over a conversation. The right agent was almost always in the list when it happened, so my working assumption is that the problem is the create decision, which the interaction agent makes alone. A separate decision step, a scorer, that has to rule out the listed candidates first should help. That's untested; the slot for it exists, and the options are in [section 10](#10-with-more-time).
 - **Tests and evaluators.** A routing evaluation harness ([`evals/agent_overload/`](evals/agent_overload/)) with a frozen, labelled case set, deterministic scoring and paired statistics, plus 310 unit tests that make no API calls.
 
 ## Contents
@@ -163,9 +163,36 @@ Run `20261027-223042-records_retrieval-756d8701`, with the frozen config [`v1_re
 
 **Multi-turn sequences show no accuracy gain** (+2.7 [−5.0, +9.1] carried forward, −0.8 [−5.6, +3.2] corrected each turn). The drop in false reuses and misroutes is cancelled by false spawns, which compound as duplicates build up within a conversation.
 
+### Where the accuracy change comes from
+
+Accuracy is a net score over every kind of routing error. Counting each test turn by its outcome (from each run's `turns.jsonl.gz`) shows the trade.
+
+**Single-turn cases** (1,440 turns per method: 120 cases × 6 roster sizes × 2 reps)
+
+| Turn outcome | Baseline | Version 1 | Change |
+| --- | --- | --- | --- |
+| Correct | 1,119 (77.7%) | 1,279 (88.8%) | +160 |
+| False reuse | 171 | 27 | −144 |
+| Misroute | 83 | 3 | −80 |
+| False spawn | 1 | 78 | +77 |
+| Other (missed delegation, or the right agent plus an extra delegation) | 66 | 53 | −13 |
+
+**Carried-forward sequences** (960 turns per method: 8 sequences × 12 turns × 5 roster sizes × 2 reps)
+
+| Turn outcome | Baseline | Version 1 | Change |
+| --- | --- | --- | --- |
+| Correct | 721 (75.1%) | 747 (77.8%) | +26 |
+| Misroute | 144 | 12 | −132 |
+| False reuse | 71 | 3 | −68 |
+| False spawn | 6 | 150 | +144 |
+| Reused a duplicate instead of the original | 2 | 21 | +19 |
+| Other (missed or extra delegation, or the right agent plus an extra delegation) | 16 | 27 | +11 |
+
+In single turns, version 1 removed 224 errors where work went to the wrong existing agent and added 77 false spawns, for 160 more correct turns: the interaction agent's tendency moved from over-reusing to over-creating. In carried-forward sequences, each duplicate stays in the roster and makes later turns harder, so the roughly 200 errors removed are offset by roughly 170 added, and the gain is within noise.
+
 ### What this means
 
-Version 1 removes the roster-size load on the interaction agent. Above 50 agents it sees 5 records however large the roster grows, and it routes more accurately at every size. The baseline's main error, sending new work to an existing agent, has largely been traded for a new one: creating an agent for work an existing agent owns. Retrieval keeps those duplicates from growing the prompt, but each one splits a thread's history and adds a near-identical candidate, and the roster grows 1.2 to 1.5 times faster than the work requires.
+Version 1 removes the roster-size load on the interaction agent. Above 50 agents it sees 5 records however large the roster grows, and it routes more accurately at every size. The baseline's main error, sending new work to an existing agent, has largely been traded for a new one: creating an agent for work an existing agent owns. Both runs used the same model, so this shift comes from what version 1 changed around it: the prompt, the separate `create_agent` tool, or what each record shows. Which of these is responsible isn't established yet. Retrieval keeps those duplicates from growing the prompt, but each one splits a thread's history and adds a near-identical candidate, and the roster grows 1.2 to 1.5 times faster than the work requires.
 
 My hypothesis for the next version is that a dedicated **scorer**, which must rule out the listed candidates before a new agent is created, would bring false spawns back down without losing the accuracy gain. It hasn't been tested. The options are in [section 10](#a-scorer-to-cut-false-spawns).
 
