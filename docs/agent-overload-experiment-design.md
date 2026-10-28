@@ -2,7 +2,7 @@
 
 The design of the baseline experiment, detailed enough that the harness can be built without making design decisions. It turns the agreed inputs in [agent-overload-baseline-experiment.md](agent-overload-baseline-experiment.md) into a case format, a harness, scoring rules, metrics and a report. Causes and metric definitions are in [agent-overload-causes-and-metrics.md](agent-overload-causes-and-metrics.md). The problem statement and decision log are in [agent-overload.md](agent-overload.md).
 
-Status: designed 2026-10-25. Phase 1 is implemented in `evals/agent_overload/` (harness, generation scripts, tests) and not yet run; the steps are in [agent-overload-experiment-runbook.md](agent-overload-experiment-runbook.md). Phases 2 and 3 are outlines.
+Status: designed 2026-10-25. Phase 1 is implemented in `evals/agent_overload/` (harness, generation scripts, tests) and ran on 2026-10-27 (results in [agent-overload.md](agent-overload.md#experiments)); the steps are in [agent-overload-experiment-runbook.md](agent-overload-experiment-runbook.md). Phases 2 and 3 are outlines and were not built.
 
 ## Goals and constraints
 
