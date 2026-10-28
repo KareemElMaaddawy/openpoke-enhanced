@@ -67,7 +67,7 @@ make dev ROUTING=records
 | `legacy` | Today's system: a names-only roster, and `send_message_to_agent(agent_name, ...)` creates or reuses by name |
 | `records` | Agent records with IDs and purposes, routing by `agent_id`, and retrieval of at most K agents once the roster is large. See the [records and retrieval spec](agent-overload-records-retrieval-spec.md) |
 
-In `records` mode the roster is shown in full up to 25 active agents and retrieved above that. To see retrieval with only a few agents, lower the threshold with `OPENPOKE_FULL_ROSTER_MAX` (an integer of 0 or more; `0` always retrieves):
+In `records` mode the roster is shown in full up to 50 active agents and retrieved above that. To see retrieval with only a few agents, lower the threshold with `OPENPOKE_FULL_ROSTER_MAX` (an integer of 0 or more; `0` always retrieves):
 
 ```bash
 OPENPOKE_FULL_ROSTER_MAX=3 make dev ROUTING=records
